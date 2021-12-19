@@ -16,7 +16,8 @@ partial class UnicycleFrenzy : Sandbox.Game
 	{
 		"facepunch.uf_steps",
 		"facepunch.uf_hop_stop",
-		"facepunch.uf_pop_rock"
+		"facepunch.uf_pop_rock",
+		"gvar.uf_canyon"
 	};
 
 	private List<string> fallMessages = new()
