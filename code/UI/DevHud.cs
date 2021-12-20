@@ -7,7 +7,7 @@ internal class DevHud : Panel
 {
 
 	[ConVar.ClientData( "uf_devhud" )]
-	public bool ShowDevHud { get; set; } = false;
+	public static bool ShowDevHud { get; set; } = false;
 
 	public Panel LeftPedal { get; set; }
 	public Panel RightPedal { get; set; }
