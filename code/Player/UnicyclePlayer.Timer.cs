@@ -68,6 +68,10 @@ internal partial class UnicyclePlayer
 				}
 
 				BestTime = TimeSinceStart;
+			} 
+			else
+			{
+				UfChatbox.AddCustom( To.Everyone, $"{Client.Name} completed the course in {formattedTime}, but their best time was {CourseTimer.FormattedTimeMsf(BestTime)}", "timer-msg" );
 			}
 
 			Celebrate();
