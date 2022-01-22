@@ -11,9 +11,9 @@ internal class CourseTimer : Panel
 		get
 		{
 			if ( Local.Pawn is not UnicyclePlayer pl || pl.TimerState != TimerState.Live )
-				return FormattedTimeMs( 0 );
+				return FormattedTimeMsf( 0 );
 
-			return FormattedTimeMs( pl.TimeSinceStart );
+			return FormattedTimeMsf( pl.TimeSinceStart );
 		} 
 	}
 
