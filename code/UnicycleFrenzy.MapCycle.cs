@@ -53,7 +53,7 @@ internal partial class UnicycleFrenzy
 		Game.MapVotes[ConsoleSystem.Caller.PlayerId] = mapIdent;
 		Game.NextMap = Game.MapVotes.OrderByDescending( x => x.Value ).First().Value;
 
-		UfChatbox.AddInfo( To.Everyone, string.Format( "{0} voted for {1}", ConsoleSystem.Caller.Name, mapIdent ) );
+		UfChatbox.AddChat( To.Everyone, "Server", string.Format( "{0} voted for {1}", ConsoleSystem.Caller.Name, mapIdent ) );
 	}
 
 }

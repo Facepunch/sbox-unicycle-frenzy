@@ -55,14 +55,14 @@ partial class UnicycleFrenzy : Sandbox.Game
 			(cl.Pawn as UnicyclePlayer).BestTime = new System.Random().Next( 180, 1800 );
 		}
 
-		UfChatbox.AddInfo( To.Everyone, $"{cl.Name} has joined the game" );
+		UfChatbox.AddChat( To.Everyone, "Server", $"{cl.Name} has joined the game", sfx: "player.joined" );
 	}
 
 	public override void ClientDisconnect( Client cl, NetworkDisconnectionReason reason )
 	{
 		base.ClientDisconnect( cl, reason );
 
-		UfChatbox.AddInfo( To.Everyone, $"{cl.Name} has left the game" );
+		UfChatbox.AddChat( To.Everyone, "Server", $"{cl.Name} has left the game", sfx: "player.left" );
 	}
 
 	public override void OnKilled( Client client, Entity pawn )
