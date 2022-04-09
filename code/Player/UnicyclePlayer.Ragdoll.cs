@@ -74,9 +74,11 @@ internal partial class UnicyclePlayer
 		if ( Local.Pawn is not UnicyclePlayer pl ) return;
 
 		if ( IsLocalPawn || pl.SpectateTarget == this )
+		{
+			pl.Corpse = RagdollModel( Terry );
 			new Perlin( 2f, 2, 3 );
+		}
 
-		pl.Corpse = RagdollModel( Terry );
 		RagdollModel( Unicycle.FrameModel );
 		RagdollModel( Unicycle.WheelModel );
 		RagdollModel( Unicycle.SeatModel );
