@@ -62,7 +62,7 @@ internal partial class UnicyclePlayer : Sandbox.Player
 
         Nametag = new( this );
 
-        if ( IsLocalPawn )
+		if ( IsLocalPawn )
 		{
 			SpeedParticle = Particles.Create( "particles/player/speed_lines.vpcf" );
 			JumpIndicator = new( this );
@@ -133,6 +133,20 @@ internal partial class UnicyclePlayer : Sandbox.Player
             TimeSinceDied = Math.Max( TimeSinceDied, RespawnDelay - .5f );
         }
     }
+
+	private float TimePlayedCounter;
+	public override void FrameSimulate( Client cl )
+	{
+		base.FrameSimulate( cl );
+
+		if ( !IsLocalPawn ) return;
+
+		TimePlayedCounter += Time.Delta;
+		if ( TimePlayedCounter < 1 ) return;
+
+		TimePlayedCounter = 0;
+		MapStats.Local.AddTimePlayed( 1f );
+	}
 
 	public override void PostCameraSetup( ref CameraSetup setup )
 	{

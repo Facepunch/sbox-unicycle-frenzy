@@ -83,20 +83,6 @@ partial class UnicycleFrenzy : Sandbox.Game
 		return string.Format( fallMessages[idx], playerName );
 	}
 
-	private float secondCounter = 0;
-	public override void FrameSimulate( Client cl )
-	{
-		base.FrameSimulate( cl );
-
-		secondCounter += Time.Delta;
-
-		if ( secondCounter > 1f )
-		{
-			MapStats.Local.AddTimePlayed( secondCounter );
-			secondCounter = 0;
-		}
-	}
-
 	public System.Action CustomizationChanged;
 	private TimeSince timeSinceDirtyCheck;
 
