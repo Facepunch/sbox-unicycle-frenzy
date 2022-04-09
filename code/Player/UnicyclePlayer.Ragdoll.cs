@@ -70,12 +70,12 @@ internal partial class UnicyclePlayer
 	[ClientRpc]
 	private void RagdollOnClient()
 	{
-		if ( !Terry.IsValid() || !Unicycle.IsValid() ) return;
+		if ( !Citizen.IsValid() || !Unicycle.IsValid() ) return;
 		if ( Local.Pawn is not UnicyclePlayer pl ) return;
 
 		if ( IsLocalPawn || pl.SpectateTarget == this )
 		{
-			pl.Corpse = RagdollModel( Terry );
+			pl.Corpse = RagdollModel( Citizen );
 			new Perlin( 2f, 2, 3 );
 		}
 

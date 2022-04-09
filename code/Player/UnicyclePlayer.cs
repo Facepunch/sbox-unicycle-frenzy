@@ -8,7 +8,7 @@ internal partial class UnicyclePlayer : Sandbox.Player
 {
 
     [Net]
-    public AnimEntity Terry { get; set; }
+    public AnimEntity Citizen { get; set; }
     [Net]
     public UnicycleEntity Unicycle { get; set; }
     [Net]
@@ -39,9 +39,9 @@ internal partial class UnicyclePlayer : Sandbox.Player
         Unicycle = new UnicycleEntity();
         Unicycle.SetParent( this, null, Transform.Zero );
 
-        Terry = new AnimEntity( "models/citizen/citizen.vmdl" );
-		Terry.SetParent( this, null, Transform.Zero );
-        Terry.SetAnimGraph( "models/citizen_unicycle_frenzy.vanmgrph" );
+        Citizen = new AnimEntity( "models/citizen/citizen.vmdl" );
+		Citizen.SetParent( this, null, Transform.Zero );
+        Citizen.SetAnimGraph( "models/citizen_unicycle_frenzy.vanmgrph" );
 
         CameraMode = new UnicycleCamera();
         Controller = new UnicycleController();
@@ -49,7 +49,7 @@ internal partial class UnicyclePlayer : Sandbox.Player
 
 		Clothing ??= new();
 		Clothing.LoadFromClient( Client );
-        Clothing.DressEntity( Terry );
+        Clothing.DressEntity( Citizen );
 		Avatar = Client.GetClientData( "avatar" );
 
 		ResetMovement();
@@ -79,7 +79,7 @@ internal partial class UnicyclePlayer : Sandbox.Player
         CameraMode = new SpectateRagdollCamera();
 
         Unicycle?.Delete();
-        Terry?.Delete();
+        Citizen?.Delete();
 
         RagdollOnClient();
     }
@@ -159,10 +159,10 @@ internal partial class UnicyclePlayer : Sandbox.Player
     private void UpdateRenderAlpha()
     {
         if ( Local.Pawn == this ) return;
-        if ( !Terry.IsValid() || !Unicycle.IsValid() ) return;
+        if ( !Citizen.IsValid() || !Unicycle.IsValid() ) return;
 
         var a = GetRenderAlpha();
-		Terry.SetRenderAlphaRecursive( a );
+		Citizen.SetRenderAlphaRecursive( a );
 		Unicycle.SetRenderAlphaRecursive( a );
     }
 

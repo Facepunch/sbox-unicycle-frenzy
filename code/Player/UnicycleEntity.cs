@@ -130,7 +130,7 @@ internal partial class UnicycleEntity : Entity
 		parthash = hash;
 		AssembleParts();
 
-		pl.Terry.Position = GetAssPosition();
+		pl.Citizen.Position = GetAssPosition();
 		//pl.Terry.Position -= Vector3.Up * 4; // remove this when proper ass attachment
 	}
 

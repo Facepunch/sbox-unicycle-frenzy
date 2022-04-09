@@ -176,12 +176,12 @@ internal partial class UnicyclePlayer
 		var needsCrown = !Fallen 
 			&& !CourseIncomplete
 			&& SessionRank == 1
-			&& Terry.IsValid();
+			&& Citizen.IsValid();
 
 		if( needsCrown && Crown == null )
 		{
 			Crown = Particles.Create( "particles\\crown\\current_session\\current_session_crown.vpcf" );
-			Crown.SetEntityAttachment( 0, Terry, "hat", true );
+			Crown.SetEntityAttachment( 0, Citizen, "hat", true );
 		}
 		else if( !needsCrown && Crown != null )
 		{
