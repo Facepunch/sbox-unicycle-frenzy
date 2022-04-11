@@ -37,6 +37,32 @@ internal partial class UnicycleFrenzy
 		NextMap = Rand.FromList( maps );
 	}
 
+	private async void ChangeMapWithDelay( string mapident, float delay )
+	{
+		Host.AssertServer();
+
+		delay *= 1000f;
+		var timer = 0f;
+		while( timer < delay )
+		{
+			await Task.Delay( 100 );
+
+			timer += 100;
+
+			if( timer % 1000 == 0 )
+			{
+				var timeleft = ( delay - timer ) / 1000f;
+				UfChatbox.AddChat( To.Everyone, "Server", $"{timeleft} seconds remaining." );
+			}
+		}
+
+		UfChatbox.AddChat( To.Everyone, "Server", $"Changing level to {mapident}" );
+
+		await Task.Delay( 3000 );
+
+		ServerCmd_ChangeMap( mapident );
+	}
+
 	[ServerCmd]
 	public static void ServerCmd_ChangeMap( string mapident )
 	{
@@ -59,7 +85,8 @@ internal partial class UnicycleFrenzy
 
 		if ( CanForceChange( mapIdent ) )
 		{
-			ServerCmd_ChangeMap( mapIdent );
+			UfChatbox.AddChat( To.Everyone, "Server", "A new level has been voted for!" );
+			Game.ChangeMapWithDelay( mapIdent, 5f );
 		}
 	}
 
