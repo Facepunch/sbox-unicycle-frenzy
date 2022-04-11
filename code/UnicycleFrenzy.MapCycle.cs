@@ -50,6 +50,12 @@ internal partial class UnicycleFrenzy
 		if ( Game.MapVotes.TryGetValue( ConsoleSystem.Caller.PlayerId, out var vote ) && vote == mapIdent )
 			return;
 
+		if( ConsoleSystem.Caller.IsListenServerHost && Game.GameState == GameStates.FreePlay )
+		{
+			ServerCmd_ChangeMap( mapIdent );
+			return;
+		}
+
 		Game.MapVotes[ConsoleSystem.Caller.PlayerId] = mapIdent;
 		Game.NextMap = Game.MapVotes.OrderByDescending( x => x.Value ).First().Value;
 
