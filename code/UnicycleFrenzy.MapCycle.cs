@@ -1,4 +1,6 @@
-﻿using Sandbox;
+﻿
+using Sandbox;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -50,16 +52,25 @@ internal partial class UnicycleFrenzy
 		if ( Game.MapVotes.TryGetValue( ConsoleSystem.Caller.PlayerId, out var vote ) && vote == mapIdent )
 			return;
 
-		if( ConsoleSystem.Caller.IsListenServerHost && Game.GameState == GameStates.FreePlay )
-		{
-			ServerCmd_ChangeMap( mapIdent );
-			return;
-		}
-
 		Game.MapVotes[ConsoleSystem.Caller.PlayerId] = mapIdent;
 		Game.NextMap = Game.MapVotes.OrderByDescending( x => x.Value ).First().Value;
 
 		UfChatbox.AddChat( To.Everyone, "Server", string.Format( "{0} voted for {1}", ConsoleSystem.Caller.Name, mapIdent ) );
+
+		if ( CanForceChange( mapIdent ) )
+		{
+			ServerCmd_ChangeMap( mapIdent );
+		}
+	}
+
+	private static bool CanForceChange( string mapIdent )
+	{
+		if ( Game.GameState != GameStates.FreePlay ) return false;
+
+		var half = MathF.Ceiling( Client.All.Count / 2f );
+		if ( Game.MapVotes.Values.Count( x => x == mapIdent ) >= half ) return true;
+
+		return false;
 	}
 
 }
