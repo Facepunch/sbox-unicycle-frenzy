@@ -1,5 +1,6 @@
 ﻿
 using Sandbox;
+using System.Linq;
 using System.Threading.Tasks;
 
 internal partial class UnicycleFrenzy
@@ -30,6 +31,7 @@ internal partial class UnicycleFrenzy
 
 		GameState = GameStates.End;
 		StateTimer = 60f;
+		AwardExp();
 		await WaitStateTimer();
 
 		Global.ChangeLevel( NextMap );
@@ -49,6 +51,20 @@ internal partial class UnicycleFrenzy
 	private bool CanStart()
 	{
 		return ForceStart || Client.All.Count >= 3;
+	}
+
+	private void AwardExp()
+	{
+		var players = All.OfType<UnicyclePlayer>()
+			.Where( x => x.IsValid() )
+			.OrderBy( x => x.BestTime )
+			.ToArray();
+
+		if ( players.Length < 3 ) return;
+
+		players[0]?.AddTrailPassExperience( 50 );
+		players[1]?.AddTrailPassExperience( 25 );
+		players[2]?.AddTrailPassExperience( 10 );
 	}
 
 	private void FreshStart()
