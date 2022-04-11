@@ -63,8 +63,7 @@ internal class GameEnd : Panel
 	[Event.BuildInput]
 	private void OnBuildInput( InputBuilder b )
 	{
-		var btn = InputActionsExtensions.GetInputButton( InputActions.Scoreboard );
-		if ( b.Pressed( btn ) )
+		if ( b.Pressed( InputActions.Scoreboard ) )
 		{
 			manuallyopened = !manuallyopened;
 		}
