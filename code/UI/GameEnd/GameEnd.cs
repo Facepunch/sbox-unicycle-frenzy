@@ -11,10 +11,12 @@ internal class GameEnd : Panel
 	public Panel PodiumCanvas { get; set; }
 	public string TimeLeft => CourseTimer.FormattedTimeMs( UnicycleFrenzy.Game.StateTimer );
 
+	private bool manuallyopened = false;
+
 	[Event.Frame]
 	private void OnFrame()
 	{
-		var open = UnicycleFrenzy.Game.GameState == UnicycleFrenzy.GameStates.End;
+		var open = UnicycleFrenzy.Game.GameState == UnicycleFrenzy.GameStates.End || manuallyopened;
 
 		SetClass( "open", open );
 
@@ -57,5 +59,15 @@ internal class GameEnd : Panel
 
 	protected override void PostTemplateApplied() => Refresh();
 	public override void OnHotloaded() => Refresh();
+
+	[Event.BuildInput]
+	private void OnBuildInput( InputBuilder b )
+	{
+		var btn = InputActionsExtensions.GetInputButton( InputActions.Scoreboard );
+		if ( b.Pressed( btn ) )
+		{
+			manuallyopened = !manuallyopened;
+		}
+	}
 
 }

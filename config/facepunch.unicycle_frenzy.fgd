@@ -266,6 +266,7 @@ metadata
 		11 : "Right Pedal"
 		12 : "Spray"
 		13 : "Menu"
+		14 : "Scoreboard"
 	]
 	perfectpedalglow(boolean) : "Perfect Pedal Glow" : 0 : ""
 	startdisabled(boolean) : "Start Disabled" : 0 : "Should this entity start disabled?"

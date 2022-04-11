@@ -16,7 +16,8 @@ public enum InputActions
 	LeftPedal,
 	RightPedal,
 	Spray,
-	Menu
+	Menu,
+	Scoreboard
 }
 
 public static class InputActionsExtensions
@@ -41,7 +42,8 @@ public static class InputActionsExtensions
 				InputActions.LeftPedal => InputButton.Attack2,
 				InputActions.RightPedal => InputButton.Attack1,
 				InputActions.Spray => InputButton.Flashlight,
-				InputActions.Menu => InputButton.Score,
+				InputActions.Menu => InputButton.Menu,
+				InputActions.Scoreboard => InputButton.Score,
 				_ => default
 			};
 		}
@@ -55,7 +57,8 @@ public static class InputActionsExtensions
 			InputActions.LeftPedal => InputButton.Attack1,
 			InputActions.RightPedal => InputButton.Attack2,
 			InputActions.Spray => InputButton.Flashlight,
-			InputActions.Menu => InputButton.Score,
+			InputActions.Menu => InputButton.Menu,
+			InputActions.Scoreboard => InputButton.Score,
 			_ => default
 		};
 	}
