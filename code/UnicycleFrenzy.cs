@@ -56,13 +56,20 @@ partial class UnicycleFrenzy : Sandbox.Game
 		}
 
 		UfChatbox.AddChat( To.Everyone, "Server", $"{cl.Name} has joined the game", sfx: "player.joined" );
+
+		NotifyPlayersNeeded();
 	}
 
-	public override void ClientDisconnect( Client cl, NetworkDisconnectionReason reason )
+	public override async void ClientDisconnect( Client cl, NetworkDisconnectionReason reason )
 	{
 		base.ClientDisconnect( cl, reason );
 
 		UfChatbox.AddChat( To.Everyone, "Server", $"{cl.Name} has left the game", sfx: "player.left" );
+
+		// this lets the client fully disconnect before we count and notify
+		await Task.Delay( 1 );
+
+		NotifyPlayersNeeded();
 	}
 
 	public override void OnKilled( Client client, Entity pawn )

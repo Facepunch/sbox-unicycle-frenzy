@@ -87,6 +87,12 @@ UfChatboxEntry {
         }
     }
 
+    &.alert {
+        .message {
+            color: $secondary;
+        }
+    }
+
     &.custom {
         .name {
             display: none;

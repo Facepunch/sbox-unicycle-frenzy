@@ -20,9 +20,13 @@ internal partial class UnicycleFrenzy
 			await Task.DelayRealtimeSeconds( 1.0f );
 		}
 
+		UfChatbox.AddChat( To.Everyone, "Server", "The match will start in 10 seconds", "alert", "chat.alert" );
+
 		GameState = GameStates.PreMatch;
 		StateTimer = 10f;
 		await WaitStateTimer();
+
+		UfChatbox.AddChat( To.Everyone, "Server", "The match is live!", "alert", "chat.alert" );
 
 		GameState = GameStates.Live;
 		StateTimer = 15f * 60;
@@ -77,6 +81,17 @@ internal partial class UnicycleFrenzy
 			pl.ResetBestTime();
 			pl.GotoBestCheckpoint();
 		}
+	}
+
+	private void NotifyPlayersNeeded()
+	{
+		if ( GameState != GameStates.FreePlay ) return;
+		if ( CanStart() ) return;
+
+		var needed = 3;
+		var current = Client.All.Count;
+
+		UfChatbox.AddChat( To.Everyone, "Server", $"{current} out of {needed} players needed to start", "alert", "chat.alert" );
 	}
 
 	[AdminCmd]
