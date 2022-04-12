@@ -1,10 +1,10 @@
 ﻿using Hammer;
 using Sandbox;
-
+using System.ComponentModel.DataAnnotations;
 
 [EditorModel("models/leaderboard_post.vmdl")]
 [Library( "uf_leaderboard", Description = "Shows a leaderboard in-game" )]
-[EntityTool( "Leaderboard Post", "Unicycle Frenzy", "Shows a leaderboard in-game" )]
+[Display( Name = "Leaderboard Post", GroupName = "Unicycle Frenzy", Description = "Shows a leaderboard in-game" )]
 internal class LeaderboardPost : ModelEntity
 {
 	public enum ModelType

@@ -1,8 +1,9 @@
 ﻿using Sandbox;
 using Hammer;
+using System.ComponentModel.DataAnnotations;
 
 [Library("uf_achievement_medals")]
-[EntityTool( "Unicycle Frenzy Medals", "Unicycle Frenzy", "Set the time for achievement medals." )]
+[Display( Name = "Unicycle Frenzy Medals", GroupName = "Unicycle Frenzy", Description = "Set the time for achievement medals." )]
 [Hammer.EditorSprite( "materials/editor/achievement_medals.vmat" )]
 internal partial class AchievementMedals : Entity
 {

@@ -1,9 +1,10 @@
 ﻿using Sandbox;
 using Hammer;
+using System.ComponentModel.DataAnnotations;
 
 [Library( "uf_trigger_tutorial", Description = "Enable tutorial features in this trigger" )]
 //[Hammer.AutoApplyMaterial( "materials/editor/uf_trigger_fall.vmat" )]
-[EntityTool( "Trigger Tutorial", "Unicycle Frenzy", "Enable tutorial features in this trigger." )]
+[Display( Name = "Trigger Tutorial", GroupName = "Unicycle Frenzy", Description = "Enable tutorial features in this trigger." )]
 internal partial class TutorialTrigger : BaseTrigger
 {
 
