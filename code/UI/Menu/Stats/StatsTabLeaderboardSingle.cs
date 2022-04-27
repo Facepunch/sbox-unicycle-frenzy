@@ -81,7 +81,7 @@ internal class StatsTabLeaderboardSingle : NavigatorPanel
 		{
 			case LeaderboardScope.Global:
 			case LeaderboardScope.Friends:
-				var q = await GameServices.Leaderboard.Query( game: Global.GameIdent, bucket: Global.MapName );
+				var q = await GameServices.Leaderboard.Query( ident: Global.GameIdent, bucket: Global.MapName );
 				var sorted = q.Entries.OrderBy( x => x.Rating ).Where( x => x.Rating > 0 ).ToList();
 				var rank = 1;
 
