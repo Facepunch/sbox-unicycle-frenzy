@@ -6,6 +6,8 @@ using System;
 internal class CourseTimer : Panel
 {
 
+	public UnicycleFrenzy.GameStates GameState => UnicycleFrenzy.Game.GameState;
+
 	public string CourseTime 
 	{ 
 		get
@@ -21,7 +23,7 @@ internal class CourseTimer : Panel
 		} 
 	}
 
-	public string GameTime => FormattedTimeMs( UnicycleFrenzy.Game.TimeLeft );
+	public string GameTime => FormattedTimeMs( UnicycleFrenzy.Game.StateTimer );
 
 	public string NextMap => UnicycleFrenzy.Game.NextMap;
 

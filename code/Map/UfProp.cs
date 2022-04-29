@@ -2,11 +2,12 @@
 using System.Linq;
 using Hammer;
 using Sandbox.Internal;
+using System.ComponentModel.DataAnnotations;
 
 [Model]
 [SupportsSolid]
 [Library("uf_prop")]
-[EntityTool( "Unicycle Frenzy Prop", "Unicycle Frenzy", "A model or Mesh that can be set to pass the camera through it." )]
+[Display( Name = "Unicycle Frenzy Prop", GroupName = "Unicycle Frenzy", Description = "A model or Mesh that can be set to pass the camera through it." )]
 internal partial class UfProp : ModelEntity
 {
 

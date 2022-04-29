@@ -40,7 +40,7 @@ internal class DevHud : Panel
 		RightPedal.Style.Top = Length.Percent( rightTop * 100f );
 
 		var jumpStrength = Math.Min( player.TimeSinceJumpDown / controller.MaxJumpStrengthTime, 1f );
-		if ( !Input.Down( InputButton.Jump ) ) jumpStrength = 0;
+		if ( !InputActions.Jump.Down() ) jumpStrength = 0;
 		jumpStrength = Easing.EaseOut( jumpStrength );
 		Jump.Style.Height = Length.Percent( jumpStrength * 100f );
 

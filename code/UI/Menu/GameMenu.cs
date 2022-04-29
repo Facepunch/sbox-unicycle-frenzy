@@ -18,7 +18,7 @@ internal class GameMenu : NavigatorPanel
 	[Event.BuildInput]
 	private void BuildInput( InputBuilder b )
 	{
-		if ( b.Pressed( InputButton.Score ) )
+		if ( b.Pressed( InputActions.Menu ) )
 		{
 			SetClass( "open", !HasClass( "open" ) );
 		}
@@ -35,7 +35,7 @@ internal class GameMenu : NavigatorPanel
 
 	public void StopSpectating()
 	{
-		UnicyclePlayer.SetSpectateTargetOnServer( -1 );
+		UnicyclePlayer.ServerCmd_SetSpectateTarget( -1 );
 		Close();
 	}
 

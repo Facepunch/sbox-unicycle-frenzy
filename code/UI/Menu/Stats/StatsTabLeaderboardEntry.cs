@@ -30,7 +30,7 @@ internal class StatsTabLeaderboardEntry : Panel
 		if ( cl == null ) return;
 		if ( !cl.Pawn.IsValid() ) return;
 
-		UnicyclePlayer.SetSpectateTargetOnServer( cl.Pawn.NetworkIdent );
+		UnicyclePlayer.ServerCmd_SetSpectateTarget( cl.Pawn.NetworkIdent );
 
 		Ancestors.OfType<GameMenu>().FirstOrDefault()?.Close();
 	}

@@ -1,9 +1,10 @@
 ﻿using Sandbox;
 using Hammer;
+using System.ComponentModel.DataAnnotations;
 
 [Library( "uf_trigger_tutorial", Description = "Enable tutorial features in this trigger" )]
 //[Hammer.AutoApplyMaterial( "materials/editor/uf_trigger_fall.vmat" )]
-[EntityTool( "Trigger Tutorial", "Unicycle Frenzy", "Enable tutorial features in this trigger." )]
+[Display( Name = "Trigger Tutorial", GroupName = "Unicycle Frenzy", Description = "Enable tutorial features in this trigger." )]
 internal partial class TutorialTrigger : BaseTrigger
 {
 
@@ -37,18 +38,6 @@ internal partial class TutorialTrigger : BaseTrigger
 		
 		pl.PerfectPedalGlow = false;
 		pl.DisplayedAction = InputActions.None;
-	}
-
-	public enum InputActions
-	{ 
-		None,
-		Pedal,
-		Lean,
-		Brake,
-		Jump,
-		Look,
-		BrakeAndLean,
-		JumpHigher
 	}
 
 }

@@ -11,7 +11,7 @@ internal partial class UnicyclePlayer
 	[Net, Change]
 	public float BestTime { get; set; } = defaultBestTime;
 
-	private Particles crown;
+	private Particles Crown;
 
 	public int SessionRank
 	{
@@ -33,6 +33,11 @@ internal partial class UnicyclePlayer
 	public bool CourseIncomplete => BestTime == defaultBestTime;
 
 	private const float defaultBestTime = 3600f; // easier to check for this than sorting out 0/default
+
+	public void ResetBestTime()
+	{
+		BestTime = defaultBestTime;
+	}
 
 	public void EnterStartZone()
 	{
@@ -75,12 +80,12 @@ internal partial class UnicyclePlayer
 			{
 				if( CourseIncomplete )
 				{
-					UfChatbox.AddCustom( To.Everyone, $"{Client.Name} completed the course in {formattedTime}", "timer-msg" );
+					UfChatbox.AddChat( To.Everyone, string.Empty, $"{Client.Name} completed the course in {formattedTime}", "custom timer-msg", sfx: "timer.complete" );
 				}
 				else
 				{
 					var improvement = CourseTimer.FormattedTimeMsf( BestTime - TimeSinceStart );
-					UfChatbox.AddCustom( To.Everyone, $"{Client.Name} completed the course in {formattedTime}, improving by {improvement}!", "timer-msg" );
+					UfChatbox.AddChat( To.Everyone, string.Empty, $"{Client.Name} completed the course in {formattedTime}, improving by {improvement}!", "custom timer-msg", sfx: "timer.complete" );
 				}
 
 				BestTime = TimeSinceStart;
@@ -103,7 +108,10 @@ internal partial class UnicyclePlayer
 		{
 			ClearCheckpoints();
 
-			Collectible.ResetCollection( "collection_tutorial" );
+			if (Global.MapName.EndsWith("uf_tutorial"))
+            {
+				ResetTutorial();
+			}
 		}
 	}
 
@@ -168,17 +176,17 @@ internal partial class UnicyclePlayer
 		var needsCrown = !Fallen 
 			&& !CourseIncomplete
 			&& SessionRank == 1
-			&& Terry.IsValid();
+			&& Citizen.IsValid();
 
-		if( needsCrown && crown == null )
+		if( needsCrown && Crown == null )
 		{
-			crown = Particles.Create( "particles\\crown\\current_session\\current_session_crown.vpcf" );
-			crown.SetEntityAttachment( 0, Terry, "hat", true );
+			Crown = Particles.Create( "particles\\crown\\current_session\\current_session_crown.vpcf" );
+			Crown.SetEntityAttachment( 0, Citizen, "hat", true );
 		}
-		else if( !needsCrown && crown != null )
+		else if( !needsCrown && Crown != null )
 		{
-			crown?.Destroy();
-			crown = null;
+			Crown?.Destroy();
+			Crown = null;
 		}
 	}
 

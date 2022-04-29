@@ -65,8 +65,11 @@
 					{
 						_class = "PhysicsShapeCylinder"
 						parent_bone = ""
-						surface_prop = "default"
-						collision_prop = "default"
+						surface_prop = "rubber"
+						collision_group = ""
+						collision_interact_as = ""
+						collision_interact_with = ""
+						collision_interact_exclude = ""
 						radius = 12.5
 						point0 = [ 0.0, -1.4, 12.0 ]
 						point1 = [ 0.0, 1.4, 12.0 ]

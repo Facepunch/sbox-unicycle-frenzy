@@ -8,14 +8,14 @@ internal class ControlsTab : Panel
 
 	public Panel TutorialButton { get; set; }
 
-	public string BrakeBind => Input.GetButtonOrigin( InputButton.Run ) ?? "UNSET";
-	public string LeftPedalBind => Input.GetButtonOrigin( InputButton.Attack1 ) ?? "UNSET";
-	public string RightPedalBind => Input.GetButtonOrigin( InputButton.Attack2 ) ?? "UNSET";
-	public string JumpBind => Input.GetButtonOrigin( InputButton.Jump ) ?? "UNSET";
+	public string BrakeBind => InputActions.Brake.GetButtonOrigin() ?? "UNSET";
+	public string LeftPedalBind => InputActions.LeftPedal.GetButtonOrigin() ?? "UNSET";
+	public string RightPedalBind => InputActions.RightPedal.GetButtonOrigin() ?? "UNSET";
+	public string JumpBind => InputActions.Jump.GetButtonOrigin() ?? "UNSET";
 	public string LeanBind => GetLeanBindString();
-	public string RestartBind => Input.GetButtonOrigin( InputButton.Drop ) ?? "UNSET";
-	public string GoBackBind => Input.GetButtonOrigin( InputButton.Reload ) ?? "UNSET";
-	public string SprayBind => Input.GetButtonOrigin( InputButton.Flashlight ) ?? "UNSET";
+	public string RestartBind => InputActions.RestartCourse.GetButtonOrigin() ?? "UNSET";
+	public string GoBackBind => InputActions.RestartAtCheckpoint.GetButtonOrigin() ?? "UNSET";
+	public string SprayBind => InputActions.Spray.GetButtonOrigin() ?? "UNSET";
 
 	public ControlsTab()
 	{
@@ -34,7 +34,9 @@ internal class ControlsTab : Panel
 
 	public void TryPlayTutorial()
 	{
-		UnicycleFrenzy.Game.ChangeMap( "facepunch.uf_tutorial" );
+		if ( !Global.IsListenServer ) return;
+
+		UnicycleFrenzy.ServerCmd_ChangeMap( "facepunch.uf_tutorial" );
 	}
 
 }

@@ -1,4 +1,6 @@
-﻿using Sandbox;
+﻿
+using Sandbox;
+using System;
 using System.Collections.Generic;
 
 internal class UnicycleCamera : CameraMode
@@ -16,9 +18,21 @@ internal class UnicycleCamera : CameraMode
 		ClearViewBlockers();
 		UpdateViewBlockers( pawn );
 
+		var viewangles = Input.Rotation.Angles();
+
+		// hack in sensitivity boost until we get sens slider for controllers
+		if ( Input.UsingController )
+		{
+			var delta = Input.GetAnalog( InputAnalog.Look );
+			viewangles += new Vector3( -delta.y * 6f, -delta.x * 6f, 0f );
+		}
+
+		viewangles.pitch = Math.Clamp( viewangles.pitch, -35f, 65f );
+
+		var targetRot = Rotation.From( viewangles );
 		var center = pawn.Position + Vector3.Up * 80;
 		var distance = 150.0f * pawn.Scale;
-		var targetPos = center + Input.Rotation.Forward * -distance;
+		var targetPos = center + targetRot.Forward * -distance;
 
 		var tr = Trace.Ray( center, targetPos )
 			.Ignore( pawn )
@@ -27,26 +41,33 @@ internal class UnicycleCamera : CameraMode
 
 		var endpos = tr.EndPosition;
 
-		if ( tr.Entity is UfProp ufp )
-		{
-			if ( ufp.NoCameraCollide )
-				endpos = targetPos;
-		}
+		if ( tr.Entity is UfProp ufp && ufp.NoCameraCollide )
+			endpos = targetPos;
 
 		Position = endpos;
-		Rotation = Input.Rotation;
+		Rotation = targetRot;
 
-		var rot = pawn.Rotation.Angles() * .015f;
-		rot.yaw = 0;
-
-		Rotation *= Rotation.From( rot );
+		// controller constantly tries to center itself
+		if ( Input.UsingController && pawn.Velocity.WithZ( 0 ).Length > 35 )
+		{
+			var defaultPosition = pawn.TargetForward.Angles().WithPitch( 30 );
+			Rotation = Rotation.Lerp( Rotation, Rotation.From( defaultPosition ), Time.Delta );
+		}
 
 		var spd = pawn.Velocity.WithZ( 0 ).Length / 350f;
 		var fov = 82f.LerpTo( 92f, spd );
 
 		FieldOfView = FieldOfView.LerpTo( fov, Time.Delta );
+	}
 
-		Viewer = null;
+	public override void BuildInput( InputBuilder input )
+	{
+		base.BuildInput( input );
+
+		if ( !Input.UsingController ) return;
+
+		// controllers get special handling so update ViewAngles here
+		input.ViewAngles = Rotation.Angles();
 	}
 
 	public override void Activated()
@@ -54,6 +75,7 @@ internal class UnicycleCamera : CameraMode
 		base.Activated();
 
 		FieldOfView = 85;
+		Viewer = null;
 	}
 
 	public override void Deactivated()

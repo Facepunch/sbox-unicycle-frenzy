@@ -20,7 +20,7 @@ internal class TutorialHud : Panel
 			return;
 		}
 
-		if( pl.DisplayedAction == TutorialTrigger.InputActions.None )
+		if( pl.DisplayedAction == InputActions.None )
 		{
 			ControlHints.SetClass( "open", false );
 			return;
@@ -33,31 +33,31 @@ internal class TutorialHud : Panel
 
 		switch ( pl.DisplayedAction )
 		{
-			case TutorialTrigger.InputActions.Pedal:
-				LeftHint.Set( "Left Pedal", InputButton.Attack1 );
-				RightHint.Set( "Right Pedal", InputButton.Attack2 );
+			case InputActions.Pedal:
+				LeftHint.Set( "Left Pedal", InputActions.LeftPedal.Button() );
+				RightHint.Set( "Right Pedal", InputActions.RightPedal.Button() );
 				break;
-			case TutorialTrigger.InputActions.Brake:
-				MiddleHint.Set( "Brake", InputButton.Walk );
+			case InputActions.Brake:
+				MiddleHint.Set( "Brake", InputActions.Brake.Button() );
 				break;
-			case TutorialTrigger.InputActions.Jump:
-				MiddleHint.Set( "Jump", InputButton.Jump );
+			case InputActions.Jump:
+				MiddleHint.Set( "Jump", InputActions.Jump.Button() );
 				break;
-			case TutorialTrigger.InputActions.Look:
+			case InputActions.Look:
 				MiddleHint.Set( "Look/Steer", pl.DisplayedAction );
 				break;
-			case TutorialTrigger.InputActions.Lean:
+			case InputActions.Lean:
 				MiddleHint.Set( "Lean", pl.DisplayedAction );
 				break;
-			case TutorialTrigger.InputActions.BrakeAndLean:
-				LeftHint.Set( "Brake", InputButton.Run );
-				RightHint.Set( "Lean", TutorialTrigger.InputActions.Lean );
+			case InputActions.BrakeAndLean:
+				LeftHint.Set( "Brake", InputActions.Brake.Button() );
+				RightHint.Set( "Lean", InputActions.Lean );
 				break;
-			case TutorialTrigger.InputActions.JumpHigher:
-				MiddleHint.Set( "Hold to charge jump", InputButton.Jump, true );
+			case InputActions.JumpHigher:
+				MiddleHint.Set( "Hold to charge jump", InputActions.Jump.Button(), true );
 				break;
 			default:
-				MiddleHint.Set( "UNKNOWN: " + pl.DisplayedAction.ToString(), InputButton.Jump );
+				MiddleHint.Set( "UNKNOWN: " + pl.DisplayedAction.ToString(), InputActions.Jump.Button() );
 				break;
 		}
 	}

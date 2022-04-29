@@ -4,9 +4,12 @@ using System.Linq;
 internal partial class UnicyclePlayer
 {
 
+	[ClientRpc]
 	public void AddTrailPassExperience( int amount )
 	{
 		Host.AssertClient();
+
+		if ( !IsLocalPawn ) return;
 
 		var progress = TrailPassProgress.CurrentSeason;
 		progress.Experience += amount;

@@ -24,16 +24,11 @@ internal class UfNametag : WorldPanel
 	[Event.Frame]
 	private void OnFrame()
 	{
-		if( !player.IsValid() )
-		{
-			Delete();
-			return;
-		}
-
+		if ( !player.IsValid() ) return;
 		if ( !player.Client.IsValid() ) return;
-		if ( !player.Terry.IsValid() ) return;
+		if ( !player.Citizen.IsValid() ) return;
 
-		var hat = player.Terry.GetAttachment( "hat" ) ?? new Transform( player.EyePosition );
+		var hat = player.Citizen.GetAttachment( "hat" ) ?? new Transform( player.EyePosition );
 		var crowned = player.SessionRank == 1;
 		var height = crowned ? 16 : 8;
 		Position = hat.Position + Vector3.Up * height;

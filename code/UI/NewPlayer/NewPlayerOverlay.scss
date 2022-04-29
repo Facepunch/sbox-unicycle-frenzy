@@ -15,6 +15,7 @@ NewPlayerOverlay {
     backdrop-filter: blur(5px);
     opacity: 0;
     transition: all .15s ease-in;
+    z-index: 999;
 
     .warning {
         color: $secondary;

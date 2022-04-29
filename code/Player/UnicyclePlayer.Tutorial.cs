@@ -6,9 +6,11 @@ partial class UnicyclePlayer
 {
 
 	[Net]
-	public TutorialTrigger.InputActions DisplayedAction { get; set; }
+	public InputActions DisplayedAction { get; set; }
 	[Net]
 	public bool PerfectPedalGlow { get; set; }
+
+	private TimeSince tsVelocityLow;
 
 	[Event.Frame]
 	private void OnFrame()
@@ -49,16 +51,46 @@ partial class UnicyclePlayer
 		ent.Open();
 	}
 
-	[Event("collection.reset")]
-	public void OnCollectionReset( string collection )
+	[Event.Tick.Server]
+	private void CheckStopDoorTrigger()
 	{
-		if ( !Host.IsServer ) return;
-		if ( !string.Equals( collection, "collection_tutorial" ) ) return;
+		if( Velocity.WithZ(0).Length > 35 )
+		{
+			tsVelocityLow = 0;
+		}
 
-		var ent = Entity.All.FirstOrDefault( x => x is DoorEntity && x.Name == "tut_door" ) as DoorEntity;
-		if ( !ent.IsValid() ) return;
+		if ( !StopDoorTrigger.IsValid() || !StopDoor.IsValid() ) return;
 
-		ent.Close();
+		var openit = tsVelocityLow >= 1
+			&& StopDoorTrigger.TouchingEntities.Contains( this )
+			&& StopDoor.State == DoorEntity.DoorState.Closed;
+
+		if ( openit )
+		{
+			StopDoor.Open();
+			Sound.FromEntity( "collect", this );
+		}
 	}
+
+	private void ResetTutorial()
+	{
+		Host.AssertServer();
+
+		Collectible.ResetCollection( "collection_tutorial" );
+
+		if ( CollectionDoor.IsValid() )
+		{
+			CollectionDoor.Close();
+		}
+
+		if ( StopDoor.IsValid() )
+		{
+			StopDoor.Close();
+		}
+	}
+
+	private static BaseTrigger StopDoorTrigger => All.FirstOrDefault( x => x.Name.Equals( "tut_trigger_top" ) ) as BaseTrigger;
+	private static DoorEntity StopDoor => All.FirstOrDefault( x => x.Name == "tut_door_stop" ) as DoorEntity;
+	private static DoorEntity CollectionDoor => All.FirstOrDefault( x => x is DoorEntity && x.Name == "tut_door" ) as DoorEntity;
 
 }

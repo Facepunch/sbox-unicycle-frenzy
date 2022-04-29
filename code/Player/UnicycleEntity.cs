@@ -2,16 +2,6 @@
 using Sandbox;
 using System;
 
-public enum PartType
-{
-	Frame,
-	Wheel,
-	Seat,
-	Pedal,
-	Trail,
-	Spray
-}
-
 internal partial class UnicycleEntity : Entity
 {
 
@@ -49,16 +39,6 @@ internal partial class UnicycleEntity : Entity
 		}
 
 		return assAttachment.Value.Position;
-	}
-
-	public void SetRenderAlphaOnAllParts( float a )
-	{
-		// this is kind of annoying, alternatives?
-		if ( FrameModel.IsValid() ) FrameModel.RenderColor = FrameModel.RenderColor.WithAlpha( a );
-		if ( SeatModel.IsValid() ) SeatModel.RenderColor = SeatModel.RenderColor.WithAlpha( a );
-		if ( WheelModel.IsValid() ) WheelModel.RenderColor = WheelModel.RenderColor.WithAlpha( a );
-		if ( LeftPedalModel.IsValid() ) LeftPedalModel.RenderColor = LeftPedalModel.RenderColor.WithAlpha( a );
-		if ( RightPedalModel.IsValid() ) RightPedalModel.RenderColor = RightPedalModel.RenderColor.WithAlpha( a );
 	}
 
 	private void AssembleParts()
@@ -107,6 +87,8 @@ internal partial class UnicycleEntity : Entity
 		{
 			trailParticle = Particles.Create( trail.AssetPath, this );
 		}
+
+		Scale = .85f;
 	}
 
 	private void AssemblePedals( CustomizationPart pedal, ModelEntity frame, out Entity pivot, out ModelEntity leftPedal, out ModelEntity rightPedal )
@@ -148,8 +130,8 @@ internal partial class UnicycleEntity : Entity
 		parthash = hash;
 		AssembleParts();
 
-		pl.Terry.Position = GetAssPosition();
-		pl.Terry.Position -= Vector3.Up * 12; // remove this when proper ass attachment
+		pl.Citizen.Position = GetAssPosition();
+		//pl.Terry.Position -= Vector3.Up * 4; // remove this when proper ass attachment
 	}
 
 	[Event.Tick]

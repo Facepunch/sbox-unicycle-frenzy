@@ -22,11 +22,11 @@ internal class ControlHint : Panel
 		this.button = button;
 	}
 
-	public void Set( string name, TutorialTrigger.InputActions action, bool hasCharge = false )
+	public void Set( string name, InputActions action, bool hasCharge = false )
 	{
 		SetClass( "open", true );
 		SetClass( "has-charge", hasCharge );
-
+		
 		ActionName.Text = name;
 		customTexture = GetCustomTexture( action );
 		button = InputButton.Chat;
@@ -40,12 +40,12 @@ internal class ControlHint : Panel
 		Icon.Style.BackgroundImage = tex;
 	}
 
-	private Texture GetCustomTexture( TutorialTrigger.InputActions action )
+	private Texture GetCustomTexture( InputActions action )
 	{
 		var path = action switch
 		{
-			TutorialTrigger.InputActions.Lean => "textures/ui/control_lean",
-			TutorialTrigger.InputActions.Look => "textures/ui/control_look",
+			InputActions.Lean => "textures/ui/control_lean",
+			InputActions.Look => "textures/ui/control_look",
 			_ => ""
 		};
 

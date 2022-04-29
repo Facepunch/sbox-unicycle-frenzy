@@ -1,4 +1,5 @@
-﻿using Facepunch.Customization;
+﻿
+using Facepunch.Customization;
 using Sandbox;
 using System;
 using System.Collections.Generic;
@@ -6,172 +7,186 @@ using System.Collections.Generic;
 internal partial class UnicyclePlayer : Sandbox.Player
 {
 
+    [Net]
+    public AnimEntity Citizen { get; set; }
+    [Net]
+    public UnicycleEntity Unicycle { get; set; }
+    [Net]
+    public List<Checkpoint> Checkpoints { get; set; } = new();
 	[Net]
-	public AnimEntity Terry { get; set; }
-	[Net]
-	public UnicycleEntity Unicycle { get; set; }
-	[Net]
-	public List<Checkpoint> Checkpoints { get; set; } = new();
+	public string Avatar { get; set; }
 
-	public const float MaxRenderDistance = 300f;
-	public const float RespawnDelay = 3f;
+    public const float MaxRenderDistance = 300f;
+    public const float RespawnDelay = 3f;
 
-	private TimeSince timeSinceDied;
-	private Clothing.Container clothing;
-	private UfNametag nametag;
-	private JumpIndicator jumpindicator;
-	private Particles speedParticle;
+    private TimeSince TimeSinceDied;
+    private Clothing.Container Clothing;
+    private UfNametag Nametag;
+    private JumpIndicator JumpIndicator;
+    private Particles SpeedParticle;
 
-	public override void Respawn()
-	{
-		base.Respawn();
+    public override void Respawn()
+    {
+        base.Respawn();
 
-		// todo: not sure I like this setup, might prefer it like CarEntity
-		// so the player is actually a normal terry instead of an invisible entity w/ controller
-		SetModel( "models/parts/seats/dev_seat.vmdl" );
-		EnableDrawing = false;
-		EnableAllCollisions = true;
-
-		Unicycle = new UnicycleEntity();
-		Unicycle.SetParent( this, null, Transform.Zero );
-
-		Terry = new AnimEntity( "models/citizen/citizen.vmdl" );
-		Terry.SetParent( this, null, Transform.Zero );
-		Terry.SetAnimParameter( "b_sit", true );
-
-		CameraMode = new UnicycleCamera();
-		Controller = new UnicycleController();
-		Animator = new UnicycleAnimator();
-
+        SetModel( "models/sbox_props/watermelon/watermelon.vmdl" );
 		SetupPhysicsFromAABB( PhysicsMotionType.Keyframed, new Vector3( -12, -12, 0 ), new Vector3( 12, 12, 64 ) );
 		RemoveCollisionLayer( CollisionLayer.Solid );
 
-		if ( clothing == null )
-		{
-			clothing = new();
-			clothing.LoadFromClient( Client );
-		}
+		EnableDrawing = false;
+        EnableAllCollisions = true;
 
-		clothing.DressEntity( Terry );
+        Unicycle = new UnicycleEntity();
+        Unicycle.SetParent( this, null, Transform.Zero );
+
+        Citizen = new AnimEntity( "models/citizen/citizen.vmdl" );
+		Citizen.SetParent( this, null, Transform.Zero );
+        Citizen.SetAnimGraph( "models/citizen_unicycle_frenzy.vanmgrph" );
+
+        CameraMode = new UnicycleCamera();
+        Controller = new UnicycleController();
+        Animator = new UnicycleAnimator();
+
+		Clothing ??= new();
+		Clothing.LoadFromClient( Client );
+        Clothing.DressEntity( Citizen );
+		Avatar = Client.GetClientData( "avatar" );
 
 		ResetMovement();
-		GotoBestCheckpoint();
-	}
+        GotoBestCheckpoint();
+    }
 
 	public override void ClientSpawn()
-	{
-		base.ClientSpawn();
+    {
+        base.ClientSpawn();
 
-		nametag = new( this );
-		speedParticle = Particles.Create( "particles/player/speed_lines.vpcf" );
+        Nametag = new( this );
 
 		if ( IsLocalPawn )
-			jumpindicator = new( this );
+		{
+			SpeedParticle = Particles.Create( "particles/player/speed_lines.vpcf" );
+			JumpIndicator = new( this );
+		}
+    }
+
+    public override void OnKilled()
+    {
+        base.OnKilled();
+
+        TimeSinceDied = 0;
+        EnableAllCollisions = false;
+        EnableDrawing = false;
+        CameraMode = new SpectateRagdollCamera();
+
+        Unicycle?.Delete();
+        Citizen?.Delete();
+
+        RagdollOnClient();
+    }
+
+    protected override void OnDestroy()
+    {
+        base.OnDestroy();
+
+        Crown?.Destroy();
+        JumpIndicator?.Delete();
+		Nametag?.Delete();
 	}
 
-	public override void OnKilled()
+    public override void Simulate( Client cl )
+    {
+		// don't simulate when spectating somebody
+        if ( SpectateTarget.IsValid() ) return;
+
+        if ( LifeState == LifeState.Alive )
+        {
+            var controller = GetActiveController();
+            controller?.Simulate( cl, this, GetActiveAnimator() );
+
+            if ( GetActiveController() == DevController )
+            {
+                ResetMovement();
+                ResetTimer();
+            }
+
+            if ( IsServer && InputActions.Spray.Pressed() )
+            {
+                Spray();
+            }
+        }
+
+        if ( LifeState == LifeState.Dead )
+        {
+            if ( IsServer && TimeSinceDied > RespawnDelay )
+                Respawn();
+        }
+
+        if ( InputActions.RestartAtCheckpoint.Pressed() || InputActions.RestartCourse.Pressed() )
+        {
+            if ( LifeState != LifeState.Dead )
+                AddRespawnOnClient();
+
+            if ( InputActions.RestartCourse.Pressed() )
+                ResetTimer();
+
+            Fall( false );
+            TimeSinceDied = Math.Max( TimeSinceDied, RespawnDelay - .5f );
+        }
+    }
+
+	private float TimePlayedCounter;
+	public override void FrameSimulate( Client cl )
 	{
-		base.OnKilled();
+		base.FrameSimulate( cl );
 
-		timeSinceDied = 0;
+		if ( !IsLocalPawn ) return;
 
-		EnableAllCollisions = false;
-		EnableDrawing = false;
+		TimePlayedCounter += Time.Delta;
+		if ( TimePlayedCounter < 1 ) return;
 
-		CameraMode = new SpectateRagdollCamera();
-
-		Unicycle?.Delete();
-		Terry?.Delete();
-
-		RagdollOnClient();
+		TimePlayedCounter = 0;
+		MapStats.Local.AddTimePlayed( 1f );
 	}
 
-	protected override void OnDestroy()
+	public override void PostCameraSetup( ref CameraSetup setup )
 	{
-		base.OnDestroy();
+		base.PostCameraSetup( ref setup );
 
-		crown?.Destroy();
-		jumpindicator?.Delete();
-	}
-
-	public override void Simulate( Client cl )
-	{
-		if ( SpectateTarget.IsValid() ) return;
-
-		if ( LifeState == LifeState.Alive )
-		{
-			var controller = GetActiveController();
-			controller?.Simulate( cl, this, GetActiveAnimator() );
-
-			if ( GetActiveController() == DevController )
-			{
-				ResetMovement();
-				ResetTimer();
-			}
-
-			if ( IsServer && Input.Pressed( InputButton.Flashlight ) )
-			{
-				Spray();
-			}
-		}
-
-		if ( LifeState == LifeState.Dead )
-		{
-			if ( IsServer && timeSinceDied > RespawnDelay )
-				Respawn();
-		}
-
-		if ( Input.Pressed( InputButton.Drop ) || Input.Pressed( InputButton.Reload ) )
-		{
-			if ( LifeState != LifeState.Dead )
-				AddRespawnOnClient();
-
-			if ( Input.Pressed( InputButton.Drop ) )
-				ResetTimer();
-
-			Fall( false );
-			timeSinceDied = Math.Max( timeSinceDied, RespawnDelay - .5f );
-		}
+		setup.Rotation *= Rotation.From( Tilt * .015f );
 	}
 
 	[Event.Frame]
-	private void UpdateRenderAlpha()
-	{
-		if ( Local.Pawn == this ) return;
-		if ( Local.Pawn == null ) return;
-		if ( !Terry.IsValid() || !Unicycle.IsValid() ) return;
+    private void UpdateRenderAlpha()
+    {
+        if ( Local.Pawn == this ) return;
+        if ( !Citizen.IsValid() || !Unicycle.IsValid() ) return;
 
-		var a = GetRenderAlpha();
+        var a = GetRenderAlpha();
+		Citizen.SetRenderAlphaRecursive( a );
+		Unicycle.SetRenderAlphaRecursive( a );
+    }
 
-		Terry.RenderColor = Terry.RenderColor.WithAlpha( a );
-
-		foreach ( var child in Terry.Children )
-		{
-			if ( child is not ModelEntity m || !child.IsValid() ) continue;
-			m.RenderColor = m.RenderColor.WithAlpha( a );
-		}
-
-		Unicycle.SetRenderAlphaOnAllParts( a );
-	}
-
-	private float targetSpeedParticle = 0;
-	private float currentSpeedParticle = 0;
+	private float targetSpeedParticle;
+	private float currentSpeedParticle;
 	[Event.Frame]
 	private void UpdateSpeedParticle()
 	{
-		if ( speedParticle == null ) return;
+		if ( SpeedParticle == null ) return;
 
+		// ?
 		var spd = Math.Min( Velocity.Length, 800 );
-		targetSpeedParticle = spd < 400 || Fallen ? 0 : ( spd - 400 ) / 400f;
+		targetSpeedParticle = spd < 400 || Fallen ? 0 : (spd - 400) / 400f;
 
 		var lerpSpd = targetSpeedParticle == 0 ? 6 : 1;
 
 		currentSpeedParticle = currentSpeedParticle.LerpTo( targetSpeedParticle, Time.Delta * lerpSpd );
-		speedParticle.SetPosition( 1, new Vector3( currentSpeedParticle, 0, 0 ) );
+		SpeedParticle.SetPosition( 1, new Vector3( currentSpeedParticle, 0, 0 ) );
 	}
 
 	public float GetRenderAlpha()
 	{
+		if ( !Local.Pawn.IsValid() ) return 1f;
+
 		var dist = Local.Pawn.Position.Distance( Position );
 		var a = 1f - dist.LerpInverse( MaxRenderDistance, MaxRenderDistance * .1f );
 		a = Math.Max( a, .15f );
@@ -181,44 +196,44 @@ internal partial class UnicyclePlayer : Sandbox.Player
 	}
 
 	[ServerCmd]
-	public static void SetSpectateTargetOnServer( int entityId )
-	{
-		if ( !ConsoleSystem.Caller.IsValid() ) return;
+    public static void ServerCmd_SetSpectateTarget( int entityId )
+    {
+        if ( !ConsoleSystem.Caller.IsValid() ) return;
 
-		var caller = ConsoleSystem.Caller.Pawn as UnicyclePlayer;
-		if ( !caller.IsValid() ) return;
+        var caller = ConsoleSystem.Caller.Pawn as UnicyclePlayer;
+        if ( !caller.IsValid() ) return;
 
-		var ent = Entity.FindByIndex( entityId ) as UnicyclePlayer;
-		if ( !ent.IsValid() ) ent = null;
+        var ent = Entity.FindByIndex( entityId ) as UnicyclePlayer;
+        if ( !ent.IsValid() ) ent = null;
 
-		caller.SpectateTarget = ent == caller ? null : ent;
-	}
+        caller.SpectateTarget = ent == caller ? null : ent;
+    }
 
-	[ClientRpc]
-	private void AddRespawnOnClient()
-	{
-		if ( !IsLocalPawn ) return;
-		MapStats.Local.AddRespawn();
-	}
+    [ClientRpc]
+    private void AddRespawnOnClient()
+    {
+        if ( !IsLocalPawn ) return;
+        MapStats.Local.AddRespawn();
+    }
 
-	[ClientRpc]
-	private void SetAchievementOnClient( string shortname, string map = null )
-	{
-		Achievement.Set( Client.PlayerId, shortname, map );
-	}
+    [ClientRpc]
+    private void SetAchievementOnClient( string shortname, string map = null )
+    {
+        Achievement.Set( Global.GameIdent, Client.PlayerId, shortname, map );
+    }
 
-	private TimeSince timeSinceSpray;
-	private void Spray()
-	{
-		if ( GroundEntity == null || Fallen ) return;
-		if ( timeSinceSpray < 3f ) return;
-		timeSinceSpray = 0;
+    private TimeSince timeSinceSpray;
+    private void Spray()
+    {
+        if ( GroundEntity == null || Fallen ) return;
+        if ( timeSinceSpray < 3f ) return;
+        timeSinceSpray = 0;
 
-		var sprayPart = Client.Components.Get<CustomizationComponent>().GetEquippedPart( PartType.Spray.ToString() );
-		var mat = Material.Load( sprayPart.AssetPath );
+        var sprayPart = Client.Components.Get<CustomizationComponent>().GetEquippedPart( PartType.Spray.ToString() );
+        var mat = Material.Load( sprayPart.AssetPath );
 
-		Decals.Place( mat, Position, Vector3.One * 50, Rotation.LookAt( Vector3.Up ) );
-	}
+        Decals.Place( mat, Position, Vector3.One * 50, Rotation.LookAt( Vector3.Up ) );
+    }
 
 }
 

@@ -31,7 +31,10 @@
 						_class = "PhysicsShapeBox"
 						parent_bone = ""
 						surface_prop = "default"
-						collision_prop = "default"
+						collision_group = ""
+						collision_interact_as = ""
+						collision_interact_with = ""
+						collision_interact_exclude = ""
 						origin = [ -0.021648, 0.0, 9.620211 ]
 						angles = [ 0.0, 0.0, 0.0 ]
 						dimensions = [ 1.952722, 10.0, 19.000336 ]
@@ -40,7 +43,10 @@
 						_class = "PhysicsShapeCapsule"
 						parent_bone = ""
 						surface_prop = "default"
-						collision_prop = "default"
+						collision_group = ""
+						collision_interact_as = ""
+						collision_interact_with = ""
+						collision_interact_exclude = ""
 						radius = 1.0
 						point0 = [ 0.0, 0.0, 19.130733 ]
 						point1 = [ 0.0, 0.0, 24.177593 ]

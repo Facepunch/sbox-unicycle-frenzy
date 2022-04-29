@@ -31,12 +31,13 @@ partial class UnicycleFrenzy : Sandbox.Game
 
 		if ( IsServer )
 		{
-			InitMapCycle();
-
 			foreach( var part in Customization.Config.Parts )
 			{
 				Precache.Add( part.AssetPath );
 			}
+
+			InitMapCycle();
+			_ = GameLoopAsync();
 		}
 	}
 
@@ -54,14 +55,21 @@ partial class UnicycleFrenzy : Sandbox.Game
 			(cl.Pawn as UnicyclePlayer).BestTime = new System.Random().Next( 180, 1800 );
 		}
 
-		UfChatbox.AddInfo( To.Everyone, $"{cl.Name} has joined the game" );
+		UfChatbox.AddChat( To.Everyone, "Server", $"{cl.Name} has joined the game", sfx: "player.joined" );
+
+		NotifyPlayersNeeded();
 	}
 
-	public override void ClientDisconnect( Client cl, NetworkDisconnectionReason reason )
+	public override async void ClientDisconnect( Client cl, NetworkDisconnectionReason reason )
 	{
 		base.ClientDisconnect( cl, reason );
 
-		UfChatbox.AddInfo( To.Everyone, $"{cl.Name} has left the game" );
+		UfChatbox.AddChat( To.Everyone, "Server", $"{cl.Name} has left the game", sfx: "player.left" );
+
+		// this lets the client fully disconnect before we count and notify
+		await Task.Delay( 1 );
+
+		NotifyPlayersNeeded();
 	}
 
 	public override void OnKilled( Client client, Entity pawn )
@@ -80,20 +88,6 @@ partial class UnicycleFrenzy : Sandbox.Game
 
 		lastFallMessage = idx;
 		return string.Format( fallMessages[idx], playerName );
-	}
-
-	private float secondCounter = 0;
-	public override void FrameSimulate( Client cl )
-	{
-		base.FrameSimulate( cl );
-
-		secondCounter += Time.Delta;
-
-		if ( secondCounter > 1f )
-		{
-			MapStats.Local.AddTimePlayed( secondCounter );
-			secondCounter = 0;
-		}
 	}
 
 	public System.Action CustomizationChanged;

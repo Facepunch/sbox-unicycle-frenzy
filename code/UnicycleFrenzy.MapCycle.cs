@@ -1,29 +1,23 @@
-﻿using Sandbox;
+﻿
+using Sandbox;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 
 internal partial class UnicycleFrenzy
 {
 
-	//
-	// NOTE: Add new maps in the in-game setup menu
-	//
-
-	[ConVar.Replicated( "uf_endgame_duration" )]
-	public static float EndGameDuration { get; set; } = 60 * 1.5f;
-
-	[Net]
-	public float TimeLeft { get; set; }
 	[Net]
 	public string NextMap { get; set; }
 	[Net]
-	public Dictionary<long, string> MapVotes { get; set; } = new();
+	public Dictionary<long, string> MapVotes { get; set; }
 	[Net]
-	public List<string> MapCycle { get; set; } = new();
+	public List<string> MapOptions { get; set; }
 
 	private async void InitMapCycle()
 	{
-		TimeLeft = 1800;
+		Host.AssertServer();
+
 		NextMap = Global.MapName;
 
 		var pkg = await Package.Fetch( Global.GameIdent, true );
@@ -33,71 +27,77 @@ internal partial class UnicycleFrenzy
 			return;
 		}
 
-		var availablemaps = pkg.GetMeta<List<string>>( "MapList" );
-		availablemaps.RemoveAll( x => x == Global.MapName );
+		var maps = pkg.GetMeta<List<string>>( "MapList" )
+			.Where( x => x != Global.MapName )
+			.OrderBy( x => Rand.Int( 99999 ) )
+			.Take( 5 )
+			.ToList();
 
-		for ( int i = 0; i < 5; i++ )
-		{
-			var chosen = Rand.FromList( availablemaps );
-			availablemaps.Remove( chosen );
-			MapCycle.Add( chosen );
-		}
-
-		NextMap = Rand.FromArray( MapCycle.Where( x => x != Global.MapName ).ToArray() );
+		MapOptions = maps;
+		NextMap = Rand.FromList( maps );
 	}
 
-	[Event.Tick.Server]
-	private void OnTick()
+	private async void ChangeMapWithDelay( string mapident, float delay )
 	{
-		if ( TimeLeft > 0 )
-		{
-			TimeLeft -= Time.Delta;
+		Host.AssertServer();
 
-			if ( TimeLeft <= 0 )
+		delay *= 1000f;
+		var timer = 0f;
+		while( timer < delay )
+		{
+			await Task.Delay( 100 );
+
+			timer += 100;
+
+			if( timer % 1000 == 0 )
 			{
-				ChangeMapInternal( NextMap );
+				var timeleft = ( delay - timer ) / 1000f;
+				UfChatbox.AddChat( To.Everyone, "Server", $"{timeleft} seconds remaining." );
 			}
 		}
-	}
 
-	public void ChangeMap( string mapident )
-	{
-		if ( !IsServer && !Global.IsListenServer ) return;
+		UfChatbox.AddChat( To.Everyone, "Server", $"Changing level to {mapident}" );
 
-		ChangeMapInternal( mapident );
+		await Task.Delay( 3000 );
+
+		ServerCmd_ChangeMap( mapident );
 	}
 
 	[ServerCmd]
-	private static void ChangeMapInternal( string mapident )
+	public static void ServerCmd_ChangeMap( string mapident )
 	{
 		Global.ChangeLevel( mapident );
 	}
 
 	[ServerCmd]
-	public static void SetMapVote( string mapIdent )
+	public static void ServerCmd_SetMapVote( string mapIdent )
 	{
-		if ( !ConsoleSystem.Caller.IsValid() ) return;
-
-		if(Game.MapVotes.ContainsKey(ConsoleSystem.Caller.PlayerId)
-			&& Game.MapVotes[ConsoleSystem.Caller.PlayerId] == mapIdent )
-		{
+		if ( !ConsoleSystem.Caller.IsValid() ) 
 			return;
-		}
+
+		if ( Game.MapVotes.TryGetValue( ConsoleSystem.Caller.PlayerId, out var vote ) && vote == mapIdent )
+			return;
 
 		Game.MapVotes[ConsoleSystem.Caller.PlayerId] = mapIdent;
+		Game.NextMap = Game.MapVotes.OrderByDescending( x => x.Value ).First().Value;
 
-		var sort = new Dictionary<string, int>();
-		foreach( var kvp in Game.MapVotes )
+		UfChatbox.AddChat( To.Everyone, "Server", string.Format( "{0} voted for {1}", ConsoleSystem.Caller.Name, mapIdent ) );
+
+		if ( CanForceChange( mapIdent ) )
 		{
-			if ( !sort.ContainsKey( kvp.Value ) )
-			{
-				sort.Add( kvp.Value, 0 );
-			}
-			sort[kvp.Value]++;
+			UfChatbox.AddChat( To.Everyone, "Server", "A new level has been voted for!" );
+			Game.ChangeMapWithDelay( mapIdent, 5f );
 		}
-		Game.NextMap = sort.OrderByDescending( x => x.Value ).First().Key;
+	}
 
-		UfChatbox.AddInfo( To.Everyone, string.Format( "{0} voted for {1}", ConsoleSystem.Caller.Name, mapIdent ) );
+	private static bool CanForceChange( string mapIdent )
+	{
+		if ( Game.GameState != GameStates.FreePlay ) return false;
+
+		var half = MathF.Ceiling( Client.All.Count / 2f );
+		if ( Game.MapVotes.Values.Count( x => x == mapIdent ) >= half ) return true;
+
+		return false;
 	}
 
 }

@@ -21,7 +21,7 @@ internal class MapVoteButton : Button
 	{
 		base.OnClick( e );
 
-		UnicycleFrenzy.SetMapVote( MapIdent );
+		UnicycleFrenzy.ServerCmd_SetMapVote( MapIdent );
 	}
 
 	private async void SetThumbnail()

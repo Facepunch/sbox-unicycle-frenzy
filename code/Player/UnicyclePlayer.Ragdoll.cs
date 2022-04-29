@@ -6,16 +6,10 @@ internal partial class UnicyclePlayer
 
 	private ModelEntity RagdollModel( ModelEntity modelEnt )
 	{
-		if ( !modelEnt.IsValid() )
-		{
-			Log.Error( "??" );
-			return null;
-		}
-
 		var ent = new ModelEntity();
-		ent.Position = Position;
-		ent.Rotation = Rotation;
-		ent.Scale = Scale;
+		ent.Position = modelEnt.Position;
+		ent.Rotation = modelEnt.Rotation;
+		ent.Scale = modelEnt.Scale;
 		ent.MoveType = MoveType.Physics;
 		ent.UsePhysicsCollision = true;
 		ent.EnableAllCollisions = true;
@@ -29,8 +23,8 @@ internal partial class UnicyclePlayer
 		ent.EnableHitboxes = true;
 		ent.EnableAllCollisions = true;
 		ent.SurroundingBoundsMode = SurroundingBoundsType.Physics;
-		ent.RenderColor = RenderColor;
-		ent.PhysicsGroup.Velocity = Velocity;
+		ent.RenderColor = modelEnt.RenderColor;
+		ent.PhysicsGroup.Velocity = modelEnt.Velocity;
 
 		ent.SetInteractsAs( CollisionLayer.Debris );
 		ent.SetInteractsWith( CollisionLayer.WORLD_GEOMETRY );
@@ -76,31 +70,18 @@ internal partial class UnicyclePlayer
 	[ClientRpc]
 	private void RagdollOnClient()
 	{
-		// todo: might be able to tidy up the player's hierarchy and networked life/death cycle 
-		//		 so we're not paranoid about an nre here
-		//		 maybe also predicted ragdolling to smooth out high ping deaths
-
-		ModelEntity corpse = null;
-
-		if ( Terry.IsValid() )
-		{
-			corpse = RagdollModel( Terry );
-		}
-
-		if ( Unicycle.IsValid() )
-		{
-			RagdollModel( Unicycle.FrameModel );
-			RagdollModel( Unicycle.WheelModel );
-			RagdollModel( Unicycle.SeatModel );
-		}
-
+		if ( !Citizen.IsValid() || !Unicycle.IsValid() ) return;
 		if ( Local.Pawn is not UnicyclePlayer pl ) return;
 
-		if( Local.Pawn == this || pl.SpectateTarget == this )
+		if ( IsLocalPawn || pl.SpectateTarget == this )
+		{
+			pl.Corpse = RagdollModel( Citizen );
 			new Perlin( 2f, 2, 3 );
+		}
 
-		if ( corpse.IsValid() )
-			pl.Corpse = corpse;
+		RagdollModel( Unicycle.FrameModel );
+		RagdollModel( Unicycle.WheelModel );
+		RagdollModel( Unicycle.SeatModel );
 	}
 
 }
