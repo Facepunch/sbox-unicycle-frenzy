@@ -18,7 +18,6 @@ internal class TrailPassTab : Panel
 	private void Rebuild()
 	{
 		BuildRenderScene();
-		BuildItemList();
 	}
 
 	private int setxp;
@@ -40,19 +39,6 @@ internal class TrailPassTab : Panel
 		var fillPercent = ( (float)current / max) * 100;
 		ExperienceFill.Style.Width = Length.Percent( fillPercent );
 		ExperienceLabel.Text = $"{current} xp";
-	}
-
-	private void BuildItemList()
-	{
-		ItemCanvas.DeleteChildren();
-
-		var trailpass = TrailPass.Current;
-
-		foreach( var item in trailpass.Items )
-		{
-			var itemicon = new TrailPassItemIcon( item );
-			itemicon.Parent = ItemCanvas;
-		}
 	}
 
 	private void BuildRenderScene()

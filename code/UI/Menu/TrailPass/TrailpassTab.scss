@@ -36,15 +36,6 @@ TrailpassTab {
     }
   }
 
-  .unlocks {
-    flex-grow: 1;
-    justify-content: center;
-    align-items: center;
-    width: 95%;
-    margin: 0 auto;
-    margin-bottom: 50px;
-  }
-
   .progress {
     height: 32px;
     background-color: black;
@@ -84,8 +75,16 @@ TrailpassTab {
   }
 }
 
+TrailPassItemSlider {
+  flex-grow: 1;
+  width: 65%;
+  height: 285px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+
 TrailPassItemIcon {
-  width: 175px;
+  min-width: 175px;
   height: 235px;
   margin-right: 24px;
   flex-direction: column;
