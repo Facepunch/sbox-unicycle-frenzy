@@ -24,4 +24,12 @@ internal class TrailPassItemSlider : Panel
 		}
 	}
 
+	public override void OnMouseWheel( float value )
+	{
+		base.OnMouseWheel( value );
+
+		ScrollVelocity.x = ScrollVelocity.y;
+		ScrollVelocity.y = 0;
+	}
+
 }
