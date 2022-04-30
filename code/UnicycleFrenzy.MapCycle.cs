@@ -20,21 +20,30 @@ internal partial class UnicycleFrenzy
 
 		NextMap = Global.MapName;
 
-		var pkg = await Package.Fetch( Global.GameIdent, true );
-		if ( pkg == null )
+		var query = new Package.Query
 		{
-			Log.Error( "Failed to load map cycle" );
-			return;
+			Type = Package.Type.Map,
+			Order = Package.Order.User,
+			Take = 16,
+		};
+
+		query.Tags.Add( "game:facepunch.unicycle_frenzy" ); // maybe this should be a "for this game" type of thing instead
+
+		var packages = await query.RunAsync( default );
+		var maps = packages.Select( x => x.FullIdent ).ToList();
+
+		var pkg = await Package.Fetch( Global.GameIdent, true );
+		if ( pkg != null )
+		{
+			maps.AddRange( pkg.GetMeta<List<string>>( "MapList", new() ) );
 		}
 
-		var maps = pkg.GetMeta<List<string>>( "MapList" )
+		MapOptions = maps.OrderBy( x => Rand.Int( 9999 ) )
+			.Distinct()
 			.Where( x => x != Global.MapName )
-			.OrderBy( x => Rand.Int( 99999 ) )
 			.Take( 5 )
 			.ToList();
-
-		MapOptions = maps;
-		NextMap = Rand.FromList( maps );
+		NextMap = Rand.FromList( MapOptions.ToList() );
 	}
 
 	private async void ChangeMapWithDelay( string mapident, float delay )
