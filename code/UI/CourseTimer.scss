@@ -58,10 +58,31 @@ CourseTimer {
   .menu-info {
     position: absolute;
     top: 64px;
-    left: 125px;
+    left: 84px;
     font-size: 16px;
     text-stroke: 4px #000;
     text-shadow: $text-shadow-black;
     flex-direction: column;
+
+    .text-container {
+      align-items: center;
+      justify-content: center;
+
+        .is-styled {
+          margin-right: 8px;
+          font-size: 20px;
+        }
+
+        .key {
+          border-radius: 4px;
+          background: $grey-gradient;
+          box-shadow: $box-shadow-hard-dark-purple;
+          border: 2px solid $darker-purple;
+          padding: 4px 4px 0px 8px;
+          font-size: 20px;
+        }
+    }
   }
+
+
 }
