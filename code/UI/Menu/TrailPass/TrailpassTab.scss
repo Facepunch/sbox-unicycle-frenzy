@@ -10,10 +10,10 @@ TrailpassTab {
     height: 100%;
     top: 0;
     left: 0;
-    background-color: black;
+    background: transparent;
 
     ScenePanel {
-      box-shadow: 2px 2px 4px black;
+      box-shadow: 2px 2px 4px transparent;
     }
   }
 
@@ -38,7 +38,8 @@ TrailpassTab {
 
   .progress {
     height: 32px;
-    background-color: black;
+    background-color: $grey;
+    border: 4px solid #000;
     width: 95%;
     margin: 0 auto;
     margin-bottom: 48px;
@@ -46,30 +47,44 @@ TrailpassTab {
 
     .xp {
       position: absolute;
-      font-family: $stylefont;
-      font-size: 18px;
-      text-shadow: 1px 1px 2px black;
+      font-family: $title-font;
+      
+    text-stroke: 4px #000;
+    text-shadow: 2px 2px 0 rgba(#000, 1);
+      text-transform: uppercase;
+      
     }
 
     .xp.min {
-      left: 5px;
-      bottom: -25px;
+      color: $light-grey;
+      font-size: 20px;
+      left: -10px;
+      bottom: -40px;
+      z-index: 2;
+
     }
 
     .xp.max {
-      right: 5px;
-      bottom: -25px;
+      color: $light-grey;
+      font-size: 20px;
+      right: -10px;
+      bottom: -40px;
+      z-index: 2;
+      
     }
 
     .xp.current {
+      font-size: 30px;
       position: absolute;
-      right: 10px;
+      right: 8px;
+      top: -20px;
     }
 
     .fill {
       width: 50%;
-      background-color: $secondary;
-      margin: 2px;
+      background-color: $pink;
+      border: 4px solid #000;
+      margin: -8px;
       transition: width 0.35s ease-in;
     }
   }
@@ -77,19 +92,27 @@ TrailpassTab {
 
 TrailPassItemSlider {
   flex-grow: 1;
-  width: 65%;
-  height: 285px;
+  width: 95%;
+  height: 400px;
   margin: 0 auto;
   margin-bottom: 50px;
   overflow: scroll;
+  align-items: flex-end;
+  padding-bottom: 16px;
 }
 
 TrailPassItemIcon {
-  min-width: 175px;
-  height: 235px;
+  background-color: $light-purple;
+  box-shadow: 4px 4px 0 $darker-purple;
+  align-items: center;
+  justify-content: center;
+  min-width: 274px;
+  width: 274px;
+  height: 274px;
   margin-right: 24px;
   flex-direction: column;
   align-items: center;
+  padding: 32px;
 
   &:last-child {
     margin-right: 0;
@@ -122,18 +145,18 @@ TrailPassItemIcon {
   }
 
   .cost {
-    background-color: rgba($secondary 1);
-    height: 38px;
-    width: 65%;
-    margin-top: 8px;
     font-size: 20px;
-    font-family: $stylefont;
+    font-family: $title-font;
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    text-shadow: 0px 0px 2px black;
+    text-stroke: 5px #000;
+    text-shadow: 3px 3px 0 rgba(#000, 1);
     transition: all 0.08s ease-in;
-    box-shadow: 0 0 20px black;
+    position: absolute;
+    bottom: -14px;
+    left: 0;
+    right: 0;
 
     .nut {
       background-image: url("textures/ui/nut.png");
@@ -161,10 +184,11 @@ TrailPassItemIcon {
   }
 
   &:not(.unlockable) .cost {
-    background-color: rgba(black 0.75);
-    color: rgba(white 0.5);
+    //background-color: rgba(black 0.75);
+    color: #fff;
     cursor: none;
     box-shadow: none;
+    opacity: 0.5;
   }
 
   &.unlocked .cost-unlocked {
@@ -173,9 +197,9 @@ TrailPassItemIcon {
 
   .thumbnail {
     width: 100%;
+    height: 100%;
     flex-grow: 1;
-    background-color: black;
-    border: 2px solid transparent;
+    
     cursor: pointer;
     transition: all 0.08s ease-in;
 

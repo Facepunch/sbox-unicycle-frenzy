@@ -10,16 +10,14 @@ Toaster {
   z-index: 5;
 
   Toast {
-    padding: 10px 30px;
-    padding-left: 25px;
-    background-color: red;
+    padding: 2px 16px;
+    background-color: $pink;
     margin-bottom: 10px;
     text-shadow: 2px 2px 1px black;
-    font-size: 16px;
-    box-shadow: 0px 0px 30px black;
+    font-size: 30px;
+    box-shadow: $box-shadow-black;
     transition: all 0.25s ease-out;
     opacity: 1;
-    height: 48px;
     align-items: center;
     justify-content: center;
     text-stroke: 4px rgba(black 0.5);
@@ -39,6 +37,7 @@ Toaster {
       padding-top: 3px;
       margin-right: 10px;
     }
+
 
     &.affirm {
       background-color: $green;
