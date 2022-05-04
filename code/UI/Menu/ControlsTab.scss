@@ -11,22 +11,6 @@ ControlsTab {
       margin-bottom: 0;
     }
 
-    .key {
-      align-items: center;
-      background: $grey-gradient;
-      border: 2px solid #000;
-      border-radius: 8px;
-      box-shadow: $box-shadow-black;
-      font-size: 20px;
-      min-width: 40px;
-      padding-left: 8px;
-      padding-right: 8px;
-      height: 40px;
-      text-align: center;
-      margin-right: 10px;
-      text-transform: uppercase;
-    }
-
     .action {
       font-size: 18px;
     }

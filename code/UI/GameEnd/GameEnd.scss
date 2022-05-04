@@ -4,7 +4,7 @@
 GameEnd {
     opacity: 0;
     position: absolute;
-    background-image: linear-gradient(rgba($bg, .5), rgba($blue .5));
+    background-image: $purple-gradient;
     backdrop-filter: blur(125px);
     width: 100%;
     height: 100%;
@@ -17,13 +17,13 @@ GameEnd {
     }
 
     .timer {
+        color: $pink;
         position: absolute;
         left: 50%;
-        top: 20px;
+        top: 30px;
         transform: translateX(-50%);
-        font-size: 32px;
-        font-family: $stylefont;
-        color: $secondary;
+        font-size: 48px;
+        font-family: $title-font;
         text-shadow: 1px 1px 2px black;
     }
 
@@ -31,7 +31,7 @@ GameEnd {
         position: absolute;
         width: 80%;
         left: 10%;
-        bottom: 40px;
+        top: 180px;
         justify-content: center;
 
         PodiumPanel {
@@ -42,7 +42,7 @@ GameEnd {
             align-items: center;
             font-size: 20px;
             text-shadow: 1px 1px 2px black;
-            font-family: $stylefont;
+            
 
             .info {
                 flex-direction: column;
@@ -57,21 +57,26 @@ GameEnd {
 
             }
 
+            .name {
+                margin-bottom: 8px;
+                font-family: $title-font;
+            }
+
             &.1 .name {
                 font-size: 36px;
-                color: $primary;
+                color: $pink;
             }
 
             &.2 .name {
                 font-size: 30px;
-                color: $secondary;
+                color: $orange-light;
             }
         }
     }
 
     .map-canvas {
         position: absolute;
-        top: 80px;
+        bottom: 64px;
         left: 10%;
         width: 80%;
         flex-wrap: wrap;
@@ -79,49 +84,5 @@ GameEnd {
         justify-content: space-between;
         padding: $padding;
         border-radius: $radius;
-
-        MapVoteButton {
-            padding-right: 20px;
-            cursor: pointer;
-            transition: all .15s ease-out;
-            margin-bottom: 10px;
-            width: 300px;
-            height: 300px;
-            padding-bottom: 40px;
-
-            &:hover, &.active {
-                transform: scale(1.1);
-
-                .votes {
-                    background-color: rgba($primary 1);
-                }
-            }
-
-            .thumb {
-                border-radius: 4px 4px 0 0;
-                background-image: url(textures/ui/map-thumbnail-placeholder.png);
-                background-position: center center;
-                background-size: cover;
-                background-repeat: no-repeat;
-                width: 100%;
-                height: 100%;
-            }
-
-            .votes {
-                position: absolute;
-                bottom: 0;
-                left: 0;
-                height: 40px;
-                background-color: $bg;
-                border-radius: 0 0 4px 4px;
-                width: 100%;
-                font-family: $stylefont;
-                justify-content: center;
-                align-items: center;
-                font-size: 20px;
-                text-shadow: 1px 1px 2px black;
-                transition: all .15s ease-out;
-            }
-        }
     }
 }

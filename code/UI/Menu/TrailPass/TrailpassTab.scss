@@ -2,7 +2,6 @@
 
 TrailpassTab {
   flex-direction: column;
-  margin-top: 64px;
 
   .renderscene {
     position: absolute;
@@ -39,18 +38,17 @@ TrailpassTab {
   .progress {
     height: 32px;
     background-color: $grey;
-    border: 4px solid #000;
-    width: 95%;
+    border: 4px solid $dark-purple;
+    width: 80%;
     margin: 0 auto;
-    margin-bottom: 48px;
-    padding: 2px;
+    margin-bottom: 64px;
+    padding: 0px;
 
     .xp {
       position: absolute;
       font-family: $title-font;
-      
-    text-stroke: 4px #000;
-    text-shadow: 2px 2px 0 rgba(#000, 1);
+      text-stroke: 4px #000;
+      text-shadow: 2px 2px 0 rgba(#000, 1);
       text-transform: uppercase;
       
     }
@@ -76,14 +74,14 @@ TrailpassTab {
     .xp.current {
       font-size: 30px;
       position: absolute;
-      right: 8px;
-      top: -20px;
+      top: -12px;
+      left: 16px;
     }
 
     .fill {
       width: 50%;
       background-color: $pink;
-      border: 4px solid #000;
+      border: 4px solid $dark-purple;
       margin: -8px;
       transition: width 0.35s ease-in;
     }

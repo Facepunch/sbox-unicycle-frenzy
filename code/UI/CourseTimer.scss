@@ -63,10 +63,13 @@ CourseTimer {
     text-stroke: 4px #000;
     text-shadow: $text-shadow-black;
     flex-direction: column;
+    align-items: flex-start;
+    
 
     .text-container {
       align-items: center;
       justify-content: center;
+      margin-bottom: 16px;
 
         .is-styled {
           margin-right: 8px;
