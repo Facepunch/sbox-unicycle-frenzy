@@ -29,7 +29,7 @@ internal class UnicycleUnstuck : Unstuck
 			if ( BasePlayerController.Debug )
 			{
 				DebugOverlay.Text( Controller.Position, $"[stuck in {result.Entity}]", Color.Red );
-				Box( result.Entity, Color.Red );
+				//Box( result.Entity, Color.Red );
 			}
 		}
 
