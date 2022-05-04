@@ -72,6 +72,7 @@ CourseTimer {
       margin-bottom: 16px;
 
         .is-styled {
+          color: $orange-light;
           margin-right: 8px;
           font-size: 20px;
         }
@@ -81,7 +82,6 @@ CourseTimer {
           background: $grey-gradient;
           box-shadow: $box-shadow-hard-dark-purple;
           border: 2px solid $darker-purple;
-          
           font-size: 20px;
         }
     }
