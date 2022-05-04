@@ -15,11 +15,11 @@ internal partial class UnicyclePlayer
 		ent.EnableAllCollisions = true;
 		ent.CollisionGroup = CollisionGroup.Debris;
 		ent.SetModel( modelEnt.GetModelName() );
+		ent.SetupPhysicsFromModel( PhysicsMotionType.Dynamic );
 		ent.CopyBonesFrom( modelEnt );
 		ent.CopyBodyGroups( modelEnt );
 		ent.CopyMaterialGroup( modelEnt );
 		ent.TakeDecalsFrom( modelEnt );
-		ent.SetupPhysicsFromModel( PhysicsMotionType.Dynamic );
 		ent.EnableHitboxes = true;
 		ent.EnableAllCollisions = true;
 		ent.SurroundingBoundsMode = SurroundingBoundsType.Physics;
@@ -60,11 +60,12 @@ internal partial class UnicyclePlayer
 	private void RagdollOnClient()
 	{
 		if ( !Citizen.IsValid() || !Unicycle.IsValid() ) return;
-		if ( Local.Pawn is not UnicyclePlayer pl ) return;
 
-		if ( IsLocalPawn || pl.SpectateTarget == this )
+		var corpse = RagdollModel( Citizen );
+
+		if ( Local.Pawn is UnicyclePlayer pl && ( IsLocalPawn || pl.SpectateTarget == this ) )
 		{
-			pl.Corpse = RagdollModel( Citizen );
+			pl.Corpse = corpse;
 			new Perlin( 2f, 2, 3 );
 		}
 
