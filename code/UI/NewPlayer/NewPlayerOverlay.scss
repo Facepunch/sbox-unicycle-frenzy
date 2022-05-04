@@ -6,8 +6,8 @@ NewPlayerOverlay {
     top: 25%;
     right: 15%;
     width: 20%;
-    height: 35%;
-    background-color: rgba($dark-purple .95);
+    background-color: $light-purple;
+    box-shadow: $box-shadow-hard-dark-purple;
     pointer-events: all;
     flex-direction: column;
     padding: $padding;
@@ -24,36 +24,54 @@ NewPlayerOverlay {
     .content {
         flex-grow: 1;
         flex-direction: column;
+        padding: 16px 16px 30px 16px;
+        font-size: 18px;
+    }
+
+    .title {
+        color: $pink;
+        font-size: 40px;
+        margin-top: -64px;
     }
 
     .footer {
         min-height: 32px;
         flex-direction: row;
+        padding: 0 16px;
+        margin-bottom: -30px;
 
-        button {
-            padding: 8px;
-            font-size: 20px;
-            font-family: $stylefont;
-            border-radius: $smallradius;
-            flex-grow: 2;
-            background-color: $bg;
-            margin-right: 4px;
-            justify-content: center;
-            cursor: pointer;
-            text-shadow: 1px 1px 1px black;
-
-            &:hover {
-                background-color: $primary;
-            }
-
-            &:active {
-                background-color: white;
-            }
+        .button {
+            margin-right: 16px;
 
             &:last-child {
                 margin-right: 0;
             }
         }
+
+        // button {
+        //     padding: 8px;
+        //     font-size: 20px;
+        //     font-family: $stylefont;
+        //     border-radius: $smallradius;
+        //     flex-grow: 2;
+        //     background-color: $bg;
+        //     margin-right: 4px;
+        //     justify-content: center;
+        //     cursor: pointer;
+        //     text-shadow: 1px 1px 1px black;
+
+        //     &:hover {
+        //         background-color: $primary;
+        //     }
+
+        //     &:active {
+        //         background-color: white;
+        //     }
+
+        //     &:last-child {
+        //         margin-right: 0;
+        //     }
+        // }
     }
 
     &.open {
