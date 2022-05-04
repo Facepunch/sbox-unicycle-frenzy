@@ -52,6 +52,8 @@ public partial class UfChatbox : Panel
 	public override void Tick()
 	{
 		base.Tick();
+		
+		SetClass( "topleft", GameEnd.IsOpen );
 
 		if ( !IsOpen ) return;
 

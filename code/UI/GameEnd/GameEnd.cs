@@ -7,6 +7,8 @@ using System;
 internal class GameEnd : Panel
 {
 
+	public static bool IsOpen;
+
 	public Panel MapCanvas { get; set; }
 	public Panel PodiumCanvas { get; set; }
 	public string TimeLeft => CourseTimer.FormattedTimeMs( UnicycleFrenzy.Game.StateTimer );
@@ -19,6 +21,7 @@ internal class GameEnd : Panel
 		var open = UnicycleFrenzy.Game.GameState == UnicycleFrenzy.GameStates.End || manuallyopened;
 
 		SetClass( "open", open );
+		IsOpen = open;
 
 		if ( !open ) return;
 
