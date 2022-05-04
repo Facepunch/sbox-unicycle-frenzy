@@ -45,22 +45,11 @@ internal partial class UnicyclePlayer
 			clothing.CopyMaterialGroup( e );
 		}
 
-		Juice.Alpha( 1, .5f, 0 )
+		Juice.Scale( 1, 1.1f, 0f )
 			.WithDelay( 7f )
 			.WithTarget( ent )
-			.WithDuration( 1f )
-			.WithEasing( EasingType.Linear );
-
-		foreach( var child in ent.Children )
-		{
-			if ( child is not ModelEntity ) continue;
-
-			Juice.Alpha( 1, .5f, 0 )
-				.WithDelay( 7f )
-				.WithTarget( child )
-				.WithDuration( 1f )
-				.WithEasing( EasingType.Linear );
-		}
+			.WithDuration( .75f )
+			.WithEasing( EasingType.EaseIn );
 
 		ent.DeleteAsync( 10.0f );
 
