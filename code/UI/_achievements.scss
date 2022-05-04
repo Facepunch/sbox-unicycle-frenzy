@@ -1,0 +1,71 @@
+@import "vars.scss";
+
+.achievements {
+  flex-direction: column;
+  margin: 64px 64px 64px 0;
+
+  .progress-bar {
+    margin-bottom: 20px;
+  }
+}
+
+.achievement-list {
+  flex-direction: column;
+  height: 100%;
+  overflow: scroll;
+}
+
+.achievement {
+  flex-shrink: 0;
+  margin-bottom: 16px;
+  width: 100%;
+  transition: all 0.15s ease;
+
+  &:hover {
+    transform: scale(1.1);
+    .achievement-body {
+      opacity: 1;
+    }
+  }
+
+  &.completed {
+    opacity: 1;
+    .achievement-icon {
+      border: 4px solid $green;
+      background: $achievement-gradient;
+    }
+    .achievement-body {
+      opacity: 1;
+    }
+    .achievement-body .title {
+      color: $pink;
+    }
+  }
+
+  .achievement-icon {
+    background-color: $light-purple;
+    box-shadow: $box-shadow-black;
+    width: 100px;
+    height: 100px;
+    margin-right: 16px;
+    background-size: 100%;
+  }
+
+  .achievement-body {
+    opacity: 0.5;
+    flex-direction: column;
+    justify-content: center;
+
+    .title {
+      text-stroke: 4px #000;
+      text-shadow: $text-shadow-black-4;
+      font-size: 26px;
+      color: $light-grey;
+      white-space: nowrap;
+    }
+    .subtitle {
+      font-size: 18px;
+      text-shadow: $text-shadow-black;
+    }
+  }
+}

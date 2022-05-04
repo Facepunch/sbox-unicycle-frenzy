@@ -3,7 +3,10 @@
 
 <root>
 
-    <label class="timer" @text="TimeLeft">99:99</label>
+    <div class="game-timer">
+        <label class="subtitle is-styled">Time Remaining</label>
+        <label class="title"@text="TimeLeft">99:99</label>
+    </div>
     <div @ref="MapCanvas" class="map-canvas"></div>
     <div class="podiums" @ref="PodiumCanvas"></div>
 

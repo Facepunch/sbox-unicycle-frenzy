@@ -1,0 +1,72 @@
+@import "vars.scss";
+
+.title {
+  font-family: $title-font;
+
+  &.section-title {
+    color: $orange-light;
+    font-size: 40px;
+    margin-bottom: 16px;
+    text-stroke: 2px #000;
+    text-shadow: 3px 3px 0 rgba(#000, 1);
+  }
+}
+
+.is-size-1 {
+  font-size: 40px;
+}
+
+.is-size-2 {
+  font-size: 32px;
+}
+
+.is-size-3 {
+  font-size: 24px;
+}
+
+.is-size-4 {
+  font-size: 20px;
+}
+
+.is-size-5 {
+  font-size: 18px;
+}
+
+.is-size-6 {
+  font-size: 16px;
+}
+
+.subtitle {
+  font-family: $body-font-light;
+}
+
+.is-styled {
+  text-stroke: 4px #000;
+  text-shadow: 2px 2px 0 rgba(#000, 1);
+}
+
+.section-header {
+  flex-direction: row;
+  margin-bottom: 16px;
+
+  .section-title {
+    flex-grow: 1;
+  }
+}
+
+.key {
+  align-items: center;
+  background: $grey-gradient;
+  border: 2px solid #000;
+  border-radius: 8px;
+  box-shadow: $box-shadow-black;
+  font-size: 20px;
+  font-family: $body-font;
+  min-width: 40px;
+  padding-left: 8px;
+  padding-right: 8px;
+  height: 40px;
+  text-align: center;
+  margin-right: 10px;
+  text-transform: uppercase;
+}

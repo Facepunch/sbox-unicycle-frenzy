@@ -1,13 +1,13 @@
 ﻿using Sandbox.UI;
 
 [UseTemplate]
-[NavigatorTarget( "menu/stats" )]
+[NavigatorTarget("menu/stats")]
 internal class StatsTab : NavigatorPanel
 {
 
-	public StatsTab()
-	{
-		Navigate( "menu/stats/details" );
-	}
+    public StatsTab()
+    {
+        //Navigate( "menu/stats/details" );
+    }
 
 }

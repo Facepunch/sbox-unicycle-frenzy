@@ -2,14 +2,22 @@
 <link rel="stylesheet" href="CustomizeTab.scss" />
 
 <root>
+    <div class="container">
+        <div class="columns ">
+            <div class="column is-5">
+            <div class="preview gamepanel">
+                <CustomizeRenderScene @ref="RenderScene" class="render"></CustomizeRenderScene>
+            </div>
+            </div>
+            <div class="column is-7 gradient pt-64 pl-32">
+                <div @ref="CategoryTabs" class="tabs tabs-part-categories is-large pb-32"></div>
+                <div @ref="PartsList" class="columns is-multiline"></div>
 
-    <div @ref="PartsTypeList" class="part-types gamepanel"></div>
-
-    <div class="shitonrightside">
-        <div class="preview gamepanel">
-            <CustomizeRenderScene @ref="RenderScene" class="render"></CustomizeRenderScene>
+                <div class="customize-footer">
+                    <label class="title is-styled is-size-1 text-orange"  @text="Category.DisplayName">Name</label>
+                    <label class="subtitle is-styled">Unlocked by being a Facepunch Employee</label>
+                </div>
+            </div>
         </div>
-        <div @ref="PartsList" class="parts gamepanel"></div>
     </div>
-
 </root>

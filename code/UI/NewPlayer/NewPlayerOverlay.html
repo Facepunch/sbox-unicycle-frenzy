@@ -4,7 +4,8 @@
 <root>
 
     <div class="content">
-        <label>We've noticed this is your first time playing.
+        <label class="title is-styled">Tutorial</label>
+        <label class="is-styled">We've noticed this is your first time playing.
 
 Play through the tutorial map to prepare warm up your Unicycle skills and prepare for unpredictable terrains and challenging obstacles.
         
@@ -15,8 +16,14 @@ If you're the DIY type, close this dialog and pedal away
     </div>
 
     <div class="footer">
-        <button onclick="Close()">close</button>
-        <button onclick="LoadTutorial()">play tutorial</button>
+        <button onclick="Close()" class="button is-secondary">
+            <div class="button-bg"></div>
+            <label>Close</label>
+        </button>
+        <button onclick="LoadTutorial()" class="button is-primary">
+            <div class="button-bg"></div>
+            <label>Play Tutorial</label>
+        </button>
     </div>
 
 </root>

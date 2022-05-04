@@ -14,7 +14,7 @@ internal class AchievementUnlocked : Panel
 
 	public void Display( Achievement achievement )
 	{
-		Icon.Style.SetBackgroundImage( achievement.ImageThumb );
+		Icon.Style.SetBackgroundImage( achievement.Thumbnail );
 		DisplayName.Text = achievement.DisplayName;
 		Experience.Text = string.Empty;
 

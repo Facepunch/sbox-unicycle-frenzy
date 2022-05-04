@@ -1,47 +1,36 @@
-﻿
-<root>
-
-    <div class="details">
-        <div @ref="Thumbnail" class="thumbnail"></div>
-        <div class="stats">
-            <div class="stat-entry">
-                <label class="name">Name</label>
-                <label class="value" @text="MapName">Pop Rock</label>
+﻿<div class="map-details">
+    <label class="section-title title">Map Details</label>
+    <div class="box">
+        <div class="box-header-image" @ref="Thumbnail"></div>
+        <div class="list">
+            <div class="row">
+                <label class="title">Name</label>
+                <label class="subtitle" @text="MapName">Map Name</label>
             </div>
-            <div class="stat-entry">
-                <label class="name">Falls</label>
-                <label class="value" @text="Stats.Falls">107</label>
+            <div class="row">
+                <label class="title">Falls</label>
+                <label class="subtitle" @text="Stats.Falls">0</label>
             </div>
-            <div class="stat-entry">
-                <label class="name">Respawns</label>
-                <label class="value" @text="Stats.Respawns">53</label>
+            <div class="row">
+                <label class="title">Respawns</label>
+                <label class="subtitle" @text="Stats.Respawns">0</label>
             </div>
-            <div class="stat-entry best-time">
-                <label class="name">Best Time</label>
-                <label class="value" @text="BestTime"></label>
+            <div class="row best-time">
+                <label class="title">Best Time</label>
+                <label class="subtitle" @text="BestTime">0</label>
             </div>
-            <div class="stat-entry">
-                <label class="name">Attempts</label>
-                <label class="value" @text="Stats.Attempts">3</label>
+            <div class="row">
+                <label class="title">Attempts</label>
+                <label class="subtitle">16</label>
             </div>
-            <div class="stat-entry">
-                <label class="name">Total Time Played</label>
-                <label class="value" @text="TimePlayed">0</label>
+            <div class="row">
+                <label class="title">Total Time Played</label>
+                <label class="subtitle" @text="TimePlayed">0</label>
             </div>
-            <div class="stat-entry">
-                <label class="name">Total Completions</label>
-                <label class="value" @text="Stats.Completions">0</label>
+            <div class="row">
+                <label class="title">Total Completions</label>
+                <label class="subtitle" @text="Stats.Completions">0</label>
             </div>
         </div>
     </div>
-
-    <div class="achievements">
-        <div class="heading"><label>Achievements </label><label @Text="AchievementCount"></label></div>
-        <div @ref="AchievementCanvas" class="achievement-icons"></div>
-        <div class="achievement-description">
-            <label class="name" @text="AchievementName"></label>
-            <label class="description" @text="AchievementDescription"></label>
-        </div>
-    </div>
-
-</root>
+</div>

@@ -1,0 +1,53 @@
+@import "../../Vars.scss";
+
+.map {
+  flex-direction: column;
+  margin-bottom: 32px;
+  transition: all 0.15s ease;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+
+  &.is-complete {
+    .map-body {
+      background: linear-gradient($dark-purple, rgba($green, 0.1));
+      border: 4px solid $green;
+      box-shadow: $box-shadow-hard-green;
+    }
+
+    .map-image {
+      box-shadow: $box-shadow-hard-green;
+
+      .check {
+        background-color: $green;
+        border: 3px solid #000;
+        box-shadow: $box-shadow-hard-dark-purple;
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        top: 16px;
+        right: 16px;
+      }
+    }
+  }
+
+  .map-image {
+    height: 200px;
+    background-color: pink;
+    box-shadow: $box-shadow-hard-dark-purple;
+    z-index: 1;
+  }
+
+  .map-body {
+    box-shadow: $box-shadow-black;
+    border: 4px solid transparent;
+    padding: 0 16px 16px 16px;
+
+    .title {
+      color: $orange-light;
+      font-size: 30px;
+      margin-bottom: 8px;
+    }
+  }
+}

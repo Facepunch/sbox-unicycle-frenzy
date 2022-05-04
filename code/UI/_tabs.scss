@@ -1,0 +1,58 @@
+.tabs {
+  flex-direction: row;
+  flex-shrink: 1;
+
+  &.is-large {
+    .tab {
+      label {
+        font-size: 28px;
+      }
+    }
+  }
+
+  .tab {
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    cursor: pointer;
+    height: 100%;
+    transition: all 0.15s ease;
+    opacity: 0.6;
+
+    label {
+      color: $light-grey;
+      font-family: $title-font;
+      font-size: 20px;
+      padding: 16px;
+      text-shadow: 3px 3px 0 rgba(#000, 1);
+      text-stroke: 5px #000;
+      transition: all 0.15s ease;
+    }
+    .stroke {
+      background: $pink-gradient;
+      box-shadow: $box-shadow-hard-dark-purple;
+      position: absolute;
+      left: 50%;
+      right: 50%;
+      bottom: -4px;
+      height: 4px;
+      opacity: 0;
+      transform-origin: 20% 40%;
+      transition: all 0.15s ease;
+    }
+
+    &:hover,
+    &.active {
+      opacity: 1;
+      label {
+        color: $pink;
+        //transform: scale(1.1) rotate(-3deg);
+      }
+      .stroke {
+        opacity: 1;
+        left: 0;
+        right: 0;
+      }
+    }
+  }
+}

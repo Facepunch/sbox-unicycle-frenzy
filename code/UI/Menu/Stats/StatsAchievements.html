@@ -1,0 +1,25 @@
+<link rel="stylesheet" href="StatsAchievements.scss" />
+
+    <div class="achievements-container">
+        <label class="section-title title">Achievements</label>
+        <div class="progress-bar">
+            <div class="bar"></div>
+            <label class="progress-title" @Text="AchievementCount"></label>
+        </div>
+        <div class="achievement-list" @ref="AchievementCanvas">
+            <div class="achievement completed">
+                <div class="achievement-icon"></div>
+                <div class="achievement-body">
+                    <label class="title" @text="AchievementName">Achievement Name</label>
+                    <label class="subtitle" @text="AchievementDescription">Achievement Description</label>
+                </div>
+            </div>
+            <div class="achievement">
+                <div class="achievement-icon"></div>
+                <div class="achievement-body">
+                    <label class="title" @text="AchievementName">Achievement Name</label>
+                    <label class="subtitle" @text="AchievementDescription">Achievement Description</label>
+                </div>
+            </div>
+        </div>
+    </div>

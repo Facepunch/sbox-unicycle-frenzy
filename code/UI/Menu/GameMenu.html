@@ -2,43 +2,59 @@
 <link rel="stylesheet" href="GameMenu.scss" />
 
 <root>
+    <div class="header">
+        <div class="header-logo">Logo</div>
+        <div class="header-navigation">
 
-    <div class="sidebar gamepanel">
-        <navlink icon="leaderboard" href="menu/leaderboards" style="display:none;">
-            <label>Leadeboards</label>
-            <div class="underline"></div>
-        </navlink>
-        <navlink icon="star" href="menu/stats">
-            <label>Stats</label>
-            <div class="underline"></div>
-        </navlink>
-        <navlink icon="confirmation_number" href="menu/trailpass">
-            <label>Trail Pass</label>
-            <div class="underline"></div>
-        </navlink>
-        <navlink icon="category" href="menu/customize">
-            <label>Customize</label>
-            <div class="underline"></div>
-        </navlink>
-        <navlink icon="gamepad" href="menu/controls">
-            <label>Controls</label>
-            <div class="underline"></div>
-        </navlink>
-        <navlink icon="settings" href="menu/settings" style="display:none;">
-            <label>Settings</label>
-            <div class="underline"></div>
-        </navlink>
-        <div class="spacer"></div>
-        <button class="stop-spectating" icon="cancel" onclick="StopSpectating()">
-            <label>Stop Spectating</label>
-            <div class="underline"></div>
-        </button>
-        <button icon="close" onclick="Close()">
-            <label>Close</label>
-            <div class="underline"></div>
-        </button>
+            <navlink href="menu/stats" class="nav-link">
+                <label>Map</label>
+                <div class="stroke"></div>
+            </navlink>
+
+            <!-- <navlink href="menu/achievements" class="nav-link">
+                <label>Achievements</label>
+                <div class="stroke"></div>
+            </navlink> -->
+
+            <navlink href="menu/trailpass" class="nav-link">
+                <label>Trail Pass</label>
+                <div class="stroke"></div>
+            </navlink>
+            
+            <navlink href="menu/customize" class="nav-link">
+                <label>Customize</label>
+                <div class="stroke"></div>
+            </navlink>
+
+            <navlink href="menu/controls" class="nav-link">
+                <label>Controls</label>
+                <div class="stroke"></div>
+            </navlink>
+
+            
+
+        </div>
+
+        <div class="header-right">
+            <navlink href="menu/settings" class="nav-link hidden">
+                <label>Settings</label>
+                <div class="stroke"></div>
+            </navlink>
+
+            <navlink class="stop-spectating" icon="cancel" onclick="StopSpectating()">
+                <label>Stop Spectating</label>
+                <div class="stroke"></div>
+            </navlink>
+
+            <navlink onclick="Close()" class="nav-link">
+                <label>X</label>
+                <div class="stroke"></div>
+            </navlink>
+        </div>
     </div>
-
-    <div @ref="NavigatorCanvas" class="content"></div>
+    <div class="body">
+        <div @ref="NavigatorCanvas" class="content"></div>
+    </div>
+    
 
 </root>

@@ -1,53 +1,62 @@
 ﻿@import "vars.scss";
+@import "_typography.scss";
+@import "_grid.scss";
 
-button, navlink, .button {
-    &:active {
-        sound-in: button.click;
+@import "_box.scss";
+@import "_button.scss";
+
+@import "_tabs.scss";
+@import "_table.scss";
+@import "_achievements.scss";
+@import "_progress-bar.scss";
+
+button,
+navlink,
+.button,
+.button-sound {
+  &:active {
+    sound-in: button.click;
+  }
+
+  &:hover {
+    cursor: pointer;
+
+    &:not(.active) {
+      sound-in: button.hover;
     }
-
-    &:hover {
-        cursor: pointer;
-
-        &:not( .active ) {
-            sound-in: button.hover;
-        }
-    }
+  }
 }
 
 UnicycleHud {
-    color: $fontcolor;
-    font-family: $readingfont;
+  color: $fontcolor;
+  font-family: $body-font;
 }
 
 IconPanel {
-    font-family: MaterialIcons;
+  font-family: MaterialIcons;
 }
 
 .hidden {
-    display: none;
+  display: none;
 }
 
 .gamepanel {
-    padding: $padding;
-    border-radius: $radius;
-    background-color: rgba($bg .95);
-    box-shadow: 0px 0px 25px rgba(black .5);
+  padding: $padding;
+  border-radius: $radius;
+  background-color: rgba($bg 0.95);
+  box-shadow: 0px 0px 25px rgba(black 0.5);
 }
 
 .innerpanel {
-    padding: $padding;
-    border-radius: $radius;
-    background-color: $innerbg;
+  padding: $padding;
+  border-radius: $radius;
+  background-color: $innerbg;
 }
 
 .grow {
-    flex-grow: 1;
+  flex-grow: 1;
 }
 
 .rows {
-    flex-direction: row;
-}
-
-.columns {
-    flex-direction: column;
+  flex-direction: row;
 }

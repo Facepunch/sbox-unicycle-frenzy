@@ -1,79 +1,113 @@
 ﻿@import "../vars.scss";
 
 GameMenu {
-    background-image: linear-gradient(rgba($bg, .5), rgba($blue .5));
-    backdrop-filter: blur(5);
+  background-color: rgba($dark-purple, 0.99);
+  backdrop-filter-blur: 20px;
+  flex-direction: column;
+  flex-grow: 1;
+  transition: opacity 0.18s ease-out;
+  opacity: 0;
+  z-index: 3;
+
+  &.open {
+    opacity: 1;
+    pointer-events: all;
+  }
+
+  .header {
+    background: $purple-gradient;
+    box-shadow: $box-shadow-soft;
     flex-direction: row;
-    padding: 128px;
-    flex-grow: 1;
-    transition: opacity .18s ease-out;
-    opacity: 0;
-    z-index: 3;
+    width: 100%;
+    height: 100px;
+    z-index: 10;
 
-    &.open {
+    .header-logo {
+      background-image: url("textures/ui/unicycle-frenzy-logo.png");
+      background-size: 100%;
+      background-repeat: no-repeat;
+      background-position: center center;
+      width: 222px;
+      height: 158px;
+    }
+
+    .header-navigation {
+      align-items: center;
+      flex-grow: 1;
+      justify-content: center;
+    }
+
+    .header-right {
+      margin-right: 64px;
+    }
+
+    .nav-link {
+      align-items: center;
+      justify-content: center;
+      width: auto;
+      height: 100%;
+      transition: all 0.15s ease;
+      opacity: 0.4;
+
+      &.hidden {
+        display: none;
+      }
+
+      label {
+        color: $orange-light;
+        font-family: $title-font;
+        font-size: 30px;
+        padding: 16px;
+        text-shadow: 3px 3px 0 rgba(#000, 1);
+        text-stroke: 5px #000;
+        transition: all 0.15s ease;
+      }
+
+      .stroke {
+        background-color: $pink;
+        box-shadow: $box-shadow-hard-dark-purple;
+        border: 3px solid $dark-purple;
+        position: absolute;
+        left: 50%;
+        right: 50%;
+        bottom: -4px;
+        height: 12px;
+        opacity: 0;
+        transform-origin: 20% 40%;
+        transition: all 0.15s ease;
+      }
+
+      &:hover,
+      &.active {
         opacity: 1;
-        pointer-events: all;
-    }
-
-    .sidebar {
-        width: 20%;
-        height: 50%;
-        margin-right: 32px;
-        flex-direction: column;
-
-        .spacer {
-            flex-grow: 1;
+        label {
+          color: $pink;
+          transform: scale(1.1) rotate(-3deg);
         }
-
-        navlink, button {
-            color: $fontcolorfaded;
-            flex-direction: column;
-            font-size: 20px;
-            font-family: $readingfont;
-            letter-spacing: 1px;
-            cursor: pointer;
-            transition: color .15s linear;
-            width: 100%;
-
-            Label {
-                padding: 10px;
-                padding-left: 38px;
-            }
-
-            IconPanel {
-                position: absolute;
-                left: 7px;
-                top: 15px;
-            }
-
-            .underline {
-                width: 0%;
-                height: 4px;
-                background-color: $primary;
-                transition: width .15s ease-in-out;
-            }
-
-            &:hover, &.active {
-                color: white;
-
-                .underline {
-                    width: 100%;
-                }
-            }
-
-            &:active .underline {
-                background-color: white;
-            }
+        .stroke {
+          opacity: 1;
+          left: 0;
+          right: 0;
         }
+      }
     }
+  }
 
-    &:not(.is-spectating) {
-        .stop-spectating {
-            display: none;
-        }
-    }
+  .body {
+    flex-direction: row;
+    flex-grow: 1;
+    width: 100%;
+    height: 100%;
+    z-index: 4;
+  }
 
-    .content {
-        flex-grow: 1;
+  &:not(.is-spectating) {
+    .stop-spectating {
+      display: none;
     }
+  }
+
+  .content {
+    flex-grow: 1;
+  }
 }

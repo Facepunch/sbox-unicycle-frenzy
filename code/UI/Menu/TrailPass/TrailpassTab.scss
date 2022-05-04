@@ -1,196 +1,208 @@
-﻿
-@import "../../Vars.scss";
+﻿@import "../../Vars.scss";
 
 TrailpassTab {
-    flex-direction: column;
+  flex-direction: column;
 
-    .renderscene {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        top: 0;
-        left: 0;
-        background-color: black;
-        border-radius: $radius;
+  .renderscene {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: transparent;
 
-        ScenePanel {
-            border-radius: $radius;
-            box-shadow: 2px 2px 4px black;
-        }
+    ScenePanel {
+      box-shadow: 2px 2px 4px transparent;
+    }
+  }
+
+  .scene {
+    height: 70%;
+
+    .buy {
+      position: absolute;
+      top: 50px;
+      right: 75px;
+      padding: 12px 30px;
+      background-color: rgba($secondary 0.5);
+      font-size: 20px;
+      text-shadow: 0px 0px 4px black;
+      transition: all 0.08s ease-in;
+
+      &:hover {
+        background-color: $secondary;
+      }
+    }
+  }
+
+  .progress {
+    height: 32px;
+    background-color: $grey;
+    border: 4px solid $dark-purple;
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 64px;
+    padding: 0px;
+
+    .xp {
+      position: absolute;
+      font-family: $title-font;
+      text-stroke: 4px #000;
+      text-shadow: 2px 2px 0 rgba(#000, 1);
+      text-transform: uppercase;
+      
     }
 
-    .scene {
-        height: 70%;
+    .xp.min {
+      color: $light-grey;
+      font-size: 20px;
+      left: -10px;
+      bottom: -40px;
+      z-index: 2;
 
-        .buy {
-            position: absolute;
-            top: 50px;
-            right: 75px;
-            padding: 12px 30px;
-            background-color: rgba( $secondary .5 );
-            border-radius: $smallradius;
-            font-size: 20px;
-            text-shadow: 0px 0px 4px black;
-            transition: all .08s ease-in;
-
-            &:hover {
-                background-color: $secondary;
-            }
-        }
     }
 
-    .unlocks {
-        flex-grow: 1;
-        justify-content: center;
-        align-items: center;
-        width: 95%;
-        margin: 0 auto;
-        margin-bottom: 50px;
+    .xp.max {
+      color: $light-grey;
+      font-size: 20px;
+      right: -10px;
+      bottom: -40px;
+      z-index: 2;
+      
     }
 
-    .progress {
-        height: 32px;
-        background-color: black;
-        width: 95%;
-        margin: 0 auto;
-        margin-bottom: 48px;
-        border-radius: $radius;
-        padding: 2px;
-
-        .xp {
-            position: absolute;
-            font-family: $stylefont;
-            font-size: 18px;
-            text-shadow: 1px 1px 2px black;
-        }
-
-        .xp.min {
-            left: 5px;
-            bottom: -25px;
-        }
-
-        .xp.max {
-            right: 5px;
-            bottom: -25px;
-        }
-
-        .xp.current {
-            position: absolute;
-            right: 10px;
-        }
-
-        .fill {
-            width: 50%;
-            background-color: $secondary;
-            border-radius: $radius;
-            margin: 2px;
-            transition: width .35s ease-in;
-        }
+    .xp.current {
+      font-size: 30px;
+      position: absolute;
+      top: -12px;
+      left: 16px;
     }
+
+    .fill {
+      width: 50%;
+      background-color: $pink;
+      border: 4px solid $dark-purple;
+      margin: -8px;
+      transition: width 0.35s ease-in;
+    }
+  }
+}
+
+TrailPassItemSlider {
+  flex-grow: 1;
+  width: 95%;
+  height: 400px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  overflow: scroll;
+  align-items: flex-end;
+  padding-bottom: 16px;
 }
 
 TrailPassItemIcon {
-    width: 175px;
-    height: 235px;
-    border-radius: $radius;
-    margin-right: 24px;
-    flex-direction: column;
+  background-color: $light-purple;
+  box-shadow: 4px 4px 0 $darker-purple;
+  align-items: center;
+  justify-content: center;
+  min-width: 274px;
+  width: 274px;
+  height: 274px;
+  margin-right: 24px;
+  flex-direction: column;
+  align-items: center;
+  padding: 32px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  .tag {
+    background-color: rgba($green 0.8);
+    height: 32px;
+    width: 60%;
+    font-size: 25px;
+    font-family: $stylefont;
     align-items: center;
+    justify-content: center;
+    display: none;
+  }
 
-    &:last-child {
-        margin-right: 0;
+  .cost-unlocked {
+    display: none;
+    background-color: $green;
+    height: 38px;
+    width: 65%;
+    margin-top: 8px;
+    font-size: 20px;
+    font-family: $stylefont;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.08s ease-in;
+    cursor: default;
+    box-shadow: 0 0 5px black;
+  }
+
+  .cost {
+    font-size: 20px;
+    font-family: $title-font;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    text-stroke: 5px #000;
+    text-shadow: 3px 3px 0 rgba(#000, 1);
+    transition: all 0.08s ease-in;
+    position: absolute;
+    bottom: -14px;
+    left: 0;
+    right: 0;
+
+    .nut {
+      background-image: url("textures/ui/nut.png");
+      width: 55px;
+      height: 55px;
+      position: absolute;
+      right: 0;
+      top: -7px;
+      background-size: cover;
+      transition: transform 0.08s ease-in;
     }
 
-    .tag {
-        background-color: rgba( $green .8 );
-        height: 32px;
-        width: 60%;
-        border-radius: $smallradius $smallradius 0 0;
-        font-size: 25px;
-        font-family: $stylefont;
-        align-items: center;
-        justify-content: center;
-        display: none;
+    &:hover {
+      background-color: $secondary;
+      transform: scale(1.1);
+
+      .nut {
+        transform: scale(1.25);
+      }
     }
+  }
 
-    .cost-unlocked {
-        display: none;
-        background-color: $green;
-        height: 38px;
-        width: 65%;
-        margin-top: 8px;
-        border-radius: $smallradius;
-        font-size: 20px;
-        font-family: $stylefont;
-        align-items: center;
-        justify-content: center;
-        transition: all .08s ease-in;
-        cursor: default;
-        box-shadow: 0 0 5px black;
+  &.unlocked .cost {
+    display: none;
+  }
+
+  &:not(.unlockable) .cost {
+    //background-color: rgba(black 0.75);
+    color: #fff;
+    cursor: none;
+    box-shadow: none;
+    opacity: 0.5;
+  }
+
+  &.unlocked .cost-unlocked {
+    display: flex;
+  }
+
+  .thumbnail {
+    width: 100%;
+    height: 100%;
+    flex-grow: 1;
+    
+    cursor: pointer;
+    transition: all 0.08s ease-in;
+
+    &:hover {
+      border-color: white;
     }
-
-    .cost {
-        background-color: rgba( $secondary 1 );
-        height: 38px;
-        width: 65%;
-        margin-top: 8px;
-        border-radius: $smallradius;
-        font-size: 20px;
-        font-family: $stylefont;
-        align-items: center;
-        justify-content: center;
-        cursor: pointer;
-        text-shadow: 0px 0px 2px black;
-        transition: all .08s ease-in;
-        box-shadow: 0 0 20px black;
-
-        .nut {
-            background-image: url('textures/ui/nut.png');
-            width: 55px;
-            height: 55px;
-            position: absolute;
-            right: 0;
-            top: -7px;
-            background-size: cover;
-            transition: transform .08s ease-in;
-        }
-
-        &:hover {
-            background-color: $secondary;
-            transform: scale(1.1);
-
-            .nut {
-                transform: scale(1.25);
-            }
-        }
-    }
-
-    &.unlocked .cost {
-        display: none;
-    }
-
-    &:not(.unlockable) .cost {
-        background-color: rgba( black .75 );
-        color: rgba(white .5);
-        cursor: none;
-        box-shadow: none;
-    }
-
-    &.unlocked .cost-unlocked {
-        display: flex;
-    }
-
-    .thumbnail {
-        width: 100%;
-        flex-grow: 1;
-        background-color: black;
-        border-radius: $radius;
-        border: 2px solid transparent;
-        cursor: pointer;
-        transition: all .08s ease-in;
-
-        &:hover {
-            border-color: white;
-        }
-    }
+  }
 }

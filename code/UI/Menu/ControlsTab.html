@@ -1,60 +1,85 @@
 ﻿
 <link rel="stylesheet" href="ControlsTab.scss" />
 
-<root class="gamepanel">
+<root>
 
-    <div class="misc-binds">
-        <div class="bind">
-            <label class="key" @text="GoBackBind"></label>
-            <label class="action">Previous checkpoint</label>
-        </div>
-        <div class="bind">
-            <label class="key" @text="RestartBind"></label>
-            <label class="action">Restart course</label>
-        </div>
-        <div class="bind">
-            <label class="key" @text="SprayBind"></label>
-            <label class="action">Spray</label>
+
+    <div class="container spaced">
+        <div class="columns">
+            <div class="column is-4 space-around">
+
+                <div class="box mb">
+                    <div class="box-header">
+                        <label class="title is-styled is-size-2">Controls</labeL>
+                    </div>
+                    <div class="box-body">
+                        <div class="keybind">
+                            <label class="key is-styled" @text="GoBackBind"></label>
+                            <label class="action is-styled">Previous Checkpoint</label>
+                        </div>
+                        <div class="keybind">
+                            <label class="key is-styled" @text="RestartBind"></label>
+                            <label class="action is-styled">Restart Checkpoint</label>
+                        </div>
+                        <div class="keybind">
+                            <label class="key is-styled" @text="SprayBind"></label>
+                            <label class="action  is-styled">Spray</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="box flex-end">
+                    <div class="box-header">
+                        <label class="title is-styled is-size-2">Hint</labeL>
+                    </div>
+                    <div class="box-body">
+                        <label class="subtitle is-size-5 is-styled">Holding Jump lets you jump higher and farther</label>
+                        <label class="subtitle is-size-5 is-styled">Lean in the direction you would like to jump</label>
+                        <label class="subtitle is-size-5 is-styled">If you lean too far you'll tip over!</label>
+                        <label class="subtitle is-size-5 is-styled">Perfectly timed pedals give you a slight speed boost</label>
+                    </div>
+                    <div class="box-footer">
+                        <button @ref="TutorialButton" class="button is-primary" onclick="TryPlayTutorial()">
+                            <div class="button-bg"></div>
+                            <label>Play Tutorial</label>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+            <div class="column is-8">
+                <div class="diagram">
+                
+                    <div class="control brake">
+                        <label class="control-name title is-styled is-size-2">Brake</label>
+                        <label class="control-bind is-styled" @text="BrakeBind"></label>
+                    </div>
+                
+                    <div class="control right-pedal">
+                        <label class="control-name title is-styled is-size-2">Right Pedal</label>
+                        <label class="control-bind is-styled" @text="RightPedalBind">Mouse2</label>
+                    </div>
+                
+                    <div class="control left-pedal">
+                        <label class="control-name title is-styled is-size-2">Left Pedal</label>
+                        <label class="control-bind is-styled" @text="LeftPedalBind"></label>
+                    </div>
+                
+                    <div class="control jump">
+                        <label class="control-name title is-styled is-size-2">Jump</label>
+                        <label class="control-bind is-styled" @text="JumpBind">Space</label>
+                    </div>
+                
+                    <div class="control lean">
+                        <label class="control-name title is-styled is-size-2">Lean</label>
+                        <label class="control-bind is-styled" @text="LeanBind">WASD</label>
+                    </div>
+                
+                </div>
+            </div>
         </div>
     </div>
-
-    <div class="diagram">
-
-        <div class="control brake">
-            <label class="control-name">Brake</label>
-            <label class="control-bind" @text="BrakeBind"></label>
-        </div>
-
-        <div class="control right-pedal">
-            <label class="control-name">Right Pedal</label>
-            <label class="control-bind" @text="RightPedalBind">Mouse2</label>
-        </div>
-
-        <div class="control left-pedal">
-            <label class="control-name">Left Pedal</label>
-            <label class="control-bind" @text="LeftPedalBind"></label>
-        </div>
-
-        <div class="control jump">
-            <label class="control-name">Jump</label>
-            <label class="control-bind" @text="JumpBind">Space</label>
-        </div>
-
-        <div class="control lean">
-            <label class="control-name">Lean</label>
-            <label class="control-bind" @text="LeanBind">WASD</label>
-        </div>
-
-    </div>
-
-    <div class="grow"></div>
-
-    <div class="howto">
-        <label>Holding Jump lets you jump higher and farther</label>
-        <label>Lean in the direction you would like to jump</label>
-        <label>If you lean too far you'll tip over!</label>
-        <label>Perfectly timed pedals give you a slight speed boost</label>
-        <button @ref="TutorialButton" class="tutorial-button" onclick="TryPlayTutorial()">Play Tutorial</button>
-    </div>
+    
+    
 
 </root>

@@ -1,0 +1,72 @@
+.box {
+  background-color: $light-purple;
+  box-shadow: $box-shadow-black;
+  flex-direction: column;
+
+  &.flex-end {
+    align-self: flex-end;
+  }
+
+  &.mb {
+    margin-bottom: 32px;
+  }
+
+  .box-header-image {
+    box-shadow: $box-shadow-hard-dark-purple;
+    height: 300px;
+    margin-bottom: 8px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .box-header {
+    padding-left: 16px;
+    margin-top: -24px;
+
+    .title {
+      color: $orange-light;
+    }
+  }
+
+  .box-footer {
+    margin-bottom: -30px;
+    justify-content: flex-end;
+    padding: 8px 16px 16px 16px;
+  }
+
+  .box-body {
+    padding: 16px 32px;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .list {
+    flex-direction: column;
+    width: 100%;
+    .row {
+      padding: 8px 16px;
+
+      &:nth-child(even) {
+        background-color: $darker-purple;
+      }
+
+      label {
+        font-size: 20px;
+      }
+
+      .title {
+        font-family: $body-font-light;
+        width: 40%;
+      }
+      .subtitle {
+        font-weight: bold;
+        width: 60%;
+
+        &.error {
+          color: $pink;
+        }
+      }
+    }
+  }
+}

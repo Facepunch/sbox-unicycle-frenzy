@@ -1,284 +1,118 @@
-﻿
-@import "../../Vars.scss";
+﻿@import "../../Vars.scss";
 
 StatsTab {
+  width: 100%;
+  height: 100%;
 
-    .tab-container {
-        flex-grow: 1;
-        flex-direction: column;
-
-        .tabs {
-            navlink {
-                padding: 20px;
-                font-size: 20px;
-                font-family: $readingfont;
-                background-color: $lightbg;
-                transition: all .15s ease-out;
-                color: $fontcolorfaded;
-
-                &:first-child {
-                    border-radius: $radius 0 0 0;
-                }
-
-                &:last-child {
-                    border-radius: 0 $radius 0 0;
-                }
-
-                &:hover {
-                    background-color: $lighterbg;
-                    color: $fontcolor;
-                }
-
-                &.active {
-                    background-color: rgba($bg, 2);
-                    color: $fontcolor;
-                }
-            }
-        }
-
-        .content {
-            background-color: $bg;
-            padding: $padding;
-            border-radius: 0 $radius $radius $radius;
-        }
-    }
-}
-
-StatsTabDetails {
+  .tab-container {
     flex-grow: 1;
+    flex-direction: column;
 
-    .details {
-        width: 600px;
-        flex-direction: column;
-        margin-right: $padding;
-
-        .thumbnail {
-            background-image: url("https://files.facepunch.com/crayz/1b0311b1/msedge_2022-01-03_21-04-42.png");
-            width: 600px;
-            height: 350px;
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-position: center center;
-            margin-bottom: $padding;
-        }
-
-        .stats {
-            flex-grow: 1;
-            flex-direction: column;
-            font-size: 20px;
-
-            .stat-entry {
-                justify-content: space-between;
-                margin-bottom: 8px;
-                padding-bottom: 8px;
-                border-bottom: 4px solid $lightbg;
-
-                .value {
-                    font-weight: 600;
-                }
-            }
-        }
-    }
-
-    &.incomplete .best-time .value {
-        color: $secondary;
-    }
-
-    .achievements {
-        flex-grow: 1;
+    .tabs {
+      navlink {
+        padding: 20px;
+        font-size: 20px;
+        font-family: $readingfont;
         background-color: $lightbg;
-        border-radius: $radius;
-        padding: $padding;
-        flex-direction: column;
+        transition: all 0.15s ease-out;
+        color: $fontcolorfaded;
 
-        .heading {
-            font-size: 28px;
-            font-weight: 600;
-            font-family: $stylefont;
-            letter-spacing: 1px;
-            margin-bottom: 30px;
+        &:first-child {
+          border-radius: $radius 0 0 0;
         }
 
-        .achievement-icons {
-            flex-wrap: wrap;
-            margin-bottom: 40px;
-
-            .icon {
-                width: 110px;
-                height: 110px;
-                margin-right: $padding;
-                background-color: transparent;
-                border-radius: $smallradius;
-                cursor: pointer;
-                background-image: url("https://files.facepunch.com/crayz/1b0311b1/msedge_2022-01-03_21-39-33.png");
-                background-size: 95%;
-                background-repeat: no-repeat;
-                background-position: center center;
-                opacity: .1;
-
-                .grayscale {
-                    position: absolute;
-                    left: 0;
-                    top: 0;
-                    width: 100%;
-                    height: 100%;
-                    backdrop-filter: grayscale(8);
-                }
-
-                &:hover, &.completed {
-                    background-color: $green;
-                    opacity: 1;
-
-                    .grayscale {
-                        display: none;
-                    }
-                }
-            }
+        &:last-child {
+          border-radius: 0 $radius 0 0;
         }
-
-        .achievement-description {
-            border-top: 4px solid $lighterbg;
-            font-size: 20px;
-            padding: $padding;
-            flex-direction: column;
-
-            .name {
-                font-size: 28px;
-                font-family: $stylefont;
-            }
-        }
-    }
-}
-
-StatsTabLeaderboard {
-    flex-grow: 1;
-
-    .mapname {
-        font-family: $stylefont;
-        font-color: $secondary;
-        font-size: 24px;
-        margin-right: 8px;
-        margin-top: 4px;
-        letter-spacing: 1px;
-    }
-
-    .tab-container .tabs navlink {
-        background-color: $bg;
-        padding: 11px 20px;
-        font-size: 18px;
 
         &:hover {
-            background-color: $lightbg;
+          background-color: $lighterbg;
+          color: $fontcolor;
         }
 
         &.active {
-            background-color: $lighterbg;
+          background-color: rgba($bg, 2);
+          color: $fontcolor;
         }
+      }
     }
 
-    .tab-container .content {
-        padding: 0;
+    .content {
+      background-color: $bg;
+      padding: $padding;
+      border-radius: 0 $radius $radius $radius;
     }
+  }
 }
 
-StatsTabLeaderboardSingle {
+StatsTabDetails {
+  &.incomplete .best-time .subtitle {
+    color: $pink;
+  }
+
+  .achievements {
     flex-grow: 1;
-    background-color: $lighterbg;
-    border-radius: 0 $radius $radius $radius;
+    background-color: $lightbg;
+    border-radius: $radius;
     padding: $padding;
+    flex-direction: column;
 
-    .leaderboard-canvas {
-        width: 80%;
+    .heading {
+      font-size: 28px;
+      font-weight: 600;
+      font-family: $stylefont;
+      letter-spacing: 1px;
+      margin-bottom: 30px;
+    }
+
+    .achievement-icons {
+      flex-wrap: wrap;
+      margin-bottom: 40px;
+
+      .icon {
+        width: 110px;
+        height: 110px;
         margin-right: $padding;
-        flex-direction: column;
-        overflow: scroll;
+        background-color: transparent;
+        border-radius: $smallradius;
+        cursor: pointer;
+        background-image: url("https://files.facepunch.com/crayz/1b0311b1/msedge_2022-01-03_21-39-33.png");
+        background-size: 95%;
+        background-repeat: no-repeat;
+        background-position: center center;
+        opacity: 0.1;
 
-        StatsTabLeaderboardEntry {
-            padding: 2px 20px;
-            margin-bottom: 4px;
-            border-radius: $smallradius;
-            transition: all .15s ease-out;
-            min-height: 32px;
-            font-size: 16px;
-            letter-spacing: 1px;
-            align-items: center;
-
-            &:nth-child(odd) {
-                background-color: rgba( $bg .5 );
-            }
-
-            &:hover {
-                background-color: $bg;
-            }
-
-            &.me {
-                background-color: rgba( $primary .25 );
-            }
-
-            &.friend {
-                background-color: rgba( $primary .05 );
-            }
-
-            .rank {
-                width: 35px;
-                align-items: center;
-            }
-
-            .name {
-                flex-grow: 1;
-                align-items: center;
-            }
-
-            .time {
-                width: 200px;
-                text-align: right;
-                align-items: center;
-            }
-
-            .spec-button {
-                width: 50px;
-            }
-
-            &:not(.can-spectate) {
-                .spec-button button {
-                    display: none;
-                }
-            }
-
-            .spec-button button {
-                width: 24px;
-                height: 24px;
-                border-radius: $smallradius;
-                background-color: transparent;
-                font-size: 12px;
-                transition: all .15s linear;
-                align-items: center;
-                justify-content: center;
-
-                &:hover {
-                    background-color: rgba( $primary 1 );
-                }
-            }
+        .grayscale {
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: 100%;
+          height: 100%;
+          backdrop-filter: grayscale(8);
         }
+
+        &:hover,
+        &.completed {
+          background-color: $green;
+          opacity: 1;
+
+          .grayscale {
+            display: none;
+          }
+        }
+      }
     }
 
-    .leaderboard-sorting {
-        flex-grow: 1;
-        flex-direction: column;
+    .achievement-description {
+      border-top: 4px solid $lighterbg;
+      font-size: 20px;
+      padding: $padding;
+      flex-direction: column;
 
-        button {
-            background-color: $lightbg;
-            padding: 4px;
-            margin-bottom: 4px;
-            border-radius: $smallradius;
-            justify-content: center;
-            font-size: 16px;
-            text-shadow: 1px 1px 1px black;
-            transition: all .15s ease-out;
-
-            &:hover {
-                background-color: $primary;
-            }
-        }
+      .name {
+        font-size: 28px;
+        font-family: $stylefont;
+      }
     }
+  }
 }

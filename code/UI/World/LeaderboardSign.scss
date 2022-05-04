@@ -1,43 +1,62 @@
-﻿
-@import "../Vars.scss";
+﻿@import "../Vars.scss";
 
 LeaderboardSign {
-    width: 100%;
-    height: 100%;
-    padding: 40px 30px;
-    color: white;
-    flex-direction: column;
+  width: 100%;
+  height: 100%;
+  padding: 40px 30px;
+  color: white;
+  flex-direction: column;
 
-    LeaderboardSignEntry {
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        border-bottom: 4px solid white;
-        text-shadow: 0px 0px 4px black;
-        font-size: 44px;
-        padding: 10px 0;
-        font-family: $readingfont;
+  LeaderboardSignEntry {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-stroke: 8px #000;
+    text-shadow: $text-shadow-black-4;
+    font-size: 44px;
+    padding-right: 16px;
+    margin-bottom: 4px;
+    font-family: $readingfont;
+    height: 70px;
 
-        &.local {
-            .name, .rank {
-                color: $primary;
-            }
-        }
-
-        .rank {
-            width: 55px;
-            font-weight: 800;
-            font-family: $stylefont;
-        }
-
-        .name {
-            font-weight: 600;
-            font-family: $stylefont;
-            flex-grow: 1;
-        }
-
-        .time {
-            text-align: right;
-        }
+    &:nth-child(odd) {
+      background-color: rgba($darker-purple, 0.2);
     }
+
+    &.local {
+      background-color: rgba($blue, 0.5);
+      .name {
+        color: $pink;
+      }
+      .rank {
+        background-color: $blue;
+      }
+    }
+
+    .rank {
+      background-color: rgba($darker-purple, 0.4);
+      width: 55px;
+      color: #fff;
+      font-family: $body-font-bold;
+      text-align: center;
+      margin-right: 8px;
+      padding: 4px;
+      height: 100%;
+      align-items: center;
+      justify-content: center;
+      min-width: 90px;
+    }
+
+    .name {
+      color: $blue;
+      flex-grow: 1;
+      font-family: $body-font-bold;
+      padding: 4px;
+    }
+
+    .time {
+      text-align: right;
+      font-family: $body-font;
+    }
+  }
 }

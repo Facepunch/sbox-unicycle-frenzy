@@ -3,17 +3,19 @@
 
 <root>
 
-    <div class="game-time">
-        <div class="timeleft columns">
-            <label @text="GameState"></label>
-            <div>
-                <label style="margin-right:5px;">Time left:</label>
-                <label @text="GameTime"></label>
-            </div>
+    <div class="game-timer">
+        <label class="subtitle is-styled">Time Remaining</label>
+        <label class="title" @text="GameTime"></label>
+    </div>
+
+    <div class="menu-info">
+        <div class="text-container">
+            <label class="is-styled">Menu </label> 
+            <label @text="MenuHotkey" class="key"></label>
         </div>
-        <div>
-            <label>Open menu with </label> 
-            <label @text="MenuHotkey"></label>
+        <div class="text-container">
+            <label class="is-styled">Map list</label>
+            <label @text="MapKey" class="key"></label>
         </div>
     </div>
 

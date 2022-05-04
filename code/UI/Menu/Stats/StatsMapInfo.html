@@ -1,0 +1,38 @@
+<link rel="stylesheet" href="StatsMapInfo.scss" />
+
+    <div class="map-details">
+        <label class="section-title title">Map Details</label>
+        <div class="box">
+            <div class="box-header-image" @ref="Thumbnail"></div>
+            <div class="list">
+                <div class="row">
+                    <label class="title">Name</label>
+                    <label class="subtitle" @text="MapName">Map Name</label>
+                </div>
+                <div class="row">
+                    <label class="title">Falls</label>
+                    <label class="subtitle" @text="Stats.Falls">0</label>
+                </div>
+                <div class="row">
+                    <label class="title">Respawns</label>
+                    <label class="subtitle" @text="Stats.Respawns">0</label>
+                </div>
+                <div class="row best-time">
+                    <label class="title">Best Time</label>
+                    <label class="subtitle" @text="BestTime">0</label>
+                </div>
+                <div class="row">
+                    <label class="title">Attempts</label>
+                    <label class="subtitle">16</label>
+                </div>
+                <div class="row">
+                    <label class="title">Total Time Played</label>
+                    <label class="subtitle" @text="TimePlayed">0</label>
+                </div>
+                <div class="row">
+                    <label class="title">Total Completions</label>
+                    <label class="subtitle" @text="Stats.Completions">0</label>
+                </div>
+            </div>
+        </div>
+    </div>

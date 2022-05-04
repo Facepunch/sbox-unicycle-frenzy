@@ -1,14 +1,18 @@
 ﻿
 <link rel="stylesheet" href="StatsTab.scss" />
 
-<root class="grow">
-
-    <div class="tab-container">
-        <div class="tabs">
-            <navlink href="menu/stats/details">Map Details</navlink>
-            <navlink href="menu/stats/leaderboard">Leaderboard</navlink>
-        </div>
-        <div class="content" @ref="NavigatorCanvas"></div>
-    </div>
-
+<root class="spaced">
+        <div class="container">
+                <div class="columns">
+                        <div class="column is-3">
+                                <StatsMapInfo></StatsMapInfo>
+                        </div>
+                        <div class="column is-6">
+                                <StatsTabLeaderboard></StatsTabLeaderboard>
+                        </div>
+                        <div class="column is-3">
+                                <StatsAchievements></StatsAchievements>
+                        </div>
+                </div>
+        </div>  
 </root>

@@ -14,9 +14,19 @@ internal class AchievementCompletion
 
 	public static List<AchievementCompletion> Query( long playerid, string game, string map = null )
 	{
+		// hack to make shit work if its ident.map, map, or local.map
+		if ( map != null && map.Contains( '.' ) )
+			map = map.Split( '.' )[1];
+
 		// later: fetch from api
 		var result = new List<AchievementCompletion>();
-		var all = All.Where( x => x.SteamId == playerid && x.MapName == map );
+		var all = All.Where( x => x.SteamId == playerid );
+
+		if ( !string.IsNullOrEmpty( map ) )
+		{
+			all = all.Where( x => x.MapName != null && x.MapName.EndsWith( map ) );
+		}
+
 		var achievements = Achievement.All;
 
 		foreach( var completion in all )
