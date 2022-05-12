@@ -15,8 +15,10 @@ internal partial class SurfaceTrigger : BaseTrigger
 	[Net, Property]
 	public float FrictionOverride { get; set; } = 1f;
 
-	public SurfaceTrigger()
+	public override void Spawn()
 	{
+		base.Spawn();
+
 		Transmit = TransmitType.Always;
 		EnableTouchPersists = true;
 	}
