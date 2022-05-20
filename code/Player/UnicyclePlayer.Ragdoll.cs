@@ -1,5 +1,5 @@
-﻿using Sandbox;
-using Sandbox.ScreenShake;
+﻿
+using Sandbox;
 
 internal partial class UnicyclePlayer
 {
@@ -66,7 +66,8 @@ internal partial class UnicyclePlayer
 		if ( Local.Pawn is UnicyclePlayer pl && ( IsLocalPawn || pl.SpectateTarget == this ) )
 		{
 			pl.Corpse = corpse;
-			new Perlin( 2f, 2, 3 );
+			// TODO: SCREENSHAKE
+			//new Perlin( 2f, 2, 3 );
 		}
 
 		RagdollModel( Unicycle.FrameModel );

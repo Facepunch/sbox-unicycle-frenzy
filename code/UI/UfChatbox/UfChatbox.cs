@@ -79,7 +79,7 @@ public partial class UfChatbox : Panel
 		SendChat( Input.Text );
 	}
 
-	[ServerCmd]
+	[ConCmd.Server]
 	public static void SendChat( string message )
 	{
 		if ( !ConsoleSystem.Caller.IsValid() ) return;
@@ -87,7 +87,7 @@ public partial class UfChatbox : Panel
 		AddChat( To.Everyone, ConsoleSystem.Caller.Name, message );
 	}
 
-	[ClientCmd( "uf_chat_add", CanBeCalledFromServer = true )]
+	[ConCmd.Client( "uf_chat_add", CanBeCalledFromServer = true )]
 	public static void AddChat( string name, string message, string classes = null, string sfx = "chat.message" )
 	{
 		Current?.AddEntry( name, message, classes, sfx );

@@ -1,7 +1,6 @@
-﻿using Sandbox;
-using System.Linq;
-using Hammer;
-using Sandbox.Internal;
+﻿
+using Sandbox;
+using SandboxEditor;
 using System.ComponentModel.DataAnnotations;
 
 [Model]

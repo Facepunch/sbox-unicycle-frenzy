@@ -1,9 +1,10 @@
-﻿using Sandbox;
-using Hammer;
+﻿
+using Sandbox;
+using SandboxEditor;
 using System.ComponentModel.DataAnnotations;
 
 [Library( "uf_trigger_reset_progress", Description = "Resets the player's progress by clearing checkpoints" )]
-[Hammer.AutoApplyMaterial("materials/editor/uf_trigger_reset_progress.vmat")]
+[AutoApplyMaterial("materials/editor/uf_trigger_reset_progress.vmat")]
 [Display( Name = "Reset Progress", GroupName = "Unicycle Frenzy", Description = "Resets the player's progress by clearing checkpoints" )]
 internal partial class ResetProgressTrigger : BaseTrigger
 {

@@ -14,5 +14,6 @@ tools_asset_info.bin
 *.sln.docstates
 
 # Build results
+.vs/
 [Oo]bj/
 *_bakeresourcecache

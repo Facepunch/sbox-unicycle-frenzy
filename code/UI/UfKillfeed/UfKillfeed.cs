@@ -36,7 +36,7 @@ internal partial class UfKillfeed : Panel
 		}
 	}
 
-	[ClientCmd("uf_killfeed_add", CanBeCalledFromServer = true)]
+	[ConCmd.Client("uf_killfeed_add", CanBeCalledFromServer = true)]
 	public static void AddEntryOnClient( string message, int clientId )
 	{
 		Current?.AddEntry( message, clientId );

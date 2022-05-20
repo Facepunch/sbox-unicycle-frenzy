@@ -28,7 +28,7 @@ internal class UnicycleUnstuck : Unstuck
 		{
 			if ( BasePlayerController.Debug )
 			{
-				DebugOverlay.Text( Controller.Position, $"[stuck in {result.Entity}]", Color.Red );
+				DebugOverlay.Text( $"[stuck in {result.Entity}]", Controller.Position, Color.Red );
 				//Box( result.Entity, Color.Red );
 			}
 		}
@@ -58,7 +58,7 @@ internal class UnicycleUnstuck : Unstuck
 			{
 				if ( BasePlayerController.Debug )
 				{
-					DebugOverlay.Text( Controller.Position, $"unstuck after {StuckTries} tries ({StuckTries * AttemptsPerTick} tests)", Color.Green, 5.0f );
+					DebugOverlay.Text( $"unstuck after {StuckTries} tries ({StuckTries * AttemptsPerTick} tests)", Controller.Position, Color.Green, 5.0f );
 					DebugOverlay.Line( pos, Controller.Position, Color.Green, 5.0f, false );
 				}
 

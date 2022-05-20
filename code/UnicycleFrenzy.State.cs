@@ -94,7 +94,7 @@ internal partial class UnicycleFrenzy
 		UfChatbox.AddChat( To.Everyone, "Server", $"{current} out of {needed} players needed to start", "alert", "chat.alert" );
 	}
 
-	[AdminCmd]
+	[ConCmd.Admin]
 	public static void SkipStage()
 	{
 		if ( Current is not UnicycleFrenzy uf ) return;

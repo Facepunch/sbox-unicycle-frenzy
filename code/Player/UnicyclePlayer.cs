@@ -8,7 +8,7 @@ internal partial class UnicyclePlayer : Sandbox.Player
 {
 
     [Net]
-    public AnimEntity Citizen { get; set; }
+    public AnimatedEntity Citizen { get; set; }
     [Net]
     public UnicycleEntity Unicycle { get; set; }
     [Net]
@@ -20,7 +20,7 @@ internal partial class UnicyclePlayer : Sandbox.Player
     public const float RespawnDelay = 3f;
 
     private TimeSince TimeSinceDied;
-    private Clothing.Container Clothing;
+    private ClothingContainer Clothing;
     private UfNametag Nametag;
     private JumpIndicator JumpIndicator;
     private Particles SpeedParticle;
@@ -39,7 +39,7 @@ internal partial class UnicyclePlayer : Sandbox.Player
         Unicycle = new UnicycleEntity();
         Unicycle.SetParent( this, null, Transform.Zero );
 
-        Citizen = new AnimEntity( "models/citizen/citizen.vmdl" );
+        Citizen = new AnimatedEntity( "models/citizen/citizen.vmdl" );
 		Citizen.SetParent( this, null, Transform.Zero );
         Citizen.SetAnimGraph( "models/citizen_unicycle_frenzy.vanmgrph" );
 
@@ -195,7 +195,7 @@ internal partial class UnicyclePlayer : Sandbox.Player
 		return a;
 	}
 
-	[ServerCmd]
+	[ConCmd.Server]
     public static void ServerCmd_SetSpectateTarget( int entityId )
     {
         if ( !ConsoleSystem.Caller.IsValid() ) return;
@@ -232,7 +232,7 @@ internal partial class UnicyclePlayer : Sandbox.Player
         var sprayPart = Client.Components.Get<CustomizationComponent>().GetEquippedPart( PartType.Spray.ToString() );
         var mat = Material.Load( sprayPart.AssetPath );
 
-        Decals.Place( mat, Position, Vector3.One * 50, Rotation.LookAt( Vector3.Up ) );
+		DecalSystem.PlaceOnWorld( To.Everyone, mat, Vector3.One * 50, Rotation.LookAt( Vector3.Up ), 1 );
     }
 
 }

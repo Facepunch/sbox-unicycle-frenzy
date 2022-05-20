@@ -10,9 +10,9 @@ internal partial class UnicycleFrenzy
 	[Net]
 	public string NextMap { get; set; }
 	[Net]
-	public Dictionary<long, string> MapVotes { get; set; }
+	public IDictionary<long, string> MapVotes { get; set; }
 	[Net]
-	public List<string> MapOptions { get; set; }
+	public IList<string> MapOptions { get; set; }
 
 	private async void InitMapCycle()
 	{
@@ -72,13 +72,13 @@ internal partial class UnicycleFrenzy
 		ServerCmd_ChangeMap( mapident );
 	}
 
-	[ServerCmd]
+	[ConCmd.Server]
 	public static void ServerCmd_ChangeMap( string mapident )
 	{
 		Global.ChangeLevel( mapident );
 	}
 
-	[ServerCmd]
+	[ConCmd.Server]
 	public static void ServerCmd_SetMapVote( string mapIdent )
 	{
 		if ( !ConsoleSystem.Caller.IsValid() ) 
@@ -88,7 +88,13 @@ internal partial class UnicycleFrenzy
 			return;
 
 		Game.MapVotes[ConsoleSystem.Caller.PlayerId] = mapIdent;
-		Game.NextMap = Game.MapVotes.OrderByDescending( x => x.Value ).First().Value;
+
+		var votemap = new Dictionary<string, int>();
+		foreach( var kvp in Game.MapVotes )
+		{
+			votemap[kvp.Value]++;
+		}
+		Game.NextMap = votemap.OrderByDescending( x => x.Value ).First().Key;
 
 		UfChatbox.AddChat( To.Everyone, "Server", string.Format( "{0} voted for {1}", ConsoleSystem.Caller.Name, mapIdent ) );
 

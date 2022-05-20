@@ -208,7 +208,7 @@ internal partial class UnicyclePlayer
 		MapStats.Local.AddCompletion();
 	}
 
-	[ServerCmd( "uf_nextcp" )]
+	[ConCmd.Server( "uf_nextcp" )]
 	private static void GotoNextCheckpoint()
 	{
 		if ( !ConsoleSystem.Caller.IsValid() || ConsoleSystem.Caller.Pawn is not UnicyclePlayer pl ) return;
@@ -220,7 +220,7 @@ internal partial class UnicyclePlayer
 		pl.TeleportToCheckpoint( nextCp );
 	}
 
-	[ServerCmd( "uf_prevcp" )]
+	[ConCmd.Server( "uf_prevcp" )]
 	private static void GotoPreviousCheckpoint()
 	{
 		if ( !ConsoleSystem.Caller.IsValid() || ConsoleSystem.Caller.Pawn is not UnicyclePlayer pl ) return;

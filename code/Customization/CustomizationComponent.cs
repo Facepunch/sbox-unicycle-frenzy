@@ -138,7 +138,7 @@ public class CustomizationComponent : EntityComponent
 		public int Id { get; set; }
 	}
 
-	[ServerCmd]
+	[ConCmd.Server]
 	public static void EquipPartOnServer( int id )
 	{
 		var caller = ConsoleSystem.Caller;
@@ -150,7 +150,7 @@ public class CustomizationComponent : EntityComponent
 		cfg.Equip( id );
 	}
 
-	[ServerCmd]
+	[ConCmd.Server]
 	public static void UnequipPartOnServer( int id )
 	{
 		var caller = ConsoleSystem.Caller;

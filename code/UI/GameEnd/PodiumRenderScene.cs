@@ -53,7 +53,7 @@ internal class PodiumRenderScene : Panel
 
 	private void Dress( SceneModel m, string json )
 	{
-		var container = new Clothing.Container();
+		var container = new ClothingContainer();
 		container.Deserialize( json );
 
 		m.SetMaterialGroup( "Skin01" );

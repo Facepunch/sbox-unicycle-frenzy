@@ -53,7 +53,7 @@ namespace Sandbox.UI
 
 		public static NavigatorTargetAttribute FindValidTarget( string url )
 		{
-			return Library.GetAttributes<NavigatorTargetAttribute>()
+			return TypeLibrary.GetAttributes<NavigatorTargetAttribute>()
 				.Where( x => x.CanServeUrl( url ) )
 				.FirstOrDefault(); 
 		}

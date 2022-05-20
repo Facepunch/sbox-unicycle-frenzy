@@ -1,8 +1,7 @@
-﻿using System;
-using System.Linq;
+﻿
+using System;
 using System.Numerics;
 using Sandbox;
-using Sandbox.ScreenShake;
 
 internal partial class UnicycleController : BasePlayerController
 {
@@ -57,13 +56,13 @@ internal partial class UnicycleController : BasePlayerController
 		if ( Debug )
 		{
 			var intpos = new Vector3( (int)Position.x, (int)Position.y, (int)Position.z );
-			DebugOverlay.Text( Position, "Speed: " + Velocity.Length );
-			DebugOverlay.Text( Position + Vector3.Down * 3, "Position: " + intpos );
-			DebugOverlay.Text( Position + Vector3.Down * 6, "Grounded: " + (GroundEntity != null) );
-			DebugOverlay.Text( Position + Vector3.Down * 9, "GroundNormal: " + GroundNormal );
-			DebugOverlay.Text( Position + Vector3.Down * 12, "Surface: " + pl.SurfaceFriction );
-			DebugOverlay.Text( Position + Vector3.Down * 15, "Water Level: " + Pawn.WaterLevel );
-			DebugOverlay.Text( Position + Vector3.Down * 18, "Tilt: " + pl.Tilt );
+			DebugOverlay.Text( "Speed: " + Velocity.Length, Position );
+			DebugOverlay.Text( "Position: " + intpos, Position + Vector3.Down * 3 );
+			DebugOverlay.Text( "Grounded: " + (GroundEntity != null), Position + Vector3.Down * 6 );
+			DebugOverlay.Text( "GroundNormal: " + GroundNormal, Position + Vector3.Down * 9 );
+			DebugOverlay.Text( "Surface: " + pl.SurfaceFriction, Position + Vector3.Down * 12 );
+			DebugOverlay.Text( "Water Level: " + Pawn.WaterLevel, Position + Vector3.Down * 15 );
+			DebugOverlay.Text( "Tilt: " + pl.Tilt, Position + Vector3.Down * 18 );
 
 			DebugOverlay.Line( Position, Position + Velocity, Color.Yellow );
 		}
@@ -564,7 +563,8 @@ internal partial class UnicycleController : BasePlayerController
 
 		if ( Pawn.IsLocalPawn )
 		{
-			new Perlin();
+			//new Perlin();
+			// TODO: SCREENSHAKE
 			// sound + particle
 		}
 
