@@ -6,6 +6,7 @@ using System.ComponentModel.DataAnnotations;
 [Library("uf_achievement_medals")]
 [Display( Name = "Unicycle Frenzy Medals", GroupName = "Unicycle Frenzy", Description = "Set the time for achievement medals." )]
 [EditorSprite( "materials/editor/achievement_medals.vmat" )]
+[HammerEntity]
 internal partial class AchievementMedals : Entity
 {
 

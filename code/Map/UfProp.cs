@@ -7,6 +7,7 @@ using System.ComponentModel.DataAnnotations;
 [SupportsSolid]
 [Library("uf_prop")]
 [Display( Name = "Unicycle Frenzy Prop", GroupName = "Unicycle Frenzy", Description = "A model or Mesh that can be set to pass the camera through it." )]
+[HammerEntity]
 internal partial class UfProp : ModelEntity
 {
 

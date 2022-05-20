@@ -1,11 +1,13 @@
 ﻿
 using Sandbox;
+using SandboxEditor;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
 
 [Library("uf_checkpoint", Description = "Defines a checkpoint where the player will respawn after falling")]
 [EditorModel( "models/checkpoint_platform_hammer.vmdl", FixedBounds = true)]
 [Display( Name = "Player Checkpoint", GroupName = "Unicycle Frenzy", Description = "Defines a checkpoint where the player will respawn after falling." )]
+[HammerEntity]
 internal partial class Checkpoint : ModelEntity
 {
 

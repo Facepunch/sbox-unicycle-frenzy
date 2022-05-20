@@ -1,11 +1,13 @@
 ﻿
 using Sandbox;
+using SandboxEditor;
 using System;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
 
 [Library( "uf_collectible" )]
 [Display( Name = "Unicycle Frenzy Collectible", GroupName = "Unicycle Frenzy", Description = "A prop that can be collected." )]
+[HammerEntity]
 internal partial class Collectible : UfProp
 {
 

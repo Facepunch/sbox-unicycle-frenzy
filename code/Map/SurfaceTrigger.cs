@@ -1,10 +1,12 @@
 ﻿
 using Sandbox;
+using SandboxEditor;
 using System.ComponentModel.DataAnnotations;
 
 [Library( "uf_trigger_surface", Description = "Overrides surface friction in an area" )]
 //[Hammer.AutoApplyMaterial( "materials/editor/uf_trigger_fall.vmat" )]
 [Display( Name = "Trigger Surface", GroupName = "Unicycle Frenzy", Description = "Overrides surface friction in an area." )]
+[HammerEntity]
 internal partial class SurfaceTrigger : BaseTrigger
 {
 
