@@ -7,9 +7,13 @@ namespace Sandbox.UI
 	/// <summary>
 	/// Mark a Panel with this class for it to be navigatable
 	/// </summary>
-	public class NavigatorTargetAttribute : LibraryAttribute
+	public class NavigatorTargetAttribute : System.Attribute, Sandbox.ITypeAttribute
 	{
 		public string Url { get; internal set; }
+		public Type TargetType
+		{
+			get; set;
+		}
 
 		string[] Parts;
 
@@ -32,14 +36,14 @@ namespace Sandbox.UI
 		{
 			if ( string.IsNullOrEmpty( url ) ) return false;
 
-			if ( url.Contains( '?') )
+			if ( url.Contains( '?' ) )
 			{
 				url = url[..url.IndexOf( '?' )];
 			}
 
 			var a = url.ToString().Split( '/', StringSplitOptions.RemoveEmptyEntries );
 
-			for ( int i=0; i < Parts.Length || i < a.Length; i++ )
+			for ( int i = 0; i < Parts.Length || i < a.Length; i++ )
 			{
 				var left = i < a.Length ? a[i] : null;
 				var right = i < Parts.Length ? Parts[i] : null;
@@ -48,14 +52,14 @@ namespace Sandbox.UI
 					return false;
 			}
 
-			return true; 
+			return true;
 		}
 
 		public static NavigatorTargetAttribute FindValidTarget( string url )
 		{
 			return TypeLibrary.GetAttributes<NavigatorTargetAttribute>()
-				.Where( x => x.CanServeUrl( url ) )
-				.FirstOrDefault(); 
+									.Where( x => x.CanServeUrl( url ) )
+									.FirstOrDefault();
 		}
 
 		internal IEnumerable<(string key, string value)> ExtractProperties( string url )

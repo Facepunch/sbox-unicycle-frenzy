@@ -28,7 +28,7 @@ namespace Sandbox.UI
 		{
 			var removes = Cache.Where( x => p( x.Url ) ).ToArray();
 
-			foreach( var remove in removes )
+			foreach ( var remove in removes )
 			{
 				remove.Panel.Delete();
 				Cache.Remove( remove );
@@ -59,7 +59,7 @@ namespace Sandbox.UI
 			if ( url?.Contains( '?' ) ?? false )
 			{
 				var qi = url.IndexOf( '?' );
-				query = url.Substring( qi+1 );
+				query = url.Substring( qi + 1 );
 				url = url.Substring( 0, qi );
 
 				//Log.Info( $"Query: {query}" );
@@ -92,7 +92,7 @@ namespace Sandbox.UI
 
 			var previousUrl = CurrentUrl;
 
-			var attr = NavigatorTargetAttribute.FindValidTarget( url ); 
+			var attr = NavigatorTargetAttribute.FindValidTarget( url );
 			if ( attr == null )
 			{
 				NotFound( url );
@@ -119,13 +119,13 @@ namespace Sandbox.UI
 			}
 			else
 			{
-				var panel = TypeLibrary.Create<Panel>();
+				var panel = TypeLibrary.Create<Panel>( attr.TargetType );
 				panel.AddClass( "navigator-body" );
 
 				Current = new HistoryItem { Panel = panel, Url = url };
 				Current.Panel.Parent = NavigatorCanvas;
 
-				foreach ( var ( key, value ) in attr.ExtractProperties( url ) )
+				foreach ( var (key, value) in attr.ExtractProperties( url ) )
 				{
 					panel.SetProperty( key, value );
 				}
@@ -134,9 +134,9 @@ namespace Sandbox.UI
 			}
 
 			if ( Current == null ) return;
-			
+
 			Current.Panel.SetProperty( "referrer", previousUrl );
-			ApplyQuery( query );			
+			ApplyQuery( query );
 		}
 
 		void ApplyQuery( string query )
@@ -153,6 +153,7 @@ namespace Sandbox.UI
 
 		protected virtual void NotFound( string url )
 		{
+			if ( url == null ) return;
 			Log.Warning( $"Url Not Found: {url}" );
 		}
 
@@ -168,25 +169,25 @@ namespace Sandbox.UI
 		{
 			base.SetProperty( name, value );
 
-			
-			if ( name == "default" ) Navigate( value ); 
+
+			if ( name == "default" ) Navigate( value );
 		}
 
 		/// <summary>
 		/// Navigate to a URL
 		/// </summary>
-		[PanelEvent] 
+		[PanelEvent]
 		public bool NavigateEvent( string url )
 		{
 			Navigate( url );
 			return false;
-		}		
-		
-		
+		}
+
+
 		/// <summary>
 		/// 
 		/// </summary>
-		[PanelEvent( "navigate_return" )] 
+		[PanelEvent( "navigate_return" )]
 		public bool NavigateReturnEvent()
 		{
 			if ( !Back.TryPop( out var result ) )
