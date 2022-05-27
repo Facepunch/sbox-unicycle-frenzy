@@ -67,6 +67,7 @@ internal class PodiumRenderScene : Panel
 			}
 
 			var model = Model.Load( c.Model );
+			if ( model.IsError ) continue;
 
 			var anim = new SceneModel( SceneWorld, model, m.Transform );
 
