@@ -90,7 +90,7 @@
 								to = "materials/dev/dev_08_orange.vmat"
 							},
 							{
-								from = ""
+								from = "mat.001.vmat"
 								to = "materials/dev/dev_08_orange.vmat"
 							},
 						]
@@ -103,5 +103,6 @@
 		model_archetype = ""
 		primary_associated_entity = ""
 		anim_graph_name = ""
+		base_model_name = ""
 	}
 }
