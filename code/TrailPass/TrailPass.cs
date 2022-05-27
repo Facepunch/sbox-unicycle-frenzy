@@ -21,16 +21,16 @@ internal class TrailPass
 				DisplayName = "Test TrailPass",
 				Items = new()
 				{
-					new() { Id = 1, RequiredExperience = 30, DisplayName = "Item", PartId = 45 },
-					new() { Id = 2, RequiredExperience = 100, DisplayName = "Item 2", PartId = 49 },
-					new() { Id = 3, RequiredExperience = 175, DisplayName = "Item 3", PartId = 55 },
-					new() { Id = 4, RequiredExperience = 300, DisplayName = "Item 4", PartId = 59 },
-					new() { Id = 5, RequiredExperience = 425, DisplayName = "Item 5", PartId = 68 },
-					new() { Id = 6, RequiredExperience = 550, DisplayName = "Item 6", PartId = 70 },
-					new() { Id = 7, RequiredExperience = 675, DisplayName = "Item 7", PartId = 72 },
+					new() { Id = 1, RequiredExperience = 30, DisplayName = "Item", PartId = 95 },
+					new() { Id = 2, RequiredExperience = 100, DisplayName = "Item 2", PartId = 93 },
+					new() { Id = 3, RequiredExperience = 175, DisplayName = "Item 3", PartId = 96 },
+					new() { Id = 4, RequiredExperience = 300, DisplayName = "Item 4", PartId = 91 },
+					new() { Id = 5, RequiredExperience = 425, DisplayName = "Item 5", PartId = 62 },
+					new() { Id = 6, RequiredExperience = 550, DisplayName = "Item 6", PartId = 65 },
+					new() { Id = 7, RequiredExperience = 675, DisplayName = "Item 7", PartId = 94 },
 					new() { Id = 8, RequiredExperience = 800, DisplayName = "Item 8", PartId = 72 },
-					new() { Id = 9, RequiredExperience = 900, DisplayName = "Item 9", PartId = 72 },
-					new() { Id = 10, RequiredExperience = 1000, DisplayName = "Item 10", PartId = 72 },
+					new() { Id = 9, RequiredExperience = 900, DisplayName = "Item 9", PartId = 87 },
+					new() { Id = 10, RequiredExperience = 1000, DisplayName = "Item 10", PartId = 97 },
 				},
 				Achievements = new()
 				{
