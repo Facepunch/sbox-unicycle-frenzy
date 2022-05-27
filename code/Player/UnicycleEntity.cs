@@ -88,7 +88,7 @@ internal partial class UnicycleEntity : Entity
 			trailParticle = Particles.Create( trail.AssetPath, this );
 		}
 
-		//Scale = .85f;
+		Scale = .85f;
 	}
 
 	private void AssemblePedals( CustomizationPart pedal, ModelEntity frame, out Entity pivot, out ModelEntity leftPedal, out ModelEntity rightPedal )
