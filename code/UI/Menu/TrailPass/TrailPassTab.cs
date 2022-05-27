@@ -57,16 +57,16 @@ internal class TrailPassTab : Panel
 		renderScene = Add.ScenePanel( sceneWorld, Vector3.Zero, Rotation.From( Angles.Zero ), 75 );
 		renderScene.Style.Width = Length.Percent( 100 );
 		renderScene.Style.Height = Length.Percent( 100 );
-		renderScene.CameraPosition = new Vector3( -53, 100, 42 );
+		renderScene.CameraPosition = new Vector3( -53, 20, 42 );
 		renderScene.CameraRotation = Rotation.From( 12, 0, 0 );
 		renderScene.Parent = SceneCanvas;
 		//renderSceneAngles = renderScene.CameraRotation.Angles();
 
 		var uicyce = new SceneModel( sceneWorld, "models/unicycle_dev.vmdl", Transform.Zero.WithScale( .1f ) );
 		uicyce.Position = renderScene.CameraPosition + renderScene.CameraRotation.Forward * 15;
-		uicyce.Position = uicyce.Position + renderScene.CameraRotation.Left;
+		uicyce.Position = uicyce.Position + renderScene.CameraRotation.Right;
 		uicyce.Rotation = uicyce.Rotation.RotateAroundAxis( Vector3.Up, 90 );
-		uicyce.Rotation = uicyce.Rotation.RotateAroundAxis( Vector3.Right, 10 );
+		uicyce.Rotation = uicyce.Rotation.RotateAroundAxis( Vector3.Left, 10 );
 	}
 
 	public override void OnHotloaded() => Rebuild();

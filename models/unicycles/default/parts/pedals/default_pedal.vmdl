@@ -81,7 +81,7 @@
 					{
 						_class = "Bone"
 						name = "root"
-						origin = [ 0.0, 3.889925, 1.284998 ]
+						origin = [ 0.0, -0.892442, 6.334548 ]
 						angles = [ 0.0, 0.0, 0.0 ]
 						do_not_discard = true
 					},
