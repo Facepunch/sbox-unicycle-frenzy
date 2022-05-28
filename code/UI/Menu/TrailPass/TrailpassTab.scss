@@ -184,7 +184,7 @@ TrailPassItemIcon {
   &:not(.unlockable) .cost {
     //background-color: rgba(black 0.75);
     color: #fff;
-    cursor: none;
+    cursor: default;
     box-shadow: none;
     opacity: 0.5;
   }
