@@ -9,7 +9,8 @@
   "ResourcePaths": [
     "/config/*",
     "/textures/*",
-    "/fonts/*"
+    "/fonts/*",
+    "/models/flag/*"
   ],
   "HasCode": true,
   "CodePath": "code",
