@@ -9,8 +9,7 @@
   "ResourcePaths": [
     "/config/*",
     "/textures/*",
-    "/fonts/*",
-    "/models/flag/*"
+    "/fonts/*"
   ],
   "HasCode": true,
   "CodePath": "code",
@@ -25,7 +24,8 @@
       "facepunch.uf_splinter",
       "facepunch.uf_bookworm",
       "facepunch.uf_wooden_gaps",
-      "facepunch.uf_flow"
+      "facepunch.uf_flow",
+      "facepunch.uf_bunker"
     ],
     "RankType": 2,
     "LeaderboardType": 2,
