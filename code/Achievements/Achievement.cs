@@ -205,6 +205,17 @@ internal partial class Achievement
 				Thumbnail = "https://files.facepunch.com/crayz/1b0411b1/msedge_2022-03-04_17-10-40.png"
 			} );
 
+			result.Add( new Achievement()
+			{
+				AchievementId = 12,
+				Description = "Complete the map without falling",
+				DisplayName = "Expert",
+				ShortName = "uf_expert",
+				GameName = Global.GameIdent,
+				PerMap = true,
+				Thumbnail = "https://files.facepunch.com/crayz/1b0911b1/juggler.png"
+			} );
+
 			return result;
 		}
 	}

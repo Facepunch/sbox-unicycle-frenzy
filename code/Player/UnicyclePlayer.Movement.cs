@@ -45,6 +45,7 @@ internal partial class UnicyclePlayer
 		if ( Fallen ) return;
 
 		Fallen = true;
+		FallCount++;
 
 		Sound.FromWorld( "unicycle.crash.default", Position );
 

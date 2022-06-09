@@ -10,6 +10,8 @@ internal partial class UnicyclePlayer
 	public TimeSince TimeSinceStart { get; set; }
 	[Net, Change]
 	public float BestTime { get; set; } = defaultBestTime;
+	[Net]
+	public int FallCount { get; set; }
 
 	private Particles Crown;
 
@@ -76,6 +78,11 @@ internal partial class UnicyclePlayer
 					SetAchievementOnClient( To.Single( Client ), "uf_gold", Global.MapName );
 			}
 
+			if( FallCount == 0 )
+			{
+				SetAchievementOnClient( To.Single( Client ), "uf_expert", Global.MapName );
+			}
+
 			if ( TimeSinceStart < BestTime )
 			{
 				if( CourseIncomplete )
@@ -103,6 +110,7 @@ internal partial class UnicyclePlayer
 	{
 		TimerState = TimerState.InStartZone;
 		TimeSinceStart = 0;
+		FallCount = 0;
 
 		if ( IsServer )
 		{
