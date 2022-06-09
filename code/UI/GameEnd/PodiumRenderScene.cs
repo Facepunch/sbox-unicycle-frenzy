@@ -55,34 +55,7 @@ internal class PodiumRenderScene : Panel
 	{
 		var container = new ClothingContainer();
 		container.Deserialize( json );
-
-		m.SetMaterialGroup( "Skin01" );
-
-		foreach ( var c in container.Clothing )
-		{
-			if ( c.Model == "models/citizen/citizen.vmdl" )
-			{
-				m.SetMaterialGroup( c.MaterialGroup );
-				continue;
-			}
-
-			var model = Model.Load( c.Model );
-			if ( model.IsError ) continue;
-
-			var anim = new SceneModel( SceneWorld, model, m.Transform );
-
-			if ( !string.IsNullOrEmpty( c.MaterialGroup ) )
-				anim.SetMaterialGroup( c.MaterialGroup );
-
-			m.AddChild( "clothing", anim );
-
-			anim.Update( 1.0f );
-		}
-
-		foreach ( var group in container.GetBodyGroups() )
-		{
-			m.SetBodyGroup( group.name, group.value );
-		}
+		container.DressSceneObject( m );
 	}
 
 }
