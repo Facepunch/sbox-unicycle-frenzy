@@ -12,6 +12,7 @@ internal class CustomizeTab : Panel
     public CustomizeRenderScene RenderScene { get; set; }
     public Panel CategoryTabs { get; set; }
     public Panel PartsList { get; set; }
+	public CustomizationPart HoveredPart { get; set; }
 
     public CustomizeTab()
     {
@@ -53,6 +54,10 @@ internal class CustomizeTab : Panel
         {
             var icon = new CustomizeItemButton(part);
             icon.Parent = PartsList;
+			icon.AddEventListener( "onmouseover", x =>
+			{
+				HoveredPart = part;
+			} );
         }
     }
 
