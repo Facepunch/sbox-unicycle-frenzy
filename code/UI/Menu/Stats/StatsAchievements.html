@@ -3,7 +3,7 @@
     <div class="achievements-container">
         <label class="section-title title">Achievements</label>
         <div class="progress-bar">
-            <div class="bar"></div>
+            <div @ref="AchievementProgressBar" class="bar"></div>
             <label class="progress-title" @Text="AchievementCount"></label>
         </div>
         <div class="achievement-list" @ref="AchievementCanvas">
