@@ -20,6 +20,7 @@ internal partial class UnicyclePlayer
 		ent.CopyBodyGroups( modelEnt );
 		ent.CopyMaterialGroup( modelEnt );
 		ent.TakeDecalsFrom( modelEnt );
+		ent.CopyMaterialOverrides( modelEnt );
 		ent.EnableHitboxes = true;
 		ent.EnableAllCollisions = true;
 		ent.SurroundingBoundsMode = SurroundingBoundsType.Physics;
