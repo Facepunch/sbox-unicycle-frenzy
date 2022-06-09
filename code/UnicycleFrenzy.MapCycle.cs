@@ -90,7 +90,8 @@ internal partial class UnicycleFrenzy
 		Game.MapVotes[ConsoleSystem.Caller.PlayerId] = mapIdent;
 
 		var votemap = new Dictionary<string, int>();
-		foreach( var kvp in Game.MapVotes )
+		Game.MapVotes.Values.ToList().ForEach( x => votemap.Add( x, 0 ) );
+		foreach ( var kvp in Game.MapVotes )
 		{
 			votemap[kvp.Value]++;
 		}
