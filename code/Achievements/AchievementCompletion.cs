@@ -56,20 +56,7 @@ internal class AchievementCompletion
 		Cookie.Set( "uf.achievement_completions", JsonSerializer.Serialize( final ) );
 	}
 
-	public static List<AchievementCompletion> All
-	{
-		get
-		{
-			try
-			{
-				return JsonSerializer.Deserialize<List<AchievementCompletion>>( Cookie.Get( "uf.achievement_completions", "{}" ) );
-			}
-			catch(Exception e )
-			{
-				Log.Error( e );
-				return new List<AchievementCompletion>();
-			}
-		}
-	}
+	private const string AchievementCookie = "uf.achievement_completions";
+	public static List<AchievementCompletion> All => Cookie.Get<List<AchievementCompletion>>( AchievementCookie, new () );
 
 }
