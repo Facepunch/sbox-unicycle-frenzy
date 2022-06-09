@@ -14,58 +14,48 @@ internal class MapStats
 	public void AddFall()
 	{
 		Falls++;
-		LocalCookie = ToJson();
+		Save();
 	}
 
 	public void AddRespawn()
 	{
 		Respawns++;
-		LocalCookie = ToJson();
+		Save();
 	}
 
 	public void AddAttempt()
 	{
 		Attempts++;
-		LocalCookie = ToJson();
+		Save();
 	}
 
 	public void AddCompletion()
 	{
-		if( Completions == 0 )
+		if ( Completions == 0 )
 		{
 			Event.Run( "mapstats.firstcompletion" );
 		}
 
 		Completions++;
-		LocalCookie = ToJson();
+		Save();
 	}
 
 	public void SetBestTime( float newTime )
 	{
 		if ( BestTime != default && BestTime < newTime ) return;
 		BestTime = newTime;
-		LocalCookie = ToJson();
+		Save();
 	}
 
 	public void AddTimePlayed( float seconds )
 	{
 		TimePlayed += seconds;
-		LocalCookie = ToJson();
+		Save();
 
 		Event.Run( "mapstats.ontimeplayed", TimePlayed );
 	}
 
-	private string ToJson()
-	{
-		return System.Text.Json.JsonSerializer.Serialize( this );
-	}
-
-	public static string LocalCookie
-	{
-		get => Cookie.Get( "unicycle.stats." + Global.MapName, new MapStats().ToJson() );
-		set => Cookie.Set( "unicycle.stats." + Global.MapName, value );
-	}
-
-	public static MapStats Local => System.Text.Json.JsonSerializer.Deserialize<MapStats>( LocalCookie );
+	private void Save() => Cookie.Set( "unicycle.stats." + Global.MapName, this );
+	public static MapStats Local => Cookie.Get<MapStats>( "unicycle.stats." + Global.MapName, new() );
 
 }

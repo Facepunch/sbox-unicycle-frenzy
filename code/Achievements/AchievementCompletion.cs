@@ -53,7 +53,7 @@ internal class AchievementCompletion
 			}
 		};
 
-		Cookie.Set( "uf.achievement_completions", JsonSerializer.Serialize( final ) );
+		Cookie.Set( "uf.achievement_completions", final );
 	}
 
 	private const string AchievementCookie = "uf.achievement_completions";
