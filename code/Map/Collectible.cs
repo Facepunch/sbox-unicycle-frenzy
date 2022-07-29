@@ -20,10 +20,13 @@ internal partial class Collectible : UfProp
 	{
 		base.Spawn();
 
-		EnableAllCollisions = true;
-		EnableSolidCollisions = false;
+		Tags.Add( "trigger" );
 
-		CollisionGroup = CollisionGroup.Trigger;
+		SetupPhysicsFromModel( PhysicsMotionType.Static );
+		EnableAllCollisions = false;
+		EnableTouch = true;
+
+		Transmit = TransmitType.Always;
 	}
 
 	public void SetTouched( bool touched )
@@ -62,12 +65,7 @@ internal partial class Collectible : UfProp
 
 		SetTouched( true );
 
-		Event.Run( "collection.collected", this );
-
-		if ( IsCollected( Collection ) )
-		{
-			Event.Run( "collection.complete", Collection );
-		}
+		OnCollected( pl );
 	}
 
 	public static bool IsCollected( string collection )
@@ -94,5 +92,19 @@ internal partial class Collectible : UfProp
 
 		Event.Run( "collection.reset", collection );
 	}
+
+	protected virtual void OnCollected( UnicyclePlayer player )
+	{
+		Event.Run( "collection.collected", this );
+
+		if ( IsCollected( Collection ) )
+		{
+			OnCollectionComplete();
+
+			Event.Run( "collection.complete", Collection );
+		}
+	}
+
+	protected virtual void OnCollectionComplete() { }
 
 }

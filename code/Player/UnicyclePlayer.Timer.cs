@@ -134,6 +134,8 @@ internal partial class UnicyclePlayer
 	{
 		Host.AssertServer();
 
+		Event.Run( "unicycle.checkpoint.touch", this );
+
 		if ( Checkpoints.Contains( checkpoint ) )
 		{
 			if ( overridePosition )
@@ -146,6 +148,8 @@ internal partial class UnicyclePlayer
 			}
 			return;
 		}
+
+		Event.Run( "unicycle.checkpoint.set", this );
 
 		Checkpoints.Add( checkpoint );
 	}

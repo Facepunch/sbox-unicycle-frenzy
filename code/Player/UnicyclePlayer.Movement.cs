@@ -51,6 +51,8 @@ internal partial class UnicyclePlayer
 
 		Game.Current.DoPlayerSuicide( Client );
 
+		Event.Run( "unicycle.fall", this );
+
 		if( incrementFallStat ) AddFallOnClient();
 	}
 
