@@ -44,6 +44,7 @@ internal partial class UnicyclePlayer
 			clothing.RenderColor = e.RenderColor;
 			clothing.CopyBodyGroups( e );
 			clothing.CopyMaterialGroup( e );
+			clothing.CopyMaterialOverrides( e );
 		}
 
 		Juice.Scale( 1, 1.1f, 0f )
