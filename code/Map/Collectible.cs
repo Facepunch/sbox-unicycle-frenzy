@@ -26,6 +26,8 @@ internal partial class Collectible : UfProp
 		EnableAllCollisions = false;
 		EnableTouch = true;
 
+		Tags.Add( "trigger" );
+		
 		Transmit = TransmitType.Always;
 	}
 
