@@ -34,6 +34,47 @@
     "MinPlayers": 1,
     "GameNetworkType": "Multiplayer",
     "MaxPlayers": 16,
-    "GameCategory": "None"
+    "GameCategory": "None",
+    "Collision": {
+      "Defaults": {
+        "solid": "Collide",
+        "trigger": "Trigger",
+        "ladder": "Ignore",
+        "water": "Trigger",
+        "player": "Collide"
+      },
+      "Pairs": [
+        {
+          "a": "solid",
+          "b": "solid",
+          "r": "Collide"
+        },
+        {
+          "a": "trigger",
+          "b": "playerclip",
+          "r": "Ignore"
+        },
+        {
+          "a": "trigger",
+          "b": "solid",
+          "r": "Trigger"
+        },
+        {
+          "a": "solid",
+          "b": "trigger",
+          "r": "Collide"
+        },
+        {
+          "a": "playerclip",
+          "b": "solid",
+          "r": "Collide"
+        },
+        {
+          "a": "player",
+          "b": "player",
+          "r": "Trigger"
+        }
+      ]
+    }
   }
 }

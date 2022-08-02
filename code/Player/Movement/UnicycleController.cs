@@ -175,6 +175,7 @@ internal partial class UnicycleController : BasePlayerController
 
 		var trs = Trace.Sphere( 10f, Position + Vector3.Up * 24f, Position + Rotation.Up * 55 )
 			.Ignore( Pawn )
+			.WithoutTags( "player" )
 			.Run();
 
 		if( trs.Hit ) return true;
@@ -185,7 +186,7 @@ internal partial class UnicycleController : BasePlayerController
 	private void Move()
 	{
 		var mover = new MoveHelper( Position, Velocity );
-		mover.Trace = mover.Trace.Size( Mins, Maxs ).Ignore( Pawn );
+		mover.Trace = mover.Trace.Size( Mins, Maxs ).WithoutTags( "player" ).Ignore( Pawn );
 		mover.MaxStandableAngle = 75f;
 		mover.TryMoveWithStep( Time.Delta, 12 );
 
@@ -591,6 +592,24 @@ internal partial class UnicycleController : BasePlayerController
 		{
 			Velocity *= StopSpeed / Velocity.Length;
 		}
+	}
+
+	public override TraceResult TraceBBox( Vector3 start, Vector3 end, Vector3 mins, Vector3 maxs, float liftFeet = 0.0f )
+	{
+		if ( liftFeet > 0 )
+		{
+			start += Vector3.Up * liftFeet;
+			maxs = maxs.WithZ( maxs.z - liftFeet );
+		}
+
+		var tr = Trace.Ray( start + TraceOffset, end + TraceOffset )
+					.Size( mins, maxs )
+					.WithAnyTags( "solid", "playerclip", "passbullets" )
+					.Ignore( Pawn )
+					.Run();
+
+		tr.EndPosition -= TraceOffset;
+		return tr;
 	}
 
 	static Rotation FromToRotation( Vector3 aFrom, Vector3 aTo )

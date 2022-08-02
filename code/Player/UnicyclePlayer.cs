@@ -31,7 +31,6 @@ internal partial class UnicyclePlayer : Sandbox.Player
 
         SetModel( "models/sbox_props/watermelon/watermelon.vmdl" );
 		SetupPhysicsFromAABB( PhysicsMotionType.Keyframed, new Vector3( -12, -12, 0 ), new Vector3( 12, 12, 64 ) );
-		RemoveCollisionLayer( CollisionLayer.Solid );
 
 		EnableDrawing = false;
         EnableAllCollisions = true;
@@ -51,6 +50,8 @@ internal partial class UnicyclePlayer : Sandbox.Player
 		Clothing.LoadFromClient( Client );
         Clothing.DressEntity( Citizen );
 		Avatar = Client.GetClientData( "avatar" );
+
+		Tags.Add( "player" );
 
 		ResetMovement();
         GotoBestCheckpoint();
