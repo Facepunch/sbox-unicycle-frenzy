@@ -27,12 +27,13 @@
       "facepunch.uf_wooden_gaps",
       "facepunch.uf_flow"
     ],
-    "RankType": 2,
-    "LeaderboardType": 2,
+    "RankType": "Best",
+    "LeaderboardType": "Ascending",
     "PerMapRanking": true,
-    "MapSelect": 3,
+    "MapSelect": "Tagged",
     "MinPlayers": 1,
-    "GameNetworkType": 0,
-    "MaxPlayers": 16
+    "GameNetworkType": "Multiplayer",
+    "MaxPlayers": 16,
+    "GameCategory": "None"
   }
 }
