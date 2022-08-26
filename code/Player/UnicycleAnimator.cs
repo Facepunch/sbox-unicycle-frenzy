@@ -39,7 +39,7 @@ internal class UnicycleAnimator : PawnAnimator
         var jumpcharge = InputActions.Jump.Down() ? (pl.TimeSinceJumpDown / ctrl.MaxJumpStrengthTime) : 0f;
         citizen.SetAnimParameter( "unicycle_jump_charge", jumpcharge );
 
-		var targetbalx = .5f + ( pl.Tilt.pitch / ctrl.MaxLean * .5f );
+		var targetbalx = .5f + ( pl.Tilt.pitch / ctrl.MaxLean * .5f + jumpcharge );
 		var targetbaly = .5f + ( pl.Tilt.roll / ctrl.MaxLean * .5f );
 		var balx = citizen.GetAnimParameterFloat( "unicycle_balance_x" ).LerpTo( targetbalx, Time.Delta * 3f );
 		var baly = citizen.GetAnimParameterFloat( "unicycle_balance_y" ).LerpTo( targetbaly, Time.Delta * 3f );
