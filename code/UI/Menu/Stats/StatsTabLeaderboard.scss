@@ -24,6 +24,8 @@ StatsTabLeaderboardSingle {
     height: 100%;
 
     StatsTabLeaderboardEntry {
+        min-height: 50px;
+
       &.me {
         background-color: rgba($blue, 0.05);
         label {
