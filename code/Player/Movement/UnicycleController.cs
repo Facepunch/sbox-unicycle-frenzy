@@ -238,6 +238,7 @@ internal partial class UnicycleController : BasePlayerController
 			AddEvent( "land" );
 			pl.Tilt = Rotation.Angles().WithYaw( 0 );
 			Position = Position.WithZ( tr.EndPosition.z );
+			new FallCameraModifier( -200f );
 
 			if ( !pl.JumpTilt.Length.AlmostEqual( 0, .1f ) )
 			{
@@ -451,6 +452,8 @@ internal partial class UnicycleController : BasePlayerController
 			GroundEntity = null;
 			pl.TimeSinceJumpDown = 0;
 
+			new FallCameraModifier( jumpStrength );
+
 			AddEvent( "jump" );
 			return;
 		}
@@ -557,6 +560,8 @@ internal partial class UnicycleController : BasePlayerController
 		pl.PedalStartPosition = pl.PedalPosition;
 		pl.PedalTargetPosition = target;
 
+		new FallCameraModifier( -35f );
+
 		AddEvent( "pedal" );
 
 		if ( GroundEntity == null ) return;
@@ -564,9 +569,7 @@ internal partial class UnicycleController : BasePlayerController
 
 		if ( Pawn.IsLocalPawn )
 		{
-			//new Perlin();
-			// TODO: SCREENSHAKE
-			// sound + particle
+			new FallCameraModifier( -100f );
 		}
 
 		Velocity += Rotation.Forward.WithZ( 0 ) * PerfectPedalBoost;

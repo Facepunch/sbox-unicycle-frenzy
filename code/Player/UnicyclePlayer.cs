@@ -99,7 +99,13 @@ internal partial class UnicyclePlayer : Sandbox.Player
 		// don't simulate when spectating somebody
         if ( SpectateTarget.IsValid() ) return;
 
-        if ( LifeState == LifeState.Alive )
+		if ( Input.Pressed( InputButton.Duck ) )
+		{
+			Log.Error( "Go" );
+			new FallCameraModifier( 1000f );
+		}
+
+		if ( LifeState == LifeState.Alive )
         {
             var controller = GetActiveController();
             controller?.Simulate( cl, this, GetActiveAnimator() );
@@ -154,6 +160,8 @@ internal partial class UnicyclePlayer : Sandbox.Player
 		base.PostCameraSetup( ref setup );
 
 		setup.Rotation *= Rotation.From( Tilt * .015f );
+
+		BaseCameraModifier.PostCameraSetup( ref setup );
 	}
 
 	[Event.Frame]
