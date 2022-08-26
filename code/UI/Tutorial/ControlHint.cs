@@ -36,7 +36,7 @@ internal class ControlHint : Panel
 	{
 		base.Tick();
 
-		var tex = customTexture ?? Input.GetGlyph( button, InputGlyphSize.Large, GlyphStyle.Light );
+		var tex = customTexture ?? Input.GetGlyph( button, InputGlyphSize.Large, GlyphStyle.Knockout );
 		Icon.Style.BackgroundImage = tex;
 	}
 
