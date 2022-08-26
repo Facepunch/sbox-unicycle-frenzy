@@ -34,7 +34,7 @@
     "MinPlayers": 1,
     "GameNetworkType": "Multiplayer",
     "MaxPlayers": 16,
-    "GameCategory": "None",
+    "GameCategory": "Racing",
     "Collision": {
       "Defaults": {
         "solid": "Collide",
