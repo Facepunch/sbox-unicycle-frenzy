@@ -10,6 +10,8 @@ internal class TutorialHud : Panel
 	public ControlHint MiddleHint { get; set; }
 	public ControlHint RightHint { get; set; }
 
+	private InputActions currentAction;
+
 	public override void Tick()
 	{
 		base.Tick();
@@ -20,7 +22,12 @@ internal class TutorialHud : Panel
 			return;
 		}
 
-		if( pl.DisplayedAction == InputActions.None )
+		if ( pl.DisplayedAction == currentAction )
+			return;
+
+		currentAction = pl.DisplayedAction;
+
+		if ( pl.DisplayedAction == InputActions.None )
 		{
 			ControlHints.SetClass( "open", false );
 			return;

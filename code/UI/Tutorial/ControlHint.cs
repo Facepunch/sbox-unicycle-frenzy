@@ -16,6 +16,7 @@ internal class ControlHint : Panel
 	{
 		SetClass( "open", true );
 		SetClass( "has-charge", hasCharge );
+		Sound.FromScreen( "sounds/misc/tutorial.hint.sound" );
 
 		ActionName.Text = name;
 		customTexture = null;
@@ -26,6 +27,7 @@ internal class ControlHint : Panel
 	{
 		SetClass( "open", true );
 		SetClass( "has-charge", hasCharge );
+		Sound.FromScreen( "sounds/misc/tutorial.hint.sound" );
 		
 		ActionName.Text = name;
 		customTexture = GetCustomTexture( action );

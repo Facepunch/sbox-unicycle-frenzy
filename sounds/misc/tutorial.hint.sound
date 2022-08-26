@@ -3,17 +3,17 @@
 	data = 
 	{
 		UI = true
-		Volume = 0.75
+		Volume = 0.67
 		VolumeRandom = 0
 		Pitch = 1
 		PitchRandom = 0
-		Decibels = 70
+		Decibels = 45
 		Sounds = 
 		[
-			resource:"sounds/misc/collect.vsnd",
+			resource:"sounds/misc/tutorial.hint.vsnd",
 		]
 		SelectionMode = "Random"
-		MaximumDistance = 1143.9335
-		MinimumDistance = 57.196674
+		MaximumDistance = 491.52356
+		MinimumDistance = 24.576178
 	}
 }
