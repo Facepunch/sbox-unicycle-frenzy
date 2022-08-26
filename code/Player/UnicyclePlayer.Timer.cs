@@ -151,6 +151,8 @@ internal partial class UnicyclePlayer
 
 		Event.Run( "unicycle.checkpoint.set", this );
 
+		Sound.FromScreen( To.Single( this ), "sounds/course/course.checkpoint.sound" );
+
 		Checkpoints.Add( checkpoint );
 	}
 
