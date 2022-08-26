@@ -47,7 +47,7 @@ internal class TrailPassTab : Panel
 		sceneWorld?.Delete();
 		sceneWorld = new SceneWorld();
 
-		new SceneModel( sceneWorld, "models/scene/scene_unicycle_trialpass_main.vmdl", Transform.Zero.WithScale( 1 ).WithPosition( Vector3.Up * 24 ) );
+		new SceneModel( sceneWorld, "models/scene/scene_unicycle_trialpass_main.vmdl", Transform.Zero.WithScale( .35f ) );
 
 		new SceneLight( sceneWorld, Vector3.Up * 150.0f, 200.0f, Color.White * 5.0f );
 		new SceneLight( sceneWorld, Vector3.Up * 75.0f + Vector3.Forward * 200.0f, 200, Color.White * 15.0f );
@@ -63,8 +63,8 @@ internal class TrailPassTab : Panel
 		renderScene.Parent = SceneCanvas;
 		//renderSceneAngles = renderScene.CameraRotation.Angles();
 
-		var uicyce = new SceneModel( sceneWorld, "models/unicycle_dev.vmdl", Transform.Zero.WithScale( .1f ) );
-		uicyce.Position = renderScene.CameraPosition + renderScene.CameraRotation.Forward * 15;
+		var uicyce = new SceneModel( sceneWorld, "models/unicycle_dev.vmdl", Transform.Zero.WithScale( .2f ) );
+		uicyce.Position = renderScene.CameraPosition + renderScene.CameraRotation.Forward * 35;
 		uicyce.Position = uicyce.Position + renderScene.CameraRotation.Right;
 		uicyce.Rotation = uicyce.Rotation.RotateAroundAxis( Vector3.Up, 90 );
 		uicyce.Rotation = uicyce.Rotation.RotateAroundAxis( Vector3.Left, 10 );

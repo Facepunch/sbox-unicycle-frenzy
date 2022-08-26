@@ -13,7 +13,7 @@ internal class CustomizeRenderScene : Panel
 	private SceneWorld sceneWorld;
 	private ScenePanel renderScene;
 	private Angles renderSceneAngles = new( 25.0f, 0.0f, 0.0f );
-	private float renderSceneDistance = 135;
+	private float renderSceneDistance = 85;
 	private Vector3 renderScenePos => Vector3.Up * 22 + renderSceneAngles.Direction * -renderSceneDistance;
 
 	private bool drag;
@@ -79,7 +79,7 @@ internal class CustomizeRenderScene : Panel
 		renderScene = Add.ScenePanel( sceneWorld, renderScenePos, Rotation.From( renderSceneAngles ), 75 );
 		renderScene.Style.Width = Length.Percent( 100 );
 		renderScene.Style.Height = Length.Percent( 100 );
-		renderScene.CameraPosition = new Vector3( -53, 100, 42 );
+		renderScene.CameraPosition = new Vector3( -33, 100, 42 );
 		renderScene.CameraRotation = Rotation.From( 10, -62, 0 );
 		renderSceneAngles = renderScene.CameraRotation.Angles();
 	}
