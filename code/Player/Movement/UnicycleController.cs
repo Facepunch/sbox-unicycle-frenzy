@@ -454,6 +454,8 @@ internal partial class UnicycleController : BasePlayerController
 
 			new FallCameraModifier( jumpStrength );
 
+			Sound.FromEntity( "sounds/unicycle/unicycle.jump.sound", pl );
+
 			AddEvent( "jump" );
 			return;
 		}
