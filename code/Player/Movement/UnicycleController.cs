@@ -12,24 +12,24 @@ internal partial class UnicycleController : BasePlayerController
 	[ConVar.Replicated( "uf_debug_notilt" )]
 	public static bool NoTilt { get; set; } = false;
 
-	public float PedalTime => .75f;
+	public float PedalTime => .45f;
 	public float PedalResetAfter => 1.5f;
-	public float PedalResetTime => .75f;
-	public float MinPedalStrength => 10f;
-	public float MaxPedalStrength => 50f;
+	public float PedalResetTime => .55f;
+	public float MinPedalStrength => 8f;
+	public float MaxPedalStrength => 35f;
 	public float MinJumpStrength => 200f;
 	public float MaxJumpStrength => 375f;
-	public float MaxJumpStrengthTime => 1f;
+	public float MaxJumpStrengthTime => .8f;
 	public float PerfectPedalBoost => 50f;
-	public float MaxLean => 42f;
-	public float LeanSafeZone => 8f;
-	public float LeanSpeed => 80f;
-	public float TipSpeed => 1.5f;
-	public float SlopeTipSpeed => 2f;
-	public float GroundTurnSpeed => 2f;
+	public float MaxLean => 30f;
+	public float LeanSafeZone => 5f;
+	public float LeanSpeed => 60f;
+	public float TipSpeed => 1.75f;
+	public float SlopeTipSpeed => 3f;
+	public float GroundTurnSpeed => 1.4f;
 	public float AirTurnSpeed => 2f;
 	public float SlopeSpeed => 800f;
-	public float BrakeStrength => 3f;
+	public float BrakeStrength => 4.5f;
 	public float StopSpeed => 10f;
 	public float MaxAirTurnSpeed => 35f;
 	// fuck it
