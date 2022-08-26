@@ -150,6 +150,7 @@ internal partial class UnicyclePlayer
 		}
 
 		Event.Run( "unicycle.checkpoint.set", this );
+		RunCheckpointSetOnClient();
 
 		Sound.FromScreen( To.Single( this ), "sounds/course/course.checkpoint.sound" );
 
@@ -220,6 +221,12 @@ internal partial class UnicyclePlayer
 		Sound.FromScreen( "course.complete" );
 
 		MapStats.Local.AddCompletion();
+	}
+
+	[ClientRpc]
+	private void RunCheckpointSetOnClient()
+	{
+		Event.Run( "unicycle.checkpoint.set", this );
 	}
 
 	[ConCmd.Server( "uf_nextcp" )]
