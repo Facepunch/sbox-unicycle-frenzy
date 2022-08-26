@@ -9,6 +9,10 @@ partial class UnicyclePlayer
 	public InputActions DisplayedAction { get; set; }
 	[Net]
 	public bool PerfectPedalGlow { get; set; }
+	[Net]
+	public float StopDoorTimer { get; set; }
+	[Net]
+	public bool TouchingStopDoorTrigger { get; set; }
 
 	private TimeSince tsVelocityLow;
 
@@ -51,18 +55,25 @@ partial class UnicyclePlayer
 		ent.Open();
 	}
 
+	const float StopDuration = 2f;
 	[Event.Tick.Server]
 	private void CheckStopDoorTrigger()
 	{
 		if( Velocity.WithZ(0).Length > 35 )
 		{
 			tsVelocityLow = 0;
+			StopDoorTimer = -float.Epsilon;
 		}
 
-		if ( !StopDoorTrigger.IsValid() || !StopDoor.IsValid() ) return;
+		TouchingStopDoorTrigger = false;
 
-		var openit = tsVelocityLow >= 1
-			&& StopDoorTrigger.TouchingEntities.Contains( this )
+		if ( !StopDoorTrigger.IsValid() || !StopDoor.IsValid() ) return;
+		if ( !StopDoorTrigger.TouchingEntities.Contains( this ) ) return;
+
+		TouchingStopDoorTrigger = true;
+		StopDoorTimer = tsVelocityLow / StopDuration;
+
+		var openit = tsVelocityLow >= StopDuration
 			&& StopDoor.State == DoorEntity.DoorState.Closed;
 
 		if ( openit )
@@ -89,8 +100,8 @@ partial class UnicyclePlayer
 		}
 	}
 
-	private static BaseTrigger StopDoorTrigger => All.FirstOrDefault( x => x.Name.Equals( "tut_trigger_top" ) ) as BaseTrigger;
-	private static DoorEntity StopDoor => All.FirstOrDefault( x => x.Name == "tut_door_stop" ) as DoorEntity;
+	public static BaseTrigger StopDoorTrigger => All.FirstOrDefault( x => x.Name.Equals( "tut_trigger_top" ) ) as BaseTrigger;
+	public static DoorEntity StopDoor => All.FirstOrDefault( x => x.Name == "tut_door_stop" ) as DoorEntity;
 	private static DoorEntity CollectionDoor => All.FirstOrDefault( x => x is DoorEntity && x.Name == "tut_door" ) as DoorEntity;
 
 }
