@@ -570,7 +570,7 @@ internal partial class UnicycleController : BasePlayerController
 		if ( Pawn.IsLocalPawn )
 		{
 			new FallCameraModifier( -100f );
-			Sound.FromScreen( "sounds/unicycle/unicycle.pedal.perfect.sound" );
+			Sound.FromEntity( "sounds/unicycle/unicycle.pedal.perfect.sound", pl );
 		}
 
 		Velocity += Rotation.Forward.WithZ( 0 ) * PerfectPedalBoost;

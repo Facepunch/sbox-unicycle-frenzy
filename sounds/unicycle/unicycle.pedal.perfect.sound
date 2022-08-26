@@ -2,8 +2,8 @@
 {
 	data = 
 	{
-		UI = true
-		Volume = 1
+		UI = false
+		Volume = 0.82
 		VolumeRandom = 0
 		Pitch = 1
 		PitchRandom = 0

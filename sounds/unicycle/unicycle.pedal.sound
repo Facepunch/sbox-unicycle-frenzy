@@ -2,16 +2,18 @@
 {
 	data = 
 	{
-		ui = false
-		volume = 1.0
-		volumerandom = 0.25
-		pitch = 1.0
-		pitchrandom = 0.15
-		distancemax = 600.0
-		sounds = 
+		UI = false
+		Volume = 1
+		VolumeRandom = 0.03
+		Pitch = 1
+		PitchRandom = 0.15
+		Decibels = 85
+		Sounds = 
 		[
-			"sounds/unicycle/unicycle.pedal.3.vsnd",
+			resource:"sounds/unicycle/unicycle.pedal.3.vsnd",
 		]
-		selectionmode = "3"
+		SelectionMode = "Random"
+		MaximumDistance = 1671.5345
+		MinimumDistance = 83.57673
 	}
 }
