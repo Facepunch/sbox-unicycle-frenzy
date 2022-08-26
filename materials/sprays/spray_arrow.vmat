@@ -4,9 +4,6 @@ Layer0
 {
 	shader "projected_decals.vfx"
 
-	//---- Use Sheet Textures ----
-	F_USE_SHEETS 1
-
 	//---- Ambient Occlusion ----
 	TextureAmbientOcclusion "materials/default/default_ao.tga"
 
@@ -23,4 +20,7 @@ Layer0
 
 	//---- Metalness ----
 	TextureMetalness "materials/default/default_metal.tga"
+
+	//---- Translucent ----
+	TextureTranslucency "materials/default/default_trans.tga"
 }

@@ -230,10 +230,10 @@ internal partial class UnicyclePlayer : Sandbox.Player
         if ( timeSinceSpray < 3f ) return;
         timeSinceSpray = 0;
 
-        var sprayPart = Client.Components.Get<CustomizationComponent>().GetEquippedPart( PartType.Spray.ToString() );
-        var mat = Material.Load( sprayPart.AssetPath );
+		var sprayPart = Client.Components.Get<CustomizationComponent>().GetEquippedPart( PartType.Spray.ToString() );
+		var mat = Material.Load( sprayPart.AssetPath );
 
-		DecalSystem.PlaceOnWorld( To.Everyone, mat, Vector3.One * 50, Rotation.LookAt( Vector3.Up ), 1 );
+		DecalSystem.PlaceOnWorld( To.Everyone, mat, Position, Rotation.LookAt( Vector3.Up ), 64 );
     }
 
 }
