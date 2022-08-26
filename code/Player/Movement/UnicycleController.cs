@@ -529,8 +529,8 @@ internal partial class UnicycleController : BasePlayerController
 
 	public bool CanPedalBoost( out bool leftPedal, out bool rightPedal )
 	{
-		const float boostMinRange = .8f;
-		const float boostMaxRange = .99f;
+		const float boostMinRange = .65f;
+		const float boostMaxRange = .995f;
 
 		leftPedal = false;
 		rightPedal = false;
@@ -570,6 +570,7 @@ internal partial class UnicycleController : BasePlayerController
 		if ( Pawn.IsLocalPawn )
 		{
 			new FallCameraModifier( -100f );
+			Sound.FromScreen( "sounds/unicycle/unicycle.pedal.perfect.sound" );
 		}
 
 		Velocity += Rotation.Forward.WithZ( 0 ) * PerfectPedalBoost;
