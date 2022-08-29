@@ -73,7 +73,8 @@ internal partial class Collectible : UfProp
 	{
 		var ents = All
 			.OfType<Collectible>()
-			.Where( x => x.IsValid() && x.Collection.Equals( collection, StringComparison.InvariantCultureIgnoreCase ) );
+			.Where( x => x.IsValid() && !string.IsNullOrEmpty( x.Collection ) )
+			.Where( x => x.Collection.Equals( collection, StringComparison.InvariantCultureIgnoreCase ) );
 
 		if ( !ents.Any() ) return false;
 
@@ -84,7 +85,8 @@ internal partial class Collectible : UfProp
 	{
 		var ents = All
 			.OfType<Collectible>()
-			.Where( x => x.IsValid() && x.Collection.Equals( collection, StringComparison.InvariantCultureIgnoreCase ) );
+			.Where( x => x.IsValid() && !string.IsNullOrEmpty( x.Collection ) )
+			.Where( x => x.Collection.Equals( collection, StringComparison.InvariantCultureIgnoreCase ) );
 
 		foreach( var ent in ents )
 		{
