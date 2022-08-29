@@ -50,6 +50,8 @@ internal partial class UnicyclePlayer
 
 		Event.Run( "unicycle.fall", this );
 
+		Particles.Create( "particles/player/slamland.vpcf", Position );
+
 		if( incrementFallStat ) AddFallOnClient();
 
 		ResetMovement();
