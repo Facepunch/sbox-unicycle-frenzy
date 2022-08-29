@@ -39,12 +39,11 @@ internal partial class Collectible : UfProp
 
 		if( touched )
 		{
-			// TODO! BUG! Setting final scale to 0 causes
-			// the player to longer collide with the world and fall through map
-			// seems... weird?  this ent has nothing to do with player like that
-			Juice.Scale( 1, 1.5f, 0.01f )
+			Particles.Create( "particles/misc/collectpickup.vpcf", Position );
+
+			Juice.Scale( 1, 1.15f, 0.01f )
 				.WithTarget( this )
-				.WithDuration( .5f );
+				.WithDuration( .15f );
 
 			Sound.FromEntity( "collect", this );
 		}
@@ -52,7 +51,7 @@ internal partial class Collectible : UfProp
 		{
 			Juice.Scale( 0, 1.5f, 1f )
 				.WithTarget( this )
-				.WithDuration( .5f );
+				.WithDuration( .15f );
 		}
 	}
 
