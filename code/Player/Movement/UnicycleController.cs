@@ -104,13 +104,6 @@ internal partial class UnicycleController : BasePlayerController
 		Move();
 		Velocity -= BaseVelocity;
 
-		if ( ShouldFall() )
-		{
-			pl.Fall();
-
-			AddEvent( "fall" );
-		}
-
 		if( GroundEntity != null && !pl.PrevGrounded )
 		{
 			AddEvent( "grounded" );
@@ -119,6 +112,13 @@ internal partial class UnicycleController : BasePlayerController
 		pl.TimeSincePedalStart += Time.Delta;
 		pl.PrevGrounded = beforeGrounded;
 		pl.PrevVelocity = beforeVelocity;
+
+		if ( ShouldFall() )
+		{
+			pl.Fall();
+
+			AddEvent( "fall" );
+		}
 	}
 
 	private Rotation prevRot;
@@ -228,6 +228,10 @@ internal partial class UnicycleController : BasePlayerController
 			if ( GroundEntity != null )
 			{
 				pl.TimeSinceNotGrounded = 0;
+			}
+			else
+			{
+				pl.TimeSinceNotGrounded += Time.Delta;
 			}
 			GroundEntity = null;
 			return;

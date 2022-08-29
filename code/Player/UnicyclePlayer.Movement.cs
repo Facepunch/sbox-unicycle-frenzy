@@ -23,7 +23,7 @@ internal partial class UnicyclePlayer
 	[Net, Predicted]
 	public float TimeSinceJumpDown { get; set; }
 	[Net, Predicted]
-	public TimeSince TimeSinceNotGrounded { get; set; }
+	public float TimeSinceNotGrounded { get; set; }
 	[Net, Predicted]
 	public Angles JumpTilt { get; set; }
 	[Net, Predicted]
@@ -44,9 +44,6 @@ internal partial class UnicyclePlayer
 	{
 		if ( Fallen ) return;
 
-		Fallen = true;
-		FallCount++;
-
 		Sound.FromWorld( "unicycle.crash.default", Position );
 
 		Game.Current.DoPlayerSuicide( Client );
@@ -54,23 +51,27 @@ internal partial class UnicyclePlayer
 		Event.Run( "unicycle.fall", this );
 
 		if( incrementFallStat ) AddFallOnClient();
+
+		ResetMovement();
+		Fallen = true;
+		FallCount++;
 	}
 
 	public void ResetMovement()
 	{
-		PedalPosition = default;
-		Tilt = default;
-		TimeToReachTarget = default;
-		PedalStartPosition = default;
-		PedalTargetPosition = default;
-		TimeSincePedalStart = default;
+		PedalPosition = 0;
+		Tilt = Angles.Zero;
+		TimeToReachTarget = 0;
+		PedalStartPosition = 0;
+		PedalTargetPosition = 0;
+		TimeSincePedalStart = 0;
 		TargetForward = Rotation;
-		JumpTilt = default;
-		PrevJumpTilt = default;
-		PrevVelocity = default;
-		PrevGrounded = default;
-		TimeSinceNotGrounded = default;
-		TimeSinceJumpDown = default;
+		JumpTilt = Angles.Zero;
+		PrevJumpTilt = Angles.Zero;
+		PrevVelocity = Vector3.Zero;
+		PrevGrounded = false;
+		TimeSinceNotGrounded = 0;
+		TimeSinceJumpDown = 0;
 		Fallen = false;
 	}
 

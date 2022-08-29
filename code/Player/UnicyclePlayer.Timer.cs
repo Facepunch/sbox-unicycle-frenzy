@@ -4,9 +4,9 @@ using System.Linq;
 internal partial class UnicyclePlayer
 {
 
-	[Net, Predicted]
+	[Net]
 	public TimerState TimerState { get; set; }
-	[Net, Predicted]
+	[Net]
 	public TimeSince TimeSinceStart { get; set; }
 	[Net, Change]
 	public float BestTime { get; set; } = defaultBestTime;

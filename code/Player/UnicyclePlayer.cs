@@ -43,8 +43,8 @@ internal partial class UnicyclePlayer : Sandbox.Player
         Citizen.SetAnimGraph( "models/citizen_unicycle_frenzy.vanmgrph" );
 
         CameraMode = new UnicycleCamera();
-        Controller = new UnicycleController();
-        Animator = new UnicycleAnimator();
+        Controller ??= new UnicycleController();
+        Animator ??= new UnicycleAnimator();
 
 		Clothing ??= new();
 		Clothing.LoadFromClient( Client );
@@ -99,13 +99,7 @@ internal partial class UnicyclePlayer : Sandbox.Player
 		// don't simulate when spectating somebody
         if ( SpectateTarget.IsValid() ) return;
 
-		if ( Input.Pressed( InputButton.Duck ) )
-		{
-			Log.Error( "Go" );
-			new FallCameraModifier( 1000f );
-		}
-
-		if ( LifeState == LifeState.Alive )
+		if ( !Fallen )
         {
             var controller = GetActiveController();
             controller?.Simulate( cl, this, GetActiveAnimator() );
@@ -122,7 +116,7 @@ internal partial class UnicyclePlayer : Sandbox.Player
             }
         }
 
-        if ( LifeState == LifeState.Dead )
+        if ( Fallen )
         {
             if ( IsServer && TimeSinceDied > RespawnDelay )
                 Respawn();
