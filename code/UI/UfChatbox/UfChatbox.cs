@@ -30,11 +30,6 @@ public partial class UfChatbox : Panel
 	{
 		Current = this;
 
-		Sandbox.Hooks.Chat.OnOpenChat += () =>
-		{
-			IsOpen = !IsOpen;
-		};
-
 		EntryCanvas.PreferScrollToBottom = true;
 		EntryCanvas.TryScrollToBottom();
 
@@ -52,7 +47,7 @@ public partial class UfChatbox : Panel
 	public override void Tick()
 	{
 		base.Tick();
-		
+	
 		SetClass( "topleft", GameEnd.IsOpen );
 
 		if ( !IsOpen ) return;
@@ -77,6 +72,15 @@ public partial class UfChatbox : Panel
 		if ( string.IsNullOrWhiteSpace( Input.Text ) ) return;
 
 		SendChat( Input.Text );
+	}
+
+	[Event.BuildInput]
+	private void OnBuildInput( InputBuilder b )
+	{
+		if ( b.Pressed( InputButton.Chat ) )
+		{
+			IsOpen = !IsOpen;
+		}
 	}
 
 	[ConCmd.Server]
