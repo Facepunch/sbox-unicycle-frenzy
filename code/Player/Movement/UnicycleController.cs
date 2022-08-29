@@ -305,7 +305,7 @@ internal partial class UnicycleController : BasePlayerController
 		}
 
 		// recover tilt from momentum
-		var recover = Math.Min( Velocity.WithZ( 0 ).Length / 100f, 2.25f );
+		var recover = Math.Min( Velocity.WithZ( 0 ).Length / 100f, 1.5f );
 		var tilt = pl.Tilt;
 		tilt = Angles.Lerp( tilt, Angles.Zero, recover * Time.Delta );
 
