@@ -25,6 +25,7 @@ internal partial class FrenzyCollectible : Collectible
 		base.Spawn();
 
 		SetupPhysicsFromSphere( PhysicsMotionType.Static, Vector3.Up * 32f, 32f );
+		Collection = "FRENZY";
 	}
 
 	protected override void OnCollected( UnicyclePlayer pl )
