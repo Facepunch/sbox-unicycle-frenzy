@@ -1139,6 +1139,7 @@
 	[
 		{
 			m_ChildRef = resource:"particles/gameplay/player/slamland/slamland_a.vpcf"
+			m_bDisableChild = true
 		},
 	]
 }

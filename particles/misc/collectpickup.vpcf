@@ -1263,6 +1263,7 @@
 	[
 		{
 			m_ChildRef = resource:"particles/gameplay/player/collectpickup/collectpickup_a.vpcf"
+			m_bDisableChild = true
 		},
 	]
 }
