@@ -216,6 +216,17 @@ internal partial class Achievement
 				Thumbnail = "https://files.facepunch.com/crayz/1b0911b1/juggler.png"
 			} );
 
+			result.Add( new Achievement()
+			{
+				AchievementId = 13,
+				Description = "Collect all the letters of F-R-E-N-Z-Y",
+				DisplayName = "FRENZY",
+				ShortName = "uf_frenzy",
+				GameName = Global.GameIdent,
+				PerMap = true,
+				Thumbnail = "https://files.facepunch.com/sbox/asset/facepunch.unicycle_frenzy/logo.c35e8d94.png"
+			} );
+
 			return result;
 		}
 	}

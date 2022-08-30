@@ -10,6 +10,7 @@ internal class FrenzyLetter : WorldPanel
 	public FrenzyCollectible Collectible { get; }
 
 	private Vector3 PositionOffset;
+	private bool Owning;
 
 	public FrenzyLetter( FrenzyCollectible collectible )
 	{
@@ -20,6 +21,8 @@ internal class FrenzyLetter : WorldPanel
 		PanelBounds = new Rect( -width * .5f, -height * .5f, width, height );
 
 		PositionOffset = Vector3.Random.WithZ( 0 ).Normal;
+
+		Owning = new FrenzyCollectible.FrenzyCollectionHelper().Contains( Collectible.Letter );
 	}
 
 	[Event.Frame]
@@ -27,7 +30,7 @@ internal class FrenzyLetter : WorldPanel
 	{
 		var position = Collectible.Position + Vector3.Up * 32;
 		var holding = Collectible.Holders.Contains( Local.Pawn as UnicyclePlayer );
-		var owning =  Collectible.Owners.Contains( Local.Pawn as UnicyclePlayer );
+		var owning = Owning || Collectible.Owners.Contains( Local.Pawn as UnicyclePlayer );
 
 		if ( holding )
 		{
