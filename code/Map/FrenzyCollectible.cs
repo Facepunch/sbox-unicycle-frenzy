@@ -10,7 +10,7 @@ using System.ComponentModel.DataAnnotations;
 internal partial class FrenzyCollectible : Collectible
 {
 
-	public enum FrenzyCollectibleLetter
+	public enum FrenzyLetter
 	{
 		F,
 		R,
@@ -21,7 +21,7 @@ internal partial class FrenzyCollectible : Collectible
 	}
 
 	[Net, Property]
-	public FrenzyCollectibleLetter Letter { get; set; }
+	public FrenzyLetter Letter { get; set; }
 	[Net, Property]
 	public IList<UnicyclePlayer> Holders { get; set; }
 	[Net, Property]
@@ -69,7 +69,7 @@ internal partial class FrenzyCollectible : Collectible
 	{
 		base.ClientSpawn();
 
-		new FrenzyLetter( this );
+		new global::FrenzyLetter( this );
 		Light = new SpotLightEntity();
 		Light.DynamicShadows = false;
 		Light.SetParent( this, null, Transform.Zero );
@@ -80,9 +80,9 @@ internal partial class FrenzyCollectible : Collectible
 	}
 
 	[ClientRpc]
-	public static void SetFrenzyLetterCollected( FrenzyCollectibleLetter letter )
+	public static void SetFrenzyLetterCollected( FrenzyLetter letter )
 	{
-		var result = new FrenzyCollectionHelper().TryAdd( letter );
+		var result = FrenzyCollectionHelper.TryAdd( letter );
 		if ( result == FrenzyCollectionHelper.Result.Added )
 		{
 			// Log.Error( "ADDED: " + letter );
@@ -92,44 +92,6 @@ internal partial class FrenzyCollectible : Collectible
 		{
 			Achievement.Set( Local.PlayerId, "uf_frenzy", Global.MapName );
 		}
-	}
-
-	public class FrenzyCollectionHelper
-	{
-
-		public enum Result
-		{
-			None,
-			Added,
-			Completed
-		}
-
-		public Result TryAdd( FrenzyCollectibleLetter letter )
-		{
-			var cookiename = $"{Global.MapName}.frenzycollection1";
-			var collection = Cookie.Get<List<FrenzyCollectibleLetter>>( cookiename, new() );
-
-			if ( collection.Contains( letter ) ) 
-				return Result.None;
-
-			collection.Add( letter );
-
-			Cookie.Set( cookiename, collection );
-
-			if ( collection.Count == 6 )
-				return Result.Completed;
-
-			return Result.Added;
-		}
-
-		public bool Contains( FrenzyCollectibleLetter letter )
-		{
-			var cookiename = $"{Global.MapName}.frenzycollection1";
-			var collection = Cookie.Get<List<FrenzyCollectibleLetter>>( cookiename, new() );
-
-			return collection.Contains( letter );
-		}
-
 	}
 
 }

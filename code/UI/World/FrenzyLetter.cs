@@ -22,7 +22,7 @@ internal class FrenzyLetter : WorldPanel
 
 		PositionOffset = Vector3.Random.WithZ( 0 ).Normal;
 
-		Owning = new FrenzyCollectible.FrenzyCollectionHelper().Contains( Collectible.Letter );
+		Owning = FrenzyCollectionHelper.Contains( Collectible.Letter );
 	}
 
 	[Event.Frame]

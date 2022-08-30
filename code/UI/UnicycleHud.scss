@@ -60,3 +60,28 @@ IconPanel {
 .rows {
   flex-direction: row;
 }
+
+FrenzyCollectionHud {
+    position: absolute;
+    bottom: 48px;
+    right: 48px;
+    opacity: 0;
+    transition: opacity .25s ease;
+
+    &.open {
+        opacity: 1;
+    }
+
+    label {
+        font-size: 40px;
+        font-family: $title-font;
+        text-stroke: 5px black;
+        margin-right: 10px;
+        opacity: 0.5;
+
+        &.collected {
+            opacity: .75;
+            color: $green;
+        }
+    }
+}
