@@ -3,7 +3,6 @@ using Sandbox;
 using SandboxEditor;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
-using System.Linq;
 
 [Library( "uf_frenzy_letter" )]
 [Display( Name = "FRENZY Collectible", GroupName = "Unicycle Frenzy", Description = "A letter for the F-R-E-N-Z-Y minigame" )]
@@ -11,8 +10,18 @@ using System.Linq;
 internal partial class FrenzyCollectible : Collectible
 {
 
+	public enum FrenzyCollectibleLetter
+	{
+		F,
+		R,
+		E,
+		N,
+		Z,
+		Y
+	}
+
 	[Net, Property]
-	public string Letter { get; set; }
+	public FrenzyCollectibleLetter Letter { get; set; }
 	[Net, Property]
 	public IList<UnicyclePlayer> Holders { get; set; }
 	[Net, Property]
