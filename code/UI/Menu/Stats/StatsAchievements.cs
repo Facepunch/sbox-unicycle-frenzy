@@ -10,6 +10,7 @@ internal class StatsAchievements : NavigatorPanel
 	public Panel AchievementCanvas { get; set; }
 	public string AchievementCount { get; set; }
 
+	[Event( "achievement.medals.spawned" )]
 	private void RebuildAchievements()
 	{
 		// setting dummy achievements to debug/preview
@@ -75,8 +76,6 @@ internal class StatsAchievements : NavigatorPanel
 		return $"Complete the map in {CourseTimer.FormattedTimeMs( time )}s or better";
 	}
 
-	[Event.Entity.PostSpawn]
-	private void PostEntitiesSpawned() => RebuildAchievements();
 	public override void OnHotloaded() => RebuildAchievements();
 	protected override void PostTemplateApplied() => RebuildAchievements();
 

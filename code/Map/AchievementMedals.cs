@@ -25,4 +25,11 @@ internal partial class AchievementMedals : Entity
 	[Net]
 	public float Bronze { get; set; }
 
+	public override void ClientSpawn()
+	{
+		base.ClientSpawn();
+
+		Event.Run( "achievement.medals.spawned" );
+	}
+
 }
