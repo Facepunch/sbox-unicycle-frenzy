@@ -83,23 +83,6 @@ partial class UnicyclePlayer
 		}
 	}
 
-	private void ResetTutorial()
-	{
-		Host.AssertServer();
-
-		Collectible.ResetCollection( "collection_tutorial" );
-
-		if ( CollectionDoor.IsValid() )
-		{
-			CollectionDoor.Close();
-		}
-
-		if ( StopDoor.IsValid() )
-		{
-			StopDoor.Close();
-		}
-	}
-
 	public static BaseTrigger StopDoorTrigger => All.FirstOrDefault( x => x.Name.Equals( "tut_trigger_top" ) ) as BaseTrigger;
 	public static DoorEntity StopDoor => All.FirstOrDefault( x => x.Name == "tut_door_stop" ) as DoorEntity;
 	private static DoorEntity CollectionDoor => All.FirstOrDefault( x => x is DoorEntity && x.Name == "tut_door" ) as DoorEntity;

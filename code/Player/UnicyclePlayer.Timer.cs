@@ -120,11 +120,6 @@ internal partial class UnicyclePlayer
 		if ( IsServer )
 		{
 			ClearCheckpoints();
-
-			if (Global.MapName.EndsWith("uf_tutorial"))
-            {
-				ResetTutorial();
-			}
 		}
 	}
 
