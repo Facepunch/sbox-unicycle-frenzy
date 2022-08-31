@@ -21,6 +21,7 @@ internal partial class UnicycleController : BasePlayerController
 	public float MaxJumpStrength => 375f;
 	public float MaxJumpStrengthTime => .8f;
 	public float PerfectPedalBoost => 50f;
+	public float PerfectPedalTimeframe => .25f;
 	public float MaxLean => 30f;
 	public float LeanSafeZone => 5f;
 	public float LeanSpeed => 60f;
@@ -535,23 +536,22 @@ internal partial class UnicycleController : BasePlayerController
 
 	public bool CanPedalBoost( out bool leftPedal, out bool rightPedal )
 	{
-		const float boostMinRange = .65f;
-		const float boostMaxRange = .995f;
-
 		leftPedal = false;
 		rightPedal = false;
 
-		if ( Pawn is not UnicyclePlayer player ) return false;
+		if ( Pawn is not UnicyclePlayer player ) 
+			return false;
 
-		leftPedal = player.PedalPosition > boostMinRange
-			&& player.PedalPosition < boostMaxRange
-			&& player.PedalTargetPosition > player.PedalPosition;
+		var time = player.TimeSincePedalStart - PedalTime;
+		var canboost = time < PerfectPedalTimeframe && time > 0f;
 
-		rightPedal = player.PedalPosition < -boostMinRange
-			&& player.PedalPosition > -boostMaxRange
-			&& player.PedalTargetPosition < player.PedalPosition;
+		if ( canboost )
+		{
+			leftPedal = player.PedalPosition > .75f;
+			rightPedal = player.PedalPosition < -.75f;
+		}
 
-		return leftPedal || rightPedal;
+		return canboost;
 	}
 
 	private void SetPedalTarget( float target, float timeToReach, bool tryBoost = false )
