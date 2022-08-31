@@ -83,6 +83,11 @@ internal partial class UnicyclePlayer
 				SetAchievementOnClient( To.Single( Client ), "uf_expert", Global.MapName );
 			}
 
+			if ( Global.MapName.EndsWith( "uf_tutorial" ) )
+			{
+				SetAchievementOnClient( To.Single( Client ), "uf_complete_tutorial", Global.MapName );
+			}
+
 			if ( TimeSinceStart < BestTime )
 			{
 				if( CourseIncomplete )
