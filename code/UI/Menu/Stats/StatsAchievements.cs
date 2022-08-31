@@ -18,7 +18,7 @@ internal class StatsAchievements : NavigatorPanel
 
 		AchievementCanvas.DeleteChildren( true );
 
-		var mapAchievements = Achievement.FetchForMap();
+		var mapAchievements = Achievement.FetchForMap().OrderByDescending( x => x.IsCompleted() );
 		var total = 0;
 		var achieved = 0;
 
@@ -36,13 +36,6 @@ internal class StatsAchievements : NavigatorPanel
 
 			var entry = new StatsAchievementsEntry( ach );
 			entry.Parent = AchievementCanvas;
-
-			// we can add +30xp or whatever to the icon if desired
-			var xpGranted = ExperienceGranted( ach );
-			if ( xpGranted > 0 )
-			{
-
-			}
 
 			if ( ach.IsCompleted() )
 			{
