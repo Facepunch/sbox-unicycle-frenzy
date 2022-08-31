@@ -16,11 +16,11 @@ internal partial class Collectible : UfProp
 	[Net]
 	public bool Touched { get; set; }
 
+	private float OriginalZ;
+
 	public override void Spawn()
 	{
 		base.Spawn();
-
-		Tags.Add( "trigger" );
 
 		SetupPhysicsFromModel( PhysicsMotionType.Static );
 		EnableAllCollisions = false;
@@ -29,6 +29,16 @@ internal partial class Collectible : UfProp
 		Tags.Add( "trigger" );
 		
 		Transmit = TransmitType.Always;
+		OriginalZ = Position.z;
+	}
+
+	[Event.Tick.Server]
+	private void OnTick()
+	{
+		var offset = 7f * MathF.Sin( Time.Now * 1.35f );
+		Position = Position.WithZ( OriginalZ + offset );
+
+		Rotation *= Rotation.FromYaw( 2f );
 	}
 
 	public void SetTouched( bool touched )
