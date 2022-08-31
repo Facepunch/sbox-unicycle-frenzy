@@ -15,16 +15,10 @@ internal class StatsAchievementsEntry : Panel
 		Achievement = achievement;
 		Icon.Style.SetBackgroundImage( achievement.Thumbnail );
 
-
 		var tpa = TrailPass.Current.Achievements.FirstOrDefault( x => x.AchievementShortName == Achievement.ShortName );
-		if ( tpa == null || tpa.ExperienceGranted == 0 )
-		{
-			SetClass( "grantsxp", false );
-			return;
-		}
-
-		SetClass( "grantsxp", true );
-		Experience = tpa.ExperienceGranted;
+		var xp = tpa?.ExperienceGranted ?? 0;
+		SetClass( "grantsxp", xp > 0 );
+		Experience = xp;
 	}
 
 	public override void Tick()

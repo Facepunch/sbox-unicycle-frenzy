@@ -59,15 +59,6 @@ internal class StatsAchievements : NavigatorPanel
 		}.Contains( ach.ShortName );
 	}
 
-	private static int ExperienceGranted( Achievement ach )
-	{
-		var pass = TrailPass.Current;
-		var tpAchi = pass.Achievements.FirstOrDefault( x => x.AchievementShortName == ach.ShortName );
-		if ( tpAchi == null ) return 0;
-
-		return tpAchi.ExperienceGranted;
-	}
-
 	private static string GetMedalDescription( Achievement ach )
 	{
 		var achMedals = Entity.All.FirstOrDefault( x => x is AchievementMedals ) as AchievementMedals;
