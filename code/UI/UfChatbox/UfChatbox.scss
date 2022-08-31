@@ -110,11 +110,13 @@ UfChatboxEntry {
 
   &.custom {
     .name {
-      display: none;
+    }
+
+    .message {
+        background-color: $orange-light;
     }
 
     &.timer-msg {
-      color: $primary;
     }
   }
 }
