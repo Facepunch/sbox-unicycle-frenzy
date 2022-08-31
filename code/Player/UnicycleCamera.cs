@@ -15,8 +15,9 @@ internal class UnicycleCamera : CameraMode
 		if ( pawn == null ) return;
 		if ( pawn.SpectateTarget.IsValid() ) pawn = pawn.SpectateTarget;
 
-		var pos = pawn.Position + Vector3.Up * 2 + pawn.Rotation.Backward * 10f;
-		Sound.Listener = new Transform( pos, pawn.Rotation );
+		var dir = (Position - pawn.Position).Normal;
+		var pos = pawn.Position + dir * 15f;
+		Sound.Listener = new Transform( pos, Rotation );
 
 		ClearViewBlockers();
 		UpdateViewBlockers( pawn );
