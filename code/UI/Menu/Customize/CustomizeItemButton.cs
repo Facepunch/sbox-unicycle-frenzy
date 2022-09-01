@@ -83,7 +83,7 @@ internal class CustomizeItemButton : Panel
 				new PartScenePanel( Part, false ).Parent = PartIcon;
 				break;
 			case PartType.Spray:
-				var texname = Path.GetFileNameWithoutExtension( Part.AssetPath );
+				var texname = Path.GetFileNameWithoutExtension( Part.Texture );
 				var texpath = $"textures/sprays/{texname}.png";
 				var tex = Texture.Load( FileSystem.Mounted, texpath, false );
 				if ( tex == null ) return;

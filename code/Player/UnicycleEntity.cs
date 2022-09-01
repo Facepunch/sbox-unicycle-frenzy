@@ -58,16 +58,16 @@ internal partial class UnicycleEntity : Entity
 		var pedal = cfg.GetEquippedPart( PartType.Pedal );
 		var trail = cfg.GetEquippedPart( PartType.Trail );
 
-		Frame = new ModelEntity( frame.AssetPath );
+		Frame = new ModelEntity( frame.Model );
 		Frame.SetParent( this, null, Transform.Zero );
 
-		Seat = new ModelEntity( seat.AssetPath );
+		Seat = new ModelEntity( seat.Model );
 		Seat.SetParent( Frame, "seat", Transform.Zero );
 
 		WheelPivot = new Entity();
 		WheelPivot.SetParent( Frame, "hub", Transform.Zero );
 
-		Wheel = new ModelEntity( wheel.AssetPath );
+		Wheel = new ModelEntity( wheel.Model );
 		Wheel.SetParent( WheelPivot, null, Transform.Zero );
 
 		var wheelRadius = Wheel.GetAttachment( "hud", false )?.Position.z ?? 12f;
@@ -82,7 +82,7 @@ internal partial class UnicycleEntity : Entity
 
 		if ( trail != null )
 		{
-			trailParticle = Particles.Create( trail.AssetPath, this );
+			trailParticle = Particles.Create( trail.Model, this );
 		}
 
 		Scale = .85f;
@@ -93,10 +93,10 @@ internal partial class UnicycleEntity : Entity
 		pivot = new Entity();
 		pivot.SetParent( frame, "hub", Transform.Zero );
 
-		leftPedal = new ModelEntity( pedal.AssetPath );
+		leftPedal = new ModelEntity( pedal.Model );
 		leftPedal.SetParent( pivot, null, Transform.Zero );
 
-		rightPedal = new ModelEntity( pedal.AssetPath );
+		rightPedal = new ModelEntity( pedal.Model );
 		rightPedal.SetParent( pivot, null, Transform.Zero );
 
 		var pedalHub = leftPedal.GetAttachment( "hub", false ) ?? Transform.Zero;

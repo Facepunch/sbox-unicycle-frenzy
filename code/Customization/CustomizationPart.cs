@@ -8,9 +8,15 @@ public class CustomizationPart : GameResource
 
 	public PartType PartType { get; set; }
 	public string DisplayName { get; set; }
-	public string IconPath { get; set; }
-	public string AssetPath { get; set; }
 	public bool IsDefault { get; set; }
+
+	[ResourceType( "vmdl" )]
+	public string Model { get; set; }
+	[ResourceType( "vpcf" )]
+	public string Particle { get; set; }
+	[ResourceType( "vtex" )]
+	public string Texture { get; set; }
+
 
 	public static CustomizationPart Find( string resourceName )
 	{

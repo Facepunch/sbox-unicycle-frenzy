@@ -36,9 +36,9 @@ internal class PartScenePanel : Panel
 
 		scenePanel = Add.ScenePanel( sceneWorld, Vector3.Zero, Rotation.Identity, 35 );
 
-		if ( part.AssetPath.EndsWith( "vpcf" ) )
+		if ( !string.IsNullOrEmpty( part.Particle ) )
 		{
-			var p = new SceneParticles( sceneWorld, part.AssetPath );
+			var p = new SceneParticles( sceneWorld, part.Particle );
 			p.SetControlPoint( 6, .75f );
 			p.SetControlPoint( 7, 1 );
 			p.SetControlPoint( 8, 0 );
@@ -51,9 +51,9 @@ internal class PartScenePanel : Panel
 			scenePanel.Style.Opacity = 1;
 			scenePanel.RenderOnce = true;
 		}
-		else if ( part.AssetPath.EndsWith( "vmdl" ) )
+		else if ( !string.IsNullOrEmpty( part.Model ) )
 		{
-			sceneObj = new SceneModel( sceneWorld, part.AssetPath, Transform.Zero );
+			sceneObj = new SceneModel( sceneWorld, part.Model, Transform.Zero );
 			if ( lookRight ) sceneObj.Rotation = Rotation.LookAt( Vector3.Right );
 			var bounds = sceneObj.Model.RenderBounds;
 

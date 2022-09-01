@@ -102,11 +102,11 @@ internal class CustomizeRenderScene : Panel
 		var seat = ensemble.GetEquippedPart( PartType.Seat );
 		var pedal = ensemble.GetEquippedPart( PartType.Pedal );
 
-		var frameObj = new SceneModel( sceneWorld, frame.AssetPath, Transform.Zero );
-		var wheelObj = new SceneModel( sceneWorld, wheel.AssetPath, Transform.Zero );
-		var seatObj = new SceneModel( sceneWorld, seat.AssetPath, Transform.Zero );
-		var pedalObjL = new SceneModel( sceneWorld, pedal.AssetPath, Transform.Zero );
-		var pedalObjR = new SceneModel( sceneWorld, pedal.AssetPath, Transform.Zero );
+		var frameObj = new SceneModel( sceneWorld, frame.Model, Transform.Zero );
+		var wheelObj = new SceneModel( sceneWorld, wheel.Model, Transform.Zero );
+		var seatObj = new SceneModel( sceneWorld, seat.Model, Transform.Zero );
+		var pedalObjL = new SceneModel( sceneWorld, pedal.Model, Transform.Zero );
+		var pedalObjR = new SceneModel( sceneWorld, pedal.Model, Transform.Zero );
 
 		var frameHub = frameObj.Model.GetAttachment( "hub" ) ?? Transform.Zero;
 		var wheelHub = wheelObj.Model.GetAttachment( "hub" ) ?? Transform.Zero;
@@ -133,11 +133,11 @@ internal class CustomizeRenderScene : Panel
 		frameObj.AddChild( "pedalL", pedalObjL );
 		frameObj.AddChild( "pedalR", pedalObjR );
 
-		if( prevtrail != trail.AssetPath )
+		if( prevtrail != trail.Particle )
 		{
-			prevtrail = trail.AssetPath;
+			prevtrail = trail.Particle;
 			trailParticle?.Delete();
-			trailParticle = new SceneParticles( sceneWorld, trail.AssetPath );
+			trailParticle = new SceneParticles( sceneWorld, trail.Particle );
 			trailParticle.SetControlPoint( 6, .75f );
 			trailParticle.SetControlPoint( 7, 1 );
 			trailParticle.SetControlPoint( 8, 0 );
