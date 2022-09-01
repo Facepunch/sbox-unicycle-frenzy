@@ -10,10 +10,8 @@ internal partial class UnicyclePlayer
 		ent.Position = modelEnt.Position;
 		ent.Rotation = modelEnt.Rotation;
 		ent.Scale = modelEnt.Scale;
-		ent.MoveType = MoveType.Physics;
 		ent.UsePhysicsCollision = true;
 		ent.EnableAllCollisions = true;
-		ent.CollisionGroup = CollisionGroup.Debris;
 		ent.SetModel( modelEnt.GetModelName() );
 		ent.SetupPhysicsFromModel( PhysicsMotionType.Dynamic );
 		ent.CopyBonesFrom( modelEnt );
@@ -26,10 +24,6 @@ internal partial class UnicyclePlayer
 		ent.SurroundingBoundsMode = SurroundingBoundsType.Physics;
 		ent.RenderColor = modelEnt.RenderColor;
 		ent.PhysicsGroup.Velocity = modelEnt.Velocity;
-
-		ent.SetInteractsAs( CollisionLayer.Debris );
-		ent.SetInteractsWith( CollisionLayer.WORLD_GEOMETRY );
-		ent.SetInteractsExclude( CollisionLayer.Player | CollisionLayer.Debris );
 
 		foreach ( var child in modelEnt.Children )
 		{
