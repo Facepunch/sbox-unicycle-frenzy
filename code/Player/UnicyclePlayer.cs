@@ -1,5 +1,4 @@
 ﻿
-using Facepunch.Customization;
 using Sandbox;
 using System;
 using System.Collections.Generic;
@@ -232,7 +231,7 @@ internal partial class UnicyclePlayer : Sandbox.Player
         if ( timeSinceSpray < 3f ) return;
         timeSinceSpray = 0;
 
-		var sprayPart = Client.Components.Get<CustomizationComponent>().GetEquippedPart( PartType.Spray.ToString() );
+		var sprayPart = Client.Components.Get<CustomizationComponent>().GetEquippedPart( PartType.Spray );
 		var mat = Material.Load( sprayPart.AssetPath );
 
 		DecalSystem.PlaceOnWorld( To.Everyone, mat, Position, Rotation.LookAt( Vector3.Up ), 64 );

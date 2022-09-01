@@ -1,5 +1,4 @@
 ﻿
-using Facepunch.Customization;
 using Sandbox.UI;
 using System.Linq;
 
@@ -7,13 +6,13 @@ using System.Linq;
 internal class CustomizeCategoryButton : Button
 {
 
-	public CustomizationCategory Category { get; }
 
+	private readonly PartType PartType;
 	private static CustomizeCategoryButton activeBtn;
 
-	public CustomizeCategoryButton( CustomizationCategory category )
+	public CustomizeCategoryButton( PartType type )
 	{
-		Category = category;
+		PartType = type;
 	}
 
 	protected override void OnClick( MousePanelEvent e )
@@ -32,8 +31,8 @@ internal class CustomizeCategoryButton : Button
 		var customizeTab = Ancestors.OfType<CustomizeTab>().FirstOrDefault();
 		if ( customizeTab == null ) return;
 
-		var cfg = Customization.Config;
-		customizeTab.BuildParts( cfg.Parts.Where( x => x.CategoryId == Category.Id ) );
+		var parts = ResourceLibrary.GetAll<CustomizationPart>().Where( x => x.PartType == PartType );
+		customizeTab.BuildParts( parts );
 	}
 
 }

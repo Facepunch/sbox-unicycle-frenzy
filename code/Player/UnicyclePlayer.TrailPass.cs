@@ -11,7 +11,7 @@ internal partial class UnicyclePlayer
 
 		if ( !IsLocalPawn ) return;
 
-		var progress = TrailPassProgress.CurrentSeason;
+		var progress = TrailPassProgress.Current;
 		progress.Experience += amount;
 		progress.Save();
 

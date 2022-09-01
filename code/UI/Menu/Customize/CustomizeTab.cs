@@ -1,94 +1,77 @@
-﻿using Sandbox.UI;
-using Sandbox.UI.Construct;
+﻿
+using Sandbox.UI;
 using System.Collections.Generic;
 using System.Linq;
-using Facepunch.Customization;
+using System;
 
 [UseTemplate]
-[NavigatorTarget("menu/customize")]
+[NavigatorTarget( "menu/customize" )]
 internal class CustomizeTab : Panel
 {
 
-    public CustomizeRenderScene RenderScene { get; set; }
-    public Panel CategoryTabs { get; set; }
-    public Panel PartsList { get; set; }
+	public CustomizeRenderScene RenderScene { get; set; }
+	public Panel CategoryTabs { get; set; }
+	public Panel PartsList { get; set; }
 	public CustomizationPart HoveredPart { get; set; }
 
-    public CustomizeTab()
-    {
-        UnicycleFrenzy.Game.CustomizationChanged += () =>
-        {
-            BuildRenderScene();
-            BuildPartCategories();
-        };
-    }
+	public override void OnHotloaded()
+	{
+		base.OnHotloaded();
 
-    public override void OnHotloaded()
-    {
-        base.OnHotloaded();
+		BuildRenderScene();
+		BuildPartCategories();
+	}
 
-        BuildRenderScene();
-        BuildPartCategories();
-    }
+	protected override void PostTemplateApplied()
+	{
+		base.PostTemplateApplied();
 
-    protected override void PostTemplateApplied()
-    {
-        base.PostTemplateApplied();
+		BuildRenderScene();
+		BuildPartCategories();
+	}
 
-        BuildRenderScene();
-        BuildPartCategories();
-    }
+	public void BuildRenderScene()
+	{
+		RenderScene?.Build();
+	}
 
-    public void BuildRenderScene()
-    {
-        RenderScene?.Build();
-    }
+	public void BuildParts( IEnumerable<CustomizationPart> parts )
+	{
+		PartsList.DeleteChildren( true );
 
-    public void BuildParts(IEnumerable<CustomizationPart> parts)
-    {
-        PartsList.DeleteChildren(true);
+		parts = parts.OrderBy( x => CanEquip( x ) ? 0 : 1 );
 
-        parts = parts.OrderBy(x => CanEquip(x) ? 0 : 1);
-
-        foreach (var part in parts)
-        {
-            var icon = new CustomizeItemButton(part);
-            icon.Parent = PartsList;
+		foreach ( var part in parts )
+		{
+			var icon = new CustomizeItemButton( part );
+			icon.Parent = PartsList;
 			icon.AddEventListener( "onmouseover", x =>
 			{
 				HoveredPart = part;
 			} );
-        }
-    }
+		}
+	}
 
-    private void BuildPartCategories()
-    {
-        CategoryTabs.DeleteChildren(true);
+	private void BuildPartCategories()
+	{
+		CategoryTabs.DeleteChildren( true );
 
-        var categories = Customization.Config.Categories;
-        var first = true;
+		foreach( PartType partType in Enum.GetValues<PartType>() )
+		{
+			CategoryTabs.AddChild( new CustomizeCategoryButton( partType ) );
+		}
 
-        foreach (var category in categories)
-        {
-            var btn = new CustomizeCategoryButton(category);
-            btn.Parent = CategoryTabs;
+		(CategoryTabs.Children.First() as CustomizeCategoryButton)?.SetActive();
+	}
 
-            if (first)
-            {
-                btn.SetActive();
-                first = false;
-            }
-        }
-    }
+	private static bool CanEquip( CustomizationPart part )
+	{
+		if ( part.IsDefault )
+			return true;
+		if ( TrailPassProgress.Current.IsUnlocked( part ) )
+			return true;
 
-    private static bool CanEquip(CustomizationPart part)
-    {
-        var cat = Customization.Config.Categories.FirstOrDefault(x => x.Id == part.CategoryId);
-
-        if (cat.DefaultPartId == part.Id) return true;
-        if (TrailPassProgress.CurrentSeason.IsUnlockedByPartId(part.Id)) return true;
-
-        return false;
-    }
+		return false;
+	}
 
 }

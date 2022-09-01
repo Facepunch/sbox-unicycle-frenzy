@@ -1,51 +1,30 @@
 ﻿
 using System.Collections.Generic;
-using System.Text.Json;
 
 internal class TrailPassProgress
 {
 
 	public int TrailPassId { get; set; }
 	public int Experience { get; set; }
-	public List<int> UnlockedItems { get; set; } = new();
+	public List<string> UnlockedItems { get; set; } = new();
 
-
-	public static TrailPassProgress CurrentSeason => Deserialize( Cookie.Get( SeasonCookie, "{}" ) );
-	public bool IsUnlocked( int id ) => UnlockedItems.Contains( id );
-	public bool IsUnlockedByPartId( int partid )
+	public bool IsUnlocked( CustomizationPart part )
 	{
-		if( TrailPass.Current.TryGetItem( partid, out var item ) )
-		{
-			return IsUnlocked( item.Id );
-		}
-
-		return false;
+		return UnlockedItems.Contains( part.ResourceName );
 	}
-	public void Unlock( int id ) 
+
+	public void Unlock( CustomizationPart part ) 
 	{ 
-		if ( IsUnlocked( id ) ) return;
-		UnlockedItems.Add( id );
+		if ( IsUnlocked( part ) ) return;
+		UnlockedItems.Add( part.ResourceName );
 	}
-	public void Save() => Cookie.Set( SeasonCookie, Serialize( this ) );
 
+	public void Save()
+	{
+		Cookie.Set( SeasonCookie, this );
+	}
+
+	public static TrailPassProgress Current => Cookie.Get<TrailPassProgress>( SeasonCookie, new() );
 	private static string SeasonCookie => "uf.trailpass." + TrailPass.CurrentSeason;
-
-	private static TrailPassProgress Deserialize( string json )
-	{
-		try
-		{
-			return JsonSerializer.Deserialize<TrailPassProgress>( json );
-		}
-		catch( System.Exception e )
-		{
-			Log.Error( e.Message );
-		}
-		return new() { TrailPassId = TrailPass.CurrentSeason };
-	}
-
-	private static string Serialize( TrailPassProgress ticket )
-	{
-		return JsonSerializer.Serialize( ticket );
-	}
 
 }

@@ -1,4 +1,4 @@
-﻿using Facepunch.Customization;
+﻿
 using Sandbox;
 using System.Collections.Generic;
 
@@ -31,7 +31,7 @@ partial class UnicycleFrenzy : Sandbox.Game
 
 		if ( IsServer )
 		{
-			foreach( var part in Customization.Config.Parts )
+			foreach( var part in ResourceLibrary.GetAll<CustomizationPart>() )
 			{
 				Precache.Add( part.AssetPath );
 			}
@@ -88,23 +88,6 @@ partial class UnicycleFrenzy : Sandbox.Game
 
 		lastFallMessage = idx;
 		return string.Format( fallMessages[idx], playerName );
-	}
-
-	public System.Action CustomizationChanged;
-	private TimeSince timeSinceDirtyCheck;
-
-	[Event.Tick]
-	private async void Tempcustmoziationhotload()
-	{
-		if ( timeSinceDirtyCheck < 1f ) return;
-		timeSinceDirtyCheck = 0;
-
-		//todo: FileSystem.Watcher so we can dodge this bs
-		if ( await Customization.IsDirty() )
-		{
-			await Customization.LoadConfig();
-			CustomizationChanged?.Invoke();
-		}
 	}
 
 }

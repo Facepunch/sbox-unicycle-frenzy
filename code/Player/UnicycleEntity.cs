@@ -1,4 +1,4 @@
-﻿using Facepunch.Customization;
+﻿
 using Sandbox;
 using System;
 
@@ -52,11 +52,11 @@ internal partial class UnicycleEntity : Entity
 
 		var cfg = pl.Client.Components.Get<CustomizationComponent>();
 
-		var frame = cfg.GetEquippedPart( PartType.Frame.ToString() );
-		var seat = cfg.GetEquippedPart( PartType.Seat.ToString() );
-		var wheel = cfg.GetEquippedPart( PartType.Wheel.ToString() );
-		var pedal = cfg.GetEquippedPart( PartType.Pedal.ToString() );
-		var trail = cfg.GetEquippedPart( PartType.Trail.ToString() );
+		var frame = cfg.GetEquippedPart( PartType.Frame );
+		var seat = cfg.GetEquippedPart( PartType.Seat );
+		var wheel = cfg.GetEquippedPart( PartType.Wheel );
+		var pedal = cfg.GetEquippedPart( PartType.Pedal );
+		var trail = cfg.GetEquippedPart( PartType.Trail );
 
 		Frame = new ModelEntity( frame.AssetPath );
 		Frame.SetParent( this, null, Transform.Zero );
@@ -184,7 +184,7 @@ internal partial class UnicycleEntity : Entity
 		if ( localPawnPedals.IsValid() ) return;
 
 		var cfg = pl.Client.Components.Get<CustomizationComponent>();
-		var pedal = cfg.GetEquippedPart( PartType.Pedal.ToString() );
+		var pedal = cfg.GetEquippedPart( PartType.Pedal );
 
 		AssemblePedals( pedal, Frame, out localPawnPedals, out localLeftPedal, out localRightPedal );
 	}

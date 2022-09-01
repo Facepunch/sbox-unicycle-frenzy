@@ -3,9 +3,6 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text.Json;
-using System.Text.Json.Serialization;
-
-namespace Facepunch.Customization;
 
 public class CustomizationComponent : EntityComponent
 {
@@ -28,19 +25,12 @@ public class CustomizationComponent : EntityComponent
 		}
 	}
 
-	public CustomizationPart GetEquippedPart( string category )
+	public CustomizationPart GetEquippedPart( PartType type )
 	{
-		var cfg = Customization.Config;
-
-		var cetgory = cfg.Categories.FirstOrDefault( x => x.DisplayName.Equals( category, StringComparison.OrdinalIgnoreCase ) );
-		if ( cetgory == null ) return null;
-
-		var part = Parts.FirstOrDefault( x => x.CategoryId == cetgory.Id );
-
-		return part ?? cfg.Parts.FirstOrDefault( x => x.Id == cetgory.DefaultPartId );
+		return Parts.FirstOrDefault( x => x.PartType == type );
 	}
 
-	public void Equip( int id ) => Equip( Customization.Config.Parts.FirstOrDefault( x => x.Id == id ) );
+	public void Equip( string resourceName ) => Equip( CustomizationPart.Find( resourceName ) );
 	public void Equip( CustomizationPart part )
 	{
 		if ( part == null ) throw new Exception("Can't equip null");
@@ -51,7 +41,7 @@ public class CustomizationComponent : EntityComponent
 			return;
 		}
 
-		var partInSlot = Parts.FirstOrDefault( x => x.CategoryId == part.CategoryId );
+		var partInSlot = GetEquippedPart( part.PartType );
 		if ( partInSlot != null )
 		{
 			Unequip( partInSlot );
@@ -62,11 +52,11 @@ public class CustomizationComponent : EntityComponent
 		if ( Host.IsClient )
 		{
 			EnsembleJson = Serialize();
-			EquipPartOnServer( part.Id );
+			EquipPartOnServer( part.ResourceName );
 		}
 	}
 
-	public void Unequip( int id ) => Unequip( Customization.Config.Parts.FirstOrDefault( x => x.Id == id ) );
+	public void Unequip( string resourceName ) => Unequip( CustomizationPart.Find( resourceName ) );
 	public void Unequip( CustomizationPart part )
 	{
 		if ( part == null ) throw new Exception( "Can't equip null" );
@@ -82,7 +72,7 @@ public class CustomizationComponent : EntityComponent
 		if ( Host.IsClient )
 		{
 			EnsembleJson = Serialize();
-			UnequipPartOnServer( part.Id );
+			UnequipPartOnServer( part.ResourceName );
 		}
 	}
 
@@ -90,12 +80,12 @@ public class CustomizationComponent : EntityComponent
 	{
 		if ( part == null ) throw new Exception( "Can't equip null" );
 
-		return Parts.Any( x => x.Id == part.Id );
+		return Parts.Any( x => x.ResourceName == part.ResourceName );
 	}
 
 	public string Serialize()
 	{
-		return JsonSerializer.Serialize( Parts.Select( x => new Entry { Id = x.Id } ) );
+		return JsonSerializer.Serialize( Parts.Select( x => new Entry { ResourceName = x.ResourceName } ) );
 	}
 
 	public void Deserialize( string json )
@@ -111,7 +101,7 @@ public class CustomizationComponent : EntityComponent
 
 			foreach ( var entry in entries )
 			{
-				var item = Customization.Config.Parts.FirstOrDefault( x => x.Id == entry.Id );
+				var item = CustomizationPart.Find( entry.ResourceName );
 				if ( item == null ) continue;
 				Equip( item );
 			}
@@ -127,19 +117,18 @@ public class CustomizationComponent : EntityComponent
 		int hash = 0;
 		foreach ( var part in Parts )
 		{
-			hash = HashCode.Combine( hash, part.Id );
+			hash = HashCode.Combine( hash, part.ResourceName );
 		}
 		return hash;
 	}
 
 	public struct Entry
 	{
-		[JsonPropertyName( "id" )]
-		public int Id { get; set; }
+		public string ResourceName { get; set; }
 	}
 
 	[ConCmd.Server]
-	public static void EquipPartOnServer( int id )
+	public static void EquipPartOnServer( string resourceName )
 	{
 		var caller = ConsoleSystem.Caller;
 		if ( caller == null ) return;
@@ -147,11 +136,11 @@ public class CustomizationComponent : EntityComponent
 		var cfg = caller.Components.Get<CustomizationComponent>();
 		if ( cfg == null ) return;
 
-		cfg.Equip( id );
+		cfg.Equip( resourceName );
 	}
 
 	[ConCmd.Server]
-	public static void UnequipPartOnServer( int id )
+	public static void UnequipPartOnServer( string resourceName )
 	{
 		var caller = ConsoleSystem.Caller;
 		if ( caller == null ) return;
@@ -159,7 +148,7 @@ public class CustomizationComponent : EntityComponent
 		var cfg = caller.Components.Get<CustomizationComponent>();
 		if ( cfg == null ) return;
 
-		cfg.Unequip( id );
+		cfg.Unequip( resourceName );
 	}
 
 }

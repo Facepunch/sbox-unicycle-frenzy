@@ -1,4 +1,4 @@
-﻿using Facepunch.Customization;
+﻿
 using Sandbox;
 using Sandbox.UI;
 using Sandbox.UI.Construct;
@@ -96,11 +96,11 @@ internal class CustomizeRenderScene : Panel
 
 	private SceneObject BuildUnicycleObject( CustomizationComponent ensemble )
 	{
-		var frame = ensemble.GetEquippedPart( PartType.Frame.ToString() );
-		var trail = ensemble.GetEquippedPart( PartType.Trail.ToString() );
-		var wheel = ensemble.GetEquippedPart( PartType.Wheel.ToString() );
-		var seat = ensemble.GetEquippedPart( PartType.Seat.ToString() );
-		var pedal = ensemble.GetEquippedPart( PartType.Pedal.ToString() );
+		var frame = ensemble.GetEquippedPart( PartType.Frame );
+		var trail = ensemble.GetEquippedPart( PartType.Trail );
+		var wheel = ensemble.GetEquippedPart( PartType.Wheel );
+		var seat = ensemble.GetEquippedPart( PartType.Seat );
+		var pedal = ensemble.GetEquippedPart( PartType.Pedal );
 
 		var frameObj = new SceneModel( sceneWorld, frame.AssetPath, Transform.Zero );
 		var wheelObj = new SceneModel( sceneWorld, wheel.AssetPath, Transform.Zero );

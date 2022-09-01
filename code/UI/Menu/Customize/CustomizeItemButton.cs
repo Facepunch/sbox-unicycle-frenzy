@@ -3,8 +3,6 @@ using Sandbox.UI;
 using System.IO;
 using System.Linq;
 
-using Facepunch.Customization;
-
 [UseTemplate]
 internal class CustomizeItemButton : Panel
 {
@@ -62,11 +60,10 @@ internal class CustomizeItemButton : Panel
 
 	private bool CanEquip()
 	{
-		if ( TrailPassProgress.CurrentSeason.IsUnlockedByPartId( Part.Id ) ) 
+		if ( TrailPassProgress.Current.IsUnlocked( Part ) ) 
 			return true;
 
-		var cat = Customization.Config.Categories.FirstOrDefault( x => x.Id == Part.CategoryId );
-		if ( cat.DefaultPartId == Part.Id ) 
+		if ( Part.IsDefault )
 			return true;
 
 		return false;
@@ -74,19 +71,18 @@ internal class CustomizeItemButton : Panel
 
 	private void SetIcon()
 	{
-		var category = Customization.Config.Categories.First( x => x.Id == Part.CategoryId );
-
-		switch ( category.DisplayName )
+		switch ( Part.PartType )
 		{
-			case "Wheel":
-			case "Frame":
-			case "Seat":
-			case "Pedal":
-			case "Trail":
-				var lookright = category.DisplayName == "Wheel" || category.DisplayName == "Seat";
-				new PartScenePanel( Part, lookright ).Parent = PartIcon;
+			case PartType.Wheel:
+			case PartType.Seat:
+				new PartScenePanel( Part, true ).Parent = PartIcon;
 				break;
-			case "Spray":
+			case PartType.Frame:
+			case PartType.Pedal:
+			case PartType.Trail:
+				new PartScenePanel( Part, false ).Parent = PartIcon;
+				break;
+			case PartType.Spray:
 				var texname = Path.GetFileNameWithoutExtension( Part.AssetPath );
 				var texpath = $"textures/sprays/{texname}.png";
 				var tex = Texture.Load( FileSystem.Mounted, texpath, false );

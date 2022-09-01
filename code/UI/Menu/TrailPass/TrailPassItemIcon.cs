@@ -1,7 +1,5 @@
-﻿using Facepunch.Customization;
+﻿
 using Sandbox.UI;
-using System;
-using System.Linq;
 
 [UseTemplate]
 internal class TrailPassItemIcon : Panel
@@ -16,20 +14,13 @@ internal class TrailPassItemIcon : Panel
 	{
 		this.Item = item;
 
-		var progress = TrailPassProgress.CurrentSeason;
+		var progress = TrailPassProgress.Current;
 
-		SetClass( "unlocked", progress.IsUnlocked( item.Id ) );
+		SetClass( "unlocked", progress.IsUnlocked( item.Part ) );
 		SetClass( "unlockable", progress.Experience >= item.RequiredExperience );
 
-		var part = Customization.Config.Parts.FirstOrDefault( x => x.Id == item.PartId );
-		if( part == null )
-		{
-			// show something else
-			return;
-		}
-
-		var category = Customization.Config.Categories.FirstOrDefault( x => x.Id == part.CategoryId );
-		var lookright = category.DisplayName == "Wheel" || category.DisplayName == "Seat";
+		var part = Item.Part;
+		var lookright = part.PartType == PartType.Wheel || part.PartType == PartType.Seat;
 		partPanel = new PartScenePanel( part, lookright );
 		partPanel.RotationSpeed = 25f;
 
@@ -40,16 +31,16 @@ internal class TrailPassItemIcon : Panel
 	{
 		base.Tick();
 
-		var progress = TrailPassProgress.CurrentSeason;
-		SetClass( "unlocked", progress.IsUnlocked( Item.Id ) );
+		var progress = TrailPassProgress.Current;
+		SetClass( "unlocked", progress.IsUnlocked( Item.Part ) );
 		SetClass( "unlockable", Item.RequiredExperience <= progress.Experience );
 	}
 
 	public void TryUnlock()
 	{
-		var progress = TrailPassProgress.CurrentSeason;
+		var progress = TrailPassProgress.Current;
 
-		if ( progress.IsUnlocked( Item.Id ) )
+		if ( progress.IsUnlocked( Item.Part ) )
 		{
 			Toaster.Toast( "You already unlocked that", Toaster.ToastTypes.Simple );
 			return;
@@ -61,7 +52,7 @@ internal class TrailPassItemIcon : Panel
 			return;
 		}
 
-		progress.Unlock( Item.Id );
+		progress.Unlock( Item.Part );
 		progress.Save();
 
 		Toaster.Toast( $"Item unlocked!", Toaster.ToastTypes.Celebrate );

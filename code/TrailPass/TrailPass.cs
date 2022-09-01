@@ -15,18 +15,6 @@ internal class TrailPass : GameResource
 
 	public const int CurrentSeason = 1;
 
-	public bool TryGetItem( int partId, out TrailPassItem item )
-	{
-		item = default;
-
-		if ( !Items.Any( x => x.PartId == partId ) )
-			return false;
-
-		item = Items.First( x => x.PartId == partId );
-
-		return true;
-	}
-
 	public bool TryGetAchievement( string shortname, out TrailPassAchievement ach )
 	{
 		ach = default;

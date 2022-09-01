@@ -25,7 +25,7 @@ internal class TrailPassTab : Panel
 	{
 		base.Tick();
 
-		var progress = TrailPassProgress.CurrentSeason;
+		var progress = TrailPassProgress.Current;
 
 		if ( progress.Experience == setxp ) return;
 		setxp = progress.Experience;
