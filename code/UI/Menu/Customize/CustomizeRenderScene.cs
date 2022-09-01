@@ -96,17 +96,11 @@ internal class CustomizeRenderScene : Panel
 
 	private SceneObject BuildUnicycleObject( CustomizationComponent ensemble )
 	{
-		var frame = ensemble.GetEquippedPart( PartType.Frame );
-		var trail = ensemble.GetEquippedPart( PartType.Trail );
-		var wheel = ensemble.GetEquippedPart( PartType.Wheel );
-		var seat = ensemble.GetEquippedPart( PartType.Seat );
-		var pedal = ensemble.GetEquippedPart( PartType.Pedal );
-
-		var frameObj = new SceneModel( sceneWorld, frame.Model, Transform.Zero );
-		var wheelObj = new SceneModel( sceneWorld, wheel.Model, Transform.Zero );
-		var seatObj = new SceneModel( sceneWorld, seat.Model, Transform.Zero );
-		var pedalObjL = new SceneModel( sceneWorld, pedal.Model, Transform.Zero );
-		var pedalObjR = new SceneModel( sceneWorld, pedal.Model, Transform.Zero );
+		var frameObj = new SceneModel( sceneWorld, GetPartModel( ensemble, PartType.Frame ), Transform.Zero );
+		var wheelObj = new SceneModel( sceneWorld, GetPartModel( ensemble, PartType.Wheel ), Transform.Zero );
+		var seatObj = new SceneModel( sceneWorld, GetPartModel( ensemble, PartType.Seat ), Transform.Zero );
+		var pedalObjL = new SceneModel( sceneWorld, GetPartModel( ensemble, PartType.Pedal ), Transform.Zero );
+		var pedalObjR = new SceneModel( sceneWorld, GetPartModel( ensemble, PartType.Pedal ), Transform.Zero );
 
 		var frameHub = frameObj.Model.GetAttachment( "hub" ) ?? Transform.Zero;
 		var wheelHub = wheelObj.Model.GetAttachment( "hub" ) ?? Transform.Zero;
@@ -114,9 +108,8 @@ internal class CustomizeRenderScene : Panel
 
 		frameObj.Position = Vector3.Up * (wheelRadius - frameHub.Position.z);
 
-		var seatAttachment = frameObj.Model.GetAttachment( "seat" );
-
-		seatObj.Position = seatAttachment.Value.Position + frameObj.Position;
+		var seatPosition = frameObj.Model.GetAttachment( "seat" )?.Position ?? Vector3.Zero;
+		seatObj.Position = seatPosition + frameObj.Position;
 
 		var pedalHub = pedalObjL.Model.GetAttachment( "hub" ) ?? Transform.Zero;
 
@@ -133,7 +126,8 @@ internal class CustomizeRenderScene : Panel
 		frameObj.AddChild( "pedalL", pedalObjL );
 		frameObj.AddChild( "pedalR", pedalObjR );
 
-		if( prevtrail != trail.Particle )
+		var trail = ensemble.GetEquippedPart( PartType.Trail );
+		if( trail != null && prevtrail != trail.Particle )
 		{
 			prevtrail = trail.Particle;
 			trailParticle?.Delete();
@@ -141,7 +135,7 @@ internal class CustomizeRenderScene : Panel
 			trailParticle.SetControlPoint( 6, .75f );
 			trailParticle.SetControlPoint( 7, 1 );
 			trailParticle.SetControlPoint( 8, 0 );
-			trailParticle.SetControlPoint( 0, seatAttachment.Value.Position );
+			trailParticle.SetControlPoint( 0, seatPosition );
 		}
 
 		Juice.Scale( 1, 1.15f, 1 )
@@ -150,6 +144,12 @@ internal class CustomizeRenderScene : Panel
 			.WithTarget( frameObj );
 
 		return frameObj;
+	}
+
+	private string GetPartModel( CustomizationComponent ensemble, PartType type )
+	{
+		var part = ensemble.GetEquippedPart( type );
+		return part?.Model ?? "models/sbox_props/watermelon/watermelon.vmdl";
 	}
 
 }

@@ -7,7 +7,7 @@ internal class CustomizeCategoryButton : Button
 {
 
 
-	private readonly PartType PartType;
+	public PartType PartType { get; }
 	private static CustomizeCategoryButton activeBtn;
 
 	public CustomizeCategoryButton( PartType type )

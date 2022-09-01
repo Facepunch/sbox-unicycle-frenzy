@@ -27,7 +27,12 @@ public class CustomizationComponent : EntityComponent
 
 	public CustomizationPart GetEquippedPart( PartType type )
 	{
-		return Parts.FirstOrDefault( x => x.PartType == type );
+		var result = Parts.FirstOrDefault( x => x.PartType == type );
+
+		if ( result == null ) 
+			result = CustomizationPart.FindDefaultPart( type );
+
+		return result;
 	}
 
 	public void Equip( string resourceName ) => Equip( CustomizationPart.Find( resourceName ) );

@@ -80,9 +80,9 @@ internal partial class UnicycleEntity : Entity
 		LeftPedal = leftPedal;
 		RightPedal = rightPedal;
 
-		if ( trail != null )
+		if ( !string.IsNullOrEmpty( trail?.Particle ) )
 		{
-			trailParticle = Particles.Create( trail.Model, this );
+			trailParticle = Particles.Create( trail.Particle, this );
 		}
 
 		Scale = .85f;
