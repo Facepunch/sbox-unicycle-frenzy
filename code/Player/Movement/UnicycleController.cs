@@ -33,9 +33,8 @@ internal partial class UnicycleController : BasePlayerController
 	public float BrakeStrength => 4.5f;
 	public float StopSpeed => 10f;
 	public float MaxAirTurnSpeed => 35f;
-	// fuck it
-	public float HowFastYouPitchWhenForwardVelocityChanges => 3f;
-	public float HowFastYouRollWhenRightVelocityChanges => 1.5f;
+	public float ForwardVelocityTilt => 3f;
+	public float RightVelocityTilt => 1.5f;
 
 	private UnicyclePlayer pl => Pawn as UnicyclePlayer;
 	public Vector3 Mins => new( -1, -1, 0 );
@@ -335,7 +334,7 @@ internal partial class UnicycleController : BasePlayerController
 			// cancel out a bit of the pitch if we're turning sharp
 			if ( Math.Abs( velDiff.y ) > Math.Abs( velDiff.x ) ) velDiff.x *= .25f;
 
-			tilt += new Angles( -velDiff.x * HowFastYouPitchWhenForwardVelocityChanges, 0, velDiff.y * HowFastYouRollWhenRightVelocityChanges ) * Time.Delta;
+			tilt += new Angles( -velDiff.x * ForwardVelocityTilt, 0, velDiff.y * RightVelocityTilt ) * Time.Delta;
 		}
 
 		// tilt while on uneven ground
@@ -369,7 +368,7 @@ internal partial class UnicycleController : BasePlayerController
 			//		 conflicting with the player's input, so lerp w/
 			//		 delta and use t for easing
 			var rndTilt = GetRandomTilt( out float t );
-			tilt = Angles.Lerp( tilt, rndTilt, 1.75f * Time.Delta * t );
+			tilt = Angles.Lerp( tilt, rndTilt, Time.Delta * t );
 		}
 
 		tilt.roll = Math.Clamp( tilt.roll, -MaxLean - 5, MaxLean + 5 );
@@ -394,22 +393,14 @@ internal partial class UnicycleController : BasePlayerController
 
 	private Angles GetRandomTilt( out float t )
 	{
-		// this should give a deterministic random tilt to avoid
-		// having to net sync additional stuff
-
 		var seed = pl.NetworkIdent + ( Time.Tick / 50f );
 		t = seed - (int)seed;
 
 		Rand.SetSeed( (int)seed );
-		var newRnd = Angles.Random.WithYaw( 0 ).Normal;
+		var tilt = Angles.Random.WithYaw( 0 );
+		tilt.roll *= 2f;
 
-		// can do something like this to avoid repetitive randoms
-		//Rand.SetSeed( (int)seed - 1 );
-		//var prevRnd = Angles.Random.WithYaw( 0 ).Normal;
-		//if ( Math.Sign( newRnd.pitch ) == Math.Sign( prevRnd.pitch ) ) newRnd.pitch *= -1;
-		//if ( Math.Sign( newRnd.roll ) == Math.Sign( prevRnd.roll ) ) newRnd.roll *= -1;
-
-		return newRnd * LeanSafeZone * .75f;
+		return tilt.Normal * LeanSafeZone * .75f;
 	}
 
 	private void DoRotation()

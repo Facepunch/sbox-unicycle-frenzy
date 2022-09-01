@@ -72,9 +72,9 @@ internal partial class UnicyclePlayer
 			//new Perlin( 2f, 2, 3 );
 		}
 
-		RagdollModel( Unicycle.FrameModel );
-		RagdollModel( Unicycle.WheelModel );
-		RagdollModel( Unicycle.SeatModel );
+		RagdollModel( Unicycle.Frame );
+		RagdollModel( Unicycle.Wheel );
+		RagdollModel( Unicycle.Seat );
 	}
 
 }

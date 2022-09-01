@@ -6,17 +6,17 @@ internal partial class UnicycleEntity : Entity
 {
 
 	[Net]
-	public ModelEntity FrameModel { get; set; }
+	public ModelEntity Frame { get; set; }
 	[Net]
-	public ModelEntity SeatModel { get; set; }
+	public ModelEntity Seat { get; set; }
 	[Net]
-	public ModelEntity WheelModel { get; set; }
+	public ModelEntity Wheel { get; set; }
 	[Net]
-	public ModelEntity LeftPedalModel { get; set; }
+	public ModelEntity LeftPedal { get; set; }
 	[Net]
-	public ModelEntity RightPedalModel { get; set; }
+	public ModelEntity RightPedal { get; set; }
 	[Net]
-	public Entity PedalsPivot { get; set; }
+	public Entity Pedals { get; set; }
 	[Net]
 	public Entity WheelPivot { get; set; }
 
@@ -25,12 +25,12 @@ internal partial class UnicycleEntity : Entity
 	private ModelEntity localLeftPedal;
 	private ModelEntity localRightPedal;
 
-	public ModelEntity DisplayedLeftPedal => localLeftPedal ?? LeftPedalModel;
-	public ModelEntity DisplayedRightPedal => localRightPedal ?? RightPedalModel;
+	public ModelEntity DisplayedLeftPedal => localLeftPedal ?? LeftPedal;
+	public ModelEntity DisplayedRightPedal => localRightPedal ?? RightPedal;
 
 	public Vector3 GetAssPosition()
 	{
-		var assAttachment = SeatModel.GetAttachment( "Ass" );
+		var assAttachment = Seat.GetAttachment( "Ass" );
 		if ( !assAttachment.HasValue )
 		{
 			return Vector3.Zero;
@@ -45,8 +45,8 @@ internal partial class UnicycleEntity : Entity
 
 		if ( Parent is not UnicyclePlayer pl ) return;
 
-		FrameModel?.Delete();
-		FrameModel = null;
+		Frame?.Delete();
+		Frame = null;
 		trailParticle?.Destroy();
 		trailParticle = null;
 
@@ -58,27 +58,27 @@ internal partial class UnicycleEntity : Entity
 		var pedal = cfg.GetEquippedPart( PartType.Pedal.ToString() );
 		var trail = cfg.GetEquippedPart( PartType.Trail.ToString() );
 
-		FrameModel = new ModelEntity( frame.AssetPath );
-		FrameModel.SetParent( this, null, Transform.Zero );
+		Frame = new ModelEntity( frame.AssetPath );
+		Frame.SetParent( this, null, Transform.Zero );
 
-		SeatModel = new ModelEntity( seat.AssetPath );
-		SeatModel.SetParent( FrameModel, "seat", Transform.Zero );
+		Seat = new ModelEntity( seat.AssetPath );
+		Seat.SetParent( Frame, "seat", Transform.Zero );
 
 		WheelPivot = new Entity();
-		WheelPivot.SetParent( FrameModel, "hub", Transform.Zero );
+		WheelPivot.SetParent( Frame, "hub", Transform.Zero );
 
-		WheelModel = new ModelEntity( wheel.AssetPath );
-		WheelModel.SetParent( WheelPivot, null, Transform.Zero );
+		Wheel = new ModelEntity( wheel.AssetPath );
+		Wheel.SetParent( WheelPivot, null, Transform.Zero );
 
-		var wheelRadius = WheelModel.GetAttachment( "hud", false )?.Position.z ?? 12f;
+		var wheelRadius = Wheel.GetAttachment( "hud", false )?.Position.z ?? 12f;
 
-		WheelModel.LocalPosition -= Vector3.Up * wheelRadius;
-		FrameModel.LocalPosition = Vector3.Up * wheelRadius;
+		Wheel.LocalPosition -= Vector3.Up * wheelRadius;
+		Frame.LocalPosition = Vector3.Up * wheelRadius;
 
-		AssemblePedals( pedal, FrameModel, out Entity pedalPivot, out ModelEntity leftPedal, out ModelEntity rightPedal );
-		PedalsPivot = pedalPivot;
-		LeftPedalModel = leftPedal;
-		RightPedalModel = rightPedal;
+		AssemblePedals( pedal, Frame, out Entity pedalPivot, out ModelEntity leftPedal, out ModelEntity rightPedal );
+		Pedals = pedalPivot;
+		LeftPedal = leftPedal;
+		RightPedal = rightPedal;
 
 		if ( trail != null )
 		{
@@ -139,10 +139,10 @@ internal partial class UnicycleEntity : Entity
 		var targetPitch = 0f.LerpTo( 180, pedalAlpha );
 		var targetRot = Rotation.From( targetPitch, 0, 0 );
 
-		if ( IsServer && PedalsPivot.IsValid() )
+		if ( IsServer && Pedals.IsValid() )
 		{
-			var ang = targetRot.Angle() - PedalsPivot.LocalRotation.Angle();
-			PedalsPivot.LocalRotation = PedalsPivot.LocalRotation.RotateAroundAxis( Vector3.Left, Math.Abs( ang ) * Time.Delta * 10 );
+			var ang = targetRot.Angle() - Pedals.LocalRotation.Angle();
+			Pedals.LocalRotation = Pedals.LocalRotation.RotateAroundAxis( Vector3.Left, Math.Abs( ang ) * Time.Delta * 10 );
 		}
 
 		if ( IsClient && localPawnPedals.IsValid() )
@@ -153,7 +153,7 @@ internal partial class UnicycleEntity : Entity
 
 		if ( IsServer && WheelPivot.IsValid() )
 		{
-			var wheelRadius = WheelModel.GetAttachment( "hud", false )?.Position.z ?? 12f;
+			var wheelRadius = Wheel.GetAttachment( "hud", false )?.Position.z ?? 12f;
 			var angularSpeed = 180f * pl.Velocity.WithZ( 0 ).Length / ((float)Math.PI * wheelRadius);
 			var dir = Math.Sign( Vector3.Dot( pl.Velocity.Normal, pl.Rotation.Forward ) );
 
@@ -177,8 +177,8 @@ internal partial class UnicycleEntity : Entity
 	{
 		if ( Parent is not UnicyclePlayer pl || !pl.IsLocalPawn ) return;
 
-		if ( LeftPedalModel.IsValid() ) LeftPedalModel.RenderColor = Color.Transparent;
-		if ( RightPedalModel.IsValid() ) RightPedalModel.RenderColor = Color.Transparent;
+		if ( LeftPedal.IsValid() ) LeftPedal.RenderColor = Color.Transparent;
+		if ( RightPedal.IsValid() ) RightPedal.RenderColor = Color.Transparent;
 
 		// todo: reassemble if local player equipped a different pedal part
 		if ( localPawnPedals.IsValid() ) return;
@@ -186,7 +186,7 @@ internal partial class UnicycleEntity : Entity
 		var cfg = pl.Client.Components.Get<CustomizationComponent>();
 		var pedal = cfg.GetEquippedPart( PartType.Pedal.ToString() );
 
-		AssemblePedals( pedal, FrameModel, out localPawnPedals, out localLeftPedal, out localRightPedal );
+		AssemblePedals( pedal, Frame, out localPawnPedals, out localLeftPedal, out localRightPedal );
 	}
 
 	protected override void OnDestroy()
