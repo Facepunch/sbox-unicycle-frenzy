@@ -1,0 +1,13 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+{
+	data = 
+	{
+		AchievementId = 0
+		MapName = ""
+		ShortName = "uf_frenzy"
+		DisplayName = "FRENZY"
+		Description = "Collect all the letters of F-R-E-N-Z-Y"
+		Thumbnail = "https://files.facepunch.com/sbox/asset/facepunch.unicycle_frenzy/logo.c35e8d94.png"
+		PerMap = true
+	}
+}

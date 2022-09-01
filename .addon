@@ -10,7 +10,8 @@
     "/config/*",
     "/textures/*",
     "/fonts/*",
-    "/models/flag/*"
+    "/models/flag/*",
+    "/achievements/*"
   ],
   "HasCode": true,
   "CodePath": "code",

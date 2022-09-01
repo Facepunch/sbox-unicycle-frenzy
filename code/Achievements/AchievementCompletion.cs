@@ -1,24 +1,18 @@
-﻿using System;
+﻿
+using System;
 using System.Collections.Generic;
-using System.Text.Json;
 using System.Linq;
 
 internal class AchievementCompletion
 {
 
-	public long AchievementId { get; set; } // key
-	public long SteamId { get; set; } // key
-	// public long MapAssetId { get; set; } // key
+	public string ShortName { get; set; } 
+	public long SteamId { get; set; }
 	public string MapName { get; set; }
 	public DateTimeOffset Time { get; set; }
 
-	public static List<AchievementCompletion> Query( long playerid, string game, string map = null )
+	public static List<AchievementCompletion> Query( long playerid, string map = null )
 	{
-		// hack to make shit work if its ident.map, map, or local.map
-		if ( map != null && map.Contains( '.' ) )
-			map = map.Split( '.' )[1];
-
-		// later: fetch from api
 		var result = new List<AchievementCompletion>();
 		var all = All.Where( x => x.SteamId == playerid );
 
@@ -31,22 +25,21 @@ internal class AchievementCompletion
 
 		foreach( var completion in all )
 		{
-			var ach = achievements.FirstOrDefault( x => x.AchievementId == completion.AchievementId );
+			var ach = achievements.FirstOrDefault( x => x.ShortName == completion.ShortName );
 			if ( ach == null ) continue;
-			if ( ach.GameName != game ) continue;
 			result.Add( completion );
 		}
 
 		return result;
 	}
 
-	public static void Insert( long playerid, long achievementid, string map = null )
+	public static void Insert( long playerid, string shortname, string map = null )
 	{
 		var final = new List<AchievementCompletion>( All )
 		{
 			new AchievementCompletion()
 			{
-				AchievementId = achievementid,
+				ShortName = shortname,
 				SteamId = playerid,
 				MapName = map,
 				Time = DateTime.Now
