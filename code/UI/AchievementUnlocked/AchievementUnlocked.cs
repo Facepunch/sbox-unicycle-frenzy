@@ -18,10 +18,9 @@ internal class AchievementUnlocked : Panel
 		DisplayName.Text = achievement.DisplayName;
 		Experience.Text = string.Empty;
 
-		var bpAch = TrailPass.Current.Achievements.FirstOrDefault( x => x.AchievementShortName == achievement.ShortName );
-		if( bpAch != null )
+		if ( TrailPass.Current.TryGetAchievement( achievement.ShortName, out var ach ) )
 		{
-			Experience.Text = $"+{bpAch.ExperienceGranted}xp";
+			Experience.Text = $"+{ach.ExperienceGranted}xp";
 		}
 
 		SetClass( "open", true );
@@ -36,7 +35,7 @@ internal class AchievementUnlocked : Panel
 			RemoveClass( "open" );
 	}
 
-	[Event("achievement.set")]
+	[Event( "achievement.set" )]
 	public void OnAchievementSet( string shortname )
 	{
 		var ach = Achievement.All.FirstOrDefault( x => x.ShortName == shortname );

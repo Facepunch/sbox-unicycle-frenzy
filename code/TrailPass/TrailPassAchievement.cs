@@ -1,7 +1,9 @@
 ﻿
-internal class TrailPassAchievement
+using Sandbox;
+
+internal struct TrailPassAchievement
 {
-	public int Id { get; set; }
+	[ResourceType("achv")]
+	public Achievement Achievement { get; set; }
 	public int ExperienceGranted { get; set; }
-	public string AchievementShortName { get; set; }
 }

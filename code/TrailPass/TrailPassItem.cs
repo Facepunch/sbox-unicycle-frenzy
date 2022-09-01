@@ -1,5 +1,5 @@
 ﻿
-internal class TrailPassItem
+internal struct TrailPassItem
 {
 	public int Id { get; set; }
 	public int RequiredExperience { get; set; }

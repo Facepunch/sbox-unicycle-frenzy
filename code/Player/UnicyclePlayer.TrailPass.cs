@@ -18,30 +18,30 @@ internal partial class UnicyclePlayer
 		Toaster.Toast( $"+{amount} XP", Toaster.ToastTypes.Award );
 	}
 
-	[Event("mapstats.firstcompletion")]
+	[Event( "mapstats.firstcompletion" )]
 	public void OnFirstCompletion()
 	{
 		AddTrailPassExperience( 50 );
 	}
 
-	[Event("mapstats.ontimeplayed")]
+	[Event( "mapstats.ontimeplayed" )]
 	public void OnTimePlayed( float timePlayed )
 	{
-		if( (int)timePlayed % 1800 == 0 )
+		if ( (int)timePlayed % 1800 == 0 )
 		{
 			AddTrailPassExperience( 5 );
 		}
 	}
 
-	[Event("achievement.set")]
+	[Event( "achievement.set" )]
 	public void OnAchievementSet( string shortname )
 	{
 		Host.AssertClient();
 
-		var tpAchievement = TrailPass.Current.Achievements.FirstOrDefault( x => x.AchievementShortName == shortname );
-		if ( tpAchievement == null ) return;
-
-		AddTrailPassExperience( tpAchievement.ExperienceGranted );
+		if ( TrailPass.Current.TryGetAchievement( shortname, out var ach ) )
+		{
+			AddTrailPassExperience( ach.ExperienceGranted );
+		}
 	}
 
 }

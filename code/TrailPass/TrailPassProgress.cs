@@ -1,5 +1,5 @@
-﻿using System.Collections.Generic;
-using System.Linq;
+﻿
+using System.Collections.Generic;
 using System.Text.Json;
 
 internal class TrailPassProgress
@@ -14,9 +14,12 @@ internal class TrailPassProgress
 	public bool IsUnlocked( int id ) => UnlockedItems.Contains( id );
 	public bool IsUnlockedByPartId( int partid )
 	{
-		var pass = TrailPass.Current;
-		var itemid = pass.Items.FirstOrDefault( x => x.PartId == partid )?.Id ?? -1;
-		return IsUnlocked( itemid );
+		if( TrailPass.Current.TryGetItem( partid, out var item ) )
+		{
+			return IsUnlocked( item.Id );
+		}
+
+		return false;
 	}
 	public void Unlock( int id ) 
 	{ 
@@ -25,7 +28,7 @@ internal class TrailPassProgress
 	}
 	public void Save() => Cookie.Set( SeasonCookie, Serialize( this ) );
 
-	private static string SeasonCookie => "uf.trailpass." + TrailPass.Season;
+	private static string SeasonCookie => "uf.trailpass." + TrailPass.CurrentSeason;
 
 	private static TrailPassProgress Deserialize( string json )
 	{
@@ -37,7 +40,7 @@ internal class TrailPassProgress
 		{
 			Log.Error( e.Message );
 		}
-		return new() { TrailPassId = TrailPass.Season };
+		return new() { TrailPassId = TrailPass.CurrentSeason };
 	}
 
 	private static string Serialize( TrailPassProgress ticket )
