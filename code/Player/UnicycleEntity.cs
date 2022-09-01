@@ -19,8 +19,6 @@ internal partial class UnicycleEntity : Entity
 	public Entity PedalsPivot { get; set; }
 	[Net]
 	public Entity WheelPivot { get; set; }
-	[Net]
-	public float WheelRadius { get; set; }
 
 	private Particles trailParticle;
 	private Entity localPawnPedals;
@@ -72,11 +70,10 @@ internal partial class UnicycleEntity : Entity
 		WheelModel = new ModelEntity( wheel.AssetPath );
 		WheelModel.SetParent( WheelPivot, null, Transform.Zero );
 
-		var wheelHub = WheelModel.GetAttachment( "hub" ) ?? Transform.Zero;
-		WheelRadius = wheelHub.Position.z - WheelModel.Position.z;
+		var wheelRadius = WheelModel.GetAttachment( "hud", false )?.Position.z ?? 12f;
 
-		WheelModel.LocalPosition -= Vector3.Up * WheelRadius;
-		FrameModel.LocalPosition = Vector3.Up * WheelRadius;
+		WheelModel.LocalPosition -= Vector3.Up * wheelRadius;
+		FrameModel.LocalPosition = Vector3.Up * wheelRadius;
 
 		AssemblePedals( pedal, FrameModel, out Entity pedalPivot, out ModelEntity leftPedal, out ModelEntity rightPedal );
 		PedalsPivot = pedalPivot;
@@ -131,7 +128,6 @@ internal partial class UnicycleEntity : Entity
 		AssembleParts();
 
 		pl.Citizen.Position = GetAssPosition();
-		//pl.Terry.Position -= Vector3.Up * 4; // remove this when proper ass attachment
 	}
 
 	[Event.Tick]
@@ -157,7 +153,8 @@ internal partial class UnicycleEntity : Entity
 
 		if ( IsServer && WheelPivot.IsValid() )
 		{
-			var angularSpeed = 180f * pl.Velocity.WithZ( 0 ).Length / ((float)Math.PI * WheelRadius);
+			var wheelRadius = WheelModel.GetAttachment( "hud", false )?.Position.z ?? 12f;
+			var angularSpeed = 180f * pl.Velocity.WithZ( 0 ).Length / ((float)Math.PI * wheelRadius);
 			var dir = Math.Sign( Vector3.Dot( pl.Velocity.Normal, pl.Rotation.Forward ) );
 
 			WheelPivot.LocalRotation = WheelPivot.LocalRotation.RotateAroundAxis( Vector3.Left, angularSpeed * dir * Time.Delta );
@@ -175,7 +172,7 @@ internal partial class UnicycleEntity : Entity
 		trailParticle.SetPosition(8, 1);
 	}
 
-	[Event.Frame]
+	[Event.Tick.Client]
 	private void AssembleLocalPedals()
 	{
 		if ( Parent is not UnicyclePlayer pl || !pl.IsLocalPawn ) return;
