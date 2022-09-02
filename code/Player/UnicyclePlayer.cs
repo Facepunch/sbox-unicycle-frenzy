@@ -240,6 +240,8 @@ internal partial class UnicyclePlayer : Sandbox.Player
 			.Run();
 
 		Decal.Place( decal, tr );
+
+		Sound.FromWorld( "sounds/misc/spray.sound", tr.HitPosition );
     }
 
 }
