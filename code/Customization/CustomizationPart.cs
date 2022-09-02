@@ -14,8 +14,10 @@ public class CustomizationPart : GameResource
 	public string Model { get; set; }
 	[ResourceType( "vpcf" )]
 	public string Particle { get; set; }
-	[ResourceType( "vtex" )]
+	[ResourceType( "png" )]
 	public string Texture { get; set; }
+	[ResourceType( "decal" )]
+	public DecalDefinition Decal { get; set; }
 
 
 	public static CustomizationPart Find( string resourceName )

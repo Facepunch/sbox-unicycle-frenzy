@@ -232,9 +232,14 @@ internal partial class UnicyclePlayer : Sandbox.Player
         timeSinceSpray = 0;
 
 		var sprayPart = Client.Components.Get<CustomizationComponent>().GetEquippedPart( PartType.Spray );
-		var mat = Material.Load( sprayPart.Texture );
+		var decal = sprayPart.Decal;
+		if ( decal == null ) return;
 
-		DecalSystem.PlaceOnWorld( To.Everyone, mat, Position, Rotation.LookAt( Vector3.Up ), 64 );
+		var tr = Trace.Ray( Position + Vector3.Up, Position + Vector3.Down * 100f )
+			.WorldOnly()
+			.Run();
+
+		Decal.Place( decal, tr );
     }
 
 }
