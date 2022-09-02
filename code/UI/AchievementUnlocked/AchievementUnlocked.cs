@@ -33,6 +33,9 @@ internal class AchievementUnlocked : Panel
 
 		if ( HasClass( "open" ) && timeSinceDisplayed > 6f )
 			RemoveClass( "open" );
+
+		if ( Input.Pressed( InputButton.Flashlight ) )
+			Display( Achievement.All.Skip( 2 ).First() );
 	}
 
 	[Event( "achievement.set" )]

@@ -3,12 +3,13 @@
 
 <root>
 
-    <label class="heading">Achievement Unlocked!</label>
-    <div class="row">
-        <div @ref="Icon" class="icon"></div>
-        <div class="details">
-            <label @ref="DisplayName" class="title">Bronze Medal</label>
-            <label @ref="Experience" class="xp">+30xp</label>
+    <div class="heading">
+        <label style="margin-right: 10px">Achievement Unlocked:</label>
+        <label @ref="DisplayName" class="title">Bronze Medal</label>
+    </div>
+    <div class="details">
+        <div @ref="Icon" class="icon">
+            <label @ref="Experience" class="badge xp">+30xp</label>
         </div>
     </div>
 </root>

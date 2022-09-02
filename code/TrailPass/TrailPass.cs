@@ -19,10 +19,10 @@ internal class TrailPass : GameResource
 	{
 		ach = default;
 
-		if ( !Achievements.Any( x => x.Achievement?.ShortName == shortname ) )
+		if ( !Achievements.Any( x => x.FindAchievement()?.ShortName == shortname ) )
 			return false;
 
-		ach = Achievements.First( x => x.Achievement?.ShortName == shortname );
+		ach = Achievements.First( x => x.FindAchievement()?.ShortName == shortname );
 
 		return true;
 	}
