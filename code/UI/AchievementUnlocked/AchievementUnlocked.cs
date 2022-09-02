@@ -25,6 +25,8 @@ internal class AchievementUnlocked : Panel
 
 		SetClass( "open", true );
 		timeSinceDisplayed = 0;
+
+		Sound.FromScreen( "sounds/ui/achievement.unlocked.sound", .9f, 1f );
 	}
 
 	public override void Tick()
@@ -33,9 +35,6 @@ internal class AchievementUnlocked : Panel
 
 		if ( HasClass( "open" ) && timeSinceDisplayed > 6f )
 			RemoveClass( "open" );
-
-		if ( Input.Pressed( InputButton.Flashlight ) )
-			Display( Achievement.All.Skip( 2 ).First() );
 	}
 
 	[Event( "achievement.set" )]
