@@ -40,8 +40,8 @@ internal class CustomizeRenderScene : Panel
 			renderSceneAngles.pitch = renderSceneAngles.pitch.Clamp( 0, 75 );
 		}
 
-		renderScene.CameraPosition = renderScene.CameraPosition.LerpTo( renderScenePos, 10f * Time.Delta );
-		renderScene.CameraRotation = Rotation.Lerp( renderScene.CameraRotation, Rotation.From( renderSceneAngles ), 15f * Time.Delta );
+		renderScene.Camera.Position = renderScene.Camera.Position.LerpTo( renderScenePos, 10f * Time.Delta );
+		renderScene.Camera.Rotation = Rotation.Lerp( renderScene.Camera.Rotation, Rotation.From( renderSceneAngles ), 15f * Time.Delta );
 
 		trailParticle?.Simulate( RealTime.Delta );
 	}
@@ -79,9 +79,9 @@ internal class CustomizeRenderScene : Panel
 		renderScene = Add.ScenePanel( sceneWorld, renderScenePos, Rotation.From( renderSceneAngles ), 75 );
 		renderScene.Style.Width = Length.Percent( 100 );
 		renderScene.Style.Height = Length.Percent( 100 );
-		renderScene.CameraPosition = new Vector3( -33, 100, 42 );
-		renderScene.CameraRotation = Rotation.From( 10, -62, 0 );
-		renderSceneAngles = renderScene.CameraRotation.Angles();
+		renderScene.Camera.Position = new Vector3( -33, 100, 42 );
+		renderScene.Camera.Rotation = Rotation.From( 10, -62, 0 );
+		renderSceneAngles = renderScene.Camera.Rotation.Angles();
 	}
 
 	public void Build()

@@ -58,18 +58,4 @@ internal class TrailPassItemIcon : Panel
 		Toaster.Toast( $"Item unlocked!", Toaster.ToastTypes.Celebrate );
 	}
 
-	protected override void OnMouseOver( MousePanelEvent e )
-	{
-		base.OnMouseOver( e );
-		
-		partPanel.RenderOnce = false;
-	}
-
-	protected override void OnMouseOut( MousePanelEvent e )
-	{
-		base.OnMouseOut( e );
-
-		partPanel.RenderOnce = true;
-	}
-
 }

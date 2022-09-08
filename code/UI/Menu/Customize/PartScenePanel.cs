@@ -13,11 +13,6 @@ internal class PartScenePanel : Panel
 	//
 
 	public float RotationSpeed { get; set; }
-	public bool RenderOnce
-	{
-		get => scenePanel.RenderOnce;
-		set => scenePanel.RenderOnce = value;
-	}
 
 	private SceneObject sceneObj;
 	private ScenePanel scenePanel;
@@ -46,10 +41,9 @@ internal class PartScenePanel : Panel
 
 			sceneObj = p;
 
-			scenePanel.CameraPosition = Vector3.Backward * 75 + Vector3.Down * 20;
-			scenePanel.CameraRotation = Rotation.From( 0, 0, 0 );
+			scenePanel.Camera.Position = Vector3.Backward * 75 + Vector3.Down * 20;
+			scenePanel.Camera.Rotation = Rotation.From( 0, 0, 0 );
 			scenePanel.Style.Opacity = 1;
-			scenePanel.RenderOnce = true;
 		}
 		else if ( !string.IsNullOrEmpty( part.Model ) )
 		{
@@ -57,9 +51,8 @@ internal class PartScenePanel : Panel
 			if ( lookRight ) sceneObj.Rotation = Rotation.LookAt( Vector3.Right );
 			var bounds = sceneObj.Model.RenderBounds;
 
-			scenePanel.CameraPosition = GetFocusPosition( bounds, Rotation.Identity, scenePanel.FieldOfView );
-			scenePanel.CameraRotation = Rotation.From( 0, 0, 0 );
-			scenePanel.RenderOnce = true;
+			scenePanel.Camera.Position = GetFocusPosition( bounds, Rotation.Identity, scenePanel.Camera.FieldOfView );
+			scenePanel.Camera.Rotation = Rotation.From( 0, 0, 0 );
 		}
 
 		new SceneLight( sceneWorld, Vector3.Up * 150.0f, 200.0f, Color.White * 100 );
@@ -87,7 +80,6 @@ internal class PartScenePanel : Panel
 	{
 		if ( RotationSpeed == 0 ) return;
 		if ( !sceneObj.IsValid() ) return;
-		if ( RenderOnce ) return;
 
 		sceneObj.Rotation = sceneObj.Rotation.RotateAroundAxis( Vector3.Up, RotationSpeed * Time.Delta );
 
