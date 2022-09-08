@@ -2,6 +2,7 @@
 using Sandbox;
 using Sandbox.UI;
 using Sandbox.UI.Construct;
+using System;
 using System.Linq;
 
 internal class CustomizeRenderScene : Panel
@@ -69,19 +70,34 @@ internal class CustomizeRenderScene : Panel
 			skycolor = sceneLight.SkyColor;
 		}
 
-		new SceneLight( sceneWorld, Vector3.Up * 150.0f, 200.0f, Color.White * 5.0f );
-		new SceneLight( sceneWorld, Vector3.Up * 75.0f + Vector3.Forward * 100.0f, 200, Color.White * 15.0f );
-		new SceneLight( sceneWorld, Vector3.Up * 75.0f + Vector3.Backward * 100.0f, 200, Color.White * 15f );
-		new SceneLight( sceneWorld, Vector3.Up * 75.0f + Vector3.Left * 100.0f, 200, skycolor * 20.0f );
-		new SceneLight( sceneWorld, Vector3.Up * 75.0f + Vector3.Right * 100.0f, 200, Color.White * 15.0f );
-		new SceneLight( sceneWorld, Vector3.Up * 100.0f + Vector3.Up, 200, Color.Yellow * 15.0f );
+		var height = 150f;
+		var radius = 100f;
+		var lightcount = 6;
+		for ( int i = 0; i < lightcount; i++ )
+		{
+			var angle = i * MathF.PI * 2f / lightcount;
+			var newPos = new Vector3( MathF.Cos( angle ) * radius, MathF.Sin( angle ) * radius, height );
+			new SceneLight( sceneWorld, newPos, 200f, Color.White * 5f );
+		}
 
 		renderScene = Add.ScenePanel( sceneWorld, renderScenePos, Rotation.From( renderSceneAngles ), 75 );
 		renderScene.Style.Width = Length.Percent( 100 );
 		renderScene.Style.Height = Length.Percent( 100 );
 		renderScene.Camera.Position = new Vector3( -33, 100, 42 );
 		renderScene.Camera.Rotation = Rotation.From( 10, -62, 0 );
+		renderScene.Camera.AmbientLightColor = Color.Gray * 0.2f;
+		renderScene.Camera.BackgroundColor = Color.White;
 		renderSceneAngles = renderScene.Camera.Rotation.Angles();
+
+		renderScene.World.GradientFog.Enabled = true;
+		renderScene.World.GradientFog.Color = new Color32( 57, 48, 69 );
+		renderScene.World.GradientFog.MaximumOpacity = 0.8f;
+		renderScene.World.GradientFog.StartHeight = 10;
+		renderScene.World.GradientFog.EndHeight = 9000;
+		renderScene.World.GradientFog.DistanceFalloffExponent = 3;
+		renderScene.World.GradientFog.VerticalFalloffExponent = 3;
+		renderScene.World.GradientFog.StartDistance = 250;
+		renderScene.World.GradientFog.EndDistance = 600;
 	}
 
 	public void Build()
