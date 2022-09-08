@@ -152,11 +152,6 @@ internal class CustomizeRenderScene : Panel
 			trailParticle.SetControlPoint( 0, seatPosition );
 		}
 
-		Juice.Scale( 1, 1.15f, 1 )
-			.WithDuration( .75f )
-			.WithEasing( EasingType.BounceOut )
-			.WithTarget( frameObj );
-
 		return frameObj;
 	}
 
