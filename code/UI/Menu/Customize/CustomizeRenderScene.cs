@@ -128,14 +128,12 @@ internal class CustomizeRenderScene : Panel
 		seatObj.Position = seatPosition + frameObj.Position;
 
 		var pedalHub = pedalObjL.Model.GetAttachment( "hub" ) ?? Transform.Zero;
-
 		pedalObjL.Position = (frameObj.Model.GetAttachment( "pedal_L" ) ?? Transform.Zero).Position;
 		pedalObjL.Position += frameObj.Position - pedalHub.Position;
-
-		pedalObjR.Position = (frameObj.Model.GetAttachment( "pedal_R" ) ?? Transform.Zero).Position;
+		pedalObjR.Position = frameObj.Model.GetAttachment( "pedal_R" )?.Position ?? Vector3.Zero;
 		pedalObjR.Position += frameObj.Position + pedalHub.Position;
 		pedalObjR.Rotation *= Rotation.From( 180, 180, 0 );
-		
+
 
 		frameObj.AddChild( "wheel", wheelObj );
 		frameObj.AddChild( "seat", seatObj );
