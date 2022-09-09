@@ -8,7 +8,6 @@ internal class CustomizeItemButton : Panel
 {
 
 	public Panel PartIcon { get; set; }
-	public Panel StateTarget { get; set; }
 	public string Tag { get; set; }
 	public CustomizationPart Part { get; }
 
@@ -52,8 +51,8 @@ internal class CustomizeItemButton : Panel
 	{
 		var canequip = CanEquip();
 		var customization = Local.Client.Components.Get<CustomizationComponent>();
-		StateTarget.SetClass( "is-selected", customization.IsEquipped( Part ) );
-		StateTarget.SetClass( "is-locked", !canequip );
+		SetClass( "is-selected", customization.IsEquipped( Part ) );
+		SetClass( "is-locked", !canequip );
 
 		Tag = canequip ? string.Empty : 100.ToString();
 	}
