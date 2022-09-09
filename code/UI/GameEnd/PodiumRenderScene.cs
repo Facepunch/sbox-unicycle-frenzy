@@ -25,15 +25,15 @@ internal class PodiumRenderScene : Panel
 		ScenePanel?.Delete();
 
 		SceneWorld = new SceneWorld();
-		ScenePanel = Add.ScenePanel( SceneWorld, Vector3.Backward * 75 + Vector3.Up * 52, Rotation.Identity, 75 );
-		ScenePanel.CameraRotation = Rotation.FromPitch( 10 );
+		ScenePanel = Add.ScenePanel( SceneWorld, Vector3.Backward * 75 + Vector3.Up * 62, Rotation.Identity, 45 );
+		ScenePanel.Camera.Rotation = Rotation.FromPitch( 5 );
 
 		ScenePanel.Style.Width = Length.Percent( 100 );
 		ScenePanel.Style.Height = Length.Percent( 100 );
 
 		var citizen = new SceneModel( SceneWorld, "models/citizen/citizen.vmdl", Transform.Zero.WithRotation( Rotation.FromYaw( 180 ) ) );
-		new SceneLight( SceneWorld, Vector3.Backward * 50 + Vector3.Up * 50, 200f, Color.White * 20 );
-		new SceneLight( SceneWorld, Vector3.Left * 50, 200f, Color.White * 20 );
+		new SceneLight( SceneWorld, Vector3.Up * 100, 200f, Color.White * 5 );
+		new SceneLight( SceneWorld, Vector3.Backward * 100 + Vector3.Up * 50f, 200f, Color.White * 5 ).ShadowsEnabled = false;
 
 		Dress( citizen, player.Avatar );
 	}
