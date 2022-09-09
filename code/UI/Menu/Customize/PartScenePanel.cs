@@ -55,11 +55,8 @@ internal class PartScenePanel : Panel
 			scenePanel.Camera.Rotation = Rotation.From( 0, 0, 0 );
 		}
 
-		new SceneLight( sceneWorld, Vector3.Up * 150.0f, 200.0f, Color.White * 100 );
-		new SceneLight( sceneWorld, Vector3.Forward * 150.0f, 200.0f, Color.White * 100 );
-		new SceneLight( sceneWorld, Vector3.Backward * 150.0f, 200.0f, Color.White * 100 );
-		new SceneLight( sceneWorld, Vector3.Right * 150.0f, 200.0f, Color.White * 100 );
-		new SceneLight( sceneWorld, Vector3.Left * 150.0f, 200.0f, Color.White * 100 );
+		new SceneLight( sceneWorld, Vector3.Up * 150.0f, 200.0f, Color.White * 15 );
+		new SceneLight( sceneWorld, Vector3.Backward * 150.0f, 200.0f, Color.White * 15 );
 
 		scenePanel.Style.Width = Length.Percent( 100 );
 		scenePanel.Style.Height = Length.Percent( 100 );

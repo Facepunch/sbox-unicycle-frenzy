@@ -57,6 +57,7 @@ internal class CustomizeRenderScene : Panel
 
 	private void BuildSceneWorld()
 	{
+		renderScene?.Delete();
 		sceneWorld?.Delete();
 		sceneWorld = new SceneWorld();
 
