@@ -7,15 +7,17 @@ CustomizeTab {
     border-top: 4px solid $light-purple;
     padding-top: 10px;
     flex-direction: column;
-    position: absolute;
-    bottom: 64px;
-    left: 64px;
-    right: 64px;
+    min-height: 125px;
 
     .subtitle {
       color: $lightest-purple;
       font-size: 24px;
     }
+  }
+
+  .parts-list {
+      overflow:scroll;
+      flex-grow: 1;
   }
 
   .customize-item {
