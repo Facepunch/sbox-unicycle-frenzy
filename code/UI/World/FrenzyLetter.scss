@@ -27,12 +27,13 @@ FrenzyLetter {
     }
 
     &.owning label {
-        color: red;
-        opacity: .15;
+        color: rgba(lightgray .9);
+        opacity: 1;
+        text-stroke: 20px black;
+        text-shadow: 0px 0px 200px lightgray;
     }
 
     &.hidden {
         opacity: 0;
     }
-
 }
