@@ -29,7 +29,7 @@ internal partial class UnicyclePlayer : Sandbox.Player
         base.Respawn();
 
         SetModel( "models/sbox_props/watermelon/watermelon.vmdl" );
-		SetupPhysicsFromAABB( PhysicsMotionType.Keyframed, new Vector3( -12, -12, 0 ), new Vector3( 12, 12, 64 ) );
+		SetupPhysicsFromAABB( PhysicsMotionType.Keyframed, new Vector3( -12, -12, 0 ), new Vector3( 12, 12, 80 ) );
 
 		EnableDrawing = false;
         EnableAllCollisions = true;
