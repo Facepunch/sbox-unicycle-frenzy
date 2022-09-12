@@ -16,10 +16,9 @@ internal class FrenzyLetter : WorldPanel
 	{
 		Collectible = collectible;
 
-		var width = 1000;
-		var height = 1000;
+		var width = 5000;
+		var height = 5000;
 		PanelBounds = new Rect( -width * .5f, -height * .5f, width, height );
-
 		PositionOffset = Vector3.Random.WithZ( 0 ).Normal;
 
 		Owning = FrenzyCollectionHelper.Contains( Collectible.Letter );
@@ -39,7 +38,7 @@ internal class FrenzyLetter : WorldPanel
 
 		var offs = (float)Math.Sin( Time.Now );
 		Position = position + Vector3.Up * offs * 8f;
-		Rotation = Rotation.LookAt( -Screen.GetDirection( new Vector2( Screen.Width * 0.5f, Screen.Height * 0.5f ) ) );
+		Rotation = Rotation.LookAt( CurrentView.Position - Position );
 
 		SetClass( "holding", holding );
 		SetClass( "owning", owning );
