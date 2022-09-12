@@ -50,18 +50,7 @@ internal partial class Collectible : UfProp
 		if( touched )
 		{
 			Particles.Create( "particles/misc/collectpickup.vpcf", Position );
-
-			Juice.Scale( 1, 1.15f, 0.01f )
-				.WithTarget( this )
-				.WithDuration( .15f );
-
 			Sound.FromEntity( "collect", this );
-		}
-		else
-		{
-			Juice.Scale( 0, 1.5f, 1f )
-				.WithTarget( this )
-				.WithDuration( .15f );
 		}
 	}
 
