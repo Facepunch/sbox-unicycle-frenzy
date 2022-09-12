@@ -31,4 +31,8 @@ FrenzyLetter {
         opacity: .15;
     }
 
+    &.hidden {
+        opacity: 0;
+    }
+
 }

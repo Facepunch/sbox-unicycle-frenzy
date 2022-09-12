@@ -43,6 +43,7 @@ internal class FrenzyLetter : WorldPanel
 
 		SetClass( "holding", holding );
 		SetClass( "owning", owning );
+		SetClass( "hidden", Collectible.IsHidden() );
 	}
 
 }
