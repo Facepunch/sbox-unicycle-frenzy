@@ -44,6 +44,29 @@ internal partial class FrenzyCollectible : Collectible
 		Holders.Add( pl );
 	}
 
+	public bool IsHidden()
+	{
+		if ( Local.Pawn is not UnicyclePlayer pl )
+			return false;
+
+		if ( Holders.Contains( pl ) )
+			return true;
+
+		if ( Owners.Contains( pl ) )
+			return true;
+
+		return false;
+	}
+
+	[Event.Frame]
+	private void OnFrame()
+	{
+		if ( Local.Pawn is not UnicyclePlayer pl )
+			return;
+
+		Light.Enabled = !IsHidden();
+	}
+
 	[Event( "unicycle.checkpoint.touch" )]
 	public void OnPlayerCheckpoint( UnicyclePlayer player )
 	{
