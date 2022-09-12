@@ -33,6 +33,8 @@ internal partial class FrenzyCollectible : Collectible
 	{
 		base.Spawn();
 
+		Scale = 1;
+
 		SetupPhysicsFromSphere( PhysicsMotionType.Static, Vector3.Up * 32f, 32f );
 		Collection = "FRENZY";
 	}
