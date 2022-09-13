@@ -116,7 +116,7 @@ TrailPassItemIcon {
     flex-direction: column;
     align-items: center;
     padding: 24px;
-    opacity: .8;
+    opacity: .6;
 
     &:last-child {
         margin-right: 0;
@@ -182,6 +182,10 @@ TrailPassItemIcon {
         }
     }
 
+    &.unlockable {
+        opacity: .9;
+    }
+
     &.unlocked {
         opacity: 1;
 
@@ -203,7 +207,6 @@ TrailPassItemIcon {
     .thumbnail {
         width: 175px;
         height: 175px;
-        flex-grow: 1;
         transition: all 0.08s ease-in;
         margin-top: -50px;
 

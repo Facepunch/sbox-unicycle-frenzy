@@ -13,6 +13,11 @@
 				ExperienceNeeded = 30
 				Part = resource:"resources/parts/frame_red.upart"
 			},
+			{
+				DisplayName = "Fire Trail"
+				ExperienceNeeded = 125
+				Part = resource:"resources/parts/trails/trail_fire.upart"
+			},
 		]
 		Achievements = 
 		[
