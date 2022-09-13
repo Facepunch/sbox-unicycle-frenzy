@@ -4,7 +4,7 @@
 	{
 		PartType = "Spray"
 		DisplayName = "Voltage"
-		IsDefault = true
+		IsDefault = false
 		Model = null
 		Particle = null
 		Texture = resource:"textures/sprays/sticker_voltage.png"

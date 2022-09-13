@@ -4,7 +4,7 @@
 	{
 		PartType = "Spray"
 		DisplayName = "Head 4"
-		IsDefault = true
+		IsDefault = false
 		Model = null
 		Particle = null
 		Texture = resource:"textures/sprays/sticker_terry_head4.png"

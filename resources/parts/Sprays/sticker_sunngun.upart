@@ -4,7 +4,7 @@
 	{
 		PartType = "Spray"
 		DisplayName = "Sun and Gun"
-		IsDefault = true
+		IsDefault = false
 		Model = null
 		Particle = null
 		Texture = resource:"textures/sprays/sticker_sunngun.png"

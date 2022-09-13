@@ -4,7 +4,7 @@
 	{
 		PartType = "Spray"
 		DisplayName = "Squirt Gun"
-		IsDefault = true
+		IsDefault = false
 		Model = null
 		Particle = null
 		Texture = resource:"textures/sprays/sticker_squirtgun.png"

@@ -4,7 +4,7 @@
 	{
 		PartType = "Spray"
 		DisplayName = "Stop"
-		IsDefault = true
+		IsDefault = false
 		Model = null
 		Particle = null
 		Texture = resource:"textures/sprays/spray_stop.png"

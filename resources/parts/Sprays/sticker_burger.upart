@@ -4,7 +4,7 @@
 	{
 		PartType = "Spray"
 		DisplayName = "Burger"
-		IsDefault = true
+		IsDefault = false
 		Model = null
 		Particle = null
 		Texture = resource:"textures/sprays/sticker_burger.png"

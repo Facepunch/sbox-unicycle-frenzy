@@ -4,7 +4,7 @@
 	{
 		PartType = "Spray"
 		DisplayName = "Default Spray"
-		IsDefault = true
+		IsDefault = false
 		Model = null
 		Particle = null
 		Texture = resource:"textures/sprays/spray_facepunch.png"
