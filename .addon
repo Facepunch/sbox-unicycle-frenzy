@@ -18,7 +18,7 @@
   "RootNamespace": "Sandbox",
   "Metadata": {
     "MapList": [
-      "facepunch.uf_sewage",
+      "facepunch.uf_quarry",
       "facepunch.uf_hop_stop",
       "facepunch.uf_beach",
       "facepunch.uf_pop_rock",
@@ -26,7 +26,8 @@
       "facepunch.uf_splinter",
       "facepunch.uf_bookworm",
       "facepunch.uf_wooden_gaps",
-      "facepunch.uf_flow"
+      "facepunch.uf_flow",
+      "facepunch.uf_sewage"
     ],
     "RankType": "Best",
     "LeaderboardType": "Ascending",
