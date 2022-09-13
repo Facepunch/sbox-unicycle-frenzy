@@ -41,9 +41,12 @@ internal class PartScenePanel : Panel
 
 			sceneObj = p;
 
-			scenePanel.Camera.Position = Vector3.Backward * 75 + Vector3.Down * 20;
-			scenePanel.Camera.Rotation = Rotation.From( 0, 0, 0 );
+			scenePanel.Camera.Position = Vector3.Up * 10 + Vector3.Left * 30;
+			scenePanel.Camera.Rotation = Rotation.From( 90, 0, 0 );
 			scenePanel.Style.Opacity = 1;
+			scenePanel.Camera.BackgroundColor = Color.Black;
+			scenePanel.Camera.EnablePostProcessing = false;
+			scenePanel.Camera.FieldOfView = 25;
 		}
 		else if ( !string.IsNullOrEmpty( part.Model ) )
 		{
@@ -75,10 +78,12 @@ internal class PartScenePanel : Panel
 	[Event.Frame]
 	private void OnFrame()
 	{
-		if ( RotationSpeed == 0 ) return;
 		if ( !sceneObj.IsValid() ) return;
 
-		sceneObj.Rotation = sceneObj.Rotation.RotateAroundAxis( Vector3.Up, RotationSpeed * Time.Delta );
+		if( RotationSpeed > 0 )
+		{
+			sceneObj.Rotation = sceneObj.Rotation.RotateAroundAxis( Vector3.Up, RotationSpeed * Time.Delta );
+		}
 
 		if( sceneObj is SceneParticles p )
 		{
