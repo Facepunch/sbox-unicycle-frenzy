@@ -9,5 +9,6 @@
 		Particle = null
 		Texture = resource:"textures/sprays/spray_checkpoint.png"
 		Decal = resource:"resources/decals/spray_checkpoint.decal"
+		ColorTint = "0.53725,0.90196,0.20784,1"
 	}
 }

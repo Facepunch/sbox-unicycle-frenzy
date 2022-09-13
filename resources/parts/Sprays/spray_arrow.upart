@@ -9,5 +9,6 @@
 		Particle = null
 		Texture = resource:"textures/sprays/spray_arrow.png"
 		Decal = resource:"resources/decals/spray_arrow.decal"
+		ColorTint = "1,0.83529,0.19216,1"
 	}
 }

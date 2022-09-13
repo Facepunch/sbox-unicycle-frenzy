@@ -9,5 +9,6 @@
 		Particle = null
 		Texture = resource:"textures/sprays/spray_facepunch.png"
 		Decal = resource:"resources/decals/spray_facepunch.decal"
+		ColorTint = "0.94902,0.12941,0.1098,1"
 	}
 }

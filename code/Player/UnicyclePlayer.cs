@@ -238,11 +238,18 @@ internal partial class UnicyclePlayer : Sandbox.Player
 		var tr = Trace.Ray( Position + Vector3.Up, Position + Vector3.Down * 100f )
 			.WorldOnly()
 			.Run();
-
+		
 		Decal.Place( decal, tr );
-
+		SprayEffect(sprayPart.ColorTint);
 		Sound.FromWorld( "sounds/misc/spray.sound", tr.HitPosition );
     }
+
+	[ClientRpc]
+	private void SprayEffect(Color tint)
+	{
+		var prtSpray = Particles.Create( "particles/player/spray.vpcf",Position );
+		prtSpray.SetPosition( 1, tint );
+	}
 
 }
 

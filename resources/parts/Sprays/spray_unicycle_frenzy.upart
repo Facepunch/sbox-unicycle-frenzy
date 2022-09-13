@@ -9,5 +9,6 @@
 		Particle = null
 		Texture = resource:"textures/sprays/spray_unicycle_frenzy.png"
 		Decal = resource:"resources/decals/spray_unicycle_frenzy.decal"
+		ColorTint = "0.95294,0.79216,0.23922,1"
 	}
 }
