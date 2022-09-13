@@ -15,7 +15,7 @@
 						remaps = 
 						[
 							{
-								from = ""
+								from = "material.001.vmat"
 								to = "models/flag/red_flag.vmat"
 							},
 						]
