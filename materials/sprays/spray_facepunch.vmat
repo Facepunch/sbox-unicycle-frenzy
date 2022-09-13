@@ -4,12 +4,23 @@ Layer0
 {
 	shader "projected_decals.vfx"
 
-	//---- Decal ----
-	F_BLEND_MODE 1 // Mod2X
+	//---- Ambient Occlusion ----
+	TextureAmbientOcclusion "materials/default/default_ao.tga"
 
 	//---- Color ----
 	TextureColor "textures/sprays/spray_facepunch.png"
 
+	//---- Fog ----
+	g_bFogEnabled "1"
+
+	//---- Lighting ----
+	g_flDirectionalLightmapMinZ "0.050"
+	g_flDirectionalLightmapStrength "1.000"
+	g_flGlossiness "0.500"
+
+	//---- Metalness ----
+	TextureMetalness "materials/default/default_metal.tga"
+
 	//---- Translucent ----
-	TextureTranslucency "materials/default/default_trans.tga"
+	TextureTranslucency "textures/sprays/spray_facepunch_trans.png"
 }

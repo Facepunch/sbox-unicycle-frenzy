@@ -22,5 +22,5 @@ Layer0
 	TextureMetalness "materials/default/default_metal.tga"
 
 	//---- Translucent ----
-	TextureTranslucency "materials/default/default_trans.tga"
+	TextureTranslucency "textures/sprays/spray_checkpoint_trans.png"
 }
