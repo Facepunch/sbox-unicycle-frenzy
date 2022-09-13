@@ -6,12 +6,27 @@
 		DisplayName = "Season 1"
 		ExperiencePerLevel = 10
 		MaxExperience = 1000
-		Items = [  ]
+		Items = 
+		[
+			{
+				DisplayName = "Red Frame"
+				ExperienceNeeded = 30
+				Part = resource:"resources/parts/frame_red.upart"
+			},
+		]
 		Achievements = 
 		[
 			{
 				Achievement = resource:"resources/achievements/medal_bronze.achv"
 				ExperienceGranted = 30
+			},
+			{
+				Achievement = resource:"resources/achievements/medal_silver.achv"
+				ExperienceGranted = 40
+			},
+			{
+				Achievement = resource:"resources/achievements/medal_gold.achv"
+				ExperienceGranted = 50
 			},
 		]
 	}

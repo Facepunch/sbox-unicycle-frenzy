@@ -16,10 +16,10 @@ internal class TrailPassItemIcon : Panel
 
 		var progress = TrailPassProgress.Current;
 
-		SetClass( "unlocked", progress.IsUnlocked( item.Part ) );
-		SetClass( "unlockable", progress.Experience >= item.RequiredExperience );
+		SetClass( "unlocked", progress.IsUnlocked( item.FindPart() ) );
+		SetClass( "unlockable", progress.Experience >= item.ExperienceNeeded );
 
-		var part = Item.Part;
+		var part = Item.FindPart();
 		var lookright = part.PartType == PartType.Wheel || part.PartType == PartType.Seat;
 		partPanel = new PartScenePanel( part, lookright );
 		partPanel.RotationSpeed = 25f;
@@ -32,27 +32,27 @@ internal class TrailPassItemIcon : Panel
 		base.Tick();
 
 		var progress = TrailPassProgress.Current;
-		SetClass( "unlocked", progress.IsUnlocked( Item.Part ) );
-		SetClass( "unlockable", Item.RequiredExperience <= progress.Experience );
+		SetClass( "unlocked", progress.IsUnlocked( Item.FindPart() ) );
+		SetClass( "unlockable", Item.ExperienceNeeded <= progress.Experience );
 	}
 
 	public void TryUnlock()
 	{
 		var progress = TrailPassProgress.Current;
 
-		if ( progress.IsUnlocked( Item.Part ) )
+		if ( progress.IsUnlocked( Item.FindPart() ) )
 		{
 			Toaster.Toast( "You already unlocked that", Toaster.ToastTypes.Simple );
 			return;
 		}
 
-		if ( Item.RequiredExperience > progress.Experience )
+		if ( Item.ExperienceNeeded > progress.Experience )
 		{
-			Toaster.Toast( $"You need {Item.RequiredExperience} xp!", Toaster.ToastTypes.Error );
+			Toaster.Toast( $"You need {Item.ExperienceNeeded} xp!", Toaster.ToastTypes.Error );
 			return;
 		}
 
-		progress.Unlock( Item.Part );
+		progress.Unlock( Item.FindPart() );
 		progress.Save();
 
 		Toaster.Toast( $"Item unlocked!", Toaster.ToastTypes.Celebrate );
