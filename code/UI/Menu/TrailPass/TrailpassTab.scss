@@ -123,14 +123,23 @@ TrailPassItemIcon {
     }
 
     .tag {
-        background-color: rgba($green 0.8);
         height: 32px;
-        width: 60%;
-        font-size: 25px;
+        font-size: 15px;
         font-family: $stylefont;
         align-items: center;
         justify-content: center;
+        top: 0;
+        left: 8px;
+        position: absolute;
         display: none;
+    }
+
+    .item-name {
+        height: 32px;
+        font-size: 20px;
+        font-family: $body-font;
+        position: absolute;
+        top: 8px;
     }
 
     .cost {
@@ -171,7 +180,6 @@ TrailPassItemIcon {
 
     &:not(.unlockable) .cost {
         color: #fff;
-        cursor: default;
         box-shadow: none;
         opacity: 0.5;
 
@@ -208,7 +216,7 @@ TrailPassItemIcon {
         width: 175px;
         height: 175px;
         transition: all 0.08s ease-in;
-        margin-top: -50px;
+        margin-top: -20px;
 
         &:hover {
             border-color: white;
