@@ -116,6 +116,7 @@ TrailPassItemIcon {
     flex-direction: column;
     align-items: center;
     padding: 24px;
+    opacity: .8;
 
     &:last-child {
         margin-right: 0;
@@ -132,21 +133,6 @@ TrailPassItemIcon {
         display: none;
     }
 
-    .cost-unlocked {
-        display: none;
-        background-color: $green;
-        height: 38px;
-        width: 65%;
-        margin-top: 8px;
-        font-size: 20px;
-        font-family: $stylefont;
-        align-items: center;
-        justify-content: center;
-        transition: all 0.08s ease-in;
-        cursor: default;
-        box-shadow: 0 0 5px black;
-    }
-
     .cost {
         font-size: 20px;
         font-family: $title-font;
@@ -157,53 +143,69 @@ TrailPassItemIcon {
         text-shadow: 3px 3px 0 rgba(#000, 1);
         transition: all 0.08s ease-in;
         position: absolute;
-        bottom: -14px;
+        bottom: 0;
         left: 0;
         right: 0;
 
-        .nut {
-            background-image: url("textures/ui/nut.png");
-            width: 55px;
-            height: 55px;
-            position: absolute;
-            right: 0;
-            top: -7px;
-            background-size: cover;
-            transition: transform 0.08s ease-in;
-        }
-
         &:hover {
-            background-color: $secondary;
             transform: scale(1.1);
-
-            .nut {
-                transform: scale(1.25);
-            }
+            background-color: $orange-light;
         }
     }
 
-    &.unlocked .cost {
-        display: none;
+    .cost-unlocked {
+        font-size: 25px;
+        font-family: $title-font;
+        align-items: center;
+        justify-content: center;
+        cursor: default;
+        color: red;
+        transition: all 0.08s ease-in;
+        position: absolute;
+        padding: 10px;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: transparent;
     }
 
     &:not(.unlockable) .cost {
-        //background-color: rgba(black 0.75);
         color: #fff;
         cursor: default;
         box-shadow: none;
         opacity: 0.5;
+
+        &:hover {
+            transform: scale(1);
+            background-color: rgba($red 0.1);
+            opacity: 1;
+        }
     }
 
-    &.unlocked .cost-unlocked {
-        display: flex;
+    &.unlocked {
+        opacity: 1;
+
+        .cost {
+            display: none;
+        }
+
+        .cost-unlocked {
+            display: flex;
+        }
+    }
+
+    &:not(.unlocked) {
+        .cost-unlocked {
+            display: none;
+        }
     }
 
     .thumbnail {
         width: 175px;
         height: 175px;
         flex-grow: 1;
-        cursor: pointer;
         transition: all 0.08s ease-in;
+        margin-top: -50px;
 
         &:hover {
             border-color: white;
