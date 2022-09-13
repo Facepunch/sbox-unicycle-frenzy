@@ -9,6 +9,7 @@
 		Particle = null
 		Texture = resource:"textures/sprays/spray_stop.png"
 		Decal = resource:"resources/decals/spray_stop.decal"
+		DecalSound = resource:"sounds/misc/spray.sound"
 		ColorTint = "0.94902,0.12941,0.1098,1"
 	}
 }

@@ -18,6 +18,8 @@ public class CustomizationPart : GameResource
 	public string Texture { get; set; }
 	[ResourceType( "decal" )]
 	public DecalDefinition Decal { get; set; }
+	[ResourceType( "sound" )]
+	public string DecalSound { get; set; }
 	[ResourceType( "color" )]
 	public Color ColorTint { get; set; } = Color.White;
 
