@@ -20,17 +20,13 @@ internal class TrailPassTab : Panel
 		BuildRenderScene();
 	}
 
-	private int setxp;
 	public override void Tick()
 	{
 		base.Tick();
 
 		var progress = TrailPassProgress.Current;
-
-		if ( progress.Experience == setxp ) return;
-		setxp = progress.Experience;
-
 		var pass = TrailPass.Current;
+
 		UpdateExperienceBar( progress.Experience, pass.MaxExperience );
 	}
 
