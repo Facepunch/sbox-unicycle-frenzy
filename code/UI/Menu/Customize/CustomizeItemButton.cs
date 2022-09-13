@@ -17,10 +17,6 @@ internal class CustomizeItemButton : Panel
 
 		SetIcon();
 		UpdateState();
-
-		// there's a style somewhere making button layouts not adhere to columns
-		// so I just added this to give it the hover/click sound effects and cursor
-		// and made this class a normal panel, not a button
 		AddClass( "button-sound" ); 
 	}
 
@@ -28,7 +24,7 @@ internal class CustomizeItemButton : Panel
 	{
 		base.OnClick( e );
 
-		if( !CanEquip() )
+		if( !Part.CanEquip() )
 		{
 			Toaster.Toast( "You haven't unlocked that yet", Toaster.ToastTypes.Error );
 			return;
@@ -49,23 +45,12 @@ internal class CustomizeItemButton : Panel
 
 	private void UpdateState()
 	{
-		var canequip = CanEquip();
+		var canequip = Part.CanEquip();
 		var customization = Local.Client.Components.Get<CustomizationComponent>();
 		SetClass( "is-selected", customization.IsEquipped( Part ) );
 		SetClass( "is-locked", !canequip );
 
 		Tag = canequip ? string.Empty : 100.ToString();
-	}
-
-	private bool CanEquip()
-	{
-		if ( TrailPassProgress.Current.IsUnlocked( Part ) ) 
-			return true;
-
-		if ( Part.IsDefault )
-			return true;
-
-		return false;
 	}
 
 	private void SetIcon()

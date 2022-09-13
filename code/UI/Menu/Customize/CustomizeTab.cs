@@ -43,6 +43,11 @@ internal class CustomizeTab : Panel
 
 		foreach ( var part in parts )
 		{
+			if ( !part.CanEquip() )
+			{
+				continue;
+			}
+
 			var icon = new CustomizeItemButton( part );
 			icon.Parent = PartsList;
 			icon.AddEventListener( "onmouseover", x =>

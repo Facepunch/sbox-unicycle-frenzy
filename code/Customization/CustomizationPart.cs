@@ -21,6 +21,17 @@ public class CustomizationPart : GameResource
 	[ResourceType( "color" )]
 	public Color ColorTint { get; set; } = Color.White;
 
+	public bool CanEquip()
+	{
+		if ( TrailPassProgress.Current.IsUnlocked( this ) )
+			return true;
+
+		if ( IsDefault )
+			return true;
+
+		return false;
+	}
+
 
 	public static CustomizationPart Find( string resourceName )
 	{
