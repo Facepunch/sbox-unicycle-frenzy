@@ -241,7 +241,7 @@ internal partial class UnicyclePlayer : Sandbox.Player
 		
 		Decal.Place( decal, tr );
 		SprayEffect(sprayPart.ColorTint);
-		Sound.FromWorld( sprayPart.DecalSound, tr.HitPosition );
+		Sound.FromWorld( sprayPart.DecalSound, tr.HitPosition + Vector3.Up );
     }
 
 	[ClientRpc]
