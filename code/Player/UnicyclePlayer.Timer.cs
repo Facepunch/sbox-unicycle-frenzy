@@ -102,7 +102,8 @@ internal partial class UnicyclePlayer
 
 				BestTime = TimeSinceStart;
 
-				var result = await GameServices.UpdateLeaderboard( Client.PlayerId, BestTime, Global.MapName );
+				var ms = (int)(BestTime * 1000);
+				var result = await LeaderboardHelper.SubmitScore( Client, ms );
 
 				// we can print new rank, old rank, improvement, etc from score result
 			}

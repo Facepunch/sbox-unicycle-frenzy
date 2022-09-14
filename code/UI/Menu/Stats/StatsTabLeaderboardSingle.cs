@@ -81,22 +81,22 @@ internal class StatsTabLeaderboardSingle : NavigatorPanel
 		{
 			case LeaderboardScope.Global:
 			case LeaderboardScope.Friends:
-				var q = await GameServices.Leaderboard.Query( ident: Global.GameIdent, bucket: Global.MapName );
-				var sorted = q.Entries.OrderBy( x => x.Rating ).Where( x => x.Rating > 0 ).ToList();
+				var scores = await LeaderboardHelper.FetchScores();
 				var rank = 1;
 
 				Canvas.DeleteChildren( true );
 
 				if ( scope == LeaderboardScope.Friends )
 				{
-					sorted = sorted
+					scores = scores
 						.Where( x => x.PlayerId == Local.PlayerId || new Friend( x.PlayerId ).IsFriend )
 						.ToList();
 				}
 
-				foreach ( var entry in sorted )
+				foreach ( var entry in scores )
 				{
-					var el = new StatsTabLeaderboardEntry( rank, entry.DisplayName, entry.Rating, entry.PlayerId );
+					var time = entry.Score / 1000f;
+					var el = new StatsTabLeaderboardEntry( rank, entry.Name, time, entry.PlayerId );
 					el.Parent = Canvas;
 					rank++;
 				}
