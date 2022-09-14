@@ -82,7 +82,6 @@ internal class StatsTabLeaderboardSingle : NavigatorPanel
 			case LeaderboardScope.Global:
 			case LeaderboardScope.Friends:
 				var scores = await LeaderboardHelper.FetchScores();
-				var rank = 1;
 
 				Canvas.DeleteChildren( true );
 
@@ -96,9 +95,8 @@ internal class StatsTabLeaderboardSingle : NavigatorPanel
 				foreach ( var entry in scores )
 				{
 					var time = entry.Score / 1000f;
-					var el = new StatsTabLeaderboardEntry( rank, entry.Name, time, entry.PlayerId );
+					var el = new StatsTabLeaderboardEntry( entry.GlobalRank, entry.Name, time, entry.PlayerId );
 					el.Parent = Canvas;
-					rank++;
 				}
 				break;
 			case LeaderboardScope.Session:
@@ -106,14 +104,12 @@ internal class StatsTabLeaderboardSingle : NavigatorPanel
 					.Where( x => x.IsValid() && x.Client.IsValid() )
 					.OrderBy( x => x.BestTime );
 
-				var srank = 1;
-
+				var srank = 0;
 				foreach( var pl in players )
 				{
 					var time = pl.CourseIncomplete ? 0f : pl.BestTime;
-					var el = new StatsTabLeaderboardEntry( srank, pl.Client.Name, time, pl.Client.PlayerId );
+					var el = new StatsTabLeaderboardEntry( ++srank, pl.Client.Name, time, pl.Client.PlayerId );
 					el.Parent = Canvas;
-					srank++;
 				}
 				break;
 		}
