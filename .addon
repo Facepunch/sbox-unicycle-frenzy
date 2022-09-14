@@ -77,6 +77,10 @@
           "r": "Trigger"
         }
       ]
+    },
+    "ControlModes": {
+      "Keyboard": true,
+      "Gamepad": true
     }
   }
 }
