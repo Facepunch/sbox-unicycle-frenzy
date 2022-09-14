@@ -244,9 +244,9 @@ internal partial class UnicycleController : BasePlayerController
 			Position = Position.WithZ( tr.EndPosition.z );
 			new FallCameraModifier( -200f );
 
-			if ( !pl.JumpTilt.Length.AlmostEqual( 0, .1f ) )
+			if ( !LengthOf( pl.JumpTilt ).AlmostEqual( 0, .1f ) )
 			{
-				if ( pl.PrevJumpTilt.Length > 35 )
+				if ( LengthOf( pl.PrevJumpTilt ) > 35 )
 				{
 					pl.JumpTilt = pl.PrevJumpTilt * .5f;
 					pl.Tilt = pl.PrevJumpTilt * -1f;
@@ -315,10 +315,10 @@ internal partial class UnicycleController : BasePlayerController
 
 		// continue to tip if not in the safe zone, but not when
 		// jump tilt is doing its thing or when trying to manually tilt
-		var len = tilt.Length;
+		var len = LengthOf( tilt );
 		if( len > LeanSafeZone )
 		{
-			if ( GroundEntity != null && pl.JumpTilt.Length.AlmostEqual( 0f, .05f ) && input.Length.AlmostEqual( 0 ) )
+			if ( GroundEntity != null && LengthOf( pl.JumpTilt ).AlmostEqual( 0f, .05f ) && input.Length.AlmostEqual( 0 ) )
 			{
 				var t = len / MaxLean;
 				var str = .25f.LerpTo( TipSpeed, t );
@@ -383,9 +383,9 @@ internal partial class UnicycleController : BasePlayerController
 
 		if ( GroundEntity == null ) return false;
 		if ( !input.Length.AlmostEqual( 0f ) ) return false;
-		if ( !pl.JumpTilt.Length.AlmostEqual( 0f ) ) return false;
+		if ( !LengthOf( pl.JumpTilt ).AlmostEqual( 0f ) ) return false;
 		if ( pl.TimeSincePedalStart < PedalTime ) return false;
-		if ( pl.Tilt.Length >= LeanSafeZone ) return false;
+		if ( LengthOf( pl.Tilt ) >= LeanSafeZone ) return false;
 		if ( InputActions.Brake.Down() && Velocity.Length > StopSpeed ) return false;
 
 		return true;
@@ -643,6 +643,12 @@ internal partial class UnicycleController : BasePlayerController
 		o -= norm * adjust;
 
 		return o;
+	}
+
+	static float LengthOf( Angles angle )
+	{
+		var vec = new Vector3( angle.pitch, angle.yaw, angle.roll );
+		return vec.Length;
 	}
 
 }

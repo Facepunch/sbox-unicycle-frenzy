@@ -59,7 +59,7 @@ internal class DevHud : Panel
 		LocalLean.Style.Top = Length.Percent( localPitchAlpha * 100f );
 
 		var safezoneSize = controller.LeanSafeZone / controller.MaxLean;
-		var boxw = LeanContainer.Box.Rect.width * safezoneSize;
+		var boxw = LeanContainer.Box.Rect.Width * safezoneSize;
 		SafeZone.Style.Width = Length.Pixels( boxw );
 		SafeZone.Style.Height = Length.Pixels( boxw );
 	}
