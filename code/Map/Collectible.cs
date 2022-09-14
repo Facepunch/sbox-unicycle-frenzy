@@ -90,6 +90,7 @@ internal partial class Collectible : UfProp
 		foreach( var ent in ents )
 		{
 			ent.SetTouched( false );
+			ent.SetRenderAlphaRecursive( 1f );
 		}
 
 		Event.Run( "collection.reset", collection );
@@ -105,6 +106,8 @@ internal partial class Collectible : UfProp
 
 			Event.Run( "collection.complete", Collection );
 		}
+
+		this.SetRenderAlphaRecursive( 0f );
 	}
 
 	protected virtual void OnCollectionComplete() { }
