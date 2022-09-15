@@ -55,7 +55,11 @@ internal class StatsAchievements : NavigatorPanel
 	{
 		if( GetAttribute( "mode", "" ) == "trailpass" )
 		{
-			return Achievement.All.Where( x => TrailPass.Current.Achievements.Any( y => y.FindAchievement() == x ) );
+			var result = Achievement.All.Where( x => TrailPass.Current.Achievements.Any( y => y.FindAchievement() == x ) );
+
+			result = result.OrderBy( x => TrailPass.Current.Achievements.First( y => y.FindAchievement() == x ).ExperienceGranted );
+
+			return result;
 		}
 
 		return Achievement.FetchForMap().OrderByDescending( x => x.IsCompleted() );
