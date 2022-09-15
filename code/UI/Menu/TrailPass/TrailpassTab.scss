@@ -91,17 +91,29 @@ TrailpassTab {
             transition: width 0.35s ease-in;
         }
     }
+
+    .content {
+        padding: 100px;
+
+        StatsAchievements {
+            max-width: 500px;
+            background-color: $light-purple;
+            box-shadow: $box-shadow-black;
+            padding: 20px;
+        }
+    }
 }
 
 TrailPassItemSlider {
     flex-grow: 1;
-    width: 95%;
-    height: 400px;
+    width: 75%;
+    height: 300px;
     margin: 0 auto;
-    margin-bottom: 50px;
     overflow: scroll;
-    align-items: flex-end;
+    align-items: center;
     padding-bottom: 16px;
+    align-self: flex-end;
+    padding: 40px;
 }
 
 TrailPassItemIcon {

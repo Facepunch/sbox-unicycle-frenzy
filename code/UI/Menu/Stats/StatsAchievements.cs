@@ -1,5 +1,6 @@
 using Sandbox;
 using Sandbox.UI;
+using System.Collections.Generic;
 using System.Linq;
 
 [UseTemplate]
@@ -19,11 +20,11 @@ internal class StatsAchievements : NavigatorPanel
 
 		AchievementCanvas.DeleteChildren( true );
 
-		var mapAchievements = Achievement.FetchForMap().OrderByDescending( x => x.IsCompleted() );
+		var achievements = GetAchievements();
 		var total = 0;
 		var achieved = 0;
 
-		foreach ( var ach in mapAchievements )
+		foreach ( var ach in achievements )
 		{
 			if ( IsMedal( ach ) )
 			{
@@ -48,6 +49,16 @@ internal class StatsAchievements : NavigatorPanel
 
 		AchievementCount = $"{achieved}/{total} Earned";
 		AchievementProgressBar.Style.Width = Length.Percent( ((float)achieved / total) * 100f );
+	}
+
+	private IEnumerable<Achievement> GetAchievements()
+	{
+		if( GetAttribute( "mode", "" ) == "trailpass" )
+		{
+			return Achievement.All.Where( x => TrailPass.Current.Achievements.Any( y => y.FindAchievement() == x ) );
+		}
+
+		return Achievement.FetchForMap().OrderByDescending( x => x.IsCompleted() );
 	}
 
 	private static bool IsMedal( Achievement ach )

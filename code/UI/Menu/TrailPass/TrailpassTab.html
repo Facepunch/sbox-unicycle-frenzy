@@ -5,13 +5,13 @@
 
     <div class="renderscene" @ref="SceneCanvas"></div>
 
-    <div class="blur"></div>
+    <div class="blur" />
+    <div style="flex-grow: 1;" />
 
-    <div class="scene">
-        <button class="buy" style="display:none;">Buy Trail Pass</button>
+    <div class="content">
+        <TrailPassItemSlider />
+        <StatsAchievements mode="trailpass" />
     </div>
-
-    <TrailPassItemSlider></TrailPassItemSlider>
 
     <div class="progress">
         <label class="xp min is-styled">0 xp</label>
