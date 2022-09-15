@@ -30,9 +30,12 @@
         right: 0px;
         top: 0px;
         padding: 4px;
-        background-color:$orange-light;
         text-shadow: 1px 1px 1px black;
+        text-stroke: 3px black;
+        letter-spacing: 1px;
         border-radius: $radius;
+        color: $orange-light;
+        font-size: 19px;
     }
 
     &:hover {
@@ -73,7 +76,7 @@
         opacity: 0.5;
         flex-direction: column;
         justify-content: center;
-        flex-grow:1;
+        flex-grow: 1;
 
         .title {
             text-stroke: 4px #000;
