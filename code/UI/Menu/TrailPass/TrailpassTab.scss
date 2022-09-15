@@ -104,6 +104,29 @@ TrailpassTab {
     }
 }
 
+.trailpass-description {
+    position: absolute;
+    left: 150px;
+    top: 60px;
+    flex-direction: column;
+
+    .season-title {
+        font-family: $title-font;
+        font-size: 80px;
+        color: $pink;
+        text-stroke: 6px black;
+        transform: rotateZ(-3deg);
+        text-shadow: $text-shadow-black-4;
+        margin-bottom: 40px;
+    }
+
+    .season-description {
+        font-size: 25px;
+        text-shadow: $text-shadow-black;
+        max-width: 600px;
+    }
+}
+
 TrailPassItemSlider {
     flex-grow: 1;
     width: 75%;
