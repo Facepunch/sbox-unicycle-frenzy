@@ -28,7 +28,7 @@ internal class TrailPassItemSlider : Panel
 	{
 		base.OnMouseWheel( value );
 
-		ScrollVelocity.x = ScrollVelocity.y;
+		ScrollVelocity.x = ScrollVelocity.y * 1.5f;
 		ScrollVelocity.y = 0;
 	}
 
