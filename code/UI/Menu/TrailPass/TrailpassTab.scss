@@ -138,6 +138,36 @@ TrailPassItemSlider {
     margin-right: 60px;
 }
 
+.slider-buttons {
+    width: 100%;
+    position: absolute;
+    background-color:red;
+    bottom: 0;
+}
+
+.item-scroll {
+    position: absolute;
+    border-radius: 50%;
+    width: 64px;
+    height: 64px;
+    align-items: center;
+    transition: all .08s ease;
+    background-color: rgba(black .01);
+    bottom: 100px;
+
+    &:hover {
+        background-color: rgba($pink 1);
+    }
+
+    &.left {
+        left: -30px;
+    }
+
+    &.right {
+        right: 30px;
+    }
+}
+
 TrailPassItemIcon {
     background-color: $light-purple;
     box-shadow: 4px 4px 0 $darker-purple;

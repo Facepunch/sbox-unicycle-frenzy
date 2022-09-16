@@ -32,4 +32,14 @@ internal class TrailPassItemSlider : Panel
 		ScrollVelocity.y = 0;
 	}
 
+	public void ScrollRight()
+	{
+		ScrollVelocity.x += 40f;
+	}
+
+	public void ScrollLeft()
+	{
+		ScrollVelocity.x -= 40f;
+	}
+
 }

@@ -1,14 +1,15 @@
 ﻿using Sandbox;
 using Sandbox.UI;
 using Sandbox.UI.Construct;
+using System.Linq;
 
 [UseTemplate]
 [NavigatorTarget( "menu/trailpass" )]
 internal class TrailPassTab : Panel
 {
 
+	public TrailPassItemSlider ItemSlider { get; set; }
 	public Panel SceneCanvas { get; set; }
-	public Panel ItemCanvas { get; set; }
 	public Panel ExperienceFill { get; set; }
 	public Label ExperienceLabel { get; set; }
 
@@ -69,5 +70,15 @@ internal class TrailPassTab : Panel
 
 	public override void OnHotloaded() => Rebuild();
 	protected override void PostTemplateApplied() => Rebuild();
+
+	public void ScrollItemSliderRight()
+	{
+		ItemSlider?.ScrollRight();
+	}
+
+	public void ScrollItemSliderLeft()
+	{
+		ItemSlider?.ScrollLeft();
+	}
 
 }

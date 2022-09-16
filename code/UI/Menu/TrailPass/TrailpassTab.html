@@ -11,7 +11,13 @@
     </div>
 
     <div class="content">
-        <TrailPassItemSlider />
+        <div class="slider">
+            <TrailPassItemSlider @ref="ItemSlider" />
+            <div class="slider-buttons">
+                <button onclick="ScrollItemSliderRight()" class="item-scroll right">></button>
+                <button onclick="ScrollItemSliderLeft()" class="item-scroll left"><</button>
+            </div>
+        </div>
         <StatsAchievements mode="trailpass" />
     </div>
 
