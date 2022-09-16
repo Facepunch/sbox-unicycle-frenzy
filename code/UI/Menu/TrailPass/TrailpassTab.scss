@@ -130,13 +130,12 @@ TrailpassTab {
 TrailPassItemSlider {
     flex-grow: 1;
     width: 75%;
-    height: 300px;
+    padding-bottom: 4px;
     margin: 0 auto;
     overflow: scroll;
     align-items: center;
-    padding-bottom: 16px;
     align-self: flex-end;
-    padding: 40px;
+    margin-right: 60px;
 }
 
 TrailPassItemIcon {
