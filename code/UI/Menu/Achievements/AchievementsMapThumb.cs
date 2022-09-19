@@ -10,6 +10,7 @@ internal class AchievementsMapThumb : Panel
 
 	public string MapName => FriendlyName();
 	public Panel MapImage { get; protected set; }
+	public ProgressBar ProgressBar { get; protected set; }
 
 	public AchievementsMapThumb() { }
 
@@ -26,6 +27,7 @@ internal class AchievementsMapThumb : Panel
 			return;
 
 		MapImage.Style.SetBackgroundImage( Package.Thumb );
+		ProgressBar.Set( 1, 4 );
 	}
 
 	private string FriendlyName()
