@@ -37,6 +37,8 @@
     background-color: pink;
     box-shadow: $box-shadow-hard-dark-purple;
     z-index: 1;
+    background-size: cover;
+    background-position: center center;
   }
 
   .map-body {
