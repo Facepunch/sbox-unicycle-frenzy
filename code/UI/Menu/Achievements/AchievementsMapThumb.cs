@@ -1,6 +1,7 @@
 ﻿
 using Sandbox;
 using Sandbox.UI;
+using System.Linq;
 
 [UseTemplate]
 internal class AchievementsMapThumb : Panel
@@ -27,7 +28,12 @@ internal class AchievementsMapThumb : Panel
 			return;
 
 		MapImage.Style.SetBackgroundImage( Package.Thumb );
-		ProgressBar.Set( 1, 4 );
+
+		var totalAchievements = Achievement.FetchForMap( Package.FullIdent ).Where( x => !x.PerMap );
+		var completedCount = totalAchievements.Count( x => x.IsCompleted() );
+		var totalCount = totalAchievements.Count();
+
+		ProgressBar.Set( completedCount, totalCount );
 	}
 
 	private string FriendlyName()
