@@ -1,7 +1,7 @@
 <link rel="stylesheet" href="StatsAchievements.scss" />
 
     <div class="achievements-container">
-        <label class="section-title title">Achievements</label>
+        <label class="section-title title" @ref="Title">Achievements</label>
         <div class="progress-bar">
             <div @ref="AchievementProgressBar" class="bar"></div>
             <label class="progress-title" @Text="AchievementCount"></label>

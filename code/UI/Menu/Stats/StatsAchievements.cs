@@ -9,7 +9,19 @@ internal class StatsAchievements : NavigatorPanel
 
 	public Panel AchievementProgressBar { get; set; }
 	public Panel AchievementCanvas { get; set; }
+	public Label Title { get; set; }
 	public string AchievementCount { get; set; }
+
+	public override void SetProperty( string name, string value )
+	{
+		if( name == "title" )
+		{
+			Title.Text = value;
+			return;
+		}
+
+		base.SetProperty( name, value );
+	}
 
 	[Event( "achievement.medals.spawned" )]
 	private void RebuildAchievements()
