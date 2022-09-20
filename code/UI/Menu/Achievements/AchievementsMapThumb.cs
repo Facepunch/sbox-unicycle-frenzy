@@ -34,6 +34,8 @@ internal class AchievementsMapThumb : Panel
 		var totalCount = totalAchievements.Count();
 
 		ProgressBar.Set( completedCount, totalCount );
+
+		SetClass( "is-complete", totalCount > 0 && completedCount == totalCount );
 	}
 
 	private string FriendlyName()

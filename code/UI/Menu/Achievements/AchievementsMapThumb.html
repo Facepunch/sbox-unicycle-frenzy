@@ -1,14 +1,12 @@
 ﻿
-<root class="column is-3">
+<root class="column is-3 map">
 
-    <div @ref="StatePanel" class="map">
-        <div @ref="MapImage" class="map-image">
-            <div class="check"></div>
-        </div>
-        <div class="box map-body">
-            <label class="title is-styled" @text="MapName">Sewage</label>
-            <ProgressBar @ref="ProgressBar" />
-        </div>
+    <div @ref="MapImage" class="map-image">
+        <div class="check"></div>
+    </div>
+    <div class="box map-body">
+        <label class="title is-styled" @text="MapName">Sewage</label>
+        <ProgressBar @ref="ProgressBar" />
     </div>
 
 </root>
