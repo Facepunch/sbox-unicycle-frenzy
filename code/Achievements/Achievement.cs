@@ -10,6 +10,7 @@ internal partial class Achievement : GameResource
 	public string ShortName { get; set; }
 	public string DisplayName { get; set; }
 	public string Description { get; set; }
+	[ResourceType( "png" )]
 	public string Thumbnail { get; set; }
 	public string MapName { get; set; }
 	public bool PerMap { get; set; }
