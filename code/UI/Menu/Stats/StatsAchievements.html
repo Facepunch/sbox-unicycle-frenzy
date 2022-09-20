@@ -2,9 +2,6 @@
 
     <div class="achievements-container">
         <label class="section-title title" @ref="Title">Achievements</label>
-        <div class="progress-bar">
-            <div @ref="AchievementProgressBar" class="bar"></div>
-            <label class="progress-title" @Text="AchievementCount"></label>
-        </div>
+        <ProgressBar @ref="ProgressBar" />
         <div class="achievement-list" @ref="AchievementCanvas"></div>
     </div>

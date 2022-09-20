@@ -7,10 +7,9 @@ using System.Linq;
 internal class StatsAchievements : NavigatorPanel
 {
 
-	public Panel AchievementProgressBar { get; set; }
 	public Panel AchievementCanvas { get; set; }
 	public Label Title { get; set; }
-	public string AchievementCount { get; set; }
+	public ProgressBar ProgressBar { get; set; }
 
 	public override void SetProperty( string name, string value )
 	{
@@ -59,8 +58,7 @@ internal class StatsAchievements : NavigatorPanel
 			total++;
 		}
 
-		AchievementCount = $"{achieved}/{total} Earned";
-		AchievementProgressBar.Style.Width = Length.Percent( ((float)achieved / total) * 100f );
+		ProgressBar.Set( achieved, total );
 	}
 
 	private IEnumerable<Achievement> GetAchievements()
