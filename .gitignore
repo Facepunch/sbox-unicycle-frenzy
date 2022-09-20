@@ -17,3 +17,4 @@ tools_asset_info.bin
 .vs/
 [Oo]bj/
 *_bakeresourcecache
+*.generated.*
