@@ -2,12 +2,11 @@
 {
 	data = 
 	{
-		AchievementId = 0
-		MapName = ""
 		ShortName = "uf_bronze"
 		DisplayName = "Bronze Medal"
 		Description = "Complete the map in an ok amount of time"
-		Thumbnail = "https://files.facepunch.com/crayz/1b2711b1/medal_bronze.png"
+		Thumbnail = resource:"textures/achievements/bronze_medal.png"
+		MapName = ""
 		PerMap = true
 	}
 }

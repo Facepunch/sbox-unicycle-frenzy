@@ -51,7 +51,6 @@
 
         .achievement-icon {
             border: 4px solid $green;
-            background: $achievement-gradient;
         }
 
         .achievement-body {
@@ -69,7 +68,9 @@
         width: 100px;
         height: 100px;
         margin-right: 16px;
-        background-size: 100%;
+        background-size: 80%;
+        background-repeat: no-repeat;
+        background-position: center center;
     }
 
     .achievement-body {

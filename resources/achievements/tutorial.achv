@@ -2,11 +2,11 @@
 {
 	data = 
 	{
-		MapName = "facepunch.uf_tutorial"
 		ShortName = "uf_complete_tutorial"
 		DisplayName = "Tutorial"
 		Description = "Complete the tutorial map"
-		Thumbnail = ""
+		Thumbnail = resource:"textures/achievements/tutorial.png"
+		MapName = "facepunch.uf_tutorial"
 		PerMap = false
 	}
 }
