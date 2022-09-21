@@ -64,9 +64,13 @@ AchievementsViewEntry {
     .icon {
         width: 84px;
         height: 84px;
-        background-color: $lightest-purple;
+        background-color: $light-purple;
         box-shadow: $box-shadow-black;
         margin-right: 32px;
+        background-position: center center;
+        background-size: 80%;
+        background-repeat: no-repeat;
+        transition: all .15s ease;
     }
 
     .details {
@@ -107,6 +111,11 @@ AchievementsViewEntry {
         background-color: transparent;
         opacity: 1;
 
+        .icon {
+            box-shadow: $box-shadow-hard-green;
+            border: 4px solid $green;
+        }
+
         .achieved {
             display: flex;
         }
@@ -119,6 +128,9 @@ AchievementsViewEntry {
     &:hover {
         transform: scale(1.03);
         opacity: 1;
-    }
 
+        .icon {
+            transform: scale(1.25);
+        }
+    }
 }
