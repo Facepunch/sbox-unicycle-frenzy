@@ -72,7 +72,7 @@ internal class UnicycleCamera : CameraMode
 		if ( Local.Pawn is UnicyclePlayer pl )
 		{
 			var diff = Rotation.Difference( Rotation.From( 0, input.ViewAngles.yaw, 0 ), Rotation.From( 0, pl.Rotation.Yaw(), 0 ) );
-			if( diff.Angle() > 140 )
+			if( diff.Angle() > 170 )
 			{
 				input.ViewAngles = input.OriginalViewAngles;
 			}
