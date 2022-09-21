@@ -20,7 +20,7 @@ AchievementsView {
     .heading {
         background-color: $light-purple;
         box-shadow: $box-shadow-black;
-        height: 92px;
+        min-height: 92px;
         margin-top: 9px;
         padding: 0px 18px;
         align-items: center;
@@ -44,11 +44,12 @@ AchievementsView {
 
     .entries {
         flex-direction: column;
+        overflow: scroll;
     }
 }
 
 AchievementsViewEntry {
-    height: 120px;
+    min-height: 120px;
     padding: 18px;
     background-color: $dark-purple;
     width: 100%;
