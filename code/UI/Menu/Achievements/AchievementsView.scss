@@ -1,0 +1,121 @@
+﻿
+@import "../../Vars.scss";
+
+AchievementsView {
+    .content {
+        padding: 8px;
+        flex-grow: 1;
+        flex-direction: column;
+    }
+
+    .thumbnail {
+        min-width: 110px;
+        min-height: 110px;
+        background-color: $lightest-purple;
+        box-shadow: $box-shadow-black;
+        bottom: 9px;
+        margin-right: 35px;
+    }
+
+    .heading {
+        background-color: $light-purple;
+        box-shadow: $box-shadow-black;
+        height: 92px;
+        margin-top: 9px;
+        padding: 0px 18px;
+        align-items: center;
+
+        .details {
+            flex-direction: column;
+            height: 100%;
+            padding-top: 5px;
+
+            .title {
+                font-size: 33px;
+                color: $orange-light;
+                text-shadow: $text-shadow-black-4;
+            }
+
+            .description {
+                text-shadow: $text-shadow-black;
+            }
+        }
+    }
+
+    .entries {
+        flex-direction: column;
+    }
+}
+
+AchievementsViewEntry {
+    height: 120px;
+    padding: 18px;
+    background-color: $dark-purple;
+    width: 100%;
+    margin-bottom: 4px;
+    box-shadow: $box-shadow-black;
+    align-items: center;
+    opacity: .25;
+    transition: all .15s ease;
+
+    .icon {
+        width: 84px;
+        height: 84px;
+        background-color: $lightest-purple;
+        box-shadow: $box-shadow-black;
+        margin-right: 32px;
+    }
+
+    .details {
+        flex-direction: column;
+        margin-top: -4px;
+
+        .title {
+            font-size: 33px;
+            color: $pink;
+            text-shadow: $text-shadow-black-4;
+        }
+
+        .description {
+            text-shadow: $text-shadow-black;
+        }
+    }
+
+    .status {
+        font-family: $body-font-bold;
+        font-size: 24px;
+        margin-right: 20px;
+    }
+
+    .achieved {
+        display: none;
+        color: $green;
+        text-shadow: $text-shadow-black-4;
+    }
+
+    .unachieved {
+        display: flex;
+        color: $pink;
+        text-shadow: $text-shadow-black-4;
+    }
+
+    &.is-completed {
+        background-image: linear-gradient(to right, #114029, $dark-purple );
+        background-color: transparent;
+        opacity: 1;
+
+        .achieved {
+            display: flex;
+        }
+
+        .unachieved {
+            display: none;
+        }
+    }
+
+    &:hover {
+        transform: scale(1.03);
+        opacity: 1;
+    }
+
+}

@@ -1,0 +1,31 @@
+﻿
+<link rel="stylesheet" href="AchievementsView.scss" />
+
+<root class="spaced top">
+    <div class="container">
+        <div class="columns is-gapless">
+            <div class="column is-8 pl-64">
+                <div class="columns is-multiline scroll content">
+                    <div class="heading">
+                        <div @ref="Thumbnail" class="thumbnail"></div>
+                        <div class="details">
+                            <label class="title">Map Name</label>
+                            <label class="description">Map Description</label>
+                        </div>
+                        <div style="flex-grow: 1;" />
+                        <ProgressBar style="min-width: 150px;" />
+                    </div>
+                    <div @ref="Canvas" class="entries">
+                        <AchievementsViewEntry />
+                        <AchievementsViewEntry class="is-completed" />
+                    </div>
+                </div>
+            </div>
+            <div class="column is-4 gradient pl-32">
+                <div class="achievement-list">
+                    <StatsAchievements mode="global" title="Global Achievements" />
+                </div>
+            </div>
+        </div>
+    </div>
+</root>

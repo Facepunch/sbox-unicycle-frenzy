@@ -38,6 +38,13 @@ internal class AchievementsMapThumb : Panel
 		SetClass( "is-complete", totalCount > 0 && completedCount == totalCount );
 	}
 
+	protected override void OnMouseDown( MousePanelEvent e )
+	{
+		base.OnMouseDown( e );
+
+		Ancestors.OfType<GameMenu>()?.FirstOrDefault()?.Navigate( $"menu/achievements/view/{Package.FullIdent}" );
+	}
+
 	private string FriendlyName()
 	{
 		if ( Package == null ) 
