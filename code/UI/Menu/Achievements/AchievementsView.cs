@@ -11,6 +11,7 @@ internal class AchievementsView : Panel
 	public Package Package { get; private set; }
 	public ProgressBar ProgressBar { get; protected set; }
 	public Panel Thumbnail { get; protected set; }
+	public Panel Canvas { get; protected set; }
 
 	protected override void PostTemplateApplied()
 	{
@@ -44,12 +45,20 @@ internal class AchievementsView : Panel
 		if ( Package == null ) 
 			return;
 
-		var totalAchievements = Achievement.FetchForMap( Package.FullIdent ).Where( x => !x.PerMap );
-		var completedCount = totalAchievements.Count( x => x.IsCompleted() );
-		var totalCount = totalAchievements.Count();
+		Canvas.DeleteChildren( true );
+
+		var mapAchievements = Achievement.FetchForMap( Package.FullIdent ).Where( x => !x.PerMap );
+		var completedCount = mapAchievements.Count( x => x.IsCompleted() );
+		var totalCount = mapAchievements.Count();
 
 		ProgressBar.Set( completedCount, totalCount );
 		Thumbnail.Style.SetBackgroundImage( Package.Thumb );
+
+		foreach( var ach in mapAchievements )
+		{
+			var entry = new AchievementsViewEntry( ach );
+			entry.Parent = Canvas;
+		}
 	}
 
 }
