@@ -7,6 +7,7 @@ internal class UnicycleCamera : CameraMode
 {
 
 	private List<UfProp> viewblockers = new();
+	private Angles ViewAngles;
 
 	public override void Update()
 	{
@@ -59,7 +60,7 @@ internal class UnicycleCamera : CameraMode
 		}
 
 		var spd = pawn.Velocity.WithZ( 0 ).Length / 350f;
-		var fov = 82f.LerpTo( 92f, spd );
+		var fov = 72f.LerpTo( 92f, spd );
 
 		FieldOfView = FieldOfView.LerpTo( fov, Time.Delta );
 	}
@@ -67,6 +68,15 @@ internal class UnicycleCamera : CameraMode
 	public override void BuildInput( InputBuilder input )
 	{
 		base.BuildInput( input );
+
+		if ( Local.Pawn is UnicyclePlayer pl )
+		{
+			var diff = Rotation.Difference( Rotation.From( 0, input.ViewAngles.yaw, 0 ), Rotation.From( 0, pl.Rotation.Yaw(), 0 ) );
+			if( diff.Angle() > 45 )
+			{
+				input.ViewAngles = input.OriginalViewAngles;
+			}
+		}
 
 		if ( !Input.UsingController ) return;
 
@@ -104,7 +114,7 @@ internal class UnicycleCamera : CameraMode
 
 		if ( traces == null ) return;
 
-		foreach(var tr in traces )
+		foreach ( var tr in traces )
 		{
 			if ( tr.Entity is not UfProp prop ) continue;
 			prop.BlockingView = true;
