@@ -9,11 +9,11 @@
                     <div class="heading">
                         <div @ref="Thumbnail" class="thumbnail"></div>
                         <div class="details">
-                            <label class="title">Map Name</label>
-                            <label class="description">Map Description</label>
+                            <label class="title" @text="Package.Title">Map Name</label>
+                            <label class="description" @text="Package.Description">Map Description</label>
                         </div>
                         <div style="flex-grow: 1;" />
-                        <ProgressBar style="min-width: 150px;" />
+                        <ProgressBar @ref="ProgressBar" style="min-width: 150px;" />
                     </div>
                     <div @ref="Canvas" class="entries scroll">
                         <AchievementsViewEntry />
