@@ -1,10 +1,10 @@
 ﻿
 <root>
 
-    <div class="icon"></div>
+    <div class="icon" @ref="Thumbnail"></div>
     <div class="details">
-        <label class="title">Sewer Rat</label>
-        <label class="description">Achievement description here</label>
+        <label class="title" @text="Achievement.Name"></label>
+        <label class="description" @text="Achievement.Description"></label>
     </div>
     <div style="flex-grow: 1;"></div>
     <div class="status">
