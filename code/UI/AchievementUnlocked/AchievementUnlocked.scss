@@ -3,39 +3,54 @@
 
 AchievementUnlocked {
     position: absolute;
-    top: 220px;
-    left: -100px;
-    padding: 20px 30px;
-    border-radius: $radius;
-    opacity: 0;
-    transition: all .15s ease-in;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+
+    .entries {
+        top: 50px;
+        left: 300px;
+        flex-direction: row;
+    }
+}
+
+AchievementUnlockedEntry {
     flex-direction: column;
-    transform: scale(0);
+    text-stroke: 4px black;
+    min-width: 150px;
+    min-height: 100px;
+    padding: 10px;
+    top: 0;
+    transition: all .15s ease;
 
-    .heading {
-        padding: 10px;
-        background-image: url("textures/ui/splatter.png");
-        background-size: 100%;
-        background-repeat: no-repeat;
-        background-position: center center;
-
-        Label {
-            color: $orange-gradient;
-            text-shadow: $box-shadow-soft;
-            font-size: 24px;
-        }
+    &:intro {
+        top: -110%;
     }
 
-    .title {
-        font-family: $body-font;
+    &:outro {
+        top: -100%;
+    }
+
+    .heading {
+        flex-direction: column;
+
+        Label {
+            color: $orange-light;
+            font-size: 24px;
+            font-family: $title-font;
+            align-self: center;
+        }
     }
 
     .icon {
         width: 80px;
         height: 80px;
-        border-radius: $radius;
-        margin-right: $padding;
-        background-size: 100%;
+        background-size: 90%;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-color: $light-purple;
+        box-shadow: $box-shadow-hard-green;
     }
 
     .details {
@@ -52,12 +67,11 @@ AchievementUnlocked {
             background-color: $orange-light;
             text-shadow: 1px 1px 1px black;
             border-radius: $radius;
+            display: none;
         }
     }
 
-    &.open {
-        opacity: 1;
-        left: 48px;
-        transform: scale(1);
+    &.has-experience .xp {
+        display: flex;
     }
 }
