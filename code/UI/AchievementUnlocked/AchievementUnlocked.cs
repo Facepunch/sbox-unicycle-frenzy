@@ -13,16 +13,6 @@ internal class AchievementUnlocked : Panel
 		Canvas.AddChild( new AchievementUnlockedEntry( achievement ) );
 	}
 
-	public override void Tick()
-	{
-		base.Tick();
-
-		if ( Input.Pressed( InputButton.Jump ) )
-		{
-			Display( Rand.FromArray( Achievement.All.ToArray() ) );
-		}
-	}
-
 	[Event( "achievement.set" )]
 	public void OnAchievementSet( string shortname )
 	{
