@@ -28,6 +28,9 @@ internal class AchievementsView : Panel
 			return;
 		}
 
+		if ( string.IsNullOrEmpty( value ) )
+			return;
+
 		LoadPackage( value );
 		Rebuild();
 	}
