@@ -1,0 +1,41 @@
+﻿
+@import "Vars.scss";
+
+PreMatchHud {
+    position: absolute;
+    width: 200px;
+    height: 100px;
+    transform: translateX(-50%);
+    left: 50%;
+    top: 75px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    opacity: 0;
+
+    &.open {
+        opacity: 1;
+    }
+
+    .heading {
+        font-size: 30px;
+        text-stroke: 6px #000;
+        text-shadow: $text-shadow-black-4;
+        margin-bottom: 20px;
+    }
+
+    .timer {
+        color: $orange-light;
+        font-family: $title-font;
+        font-size: 60px;
+        text-stroke: 6px #000;
+        text-shadow: $text-shadow-black-4;
+        transition: all .08s linear;
+    }
+
+    &.pulse .timer {
+        font-size: 80px;
+        color: $pink;
+        margin-top: -15px;
+    }
+}
