@@ -16,6 +16,7 @@ internal class DevHud : Panel
 	public Panel AbsLean { get; set; }
 	public Panel LocalLean { get; set; }
 	public Panel SafeZone { get; set; }
+	public int HorizontalSpeed { get; set; }
 
 	public override void Tick()
 	{
@@ -31,6 +32,8 @@ internal class DevHud : Panel
 
 		if ( Local.Pawn is not UnicyclePlayer player ) return;
 		if ( player.Controller is not UnicycleController controller ) return;
+
+		HorizontalSpeed = (int)player.Velocity.WithZ( 0 ).Length;
 
 		var leftTop = player.PedalPosition.LerpInverse( 1f, -1f );
 		var rightTop = player.PedalPosition.LerpInverse( -1f, 1f );
