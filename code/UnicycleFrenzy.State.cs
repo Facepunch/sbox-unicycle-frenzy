@@ -23,7 +23,7 @@ internal partial class UnicycleFrenzy
 		UfChatbox.AddChat( To.Everyone, "Server", "The match will start in 10 seconds", "alert", "chat.alert" );
 
 		GameState = GameStates.PreMatch;
-		StateTimer = 10f;
+		StateTimer = 5f;
 		await WaitStateTimer();
 
 		UfChatbox.AddChat( To.Everyone, "Server", "The match is live!", "alert", "chat.alert" );
