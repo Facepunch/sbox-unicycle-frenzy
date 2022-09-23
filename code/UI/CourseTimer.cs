@@ -41,6 +41,13 @@ internal class CourseTimer : Panel
 		CheckpointHintCanvas.AddChild( hint );
 	}
 
+	public override void Tick()
+	{
+		base.Tick();
+
+		SetClass( "is-live", UnicycleFrenzy.Game.GameState == UnicycleFrenzy.GameStates.Live );
+	}
+
 	public static string FormattedTimeMsf( float seconds )
 	{
 		return TimeSpan.FromSeconds( seconds ).ToString( @"m\:ss\.ff" );

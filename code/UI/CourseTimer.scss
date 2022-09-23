@@ -8,6 +8,10 @@ CourseTimer {
     top: 0;
     left: 0;
 
+    &:not(.is-live) .game-timer {
+        display: none;
+    }
+
     .game-timer {
         background-image: url("textures/ui/splatter.png");
         background-size: 100%;
