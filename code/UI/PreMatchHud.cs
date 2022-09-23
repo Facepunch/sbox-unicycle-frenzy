@@ -44,6 +44,9 @@ internal class PreMatchHud : Panel
 
 		if( TimeLeft >= 0 )
 			Sound.FromScreen( "sounds/ui/timer.prematch.pulse.sound" );
+		else
+			Sound.FromScreen( "sounds/ui/timer.prematch.over.sound");
+
 	}
 
 }
