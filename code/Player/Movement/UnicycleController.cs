@@ -35,6 +35,7 @@ internal partial class UnicycleController : BasePlayerController
 	public float MaxAirTurnSpeed => 35f;
 	public float ForwardVelocityTilt => 3f;
 	public float RightVelocityTilt => 1.5f;
+	public int MaxHorizontalSpeed => 700;
 
 	private UnicyclePlayer pl => Pawn as UnicyclePlayer;
 	public Vector3 Mins => new( -1, -1, 0 );
@@ -98,6 +99,14 @@ internal partial class UnicycleController : BasePlayerController
 
 		DoRotation();
 		Gravity();
+
+		var hspd = Velocity.WithZ( 0 );
+		if( hspd.Length > MaxHorizontalSpeed )
+		{
+			var fraction = MaxHorizontalSpeed / hspd.Length;
+			var prevz = Velocity.z;
+			Velocity = (Velocity * fraction).WithZ( prevz );
+		}
 
 		// go
 		Velocity += BaseVelocity;
