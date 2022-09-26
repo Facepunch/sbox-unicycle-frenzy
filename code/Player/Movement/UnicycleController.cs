@@ -34,7 +34,7 @@ internal partial class UnicycleController : BasePlayerController
 	public float StopSpeed => 10f;
 	public float MaxAirTurnSpeed => 35f;
 	public float ForwardVelocityTilt => 3f;
-	public float RightVelocityTilt => 1.5f;
+	public float RightVelocityTilt => 2f;
 	public int MaxHorizontalSpeed => 800;
 
 	private UnicyclePlayer pl => Pawn as UnicyclePlayer;
@@ -347,7 +347,7 @@ internal partial class UnicycleController : BasePlayerController
 			// cancel out a bit of the pitch if we're turning sharp
 			if ( Math.Abs( velDiff.y ) > Math.Abs( velDiff.x ) ) velDiff.x *= .25f;
 
-			tilt += new Angles( -velDiff.x * ForwardVelocityTilt, 0, velDiff.y * RightVelocityTilt ) * Time.Delta;
+			tilt += new Angles( -velDiff.x * ForwardVelocityTilt, 0, -velDiff.y * RightVelocityTilt ) * Time.Delta;
 		}
 
 		// tilt while on uneven ground
