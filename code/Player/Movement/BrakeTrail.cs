@@ -20,7 +20,7 @@ internal partial class BrakeTrail : Entity
 	{
 		base.ClientSpawn();
 
-		Particles = Particles.Create( "particles/trails/default_trail.vpcf", this );
+		Particles = Particles.Create( "particles/player/skid_mark.vpcf", this );
 		Particles.SetPosition( 6, new Vector3( 15, 0, 0 ) );
 		Particles.SetPosition( 8, 1 );
 	}
