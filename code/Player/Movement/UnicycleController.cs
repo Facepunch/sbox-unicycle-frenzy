@@ -186,7 +186,7 @@ internal partial class UnicycleController : BasePlayerController
 		if ( aroll + apitch > maxLean * 1.50f )
 			return true;
 
-		var trs = Trace.Sphere( 10f, Position + Vector3.Up * 14f, Position + Rotation.Up * 55 )
+		var trs = Trace.Sphere( 10f, Position + Vector3.Up * 24f, Position + Rotation.Up * 55 )
 			.Ignore( Pawn )
 			.WithoutTags( "player" )
 			.Run();
