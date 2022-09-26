@@ -35,7 +35,7 @@ internal partial class UnicycleController : BasePlayerController
 	public float MaxAirTurnSpeed => 35f;
 	public float ForwardVelocityTilt => 3f;
 	public float RightVelocityTilt => 1.5f;
-	public int MaxHorizontalSpeed => 800;
+	public int MaxHorizontalSpeed => 400;
 
 	private UnicyclePlayer pl => Pawn as UnicyclePlayer;
 	public Vector3 Mins => new( -1, -1, 0 );
@@ -593,6 +593,9 @@ internal partial class UnicycleController : BasePlayerController
 		// don't add velocity when pedals are returning to idle or in air..
 		if ( pl.PedalTargetPosition == 0 ) return;
 		if ( GroundEntity == null ) return;
+
+		var spd = Velocity.WithZ( 0 ).Length;
+		if ( spd > MaxHorizontalSpeed ) return;
 
 		var strengthAlpha = Math.Abs( pl.PedalStartPosition );
 		var strength = MinPedalStrength.LerpTo( MaxPedalStrength, strengthAlpha );
