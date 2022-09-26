@@ -56,14 +56,14 @@ ControlHint {
         .charge {
             display: none;
             position: absolute;
-            left: 50%;
-            top: -10px;
+            top: -15px;
+            left: 30px;
             width: 40px;
             height: 27px;
             background-image: url(textures/ui/control_charge.png);
             background-size: 100%;
             background-repeat: no-repeat;
-            transform: rotate(180) translateX(-50%);
+            transform: rotate(180);
             background-tint: $green;
         }
     }
