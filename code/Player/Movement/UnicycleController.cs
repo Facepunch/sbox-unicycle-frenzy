@@ -42,6 +42,7 @@ internal partial class UnicycleController : BasePlayerController
 	public Vector3 Maxs => new( 1, 1, 16 );
 
 	private UnicycleUnstuck unstuck;
+	private bool wasBraking;
 
 	public UnicycleController()
 	{
@@ -81,12 +82,14 @@ internal partial class UnicycleController : BasePlayerController
 
 		CheckGround();
 		CheckPedal();
-		CheckBrake();
+		var braking = CheckBrake();
 		CheckJump();
 		DoFriction();
 		DoSlope();
 		DoTilt();
 		DoGroundRotation();
+		DoBrakeTrail( braking, wasBraking );
+		wasBraking = braking;
 
 		// lerp pedals into place, adding velocity and lean
 		if ( pl.TimeSincePedalStart < pl.TimeToReachTarget + Time.Delta )
@@ -525,10 +528,10 @@ internal partial class UnicycleController : BasePlayerController
 		}
 	}
 
-	private void CheckBrake()
+	private bool CheckBrake()
 	{
-		if ( GroundEntity == null ) return;
-		if ( !InputActions.Brake.Down() ) return;
+		if ( GroundEntity == null ) return false;
+		if ( !InputActions.Brake.Down() ) return false;
 
 		if ( !pl.PrevGrounded && Velocity.WithZ( 0 ).Length < 300 )
 		{
@@ -536,6 +539,25 @@ internal partial class UnicycleController : BasePlayerController
 		}
 
 		Velocity = Velocity.LerpTo( Vector3.Zero, Time.Delta * BrakeStrength ).WithZ( Velocity.z );
+
+		return true;
+	}
+
+	private BrakeTrail BrakeTrail;
+	private void DoBrakeTrail( bool brakingNow, bool wasBraking )
+	{
+		if ( brakingNow == wasBraking ) return;
+		if ( Host.IsClient ) return;
+
+		if( brakingNow )
+		{
+			BrakeTrail = new();
+			BrakeTrail.SetParent( Pawn );
+		}
+		else
+		{
+			BrakeTrail?.SetParent( null );
+		}
 	}
 
 	public bool CanPedalBoost( out bool leftPedal, out bool rightPedal )
