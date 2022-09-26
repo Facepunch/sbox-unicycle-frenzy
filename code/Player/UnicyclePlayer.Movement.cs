@@ -75,6 +75,7 @@ internal partial class UnicyclePlayer
 		TimeSinceNotGrounded = 0;
 		TimeSinceJumpDown = 0;
 		Fallen = false;
+		SurfaceFriction = 1f;
 	}
 
 	public override void BuildInput( InputBuilder input )
