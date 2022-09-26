@@ -182,6 +182,7 @@ internal partial class UnicycleEntity : Entity
 
 		// todo: reassemble if local player equipped a different pedal part
 		if ( localPawnPedals.IsValid() ) return;
+		if ( !Frame.IsValid() ) return;
 
 		var cfg = pl.Client.Components.Get<CustomizationComponent>();
 		var pedal = cfg.GetEquippedPart( PartType.Pedal );
