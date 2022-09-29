@@ -13,7 +13,7 @@ FrenzyLetter {
         color: cyan;
         font-family: $body-font-bold;
         font-size: 500px;
-        text-shadow: 0px 0px 200px cyan;
+        text-shadow: 0px 0px 50px cyan;
         text-stroke: 100px purple;
     }
 
@@ -30,7 +30,7 @@ FrenzyLetter {
         color: rgba(lightgray .9);
         opacity: 1;
         text-stroke: 20px black;
-        text-shadow: 0px 0px 200px lightgray;
+        text-shadow: 0px 0px 50px lightgray;
     }
 
     &.hidden {
