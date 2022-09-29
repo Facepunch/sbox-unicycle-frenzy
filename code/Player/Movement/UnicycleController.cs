@@ -232,6 +232,11 @@ internal partial class UnicycleController : BasePlayerController
 
 		Velocity += velocityVector * Time.Delta;
 
+		if( Vector3.Dot( Velocity.Normal, slopeDir ) < 0 )
+		{
+			Velocity = ClipVelocity( Velocity, GroundNormal );
+		}
+
 		if ( Debug )
 		{
 			DebugOverlay.Line( Position, Position + velocityVector, Color.Red );
