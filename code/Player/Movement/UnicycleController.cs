@@ -628,6 +628,7 @@ internal partial class UnicycleController : BasePlayerController
 	{
 		var delta = newPosition - pl.PedalPosition;
 		pl.PedalPosition = newPosition;
+		pl.Tilt += new Angles( 0, 0, 15f * delta );
 
 		// don't add velocity when pedals are returning to idle or in air..
 		if ( pl.PedalTargetPosition == 0 ) return;
@@ -639,8 +640,6 @@ internal partial class UnicycleController : BasePlayerController
 		var strengthAlpha = Math.Abs( pl.PedalStartPosition );
 		var strength = MinPedalStrength.LerpTo( MaxPedalStrength, strengthAlpha );
 		var addVelocity = Rotation.Forward * strength * Math.Abs( delta );
-
-		pl.Tilt += new Angles( 0, 0, 15f * delta );
 		Velocity += addVelocity;
 
 		if ( !Velocity.Length.AlmostEqual( 0 ) && Velocity.Length < StopSpeed )
