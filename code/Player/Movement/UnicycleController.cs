@@ -181,15 +181,12 @@ internal partial class UnicycleController : BasePlayerController
 		var ang = pl.Rotation.Angles();
 		var aroll = Math.Abs( ang.roll );
 		var apitch = Math.Abs( ang.pitch );
-		var maxPitch = GroundEntity != null ? MaxLean : 180;
-		var maxRoll = GroundEntity != null ? MaxLean : 180;
+		var maxLean = GroundEntity != null ? MaxLean : 180;
 
-		maxRoll += Math.Min( 1.0f, (Velocity.Length / 500f) ) * 15f;
-
-		if ( aroll > maxRoll || apitch > maxRoll )
+		if ( aroll > maxLean || apitch > maxLean )
 			return true;
 
-		if ( aroll + apitch > maxPitch * 1.50f )
+		if ( aroll + apitch > maxLean * 1.50f )
 			return true;
 
 		var trs = Trace.Sphere( 10f, Position + Vector3.Up * 24f, Position + Rotation.Up * 55 )
