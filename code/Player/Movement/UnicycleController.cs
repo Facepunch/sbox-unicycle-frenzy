@@ -34,7 +34,7 @@ internal partial class UnicycleController : BasePlayerController
 	public float StopSpeed => 10f;
 	public float MaxAirTurnSpeed => 35f;
 	public float ForwardVelocityTilt => 3f;
-	public float RightVelocityTilt => 1.75f;
+	public float RightVelocityTilt => 1.5f;
 	public int MaxHorizontalSpeed => 800;
 
 	private UnicyclePlayer pl => Pawn as UnicyclePlayer;
