@@ -317,6 +317,7 @@ internal partial class UnicycleController : BasePlayerController
 		}
 	}
 
+	private float PitchAccumulator;
 	private void DoTilt()
 	{
 		if ( NoTilt )
@@ -332,7 +333,16 @@ internal partial class UnicycleController : BasePlayerController
 
 		// tilt from input
 		var input = new Vector3( Input.Forward, 0, -Input.Left );
-		tilt += new Angles( input.x, 0, input.z ) * LeanSpeed * Time.Delta;
+
+		var pitchmult = GroundEntity == null ? 1.5f : .5f;
+		PitchAccumulator += input.x * pitchmult;
+
+		if ( input.x == 0 )
+		{
+			PitchAccumulator = 0;
+		}
+
+		tilt += new Angles( PitchAccumulator / 5f, 0, input.z ) * LeanSpeed * Time.Delta;
 
 		// continue to tip if not in the safe zone, but not when
 		// jump tilt is doing its thing or when trying to manually tilt
@@ -393,7 +403,7 @@ internal partial class UnicycleController : BasePlayerController
 		}
 
 		tilt.roll = Math.Clamp( tilt.roll, -MaxLean - 5, MaxLean + 5 );
-		tilt.pitch = Math.Clamp( tilt.pitch, -MaxLean - 5, MaxLean + 5 );
+		//tilt.pitch = Math.Clamp( tilt.pitch, -MaxLean - 5, MaxLean + 5 );
 
 		pl.Tilt = tilt;
 	}
