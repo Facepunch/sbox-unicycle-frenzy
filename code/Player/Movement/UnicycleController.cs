@@ -336,6 +336,7 @@ internal partial class UnicycleController : BasePlayerController
 
 		var pitchmult = GroundEntity == null ? 1.5f : .5f;
 		PitchAccumulator += input.x * pitchmult;
+		PitchAccumulator = Math.Min( PitchAccumulator, 50 );
 
 		if ( input.x == 0 )
 		{
