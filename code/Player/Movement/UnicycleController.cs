@@ -638,11 +638,12 @@ internal partial class UnicycleController : BasePlayerController
 	{
 		var delta = newPosition - pl.PedalPosition;
 		pl.PedalPosition = newPosition;
-		pl.Tilt += new Angles( 0, 0, 15f * delta );
 
 		// don't add velocity when pedals are returning to idle or in air..
 		if ( pl.PedalTargetPosition == 0 ) return;
 		if ( GroundEntity == null ) return;
+
+		pl.Tilt += new Angles( 0, 0, 15f * delta );
 
 		var spd = Velocity.WithZ( 0 ).Length;
 		if ( spd > MaxHorizontalSpeed ) return;
