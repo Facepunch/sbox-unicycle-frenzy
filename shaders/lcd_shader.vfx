@@ -123,7 +123,7 @@ PS
 
     //=====================================================================================================================
 
-    PixelOutput MainPs( PixelInput i )
+    float4 MainPs( PixelInput i ) : SV_Target0
     {
         Material m = GatherMaterial( i );
         
@@ -169,9 +169,8 @@ PS
         //
         // Output
         //
-        PixelOutput o = FinalizePixelMaterial( i, m );
-        o.vColor = lerp( vAlbedoSample, vLcdSample, fBlendAmt );
-        o.vColor *= g_flBrightnessMultiplier;
+        float4 o = lerp( vAlbedoSample, vLcdSample, fBlendAmt );
+        o *= g_flBrightnessMultiplier;
 
         return o;
     }
