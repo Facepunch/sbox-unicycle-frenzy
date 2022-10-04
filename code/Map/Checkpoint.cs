@@ -18,6 +18,12 @@ internal partial class Checkpoint : ModelEntity
 	[Net, Property]
 	public int Number { get; set; }
 
+	[Net]
+	public bool IsMetalLargeFrame { get; set; }
+	
+	[Net]
+	public bool IsMetalSmallFrame { get; set; }
+
 	private ModelEntity flag;
 
 	public enum ModelType
@@ -25,7 +31,9 @@ internal partial class Checkpoint : ModelEntity
 		Dev,
 		Metal,
 		Stone,
-		Wood
+		Wood,
+		LargeMetalFrame,
+		SmallMetalFrame
 	}
 
 	/// <summary>
@@ -61,6 +69,16 @@ internal partial class Checkpoint : ModelEntity
 		{
 			SetModel("models/checkpoint_platform_wood.vmdl");
 		}
+		else if ( ModelTypeList == ModelType.LargeMetalFrame )
+		{
+			SetModel( "models/checkpoint_metal_frame/checkpoint_metal_frame_large.vmdl" );
+			IsMetalLargeFrame = true;
+		}
+		else if ( ModelTypeList == ModelType.SmallMetalFrame )
+		{
+			SetModel( "models/checkpoint_metal_frame/checkpoint_metal_frame_small.vmdl" );
+			IsMetalSmallFrame = true;
+		}
 
 		SetupPhysicsFromModel( PhysicsMotionType.Static );
 
@@ -77,23 +95,66 @@ internal partial class Checkpoint : ModelEntity
 	public override void ClientSpawn()
 	{
 		base.ClientSpawn();
-
-		var flagAttachment = GetAttachment( "Flag" );
-
-		flag = new ModelEntity( "models/flag/flag_pole.vmdl" );
-		flag.Position = flagAttachment.Value.Position;
-		flag.Rotation = flagAttachment.Value.Rotation;
-
-		if ( this.IsStart )
+		
+		if ( IsMetalLargeFrame )
 		{
-			flag.SetModel( "models/flag/flag.vmdl" );
-			flag.SetMaterialGroup( "Green" );
+			var flagAttachment = GetAttachment( "Flag" );
+
+			flag = new ModelEntity( "" );
+			flag.Position = flagAttachment.Value.Position;
+			flag.Rotation = flagAttachment.Value.Rotation;
+
+			if ( this.IsStart )
+			{
+				flag.SetModel( "models/checkpoint_metal_frame/checkpoint_metal_frame_large_sign.vmdl" );
+				flag.SetMaterialGroup( "Green" );
+			}
+
+			if ( this.IsEnd )
+			{
+				flag.SetModel( "models/checkpoint_metal_frame/checkpoint_metal_frame_large_sign.vmdl" );
+				flag.SetMaterialGroup( "Checker" );
+			}
 		}
-
-		if ( this.IsEnd )
+		else if ( IsMetalSmallFrame )
 		{
-			flag.SetModel( "models/flag/flag.vmdl" );
-			flag.SetMaterialGroup( "Checker" );
+			var flagAttachment = GetAttachment( "Flag" );
+
+			flag = new ModelEntity("");
+			flag.Position = flagAttachment.Value.Position;
+			flag.Rotation = flagAttachment.Value.Rotation;
+
+			if ( this.IsStart )
+			{
+				flag.SetModel( "models/checkpoint_metal_frame/checkpoint_metal_frame_small_sign.vmdl" );
+				flag.SetMaterialGroup( "Green" );
+			}
+
+			if ( this.IsEnd )
+			{
+				flag.SetModel( "models/checkpoint_metal_frame/checkpoint_metal_frame_small_sign.vmdl" );
+				flag.SetMaterialGroup( "Checker" );
+			}
+		}
+		else
+		{
+			var flagAttachment = GetAttachment( "Flag" );
+
+			flag = new ModelEntity( "models/flag/flag_pole.vmdl" );
+			flag.Position = flagAttachment.Value.Position;
+			flag.Rotation = flagAttachment.Value.Rotation;
+
+			if ( this.IsStart )
+			{
+				flag.SetModel( "models/flag/flag.vmdl" );
+				flag.SetMaterialGroup( "Green" );
+			}
+
+			if ( this.IsEnd )
+			{
+				flag.SetModel( "models/flag/flag.vmdl" );
+				flag.SetMaterialGroup( "Checker" );
+			}
 		}
 	}
 
@@ -141,19 +202,35 @@ internal partial class Checkpoint : ModelEntity
 		if ( !active && isLatestCheckpoint )
 		{
 			active = true;
+			if ( IsMetalLargeFrame )
+			{
+				flag.SetModel( "models/checkpoint_metal_frame/checkpoint_metal_frame_large_sign.vmdl" );
+			}
+			else if ( IsMetalSmallFrame )
+			{
+				flag.SetModel( "models/checkpoint_metal_frame/checkpoint_metal_frame_small_sign.vmdl" );
+			}
+			else
+			{
+				flag.SetModel( "models/flag/flag.vmdl" );
 
-			flag.SetModel( "models/flag/flag.vmdl" );
-
-			Juice.Scale( 1f, 1.25f, 1f )
-				.WithDuration( .5f )
-				.WithEasing( EasingType.BounceOut )
-				.WithTarget( flag );
+				Juice.Scale( 1f, 1.25f, 1f )
+					.WithDuration( .5f )
+					.WithEasing( EasingType.BounceOut )
+					.WithTarget( flag );
+			}
 		}
-		else if( active && !isLatestCheckpoint )
+		else if ( active && !isLatestCheckpoint )
 		{
 			active = false;
-
-			flag.SetModel( "models/flag/flag_pole.vmdl" );
+			if ( IsMetalLargeFrame || IsMetalSmallFrame )
+			{
+				flag.SetModel( "" );
+			}
+			else
+			{
+				flag.SetModel( "models/flag/flag_pole.vmdl" );
+			}
 		}
 	}
 

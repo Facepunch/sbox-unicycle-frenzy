@@ -1,0 +1,37 @@
+// THIS FILE IS AUTO-GENERATED
+
+Layer0
+{
+	shader "lcd_shader.vfx"
+
+	//---- Color ----
+	g_flModelTintAmount "1.000"
+	g_vColorTint "[1.000000 1.000000 1.000000 0.000000]"
+
+	//---- Fade ----
+	g_flFadeExponent "1.000"
+
+	//---- LCD Screen ----
+	g_flBrightnessMultiplier "8.000"
+	g_flFresnelExponent "5.000"
+	g_flFresnelReflectance "0.010"
+	g_flPixelBlendDistance "8.000"
+	g_flPixelBlendOffset "0.000"
+	g_flPixelOpacityMax "1.000"
+	g_flPixelOpacityMin "1.000"
+	g_vAnimationScroll "[0.200 0.000]"
+	g_vPixelSize "[1.000 1.000]"
+	g_vScreenResolution "[126.000 64.000]"
+	PixelTexture "models/checkpoint_metal_frame/materials/pixel.png"
+
+	//---- Material ----
+	TextureColor "models/checkpoint_metal_frame/materials/checkpoint_start_sign_1_color.png"
+	TextureTintMask "materials/default/default.tga"
+
+	//---- Texture Coordinates ----
+	g_nScaleTexCoordUByModelScaleAxis "0"
+	g_nScaleTexCoordVByModelScaleAxis "0"
+	g_vTexCoordOffset "[0.000 0.000]"
+	g_vTexCoordScale "[1.000 1.000]"
+	g_vTexCoordScrollSpeed "[0.000 0.000]"
+}
