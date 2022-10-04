@@ -18,11 +18,16 @@ internal partial class Checkpoint : ModelEntity
 	[Net, Property]
 	public int Number { get; set; }
 
+	[Net, Property( "No Camera Collide", "The Unicycle camera will maintain its position when touching this prop" )]
+	public bool NoCameraCollide { get; set; }
+
 	[Net]
 	public bool IsMetalLargeFrame { get; set; }
 	
 	[Net]
 	public bool IsMetalSmallFrame { get; set; }
+
+	public bool BlockingView = false;
 
 	private ModelEntity flag;
 
@@ -59,7 +64,7 @@ internal partial class Checkpoint : ModelEntity
 		{
 			SetModel("models/checkpoint_platform_metal.vmdl");
 		}
-
+		
 		else if (ModelTypeList == ModelType.Stone)
 		{
 			SetModel("models/checkpoint_platform_stone.vmdl");

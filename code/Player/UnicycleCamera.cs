@@ -7,6 +7,7 @@ internal class UnicycleCamera : CameraMode
 {
 
 	private List<UfProp> viewblockers = new();
+	private List<Checkpoint> cpviewblockers = new();
 	private Angles ViewAngles;
 
 	public override void Update()
@@ -46,7 +47,7 @@ internal class UnicycleCamera : CameraMode
 
 		var endpos = tr.EndPosition;
 
-		if ( tr.Entity is UfProp ufp && ufp.NoCameraCollide )
+		if ( tr.Entity is UfProp ufp && ufp.NoCameraCollide || tr.Entity is Checkpoint ufcp && ufcp.NoCameraCollide )
 			endpos = targetPos;
 
 		Position = endpos;
@@ -105,6 +106,10 @@ internal class UnicycleCamera : CameraMode
 		{
 			ent.BlockingView = false;
 		}
+		foreach ( var ent in cpviewblockers )
+		{
+			ent.BlockingView = false;
+		}
 		viewblockers.Clear();
 	}
 
@@ -116,9 +121,11 @@ internal class UnicycleCamera : CameraMode
 
 		foreach ( var tr in traces )
 		{
-			if ( tr.Entity is not UfProp prop ) continue;
+			if ( tr.Entity is not UfProp prop || tr.Entity is not Checkpoint cp ) continue;
 			prop.BlockingView = true;
+			cp.BlockingView = true;
 			viewblockers.Add( prop );
+			cpviewblockers.Add( cp );
 		}
 	}
 
