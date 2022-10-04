@@ -163,7 +163,7 @@ internal partial class Checkpoint : ModelEntity
 		base.Touch( other );
 
 		if ( other is not UnicyclePlayer pl ) return;
-		if ( !CanPlayerCheckpoint( pl ) ) return;
+		if ( !CanPlayerCheckpoint( pl )) return;
 
 		pl.TrySetCheckpoint( this );
 
@@ -183,10 +183,11 @@ internal partial class Checkpoint : ModelEntity
 
 	private bool CanPlayerCheckpoint( UnicyclePlayer pl )
 	{
+		if ( pl.TimerState == TimerState.Live && IsMetalLargeFrame || IsMetalSmallFrame ) return true;
 		if ( pl.GroundEntity == null ) return false;
-		if ( pl.Fallen ) return false;
+		if ( pl.Fallen  ) return false;
 		if ( pl.TimerState != TimerState.Live ) return false;
-
+		
 		return true;
 	}
 
