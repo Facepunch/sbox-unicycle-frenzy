@@ -10,10 +10,10 @@ internal class UnicycleLean : Panel
 	public Label RightLean;
 
 	public static UnicycleLean Current { get; private set; }
+
 	public UnicycleLean()
 	{
 		Current = this;
-
 		LeftLean = Add.Label( "", "leftlean" );
 		RightLean = Add.Label( "", "rightlean" );
 	}
@@ -25,13 +25,12 @@ internal class UnicycleLean : Panel
 
 		var maxLean = controller.MaxLean;
 
-		var absLean = player.Rotation.Angles();
 		var localLean = player.Tilt;
-		var localLeftRollAlpha = localLean.roll.LerpInverse( -maxLean, maxLean );
-		var localRightRollAlpha = localLean.roll.LerpInverse( maxLean, -maxLean );
+		var LeftRollAlpha = localLean.roll.LerpInverse( -maxLean, maxLean );
+		var RightRollAlpha = localLean.roll.LerpInverse( maxLean, -maxLean );
 
 
-		LeftLean.Style.Opacity = MathX.Lerp( .5f, -1, localLeftRollAlpha );
-		RightLean.Style.Opacity = MathX.Lerp( .5f, -1, localRightRollAlpha );
+		LeftLean.Style.Opacity = MathX.Lerp( .5f, -1, LeftRollAlpha );
+		RightLean.Style.Opacity = MathX.Lerp( .5f, -1, RightRollAlpha );
 	}
 }
