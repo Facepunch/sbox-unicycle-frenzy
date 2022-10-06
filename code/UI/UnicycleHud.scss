@@ -27,6 +27,25 @@ navlink,
   }
 }
 
+UnicycleLean {
+    background-color: rgba( #333, 0 );
+    transition: background-color 0.2s ease-in;
+    transform-origin: 50% 50%;
+    z-index: -1;
+
+    .leftlean {
+        left: 0%;
+        background-image: linear-gradient( to right, rgba( #01a4f6, .5 ), rgba( #333, 0) );
+        width: 25%;
+    }
+
+    .RightLean {
+        left: 150%;
+        background-image: linear-gradient( to left, rgba( #cc2424, .5 ), rgba( #333, 0) );
+        width: 25%;
+    }
+}
+
 UnicycleHud {
   color: $fontcolor;
   font-family: $body-font;
