@@ -30,7 +30,7 @@ internal class UnicycleLean : Panel
 		var RightRollAlpha = localLean.roll.LerpInverse( maxLean, -maxLean );
 
 
-		LeftLean.Style.Opacity = MathX.Lerp( .5f, -1, LeftRollAlpha );
-		RightLean.Style.Opacity = MathX.Lerp( .5f, -1, RightRollAlpha );
+		LeftLean.Style.Opacity = MathX.Lerp( .75f, -1, LeftRollAlpha );
+		RightLean.Style.Opacity = MathX.Lerp( .75f, -1, RightRollAlpha );
 	}
 }

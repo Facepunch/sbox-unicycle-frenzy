@@ -7,14 +7,20 @@
     height: 100%;
 
     .leftlean {
-        left: 0%;
+        left: 30%;
         background-image: linear-gradient( to right, rgba( #cc2424, .5 ), rgba( #333, 0) );
-        width: 25%;
+        border-radius: 500px 0px 0px 500px;
+        top: 50%;
+        width: 15%;
+        height: 350px;
     }
 
     .rightlean {
-        left: 50%;
+        left: 40%;
         background-image: linear-gradient( to left, rgba( #01a4f6, .5 ), rgba( #333, 0) );
-        width: 25%;
+        border-radius: 0px 500px 500px 0px;
+        top: 50%;
+        width: 15%;
+        height: 350px;
     }
 }
