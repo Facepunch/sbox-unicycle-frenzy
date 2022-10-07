@@ -47,7 +47,7 @@
         top: 58%;
         left: 29%;
         opacity: .5;
-         
+
         .point {
             position: absolute;
             border-radius: 50%;
@@ -59,13 +59,13 @@
             &.abs {
                 width: 24px;
                 height: 24px;
-                background-color: #ef654d;
+                background-color: #533972;
             }
 
             &.local {
                 width: 14px;
                 height: 14px;
-                background-color: #f7b742;
+                background-color: #ed4c59;
                 z-index: 2;
             }
         }
