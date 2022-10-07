@@ -1,5 +1,11 @@
 ﻿<link rel="stylesheet" href="UnicycleLean.scss" />
 
 <root>
-
+    <div class="leftlean"><div @ref="LeftLean" class="fill"></div></div>
+    <div class="rightlean"><div @ref="RightLean" class="fill"></div></div>
+    <div class="centerlean"><div @ref="CenterLean" class="fill"></div></div>
+    <div @ref="UnicycleLean" class="lean">
+        <div @ref="AbsLean" class="point abs"></div>
+        <div @ref="LocalLean" class="point local"></div>
+    </div>
 </root>
