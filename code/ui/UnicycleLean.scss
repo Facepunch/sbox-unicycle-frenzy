@@ -1,51 +1,48 @@
 ﻿UnicycleLean {
     position: absolute;
     z-index: -1;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
+    width: 256px;
+    height: 128px;
+    bottom: 200px;
+    left: 50%;
+    transform: translateX(-50%);
 
-    .leftlean {
-        left: 45%;
-        // background-image: linear-gradient( to right, rgba( #cc2424, .5 ), rgba( #333, 0) );
-        height: 150px;
-        width: 150px;
-        border: 10px solid rgba(#30273a, 0);
-        border-radius: 50%;
-        border-left-color: #30273a;
-        top: 60%;
+    .lean-edge {
+        height: 128px;
+        width: 128px;
+        border: 10px solid transparent;
+        border-radius: 30%;
         opacity: .5;
+
+        &.left {
+            // background-image: linear-gradient( to right, rgba( #cc2424, .5 ), rgba( #333, 0) );
+            border-left-color: #30273a;
+            left: 0;
+        }
+
+        &.right {
+            //background-image: linear-gradient( to left, rgba( #01a4f6, .5 ), rgba( #333, 0) );
+            border-right-color: #30273a;
+            right: 0;
+        }
     }
 
-    .rightlean {
-        left: 40%;
-        //background-image: linear-gradient( to left, rgba( #01a4f6, .5 ), rgba( #333, 0) );
-        height: 150px;
-        width: 150px;
-        border: 10px solid rgba(#30273a, 0);
-        border-radius: 50%;
-        border-right-color: #30273a;
-        top: 60%;
-        opacity: .5;
-    }
-
-    .centerlean {
-        left: 34.5%;
+    .lean-center {
         background-color: #30273a;
         height: 75px;
         width: 10px;
-        top: 63.5%;
         opacity: .5;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50% -50%);
+        position: absolute;
     }
 
-    .lean {
-        width: 200px;
-        height: 200px;
+    .compass {
+        width: 100%;
+        height: 100%;
         border-radius: 30%;
-        position: relative;
-        top: 58%;
-        left: 29%;
+        position: absolute;
         opacity: .5;
 
         .point {
@@ -54,7 +51,6 @@
             transform: translate(-50% -50%);
             top: 50%;
             left: 50%;
-            z-index: 1;
 
             &.abs {
                 width: 24px;
@@ -66,7 +62,6 @@
                 width: 14px;
                 height: 14px;
                 background-color: #ed4c59;
-                z-index: 2;
             }
         }
     }
