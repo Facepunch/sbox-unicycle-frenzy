@@ -34,7 +34,7 @@ AchievementsView {
 
             .title {
                 font-size: 33px;
-                color: $orange-light;
+                color: $orange-gradient;
                 text-shadow: $text-shadow-black-4;
             }
 
@@ -79,7 +79,7 @@ AchievementsViewEntry {
 
         .title {
             font-size: 33px;
-            color: $pink;
+            color: $pink-gradient;
             text-shadow: $text-shadow-black-4;
         }
 
@@ -102,7 +102,7 @@ AchievementsViewEntry {
 
     .unachieved {
         display: flex;
-        color: $pink;
+        color: $pink-gradient;
         text-shadow: $text-shadow-black-4;
     }
 

@@ -113,7 +113,7 @@ TrailpassTab {
     .season-title {
         font-family: $title-font;
         font-size: 80px;
-        color: $pink;
+        color: $pink-gradient;
         text-stroke: 6px black;
         transform: rotateZ(-3deg);
         text-shadow: $text-shadow-black-4;
@@ -222,7 +222,7 @@ TrailPassItemIcon {
 
         &:hover {
             transform: scale(1.1);
-            background-color: $orange-light;
+            background-color: $orange-gradient;
         }
     }
 

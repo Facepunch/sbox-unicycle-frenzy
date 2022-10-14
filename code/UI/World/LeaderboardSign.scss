@@ -26,7 +26,7 @@ LeaderboardSign {
     &.local {
       background-color: rgba($blue, 0.5);
       .name {
-        color: $pink;
+        color: $pink-gradient;
       }
       .rank {
         background-color: $blue;

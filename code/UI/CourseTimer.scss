@@ -33,7 +33,7 @@ CourseTimer {
         }
 
         .title {
-            color: $pink;
+            color: $pink-gradient;
             font-size: 40px;
             text-stroke: 6px #000;
             text-shadow: $text-shadow-black-4;
@@ -51,7 +51,7 @@ CourseTimer {
         transform: translateX(-50%);
         min-width: 200px;
         padding: 10px 20px;
-        color: $orange-light;
+        color: $orange-gradient;
         font-family: $title-font;
         font-size: 40px;
         text-stroke: 6px #000;
@@ -76,7 +76,7 @@ CourseTimer {
             margin-bottom: 16px;
 
             .is-styled {
-                color: $orange-light;
+                color: $orange-gradient;
                 margin-right: 8px;
                 font-size: 20px;
             }
@@ -101,7 +101,7 @@ CourseTimer {
 
         CheckpointHint {
             transform: scale(1) rotate(-3deg);
-            color: $orange-light;
+            color: $orange-gradient;
             font-family: $title-font;
             font-size: 30px;
             text-stroke: 6px #000;

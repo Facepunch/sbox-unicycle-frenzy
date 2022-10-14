@@ -54,7 +54,7 @@ GameMenu {
       }
 
       label {
-        color: $orange-light;
+        color: $orange-gradient;
         font-family: $title-font;
         font-size: 30px;
         padding: 16px;
@@ -81,7 +81,7 @@ GameMenu {
       &.active {
         opacity: 1;
         label {
-          color: $pink;
+          color: $pink-gradient;
           transform: scale(1.1) rotate(-3deg);
         }
         .stroke {
