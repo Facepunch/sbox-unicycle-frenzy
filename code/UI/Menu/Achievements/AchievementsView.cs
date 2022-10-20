@@ -50,7 +50,7 @@ internal class AchievementsView : Panel
 
 		Canvas.DeleteChildren( true );
 
-		var mapAchievements = Achievement.FetchForMap( Package.FullIdent ).Where( x => !x.PerMap );
+		var mapAchievements = Achievement.FetchForMap( Package.FullIdent ).Where( x => !x.PerMap ).ToList();
 		var completedCount = mapAchievements.Count( x => x.IsCompleted() );
 		var totalCount = mapAchievements.Count();
 
