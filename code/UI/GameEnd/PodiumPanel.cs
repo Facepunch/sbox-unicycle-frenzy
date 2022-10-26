@@ -55,7 +55,7 @@ internal class PodiumPanel : Panel
 		RenderCanvas.AddChild( renderscene );
 
 		Name = pl.Client.Name;
-		Time = CourseTimer.FormattedTimeMsf( pl.BestTime );
+		Time = pl.BestTime.FormattedTimeMsf();
 	}
 
 }

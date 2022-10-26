@@ -7,7 +7,7 @@ using System;
 internal class StatsMapInfo : NavigatorPanel
 {
 	public MapStats Stats => MapStats.Local;
-	public string BestTime => Stats.BestTime == 0 ? "INCOMPLETE" : CourseTimer.FormattedTimeMsf( Stats.BestTime );
+	public string BestTime => Stats.BestTime == 0 ? "INCOMPLETE" : Stats.BestTime.FormattedTimeMsf();
 	public string TimePlayed => TimeSpan.FromSeconds( Stats.TimePlayed ).ToString();
 	public string MapName => Global.MapName;
 	public Panel Thumbnail { get; set; }

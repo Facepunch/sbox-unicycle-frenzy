@@ -98,7 +98,7 @@ internal class StatsAchievements : NavigatorPanel
 			_ => 0
 		};
 
-		return $"Complete the map in {CourseTimer.FormattedTimeMs( time )}s or better";
+		return $"Complete the map in {time.FormattedTimeMs()}s or better";
 	}
 
 	public override void OnHotloaded() => RebuildAchievements();

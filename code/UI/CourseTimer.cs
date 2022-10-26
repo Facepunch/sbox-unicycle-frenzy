@@ -18,13 +18,13 @@ internal class CourseTimer : Panel
 			var target = pl.SpectateTarget ?? pl;
 
 			if ( target.TimerState != TimerState.Live )
-				return FormattedTimeMs( 0 );
+				return 0f.FormattedTimeMs();
 
-			return FormattedTimeMs( target.TimeSinceStart );
+			return target.TimeSinceStart.FormattedTimeMs();
 		}
 	}
 
-	public string GameTime => FormattedTimeMs( UnicycleFrenzy.Game.StateTimer );
+	public string GameTime => ((float)UnicycleFrenzy.Game.StateTimer).FormattedTimeMs();
 	public string MenuHotkey => InputActions.Menu.GetButtonOrigin();
 	public string MapKey => InputActions.Scoreboard.GetButtonOrigin();
 
@@ -51,11 +51,6 @@ internal class CourseTimer : Panel
 	public static string FormattedTimeMsf( float seconds )
 	{
 		return TimeSpan.FromSeconds( seconds ).ToString( @"m\:ss\.ff" );
-	}
-
-	public static string FormattedTimeMs( float seconds )
-	{
-		return TimeSpan.FromSeconds( seconds ).ToString( @"m\:ss" );
 	}
 
 	public class CheckpointHint : Label

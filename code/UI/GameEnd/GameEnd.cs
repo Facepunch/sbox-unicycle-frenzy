@@ -11,7 +11,7 @@ internal class GameEnd : Panel
 
 	public Panel MapCanvas { get; set; }
 	public Panel PodiumCanvas { get; set; }
-	public string TimeLeft => CourseTimer.FormattedTimeMs( UnicycleFrenzy.Game.StateTimer );
+	public string TimeLeft => ((float)UnicycleFrenzy.Game.StateTimer).FormattedTimeMs();
 
 	private bool manuallyopened = false;
 
