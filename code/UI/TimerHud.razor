@@ -1,0 +1,62 @@
+﻿@using System
+@using System.Threading.Tasks
+@using Sandbox;
+@using Sandbox.UI;
+@using SandboxEditor;
+@attribute [StyleSheet( "/UI/TimerHud.scss" )]
+
+<root class=@RootClass>
+    <div class="game-timer">
+        <label class="subtitle is-styled">Time Remaining</label>
+        <label class="title">@GameTime.FormattedTimeMs()</label>
+    </div>
+    
+    <div class="checkpoint-hint">@CheckpointText</div>
+    
+    <label class="course-time">@CourseTime.FormattedTimeMs()</label>
+    
+    <div class="menu-info">
+        <div class="text-container">
+            <label class="is-styled">Menu </label> 
+            <label class="key">@InputActions.Menu.GetButtonOrigin()</label>
+        </div>
+        <div class="text-container">
+            <label class="is-styled">Map list</label>
+            <label class="key">@InputActions.Scoreboard.GetButtonOrigin()</label>
+        </div>
+    </div>
+</root>
+
+@code {
+    private string CheckpointText { get; set; }
+    private bool GameIsLive => UnicycleFrenzy.Game.GameState == UnicycleFrenzy.GameStates.Live;
+    private string RootClass => GameIsLive ? "is-live" : "is-warmup";
+    private float GameTime => UnicycleFrenzy.Game.StateTimer;
+    private float CourseTime 
+    {
+        get
+        {
+            if (Local.Pawn is not UnicyclePlayer pl) return 0f;
+            var target = pl.SpectateTarget ?? pl;
+
+            return target.TimerState == TimerState.Live ? pl.TimeSinceStart : 0f;
+        }
+    }
+    
+    [Event("unicycle.checkpoint.set")]
+    internal async void ShowCheckpointHint( UnicyclePlayer pl )
+    {
+        if ( Local.Pawn != pl ) return;
+
+        CheckpointText = "Checkpoint";
+
+        await Task.Delay(3000);
+        
+        CheckpointText = string.Empty;
+    }
+
+    protected override int BuildHash()
+    {
+        return HashCode.Combine(GameTime, CourseTime);
+    }
+}

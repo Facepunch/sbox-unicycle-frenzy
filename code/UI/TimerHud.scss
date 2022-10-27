@@ -1,0 +1,121 @@
+﻿@import "Vars.scss";
+
+TimerHud {
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  &:not(.is-live) .game-timer {
+    display: none;
+  }
+
+  .game-timer {
+    background-image: url("textures/ui/splatter.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    top: 48px;
+    align-self: flex-start;
+    flex-direction: column;
+    min-width: 200px;
+    align-items: center;
+
+    .subtitle {
+      font-size: 16px;
+      margin-bottom: -10px;
+    }
+
+    .title {
+      color: $pink-gradient;
+      font-size: 40px;
+      text-stroke: 6px #000;
+      text-shadow: $text-shadow-black-4;
+    }
+  }
+
+  .course-time {
+    background-image: url("textures/ui/splatter.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: absolute;
+    bottom: 32px;
+    left: 50%;
+    transform: translateX(-50%);
+    min-width: 200px;
+    padding: 10px 20px;
+    color: $orange-gradient;
+    font-family: $title-font;
+    font-size: 40px;
+    text-stroke: 6px #000;
+    text-shadow: $text-shadow-black-4;
+    justify-content: center;
+  }
+
+  .menu-info {
+    position: absolute;
+    top: 64px;
+    left: 84px;
+    font-size: 16px;
+    text-stroke: 4px #000;
+    text-shadow: $text-shadow-black;
+    flex-direction: column;
+    align-items: flex-start;
+
+
+    .text-container {
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 16px;
+
+      .is-styled {
+        color: $orange-gradient;
+        margin-right: 8px;
+        font-size: 20px;
+      }
+
+      .key {
+        border-radius: 4px;
+        background: $grey-gradient;
+        box-shadow: $box-shadow-hard-dark-purple;
+        border: 2px solid $darker-purple;
+        font-size: 20px;
+      }
+    }
+  }
+
+  .checkpoint-hint {
+    position: absolute;
+    bottom: 100px;
+    width: 100%;
+    height: 100px;
+    align-items: center;
+    justify-content: center;
+
+    label {
+      transform: scale(1) rotate(-3deg);
+      color: $orange-gradient;
+      font-family: $title-font;
+      font-size: 30px;
+      text-stroke: 6px #000;
+      text-shadow: $text-shadow-black-4;
+      transition: all .5s bounce-out;
+      background-image: url("textures/ui/splatter.png");
+      background-size: 100%;
+      background-repeat: no-repeat;
+      background-position: center center;
+
+      &:intro {
+        transform: scale(0) rotate(0deg);
+      }
+
+      &:outro {
+        transform: scale(0) rotate(0deg);
+        transition: all .35s ease;
+      }
+    }
+  }
+}
