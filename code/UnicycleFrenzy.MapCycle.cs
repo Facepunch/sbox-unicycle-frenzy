@@ -61,11 +61,11 @@ internal partial class UnicycleFrenzy
 			if( timer % 1000 == 0 )
 			{
 				var timeleft = ( delay - timer ) / 1000f;
-				UfChatbox.AddChat( To.Everyone, "Server", $"{timeleft} seconds remaining." );
+				UfChat.AddChat( To.Everyone, "Server", $"{timeleft} seconds remaining." );
 			}
 		}
 
-		UfChatbox.AddChat( To.Everyone, "Server", $"Changing level to {mapident}" );
+		UfChat.AddChat( To.Everyone, "Server", $"Changing level to {mapident}" );
 
 		await Task.Delay( 3000 );
 
@@ -97,11 +97,11 @@ internal partial class UnicycleFrenzy
 		}
 		Game.NextMap = votemap.OrderByDescending( x => x.Value ).First().Key;
 
-		UfChatbox.AddChat( To.Everyone, "Server", string.Format( "{0} voted for {1}", ConsoleSystem.Caller.Name, mapIdent ) );
+		UfChat.AddChat( To.Everyone, "Server", string.Format( "{0} voted for {1}", ConsoleSystem.Caller.Name, mapIdent ) );
 
 		if ( CanForceChange( mapIdent ) )
 		{
-			UfChatbox.AddChat( To.Everyone, "Server", "A new level has been voted for!" );
+			UfChat.AddChat( To.Everyone, "Server", "A new level has been voted for!" );
 			Game.ChangeMapWithDelay( mapIdent, 5f );
 		}
 	}

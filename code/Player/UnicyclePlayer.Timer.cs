@@ -92,12 +92,12 @@ internal partial class UnicyclePlayer
 			{
 				if( CourseIncomplete )
 				{
-					UfChatbox.AddChat( To.Everyone, "Server", $"{Client.Name} completed the course in {formattedTime}", "custom timer-msg", sfx: "timer.complete" );
+					UfChat.AddChat( To.Everyone, "Server", $"{Client.Name} completed the course in {formattedTime}", "custom timer-msg", sfx: "timer.complete" );
 				}
 				else
 				{
 					var improvement = (BestTime - TimeSinceStart).FormattedTimeMsf();
-					UfChatbox.AddChat( To.Everyone, "Server", $"{Client.Name} completed the course in {formattedTime}, improving by {improvement}!", "custom timer-msg", sfx: "timer.complete" );
+					UfChat.AddChat( To.Everyone, "Server", $"{Client.Name} completed the course in {formattedTime}, improving by {improvement}!", "custom timer-msg", sfx: "timer.complete" );
 				}
 
 				BestTime = TimeSinceStart;
