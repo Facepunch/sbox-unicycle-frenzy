@@ -1,0 +1,30 @@
+﻿@inherits Panel
+@attribute [StyleSheet("/UI/Styles/stylesheet.scss")]
+
+<root>
+
+    <div class="entries">
+        @foreach(var entry in Entries)
+        {
+            <KillfeedEntry Message=@entry.Item1 IsLocalClient=@entry.Item2 />
+        }
+    </div>
+
+</root>
+
+@code {
+    List<Tuple<string, bool>> Entries = new();
+
+    public async void AddEntry(string message, bool isLocalClient)
+    {
+        var entry = new Tuple<string, bool>(message, isLocalClient);
+        Entries.Add(entry);
+
+        StateHasChanged();
+
+        await Task.Delay(4000);
+
+        Entries.Remove(entry);
+        StateHasChanged();
+    }
+}
