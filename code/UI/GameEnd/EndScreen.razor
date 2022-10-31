@@ -1,0 +1,54 @@
+﻿
+@inherits Panel
+@attribute [StyleSheet("/UI/Styles/stylesheet.scss")]
+
+<root class=@(IsOpen ? "open" : "closed")>
+
+    <div class="game-timer">
+        <label class="subtitle is-styled">Time Remaining</label>
+		<label class="title" @text="TimeLeft">@GameTime.FormattedTimeMs()</label>
+    </div>
+    <div @ref="Maps" class="map-canvas">
+		@foreach(var map in UnicycleFrenzy.Game.MapOptions)
+		{
+			<MapVoteThumbnail MapIdent=@map />
+		}
+	</div>
+    <div @ref="Podiums" class="podiums"></div>
+
+</root>
+
+
+@code {
+	private bool IsOpen => ManuallyOpened || UnicycleFrenzy.Game.GameState == UnicycleFrenzy.GameStates.End;
+	private bool ManuallyOpened;
+	private float GameTime => UnicycleFrenzy.Game.StateTimer;
+	private Panel Maps { get; set; }
+	private Panel Podiums { get; set; }
+
+	protected override void OnAfterTreeRender(bool firstTime)
+	{
+		base.OnAfterTreeRender(firstTime);
+
+		if (!firstTime) 
+			return;
+
+		Podiums.AddChild(new PodiumPanel(2));
+		Podiums.AddChild(new PodiumPanel(1));
+		Podiums.AddChild(new PodiumPanel(3));
+	}
+
+	[Event.BuildInput]
+	private void OnBuildInput(InputBuilder b)
+	{
+		if (b.Pressed(InputActions.Scoreboard))
+		{
+			ManuallyOpened = !ManuallyOpened;
+		}
+	}
+
+	protected override int BuildHash()
+	{
+		return GameTime.GetHashCode();
+	}
+}
