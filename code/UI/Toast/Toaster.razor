@@ -1,0 +1,32 @@
+﻿
+@inherits Panel
+@attribute [StyleSheet("/UI/Styles/stylesheet.scss")]
+
+<root></root>
+
+@code {
+    static Toaster Current;
+
+    public Toaster()
+    {
+        Current = this;
+    }
+
+    public static void Toast(string message, ToastTypes type)
+    {
+        Current?.AddChild(new Toast()
+            {
+                Type = type,
+                Message = message
+            });
+    }
+
+    public enum ToastTypes
+    {
+        Simple,
+        Celebrate,
+        Affirm,
+        Award,
+        Error
+    }
+}
