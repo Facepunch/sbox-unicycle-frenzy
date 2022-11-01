@@ -1,0 +1,43 @@
+﻿@inherits WorldPanel
+@attribute [StyleSheet("/UI/Styles/stylesheet.scss")]
+
+<root>
+    @{
+        var rank = 0;
+        foreach (var player in GetPlayersInOrder())
+        {
+            <PostboardEntry Rank=@(++rank) Name=@player.Client.Name Time=@player.BestTime />
+        }
+</root>
+
+@code {
+    private IEnumerable<UnicyclePlayer> GetPlayersInOrder()
+    {
+        return Player.All.OfType<UnicyclePlayer>().OrderBy(x => (x as UnicyclePlayer).BestTime);
+    }
+
+    internal Postboard(LeaderboardPost post)
+    {
+        var width = 2300;
+        var height = 1450;
+        MaxInteractionDistance = 5000f;
+        PanelBounds = new Rect(-width * .5f, -height * .5f, width, height);
+        Position = post.Position + post.Rotation.Forward * .01f + Vector3.Up * 82;
+        Rotation = post.Rotation;
+    }
+
+    protected override int BuildHash()
+    {
+        var result = 0;
+
+        foreach (var player in Player.All)
+        {
+            if ( player is not UnicyclePlayer pl ) 
+                continue;
+
+            result = HashCode.Combine(result, pl.BestTime);
+        }
+
+        return result;
+    }
+}

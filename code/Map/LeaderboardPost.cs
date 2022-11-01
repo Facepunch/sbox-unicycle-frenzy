@@ -51,7 +51,7 @@ internal class LeaderboardPost : ModelEntity
 	{
 		base.ClientSpawn();
 
-		new LeaderboardSign( this );
+		new Postboard( this );
 	}
 }
 
