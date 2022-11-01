@@ -2,9 +2,9 @@
 root = true
 
 # C# files
-[*.cs]
+[*.{cs,razor}]
 indent_style = tab
-indent_size = tab
+indent_size = 4
 tab_size = 4
 
 # New line preferences
