@@ -2,50 +2,49 @@
 @inherits Panel
 
 <root class=@(IsOpen ? "open" : "closed")>
-    
-    <div @ref="EntryCanvas" class="entries">
-        @foreach (var entry in ChatEntries)
-        {
-            <UfChatEntry Name=@entry.Item1 Message=@entry.Item2 />
-        }
-    </div>
+    <div @ref="EntryCanvas" class="entries"></div>
 
     <div class="input">
-        <textentry @ref="Input"></textentry>
+        <textentry @onblur=@InputBlurred @onsubmit=@InputSubmitted @ref="Input"></textentry>
     </div>
-
 </root>
 
 @code{
-    
     TextEntry Input { get; set; }
     Panel EntryCanvas { get; set; }
     bool IsOpen { get; set; }
-    List<Tuple<string, string>> ChatEntries = new();
 
     protected override void OnAfterTreeRender(bool firstTime)
     {
-        if (Input == null) return;
-        if (!firstTime) return;
+        base.OnAfterTreeRender(firstTime);
 
         EntryCanvas.PreferScrollToBottom = true;
-        
-        Input.AddEventListener("onblur", () =>
-        {
-            if (Input.Text.Length > 0 && Input.Text.Length < 120)
-            {
-                UfChat.SendChat(Input.Text);
-            }
-            IsOpen = false;
-            Input.Text = string.Empty;
-            StateHasChanged();
-        });
+    }
+
+    private void InputSubmitted()
+    {
+        var msg = Input.Text;
+
+        if (string.IsNullOrWhiteSpace(msg))
+            return;
+
+        UfChat.SendChat(msg.Trim());
+    }
+
+    private void InputBlurred()
+    {
+        IsOpen = false;
+        Input.Text = string.Empty;
+        StateHasChanged();
     }
 
     public void AddMessage(string name, string message)
     {
-        ChatEntries.Add(new(name, message));
-        StateHasChanged();
+        EntryCanvas.AddChild(new UfChatEntry()
+        {
+            Name = name,
+            Message = message
+        });
     }
 
     [Event.BuildInput]
@@ -53,14 +52,10 @@
     {
         if ( b.Pressed( InputButton.Chat ) )
         {
-            IsOpen = !IsOpen;
+            if (IsOpen) return;
+            IsOpen = true;
+            Input.Focus();
             StateHasChanged();
-
-            if (IsOpen)
-            {
-                Input.Focus();
-            }
         }
     }
-
 }
