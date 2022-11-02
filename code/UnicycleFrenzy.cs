@@ -26,7 +26,7 @@ partial class UnicycleFrenzy : Sandbox.Game
 	{
 		if ( IsClient )
 		{
-			new UnicycleHud();
+			new UnicycleRootPanel();
 		}
 
 		if ( IsServer )
