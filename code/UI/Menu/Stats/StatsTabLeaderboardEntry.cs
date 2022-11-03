@@ -32,7 +32,7 @@ internal class StatsTabLeaderboardEntry : Panel
 
 		UnicyclePlayer.ServerCmd_SetSpectateTarget( cl.Pawn.NetworkIdent );
 
-		Ancestors.OfType<GameMenu>().FirstOrDefault()?.Close();
+		Ancestors.OfType<Menu>().FirstOrDefault()?.Close();
 	}
 
 }

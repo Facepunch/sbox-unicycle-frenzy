@@ -42,7 +42,7 @@ internal class AchievementsMapThumb : Panel
 	{
 		base.OnMouseDown( e );
 
-		Ancestors.OfType<GameMenu>()?.FirstOrDefault()?.Navigate( $"menu/achievements/view?package_ident={Package.FullIdent}" );
+		Ancestors.OfType<Menu>()?.FirstOrDefault()?.Navigate( $"menu/achievements/view?package_ident={Package.FullIdent}" );
 	}
 
 	private string FriendlyName()

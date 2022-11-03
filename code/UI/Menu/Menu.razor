@@ -1,9 +1,8 @@
-﻿
-<link rel="stylesheet" href="GameMenu.scss" />
+﻿@inherits NavigatorPanel
 
-<root>
+<root class=@(IsOpen ? "open" : "closed")>
     <div class="header">
-        <div class="header-logo">Logo</div>
+        <div class="header-logo"></div>
         <div class="header-navigation">
 
             <navlink href="menu/stats" class="nav-link">
@@ -20,7 +19,7 @@
                 <label>Trail Pass</label>
                 <div class="stroke"></div>
             </navlink>
-            
+
             <navlink href="menu/customize" class="nav-link">
                 <label>Customize</label>
                 <div class="stroke"></div>
@@ -30,9 +29,6 @@
                 <label>Controls</label>
                 <div class="stroke"></div>
             </navlink>
-
-            
-
         </div>
 
         <div class="header-right">
@@ -46,7 +42,7 @@
                 <div class="stroke"></div>
             </navlink>
 
-            <navlink onclick="Close()" class="nav-link">
+            <navlink @onclick=@Close class="nav-link">
                 <label>X</label>
                 <div class="stroke"></div>
             </navlink>
@@ -55,6 +51,45 @@
     <div class="body">
         <div @ref="NavigatorCanvas" class="content"></div>
     </div>
-    
-
 </root>
+
+@code {
+    private bool IsOpen;
+
+    public override void Tick()
+    {
+        base.Tick();
+
+        if (Local.Pawn is not UnicyclePlayer pl) return;
+
+        SetClass("is-spectating", pl.SpectateTarget != null);
+    }
+
+    public void Close()
+    {
+        IsOpen = false;
+        StateHasChanged();
+    }
+
+    public void StopSpectating()
+    {
+        UnicyclePlayer.ServerCmd_SetSpectateTarget(-1);
+        Close();
+    }
+
+    [Event.BuildInput]
+    private void OnBuildInput( InputBuilder b ) 
+    {
+        if (!b.Pressed(InputActions.Menu))
+            return;
+
+        IsOpen = !IsOpen;
+
+        if(IsOpen)
+        {
+            Navigate("menu/stats");
+        }
+
+        StateHasChanged();
+    }
+}
