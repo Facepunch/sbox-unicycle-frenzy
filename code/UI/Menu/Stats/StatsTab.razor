@@ -1,15 +1,18 @@
 ﻿
+@inherits NavigatorPanel;
+@attribute [NavigatorTarget("menu/stats")]
+
 <root class="spaced">
     <div class="container">
         <div class="columns">
             <div class="column is-3">
-                <StatsMapInfo></StatsMapInfo>
+                <StatsMapInfo />
             </div>
             <div class="column is-6">
-                <StatsTabLeaderboard></StatsTabLeaderboard>
+                <StatsTabLeaderboard />
             </div>
             <div class="column is-3">
-                <StatsAchievements title="Map Achievements"></StatsAchievements>
+                <StatsAchievements title="Map Achievements" />
             </div>
         </div>
     </div>
