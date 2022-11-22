@@ -1,0 +1,45 @@
+﻿
+@inherits Panel;
+
+<style>
+    .map-image {
+        background-image: url(@Package?.Thumb);
+    }
+</style>
+
+<root class="column is-3 map">
+
+    <div class="map-image">
+        <div class="check"></div>
+    </div>
+    <div class="box map-body">
+        <label class="title is-styled" @text="MapName">@Package?.Title</label>
+        <ProgressBar Current=@Completed Max=@Total />
+    </div>
+
+</root>
+
+@code {
+    public Package Package { get; set; }
+
+    private int Total;
+    private int Completed;
+
+    protected override void OnParametersSet()
+    {
+        base.OnParametersSet();
+
+        var allAchievements = Achievement.FetchForMap(Package.FullIdent).Where(x => !x.PerMap);
+        Completed = allAchievements.Count(x => x.IsCompleted());
+        Total = allAchievements.Count();
+
+        SetClass("is-complete", Total > 0 && Completed == Total);
+    }
+
+    protected override void OnMouseDown(MousePanelEvent e)
+    {
+        base.OnMouseDown(e);
+
+        Ancestors.OfType<Menu>()?.FirstOrDefault()?.Navigate($"menu/achievements/view?package_ident={Package.FullIdent}");
+    }
+}
