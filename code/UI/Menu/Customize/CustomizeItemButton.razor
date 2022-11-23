@@ -1,0 +1,50 @@
+﻿
+@inherits Button
+
+<root class="column is-2">
+    <div class="tag-container">
+        <div class="tag-icon"></div>
+        <label class="tag is-styled">@Tag</label>
+    </div>
+
+    <div class="icon">
+        <PartScenePanel Part=@Part />
+    </div>
+</root>
+
+@code {
+    public CustomizationPart Part { get; set; }
+    string Tag;
+
+    protected override void OnClick(MousePanelEvent e)
+    {
+        base.OnClick(e);
+
+        if (Part == null) return;
+
+        if (!Part.CanEquip())
+        {
+            Toaster.Toast("You haven't unlocked that yet", Toaster.ToastTypes.Error);
+            return;
+        }
+
+        var customization = Local.Client.Components.Get<CustomizationComponent>();
+        customization.Equip(Part);
+
+        this.CreateEvent("part equipped");
+    }
+
+    public override void Tick()
+    {
+        base.Tick();
+
+        if (Part == null) return;
+
+        var canequip = Part.CanEquip();
+        var customization = Local.Client.Components.Get<CustomizationComponent>();
+        SetClass("is-selected", customization.IsEquipped(Part));
+        SetClass("is-locked", !canequip);
+
+        Tag = canequip ? string.Empty : 100.ToString();
+    }
+}

@@ -1,4 +1,4 @@
-﻿@import "../../vars.scss";
+﻿@import "_vars.scss";
 
 CustomizeTab {
     flex-direction: row;
@@ -134,6 +134,7 @@ CustomizeTab {
             cursor: pointer;
             transition: background-color 0.15s linear;
             background-color: transparent;
+            color: #8297a3;
 
             &:hover,
             &.active {

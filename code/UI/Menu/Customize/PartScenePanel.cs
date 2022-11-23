@@ -16,6 +16,7 @@ internal class PartScenePanel : Panel
 	public bool LookRight { get; set; }
 	public CustomizationPart Part { get; set; }
 
+	private SceneWorld sceneWorld;
 	private SceneObject sceneObj;
 	private ScenePanel scenePanel;
 
@@ -41,7 +42,9 @@ internal class PartScenePanel : Panel
 	{
 		if ( Part == null ) return;
 
-		var sceneWorld = new SceneWorld();
+		scenePanel?.Delete();
+		sceneWorld?.Delete();
+		sceneWorld = new SceneWorld();
 
 		Style.Width = Length.Percent( 100 );
 		Style.Height = Length.Percent( 100 );
