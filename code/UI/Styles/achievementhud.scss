@@ -1,0 +1,67 @@
+﻿
+@import "_vars.scss";
+
+AchievementHud {
+    position: absolute;
+    top: 50px;
+    left: 300px;
+    height: 100%;
+    width: 100%;
+    flex-direction: row;
+
+    .achievement-entry {
+        flex-direction: column;
+        text-stroke: 4px black;
+        min-width: 150px;
+        min-height: 100px;
+        padding: 10px;
+        top: 0;
+        transition: all .15s ease;
+
+        &:intro {
+            top: -110%;
+        }
+
+        &:outro {
+            top: -100%;
+        }
+
+        .heading {
+            flex-direction: column;
+
+            Label {
+                color: $orange-gradient;
+                font-size: 24px;
+                font-family: $title-font;
+                align-self: center;
+            }
+        }
+
+        .icon {
+            width: 80px;
+            height: 80px;
+            background-size: 90%;
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-color: $light-purple;
+            box-shadow: $box-shadow-hard-green;
+        }
+
+        .details {
+            flex-direction: row;
+            font-size: 16px;
+            justify-content: center;
+            margin-top: 10px;
+
+            .xp {
+                position: absolute;
+                right: -35px;
+                top: -10px;
+                padding: 4px;
+                background-image: $orange-gradient;
+                text-shadow: 1px 1px 1px black;
+                border-radius: $radius;
+            }
+        }
+    }
+}
