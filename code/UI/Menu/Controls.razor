@@ -1,0 +1,100 @@
+﻿
+@inherits Panel
+@attribute [NavigatorTarget("menu/controls")]
+
+<root>
+    <div class="container spaced">
+        <div class="columns">
+            <div class="column is-4 space-around">
+
+                <div class="box mb">
+                    <div class="box-header">
+                        <label class="title is-styled is-size-2">Controls</labeL>
+                    </div>
+                    <div class="box-body">
+                        <div class="keybind">
+                            <label class="key is-styled">@InputActions.RestartAtCheckpoint.GetButtonOrigin()</label>
+                            <label class="action is-styled">Previous Checkpoint</label>
+                        </div>
+                        <div class="keybind">
+                            <label class="key is-styled">@InputActions.RestartCourse.GetButtonOrigin()</label>
+                            <label class="action is-styled">Restart Checkpoint</label>
+                        </div>
+                        <div class="keybind">
+                            <label class="key is-styled">@InputActions.Spray.GetButtonOrigin()</label>
+                            <label class="action  is-styled">Spray</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="box flex-end">
+                    <div class="box-header">
+                        <label class="title is-styled is-size-2">Hint</labeL>
+                    </div>
+                    <div class="box-body">
+                        <label class="subtitle is-size-5 is-styled">Holding Jump lets you jump higher and farther</label>
+                        <label class="subtitle is-size-5 is-styled">Lean in the direction you would like to jump</label>
+                        <label class="subtitle is-size-5 is-styled">If you lean too far you'll tip over!</label>
+                        <label class="subtitle is-size-5 is-styled">Perfectly timed pedals give you a slight speed boost</label>
+                    </div>
+                    <div class="box-footer">
+                        <button class="button is-primary @(!Global.IsListenServer ? "hidden" : "visible")" @onclick=@TryPlayTutorial>
+                            <div class="button-bg"></div>
+                            <label>Play Tutorial</label>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="column is-8">
+                <div class="diagram">
+                
+                    <div class="control brake">
+                        <label class="control-name title is-styled is-size-2">Brake</label>
+                        <label class="control-bind is-styled">@InputActions.Brake.GetButtonOrigin()</label>
+                    </div>
+                
+                    <div class="control right-pedal">
+                        <label class="control-name title is-styled is-size-2">Right Pedal</label>
+                        <label class="control-bind is-styled">@InputActions.RightPedal.GetButtonOrigin()</label>
+                    </div>
+                
+                    <div class="control left-pedal">
+                        <label class="control-name title is-styled is-size-2">Left Pedal</label>
+                        <label class="control-bind is-styled">@InputActions.LeftPedal.GetButtonOrigin()</label>
+                    </div>
+                
+                    <div class="control jump">
+                        <label class="control-name title is-styled is-size-2">Jump</label>
+                        <label class="control-bind is-styled">@InputActions.Jump.GetButtonOrigin()</label>
+                    </div>
+                
+                    <div class="control lean">
+                        <label class="control-name title is-styled is-size-2">Lean</label>
+                        <label class="control-bind is-styled">@GetLeanBindString()</label>
+                    </div>
+                
+                </div>
+            </div>
+        </div>
+    </div>
+</root>
+
+@code {
+    private string GetLeanBindString()
+	{
+		var fwd = Input.GetButtonOrigin( InputButton.Forward ) ?? "UNSET";
+		var left = Input.GetButtonOrigin( InputButton.Left ) ?? "UNSET";
+		var back = Input.GetButtonOrigin( InputButton.Back ) ?? "UNSET";
+		var right = Input.GetButtonOrigin( InputButton.Right ) ?? "UNSET";
+
+		return $"{fwd} {left} {back} {right}".ToUpper();
+	}
+
+    public void TryPlayTutorial()
+	{
+		if ( !Global.IsListenServer ) return;
+
+		UnicycleFrenzy.ServerCmd_ChangeMap( "facepunch.uf_tutorial" );
+	}
+}

@@ -1,0 +1,53 @@
+﻿@import "../Vars.scss";
+
+Killfeed {
+    position: absolute;
+    top: 32px;
+    right: 64px;
+    padding: 20px;
+
+    .entries {
+        flex-direction: column;
+        align-items: flex-end;
+    }
+}
+
+KillfeedEntry {
+    align-items: center;
+    justify-content: center;
+    padding: 5px 8px;
+    background-color: $blue;
+    margin-bottom: 6px;
+    transform: scale(1);
+    font-family: $body-font-regular;
+    opacity: 1;
+    transition: all 0.15s ease;
+    font-size: 16px;
+    height: 32px;
+    text-transform: uppercase;
+    border: 2px solid #000;
+    box-shadow: $box-shadow-hard-dark-purple;
+
+    .name {
+        margin-right: 4px;
+        color: $orange-light;
+        text-stroke: 3px #000;
+    }
+
+    .message {
+        text-stroke: 3px #000;
+    }
+
+    &.local {
+    }
+
+    &:intro {
+        opacity: 0;
+        margin-right: -38px;
+    }
+
+    &:outro {
+        opacity: 0;
+        margin-right: -38px;
+    }
+}

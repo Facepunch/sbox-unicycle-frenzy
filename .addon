@@ -3,6 +3,7 @@
   "Type": "game",
   "Org": "facepunch",
   "Ident": "unicycle_frenzy",
+  "Tags": null,
   "Schema": 1,
   "HasAssets": true,
   "AssetsPath": "",

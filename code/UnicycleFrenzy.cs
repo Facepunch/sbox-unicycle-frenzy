@@ -26,7 +26,7 @@ partial class UnicycleFrenzy : Sandbox.Game
 	{
 		if ( IsClient )
 		{
-			new UnicycleHud();
+			new UnicycleRootPanel();
 		}
 
 		if ( IsServer )
@@ -57,7 +57,7 @@ partial class UnicycleFrenzy : Sandbox.Game
 			(cl.Pawn as UnicyclePlayer).BestTime = new System.Random().Next( 180, 1800 );
 		}
 
-		UfChatbox.AddChat( To.Everyone, "Server", $"{cl.Name} has joined the game", sfx: "player.joined" );
+		UfChat.AddChat( To.Everyone, "Server", $"{cl.Name} has joined the game", sfx: "player.joined" );
 
 		NotifyPlayersNeeded();
 	}
@@ -66,7 +66,7 @@ partial class UnicycleFrenzy : Sandbox.Game
 	{
 		base.ClientDisconnect( cl, reason );
 
-		UfChatbox.AddChat( To.Everyone, "Server", $"{cl.Name} has left the game", sfx: "player.left" );
+		UfChat.AddChat( To.Everyone, "Server", $"{cl.Name} has left the game", sfx: "player.left" );
 
 		// this lets the client fully disconnect before we count and notify
 		await Task.Delay( 1 );
@@ -78,7 +78,7 @@ partial class UnicycleFrenzy : Sandbox.Game
 	{
 		base.OnKilled( client, pawn );
 
-		UfKillfeed.AddEntryOnClient( To.Everyone, GetRandomFallMessage( client.Name ), client.NetworkIdent );
+		Killfeed.AddEntryOnClient( To.Everyone, GetRandomFallMessage( client.Name ), client.NetworkIdent );
 	}
 
 	private int lastFallMessage;

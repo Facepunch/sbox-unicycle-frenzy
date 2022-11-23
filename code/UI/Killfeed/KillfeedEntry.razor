@@ -1,0 +1,11 @@
+﻿
+@inherits Panel
+
+<root class="@(IsLocalClient ? "local" : "")">
+    <label>@Message</label>
+</root>
+
+@code {
+    public string Message { get; set; }
+    public bool IsLocalClient { get; set; }
+}

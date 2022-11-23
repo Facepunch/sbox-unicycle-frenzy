@@ -1,0 +1,35 @@
+﻿
+@inherits Panel
+
+<root icon=@Icon>
+    <button icon=@Icon>@Message</button>
+</root>
+
+@code {
+    public string Message { get; set; }
+    public Toaster.ToastTypes Type { get; set; }
+
+    private string Icon = "info";
+
+    protected override void OnParametersSet()
+    {
+        base.OnParametersSet();
+
+        Icon = Type switch
+        {
+            Toaster.ToastTypes.Celebrate => "celebration",
+            Toaster.ToastTypes.Affirm => "check",
+            Toaster.ToastTypes.Award => "star",
+            Toaster.ToastTypes.Error => "error",
+            _ => "info"
+        };
+
+        AddClass(Type.ToString());
+    }
+
+    protected override async Task OnParametersSetAsync()
+    {
+        await Task.Delay(4000);
+        Delete();
+    }
+}

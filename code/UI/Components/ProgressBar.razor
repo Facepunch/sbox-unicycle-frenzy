@@ -1,0 +1,19 @@
+﻿
+@inherits Panel;
+
+<root class="progress-bar">
+    <div class="bar" style="width: @((Current / (float)Max) * 100.0f)%"></div>
+    <label class="progress-title">@($"{Current}/{Max}")</label>
+</root>
+
+@code {
+    public int Current { get; set; }
+    public int Max { get; set; }
+
+    public void Set(int current, int max)
+    {
+        Current = current;
+        Max = max;
+        StateHasChanged();
+    }
+}

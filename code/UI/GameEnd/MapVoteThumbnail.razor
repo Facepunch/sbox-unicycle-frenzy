@@ -1,0 +1,64 @@
+﻿
+@inherits Panel
+
+<root class=@(Active ? "active" : "")>
+
+    <div @ref="Thumbnail" class="thumb"></div>
+    <div class="votes">
+        <label class="key">@Votes</label>
+    </div>
+
+</root>
+
+@code {
+    public string MapIdent { get; set; }
+    int Votes;
+    bool Active;
+    Panel Thumbnail { get; set; }
+
+    protected override void OnAfterTreeRender(bool firstTime)
+    {
+        base.OnAfterTreeRender(firstTime);
+
+        if (firstTime)
+        {
+            LoadThumbnail();
+        }
+    }
+
+    protected override void OnClick(MousePanelEvent e)
+    {
+        base.OnClick(e);
+
+        UnicycleFrenzy.ServerCmd_SetMapVote(MapIdent);
+    }
+
+    private async void LoadThumbnail()
+    {
+        if (string.IsNullOrEmpty(MapIdent))
+            return;
+
+        var pkg = await Package.FetchAsync(MapIdent, true);
+        if (pkg == null) return;
+
+        Thumbnail.Style.SetBackgroundImage(pkg.Thumb);
+        StateHasChanged();
+    }
+
+    public override void Tick()
+    {
+        base.Tick();
+
+        if (string.IsNullOrEmpty(MapIdent))
+            return;
+
+        Votes = UnicycleFrenzy.Game.MapVotes.Values.Count(x => x == MapIdent);
+        Active = UnicycleFrenzy.Game.MapVotes.ContainsKey(Local.PlayerId) && UnicycleFrenzy.Game.MapVotes[Local.PlayerId] == MapIdent;
+    }
+
+    protected override int BuildHash()
+    {
+        return HashCode.Combine(Votes, Active);
+    }
+
+}

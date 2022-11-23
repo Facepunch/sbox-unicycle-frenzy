@@ -1,0 +1,290 @@
+﻿
+@import "_vars.scss";
+
+TrailpassTab {
+    flex-direction: column;
+
+    .blur {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: rgba($light-purple, .4);
+        backdrop-filter: blur(60px);
+    }
+
+    .renderscene {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background-color: transparent;
+
+        ScenePanel {
+            box-shadow: 2px 2px 4px transparent;
+        }
+    }
+
+    .scene {
+        height: 70%;
+
+        .buy {
+            position: absolute;
+            top: 50px;
+            right: 75px;
+            padding: 12px 30px;
+            background-color: rgba($secondary 0.5);
+            font-size: 20px;
+            text-shadow: 0px 0px 4px black;
+            transition: all 0.08s ease-in;
+
+            &:hover {
+                background-color: $secondary;
+            }
+        }
+    }
+
+    .progress {
+        height: 32px;
+        background-color: $grey;
+        border: 4px solid $dark-purple;
+        width: 80%;
+        margin: 0 auto;
+        margin-bottom: 64px;
+        padding: 0px;
+
+        .xp {
+            position: absolute;
+            font-family: $title-font;
+            text-stroke: 4px #000;
+            text-shadow: 2px 2px 0 rgba(#000, 1);
+            text-transform: uppercase;
+        }
+
+        .xp.min {
+            color: $light-grey;
+            font-size: 20px;
+            left: -10px;
+            bottom: -40px;
+            z-index: 2;
+        }
+
+        .xp.max {
+            color: $light-grey;
+            font-size: 20px;
+            right: -10px;
+            bottom: -40px;
+            z-index: 2;
+        }
+
+        .xp.current {
+            font-size: 30px;
+            position: absolute;
+            top: -12px;
+            left: 16px;
+        }
+
+        .fill {
+            width: 50%;
+            background-color: $pink;
+            border: 4px solid $dark-purple;
+            margin: -8px;
+            transition: width 0.35s ease-in;
+        }
+    }
+
+    .content {
+        padding: 100px;
+
+        StatsAchievements {
+            max-width: 500px;
+            background-color: $light-purple;
+            box-shadow: $box-shadow-black;
+            padding: 20px;
+        }
+    }
+}
+
+.trailpass-description {
+    position: absolute;
+    left: 150px;
+    top: 60px;
+    flex-direction: column;
+
+    .season-title {
+        font-family: $title-font;
+        font-size: 80px;
+        color: $pink-gradient;
+        text-stroke: 6px black;
+        transform: rotateZ(-3deg);
+        text-shadow: $text-shadow-black-4;
+        margin-bottom: 40px;
+    }
+
+    .season-description {
+        font-size: 25px;
+        text-shadow: $text-shadow-black;
+        max-width: 600px;
+    }
+}
+
+TrailPassItemSlider {
+    flex-grow: 1;
+    width: 75%;
+    padding-bottom: 4px;
+    margin: 0 auto;
+    overflow: scroll;
+    align-items: center;
+    align-self: flex-end;
+    margin-right: 60px;
+}
+
+.slider-buttons {
+    width: 100%;
+    position: absolute;
+    background-color: red;
+    bottom: 0;
+}
+
+.item-scroll {
+    position: absolute;
+    border-radius: 50%;
+    width: 64px;
+    height: 64px;
+    align-items: center;
+    transition: all .08s ease;
+    background-color: rgba(black .01);
+    bottom: 100px;
+
+    &:hover {
+        background-color: rgba($pink 1);
+    }
+
+    &.left {
+        left: -30px;
+    }
+
+    &.right {
+        right: 30px;
+    }
+}
+
+TrailPassItemIcon {
+    background-color: $light-purple;
+    box-shadow: 4px 4px 0 $darker-purple;
+    align-items: center;
+    justify-content: center;
+    min-width: 274px;
+    width: 274px;
+    height: 274px;
+    margin-right: 24px;
+    flex-direction: column;
+    align-items: center;
+    padding: 24px;
+    opacity: .6;
+
+    &:last-child {
+        margin-right: 0;
+    }
+
+    .tag {
+        height: 32px;
+        font-size: 15px;
+        font-family: $stylefont;
+        align-items: center;
+        justify-content: center;
+        top: 0;
+        left: 8px;
+        position: absolute;
+        display: none;
+    }
+
+    .item-name {
+        height: 32px;
+        font-size: 20px;
+        font-family: $body-font;
+        position: absolute;
+        top: 8px;
+    }
+
+    .cost {
+        font-size: 20px;
+        font-family: $title-font;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        text-stroke: 5px #000;
+        text-shadow: 3px 3px 0 rgba(#000, 1);
+        transition: all 0.08s ease-in;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+
+        &:hover {
+            transform: scale(1.1);
+            background-color: $orange-gradient;
+        }
+    }
+
+    .cost-unlocked {
+        font-size: 25px;
+        font-family: $title-font;
+        align-items: center;
+        justify-content: center;
+        cursor: default;
+        color: red;
+        transition: all 0.08s ease-in;
+        position: absolute;
+        padding: 10px;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: transparent;
+    }
+
+    &:not(.unlockable) .cost {
+        color: #fff;
+        box-shadow: none;
+        opacity: 0.5;
+
+        &:hover {
+            transform: scale(1);
+            background-color: rgba($red 0.1);
+            opacity: 1;
+        }
+    }
+
+    &.unlockable {
+        opacity: .9;
+    }
+
+    &.unlocked {
+        opacity: 1;
+
+        .cost {
+            display: none;
+        }
+
+        .cost-unlocked {
+            display: flex;
+        }
+    }
+
+    &:not(.unlocked) {
+        .cost-unlocked {
+            display: none;
+        }
+    }
+
+    .thumbnail {
+        width: 175px;
+        height: 175px;
+        transition: all 0.08s ease-in;
+        margin-top: -20px;
+
+        &:hover {
+            border-color: white;
+        }
+    }
+}

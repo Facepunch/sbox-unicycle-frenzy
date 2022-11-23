@@ -1,0 +1,118 @@
+﻿$fontcolor: #fff;
+$fontcolorfaded: #b1b1b1;
+$primary: #55ccd9;
+$secondary: #f2bc1b;
+$bg: #1f202a;
+$innerbg: #1a1a23;
+$lightbg: #313344;
+$lighterbg: #3f4155;
+$blue: #2c3673;
+$radius: 12px;
+$smallradius: 4px;
+$padding: 15px;
+$stylefont: LuckiestGuy;
+$readingfont: Poppins;
+$red: #ba2828;
+
+// Spacing
+$column-gap: 16px;
+
+// Default Fonts
+$title-font: Knewave;
+$body-font-bold: LondrinaSolid-Black;
+$body-font-light: LondrinaSolid-Light;
+$body-font-regular: LondrinaSolid-Regular;
+$body-font: $body-font-light;
+
+// Base Colours
+$pink: #fb1149;
+$green: #00ff47;
+$blue: #00a3ff;
+$orange-light: #f7b742;
+$orange-dark: #ef654d;
+$light-green: #d2ffdf;
+
+// UI Block Elements Colours
+$lightest-purple: #bebed3;
+$light-purple: #30273a;
+$dark-purple: #130e26;
+$darker-purple: #0a0714;
+$grey: #31313d;
+$light-grey: #8297a3;
+
+// Gradient Colours
+$gradient-pink-bg: linear-gradient(rgba($pink, 0), rgba($pink, 0.02));
+$orange-gradient: linear-gradient(#f17848, #fac636);
+$pink-gradient: linear-gradient(#eb3769, #ee5258);
+$grey-gradient: linear-gradient(#4b5364, #71818e);
+$purple-gradient: linear-gradient(to bottom, #372b44, #5e3e82);
+$bg-gradient: linear-gradient(
+  to bottom,
+  $dark-purple,
+  rgba($dark-purple, 0.95)
+);
+$achievement-gradient: linear-gradient($light-purple, rgba($green, 0.1));
+
+// Award Colours
+$gold: #fff500;
+$silver: #d8d8d8;
+$bronze: #ca6d2a;
+
+// Box Shadows
+$box-shadow-soft: 0 0 30px rgba(#000, 0.5);
+$box-shadow-hard-dark-purple: 4px 4px 0 $dark-purple;
+$box-shadow-black: 4px 4px 0 #000;
+$box-shadow-blue: 4px 4px 0 $blue;
+$box-shadow-pink: 4px 4px 0 $pink;
+$box-shadow-hard-green: 4px 4px 0 $green;
+
+// Text Shadows
+$text-shadow-dark-purple: 2px 2px 0 $dark-purple;
+$text-shadow-black: 2px 2px 0 #000;
+$text-shadow-black-4: 4px 4px 0 #000;
+
+// Padding
+.p64 {
+  padding: 64px;
+}
+
+.pl-64 {
+  padding-left: 64px;
+}
+
+.pr-64 {
+  padding-right: 64px;
+}
+
+.pb-64 {
+  padding-bottom: 64px;
+}
+
+.pt-64 {
+  padding-top: 64px;
+}
+
+.pl-32 {
+  padding-left: 32px;
+}
+.pr-32 {
+  padding-right: 32px;
+}
+.pb-32 {
+  padding-bottom: 32px;
+}
+.pt-32 {
+  padding-top: 32px;
+}
+
+.mr-64 {
+  margin-right: 64px;
+}
+
+.ml-64 {
+  margin-left: 64px;
+}
+
+.text-orange {
+  color: $orange-gradient;
+}

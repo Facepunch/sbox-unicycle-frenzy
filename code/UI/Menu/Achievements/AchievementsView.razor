@@ -1,0 +1,83 @@
+﻿
+@inherits Panel
+@attribute [NavigatorTarget("menu/achievements/view/{package_ident}")]
+
+@if (Package == null)
+{
+    return;
+}
+
+<style>
+    .thumbnail {
+        background-image: url(@Package?.Thumb);
+    }
+</style>
+
+<root class="spaced top">
+    <div class="container">
+        <div class="columns is-gapless">
+            <div class="column is-8 pl-64">
+                <div class="is-multiline content">
+                    <div class="heading">
+                        <div class="thumbnail"></div>
+                        <div class="details">
+                            <label class="title">@Package.Title</label>
+                            <label class="description">@Package.Description</label>
+                        </div>
+                        <div style="flex-grow: 1;" />
+                        <ProgressBar Current=@Completed Max=@Total style="min-width: 150px;" />
+                    </div>
+                    <div class="entries scroll">
+                        @foreach(var ach in Achievements)
+                        {
+                            <AchievementsViewEntry Achievement=@ach />
+                        }
+                    </div>
+                </div>
+            </div>
+            <div class="column is-4 gradient pl-32">
+                <div class="achievement-list">
+                    <StatsAchievements mode="global" title="Global Achievements" />
+                </div>
+            </div>
+        </div>
+    </div>
+</root>
+
+@code {
+
+    public Package Package { get; set; }
+
+    private int Total;
+    private int Completed;
+    private List<Achievement> Achievements = new();
+
+    public override void SetProperty(string name, string value)
+    {
+        if (name != "package_ident")
+        {
+            base.SetProperty(name, value);
+            return;
+        }
+
+        if (string.IsNullOrEmpty(value))
+            return;
+
+        LoadPackage(value);
+    }
+
+    private async void LoadPackage(string ident)
+    {
+        var pkg = await Package.Fetch(ident, true);
+        if (pkg == null) return;
+
+        Package = pkg;
+
+        Achievements = Achievement.FetchForMap(Package.FullIdent).Where(x => !x.PerMap).ToList();
+        Completed = Achievements.Count(x => x.IsCompleted());
+        Total = Achievements.Count();
+
+        StateHasChanged();
+    }
+
+}

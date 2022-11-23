@@ -1,0 +1,46 @@
+
+@import "_vars.scss";
+
+.table {
+  flex-direction: column;
+
+  label {
+    font-size: 20px;
+    text-shadow: $text-shadow-black;
+  }
+
+  .table-header {
+    background-color: $light-purple;
+    box-shadow: $box-shadow-hard-dark-purple;
+    padding: 16px;
+
+    label {
+      font-family: $body-font-light;
+    }
+  }
+  .table-row {
+    padding: 16px;
+
+    label {
+      font-family: $body-font-regular;
+    }
+
+    &:nth-child(even) {
+      background-color: $darker-purple;
+    }
+  }
+  .table-td {
+    flex-grow: 1;
+    &.position {
+      width: 80px;
+      flex-grow: 0;
+    }
+    &.name {
+      flex-grow: 1;
+    }
+    &.time {
+      flex-grow: 0;
+      width: 200px;
+    }
+  }
+}

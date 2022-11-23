@@ -1,0 +1,51 @@
+﻿
+@inherits Panel
+
+<div class="leaderboards">
+    <div class="section-header has-tabs">
+        <label class="section-title title">Leaderboard</label>
+        <div class="tabs">
+            <button @onclick=@(() => SetScope("session")) class="tab @(Scope == "session" ? "active" : "")">
+                <label>Session</label>
+                <div class="stroke"></div>
+            </button>
+            <button @onclick=@(() => SetScope("global")) class="tab @(Scope == "global" ? "active" : "")">
+                <label>Global</label>
+                <div class="stroke"></div>
+            </button>
+            <button @onclick=@(() => SetScope("friends")) class="tab @(Scope == "friends" ? "active" : "")">
+                <label>Friends</label>
+                <div class="stroke"></div>
+            </button>
+        </div>
+    </div>
+    <div class="table">
+        <div class="table-header">
+            <div class="table-td position">
+                <label>#</label>
+            </div>
+            <div class="table-td name">
+                <label>Name</label>
+            </div>
+            <div class="table-td time">
+                <label>Time</label>
+            </div>
+        </div>
+        <div class="content">
+            <LeaderboardSingle @ref="Leaderboard" Scope=@Scope />
+        </div>
+    </div>
+</div>
+
+@code {
+
+    protected LeaderboardSingle Leaderboard { get; set; }
+
+    private string Scope = "session";
+
+    private void SetScope( string scope )
+    {
+        Scope = scope;
+        StateHasChanged();
+    }
+}

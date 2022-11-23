@@ -1,0 +1,63 @@
+﻿
+@import "_vars.scss";
+
+Toaster {
+    position: absolute;
+    bottom: 125px;
+    right: 125px;
+    color: white;
+    flex-direction: column;
+    align-items: flex-end;
+    z-index: 5;
+
+    Toast {
+        padding: 2px 16px;
+        background-color: $blue;
+        margin-bottom: 10px;
+        text-shadow: 2px 2px 1px black;
+        font-size: 30px;
+        box-shadow: $box-shadow-black;
+        transition: all 0.25s ease-out;
+        opacity: 1;
+        align-items: center;
+        justify-content: center;
+        text-stroke: 4px rgba(black 0.5);
+        font-family: $stylefont;
+        letter-spacing: 1px;
+
+        &:intro,
+        &:outro {
+            opacity: 0;
+            height: 0;
+            padding: 0;
+            margin: 0;
+            font-size: 0px;
+        }
+
+        IconPanel {
+            padding-top: 3px;
+            margin-right: 10px;
+        }
+
+
+        &.affirm {
+            background-color: $green;
+        }
+
+        &.celebrate {
+            background-color: $primary;
+        }
+
+        &.award {
+            background-color: $secondary;
+        }
+
+        &.error {
+            background-color: $red;
+        }
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}

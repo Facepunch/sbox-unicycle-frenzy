@@ -1,0 +1,69 @@
+﻿
+@inherits Panel
+
+<root>
+    <div class="render-canvas" @ref="RenderCanvas"></div>
+    <div class="info">
+        <div class="rank is-styled">
+            <label>#</label>
+            <label>@Rank</label>
+        </div>
+        <label class="name is-styled">@Name</label>
+        <label class="time  is-styled">@Time</label>
+    </div>
+</root>
+
+@code {
+
+    protected Panel RenderCanvas { get; set; }
+
+    public int Rank { get; set; }
+    public string Name { get; set; }
+    public string Time { get; set; }
+
+    protected override void OnAfterTreeRender(bool firstTime)
+    {
+        base.OnAfterTreeRender(firstTime);
+
+
+    }
+
+    private int activehash;
+    public override void Tick()
+    {
+        base.Tick();
+
+        var players = Player.All.Where(x => x is UnicyclePlayer && x.IsValid() && x.Client.IsValid()).ToList();
+        var orderedPlayers = players.OrderBy(x => (x as UnicyclePlayer).BestTime);
+
+        var player = orderedPlayers.Skip(Rank - 1).FirstOrDefault() as UnicyclePlayer;
+        if (player == null) return;
+
+        var newhash = HashCode.Combine(player.BestTime, player.SessionRank, player.NetworkIdent);
+        if (newhash == activehash) return;
+
+        activehash = newhash;
+
+        UpdateData(player);
+    }
+
+    private void UpdateData(UnicyclePlayer pl)
+    {
+        RenderCanvas.DeleteChildren(true);
+
+        var renderscene = new PodiumRenderScene(pl);
+        var scale = Rank switch
+        {
+            1 => 1.25f,
+            2 => 1f,
+            3 => .75f,
+            _ => 1f
+        };
+        renderscene.Style.Set($"transform: scale({scale});");
+        RenderCanvas.AddChild(renderscene);
+
+        Name = pl.Client.Name;
+        Time = pl.BestTime.FormattedTimeMsf();
+    }
+
+}

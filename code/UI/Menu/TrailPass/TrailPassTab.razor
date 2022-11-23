@@ -1,0 +1,63 @@
+﻿
+@inherits Panel;
+@attribute [NavigatorTarget("/menu/trailpass")]
+
+<root class="grow">
+
+    <div class="trailpass-description">
+        <label class="season-title">Season 1</label>
+        <label class="season-description">Collect achievements and complete maps to earn experience.  Use your experience to unlock new parts.</label>
+    </div>
+
+    <div class="content">
+        <div class="slider">
+            <TrailPassItemSlider @ref="ItemSlider" />
+            <div class="slider-buttons">
+                <button @onclick=@ScrollItemSliderRight class="item-scroll right">&rarr;</button>
+                <button @onclick=@ScrollItemSliderLeft class="item-scroll left">&larr;</button>
+            </div>
+        </div>
+        <StatsAchievements title="Trail Achievements" mode="trailpass" />
+    </div>
+
+    <div class="progress">
+        <label class="xp min is-styled">0 xp</label>
+        <label class="xp max  is-styled">1000 xp</label>
+        <div class="fill" @ref="ExperienceFill"><label @ref="ExperienceLabel" class="xp current">123 xp</label></div>
+    </div>
+
+</root>
+
+@code {
+    internal TrailPassItemSlider ItemSlider { get; set; }
+    protected Panel ExperienceFill { get; set; }
+    protected Label ExperienceLabel { get; set; }
+
+    public override void Tick()
+    {
+        base.Tick();
+
+        var progress = TrailPassProgress.Current;
+        var pass = TrailPass.Current;
+
+        UpdateExperienceBar(progress.Experience, pass.MaxExperience);
+    }
+
+    private void UpdateExperienceBar(int current, int max)
+    {
+        var fillPercent = ((float)current / max) * 100;
+        ExperienceFill.Style.Width = Length.Percent(fillPercent);
+        ExperienceLabel.Text = $"{current} xp";
+    }
+
+    public void ScrollItemSliderRight()
+    {
+        ItemSlider?.ScrollRight();
+    }
+
+    public void ScrollItemSliderLeft()
+    {
+        ItemSlider?.ScrollLeft();
+    }
+
+}

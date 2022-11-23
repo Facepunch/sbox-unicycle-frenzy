@@ -1,0 +1,123 @@
+@import "_vars.scss";
+
+.container {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.spaced {
+  padding: 64px;
+
+  &.top {
+    padding: 64px 0 0 0;
+  }
+}
+
+.space-around {
+  justify-content: space-around;
+}
+
+.columns {
+  flex-direction: row;
+  width: 100%;
+  margin-left: -$column-gap;
+  margin-right: -$column-gap;
+
+  &.is-vcentered {
+    align-items: center;
+  }
+
+  &.is-gapless {
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  &.is-multiline {
+    flex-wrap: wrap;
+  }
+
+  &.scroll {
+    overflow: scroll;
+  }
+}
+
+.column {
+  flex-direction: column;
+  flex-grow: 1;
+  flex-shrink: 1;
+  padding-left: $column-gap;
+  padding-right: $column-gap;
+
+  &.gradient {
+    background: $gradient-pink-bg;
+  }
+
+  &:last-child {
+    padding-right: 0;
+  }
+
+  > .box {
+    width: 100%;
+  }
+
+  &.is-1 {
+    flex-grow: 0;
+    width: 8.33333%;
+  }
+
+  &.is-2 {
+    flex-grow: 0;
+    width: 16.66667%;
+  }
+
+  &.is-3 {
+    flex-grow: 0;
+    width: 25%;
+  }
+
+  &.is-4 {
+    flex-grow: 0;
+    width: 33.33333%;
+  }
+
+  &.is-5 {
+    flex-grow: 0;
+    width: 41.66667%;
+  }
+
+  &.is-6 {
+    flex-grow: 0;
+    width: 50%;
+  }
+
+  &.is-7 {
+    flex-grow: 0;
+    width: 58.33333%;
+  }
+
+  &.is-8 {
+    flex-grow: 0;
+    width: 66.66667%;
+  }
+
+  &.is-9 {
+    flex-grow: 0;
+    width: 75%;
+  }
+
+  &.is-10 {
+    flex-grow: 0;
+    width: 83.33333%;
+  }
+
+  &.is-11 {
+    flex-grow: 0;
+    width: 91.66667%;
+  }
+
+  &.is-12 {
+    flex-grow: 0;
+    width: 100%;
+  }
+}

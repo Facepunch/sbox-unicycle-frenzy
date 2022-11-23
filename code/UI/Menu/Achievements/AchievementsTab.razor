@@ -1,0 +1,50 @@
+﻿
+@inherits Panel
+@attribute [NavigatorTarget("menu/achievements")]
+
+<root class="spaced top">
+
+    <div class="container">
+        <div class="columns is-gapless">
+            <div class="column is-8 pl-64">
+                <label class="title section-title">Maps</label>
+                <div class="columns is-multiline scroll">
+                    @foreach (var map in Maps)
+                    {
+                        <AchievementsTabMap Package=@map />
+                    }
+                </div>
+            </div>
+            <div class="column is-4 gradient pl-32">
+                <div class="achievement-list">
+                    <StatsAchievements mode="global" title="Global Achievements" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+</root>
+
+@code {
+    private List<Package> Maps = new();
+
+    protected override async Task OnParametersSetAsync()
+    {
+        var query = new Package.Query
+            {
+                Type = Package.Type.Map,
+                Order = Package.Order.User,
+                Take = 16,
+            };
+
+        query.Tags.Add("game:facepunch.unicycle_frenzy");
+
+        var packages = await query.RunAsync(default);
+        var maps = packages?.ToList() ?? new();
+
+        foreach (var map in maps)
+        {
+            Maps.Add(map);
+        }
+    }
+}

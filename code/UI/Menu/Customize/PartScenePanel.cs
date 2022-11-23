@@ -13,27 +13,47 @@ internal class PartScenePanel : Panel
 	//
 
 	public float RotationSpeed { get; set; }
+	public bool LookRight { get; set; }
+	public CustomizationPart Part { get; set; }
 
+	private SceneWorld sceneWorld;
 	private SceneObject sceneObj;
 	private ScenePanel scenePanel;
 
-	public PartScenePanel( CustomizationPart part, bool lookRight = false )
+	public PartScenePanel()
 	{
-		Build( part, lookRight );
+
 	}
 
-	private void Build( CustomizationPart part, bool lookRight )
+	public PartScenePanel( CustomizationPart part, bool lookRight = false )
 	{
-		var sceneWorld = new SceneWorld();
+		Part = part;
+		LookRight = lookRight;
+	}
+
+	protected override void OnParametersSet()
+	{
+		base.OnParametersSet();
+
+		Build();
+	}
+
+	private void Build()
+	{
+		if ( Part == null ) return;
+
+		scenePanel?.Delete();
+		sceneWorld?.Delete();
+		sceneWorld = new SceneWorld();
 
 		Style.Width = Length.Percent( 100 );
 		Style.Height = Length.Percent( 100 );
 
 		scenePanel = Add.ScenePanel( sceneWorld, Vector3.Zero, Rotation.Identity, 35 );
 
-		if ( !string.IsNullOrEmpty( part.Particle ) )
+		if ( !string.IsNullOrEmpty( Part.Particle ) )
 		{
-			var p = new SceneParticles( sceneWorld, part.Particle );
+			var p = new SceneParticles( sceneWorld, Part.Particle );
 			p.SetControlPoint( 6, .75f );
 			p.SetControlPoint( 7, 1 );
 			p.SetControlPoint( 8, 0 );
@@ -48,10 +68,10 @@ internal class PartScenePanel : Panel
 			scenePanel.Camera.EnablePostProcessing = false;
 			scenePanel.Camera.FieldOfView = 25;
 		}
-		else if ( !string.IsNullOrEmpty( part.Model ) )
+		else if ( !string.IsNullOrEmpty( Part.Model ) )
 		{
-			sceneObj = new SceneModel( sceneWorld, part.Model, Transform.Zero );
-			if ( lookRight ) sceneObj.Rotation = Rotation.LookAt( Vector3.Right );
+			sceneObj = new SceneModel( sceneWorld, Part.Model, Transform.Zero );
+			if ( LookRight ) sceneObj.Rotation = Rotation.LookAt( Vector3.Right );
 			var bounds = sceneObj.Model.RenderBounds;
 
 			scenePanel.Camera.Position = GetFocusPosition( bounds, Rotation.Identity, scenePanel.Camera.FieldOfView );

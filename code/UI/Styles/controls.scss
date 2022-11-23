@@ -1,0 +1,74 @@
+﻿
+@import "_vars.scss";
+
+Controls {
+    .keybind {
+        align-items: center;
+        flex-direction: row;
+        margin-bottom: 16px;
+        flex-grow: 1;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        .action {
+            font-size: 18px;
+        }
+    }
+
+    .diagram {
+        margin: 0px auto;
+        width: 1280px;
+        height: 720px;
+        background-image: url(textures/ui/control-diagram.png);
+        background-position: center;
+        background-size: cover;
+
+        .control {
+            position: absolute;
+            flex-direction: column;
+            font-size: 20px;
+
+            .control-name {
+                color: $pink-gradient;
+                margin-bottom: 10px;
+            }
+
+            .control-bind {
+                background-color: $grey;
+                box-shadow: $box-shadow-black;
+                border-radius: 4px;
+                text-align: center;
+                font-weight: 600;
+            }
+        }
+
+        .brake {
+            right: 22.5%;
+            top: 23%;
+            text-align: right;
+        }
+
+        .right-pedal {
+            right: 20%;
+            top: 57%;
+            text-align: right;
+        }
+
+        .left-pedal {
+            left: 10%;
+            top: 63%;
+        }
+
+        .jump {
+            left: 22%;
+            top: 82%;
+        }
+
+        .lean {
+            left: 14%;
+            top: 20%;
+        }
+    }
+}

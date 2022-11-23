@@ -1,0 +1,61 @@
+﻿
+@inherits Panel;
+
+<root>
+    <label class="item-name">@Item.DisplayName</label>
+    <div class="tag">
+        <label>FREE</label>
+    </div>
+    <div class="thumbnail">
+        <PartScenePanel Part=@Item.FindPart() RotationSpeed=@(35) />
+    </div>
+    <button @onclick=@TryUnlock class="cost">
+        <label>@Item.ExperienceNeeded</label>
+        <label> XP</label>
+    </button>
+    <div class="cost-unlocked"><label>✅</label></div>
+</root>
+
+@code {
+
+    internal TrailPassItem Item { get; set; }
+
+    public override void Tick()
+    {
+        base.Tick();
+
+        var part = Item.FindPart();
+        if (part == null) return;
+
+        var progress = TrailPassProgress.Current;
+
+        SetClass("unlocked", progress.IsUnlocked(part));
+        SetClass("unlockable", progress.Experience >= Item.ExperienceNeeded);
+    }
+
+    private void TryUnlock()
+    {
+        var part = Item.FindPart();
+        if (part == null) return;
+
+        var progress = TrailPassProgress.Current;
+
+        if (progress.IsUnlocked(part))
+        {
+            Toaster.Toast("You already unlocked that", Toaster.ToastTypes.Simple);
+            return;
+        }
+
+        if (Item.ExperienceNeeded > progress.Experience)
+        {
+            Toaster.Toast($"You need {Item.ExperienceNeeded} xp!", Toaster.ToastTypes.Error);
+            return;
+        }
+
+        progress.Unlock(part);
+        progress.Save();
+
+        Toaster.Toast($"Item unlocked!", Toaster.ToastTypes.Celebrate);
+    }
+
+}

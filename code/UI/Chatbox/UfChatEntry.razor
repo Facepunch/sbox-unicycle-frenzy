@@ -1,0 +1,21 @@
+﻿
+<root class=@RootClass>
+    <label class="name">@Name</label>
+    <label class="message">@Message</label>
+</root>
+
+@code {
+
+    private string RootClass { get; set; }
+    public string Name { get; set; }
+    public string Message { get; set; }
+
+    protected override async void OnParametersSet()
+    {
+        await Task.Delay(5000);
+
+        RootClass = "faded";
+        StateHasChanged();
+    }
+
+}

@@ -1,0 +1,125 @@
+﻿@inherits Panel;
+
+<style>
+    .achievements-container {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .progress-bar {
+        margin-bottom: 32px;
+    }
+</style>
+
+<root class="achievements-container">
+    <label class="section-title title">@Title</label>
+    <ProgressBar Current=@Achieved Max=@Total />
+    <div class="achievement-list">
+        @foreach (var ach in Achievements)
+        {
+            <root class="achievement @(ach.IsCompleted() ? "completed" : "incomplete")">
+                <div class="achievement-icon" style="background-image: url(@ach.Thumbnail)"></div>
+                <div class="achievement-body">
+                    <label class="title">@ach.DisplayName</label>
+                    <label class="subtitle">@ach.Description</label>
+                    <panel class="badge xp">
+                        <label>+</label>
+                        <label>30</label>
+                        <label>xp</label>
+                    </panel>
+                </div>
+            </root>
+        }
+    </div>
+</root>
+
+@code {
+    public string Title { get; set; } = "Achievements";
+
+    private int Achieved;
+    private int Total;
+    private List<Achievement> Achievements = new();
+
+    protected override void OnParametersSet()
+    {
+        base.OnParametersSet();
+
+        RebuildAchievements();
+    }
+
+    [Event.Hotload]
+    [Event("achievement.medals.spawned")]
+    private void RebuildAchievements()
+    {
+        Achievements.Clear();
+
+        var achievements = GetAchievements();
+
+        Total = 0;
+        Achieved = 0;
+
+        foreach (var ach in achievements)
+        {
+            if (IsMedal(ach))
+            {
+                // let's hide medals if the map hasn't defined time thresholds
+                if (!Entity.All.Any(x => x is AchievementMedals))
+                    continue;
+
+                // hard-coding medal times into the description
+                ach.Description = GetMedalDescription(ach);
+            }
+
+            Achievements.Add(ach);
+
+            if (ach.IsCompleted())
+            {
+                Achieved++;
+            }
+
+            Total++;
+        }
+
+        // set progress bar
+    }
+
+    private IEnumerable<Achievement> GetAchievements()
+    {
+        if (GetAttribute("mode", "") == "trailpass")
+        {
+            var result = Achievement.All.Where(x => TrailPass.Current.Achievements.Any(y => y.FindAchievement() == x));
+
+            result = result.OrderBy(x => TrailPass.Current.Achievements.First(y => y.FindAchievement() == x).ExperienceGranted);
+
+            return result;
+        }
+
+        return Achievement.FetchForMap().OrderByDescending(x => x.IsCompleted());
+    }
+
+    private static bool IsMedal(Achievement ach)
+    {
+        return new string[]
+        {
+            "uf_bronze",
+            "uf_silver",
+            "uf_gold"
+        }.Contains(ach.ShortName);
+    }
+
+    private static string GetMedalDescription(Achievement ach)
+    {
+        var achMedals = Entity.All.FirstOrDefault(x => x is AchievementMedals) as AchievementMedals;
+        if (!achMedals.IsValid()) return ach.Description;
+
+        var time = ach.ShortName switch
+        {
+            "uf_bronze" => achMedals.Bronze,
+            "uf_silver" => achMedals.Silver,
+            "uf_gold" => achMedals.Gold,
+            _ => 0
+        };
+
+        return $"Complete the map in {time.FormattedTimeMs()}s or better";
+    }
+}

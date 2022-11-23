@@ -1,6 +1,7 @@
 ﻿
 using Sandbox;
 using Sandbox.UI;
+using Sandbox.UI.Construct;
 using System.Linq;
 
 [UseTemplate]
@@ -9,6 +10,12 @@ internal class StopTriggerHint : Panel
 
 	public Label Timer { get; protected set; }
 	public RadialFill Fill { get; protected set; }
+
+	public StopTriggerHint()
+	{
+		Timer = Add.Label();
+		Fill = AddChild<RadialFill>();
+	}
 
 	public override void Tick()
 	{

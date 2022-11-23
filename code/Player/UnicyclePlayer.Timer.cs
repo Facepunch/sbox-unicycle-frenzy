@@ -63,7 +63,7 @@ internal partial class UnicyclePlayer
 		{
 			ClearCheckpoints();
 
-			var formattedTime = CourseTimer.FormattedTimeMsf( TimeSinceStart );
+			var formattedTime = TimeSinceStart.FormattedTimeMsf();
 
 			SetAchievementOnClient( To.Single( Client ), "uf_unicyclist" );
 
@@ -92,12 +92,12 @@ internal partial class UnicyclePlayer
 			{
 				if( CourseIncomplete )
 				{
-					UfChatbox.AddChat( To.Everyone, "Server", $"{Client.Name} completed the course in {formattedTime}", "custom timer-msg", sfx: "timer.complete" );
+					UfChat.AddChat( To.Everyone, "Server", $"{Client.Name} completed the course in {formattedTime}", "custom timer-msg", sfx: "timer.complete" );
 				}
 				else
 				{
-					var improvement = CourseTimer.FormattedTimeMsf( BestTime - TimeSinceStart );
-					UfChatbox.AddChat( To.Everyone, "Server", $"{Client.Name} completed the course in {formattedTime}, improving by {improvement}!", "custom timer-msg", sfx: "timer.complete" );
+					var improvement = (BestTime - TimeSinceStart).FormattedTimeMsf();
+					UfChat.AddChat( To.Everyone, "Server", $"{Client.Name} completed the course in {formattedTime}, improving by {improvement}!", "custom timer-msg", sfx: "timer.complete" );
 				}
 
 				BestTime = TimeSinceStart;
