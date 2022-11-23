@@ -1,14 +1,14 @@
 ﻿using Sandbox;
 using Sandbox.UI;
+using Sandbox.UI.Construct;
 using System;
 
-[UseTemplate]
+[StyleSheet("UI/Styles/ufnametag.scss")]
 internal class UfNametag : WorldPanel
 {
 
 	private UnicyclePlayer player;
-
-	public string Name { get; set; }
+	private Label Label;
 
 	public UfNametag( UnicyclePlayer player )
 	{
@@ -19,6 +19,8 @@ internal class UfNametag : WorldPanel
 		var width = 1000;
 		var height = 1000;
 		PanelBounds = new Rect( -width * .5f, -height * .5f, width, height );
+
+		Label = Add.Label( string.Empty, "name" );
 	}
 
 	[Event.Frame]
@@ -35,10 +37,12 @@ internal class UfNametag : WorldPanel
 		Rotation = Rotation.LookAt( -Screen.GetDirection( new Vector2( Screen.Width * 0.5f, Screen.Height * 0.5f ) ) );
 		Style.Opacity = player.IsLocalPawn ? 0 : player.GetRenderAlpha();
 
+		if ( Style.Opacity <= 0 ) return;
+
 		var rank = player.SessionRank;
 		var name = player.Client.Name;
 
-		Name = player.CourseIncomplete ? name : $"#{rank} {name}";
+		Label.Text = player.CourseIncomplete ? name : $"#{rank} {name}";
 	}
 
 }

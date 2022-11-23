@@ -1,7 +1,7 @@
 ﻿
-@import "../Vars.scss";
+@import "_vars.scss";
 
-NewPlayerOverlay {
+NewPlayerDialog {
     position: absolute;
     top: 25%;
     right: 15%;
@@ -47,7 +47,6 @@ NewPlayerOverlay {
                 margin-right: 0;
             }
         }
-
         // button {
         //     padding: 8px;
         //     font-size: 20px;
@@ -59,15 +58,12 @@ NewPlayerOverlay {
         //     justify-content: center;
         //     cursor: pointer;
         //     text-shadow: 1px 1px 1px black;
-
         //     &:hover {
         //         background-color: $primary;
         //     }
-
         //     &:active {
         //         background-color: white;
         //     }
-
         //     &:last-child {
         //         margin-right: 0;
         //     }

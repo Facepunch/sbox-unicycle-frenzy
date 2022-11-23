@@ -1,9 +1,10 @@
 ﻿
 using Sandbox;
 using Sandbox.UI;
+using Sandbox.UI.Construct;
 using System;
 
-[UseTemplate]
+[StyleSheet("UI/Styles/frenzyletter.scss")]
 internal class FrenzyLetter : WorldPanel
 {
 
@@ -22,6 +23,8 @@ internal class FrenzyLetter : WorldPanel
 		PositionOffset = Vector3.Random.WithZ( 0 ).Normal;
 
 		Owning = FrenzyCollectionHelper.Contains( Collectible.Letter );
+
+		Add.Label( collectible.Letter.ToString() );
 	}
 
 	[Event.Frame]
