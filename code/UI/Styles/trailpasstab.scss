@@ -1,4 +1,5 @@
-﻿@import "../../Vars.scss";
+﻿
+@import "_vars.scss";
 
 TrailpassTab {
     flex-direction: column;
@@ -141,7 +142,7 @@ TrailPassItemSlider {
 .slider-buttons {
     width: 100%;
     position: absolute;
-    background-color:red;
+    background-color: red;
     bottom: 0;
 }
 

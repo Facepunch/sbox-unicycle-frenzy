@@ -2,7 +2,6 @@
 using Sandbox;
 using Sandbox.UI;
 
-[UseTemplate]
 internal class TrailPassItemSlider : Panel
 {
 
@@ -19,7 +18,7 @@ internal class TrailPassItemSlider : Panel
 
 		foreach ( var item in trailpass.Items )
 		{
-			var itemicon = new TrailPassItemIcon( item );
+			var itemicon = new TrailPassItemIcon() { Item = item };
 			itemicon.Parent = this;
 		}
 	}
