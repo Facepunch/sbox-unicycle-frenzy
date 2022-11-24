@@ -13,7 +13,7 @@
         <div class="check"></div>
     </div>
     <div class="box map-body">
-        <label class="title is-styled" @text="MapName">@Package?.Title</label>
+        <label class="title is-styled" @text="MapName">@Package?.Title.Replace("unicycle frenzy", "", StringComparison.OrdinalIgnoreCase).Trim()</label>
         <ProgressBar Current=@Completed Max=@Total />
     </div>
 
