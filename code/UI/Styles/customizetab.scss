@@ -32,6 +32,11 @@ CustomizeTab {
         transition: all 0.15s ease;
         margin-right: $padding;
 
+        PartScenePanel {
+            background-size: cover;
+            background-position: center center;
+        }
+
         &:hover {
             transform: scale(1.1);
         }

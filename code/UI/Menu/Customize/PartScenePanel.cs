@@ -37,6 +37,7 @@ internal class PartScenePanel : Panel
 		sceneWorld?.Delete();
 		sceneWorld = new SceneWorld();
 
+		Style.SetBackgroundImage( string.Empty );
 		Style.Width = Length.Percent( 100 );
 		Style.Height = Length.Percent( 100 );
 
@@ -67,6 +68,10 @@ internal class PartScenePanel : Panel
 
 			scenePanel.Camera.Position = GetFocusPosition( bounds, Rotation.Identity, scenePanel.Camera.FieldOfView );
 			scenePanel.Camera.Rotation = Rotation.From( 0, 0, 0 );
+		}
+		else if ( !string.IsNullOrEmpty( Part.Texture ) )
+		{
+			Style.SetBackgroundImage( Part.Texture );
 		}
 
 		new SceneLight( sceneWorld, Vector3.Up * 150.0f, 200.0f, Color.White * 15 );
