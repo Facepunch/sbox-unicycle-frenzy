@@ -13,8 +13,8 @@
         <div class="slider">
             <TrailPassItemSlider @ref="ItemSlider" />
             <div class="slider-buttons">
-                <button @onclick=@ScrollItemSliderRight class="item-scroll right">&rarr;</button>
-                <button @onclick=@ScrollItemSliderLeft class="item-scroll left">&larr;</button>
+                <button @onclick=@ScrollItemSliderRight class="item-scroll right">&gt;</button>
+                <button @onclick=@ScrollItemSliderLeft class="item-scroll left">&lt;</button>
             </div>
         </div>
         <StatsAchievements title="Trail Achievements" mode="trailpass" />
@@ -23,7 +23,7 @@
     <div class="progress">
         <label class="xp min is-styled">0 xp</label>
         <label class="xp max  is-styled">1000 xp</label>
-        <div class="fill" @ref="ExperienceFill"><label @ref="ExperienceLabel" class="xp current">123 xp</label></div>
+        <div class="fill" @ref="ExperienceFill"><label @ref="ExperienceLabel" class="xp current" text="@CurrentXp" /></div>
     </div>
 
 </root>
@@ -32,6 +32,8 @@
     internal TrailPassItemSlider ItemSlider { get; set; }
     protected Panel ExperienceFill { get; set; }
     protected Label ExperienceLabel { get; set; }
+
+    int CurrentXp;
 
     public override void Tick()
     {
