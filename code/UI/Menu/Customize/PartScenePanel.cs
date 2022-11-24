@@ -20,17 +20,6 @@ internal class PartScenePanel : Panel
 	private SceneObject sceneObj;
 	private ScenePanel scenePanel;
 
-	public PartScenePanel()
-	{
-
-	}
-
-	public PartScenePanel( CustomizationPart part, bool lookRight = false )
-	{
-		Part = part;
-		LookRight = lookRight;
-	}
-
 	protected override void OnParametersSet()
 	{
 		base.OnParametersSet();
@@ -41,6 +30,8 @@ internal class PartScenePanel : Panel
 	private void Build()
 	{
 		if ( Part == null ) return;
+
+		LookRight = Part.PartType == PartType.Wheel || Part.PartType == PartType.Seat;
 
 		scenePanel?.Delete();
 		sceneWorld?.Delete();
