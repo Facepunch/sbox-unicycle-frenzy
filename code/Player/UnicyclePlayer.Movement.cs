@@ -78,12 +78,15 @@ internal partial class UnicyclePlayer
 		SurfaceFriction = 1f;
 	}
 
-	public override void BuildInput( InputBuilder input )
+	public override void BuildInput()
 	{
-		base.BuildInput( input );
+		base.BuildInput();
 
 		if ( !overrideRot ) return;
-		input.ViewAngles = rotOverride.Angles();
+
+		if ( Local.Pawn is Player pl )
+			pl.ViewAngles = rotOverride.Angles();
+
 		overrideRot = false;
 	}
 

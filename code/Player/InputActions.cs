@@ -20,6 +20,14 @@ public enum InputActions
 	Scoreboard
 }
 
+public static class InputExtra
+{
+	public static bool Pressed( InputActions action )
+	{
+		return Input.Pressed( InputActionsExtensions.GetInputButton( action ) );
+	}
+}
+
 public static class InputActionsExtensions
 {
 
@@ -28,11 +36,6 @@ public static class InputActionsExtensions
 	public static bool Down( this InputActions action ) => Input.Down( GetInputButton( action ) );
 	public static string GetButtonOrigin( this InputActions action ) => Input.GetButtonOrigin( GetInputButton( action ) );
 	public static InputButton Button( this InputActions action ) => GetInputButton( action );
-
-	public static bool Pressed( this InputBuilder b, InputActions action )
-	{
-		return b.Pressed( GetInputButton( action ) );
-	}
 
 	public static InputButton GetInputButton( InputActions action )
 	{

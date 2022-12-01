@@ -38,9 +38,9 @@
 	}
 
 	[Event.BuildInput]
-	private void OnBuildInput(InputBuilder b)
+	private void OnBuildInput()
 	{
-		if (b.Pressed(InputActions.Scoreboard))
+		if (InputExtra.Pressed(InputActions.Scoreboard))
 		{
 			ManuallyOpened = !ManuallyOpened;
 		}

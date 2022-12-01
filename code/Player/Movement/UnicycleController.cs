@@ -332,7 +332,7 @@ internal partial class UnicycleController : BasePlayerController
 		tilt = Angles.Lerp( tilt, Angles.Zero, recover * Time.Delta );
 
 		// tilt from input
-		var input = new Vector3( Input.Forward, 0, -Input.Left );
+		var input = new Vector3( pl.InputDirection.x, 0, -pl.InputDirection.y );
 
 		if ( input.x == 0 )
 		{
@@ -417,7 +417,7 @@ internal partial class UnicycleController : BasePlayerController
 
 	private bool IsIdle()
 	{
-		var input = new Vector3( Input.Forward, 0, -Input.Left );
+		var input = new Vector3( pl.InputDirection.x, 0, -pl.InputDirection.y );
 
 		if ( GroundEntity == null ) return false;
 		if ( !input.Length.AlmostEqual( 0f ) ) return false;
@@ -445,7 +445,7 @@ internal partial class UnicycleController : BasePlayerController
 	{
 		var spd = Velocity.WithZ( 0 ).Length;
 		var grounded = GroundEntity != null;
-		var inputFwd = Input.Rotation.Forward.WithZ( 0 );
+		var inputFwd = pl.ViewAngles.ToRotation().Forward.WithZ( 0 );
 
 		var canTurn = (!grounded && spd < MaxAirTurnSpeed) || (grounded && spd > StopSpeed);
 
