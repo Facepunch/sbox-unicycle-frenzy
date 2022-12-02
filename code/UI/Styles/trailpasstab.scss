@@ -223,7 +223,7 @@ TrailPassItemIcon {
 
         &:hover {
             transform: scale(1.1);
-            background-color: $orange-gradient;
+            background-image: $orange-gradient;
         }
     }
 
