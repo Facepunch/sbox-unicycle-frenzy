@@ -19,14 +19,15 @@ internal class RadialFill : Panel
 
 		var center = Box.Rect.Center;
 		var radius = Box.Rect.Width * .5f;
-		var draw = Render.Draw2D;
-		draw.Reset();
 
-		draw.Color = TrackColor;
-		draw.CircleEx( center, radius, radius - BorderWidth, Points );
+		//var draw = Render.Draw2D;
+		//draw.Reset();
 
-		draw.Color = FillColor;
-		draw.CircleEx( center, radius - EdgeGap, radius - BorderWidth + EdgeGap, Points, FillStart * 360, (FillStart + FillAmount) * 360 );
+		//draw.Color = TrackColor;
+		//draw.CircleEx( center, radius, radius - BorderWidth, Points );
+
+		//draw.Color = FillColor;
+		//draw.CircleEx( center, radius - EdgeGap, radius - BorderWidth + EdgeGap, Points, FillStart * 360, (FillStart + FillAmount) * 360 );
 	}
 
 }

@@ -30,17 +30,8 @@
 
     protected override async Task OnParametersSetAsync()
     {
-        var query = new Package.Query
-            {
-                Type = Package.Type.Map,
-                Order = Package.Order.User,
-                Take = 16,
-            };
-
-        query.Tags.Add("game:facepunch.unicycle_frenzy");
-
-        var packages = await query.RunAsync(default);
-        var maps = packages?.ToList() ?? new();
+        var packages = await Package.FindAsync("game:facepunch.unicycle_frenzy type:map");
+        var maps = packages.Packages?.ToList() ?? new();
 
         foreach (var map in maps)
         {

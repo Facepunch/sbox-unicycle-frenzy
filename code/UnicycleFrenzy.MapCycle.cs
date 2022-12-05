@@ -20,17 +20,8 @@ internal partial class UnicycleFrenzy
 
 		NextMap = Global.MapName;
 
-		var query = new Package.Query
-		{
-			Type = Package.Type.Map,
-			Order = Package.Order.User,
-			Take = 16,
-		};
-
-		query.Tags.Add( "game:facepunch.unicycle_frenzy" ); // maybe this should be a "for this game" type of thing instead
-
-		var packages = await query.RunAsync( default );
-		var maps = packages.Select( x => x.FullIdent ).ToList();
+		var packages = await Package.FindAsync( "type:map game:facepunch.unicycle_frenzy", 16 );
+		var maps = packages.Packages.Select( x => x.FullIdent ).ToList();
 
 		var pkg = await Package.Fetch( Global.GameIdent, true );
 		if ( pkg != null )

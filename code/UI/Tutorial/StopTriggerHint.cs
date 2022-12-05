@@ -9,12 +9,12 @@ internal class StopTriggerHint : Panel
 {
 
 	public Label Timer { get; protected set; }
-	public RadialFill Fill { get; protected set; }
+	//public RadialFill Fill { get; protected set; }
 
 	public StopTriggerHint()
 	{
 		Timer = Add.Label();
-		Fill = AddChild<RadialFill>();
+		//Fill = AddChild<RadialFill>();
 	}
 
 	public override void Tick()
@@ -37,10 +37,10 @@ internal class StopTriggerHint : Panel
 
 		var shouldFill = pl.StopDoorTimer > 0 && pl.StopDoorTimer < 1f;
 
-		Fill.FillColor = Color.White;
-		Fill.TrackColor = Color.White.WithAlpha( .25f );
-		Fill.FillStart = 0f;
-		Fill.FillAmount = shouldFill ? pl.StopDoorTimer : .01f;
+		//Fill.FillColor = Color.White;
+		//Fill.TrackColor = Color.White.WithAlpha( .25f );
+		//Fill.FillStart = 0f;
+		//Fill.FillAmount = shouldFill ? pl.StopDoorTimer : .01f;
 	}
 
 }

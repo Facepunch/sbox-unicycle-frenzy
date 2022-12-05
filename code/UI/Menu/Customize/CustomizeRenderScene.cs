@@ -15,7 +15,7 @@ internal class CustomizeRenderScene : Panel
 	private ScenePanel renderScene;
 	private Angles renderSceneAngles = new( 25.0f, 0.0f, 0.0f );
 	private float renderSceneDistance = 85;
-	private Vector3 renderScenePos => Vector3.Up * 22 + renderSceneAngles.Direction * -renderSceneDistance;
+	private Vector3 renderScenePos => Vector3.Up * 22 + Rotation.From( renderSceneAngles ).Forward * -renderSceneDistance;
 
 	private bool drag;
 
