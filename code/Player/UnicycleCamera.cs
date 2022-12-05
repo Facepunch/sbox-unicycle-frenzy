@@ -24,7 +24,7 @@ internal class UnicycleCamera : CameraMode
 		ClearViewBlockers();
 		UpdateViewBlockers( pawn );
 
-		var viewangles = Input.Rotation.Angles();
+		var viewangles = pawn.ViewAngles;
 
 		// hack in sensitivity boost until we get sens slider for controllers
 		if ( Input.UsingController )
@@ -66,23 +66,23 @@ internal class UnicycleCamera : CameraMode
 		FieldOfView = FieldOfView.LerpTo( fov, Time.Delta );
 	}
 
-	public override void BuildInput( InputBuilder input )
+	public override void BuildInput()
 	{
-		base.BuildInput( input );
+		base.BuildInput();
 
 		if ( Local.Pawn is UnicyclePlayer pl )
 		{
-			var diff = Rotation.Difference( Rotation.From( 0, input.ViewAngles.yaw, 0 ), Rotation.From( 0, pl.Rotation.Yaw(), 0 ) );
+			var diff = Rotation.Difference( Rotation.From( 0, pl.ViewAngles.yaw, 0 ), Rotation.From( 0, pl.Rotation.Yaw(), 0 ) );
 			if( diff.Angle() > 170 )
 			{
-				input.ViewAngles = input.OriginalViewAngles;
+				Input.AnalogLook = default;
 			}
+
+			if ( !Input.UsingController ) return;
+
+			// controllers get special handling so update ViewAngles here
+			pl.ViewAngles = Rotation.Angles();
 		}
-
-		if ( !Input.UsingController ) return;
-
-		// controllers get special handling so update ViewAngles here
-		input.ViewAngles = Rotation.Angles();
 	}
 
 	public override void Activated()

@@ -16,7 +16,7 @@ internal class UnicycleAnimator : PawnAnimator
 		var speed = Pawn.Velocity.WithZ( 0 ).Length;
 		citizen.SetAnimParameter( "move_groundspeed", speed );
 
-		var aimPos = Pawn.EyePosition + Input.Rotation.Forward * 200 + Vector3.Up * 50;
+		var aimPos = Pawn.EyePosition + pl.ViewAngles.ToRotation().Forward * 200 + Vector3.Up * 50;
 		citizen.SetAnimLookAt( "aim_eyes", aimPos );
 		citizen.SetAnimLookAt( "aim_head", aimPos );
 
@@ -46,8 +46,8 @@ internal class UnicycleAnimator : PawnAnimator
 		citizen.SetAnimParameter( "unicycle_balance_x", balx );
 		citizen.SetAnimParameter( "unicycle_balance_y", baly );
 
-		var targetLeanX = Input.Forward.LerpInverse( -1f, 1f );
-		var targetLeanY = 1f - Input.Left.LerpInverse( -1f, 1f );
+		var targetLeanX = pl.InputDirection.x.LerpInverse( -1f, 1f );
+		var targetLeanY = 1f - pl.InputDirection.y.LerpInverse( -1f, 1f );
 		var leanx = citizen.GetAnimParameterFloat( "unicycle_lean_x" ).LerpTo( targetLeanX, Time.Delta * 7f );
 		var leany = citizen.GetAnimParameterFloat( "unicycle_lean_y" ).LerpTo( targetLeanY, Time.Delta * 7f );
 		citizen.SetAnimParameter( "unicycle_lean_x", leanx );

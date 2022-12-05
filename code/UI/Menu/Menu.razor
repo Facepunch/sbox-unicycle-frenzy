@@ -78,9 +78,9 @@
     }
 
     [Event.BuildInput]
-    private void OnBuildInput( InputBuilder b ) 
+    private void OnBuildInput() 
     {
-        if (!b.Pressed(InputActions.Menu))
+        if (!InputExtra.Pressed(InputActions.Menu))
             return;
 
         IsOpen = !IsOpen;
