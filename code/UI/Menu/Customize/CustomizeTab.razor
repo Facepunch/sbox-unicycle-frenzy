@@ -20,7 +20,7 @@
                 <div class="parts-list columns is-multiline">
                     @foreach ( var part in Parts )
                     {
-                        <CustomizeItemButton Part=@part />
+                        <CustomizeItemButton @onmouseover="@(() => Display( part ))" Part=@part />
                     }
                 </div>
 
@@ -59,6 +59,12 @@
         Parts = ResourceLibrary.GetAll<CustomizationPart>()
             .Where(x => x.PartType == type && x.CanEquip())
             .ToList();
+        Display(null);
+    }
+
+    private void Display(CustomizationPart part)
+    {
+        ItemName = part?.DisplayName ?? "";
     }
 
     protected override void OnEvent(PanelEvent e)

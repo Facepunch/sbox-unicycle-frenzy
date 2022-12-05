@@ -3,6 +3,7 @@
 
 <root>
     <div class="scoreboard-container">
+        <label text="Loading..." class="loading-note" />
         <div class="leaderboard-canvas">
 			@foreach(var entry in Entries)
 			{
@@ -27,77 +28,83 @@
 
 @code {
 
-	record struct LeaderboardEntry( int Rank, string Name, float Score, long Playerid );
+    record struct LeaderboardEntry( int Rank, string Name, float Score, long Playerid );
 
-	public string Scope { get; set; }
+    public string Scope { get; set; }
 
-	private List<LeaderboardEntry> Entries = new();
+    private List<LeaderboardEntry> Entries = new();
 
-	protected override void OnParametersSet()
-	{
-		base.OnParametersSet();
+    protected override void OnParametersSet()
+    {
+        base.OnParametersSet();
 
-		Rebuild();
-	}
+        Rebuild();
+    }
 
-	protected override int BuildHash()
-	{
-		if (Scope != "session") return 0;
+    protected override int BuildHash()
+    {
+        if (Scope != "session") return 0;
 
-		var newhash = 1;
+        var newhash = 1;
 
-		foreach(var ent in Entity.All)
-		{
-			if (ent is not UnicyclePlayer pl) continue;
+        foreach(var ent in Entity.All)
+        {
+            if (ent is not UnicyclePlayer pl) continue;
 
-			newhash = HashCode.Combine(newhash, pl.BestTime);
-		}
+            newhash = HashCode.Combine(newhash, pl.BestTime);
+        }
 
-		return newhash;
-	}
+        return newhash;
+    }
 
-	public async void Rebuild()
-	{
-		Entries.Clear();
+    public async void Rebuild()
+    {
+        Entries.Clear();
 
-		switch (Scope)
-		{
-			case "global":
-			case "friends":
-				var scores = await LeaderboardHelper.FetchScores();
+        SetClass("loading", true);
 
-				Entries.Clear();
+        switch (Scope)
+        {
+            case "global":
+            case "friends":
+                var scores = await LeaderboardHelper.FetchScores();
 
-				if (Scope == "friends")
-				{
-					scores = scores
-						.Where(x => x.PlayerId == Local.PlayerId || new Friend(x.PlayerId).IsFriend)
-						.ToList();
-				}
+                Entries.Clear();
 
-				foreach (var entry in scores)
-				{
-					var time = entry.Score / 1000f;
-					var rank = entry.GlobalRank;
-					var name = entry.Name;
-					var playerId = entry.PlayerId;
+                if (Scope == "friends")
+                {
+                    scores = scores
+                        .Where(x => x.PlayerId == Local.PlayerId || new Friend(x.PlayerId).IsFriend)
+                        .ToList();
+                }
 
-					Entries.Add(new ( rank, name, time, playerId ));
-				}
-				break;
-			case "session":
-				var players = Player.All.OfType<UnicyclePlayer>()
-					.Where(x => x.IsValid() && x.Client.IsValid())
-					.OrderBy(x => x.BestTime);
+                foreach (var entry in scores)
+                {
+                    var time = entry.Score / 1000f;
+                    var rank = entry.GlobalRank;
+                    var name = entry.Name;
+                    var playerId = entry.PlayerId;
 
-				var srank = 0;
-				foreach (var pl in players)
-				{
-					var time = pl.CourseIncomplete ? 0f : pl.BestTime;
+                    Entries.Add(new ( rank, name, time, playerId ));
+                }
+                break;
+            case "session":
+                var players = Player.All.OfType<UnicyclePlayer>()
+                    .Where(x => x.IsValid() && x.Client.IsValid())
+                    .OrderBy(x => x.BestTime);
 
-					Entries.Add(new(++srank, pl.Client.Name, time, pl.Client.PlayerId));
-				}
-				break;
-		}
+                var srank = 0;
+                foreach (var pl in players)
+                {
+                    var time = pl.CourseIncomplete ? 0f : pl.BestTime;
+
+                    Entries.Add(new(++srank, pl.Client.Name, time, pl.Client.PlayerId));
+                }
+                break;
+        }
+
+        SetClass("loading", false);
+
+        StateHasChanged();
     }
 }

@@ -13,6 +13,12 @@ LeaderboardTabs {
 LeaderboardSingle {
     flex-grow: 1;
 
+    &:not(.loading) {
+        .loading-note {
+            display: none;
+        }
+    }
+
     .scoreboard-container {
         flex-direction: column;
         flex-grow: 1;
@@ -84,5 +90,12 @@ LeaderboardSingle {
         .button {
             width: 50%;
         }
+    }
+
+    label.loading-note {
+        position: absolute;
+        left: 50%;
+        top: 100px;
+        font-size: 32px;
     }
 }

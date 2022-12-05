@@ -47,6 +47,14 @@
         RebuildAchievements();
     }
 
+    [Event("achievement.set")]
+    private void OnAchievementSet(string name)
+    {
+        RebuildAchievements();
+
+        StateHasChanged();
+    }
+
     [Event.Hotload]
     [Event("achievement.medals.spawned")]
     private void RebuildAchievements()
@@ -79,8 +87,6 @@
 
             Total++;
         }
-
-        // set progress bar
     }
 
     private IEnumerable<Achievement> GetAchievements()

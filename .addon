@@ -3,7 +3,7 @@
   "Type": "game",
   "Org": "facepunch",
   "Ident": "unicycle_frenzy",
-  "Tags": null,
+  "Tags": "",
   "Schema": 1,
   "HasAssets": true,
   "AssetsPath": "",
@@ -82,6 +82,11 @@
     "ControlModes": {
       "Keyboard": true,
       "Gamepad": true
-    }
+    },
+    "DefaultLeaderboards": [],
+    "Summary": "Unicycle Frenzy challenges players to navigate through treacherous obstacle courses on a unicycle.",
+    "Description": "Post feedback and issues here: https://github.com/Facepunch/sbox-unicycle-frenzy\r\n\r\nPress Tab in-game to see controls and customize your unicycle",
+    "Public": true,
+    "ReplaceTags": "racing unicycle sports"
   }
 }
