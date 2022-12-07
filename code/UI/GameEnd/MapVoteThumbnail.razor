@@ -53,7 +53,7 @@
             return;
 
         Votes = UnicycleFrenzy.Game.MapVotes.Values.Count(x => x == MapIdent);
-        Active = UnicycleFrenzy.Game.MapVotes.ContainsKey(Local.PlayerId) && UnicycleFrenzy.Game.MapVotes[Local.PlayerId] == MapIdent;
+        Active = UnicycleFrenzy.Game.MapVotes.ContainsKey(Local.SteamId) && UnicycleFrenzy.Game.MapVotes[Local.SteamId] == MapIdent;
     }
 
     protected override int BuildHash()

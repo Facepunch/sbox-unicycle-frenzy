@@ -74,7 +74,7 @@
                 if (Scope == "friends")
                 {
                     scores = scores
-                        .Where(x => x.PlayerId == Local.PlayerId || new Friend(x.PlayerId).IsFriend)
+                        .Where(x => x.SteamId == Local.SteamId || new Friend(x.SteamId).IsFriend)
                         .ToList();
                 }
 
@@ -83,7 +83,7 @@
                     var time = entry.Score / 1000f;
                     var rank = entry.GlobalRank;
                     var name = entry.Name;
-                    var playerId = entry.PlayerId;
+                    var playerId = entry.SteamId;
 
                     Entries.Add(new ( rank, name, time, playerId ));
                 }

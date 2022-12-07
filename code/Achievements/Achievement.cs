@@ -18,7 +18,7 @@ internal partial class Achievement : GameResource
 	public bool IsCompleted()
 	{
 		var map = PerMap ? Global.MapName : MapName;
-		var playerid = Local.PlayerId;
+		var playerid = Local.SteamId;
 		return AchievementCompletion.Query( playerid, map ).Any( x => x.ShortName == ShortName );
 	}
 

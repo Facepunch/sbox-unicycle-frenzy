@@ -115,7 +115,7 @@ internal partial class FrenzyCollectible : Collectible
 
 		if( result == FrenzyCollectionHelper.Result.Completed )
 		{
-			Achievement.Set( Local.PlayerId, "uf_frenzy", Global.MapName );
+			Achievement.Set( Local.SteamId, "uf_frenzy", Global.MapName );
 		}
 	}
 
