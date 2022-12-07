@@ -37,7 +37,7 @@
         Podiums.AddChild(new PodiumPanel() { Rank = 3 });
 	}
 
-	[Event.BuildInput]
+    [Event.Client.BuildInput]
 	private void OnBuildInput()
 	{
 		if (InputExtra.Pressed(InputActions.Scoreboard))

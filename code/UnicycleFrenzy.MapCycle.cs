@@ -75,10 +75,10 @@ internal partial class UnicycleFrenzy
 		if ( !ConsoleSystem.Caller.IsValid() ) 
 			return;
 
-		if ( Game.MapVotes.TryGetValue( ConsoleSystem.Caller.PlayerId, out var vote ) && vote == mapIdent )
+		if ( Game.MapVotes.TryGetValue( ConsoleSystem.Caller.SteamId, out var vote ) && vote == mapIdent )
 			return;
 
-		Game.MapVotes[ConsoleSystem.Caller.PlayerId] = mapIdent;
+		Game.MapVotes[ConsoleSystem.Caller.SteamId] = mapIdent;
 
 		var votemap = new Dictionary<string, int>();
 		Game.MapVotes.Values.ToList().ForEach( x => votemap.Add( x, 0 ) );

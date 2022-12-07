@@ -27,7 +27,7 @@ internal class FrenzyLetter : WorldPanel
 		Add.Label( collectible.Letter.ToString() );
 	}
 
-	[Event.Frame]
+	[Event.Client.Frame]
 	private void OnFrame()
 	{
 		var position = Collectible.Position + Vector3.Up * 32;
@@ -38,10 +38,10 @@ internal class FrenzyLetter : WorldPanel
 		{
 			position = Local.Pawn.Position + PositionOffset * 32f + Vector3.Up * 24f;
 		}
-
+		
 		var offs = (float)Math.Sin( Time.Now );
 		Position = position + Vector3.Up * offs * 8f;
-		Rotation = Rotation.LookAt( CurrentView.Position - Position );
+		Rotation = Rotation.LookAt( Camera.Position - Position );
 
 		SetClass( "holding", holding );
 		SetClass( "owning", owning );

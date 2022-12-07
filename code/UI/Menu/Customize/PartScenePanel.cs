@@ -91,7 +91,7 @@ internal class PartScenePanel : Panel
 		return bounds.Center - distance * cameraRot.Forward;
 	}
 
-	[Event.Frame]
+	[Event.Client.Frame]
 	private void OnFrame()
 	{
 		if ( !sceneObj.IsValid() ) return;

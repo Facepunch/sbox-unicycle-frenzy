@@ -29,7 +29,7 @@ internal class CustomizeRenderScene : Panel
 		base.OnButtonEvent( e );
 	}
 
-	[Event.Frame]
+	[Event.Client.Frame]
 	private void OnFrame()
 	{
 		if ( renderScene == null ) return;

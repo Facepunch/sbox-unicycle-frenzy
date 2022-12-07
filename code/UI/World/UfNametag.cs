@@ -23,7 +23,7 @@ internal class UfNametag : WorldPanel
 		Label = Add.Label( string.Empty, "name" );
 	}
 
-	[Event.Frame]
+	[Event.Client.Frame]
 	private void OnFrame()
 	{
 		if ( !player.IsValid() ) return;

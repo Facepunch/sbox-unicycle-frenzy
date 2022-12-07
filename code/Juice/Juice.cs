@@ -52,8 +52,8 @@ public static class Juice
 			effects[i].OnTick();
 		}
 	}
-
-	[Event.Frame]
+	
+	[Event.Client.Frame]
 	private static void OnFrame()
 	{
 		foreach ( var effect in effects )

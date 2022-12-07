@@ -197,7 +197,7 @@ internal partial class Checkpoint : ModelEntity
 	}
 
 	private bool active;
-	[Event.Frame]
+	[Event.Client.Frame]
 	private void OnFrame()
 	{
 		if ( Local.Pawn is not UnicyclePlayer pl ) return;

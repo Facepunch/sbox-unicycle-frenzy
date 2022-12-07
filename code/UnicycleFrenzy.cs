@@ -2,7 +2,7 @@
 using Sandbox;
 using System.Collections.Generic;
 
-partial class UnicycleFrenzy : Sandbox.Game
+partial class UnicycleFrenzy : GameManager
 {
 
 	public static UnicycleFrenzy Game => Current as UnicycleFrenzy;

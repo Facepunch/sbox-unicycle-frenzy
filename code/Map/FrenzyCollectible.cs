@@ -60,7 +60,7 @@ internal partial class FrenzyCollectible : Collectible
 		return false;
 	}
 
-	[Event.Frame]
+	[Event.Client.Frame]
 	private void OnFrame()
 	{
 		if ( Local.Pawn is not UnicyclePlayer pl )

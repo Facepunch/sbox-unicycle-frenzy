@@ -11,7 +11,7 @@ internal partial class UnicyclePlayer : Sandbox.Player
     [Net]
     public UnicycleEntity Unicycle { get; set; }
     [Net]
-    public List<Checkpoint> Checkpoints { get; set; } = new();
+    public IList<Checkpoint> Checkpoints { get; set; }
 	[Net]
 	public string Avatar { get; set; }
 
@@ -24,7 +24,10 @@ internal partial class UnicyclePlayer : Sandbox.Player
     private JumpIndicator JumpIndicator;
     private Particles SpeedParticle;
 
-    public override void Respawn()
+	UnicycleCamera UnicycleCamera = new UnicycleCamera();
+
+
+	public override void Respawn()
     {
         base.Respawn();
 
@@ -41,9 +44,7 @@ internal partial class UnicyclePlayer : Sandbox.Player
 		Citizen.SetParent( this, null, Transform.Zero );
         Citizen.SetAnimGraph( "models/citizen_unicycle_frenzy.vanmgrph" );
 
-        CameraMode = new UnicycleCamera();
         Controller ??= new UnicycleController();
-        Animator ??= new UnicycleAnimator();
 
 		Clothing ??= new();
 		Clothing.LoadFromClient( Client );
@@ -76,7 +77,6 @@ internal partial class UnicyclePlayer : Sandbox.Player
         TimeSinceDied = 0;
         EnableAllCollisions = false;
         EnableDrawing = false;
-        CameraMode = new SpectateRagdollCamera();
 
         Unicycle?.Delete();
         Citizen?.Delete();
@@ -101,7 +101,9 @@ internal partial class UnicyclePlayer : Sandbox.Player
 		if ( !Fallen )
         {
             var controller = GetActiveController();
-            controller?.Simulate( cl, this, GetActiveAnimator() );
+            controller?.Simulate( cl, this );
+
+			UpdateAnimation();
 
             if ( GetActiveController() == DevController )
             {
@@ -139,6 +141,8 @@ internal partial class UnicyclePlayer : Sandbox.Player
 	{
 		base.FrameSimulate( cl );
 
+		UpdateCamera();
+		
 		if ( !IsLocalPawn ) return;
 
 		TimePlayedCounter += Time.Delta;
@@ -148,16 +152,16 @@ internal partial class UnicyclePlayer : Sandbox.Player
 		MapStats.Local.AddTimePlayed( 1f );
 	}
 
-	public override void PostCameraSetup( ref CameraSetup setup )
+	public void UpdateCamera()
 	{
-		base.PostCameraSetup( ref setup );
+		UnicycleCamera.Update();
 
-		setup.Rotation *= Rotation.From( Tilt * .015f );
+		Camera.Rotation *= Rotation.From( Tilt * .015f );
 
-		BaseCameraModifier.PostCameraSetup( ref setup );
+		BaseCameraModifier.PostCameraSetup();
 	}
 
-	[Event.Frame]
+	[Event.Client.Frame]
     private void UpdateRenderAlpha()
     {
         if ( Local.Pawn == this ) return;
@@ -170,7 +174,8 @@ internal partial class UnicyclePlayer : Sandbox.Player
 
 	private float targetSpeedParticle;
 	private float currentSpeedParticle;
-	[Event.Frame]
+	
+	[Event.Client.Frame]
 	private void UpdateSpeedParticle()
 	{
 		if ( SpeedParticle == null ) return;
@@ -221,7 +226,7 @@ internal partial class UnicyclePlayer : Sandbox.Player
     [ClientRpc]
     private void SetAchievementOnClient( string shortname, string map = null )
     {
-        Achievement.Set( Client.PlayerId, shortname, map );
+        Achievement.Set( Client.SteamId, shortname, map );
     }
 
     private TimeSince timeSinceSpray;

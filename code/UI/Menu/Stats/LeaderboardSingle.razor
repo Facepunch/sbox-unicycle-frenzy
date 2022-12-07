@@ -98,7 +98,7 @@
                 {
                     var time = pl.CourseIncomplete ? 0f : pl.BestTime;
 
-                    Entries.Add(new(++srank, pl.Client.Name, time, pl.Client.PlayerId));
+                    Entries.Add(new(++srank, pl.Client.Name, time, pl.Client.SteamId));
                 }
                 break;
         }

@@ -3,14 +3,17 @@ using Sandbox;
 using System;
 using System.Collections.Generic;
 
-internal class UnicycleCamera : CameraMode
+internal class UnicycleCamera
 {
-
+	public Vector3 Position { get; set; }
+	public Rotation Rotation { get; set; }
+	public float FieldOfView { get; set; }
+	
 	private List<UfProp> viewblockers = new();
 	private List<Checkpoint> cpviewblockers = new();
 	private Angles ViewAngles;
 
-	public override void Update()
+	public void Update()
 	{
 		var pawn = Local.Pawn as UnicyclePlayer;
 
@@ -61,42 +64,41 @@ internal class UnicycleCamera : CameraMode
 		}
 
 		var spd = pawn.Velocity.WithZ( 0 ).Length / 350f;
-		var fov = 72f.LerpTo( 92f, spd );
+		var fov = 62f.LerpTo( 82f, spd );
 
 		FieldOfView = FieldOfView.LerpTo( fov, Time.Delta );
+
+		Camera.Position = Position;
+		Camera.Rotation = Rotation;
+		Camera.FirstPersonViewer = null;
+		Camera.FieldOfView = Screen.CreateVerticalFieldOfView( FieldOfView );
 	}
 
-	public override void BuildInput()
+	public void BuildInput()
 	{
-		base.BuildInput();
-
-		if ( Local.Pawn is UnicyclePlayer pl )
+		if ( Local.Pawn is not UnicyclePlayer pl )
+			return;
+		
+		var diff = Rotation.Difference( Rotation.From( 0, pl.ViewAngles.yaw, 0 ), Rotation.From( 0, pl.Rotation.Yaw(), 0 ) );
+		if( diff.Angle() > 170 )
 		{
-			var diff = Rotation.Difference( Rotation.From( 0, pl.ViewAngles.yaw, 0 ), Rotation.From( 0, pl.Rotation.Yaw(), 0 ) );
-			if( diff.Angle() > 170 )
-			{
-				Input.AnalogLook = default;
-			}
-
-			if ( !Input.UsingController ) return;
-
-			// controllers get special handling so update ViewAngles here
-			pl.ViewAngles = Rotation.Angles();
+			Input.AnalogLook = default;
 		}
+
+		if ( !Input.UsingController ) return;
+
+		// controllers get special handling so update ViewAngles here
+		pl.ViewAngles = Rotation.Angles();
+		
 	}
 
-	public override void Activated()
+	public void Activated()
 	{
-		base.Activated();
-
 		FieldOfView = 85;
-		Viewer = null;
 	}
 
-	public override void Deactivated()
+	public void Deactivated()
 	{
-		base.Deactivated();
-
 		ClearViewBlockers();
 	}
 
@@ -115,7 +117,7 @@ internal class UnicycleCamera : CameraMode
 
 	private void UpdateViewBlockers( UnicyclePlayer pawn )
 	{
-		var traces = Trace.Sphere( 3f, CurrentView.Position, pawn.Position + Vector3.Up * 16 ).RunAll();
+		var traces = Trace.Sphere( 3f, Camera.Position, pawn.Position + Vector3.Up * 16 ).RunAll();
 
 		if ( traces == null ) return;
 

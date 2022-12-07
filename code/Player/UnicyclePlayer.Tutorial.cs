@@ -16,7 +16,7 @@ partial class UnicyclePlayer
 
 	private TimeSince tsVelocityLow;
 
-	[Event.Frame]
+	[Event.Client.Frame]
 	private void OnFrame()
 	{
 		if ( !Unicycle.IsValid() ) return;

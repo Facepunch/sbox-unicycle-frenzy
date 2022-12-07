@@ -24,7 +24,7 @@
     {
         base.OnParametersSet();
 
-        SetClass("me", PlayerId == Local.Client.PlayerId);
+        SetClass("me", PlayerId == Local.Client.SteamId);
         SetClass("friend", new Friend(PlayerId).IsFriend);
     }
 

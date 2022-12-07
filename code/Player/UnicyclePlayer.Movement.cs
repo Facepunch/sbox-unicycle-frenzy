@@ -46,7 +46,7 @@ internal partial class UnicyclePlayer
 
 		Sound.FromWorld( "unicycle.crash.default", Position );
 
-		Game.Current.DoPlayerSuicide( Client );
+		TakeDamage( DamageInfo.Generic( 1000f ) );
 
 		Event.Run( "unicycle.fall", this );
 

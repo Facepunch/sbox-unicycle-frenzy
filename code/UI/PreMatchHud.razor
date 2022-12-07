@@ -10,7 +10,7 @@
     private float TimeLeft = 20;
     private TimeSince TimeSincePulse;
 
-    [Event.Frame]
+    [Event.Client.Frame]
     private void OnFrame()
     {
         if (UnicycleFrenzy.Game.GameState != UnicycleFrenzy.GameStates.PreMatch)
