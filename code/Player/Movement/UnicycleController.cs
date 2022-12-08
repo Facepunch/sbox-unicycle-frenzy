@@ -63,7 +63,6 @@ internal partial class UnicycleController : BasePlayerController
 			DebugOverlay.Text( "Grounded: " + (GroundEntity != null), Position + Vector3.Down * 6 );
 			DebugOverlay.Text( "GroundNormal: " + GroundNormal, Position + Vector3.Down * 9 );
 			DebugOverlay.Text( "Surface: " + pl.SurfaceFriction, Position + Vector3.Down * 12 );
-			DebugOverlay.Text( "Water Level: " + Pawn.WaterLevel, Position + Vector3.Down * 15 );
 			DebugOverlay.Text( "Tilt: " + pl.Tilt, Position + Vector3.Down * 18 );
 
 			DebugOverlay.Line( Position, Position + Velocity, Color.Yellow );
