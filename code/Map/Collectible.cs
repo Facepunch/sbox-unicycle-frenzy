@@ -1,6 +1,6 @@
 ﻿
 using Sandbox;
-using SandboxEditor;
+using Editor;
 using System;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;

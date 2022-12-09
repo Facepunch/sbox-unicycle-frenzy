@@ -16,7 +16,6 @@
   ],
   "HasCode": true,
   "CodePath": "code",
-  "RootNamespace": "Sandbox",
   "Metadata": {
     "MapList": [
       "facepunch.uf_quarry",

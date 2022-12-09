@@ -1,6 +1,6 @@
 ﻿
 using Sandbox;
-using SandboxEditor;
+using Editor;
 using System.ComponentModel.DataAnnotations;
 
 [Library( "uf_trigger_reset_progress", Description = "Resets the player's progress by clearing checkpoints" )]

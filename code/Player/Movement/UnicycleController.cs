@@ -1,7 +1,5 @@
-﻿
-using System;
-using System.Numerics;
-using Sandbox;
+﻿using System.Numerics;
+using Sandbox.Utility;
 
 internal partial class UnicycleController : BasePlayerController
 {

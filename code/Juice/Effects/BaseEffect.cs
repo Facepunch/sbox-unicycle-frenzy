@@ -1,6 +1,7 @@
 ﻿
 using Sandbox;
 using Sandbox.UI;
+using Sandbox.Utility;
 
 public abstract class BaseEffect
 {
@@ -74,22 +75,22 @@ public abstract class BaseEffect
 		switch( Easing )
 		{
 			case EasingType.EaseIn:
-				t = Sandbox.Easing.EaseIn( t );
+				t = Sandbox.Utility.Easing.EaseIn( t );
 				break;
 			case EasingType.EaseOut:
-				t = Sandbox.Easing.EaseOut( t );
+				t = Sandbox.Utility.Easing.EaseOut( t );
 				break;
 			case EasingType.EaseInOut:
-				t = Sandbox.Easing.EaseInOut( t );
+				t = Sandbox.Utility.Easing.EaseInOut( t );
 				break;
 			case EasingType.BounceIn:
-				t = Sandbox.Easing.BounceIn( t );
+				t = Sandbox.Utility.Easing.BounceIn( t );
 				break;
 			case EasingType.BounceOut:
-				t = Sandbox.Easing.BounceOut( t );
+				t = Sandbox.Utility.Easing.BounceOut( t );
 				break;
 			case EasingType.BounceInOut:
-				t = Sandbox.Easing.BounceInOut( t );
+				t = Sandbox.Utility.Easing.BounceInOut( t );
 				break;
 		}
 

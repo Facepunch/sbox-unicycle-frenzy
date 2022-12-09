@@ -1,6 +1,6 @@
 ﻿
 using Sandbox;
-using SandboxEditor;
+using Editor;
 using System.ComponentModel.DataAnnotations;
 
 [Library( "uf_trigger_surface", Description = "Overrides surface friction in an area" )]

@@ -1,5 +1,5 @@
 ﻿using Sandbox;
-using SandboxEditor;
+using Editor;
 using System.ComponentModel.DataAnnotations;
 
 [Library( "uf_trigger_fall", Description = "Makes the player fall" )]

@@ -1,6 +1,7 @@
 ﻿
 using System;
 using Sandbox;
+using Sandbox.Utility;
 
 class FallCameraModifier : BaseCameraModifier
 {
