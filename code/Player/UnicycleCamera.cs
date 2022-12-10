@@ -15,7 +15,7 @@ internal class UnicycleCamera
 
 	public void Update()
 	{
-		var pawn = Local.Pawn as UnicyclePlayer;
+		var pawn = Game.LocalPawn as UnicyclePlayer;
 
 		if ( pawn == null ) return;
 		if ( pawn.SpectateTarget.IsValid() ) pawn = pawn.SpectateTarget;
@@ -76,7 +76,7 @@ internal class UnicycleCamera
 
 	public void BuildInput()
 	{
-		if ( Local.Pawn is not UnicyclePlayer pl )
+		if ( Game.LocalPawn is not UnicyclePlayer pl )
 			return;
 		
 		var diff = Rotation.Difference( Rotation.From( 0, pl.ViewAngles.yaw, 0 ), Rotation.From( 0, pl.Rotation.Yaw(), 0 ) );

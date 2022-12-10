@@ -60,7 +60,7 @@
     {
         base.Tick();
 
-        if (Local.Pawn is not UnicyclePlayer pl) return;
+        if (Game.LocalPawn is not UnicyclePlayer pl) return;
 
         SetClass("is-spectating", pl.SpectateTarget != null);
     }

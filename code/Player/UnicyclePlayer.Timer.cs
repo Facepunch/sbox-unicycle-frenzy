@@ -71,21 +71,21 @@ internal partial class UnicyclePlayer
 			if ( medalThresholds.IsValid() )
 			{
 				if( TimeSinceStart <= medalThresholds.Bronze )
-					SetAchievementOnClient( To.Single( Client ), "uf_bronze", Global.MapName );
+					SetAchievementOnClient( To.Single( Client ), "uf_bronze", Game.Server.MapIdent );
 				if ( TimeSinceStart <= medalThresholds.Silver )
-					SetAchievementOnClient( To.Single( Client ), "uf_silver", Global.MapName );
+					SetAchievementOnClient( To.Single( Client ), "uf_silver", Game.Server.MapIdent );
 				if ( TimeSinceStart <= medalThresholds.Gold )
-					SetAchievementOnClient( To.Single( Client ), "uf_gold", Global.MapName );
+					SetAchievementOnClient( To.Single( Client ), "uf_gold", Game.Server.MapIdent );
 			}
 
 			if( FallCount == 0 )
 			{
-				SetAchievementOnClient( To.Single( Client ), "uf_expert", Global.MapName );
+				SetAchievementOnClient( To.Single( Client ), "uf_expert", Game.Server.MapIdent );
 			}
 
-			if ( Global.MapName.EndsWith( "uf_tutorial" ) )
+			if ( Game.Server.MapIdent.EndsWith( "uf_tutorial" ) )
 			{
-				SetAchievementOnClient( To.Single( Client ), "uf_complete_tutorial", Global.MapName );
+				SetAchievementOnClient( To.Single( Client ), "uf_complete_tutorial", Game.Server.MapIdent );
 			}
 
 			if ( TimeSinceStart < BestTime )
@@ -103,7 +103,7 @@ internal partial class UnicyclePlayer
 				BestTime = TimeSinceStart;
 
 				var ms = (int)(BestTime * 1000);
-				var result = await LeaderboardHelper.SubmitScore( Client, ms );
+				//var result = await LeaderboardHelper.SubmitScore( Client, ms );
 
 				// we can print new rank, old rank, improvement, etc from score result
 			}
@@ -126,14 +126,14 @@ internal partial class UnicyclePlayer
 
 	public void ClearCheckpoints()
 	{
-		Host.AssertServer();
+		Game.AssertServer();
 
 		Checkpoints.Clear();
 	}
 
 	public void TrySetCheckpoint( Checkpoint checkpoint, bool overridePosition = false )
 	{
-		Host.AssertServer();
+		Game.AssertServer();
 
 		Event.Run( "unicycle.checkpoint.touch", this );
 
@@ -160,7 +160,7 @@ internal partial class UnicyclePlayer
 
 	public void GotoBestCheckpoint()
 	{
-		Host.AssertServer();
+		Game.AssertServer();
 
 		var cp = Checkpoints.LastOrDefault();
 		if ( !cp.IsValid() )

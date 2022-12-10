@@ -6,13 +6,13 @@ using System.Threading.Tasks;
 internal static class LeaderboardHelper
 {
 
-	private static Leaderboard? Current;
-	private static string CurrentName => GetLeaderboardName( Global.MapName, TrailPass.CurrentSeason );
+	//private static Global.Service.Leaderboard? Current;
+	private static string CurrentName => GetLeaderboardName( Game.Server.MapIdent, TrailPass.CurrentSeason );
 
-	public static async Task<LeaderboardUpdate?> SubmitScore( Client client, int score )
+	public static async Task SubmitScore( IClient client, int score )
 	{
-		Host.AssertServer();
-
+		Game.AssertServer();
+		/*
 		if ( !await EnsureCurrentLeaderboard() )
 		{
 			Log.Error( "Failed to find or create leaderboard: " + CurrentName );
@@ -26,35 +26,19 @@ internal static class LeaderboardHelper
 		}
 
 		return await Current.Value.Submit( client, score );
+		*/
 	}
 
-	public static async Task<List<LeaderboardEntry>> FetchScores()
+	public static async Task<List<int>> FetchScores()
 	{
-		var result = new List<LeaderboardEntry>();
-
-		if( !await EnsureCurrentLeaderboard() )
-		{
-			Log.Error( "Failed to find or create leaderboard: " + CurrentName );
-			return result;
-		}
-
-		var query = await Current.Value.GetGlobalScores( 100 );
-		if( query != null )
-		{
-			result.AddRange( query );
-		}
+		var result = new List<int>();
 
 		return result;
 	}
 
 	private static async Task<bool> EnsureCurrentLeaderboard()
 	{
-		Current ??= await Leaderboard.FindOrCreate( CurrentName, true );
-
-		if ( Current == null )
-			return false;
-
-		return true;
+		return false;
 	}
 
 	private static string GetLeaderboardName( string mapIdent, int season, string bucket = "standard" )

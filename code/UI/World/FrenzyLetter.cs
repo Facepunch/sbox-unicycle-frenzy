@@ -31,12 +31,12 @@ internal class FrenzyLetter : WorldPanel
 	private void OnFrame()
 	{
 		var position = Collectible.Position + Vector3.Up * 32;
-		var holding = Collectible.Holders.Contains( Local.Pawn as UnicyclePlayer );
-		var owning = Owning || Collectible.Owners.Contains( Local.Pawn as UnicyclePlayer );
+		var holding = Collectible.Holders.Contains( Game.LocalPawn as UnicyclePlayer );
+		var owning = Owning || Collectible.Owners.Contains( Game.LocalPawn as UnicyclePlayer );
 
 		if ( holding )
 		{
-			position = Local.Pawn.Position + PositionOffset * 32f + Vector3.Up * 24f;
+			position = Game.LocalPawn.Position + PositionOffset * 32f + Vector3.Up * 24f;
 		}
 		
 		var offs = (float)Math.Sin( Time.Now );

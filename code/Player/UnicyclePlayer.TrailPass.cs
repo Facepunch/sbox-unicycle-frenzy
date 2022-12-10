@@ -7,7 +7,7 @@ internal partial class UnicyclePlayer
 	[ClientRpc]
 	public void AddTrailPassExperience( int amount )
 	{
-		Host.AssertClient();
+		Game.AssertClient();
 
 		if ( !IsLocalPawn ) return;
 
@@ -36,7 +36,7 @@ internal partial class UnicyclePlayer
 	[Event( "achievement.set" )]
 	public void OnAchievementSet( string shortname )
 	{
-		Host.AssertClient();
+		Game.AssertClient();
 
 		if ( TrailPass.Current.TryGetAchievement( shortname, out var ach ) )
 		{

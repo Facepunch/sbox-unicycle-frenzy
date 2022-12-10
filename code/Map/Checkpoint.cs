@@ -200,7 +200,7 @@ internal partial class Checkpoint : ModelEntity
 	[Event.Client.Frame]
 	private void OnFrame()
 	{
-		if ( Local.Pawn is not UnicyclePlayer pl ) return;
+		if ( Game.LocalPawn is not UnicyclePlayer pl ) return;
 		if ( this.IsEnd || this.IsStart ) return;
 
 		var isLatestCheckpoint = pl.Checkpoints.LastOrDefault() == this;

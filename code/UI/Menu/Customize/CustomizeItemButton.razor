@@ -28,7 +28,7 @@
             return;
         }
 
-        var customization = Local.Client.Components.Get<CustomizationComponent>();
+        var customization = Game.LocalClient.Components.Get<CustomizationComponent>();
         customization.Equip(Part);
 
         this.CreateEvent("part equipped");
@@ -41,7 +41,7 @@
         if (Part == null) return;
 
         var canequip = Part.CanEquip();
-        var customization = Local.Client.Components.Get<CustomizationComponent>();
+        var customization = Game.LocalClient.Components.Get<CustomizationComponent>();
         SetClass("is-selected", customization.IsEquipped(Part));
         SetClass("is-locked", !canequip);
 

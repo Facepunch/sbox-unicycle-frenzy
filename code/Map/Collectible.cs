@@ -43,7 +43,7 @@ internal partial class Collectible : UfProp
 
 	public void SetTouched( bool touched )
 	{
-		Host.AssertServer();
+		Game.AssertServer();
 
 		Touched = touched;
 

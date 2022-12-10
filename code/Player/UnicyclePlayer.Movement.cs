@@ -84,7 +84,7 @@ internal partial class UnicyclePlayer
 
 		if ( !overrideRot ) return;
 
-		if ( Local.Pawn is Player pl )
+		if ( Game.LocalPawn is Player pl )
 			pl.ViewAngles = rotOverride.Angles();
 
 		overrideRot = false;

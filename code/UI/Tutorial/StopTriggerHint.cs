@@ -19,7 +19,7 @@ internal class StopTriggerHint : Panel
 	{
 		base.Tick();
 
-		if ( Local.Pawn is not UnicyclePlayer pl )
+		if ( Game.LocalPawn is not UnicyclePlayer pl )
 			return;
 
 		var wasopen = HasClass( "open" );

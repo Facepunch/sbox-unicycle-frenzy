@@ -48,7 +48,7 @@ internal partial class FrenzyCollectible : Collectible
 
 	public bool IsHidden()
 	{
-		if ( Local.Pawn is not UnicyclePlayer pl )
+		if ( Game.LocalPawn is not UnicyclePlayer pl )
 			return false;
 
 		if ( Holders.Contains( pl ) )
@@ -63,7 +63,7 @@ internal partial class FrenzyCollectible : Collectible
 	[Event.Client.Frame]
 	private void OnFrame()
 	{
-		if ( Local.Pawn is not UnicyclePlayer pl )
+		if ( Game.LocalPawn is not UnicyclePlayer pl )
 			return;
 
 		Light.Enabled = !IsHidden();
@@ -115,7 +115,7 @@ internal partial class FrenzyCollectible : Collectible
 
 		if( result == FrenzyCollectionHelper.Result.Completed )
 		{
-			Achievement.Set( Local.SteamId, "uf_frenzy", Global.MapName );
+			Achievement.Set( Game.SteamId, "uf_frenzy", Game.Server.MapIdent );
 		}
 	}
 

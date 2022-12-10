@@ -59,7 +59,7 @@ internal partial class UnicyclePlayer
 
 		var corpse = RagdollModel( Citizen );
 
-		if ( Local.Pawn is UnicyclePlayer pl && ( IsLocalPawn || pl.SpectateTarget == this ) )
+		if ( Game.LocalPawn is UnicyclePlayer pl && ( IsLocalPawn || pl.SpectateTarget == this ) )
 		{
 			pl.Corpse = corpse;
 			// TODO: SCREENSHAKE

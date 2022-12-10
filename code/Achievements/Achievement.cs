@@ -17,14 +17,14 @@ internal partial class Achievement : GameResource
 
 	public bool IsCompleted()
 	{
-		var map = PerMap ? Global.MapName : MapName;
-		var playerid = Local.SteamId;
+		var map = PerMap ? Game.Server.MapIdent : MapName;
+		var playerid = Game.SteamId;
 		return AchievementCompletion.Query( playerid, map ).Any( x => x.ShortName == ShortName );
 	}
 
 	public static IEnumerable<Achievement> FetchForMap( string mapName = null )
 	{
-		mapName ??= Global.MapName;
+		mapName ??= Game.Server.MapIdent;
 
 		return All.Where( x => ( x.MapName != null && x.MapName.EndsWith( mapName ) ) || x.PerMap );
 	}
@@ -49,7 +49,7 @@ internal partial class Achievement : GameResource
 
 	public static void Set( long playerid, string shortname, string map = null )
 	{
-		Host.AssertClient();
+		Game.AssertClient();
 
 		var achievements = !string.IsNullOrEmpty( map )
 			? FetchForMap( map )

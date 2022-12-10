@@ -55,7 +55,7 @@ internal class MapStats
 		Event.Run( "mapstats.ontimeplayed", TimePlayed );
 	}
 
-	private void Save() => Cookie.Set( "unicycle.stats." + Global.MapName, this );
-	public static MapStats Local => Cookie.Get<MapStats>( "unicycle.stats." + Global.MapName, new() );
+	private void Save() => Cookie.Set( "unicycle.stats." + Game.Server.MapIdent, this );
+	public static MapStats Local => Cookie.Get<MapStats>( "unicycle.stats." + Game.Server.MapIdent, new() );
 
 }

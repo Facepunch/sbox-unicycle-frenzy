@@ -30,7 +30,7 @@
     {
         get
         {
-            if (Local.Pawn is not UnicyclePlayer pl) return 0f;
+            if (Game.LocalPawn is not UnicyclePlayer pl) return 0f;
             var target = pl.SpectateTarget ?? pl;
 
             return target.TimerState == TimerState.Live ? pl.TimeSinceStart : 0f;
@@ -40,7 +40,7 @@
     [Event("unicycle.checkpoint.set")]
     internal async void ShowCheckpointHint( UnicyclePlayer pl )
     {
-        if ( Local.Pawn != pl ) return;
+        if ( Game.LocalPawn != pl ) return;
 
         CheckpointText = "Checkpoint";
 

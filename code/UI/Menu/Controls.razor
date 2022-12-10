@@ -38,7 +38,7 @@
                         <label class="subtitle is-size-5 is-styled">Perfectly timed pedals give you a slight speed boost</label>
                     </div>
                     <div class="box-footer">
-                        <button class="button is-primary @(!Global.IsListenServer ? "hidden" : "visible")" @onclick=@TryPlayTutorial>
+                        <button class="button is-primary @(!Game.IsListenServer ? "hidden" : "visible")" @onclick=@TryPlayTutorial>
                             <div class="button-bg"></div>
                             <label>Play Tutorial</label>
                         </button>
@@ -93,7 +93,7 @@
 
     public void TryPlayTutorial()
 	{
-		if ( !Global.IsListenServer ) return;
+		if ( !Game.IsListenServer ) return;
 
 		UnicycleFrenzy.ServerCmd_ChangeMap( "facepunch.uf_tutorial" );
 	}

@@ -41,7 +41,7 @@ internal partial class UnicycleEntity : Entity
 
 	private void AssembleParts()
 	{
-		Host.AssertServer();
+		Game.AssertServer();
 
 		if ( Parent is not UnicyclePlayer pl ) return;
 

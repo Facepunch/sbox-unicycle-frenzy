@@ -54,7 +54,7 @@ public class CustomizationComponent : EntityComponent
 
 		Parts.Add( part );
 
-		if ( Host.IsClient )
+		if ( Game.IsClient )
 		{
 			EnsembleJson = Serialize();
 			EquipPartOnServer( part.ResourceName );
@@ -74,7 +74,7 @@ public class CustomizationComponent : EntityComponent
 
 		Parts.Remove( part );
 
-		if ( Host.IsClient )
+		if ( Game.IsClient )
 		{
 			EnsembleJson = Serialize();
 			UnequipPartOnServer( part.ResourceName );

@@ -107,7 +107,7 @@ internal class CustomizeRenderScene : Panel
 
 		unicycleObject?.Delete();
 
-		var ensemble = Local.Client.Components.Get<CustomizationComponent>();
+		var ensemble = Game.LocalClient.Components.Get<CustomizationComponent>();
 		unicycleObject = BuildUnicycleObject( ensemble );
 	}
 

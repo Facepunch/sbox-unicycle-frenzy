@@ -15,7 +15,7 @@ class FrenzyCollectionHelper
 
 	public static Result TryAdd( FrenzyCollectible.FrenzyLetter letter )
 	{
-		var cookiename = $"{Global.MapName}.frenzycollection1";
+		var cookiename = $"{Game.Server.MapIdent}.frenzycollection1";
 		Collection ??= Cookie.Get<List<FrenzyCollectible.FrenzyLetter>>( cookiename, new() );
 
 		FrenzyCollectionHud.Current.Display();
@@ -35,7 +35,7 @@ class FrenzyCollectionHelper
 
 	public static bool Contains( FrenzyCollectible.FrenzyLetter letter )
 	{
-		var cookiename = $"{Global.MapName}.frenzycollection1";
+		var cookiename = $"{Game.Server.MapIdent}.frenzycollection1";
 		Collection ??= Cookie.Get<List<FrenzyCollectible.FrenzyLetter>>( cookiename, new() );
 
 		return Collection.Contains( letter );

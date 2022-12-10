@@ -43,7 +43,7 @@ partial class UnicycleFrenzy : GameManager
 		}
 	}
 
-	public override void ClientJoined( Client cl )
+	public override void ClientJoined( IClient cl )
 	{
 		base.ClientJoined( cl );
 
@@ -62,7 +62,7 @@ partial class UnicycleFrenzy : GameManager
 		NotifyPlayersNeeded();
 	}
 
-	public override async void ClientDisconnect( Client cl, NetworkDisconnectionReason reason )
+	public override async void ClientDisconnect( IClient cl, NetworkDisconnectionReason reason )
 	{
 		base.ClientDisconnect( cl, reason );
 
@@ -74,7 +74,7 @@ partial class UnicycleFrenzy : GameManager
 		NotifyPlayersNeeded();
 	}
 
-	public override void OnKilled( Client client, Entity pawn )
+	public override void OnKilled( IClient client, Entity pawn )
 	{
 		base.OnKilled( client, pawn );
 
@@ -84,9 +84,9 @@ partial class UnicycleFrenzy : GameManager
 	private int lastFallMessage;
 	private string GetRandomFallMessage( string playerName )
 	{
-		var idx = Rand.Int( 0, fallMessages.Count - 1 );
+		var idx = Sandbox.Game.Random.Int( 0, fallMessages.Count - 1 );
 		while ( idx == lastFallMessage )
-			idx = Rand.Int( 0, fallMessages.Count - 1 );
+			idx = Sandbox.Game.Random.Int( 0, fallMessages.Count - 1 );
 
 		lastFallMessage = idx;
 		return string.Format( fallMessages[idx], playerName );

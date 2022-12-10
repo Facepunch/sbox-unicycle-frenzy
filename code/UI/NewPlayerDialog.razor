@@ -47,7 +47,7 @@ If you're the DIY type, close this dialog and pedal away
 
         if(firstTime)
         {
-            Open = !Global.MapName.EndsWith( "uf_tutorial" ) && !Cookie.Get( "uf.hasplayed", false );
+            Open = !Game.Server.MapIdent.EndsWith( "uf_tutorial" ) && !Cookie.Get( "uf.hasplayed", false );
 
             Cookie.Set( "uf.hasplayed", true );
         }
@@ -55,7 +55,7 @@ If you're the DIY type, close this dialog and pedal away
 
     public void LoadTutorial()
     {
-        if (!Global.IsListenServer)
+        if (!Game.IsListenServer)
         {
             Warning = true;
             StateHasChanged();

@@ -38,7 +38,7 @@ internal partial class UnicycleFrenzy
 		AwardExp();
 		await WaitStateTimer();
 
-		Global.ChangeLevel( NextMap );
+		Sandbox.Game.ChangeLevel( NextMap );
 	}
 
 	private async Task WaitStateTimer()
@@ -54,7 +54,7 @@ internal partial class UnicycleFrenzy
 
 	private bool CanStart()
 	{
-		return ForceStart || Client.All.Count >= 3;
+		return ForceStart || Sandbox.Game.Clients.Count >= 3;
 	}
 
 	private void AwardExp()
@@ -73,7 +73,7 @@ internal partial class UnicycleFrenzy
 
 	private void FreshStart()
 	{
-		foreach( var cl in Client.All )
+		foreach( var cl in Sandbox.Game.Clients )
 		{
 			if ( cl.Pawn is not UnicyclePlayer pl ) continue;
 			pl.ResetMovement();
@@ -89,7 +89,7 @@ internal partial class UnicycleFrenzy
 		if ( CanStart() ) return;
 
 		var needed = 3;
-		var current = Client.All.Count;
+		var current = Sandbox.Game.Clients.Count;
 
 		UfChat.AddChat( To.Everyone, "Server", $"{current} out of {needed} players needed to start", "alert", "chat.alert" );
 	}

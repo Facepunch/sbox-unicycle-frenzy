@@ -16,30 +16,30 @@ internal partial class UnicycleFrenzy
 
 	private async void InitMapCycle()
 	{
-		Host.AssertServer();
+		Sandbox.Game.AssertServer();
 
-		NextMap = Global.MapName;
+		NextMap = Sandbox.Game.Server.MapIdent;
 
 		var packages = await Package.FindAsync( "type:map game:facepunch.unicycle_frenzy", 16 );
 		var maps = packages.Packages.Select( x => x.FullIdent ).ToList();
 
-		var pkg = await Package.Fetch( Global.GameIdent, true );
+		var pkg = await Package.Fetch( Sandbox.Game.Server.GameIdent, true );
 		if ( pkg != null )
 		{
 			maps.AddRange( pkg.GetMeta<List<string>>( "MapList", new() ) );
 		}
 
-		MapOptions = maps.OrderBy( x => Rand.Int( 9999 ) )
+		MapOptions = maps.OrderBy( x => Sandbox.Game.Random.Int( 9999 ) )
 			.Distinct()
-			.Where( x => x != Global.MapName )
+			.Where( x => x != Sandbox.Game.Server.MapIdent )
 			.Take( 5 )
 			.ToList();
-		NextMap = Rand.FromList( MapOptions.ToList() );
+		NextMap = Sandbox.Game.Random.FromList( MapOptions.ToList() );
 	}
 
 	private async void ChangeMapWithDelay( string mapident, float delay )
 	{
-		Host.AssertServer();
+		Sandbox.Game.AssertServer();
 
 		delay *= 1000f;
 		var timer = 0f;
@@ -66,7 +66,7 @@ internal partial class UnicycleFrenzy
 	[ConCmd.Server]
 	public static void ServerCmd_ChangeMap( string mapident )
 	{
-		Global.ChangeLevel( mapident );
+		Sandbox.Game.ChangeLevel( mapident );
 	}
 
 	[ConCmd.Server]
@@ -101,7 +101,7 @@ internal partial class UnicycleFrenzy
 	{
 		if ( Game.GameState != GameStates.FreePlay ) return false;
 
-		var half = MathF.Ceiling( Client.All.Count / 2f );
+		var half = MathF.Ceiling( Sandbox.Game.Clients.Count / 2f );
 		if ( Game.MapVotes.Values.Count( x => x == mapIdent ) >= half ) return true;
 
 		return false;

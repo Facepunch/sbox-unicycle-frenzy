@@ -90,7 +90,7 @@ internal partial class UnicyclePlayer : Sandbox.Player
 		Nametag?.Delete();
 	}
 
-    public override void Simulate( Client cl )
+    public override void Simulate( IClient cl )
     {
 		// don't simulate when spectating somebody
         if ( SpectateTarget.IsValid() ) return;
@@ -134,7 +134,7 @@ internal partial class UnicyclePlayer : Sandbox.Player
     }
 
 	private float TimePlayedCounter;
-	public override void FrameSimulate( Client cl )
+	public override void FrameSimulate( IClient cl )
 	{
 		base.FrameSimulate( cl );
 
@@ -161,7 +161,7 @@ internal partial class UnicyclePlayer : Sandbox.Player
 	[Event.Client.Frame]
     private void UpdateRenderAlpha()
     {
-        if ( Local.Pawn == this ) return;
+        if ( Game.LocalPawn == this ) return;
         if ( !Citizen.IsValid() || !Unicycle.IsValid() ) return;
 
         var a = GetRenderAlpha();
@@ -189,9 +189,9 @@ internal partial class UnicyclePlayer : Sandbox.Player
 
 	public float GetRenderAlpha()
 	{
-		if ( !Local.Pawn.IsValid() ) return 1f;
+		if ( !Game.LocalPawn.IsValid() ) return 1f;
 
-		var dist = Local.Pawn.Position.Distance( Position );
+		var dist = Game.LocalPawn.Position.Distance( Position );
 		var a = 1f - dist.LerpInverse( MaxRenderDistance, MaxRenderDistance * .1f );
 		a = Math.Max( a, .15f );
 		a = Easing.EaseOut( a );

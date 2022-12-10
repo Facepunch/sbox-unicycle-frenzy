@@ -18,7 +18,7 @@
         <div class="list">
             <div class="row">
                 <label class="title">Name</label>
-                <label class="subtitle">@Global.MapName</label>
+                <label class="subtitle">@Game.Server.MapIdent</label>
             </div>
             <div class="row">
                 <label class="title">Falls</label>
@@ -53,7 +53,7 @@
 
     protected override async Task OnParametersSetAsync()
     {
-        var pgk = await Package.Fetch(Global.MapName, true);
+        var pgk = await Package.Fetch(Game.Server.MapIdent, true);
         if (pgk == null) return;
         ThumbnailUrl = pgk.Thumb;
         StateHasChanged();

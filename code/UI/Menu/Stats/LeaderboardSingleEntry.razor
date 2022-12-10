@@ -24,13 +24,13 @@
     {
         base.OnParametersSet();
 
-        SetClass("me", PlayerId == Local.Client.SteamId);
+        SetClass("me", PlayerId == Game.LocalClient.SteamId);
         SetClass("friend", new Friend(PlayerId).IsFriend);
     }
 
     //public void SpectateThisPlayer()
     //{
-    //    var cl = Client.All.FirstOrDefault(x => x.PlayerId == playerid);
+    //    var cl = Game.Clients.FirstOrDefault(x => x.PlayerId == playerid);
     //    if (cl == null) return;
     //    if (!cl.Pawn.IsValid()) return;
 

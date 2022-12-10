@@ -19,7 +19,7 @@
 
     public override void Tick()
     {
-        if (Local.Pawn is not UnicyclePlayer player) return;
+        if (Game.LocalPawn is not UnicyclePlayer player) return;
         if (player.Controller is not UnicycleController controller) return;
 
         var maxLean = controller.MaxLean;

@@ -32,7 +32,7 @@ partial class UnicyclePlayer
 	[Event("collection.complete")]
 	public void OnCollectionComplete( string collection )
 	{
-		if ( !Host.IsServer ) return;
+		if ( !Game.IsServer ) return;
 		if ( !string.Equals( collection, "collection_tutorial" ) ) return;
 
 		var ent = Entity.All.FirstOrDefault( x => x is DoorEntity && x.Name == "tut_door" ) as DoorEntity;

@@ -431,7 +431,7 @@ internal partial class UnicycleController : BasePlayerController
 		var seed = pl.NetworkIdent + ( Time.Tick / 50f );
 		t = seed - (int)seed;
 
-		Rand.SetSeed( (int)seed );
+		Game.SetRandomSeed( (int)seed );
 		var tilt = Angles.Random.WithYaw( 0 );
 		tilt.roll *= 2f;
 
@@ -575,7 +575,7 @@ internal partial class UnicycleController : BasePlayerController
 	private void DoBrakeTrail( bool brakingNow, bool wasBraking )
 	{
 		if ( brakingNow == wasBraking ) return;
-		if ( Host.IsClient ) return;
+		if ( Game.IsClient ) return;
 
 		if( brakingNow )
 		{

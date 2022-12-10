@@ -23,7 +23,7 @@
     {
         base.Tick();
 
-        if (Local.Pawn is not UnicyclePlayer pl)
+        if (Game.LocalPawn is not UnicyclePlayer pl)
         {
             ControlHints.SetClass("open", false);
             return;
