@@ -139,19 +139,19 @@ internal partial class UnicycleEntity : Entity
 		var targetPitch = 0f.LerpTo( 180, pedalAlpha );
 		var targetRot = Rotation.From( targetPitch, 0, 0 );
 
-		if ( IsServer && Pedals.IsValid() )
+		if ( Game.IsServer && Pedals.IsValid() )
 		{
 			var ang = targetRot.Angle() - Pedals.LocalRotation.Angle();
 			Pedals.LocalRotation = Pedals.LocalRotation.RotateAroundAxis( Vector3.Left, Math.Abs( ang ) * Time.Delta * 10 );
 		}
 
-		if ( IsClient && localPawnPedals.IsValid() )
+		if ( Game.IsClient && localPawnPedals.IsValid() )
 		{
 			var ang = targetRot.Angle() - localPawnPedals.LocalRotation.Angle();
 			localPawnPedals.LocalRotation = localPawnPedals.LocalRotation.RotateAroundAxis( Vector3.Left, Math.Abs( ang ) * Time.Delta * 10 );
 		}
 
-		if ( IsServer && WheelPivot.IsValid() )
+		if ( Game.IsServer && WheelPivot.IsValid() )
 		{
 			var wheelRadius = Wheel.GetAttachment( "hud", false )?.Position.z ?? 12f;
 			var angularSpeed = 180f * pl.Velocity.WithZ( 0 ).Length / ((float)Math.PI * wheelRadius);

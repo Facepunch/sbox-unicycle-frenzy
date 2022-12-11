@@ -14,7 +14,7 @@ internal partial class ResetProgressTrigger : BaseTrigger
 	{
 		base.StartTouch( other );
 
-		if ( !other.IsServer ) return;
+		if ( !Game.IsServer ) return;
 		if ( other is not UnicyclePlayer pl ) return;
 
 		pl.ClearCheckpoints();

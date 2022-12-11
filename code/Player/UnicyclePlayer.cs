@@ -108,7 +108,7 @@ internal partial class UnicyclePlayer : Sandbox.Player
                 ResetTimer();
             }
 
-            if ( IsServer && InputActions.Spray.Pressed() )
+            if ( Game.IsServer && InputActions.Spray.Pressed() )
             {
                 Spray();
             }
@@ -116,7 +116,7 @@ internal partial class UnicyclePlayer : Sandbox.Player
 
         if ( Fallen )
         {
-            if ( IsServer && TimeSinceDied > RespawnDelay )
+            if ( Game.IsServer && TimeSinceDied > RespawnDelay )
                 Respawn();
         }
 

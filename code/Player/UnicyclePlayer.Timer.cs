@@ -59,7 +59,7 @@ internal partial class UnicyclePlayer
 	{
 		TimerState = TimerState.Finished;
 
-		if( IsServer )
+		if( Game.IsServer )
 		{
 			ClearCheckpoints();
 
@@ -118,7 +118,7 @@ internal partial class UnicyclePlayer
 		TimeSinceStart = 0;
 		FallCount = 0;
 
-		if ( IsServer )
+		if ( Game.IsServer )
 		{
 			ClearCheckpoints();
 		}

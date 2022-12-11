@@ -19,7 +19,7 @@ public class CustomizationComponent : EntityComponent
 	{
 		base.OnActivate();
 
-		if ( Entity.IsClient )
+		if ( Game.IsClient )
 		{
 			Deserialize( EnsembleJson );
 		}

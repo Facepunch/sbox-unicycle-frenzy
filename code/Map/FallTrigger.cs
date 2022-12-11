@@ -13,7 +13,7 @@ internal partial class FallTrigger : BaseTrigger
 	{
 		base.StartTouch( other );
 
-		if ( !other.IsServer ) return;
+		if ( !Game.IsServer ) return;
 		if ( other is not UnicyclePlayer pl ) return;
 
 		pl.Fall();

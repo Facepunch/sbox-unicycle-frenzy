@@ -24,12 +24,12 @@ partial class UnicycleFrenzy : GameManager
 
 	public UnicycleFrenzy()
 	{
-		if ( IsClient )
+		if ( Sandbox.Game.IsClient )
 		{
 			new UnicycleRootPanel();
 		}
 
-		if ( IsServer )
+		if ( Sandbox.Game.IsServer )
 		{
 			foreach( var part in ResourceLibrary.GetAll<CustomizationPart>() )
 			{

@@ -59,7 +59,7 @@ internal partial class Collectible : UfProp
 		base.StartTouch( other );
 
 		if ( Touched ) return;
-		if ( IsClient ) return;
+		if ( Game.IsClient ) return;
 		if ( other is not UnicyclePlayer pl ) return;
 		if ( pl.Fallen ) return;
 
