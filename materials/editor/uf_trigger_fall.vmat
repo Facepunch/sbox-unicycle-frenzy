@@ -1,24 +1,15 @@
-// THIS FILE IS AUTO-GENERATED
-
-Layer0
+"Layer0"
 {
-	shader "tools_generic.vfx"
-
-	//---- Translucent ----
-	F_TRANSLUCENT 1
-
-	//---- Color ----
-	g_vColorTint "[1.000000 1.000000 1.000000 0.000000]"
-	g_vTexCoordOffset "[0.000 0.000]"
-	g_vTexCoordScale "[1.000 1.000]"
-	TextureColor "materials/editor/uf_trigger_fall.png"
-
-	//---- Translucent ----
-	g_flOpacityScale "0.250"
-	TextureTranslucency "materials/default/default_trans.tga"
-
-	Attributes
+	"shader"		"shaders/tools_generic.shader_c"
+	"F_TRANSLUCENT"		"1"
+	"g_vColorTint"		"[1.000000 1.000000 1.000000 0.000000]"
+	"g_vTexCoordOffset"		"[0.000 0.000]"
+	"g_vTexCoordScale"		"[1.000 1.000]"
+	"TextureColor"		"materials/editor/uf_trigger_fall.png"
+	"g_flOpacityScale"		"0.250000"
+	"TextureTranslucency"		"materials/default/default_trans.tga"
+	"Attributes"
 	{
-		tools.toolsmaterial "1"
+		"tools.toolsmaterial"		"1"
 	}
 }
