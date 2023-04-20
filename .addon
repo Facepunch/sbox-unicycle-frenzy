@@ -89,6 +89,75 @@
     "Description": "Post feedback and issues here: https://github.com/Facepunch/sbox-unicycle-frenzy\r\n\r\nPress Tab in-game to see controls and customize your unicycle",
     "Public": true,
     "ReplaceTags": "racing unicycle sports",
-    "CsProjName": ""
+    "CsProjName": "",
+    "InputSettings": {
+      "Actions": [
+        {
+          "Name": "brake",
+          "KeyboardCode": "ctrl",
+          "GroupName": "Movement"
+        },
+        {
+          "Name": "jump",
+          "KeyboardCode": "space",
+          "GroupName": "Movement"
+        },
+        {
+          "Name": "restart_checkpoint",
+          "KeyboardCode": "r",
+          "GroupName": "Timer"
+        },
+        {
+          "Name": "restart_course",
+          "KeyboardCode": "g",
+          "GroupName": "Timer"
+        },
+        {
+          "Name": "pedal_left",
+          "KeyboardCode": "mouse1",
+          "GroupName": "Movement"
+        },
+        {
+          "Name": "pedal_right",
+          "KeyboardCode": "mouse2",
+          "GroupName": "Movement"
+        },
+        {
+          "Name": "spray",
+          "KeyboardCode": "f",
+          "GroupName": "Misc"
+        },
+        {
+          "Name": "menu",
+          "KeyboardCode": "q",
+          "GroupName": "Misc"
+        },
+        {
+          "Name": "scoreboard",
+          "KeyboardCode": "tab",
+          "GroupName": "Misc"
+        },
+        {
+          "Name": "lean_left",
+          "KeyboardCode": "a",
+          "GroupName": "Movement"
+        },
+        {
+          "Name": "lean_right",
+          "KeyboardCode": "d",
+          "GroupName": "Movement"
+        },
+        {
+          "Name": "lean_forward",
+          "KeyboardCode": "w",
+          "GroupName": "Movement"
+        },
+        {
+          "Name": "lean_backward",
+          "KeyboardCode": "s",
+          "GroupName": "Movement"
+        }
+      ]
+    }
   }
 }

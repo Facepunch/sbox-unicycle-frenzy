@@ -2,28 +2,33 @@
 @inherits Panel
 
 <root>
-    <label @ref="ActionName" class="name"></label>
+    <label class="name" text="@actionName" />
     <div @ref="Icon" class="icon">
         <div class="charge"></div>
     </div>
+    @if ( glyphTexture == null )
+    {
+        <label class="bind" text="@button" />
+    }
 </root>
 
 @code {
-    public Label ActionName { get; set; }
     public Panel Icon { get; set; }
 
-    private InputButton button;
-    private Texture customTexture;
+    private string actionName;
+    private string button;
+    private Texture glyphTexture;
 
-    public void Set(string name, InputButton button, bool hasCharge = false)
+    public void Set(string name, string button, bool hasCharge = false)
     {
         SetClass("open", true);
         SetClass("has-charge", hasCharge);
         Sound.FromScreen("sounds/misc/tutorial.hint.sound");
 
-        ActionName.Text = name;
-        customTexture = null;
+        actionName = name;
+        glyphTexture = null;
         this.button = button;
+        StateHasChanged();
     }
 
     public void Set(string name, InputActions action, bool hasCharge = false)
@@ -32,17 +37,24 @@
         SetClass("has-charge", hasCharge);
         Sound.FromScreen("sounds/misc/tutorial.hint.sound");
 
-        ActionName.Text = name;
-        customTexture = GetCustomTexture(action);
-        button = InputButton.Chat;
+        actionName = name;
+        glyphTexture = GetCustomTexture(action);
+        button = string.Empty;
+        StateHasChanged();
     }
 
     public override void Tick()
     {
         base.Tick();
 
-        var tex = customTexture ?? Input.GetGlyph(button, InputGlyphSize.Large, GlyphStyle.Knockout);
-        Icon.Style.BackgroundImage = tex;
+        if (glyphTexture != null)
+        {
+            Icon.Style.BackgroundImage = glyphTexture;
+        }
+        else
+        {
+            Icon.Style.BackgroundImage = null;
+        }
     }
 
     private Texture GetCustomTexture(InputActions action)

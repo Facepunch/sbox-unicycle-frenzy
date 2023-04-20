@@ -329,7 +329,11 @@ internal partial class UnicycleController : BasePlayerController
 		tilt = Angles.Lerp( tilt, Angles.Zero, recover * Time.Delta );
 
 		// tilt from input
-		var input = new Vector3( pl.InputDirection.x, 0, -pl.InputDirection.y );
+		var input = Vector3.Zero;
+		if ( InputActions.LeanLeft.Down() ) input.z = -1;
+		if ( InputActions.LeanRight.Down() ) input.z = 1;
+		if ( InputActions.LeanForward.Down() ) input.x = 1;
+		if ( InputActions.LeanBackward.Down() ) input.x = -1;
 
 		if ( input.x == 0 )
 		{
