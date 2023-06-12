@@ -36,7 +36,7 @@
 						name = "leaderboard_post"
 						parent_bone = ""
 						surface_prop = "default"
-						collision_prop = "default"
+						collision_tags = "solid"
 						recenter_on_parent_bone = false
 						offset_origin = [ 0.0, 0.0, 0.0 ]
 						offset_angles = [ 0.0, 90.0, 0.0 ]
@@ -65,15 +65,23 @@
 						[
 							{
 								from = "materials/hotspots/wood_a_hs.vmat"
-								to = "materials/hotspots/concrete_a_hs.vmat"
+								to = "materials/generic/floor_wooden_deck_a.vmat"
 							},
 							{
 								from = "materials/hotspots/wood_rotten_a_hs.vmat"
-								to = "materials/hotspots/concrete_a_moss_hs.vmat"
+								to = "materials/generic/concrete_glossy_used.vmat"
 							},
 							{
 								from = "materials/hotspots/plastic_glossy_a_hs.vmat"
-								to = "materials/hotspots/concrete_b_hs.vmat"
+								to = "materials/generic/wall_panel_d_metal_galvanized.vmat"
+							},
+							{
+								from = "materials/hotspots/metal_bare_a_hs.vmat"
+								to = "materials/dev/dev_metal_rough20.vmat"
+							},
+							{
+								from = "materials/hotspots/rubber_a_hs.vmat"
+								to = "models/sbox_props/gutters/gutter_a_metal_tiling.vmat"
 							},
 						]
 						use_global_default = false
@@ -85,5 +93,6 @@
 		model_archetype = ""
 		primary_associated_entity = ""
 		anim_graph_name = ""
+		base_model_name = ""
 	}
 }

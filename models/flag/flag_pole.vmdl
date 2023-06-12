@@ -18,6 +18,14 @@
 								from = ""
 								to = "models/flag/red_flag.vmat"
 							},
+							{
+								from = "materials/hotspots/metal_bare_a_hs.vmat"
+								to = "models/rust_props/pipelines/pipelines_rusty_metal.vmat"
+							},
+							{
+								from = "materials/hotspots/metal_brushed_a_hs.vmat"
+								to = "models/rust_props/pipelines/pipelines_rusty_metal.vmat"
+							},
 						]
 						use_global_default = false
 						global_default_material = ""
@@ -31,6 +39,10 @@
 								from = "models/flag/red_flag.vmat"
 								to = "models/flag/green_flag.vmat"
 							},
+							{
+								from = "models/rust_props/pipelines/pipelines_rusty_metal.vmat"
+								to = "models/rust_props/pipelines/pipelines_rusty_metal.vmat"
+							},
 						]
 					},
 					{
@@ -41,6 +53,18 @@
 							{
 								from = "models/flag/red_flag.vmat"
 								to = "models/flag/checker_flag.vmat"
+							},
+							{
+								from = "materials/hotspots/metal_bare_a_hs.vmat"
+								to = "models/rust_props/pipelines/pipelines_rusty_metal.vmat"
+							},
+							{
+								from = "materials/hotspots/metal_brushed_a_hs.vmat"
+								to = "models/rust_props/pipelines/pipelines_rusty_metal.vmat"
+							},
+							{
+								from = "models/rust_props/pipelines/pipelines_rusty_metal.vmat"
+								to = "models/rust_props/pipelines/pipelines_rusty_metal.vmat"
 							},
 						]
 					},
@@ -55,7 +79,7 @@
 						name = "flag_pole"
 						parent_bone = ""
 						surface_prop = "default"
-						collision_prop = "default"
+						collision_tags = "solid"
 						recenter_on_parent_bone = false
 						offset_origin = [ 0.0, 0.0, 0.0 ]
 						offset_angles = [ 0.0, 0.0, 0.0 ]
@@ -134,5 +158,6 @@
 		model_archetype = ""
 		primary_associated_entity = ""
 		anim_graph_name = ""
+		base_model_name = ""
 	}
 }

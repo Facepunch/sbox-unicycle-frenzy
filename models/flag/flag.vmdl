@@ -18,6 +18,14 @@
 								from = "material.001.vmat"
 								to = "models/flag/red_flag.vmat"
 							},
+							{
+								from = "materials/hotspots/metal_bare_a_hs.vmat"
+								to = "models/rust_props/pipelines/pipelines_rusty_metal.vmat"
+							},
+							{
+								from = "materials/hotspots/metal_brushed_a_hs.vmat"
+								to = "models/rust_props/pipelines/pipelines_rusty_metal.vmat"
+							},
 						]
 						use_global_default = false
 						global_default_material = ""
@@ -31,6 +39,14 @@
 								from = "models/flag/red_flag.vmat"
 								to = "models/flag/green_flag.vmat"
 							},
+							{
+								from = "materials/hotspots/metal_brushed_a_hs.vmat"
+								to = "models/rust_props/pipelines/pipelines_rusty_metal.vmat"
+							},
+							{
+								from = "materials/hotspots/metal_bare_a_hs.vmat"
+								to = "models/rust_props/pipelines/pipelines_rusty_metal.vmat"
+							},
 						]
 					},
 					{
@@ -41,6 +57,14 @@
 							{
 								from = "models/flag/red_flag.vmat"
 								to = "models/flag/checker_flag.vmat"
+							},
+							{
+								from = "materials/hotspots/metal_brushed_a_hs.vmat"
+								to = "models/rust_props/pipelines/pipelines_rusty_metal.vmat"
+							},
+							{
+								from = "materials/hotspots/metal_bare_a_hs.vmat"
+								to = "models/rust_props/pipelines/pipelines_rusty_metal.vmat"
 							},
 						]
 					},

@@ -36,7 +36,7 @@
 						name = "leaderboard_post"
 						parent_bone = ""
 						surface_prop = "default"
-						collision_prop = "default"
+						collision_tags = "solid"
 						recenter_on_parent_bone = false
 						offset_origin = [ 0.0, 0.0, 0.0 ]
 						offset_angles = [ 0.0, 90.0, 0.0 ]
@@ -55,9 +55,40 @@
 					},
 				]
 			},
+			{
+				_class = "MaterialGroupList"
+				children = 
+				[
+					{
+						_class = "DefaultMaterialGroup"
+						remaps = 
+						[
+							{
+								from = "materials/hotspots/metal_bare_a_hs.vmat"
+								to = "materials/dev/dev_metal_rough20.vmat"
+							},
+							{
+								from = "materials/hotspots/metal_painted_a_hs.vmat"
+								to = "models/rust_props/hvac_exhausts/hvac_exhaust_metal.vmat"
+							},
+							{
+								from = "materials/hotspots/plastic_glossy_a_hs.vmat"
+								to = "models/sbox_props/road_signs/road_signs_mid.vmat"
+							},
+							{
+								from = "materials/hotspots/rubber_a_hs.vmat"
+								to = "materials/cables/cable_metal_wire_a.vmat"
+							},
+						]
+						use_global_default = false
+						global_default_material = ""
+					},
+				]
+			},
 		]
 		model_archetype = ""
 		primary_associated_entity = ""
 		anim_graph_name = ""
+		base_model_name = ""
 	}
 }
