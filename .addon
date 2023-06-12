@@ -89,7 +89,7 @@
       "Actions": [
         {
           "Name": "brake",
-          "KeyboardCode": "ctrl",
+          "KeyboardCode": "shift",
           "GroupName": "Movement"
         },
         {
