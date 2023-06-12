@@ -4,7 +4,7 @@ using Sandbox.UI;
 using Sandbox.UI.Construct;
 using System;
 
-[StyleSheet("UI/Styles/frenzyletter.scss")]
+[StyleSheet("../Styles/frenzyletter.scss")]
 internal class FrenzyLetter : WorldPanel
 {
 

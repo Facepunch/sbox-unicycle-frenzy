@@ -3,7 +3,7 @@ using Sandbox.UI;
 using Sandbox.UI.Construct;
 using System;
 
-[StyleSheet("UI/Styles/ufnametag.scss")]
+[StyleSheet("../Styles/ufnametag.scss")]
 internal class UfNametag : WorldPanel
 {
 
