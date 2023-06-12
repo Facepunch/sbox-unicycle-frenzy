@@ -50,7 +50,7 @@
     [Event.Client.BuildInput]
     private void OnBuildInput()
     {
-        if ( Sandbox.Input.Pressed( InputButton.Chat ) )
+        if ( Sandbox.Input.Pressed( "open_chat" ) )
         {
             if (IsOpen) return;
             IsOpen = true;

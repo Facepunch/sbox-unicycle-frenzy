@@ -151,6 +151,11 @@
           "Name": "lean_backward",
           "KeyboardCode": "s",
           "GroupName": "Movement"
+        },
+        {
+          "Name": "open_chat",
+          "KeyboardCode": "enter",
+          "GroupName": "Other"
         }
       ]
     },
