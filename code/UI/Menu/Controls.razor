@@ -1,6 +1,6 @@
 ﻿
 @inherits Panel
-@attribute [NavigatorTarget("menu/controls")]
+@page "/menu/controls"
 
 <root>
     <div class="container spaced">
@@ -83,10 +83,10 @@
 @code {
     private string GetLeanBindString()
 	{
-		var fwd = Input.GetButtonOrigin( InputButton.Forward ) ?? "UNSET";
-		var left = Input.GetButtonOrigin( InputButton.Left ) ?? "UNSET";
-		var back = Input.GetButtonOrigin( InputButton.Back ) ?? "UNSET";
-		var right = Input.GetButtonOrigin( InputButton.Right ) ?? "UNSET";
+		var fwd = Input.GetButtonOrigin( "lean_forward" ) ?? "UNSET";
+		var left = Input.GetButtonOrigin( "lean_left" ) ?? "UNSET";
+		var back = Input.GetButtonOrigin( "lean_backward" ) ?? "UNSET";
+		var right = Input.GetButtonOrigin( "lean_right" ) ?? "UNSET";
 
 		return $"{fwd} {left} {back} {right}".ToUpper();
 	}
