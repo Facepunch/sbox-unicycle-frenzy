@@ -7,7 +7,7 @@
     }
 
     .box-header-image {
-        background-image: url(@($"{ThumbnailUrl}"));
+        background-image: url(@ThumbnailUrl);
     }
 </style>
 
@@ -57,5 +57,10 @@
         if (pgk == null) return;
         ThumbnailUrl = pgk.Thumb;
         StateHasChanged();
+    }
+
+    protected override int BuildHash()
+    {
+        return HashCode.Combine(MapStats.Local.TimePlayed);
     }
 }

@@ -1,38 +1,38 @@
-﻿@inherits NavigatorPanel
+﻿@inherits NavHostPanel
 
 <root class=@(IsOpen ? "open" : "closed")>
     <div class="header">
         <div class="header-logo"></div>
         <div class="header-navigation">
 
-            <navlink href="menu/stats" class="nav-link">
+            <navlink href="/menu/stats">
                 <label>Map</label>
                 <div class="stroke"></div>
             </navlink>
 
-            <navlink href="menu/achievements" class="nav-link">
+            <navlink href="/menu/achievements">
                 <label>Achievements</label>
                 <div class="stroke"></div>
             </navlink>
 
-            <navlink href="menu/trailpass" class="nav-link">
+            <navlink href="/menu/trailpass">
                 <label>Trail Pass</label>
                 <div class="stroke"></div>
             </navlink>
 
-            <navlink href="menu/customize" class="nav-link">
+            <navlink href="/menu/customize">
                 <label>Customize</label>
                 <div class="stroke"></div>
             </navlink>
 
-            <navlink href="menu/controls" class="nav-link">
+            <navlink href="/menu/controls">
                 <label>Controls</label>
                 <div class="stroke"></div>
             </navlink>
         </div>
 
         <div class="header-right">
-            <navlink href="menu/settings" class="nav-link hidden">
+            <navlink href="/menu/settings" class="hidden">
                 <label>Settings</label>
                 <div class="stroke"></div>
             </navlink>
@@ -49,12 +49,17 @@
         </div>
     </div>
     <div class="body">
-        <div @ref="NavigatorCanvas" class="content"></div>
+        <div class="navigator-canvas" slot="navigator-canvas"></div>
     </div>
 </root>
 
 @code {
     private bool IsOpen;
+
+    public Menu()
+    {
+        DefaultUrl = "/menu/stats";
+    }
 
     public override void Tick()
     {
@@ -84,11 +89,6 @@
             return;
 
         IsOpen = !IsOpen;
-
-        if(IsOpen)
-        {
-            Navigate("menu/stats");
-        }
 
         StateHasChanged();
     }

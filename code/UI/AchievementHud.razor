@@ -9,7 +9,7 @@
                 <label class="achievement-name">@achv.DisplayName</label>
             </div>
             <div class="details">
-                <div class="icon" style="background-image: url(@achv.Thumbnail))">
+                <div class="icon" style="background-image: url(@achv.Thumbnail)">
                     @if (TrailPass.Current.TryGetAchievement(achv.ShortName, out var tpAch))
                     {
                         <label class="badge xp">@(tpAch.ExperienceGranted)xp</label>
