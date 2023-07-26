@@ -125,7 +125,7 @@ PS
 
     float4 MainPs( PixelInput i ) : SV_Target0
     {
-        Material m = GatherMaterial( i );
+        Material m = Material::From( i );
         
         //
         // UVs
