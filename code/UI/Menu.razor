@@ -7,10 +7,13 @@
         <div class="header-logo"></div>
         <div class="header-navigation">
 
-            <navlink href="/menu/stats">
-                <label>Map</label>
-                <div class="stroke"></div>
-            </navlink>
+            @if (Game.InGame)
+            {
+                <navlink href="/menu/currentgame">
+                    <label>Game</label>
+                    <div class="stroke"></div>
+                </navlink>
+            }
 
             <navlink href="/menu/achievements">
                 <label>Achievements</label>
