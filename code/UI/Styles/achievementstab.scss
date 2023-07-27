@@ -5,9 +5,12 @@
     flex-direction: column;
     margin-bottom: 32px;
     transition: all 0.15s ease;
+    cursor: pointer;
 
     &:hover {
-        transform: scale(1.1);
+        .map-body {
+            background-color: lighten($light-purple, 25%);
+        }
     }
 
     &.is-complete {

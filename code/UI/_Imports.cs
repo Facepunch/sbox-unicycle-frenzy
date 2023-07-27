@@ -1,4 +1,6 @@
 ﻿global using Sandbox;
+global using Sandbox.Menu;
+global using Sandbox.MenuSystem;
 global using Editor;
 global using Sandbox.UI;
 global using System;

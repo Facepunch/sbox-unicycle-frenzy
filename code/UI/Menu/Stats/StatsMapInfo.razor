@@ -1,17 +1,15 @@
 ﻿@inherits Panel;
 
-<style>
-    .map-details {
-        flex-direction: column;
-        width: 100%;
-    }
+@if (!string.IsNullOrEmpty(@ThumbnailUrl))
+{
+    <style>
+        .box-header-image {
+            background-image: url(@ThumbnailUrl);
+        }
+    </style>
+}
 
-    .box-header-image {
-        background-image: url(@ThumbnailUrl);
-    }
-</style>
-
-<div class="map-details">
+<div class="map-details" style="width: 100%; flex-direction: column;">
     <label class="section-title title">Map Details</label>
     <div class="box">
         <div class="box-header-image"></div>
@@ -49,7 +47,7 @@
 </div>
 
 @code {
-    private string ThumbnailUrl;
+    private string ThumbnailUrl = "";
 
     protected override async Task OnParametersSetAsync()
     {

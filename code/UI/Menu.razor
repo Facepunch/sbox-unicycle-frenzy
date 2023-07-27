@@ -1,6 +1,8 @@
 ﻿@inherits NavHostPanel
+@implements Sandbox.Menu.IGameMenuPanel
+@attribute [StyleSheet("styles/stylesheet.scss")]
 
-<root class=@(IsOpen ? "open" : "closed")>
+<root class="open">
     <div class="header">
         <div class="header-logo"></div>
         <div class="header-navigation">
@@ -37,15 +39,6 @@
                 <div class="stroke"></div>
             </navlink>
 
-            <navlink class="stop-spectating" icon="cancel" onclick="StopSpectating()">
-                <label>Stop Spectating</label>
-                <div class="stroke"></div>
-            </navlink>
-
-            <navlink @onclick=@Close class="nav-link">
-                <label>X</label>
-                <div class="stroke"></div>
-            </navlink>
         </div>
     </div>
     <div class="body">
@@ -54,42 +47,8 @@
 </root>
 
 @code {
-    private bool IsOpen;
-
     public Menu()
     {
         DefaultUrl = "/menu/stats";
-    }
-
-    public override void Tick()
-    {
-        base.Tick();
-
-        if (Game.LocalPawn is not UnicyclePlayer pl) return;
-
-        SetClass("is-spectating", pl.SpectateTarget != null);
-    }
-
-    public void Close()
-    {
-        IsOpen = false;
-        StateHasChanged();
-    }
-
-    public void StopSpectating()
-    {
-        UnicyclePlayer.ServerCmd_SetSpectateTarget(-1);
-        Close();
-    }
-
-    [Event.Client.BuildInput]
-    private void OnBuildInput() 
-    {
-        if (!InputExtra.Pressed(InputActions.Menu))
-            return;
-
-        IsOpen = !IsOpen;
-
-        StateHasChanged();
     }
 }
