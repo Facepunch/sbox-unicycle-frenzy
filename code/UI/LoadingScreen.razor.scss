@@ -1,0 +1,75 @@
+
+@import "Styles/_vars.scss";
+
+LoadingScreen {
+    width: 100%;
+    height: 100%;
+    background-color: $dark-purple;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    font-family: $title-font;
+    flex-direction: column;
+    background-image: url(textures/ui/screenshot-1.jpg);
+    background-size: 100%;
+
+    .overlay {
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        background-color: rgba(black, .75);
+        background-image: linear-gradient(45deg, rgba($dark-purple, .5), rgba($light-purple, .25));
+        backdrop-filter: blur(5px);
+    }
+
+    .logo {
+        width: 444px;
+        height: 316px;
+        background-image: url(textures/ui/unicycle-frenzy-logo.png);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        margin-top: -200px;
+        margin-bottom: 50px;
+        display: none;
+    }
+
+    .box {
+        background-color: $light-purple;
+        box-shadow: 0 0 5px black;
+        flex-direction: column;
+        font-size: 30px;
+        width: auto;
+        bottom: 150px;
+        position: absolute;
+        box-shadow: $box-shadow-black;
+
+        .title {
+            font-size: 30px;
+            margin-bottom: 20px;
+            display: none;
+        }
+
+        .fill {
+            position: absolute;
+            top: 2px;
+            bottom: 2px;
+            right: 2px;
+            left: 2px;
+            background-color: $light-green;
+            border-radius: $radius;
+        }
+
+        .progress {
+            color: $fontcolor;
+            padding: 20px;
+
+            .state {
+                width: 100%;
+                text-align: center;
+                text-shadow: 1px 1px 1px black;
+            }
+        }
+    }
+}
