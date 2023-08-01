@@ -1,0 +1,46 @@
+
+@inherits Panel
+
+@if(!string.IsNullOrEmpty(thumbnailUrl))
+{
+    <style>
+        .thumbnail {
+            background-image: url(@thumbnailUrl);
+        }
+    </style>
+}
+
+
+<root class="button-sound">
+    <div class="thumbnail"></div>
+    <div class="title">@($"{Server.Name}")</div>
+</root>
+
+@code {
+    public ServerList.Entry Server { get; set; }
+
+    string thumbnailUrl;
+
+    static ServerListEntry active;
+    protected override void OnMouseDown(MousePanelEvent e)
+    {
+        base.OnMouseDown(e);
+
+        active?.RemoveClass("active");
+        active = this;
+        AddClass("active");
+
+        Ancestors.OfType<Home>().FirstOrDefault()?.OnServerSelected(Server);
+    }
+
+    protected override async Task OnParametersSetAsync()
+    {
+        base.OnParametersSet();
+
+        var mapPackage = await Package.FetchAsync(Server.Map, true);
+        if (mapPackage == null) return;
+
+        thumbnailUrl = mapPackage.Thumb;
+        StateHasChanged();
+    }
+}

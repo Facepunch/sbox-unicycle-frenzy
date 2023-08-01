@@ -58,7 +58,7 @@
     }
 }
 
-AchievementsView {
+MapsView {
     .content {
         padding: 8px;
         flex-grow: 1;
@@ -107,7 +107,7 @@ AchievementsView {
     }
 }
 
-AchievementsViewEntry {
+MapsViewAchievement {
     min-height: 120px;
     padding: 18px;
     background-color: $dark-purple;

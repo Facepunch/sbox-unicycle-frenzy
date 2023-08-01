@@ -1,6 +1,6 @@
 ﻿
 @inherits Panel
-@page "/menu/achievements/view/{package_ident}"
+@page "/menu/maps/view/{package_ident}"
 
 @if (Package == null)
 {
@@ -30,7 +30,7 @@
                     <div class="entries scroll">
                         @foreach(var ach in Achievements)
                         {
-                            <AchievementsViewEntry Achievement=@ach />
+                            <MapsViewAchievement Achievement=@ach />
                         }
                     </div>
                 </div>

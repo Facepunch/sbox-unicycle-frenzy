@@ -1,0 +1,48 @@
+
+@import "../../Styles/_vars.scss";
+
+ServerPanel {
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+    padding: 10px;
+    background-color: $light-purple;
+    gap: 20px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 150%;
+    right: 0;
+    transition: left 0.25s ease;
+
+    &.hidden {
+        display: flex;
+    }
+
+    &.visible {
+        left: 0;
+    }
+
+    .thumbnail {
+        width: 100%;
+        aspect-ratio: 1;
+        //background-image: url(https://files.facepunch.com/sbox/asset/facepunch.uf_field_day/logo.572dd42b.png);
+        background-size: cover;
+        box-shadow: $box-shadow-black;
+    }
+
+    .info {
+        flex-direction: column;
+        gap: 1px;
+
+        .row {
+            background-color: $dark-purple;
+            justify-content: space-between;
+            padding: 8px;
+
+            label:last-child {
+                font-weight: 900;
+            }
+        }
+    }
+}

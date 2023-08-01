@@ -1,0 +1,45 @@
+﻿
+@inherits Panel
+@attribute [StyleSheet]
+
+<root>
+    <div class="list">
+        @if (ServerList.IsQuerying)
+        {
+            <div class="loading-spinner">↺</div>
+        }
+        @foreach(var server in ServerList)
+        {
+            <ServerListEntry Server=@server />
+        }
+    </div>
+</root>
+
+@code {
+    ServerList ServerList = new();
+
+    protected override void OnParametersSet()
+    {
+        base.OnParametersSet();
+
+        Refresh();
+    }
+
+    public async void Refresh()
+    {
+        if (ServerList != null && ServerList.IsQuerying)
+            return;
+
+        ServerList?.Dispose();
+        ServerList = new ServerList();
+        ServerList.AddFilter("gametagsand", "game:facepunch.unicycle_frenzy");
+        ServerList.Query();
+
+        StateHasChanged();
+
+        while (ServerList.IsQuerying)
+            await Task.Delay(100);
+
+        StateHasChanged();
+    }
+}

@@ -2,85 +2,84 @@
 @import "_vars.scss";
 
 .button-row {
-  flex-direction: row;
+    flex-direction: row;
 
-  > .button {
-    margin-right: 16px;
-    &:last-child {
-      margin-right: 0;
+    > .button {
+        margin-right: 16px;
+
+        &:last-child {
+            margin-right: 0;
+        }
     }
-  }
 }
 
 .button {
-  align-self: flex-start;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-  padding: 0;
-  
+    align-self: flex-start;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
 
-  label {
-    font-family: $title-font;
-    font-size: 28px;
-    text-stroke: 4px #000;
-    text-shadow: $text-shadow-black;
-    transition: all 0.15s ease;
-  }
-
-  .button-bg {
-    border: 2px solid black;
-    box-shadow: $box-shadow-hard-dark-purple;
-    position: absolute;
-    top: 0;
-    right: 4px;
-    bottom: 0;
-    left: 4px;
-    transition: transform 0.2s ease;
-  }
-
-  &:hover {
-    .button-bg {
-      transform: scale(1.1) rotate(-2deg);
+    label {
+        font-family: $title-font;
+        font-size: 28px;
+        text-stroke: 4px #000;
+        text-shadow: $text-shadow-black;
+        transition: all 0.15s ease;
     }
-  }
 
-  // Variants
-  &.is-primary {
     .button-bg {
-      background-color: $blue;
+        border: 2px solid black;
+        box-shadow: $box-shadow-hard-dark-purple;
+        position: absolute;
+        top: 0;
+        right: 4px;
+        bottom: 0;
+        left: 4px;
+        transition: transform 0.2s ease;
     }
-  }
 
-  &.is-secondary {
-    .button-bg {
-      background-color: $pink;
-    }
-  }
-
-  &.is-disabled {
     &:hover {
-      label {
-        transform: scale(1);
-      }
+        .button-bg {
+            transform: scale(1.1) rotate(-2deg);
+        }
     }
-    .button-bg {
-      background-color: $grey;
+    // Variants
+    &.is-primary {
+        .button-bg {
+            background-color: $blue;
+        }
     }
 
-    label {
-      opacity: 0.5;
+    &.is-secondary {
+        .button-bg {
+            background-color: $pink;
+        }
     }
-  }
 
-  // Sizes
-  &.is-large {
-    label {
-      font-size: 32px;
+    &.is-disabled {
+        &:hover {
+            label {
+                transform: scale(1);
+            }
+        }
+
+        .button-bg {
+            background-color: $grey;
+        }
+
+        label {
+            opacity: 0.5;
+        }
     }
-  }
+    // Sizes
+    &.is-large {
+        label {
+            font-size: 32px;
+        }
+    }
 
-  &.is-medium {
-    font-size: 24px;
-  }
+    &.is-medium {
+        font-size: 24px;
+    }
 }

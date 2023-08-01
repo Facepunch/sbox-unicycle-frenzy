@@ -1,0 +1,57 @@
+
+@inherits Panel
+@attribute [StyleSheet]
+
+<root>
+    <div class="thumbnail" style="background-image: url(@thumbnailUrl)"></div>
+    <div class="info">
+        <div class="row">
+            <label>Title</label>
+            <label>@Server.Name</label>
+        </div>
+        <div class="row">
+            <label>Map</label>
+            <label>@mapName</label>
+        </div>
+        <div class="row">
+            <label>Players</label>
+            <label>@Server.Players</label>
+        </div>
+    </div>
+    <div class="grow"></div>
+    <div>
+        <div class="button is-primary grow" onmousedown=@JoinThisGame><div class="button-bg"></div>Join Game</div>
+    </div>
+</root>
+
+@code {
+    public ServerList.Entry Server { get; set; }
+
+    string thumbnailUrl;
+    string mapName;
+
+    public override int GetHashCode()
+    {
+        return Server.SteamId.GetHashCode();
+    }
+
+    private void JoinThisGame()
+    {
+        Game.Menu.ConnectToServer(Server.SteamId);
+    }
+
+    protected override async Task OnParametersSetAsync()
+    {
+        await base.OnParametersSetAsync();
+
+        thumbnailUrl = "no-image";
+
+        if (Server.SteamId == 0) return;
+
+        var pkg = await Package.FetchAsync(Server.Map, true);
+        if (pkg == null) return;
+
+        mapName = pkg.Title;
+        thumbnailUrl = pkg.Thumb;
+    }
+}

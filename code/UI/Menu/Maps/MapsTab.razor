@@ -1,6 +1,6 @@
 ﻿
 @inherits Panel
-@page "/menu/achievements"
+@page "/menu/maps"
 
 <root class="spaced top">
 
@@ -11,7 +11,7 @@
                 <div class="columns is-multiline scroll">
                     @foreach (var map in Maps)
                     {
-                        <AchievementsTabMap Package=@map />
+                        <MapsTabMap Package=@map />
                     }
                 </div>
             </div>

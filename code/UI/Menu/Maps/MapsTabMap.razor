@@ -47,6 +47,6 @@
     {
         base.OnMouseDown(e);
 
-        Ancestors.OfType<Menu>()?.FirstOrDefault()?.Navigate($"menu/achievements/view?package_ident={Package.FullIdent}");
+        Ancestors.OfType<Menu>()?.FirstOrDefault()?.Navigate($"menu/maps/view?package_ident={Package.FullIdent}");
     }
 }

@@ -3,6 +3,7 @@ global using Sandbox.Menu;
 global using Sandbox.MenuSystem;
 global using Editor;
 global using Sandbox.UI;
+global using Sandbox.Services;
 global using System;
 global using System.Threading.Tasks;
 global using System.Linq;
