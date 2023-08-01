@@ -46,6 +46,7 @@ internal class UnicycleCamera
 		var tr = Trace.Ray( center, targetPos )
 			.Ignore( pawn )
 			.Radius( 8 )
+			.WithoutTags("player")
 			.Run();
 
 		var endpos = tr.EndPosition;
