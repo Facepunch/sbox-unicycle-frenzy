@@ -16,10 +16,16 @@
 <root class="spaced top">
     <div class="container">
         <div class="columns is-gapless">
-            <div class="column is-8 pl-64">
+            <div class="column is-4 pl-64 pb-64">
+                <div class="thumbnail"></div>
+                <div class="grow"></div>
+                <div class="rows">
+                    <div class="button is-primary is-large grow" onmousedown=@CreateGame><div class="button-bg"></div>Create Game</div>
+                </div>
+            </div>
+            <div class="column is-8 mr-64">
                 <div class="is-multiline content">
                     <div class="heading">
-                        <div class="thumbnail"></div>
                         <div class="details">
                             <label class="title">@Package.Title</label>
                             <label class="description">@Package.Description</label>
@@ -33,11 +39,6 @@
                             <MapsViewAchievement Achievement=@ach />
                         }
                     </div>
-                </div>
-            </div>
-            <div class="column is-4 gradient pl-32">
-                <div class="achievement-list">
-                    <StatsAchievements mode="global" title="Global Achievements" />
                 </div>
             </div>
         </div>
@@ -78,6 +79,11 @@
         Total = Achievements.Count();
 
         StateHasChanged();
+    }
+
+    void CreateGame()
+    {
+        Game.Menu.StartServerAsync(8, $"{Game.UserName}'s game", Package.FullIdent);
     }
 
 }

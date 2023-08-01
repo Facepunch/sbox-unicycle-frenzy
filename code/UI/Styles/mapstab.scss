@@ -66,8 +66,8 @@ MapsView {
     }
 
     .thumbnail {
-        min-width: 110px;
-        min-height: 110px;
+        width: 100%;
+        aspect-ratio: 1;
         background-color: $lightest-purple;
         box-shadow: $box-shadow-black;
         bottom: 9px;
@@ -79,15 +79,14 @@ MapsView {
     .heading {
         background-color: $light-purple;
         box-shadow: $box-shadow-black;
-        min-height: 92px;
-        margin-top: 9px;
-        padding: 0px 18px;
+        padding: 0 18px;
         align-items: center;
+        min-height: 92px;
 
         .details {
             flex-direction: column;
             height: 100%;
-            padding-top: 5px;
+            justify-content: center;
 
             .title {
                 font-size: 33px;

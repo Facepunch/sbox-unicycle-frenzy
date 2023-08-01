@@ -44,6 +44,7 @@ LoadingScreen {
         bottom: 150px;
         position: absolute;
         box-shadow: $box-shadow-black;
+        margin-left: 200px;
 
         .title {
             font-size: 30px;
@@ -57,8 +58,7 @@ LoadingScreen {
             bottom: 2px;
             right: 2px;
             left: 2px;
-            background-color: $light-green;
-            border-radius: $radius;
+            background-color: $blue;
         }
 
         .progress {
