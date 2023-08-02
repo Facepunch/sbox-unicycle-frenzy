@@ -8,7 +8,7 @@
   "HasAssets": true,
   "AssetsPath": "",
   "Resources": "/*",
-  "MenuResources": "/fonts/*\n/config/*\n/ui/*\n/ui/Vars.scss\n/textures/ui/*\n/sounds/ui/*",
+  "MenuResources": "/fonts/*\n/config/*\n/ui/*\n/textures/ui/*\n/textures/achievements/*\n/sounds/ui/*\n/resources/achievements/*",
   "HasCode": true,
   "CodePath": "code",
   "PackageReferences": [],
