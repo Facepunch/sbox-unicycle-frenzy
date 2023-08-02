@@ -7,6 +7,10 @@
         <div class="columns">
             <div class="column is-3">
                 <StatsMapInfo />
+                <div class="grow"></div>
+                <div class="rows">
+                    <div class="button is-secondary is-large grow" onmousedown=@Disconnect><div class="button-bg"></div>Leave Game</div>
+                </div>
             </div>
             <div class="column is-6">
                 <LeaderboardTabs />
@@ -17,3 +21,11 @@
         </div>
     </div>
 </root>
+
+@code {
+    void Disconnect()
+    {
+        Game.Disconnect();
+        Ancestors.OfType<Menu>().FirstOrDefault()?.Navigate("/menu");
+    }
+}
