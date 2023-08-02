@@ -14,9 +14,11 @@ internal class TrailPassItemSlider : Panel
 	{
 		DeleteChildren();
 
-		var trailpass = TrailPass.Current;
+		var items = TrailPass.Current?.Items;
 
-		foreach ( var item in trailpass.Items )
+		if ( items == null ) return;
+
+		foreach ( var item in items )
 		{
 			var itemicon = new TrailPassItemIcon() { Item = item };
 			itemicon.Parent = this;
