@@ -25,20 +25,24 @@
                 <div class="stroke"></div>
             </navlink>
 
-            <navlink href="/menu/trailpass">
-                <label>Trail Pass</label>
-                <div class="stroke"></div>
-            </navlink>
+            @if(Game.InGame)
+            {
+                <navlink href="/menu/trailpass">
+                    <label>Trail Pass</label>
+                    <div class="stroke"></div>
+                </navlink>
 
-            <navlink href="/menu/customize">
-                <label>Customize</label>
-                <div class="stroke"></div>
-            </navlink>
+                <navlink href="/menu/customize">
+                    <label>Customize</label>
+                    <div class="stroke"></div>
+                </navlink>
 
-            <navlink href="/menu/controls">
-                <label>Controls</label>
-                <div class="stroke"></div>
-            </navlink>
+                <navlink href="/menu/controls">
+                    <label>Controls</label>
+                    <div class="stroke"></div>
+                </navlink>
+            }
+
         </div>
 
         <div class="header-right">
