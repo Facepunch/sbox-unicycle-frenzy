@@ -8,7 +8,7 @@
   "HasAssets": true,
   "AssetsPath": "",
   "Resources": "/*",
-  "MenuResources": "/fonts/*\n/config/*\n/ui/styles/*\n/ui/Vars.scss\n/textures/ui/*\n/sounds/ui/*",
+  "MenuResources": "/fonts/*\n/config/*\n/ui/*\n/ui/Vars.scss\n/textures/ui/*\n/sounds/ui/*",
   "HasCode": true,
   "CodePath": "code",
   "PackageReferences": [],
