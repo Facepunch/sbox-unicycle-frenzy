@@ -399,17 +399,6 @@ internal partial class UnicycleController : BasePlayerController
 			tilt += delta;
 		}
 
-		if ( IsIdle() )
-		{
-			// Jake: I'm using t in a silly way here
-			//		 I don't want it to lerp from A to B by T because
-			//		 we can't really snap the tilt like that without
-			//		 conflicting with the player's input, so lerp w/
-			//		 delta and use t for easing
-			var rndTilt = GetRandomTilt( out float t );
-			tilt = Angles.Lerp( tilt, rndTilt, Time.Delta * t );
-		}
-
 		tilt.roll = Math.Clamp( tilt.roll, -MaxLean - 5, MaxLean + 5 );
 		//tilt.pitch = Math.Clamp( tilt.pitch, -MaxLean - 5, MaxLean + 5 );
 
@@ -428,18 +417,6 @@ internal partial class UnicycleController : BasePlayerController
 		if ( InputActions.Brake.Down() && Velocity.Length > StopSpeed ) return false;
 
 		return true;
-	}
-
-	private Angles GetRandomTilt( out float t )
-	{
-		var seed = pl.NetworkIdent + ( Time.Tick / 50f );
-		t = seed - (int)seed;
-
-		Game.SetRandomSeed( (int)seed );
-		var tilt = Angles.Random.WithYaw( 0 );
-		tilt.roll *= 2f;
-
-		return tilt.Normal * LeanSafeZone * .75f;
 	}
 
 	private void DoRotation()
