@@ -37,6 +37,7 @@
 
     private void JoinThisGame()
     {
+        Ancestors.OfType<Menu>().FirstOrDefault()?.Navigate("/menu/currentgame");
         Game.Menu.ConnectToServer(Server.SteamId);
     }
 

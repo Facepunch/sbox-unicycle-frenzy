@@ -7,18 +7,18 @@
         <div class="header-logo"></div>
         <div class="header-navigation">
 
+            @if (Game.InGame)
+            {
+                <navlink href="/menu/currentgame">
+                    <label>Current Game</label>
+                    <div class="stroke"></div>
+                </navlink>
+            }
+
             <navlink href="/menu">
                 <label>Find Game</label>
                 <div class="stroke"></div>
             </navlink>
-
-            @if (Game.InGame)
-            {
-                <navlink href="/menu/currentgame">
-                    <label>Game</label>
-                    <div class="stroke"></div>
-                </navlink>
-            }
 
             <navlink href="/menu/maps">
                 <label>Create Game</label>

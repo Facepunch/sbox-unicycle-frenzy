@@ -83,6 +83,7 @@
 
     void CreateGame()
     {
+        Ancestors.OfType<Menu>().FirstOrDefault()?.Navigate("/menu/currentgame");
         Game.Menu.StartServerAsync(8, $"{Game.UserName}'s game", Package.FullIdent);
     }
 
