@@ -7,9 +7,13 @@
     return;
 }
 
+@{
+    var thumbUrl = string.IsNullOrEmpty(Package.Thumb) ? "https://files.facepunch.com/sbox/asset/facepunch.unicycle_frenzy/logo.c35e8d94.png" : Package.Thumb;
+}
+
 <style>
     .thumbnail {
-        background-image: url(@Package?.Thumb);
+        background-image: url(@thumbUrl);
     }
 </style>
 
