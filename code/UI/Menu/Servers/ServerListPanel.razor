@@ -8,9 +8,16 @@
         {
             <div class="loading-spinner">↺</div>
         }
-        @foreach(var server in ServerList)
+        else if (!ServerList.Any())
         {
-            <ServerListEntry Server=@server />
+            <label class="heading">No games found, create one?</label>
+        }
+        else
+        {
+            @foreach(var server in ServerList)
+            {
+                <ServerListEntry Server=@server />
+            }
         }
     </div>
 </root>

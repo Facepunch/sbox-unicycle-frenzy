@@ -30,7 +30,7 @@
         active = this;
         AddClass("active");
 
-        Ancestors.OfType<Home>().FirstOrDefault()?.OnServerSelected(Server);
+        Ancestors.OfType<Servers>().FirstOrDefault()?.OnServerSelected(Server);
     }
 
     protected override async Task OnParametersSetAsync()

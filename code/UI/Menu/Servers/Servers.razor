@@ -1,6 +1,6 @@
 
 @inherits Panel
-@page "/menu"
+@page "/menu/servers"
 
 <root class="spaced">
     <div class="container">
@@ -9,7 +9,7 @@
                 <div class="heading">
                     <label class="section-title title">Games</label>
                     <div class="grow"></div>
-                    <div class="button is-large" @onmousedown="@Refresh"><div class="button-bg"></div>Refresh</div>
+                    <div class="button is-primary is-large" @onmousedown="@Refresh"><div class="button-bg"></div>Refresh</div>
                 </div>
                <ServerListPanel @ref="ServerList" />
             </div>
