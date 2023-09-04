@@ -20,7 +20,7 @@ public partial class UfChat : Panel
 	[ConCmd.Client( "uf_chat_add", CanBeCalledFromServer = true )]
 	public static void AddChat( string name, string message, string classes = null, string sfx = "chat.message" )
 	{
-		Instance.AddMessage( name, message );
+		Instance?.AddMessage( name, message );
 	}
 
 }
