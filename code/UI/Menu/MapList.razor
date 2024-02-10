@@ -1,0 +1,29 @@
+
+@inherits Panel
+
+<root>
+</root>
+
+@code {
+    public Dictionary<string, string> AvailableMaps = new()
+    {
+        { "scenes/uf_quarry.scene", "facepunch.uf_quarry" }
+    };
+
+    protected override async Task OnParametersSetAsync()
+    {
+        foreach(var map in AvailableMaps)
+        {
+            var ident = map.Value;
+            var package = await Package.FetchAsync(ident, true);
+            if (package == null) continue;
+
+            var thumb = new MapThumbnail()
+                {
+                    MapPackage = package,
+                    ScenePath = map.Key
+                };
+            AddChild(thumb);
+        }
+    }
+}

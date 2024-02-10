@@ -1,0 +1,43 @@
+@using System;
+@using Sandbox;
+@using Sandbox.UI;
+@inherits Panel
+@attribute [StyleSheet("_styles.scss")]
+
+<root>
+    <div class="timer-state">@TimerState</div>
+    <div class="timer-time">@TimerTime</div>
+</root>
+
+@code
+{
+    string TimerState;
+    string TimerTime;
+
+    public override void Tick()
+    {
+        base.Tick();
+
+        var timer = CourseTimer.Local;
+        if (timer == null) return;
+
+        TimerState = timer.State.ToString();
+
+        if (timer.State == TimerStates.Idle)
+        {
+            TimerTime = string.Empty;
+        }
+        else if (timer.State == TimerStates.Started)
+        {
+            var timeSpan = TimeSpan.FromSeconds(timer.TimeSinceStart);
+            TimerTime = timeSpan.ToString(@"mm\:ss");
+        }
+        else if (timer.State == TimerStates.Finished)
+        {
+            var timeSpan = TimeSpan.FromSeconds(timer.FinishTime);
+            TimerTime = timeSpan.ToString(@"mm\:ss");
+        }
+    }
+
+    protected override int BuildHash() => System.HashCode.Combine(TimerState, TimerTime);
+}

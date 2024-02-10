@@ -1,0 +1,105 @@
+
+@import "_vars.scss";
+
+Hud {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    justify-content: center;
+    color: white;
+    font-size: 16px;
+}
+
+HudTimer {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    justify-content: center;
+    width: 250px;
+    align-items: center;
+    top: 64px;
+    font-size: 40px;
+    text-shadow: 2px 2px 2px black;
+    flex-direction: column;
+
+    .timer-time {
+        color: yellow;
+    }
+
+    .timer-state {
+        font-size: 20px;
+        text-transform: uppercase;
+    }
+}
+
+LeanDisplay {
+    position: absolute;
+    z-index: -1;
+    width: 256px;
+    height: 128px;
+    bottom: 50%;
+    left: 50%;
+    transform: translate(-50%);
+
+    .lean-edge {
+        height: 128px;
+        width: 128px;
+        border: 4px solid transparent;
+        border-radius: 50%;
+        opacity: .5;
+
+        &.left {
+            background-image: linear-gradient( to right, rgba( #cc2424, .75 ), rgba( #333, 0) );
+            border-left-color: rgba( $pink .5 );
+            left: 0;
+            border-radius: 50% 0 0 50%;
+        }
+
+        &.right {
+            background-image: linear-gradient( to left, rgba( #cc2424, .75 ), rgba( #333, 0) );
+            border-right-color: rgba( $pink .5 );
+            right: 0;
+            border-radius: 0 50% 50% 0;
+        }
+    }
+
+    .lean-center {
+        background-color: #30273a;
+        height: 75px;
+        width: 10px;
+        opacity: .5;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50% -50%);
+        position: absolute;
+    }
+
+    .compass {
+        width: 100%;
+        height: 100%;
+        border-radius: 30%;
+        position: absolute;
+
+        .point {
+            position: absolute;
+            border-radius: 50%;
+            transform: translate(-50% -50%);
+            top: 50%;
+            left: 50%;
+
+            &.abs {
+                width: 24px;
+                height: 24px;
+                background-color: #533972;
+            }
+
+            &.local {
+                width: 14px;
+                height: 14px;
+                background-color: #ed4c59;
+            }
+        }
+    }
+}

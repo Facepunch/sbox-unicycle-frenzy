@@ -1,0 +1,297 @@
+{
+  "Id": "05cd9e6e-374d-4f4a-b77a-917c57cd4d25",
+  "GameObjects": [
+    {
+      "Id": "469ca648-d4c5-4637-ad7c-3263fd8b4d64",
+      "Name": "player and camera",
+      "Position": "-0.000003207322,0,53.80994",
+      "Enabled": true,
+      "Children": [
+        {
+          "Id": "8ae78b7a-ce33-43cb-95fa-d8dd0ae32c15",
+          "Name": "Camera",
+          "Position": "0,0,0",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "CameraComponent",
+              "BackgroundColor": "0.33333,0.46275,0.52157,1",
+              "ClearFlags": "All",
+              "FieldOfView": 60,
+              "IsMainCamera": true,
+              "Orthographic": false,
+              "OrthographicHeight": 1204,
+              "Priority": 1,
+              "RenderExcludeTags": "",
+              "RenderTags": "",
+              "TargetEye": "None",
+              "Viewport": "0,0,1,1",
+              "ZFar": 10000,
+              "ZNear": 10
+            },
+            {
+              "__type": "CameraController",
+              "Target": {
+                "_type": "component",
+                "go": "a994902a-9bbc-45e7-9246-a59a5cfe0493",
+                "component_type": "UnicycleController"
+              }
+            }
+          ]
+        },
+        {
+          "Id": "a994902a-9bbc-45e7-9246-a59a5cfe0493",
+          "Name": "Player",
+          "Position": "0,0,0",
+          "Tags": "player",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "UnicycleController",
+              "FallSound": null,
+              "JumpSound": null,
+              "PedalSound": null,
+              "PerfectPedalSound": null,
+              "RespawnSound": null
+            },
+            {
+              "__type": "PlayerAnimator",
+              "LeftPedal": {
+                "_type": "gameobject",
+                "go": "fcd4126c-b8e5-419f-a42f-100a47bf8e7c"
+              },
+              "PedalPivot": {
+                "_type": "gameobject",
+                "go": "07a9fcd2-9977-4655-96be-74b9b9ae719b"
+              },
+              "RightPedal": {
+                "_type": "gameobject",
+                "go": "1915aca3-d119-413d-90b2-4ab182a38805"
+              },
+              "Wheel": {
+                "_type": "gameobject",
+                "go": "90fef556-a954-456f-82f7-c158b5684a4e"
+              },
+              "WheelPivot": {
+                "_type": "gameobject",
+                "go": "ee3c8893-c5f7-4e20-accc-69798524aecd"
+              }
+            }
+          ],
+          "Children": [
+            {
+              "Id": "90a71ede-06c9-49a7-b1fa-ed7d18e7253f",
+              "Name": "Player",
+              "Position": "0,0,35",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__type": "SkinnedModelRenderer",
+                  "BodyGroups": 341,
+                  "BoneMergeTarget": null,
+                  "CreateBoneObjects": false,
+                  "MaterialGroup": null,
+                  "MaterialOverride": null,
+                  "Model": "models/citizen/citizen.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                }
+              ]
+            },
+            {
+              "Id": "cd824a68-eac8-4f30-b706-ff3f9724eb17",
+              "Name": "Unicycle",
+              "Position": "0,0,0",
+              "Scale": "0.8,0.8,0.8",
+              "Enabled": true,
+              "Children": [
+                {
+                  "Id": "41fdc534-879f-4114-87c5-2e3c15431013",
+                  "Name": "Seat",
+                  "Position": "0,0,32.68898",
+                  "Enabled": true,
+                  "Components": [
+                    {
+                      "__type": "ModelRenderer",
+                      "BodyGroups": 18446744073709551615,
+                      "MaterialGroup": null,
+                      "MaterialOverride": null,
+                      "Model": "models/unicycles/default/parts/seats/default_seat.vmdl",
+                      "RenderType": "On",
+                      "Tint": "1,1,1,1"
+                    }
+                  ]
+                },
+                {
+                  "Id": "1ca536e2-c4a5-4f14-b0be-c7c6d7bd6294",
+                  "Name": "Frame",
+                  "Position": "0,0,10.50214",
+                  "Enabled": true,
+                  "Components": [
+                    {
+                      "__type": "Prop",
+                      "Health": 0,
+                      "IsStatic": true,
+                      "Model": "models/unicycles/default/parts/frames/default_frame.vmdl",
+                      "OnPropBreak": null,
+                      "OnPropTakeDamage": null,
+                      "ShowCreatedComponents": false
+                    }
+                  ]
+                },
+                {
+                  "Id": "ee3c8893-c5f7-4e20-accc-69798524aecd",
+                  "Name": "WheelPivot",
+                  "Position": "0,0,12",
+                  "Enabled": true,
+                  "Children": [
+                    {
+                      "Id": "90fef556-a954-456f-82f7-c158b5684a4e",
+                      "Name": "Wheeel",
+                      "Position": "0,0,-12",
+                      "Enabled": true,
+                      "Components": [
+                        {
+                          "__type": "Prop",
+                          "Health": 0,
+                          "IsStatic": true,
+                          "Model": "models/unicycles/default/parts/wheels/default_wheel.vmdl",
+                          "OnPropBreak": null,
+                          "OnPropTakeDamage": null,
+                          "ShowCreatedComponents": false
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "Id": "07a9fcd2-9977-4655-96be-74b9b9ae719b",
+                  "Name": "Pedals",
+                  "Position": "0,0,12",
+                  "Enabled": true,
+                  "Children": [
+                    {
+                      "Id": "fcd4126c-b8e5-419f-a42f-100a47bf8e7c",
+                      "Name": "Left Pedal",
+                      "Position": "0,5.200825,-5.631828",
+                      "Enabled": true,
+                      "Components": [
+                        {
+                          "__type": "Prop",
+                          "Health": 0,
+                          "IsStatic": true,
+                          "Model": "models/unicycles/default/parts/pedals/default_pedal.vmdl",
+                          "OnPropBreak": null,
+                          "OnPropTakeDamage": null,
+                          "ShowCreatedComponents": false
+                        }
+                      ]
+                    },
+                    {
+                      "Id": "1915aca3-d119-413d-90b2-4ab182a38805",
+                      "Name": "Right Pedal",
+                      "Position": "0,-5.227394,7.001972",
+                      "Rotation": "1,0,0,-0.00000004371139",
+                      "Enabled": true,
+                      "Components": [
+                        {
+                          "__type": "Prop",
+                          "Health": 0,
+                          "IsStatic": true,
+                          "Model": "models/unicycles/default/parts/pedals/default_pedal.vmdl",
+                          "OnPropBreak": null,
+                          "OnPropTakeDamage": null,
+                          "ShowCreatedComponents": false
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Id": "401f2432-00ee-4f46-ab6d-a5c3c4dfb4ce",
+      "Name": "Sun",
+      "Position": "96.06752,67.53409,17.62253",
+      "Rotation": "-0.8597896,-0.04736708,0.4767269,0.1767769",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "DirectionalLight",
+          "FogMode": "Enabled",
+          "FogStrength": 1,
+          "LightColor": "0.91373,0.98039,1,1",
+          "Shadows": true,
+          "SkyColor": "0.05882,0.07451,0.08235,1"
+        }
+      ]
+    },
+    {
+      "Id": "c3a04015-2c56-4c2a-9ed7-58ca856e4930",
+      "Name": "Plane",
+      "Scale": "7,7,1",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "ModelRenderer",
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Model": "models/dev/plane.vmdl",
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        },
+        {
+          "__type": "BoxCollider",
+          "Center": "0,0,0",
+          "IsTrigger": false,
+          "Scale": "97.6,98.2,5.699999",
+          "Static": false,
+          "Surface": null
+        }
+      ]
+    },
+    {
+      "Id": "6a54d9a8-61d8-4f99-9457-09f8fb37e3bf",
+      "Name": "2D Skybox",
+      "Position": "8.036308,4.616638,74.12291",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "SkyBox2D",
+          "SkyMaterial": "materials/skybox/light_test_sky_sunny02.vmat",
+          "Tint": "1,1,1,1"
+        }
+      ]
+    }
+  ],
+  "SceneProperties": {
+    "FixedUpdateFrequency": 50,
+    "Lerping": true,
+    "MaxFixedUpdates": 5,
+    "NetworkFrequency": 30,
+    "ThreadedAnimation": true,
+    "TimeScale": 1,
+    "UseFixedUpdate": true,
+    "NavMesh": {
+      "Enabled": false,
+      "IncludeStaticBodies": true,
+      "IncludeKeyframedBodies": true,
+      "EditorAutoUpdate": true,
+      "AgentHeight": 64,
+      "AgentRadius": 16,
+      "AgentStepSize": 18,
+      "AgentMaxSlope": 40,
+      "ExcludedBodies": "",
+      "IncludedBodies": ""
+    }
+  },
+  "Title": "test",
+  "Description": "",
+  "LastSaved": "2024-02-09T18:11:26.6703483-06:00",
+  "__references": []
+}

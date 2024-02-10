@@ -1,165 +1,199 @@
 {
   "Title": "Unicycle Frenzy",
   "Type": "game",
-  "Org": "facepunch",
+  "Org": "local",
   "Ident": "unicycle_frenzy",
-  "Tags": "",
+  "Tags": null,
   "Schema": 1,
   "HasAssets": true,
   "AssetsPath": "",
-  "Resources": "/*",
-  "MenuResources": "/fonts/*\n/config/*\n/ui/*\n/textures/ui/*\n/textures/achievements/*\n/sounds/ui/*\n/resources/achievements/*",
+  "Resources": "/fonts/*\n/ui/*",
+  "MenuResources": "*\n/fonts/*\n",
   "HasCode": true,
-  "CodePath": "code",
+  "CodePath": "/code/",
   "PackageReferences": [],
   "EditorReferences": null,
   "Metadata": {
-    "MapList": [
-      "facepunch.uf_quarry",
-      "facepunch.uf_hop_stop",
-      "facepunch.uf_beach",
-      "facepunch.uf_pop_rock",
-      "willow.uf_climb",
-      "facepunch.uf_splinter",
-      "facepunch.uf_bookworm",
-      "facepunch.uf_wooden_gaps",
-      "facepunch.uf_flow",
-      "facepunch.uf_sewage"
-    ],
-    "RankType": "Best",
-    "LeaderboardType": "Ascending",
-    "PerMapRanking": true,
-    "MapSelect": "Tagged",
+    "MaxPlayers": 64,
     "MinPlayers": 1,
+    "TickRate": 50,
     "GameNetworkType": "Multiplayer",
-    "MaxPlayers": 15,
-    "GameCategory": "Racing",
-    "Collision": {
-      "Defaults": {
-        "solid": "Collide",
-        "trigger": "Trigger",
-        "ladder": "Ignore",
-        "water": "Trigger",
-        "player": "Collide"
-      },
-      "Pairs": [
-        {
-          "a": "solid",
-          "b": "solid",
-          "r": "Collide"
-        },
-        {
-          "a": "trigger",
-          "b": "playerclip",
-          "r": "Ignore"
-        },
-        {
-          "a": "trigger",
-          "b": "solid",
-          "r": "Trigger"
-        },
-        {
-          "a": "solid",
-          "b": "trigger",
-          "r": "Collide"
-        },
-        {
-          "a": "playerclip",
-          "b": "solid",
-          "r": "Collide"
-        },
-        {
-          "a": "player",
-          "b": "player",
-          "r": "Trigger"
-        }
-      ]
-    },
-    "ControlModes": {
-      "Keyboard": true,
-      "Gamepad": true
-    },
-    "DefaultLeaderboards": [],
-    "Summary": "Unicycle Frenzy challenges players to navigate through treacherous obstacle courses on a unicycle.",
-    "Description": "Post feedback and issues here: https://github.com/Facepunch/sbox-unicycle-frenzy\n\nPress Q in-game to see controls and customize your unicycle",
-    "Public": true,
-    "ReplaceTags": "racing unicycle sports",
+    "MapSelect": "Unrestricted",
+    "MapList": [
+      "facepunch.flatgrass"
+    ],
+    "RankType": "None",
+    "PerMapRanking": false,
+    "LeaderboardType": "None",
     "CsProjName": "",
+    "StartupScene": "scenes/menu.scene",
+    "ProjectTemplate": null,
+    "ControlModes": {},
     "InputSettings": {
       "Actions": [
         {
-          "Name": "brake",
-          "KeyboardCode": "shift",
+          "Name": "lean_forward",
+          "KeyboardCode": "W",
+          "GroupName": "Movement"
+        },
+        {
+          "Name": "lean_back",
+          "KeyboardCode": "S",
+          "GroupName": "Movement"
+        },
+        {
+          "Name": "lean_left",
+          "KeyboardCode": "A",
+          "GroupName": "Movement"
+        },
+        {
+          "Name": "lean_right",
+          "KeyboardCode": "D",
           "GroupName": "Movement"
         },
         {
           "Name": "jump",
           "KeyboardCode": "space",
+          "GamepadCode": "A",
           "GroupName": "Movement"
         },
         {
-          "Name": "restart_checkpoint",
-          "KeyboardCode": "r",
-          "GroupName": "Timer"
+          "Name": "brake",
+          "KeyboardCode": "shift",
+          "GamepadCode": "LeftJoystickButton",
+          "GroupName": "Movement"
         },
         {
-          "Name": "restart_course",
-          "KeyboardCode": "g",
-          "GroupName": "Timer"
-        },
-        {
-          "Name": "pedal_left",
+          "Name": "left_pedal",
           "KeyboardCode": "mouse1",
+          "GamepadCode": "RightTrigger",
           "GroupName": "Movement"
         },
         {
-          "Name": "pedal_right",
+          "Name": "right_pedal",
           "KeyboardCode": "mouse2",
+          "GamepadCode": "LeftTrigger",
           "GroupName": "Movement"
         },
         {
-          "Name": "spray",
+          "Name": "reload",
+          "KeyboardCode": "r",
+          "GamepadCode": "X",
+          "GroupName": "Actions"
+        },
+        {
+          "Name": "use",
+          "KeyboardCode": "e",
+          "GamepadCode": "Y",
+          "GroupName": "Actions"
+        },
+        {
+          "Name": "Slot1",
+          "KeyboardCode": "1",
+          "GamepadCode": "DpadWest",
+          "GroupName": "Inventory"
+        },
+        {
+          "Name": "Slot2",
+          "KeyboardCode": "2",
+          "GamepadCode": "DpadEast",
+          "GroupName": "Inventory"
+        },
+        {
+          "Name": "Slot3",
+          "KeyboardCode": "3",
+          "GamepadCode": "DpadSouth",
+          "GroupName": "Inventory"
+        },
+        {
+          "Name": "Slot4",
+          "KeyboardCode": "4",
+          "GroupName": "Inventory"
+        },
+        {
+          "Name": "Slot5",
+          "KeyboardCode": "5",
+          "GroupName": "Inventory"
+        },
+        {
+          "Name": "Slot6",
+          "KeyboardCode": "6",
+          "GroupName": "Inventory"
+        },
+        {
+          "Name": "Slot7",
+          "KeyboardCode": "7",
+          "GroupName": "Inventory"
+        },
+        {
+          "Name": "Slot8",
+          "KeyboardCode": "8",
+          "GroupName": "Inventory"
+        },
+        {
+          "Name": "Slot9",
+          "KeyboardCode": "9",
+          "GroupName": "Inventory"
+        },
+        {
+          "Name": "Slot0",
+          "KeyboardCode": "0",
+          "GroupName": "Inventory"
+        },
+        {
+          "Name": "SlotPrev",
+          "KeyboardCode": "mouse4",
+          "GamepadCode": "SwitchLeftBumper",
+          "GroupName": "Inventory"
+        },
+        {
+          "Name": "SlotNext",
+          "KeyboardCode": "mouse5",
+          "GamepadCode": "SwitchRightBumper",
+          "GroupName": "Inventory"
+        },
+        {
+          "Name": "View",
+          "KeyboardCode": "C",
+          "GamepadCode": "RightJoystickButton",
+          "GroupName": "Other"
+        },
+        {
+          "Name": "Voice",
+          "KeyboardCode": "v",
+          "GroupName": "Other"
+        },
+        {
+          "Name": "Drop",
+          "KeyboardCode": "g",
+          "GroupName": "Other"
+        },
+        {
+          "Name": "Flashlight",
           "KeyboardCode": "f",
-          "GroupName": "Misc"
+          "GamepadCode": "DpadNorth",
+          "GroupName": "Other"
         },
         {
-          "Name": "menu",
-          "KeyboardCode": "q",
-          "GroupName": "Misc"
-        },
-        {
-          "Name": "scoreboard",
+          "Name": "Score",
           "KeyboardCode": "tab",
-          "GroupName": "Misc"
+          "GamepadCode": "SwitchLeftMenu",
+          "GroupName": "Other"
         },
         {
-          "Name": "lean_left",
-          "KeyboardCode": "a",
-          "GroupName": "Movement"
+          "Name": "Menu",
+          "KeyboardCode": "Q",
+          "GamepadCode": "SwitchRightMenu",
+          "GroupName": "Other"
         },
         {
-          "Name": "lean_right",
-          "KeyboardCode": "d",
-          "GroupName": "Movement"
-        },
-        {
-          "Name": "lean_forward",
-          "KeyboardCode": "w",
-          "GroupName": "Movement"
-        },
-        {
-          "Name": "lean_backward",
-          "KeyboardCode": "s",
-          "GroupName": "Movement"
-        },
-        {
-          "Name": "open_chat",
+          "Name": "Chat",
           "KeyboardCode": "enter",
           "GroupName": "Other"
         }
       ]
     },
-    "HttpAllowList": null,
-    "TickRate": 50
+    "MapStartupScene": null,
+    "LaunchMode": "Normal"
   }
 }

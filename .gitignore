@@ -1,20 +1,25 @@
-﻿# Sandbox
-code/accesslist.txt
-Properties
-.intermediate
-tools_asset_info.bin
+
+# This file describes files and paths that should not be tracked by Git version control
+# https://git-scm.com/docs/gitignore
+
+# Auto-generated code editor files
+.vs/*
+.vscode/*
 *.csproj
-*.los
+obj/*
+Properties/*
+code/obj/*
+code/Properties/*
 
-# User-specific files
-*.rsuser
-*.suo
-*.user
-*.userosscache
-*.sln.docstates
+# Editor Projects
+code/Editor/obj/*
+code/Editor/Properties/*
+code/Editor/*.sln
+code/Editor/.vs/*
+code/Editor/.vscode/*
 
-# Build results
-.vs/
-[Oo]bj/
-*_bakeresourcecache
+# Auto-generated asset related files
 *.generated.*
+*.*_c
+*.los
+*.vpk

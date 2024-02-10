@@ -1,0 +1,302 @@
+{
+  "Id": "046ab979-e33d-4d36-aff5-7dce04ebe121",
+  "GameObjects": [
+    {
+      "Id": "678f5729-705d-4f90-8d8b-7850c0290ba8",
+      "Name": "Quarry",
+      "Position": "159.4176,642.9399,310.1045",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "MapInstance",
+          "MapName": "facepunch.uf_quarry",
+          "OnMapLoaded": null,
+          "OnMapUnloaded": null,
+          "UseMapFromLaunch": false
+        }
+      ],
+      "Children": []
+    },
+    {
+      "Id": "c22665c8-7c9a-4274-bf5a-e88dd9c06aac",
+      "Name": "player and camera",
+      "Position": "-97.62693,115.6198,77.55941",
+      "Enabled": true,
+      "Children": [
+        {
+          "Id": "27d61a02-58f2-497f-9ce9-80c912edfb46",
+          "Name": "Camera",
+          "Position": "0,0,0",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "CameraComponent",
+              "BackgroundColor": "0.33333,0.46275,0.52157,1",
+              "ClearFlags": "All",
+              "FieldOfView": 60,
+              "IsMainCamera": true,
+              "Orthographic": false,
+              "OrthographicHeight": 1204,
+              "Priority": 1,
+              "RenderExcludeTags": "",
+              "RenderTags": "",
+              "TargetEye": "None",
+              "Viewport": "0,0,1,1",
+              "ZFar": 10000,
+              "ZNear": 10
+            },
+            {
+              "__type": "CameraController",
+              "Target": {
+                "_type": "component",
+                "go": "0bec1982-305d-4d6c-a1e2-621d4bf48e48",
+                "component_type": "UnicycleController"
+              }
+            }
+          ]
+        },
+        {
+          "Id": "0bec1982-305d-4d6c-a1e2-621d4bf48e48",
+          "Name": "Player",
+          "Position": "0,0,0",
+          "Tags": "player",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "UnicycleController",
+              "FallSound": "sounds/unicycle/unicycle.crash.default.sound",
+              "JumpSound": "sounds/unicycle/unicycle.jump.sound",
+              "PedalSound": "sounds/unicycle/unicycle.pedal.sound",
+              "PerfectPedalSound": "sounds/unicycle/unicycle.pedal.perfect.sound",
+              "RespawnSound": null
+            },
+            {
+              "__type": "PlayerAnimator",
+              "LeftPedal": {
+                "_type": "gameobject",
+                "go": "11432ef0-ff87-442b-ba4b-e78cd9f240cf"
+              },
+              "PedalPivot": {
+                "_type": "gameobject",
+                "go": "3ecd2f7a-a953-40bc-8529-26ab654f7aa1"
+              },
+              "RightPedal": {
+                "_type": "gameobject",
+                "go": "c2e1a34f-7bcd-43d1-a545-8baf49813b33"
+              },
+              "Wheel": {
+                "_type": "gameobject",
+                "go": "64748279-dbe7-49f8-b689-dee921400a32"
+              },
+              "WheelPivot": {
+                "_type": "gameobject",
+                "go": "4c77fb4e-386e-4685-8bc9-6bf1764524d9"
+              }
+            },
+            {
+              "__type": "BoxCollider",
+              "Center": "0,0,36",
+              "IsTrigger": false,
+              "Scale": "20,20,72",
+              "Static": false,
+              "Surface": null
+            },
+            {
+              "__type": "CourseTimer"
+            }
+          ],
+          "Children": [
+            {
+              "Id": "a44e1476-b55e-4dff-88b9-85d712fd2c45",
+              "Name": "Player",
+              "Position": "0,0,35",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__type": "SkinnedModelRenderer",
+                  "BodyGroups": 341,
+                  "BoneMergeTarget": null,
+                  "CreateBoneObjects": false,
+                  "MaterialGroup": null,
+                  "MaterialOverride": null,
+                  "Model": "models/citizen/citizen.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                }
+              ]
+            },
+            {
+              "Id": "ac75d2a8-0201-4076-bdaa-9afc014807dd",
+              "Name": "Unicycle",
+              "Position": "0,0,0",
+              "Scale": "0.8,0.8,0.8",
+              "Enabled": true,
+              "Children": [
+                {
+                  "Id": "7298673a-1952-4fcd-89cd-4702bbf74558",
+                  "Name": "Seat",
+                  "Position": "0,0,32.68898",
+                  "Enabled": true,
+                  "Components": [
+                    {
+                      "__type": "ModelRenderer",
+                      "BodyGroups": 18446744073709551615,
+                      "MaterialGroup": null,
+                      "MaterialOverride": null,
+                      "Model": "models/unicycles/default/parts/seats/default_seat.vmdl",
+                      "RenderType": "On",
+                      "Tint": "1,1,1,1"
+                    }
+                  ]
+                },
+                {
+                  "Id": "ae0fcdf4-23b4-4261-87f8-87ca57093503",
+                  "Name": "Frame",
+                  "Position": "0,0,10.50214",
+                  "Enabled": true,
+                  "Components": [
+                    {
+                      "__type": "Prop",
+                      "Health": 0,
+                      "IsStatic": true,
+                      "Model": "models/unicycles/default/parts/frames/default_frame.vmdl",
+                      "OnPropBreak": null,
+                      "OnPropTakeDamage": null,
+                      "ShowCreatedComponents": false
+                    }
+                  ]
+                },
+                {
+                  "Id": "4c77fb4e-386e-4685-8bc9-6bf1764524d9",
+                  "Name": "WheelPivot",
+                  "Position": "0,0,12",
+                  "Enabled": true,
+                  "Children": [
+                    {
+                      "Id": "64748279-dbe7-49f8-b689-dee921400a32",
+                      "Name": "Wheel",
+                      "Position": "0,0,-12",
+                      "Enabled": true,
+                      "Components": [
+                        {
+                          "__type": "Prop",
+                          "Health": 0,
+                          "IsStatic": true,
+                          "Model": "models/unicycles/default/parts/wheels/default_wheel.vmdl",
+                          "OnPropBreak": null,
+                          "OnPropTakeDamage": null,
+                          "ShowCreatedComponents": false
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "Id": "3ecd2f7a-a953-40bc-8529-26ab654f7aa1",
+                  "Name": "Pedals",
+                  "Position": "0,0,12",
+                  "Enabled": true,
+                  "Children": [
+                    {
+                      "Id": "11432ef0-ff87-442b-ba4b-e78cd9f240cf",
+                      "Name": "Left Pedal",
+                      "Position": "0,5.200825,-5.631828",
+                      "Enabled": true,
+                      "Components": [
+                        {
+                          "__type": "Prop",
+                          "Health": 0,
+                          "IsStatic": true,
+                          "Model": "models/unicycles/default/parts/pedals/default_pedal.vmdl",
+                          "OnPropBreak": null,
+                          "OnPropTakeDamage": null,
+                          "ShowCreatedComponents": false
+                        }
+                      ]
+                    },
+                    {
+                      "Id": "c2e1a34f-7bcd-43d1-a545-8baf49813b33",
+                      "Name": "Right Pedal",
+                      "Position": "0,-5.227394,7.001972",
+                      "Rotation": "1,0,0,-0.00000004371139",
+                      "Enabled": true,
+                      "Components": [
+                        {
+                          "__type": "Prop",
+                          "Health": 0,
+                          "IsStatic": true,
+                          "Model": "models/unicycles/default/parts/pedals/default_pedal.vmdl",
+                          "OnPropBreak": null,
+                          "OnPropTakeDamage": null,
+                          "ShowCreatedComponents": false
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Id": "a06633a7-a845-497a-a122-e4b6c93f3e07",
+      "Name": "Start Zone",
+      "Position": "-160.1697,-1.287358,27.00858",
+      "Enabled": true,
+      "__Prefab": "prefabs/start zone.prefab"
+    },
+    {
+      "Id": "f07963c3-b14d-424a-965e-2f0c52196d02",
+      "Name": "End Zone",
+      "Position": "511.3699,-392.3983,471.2643",
+      "Enabled": true,
+      "__Prefab": "prefabs/end zone.prefab"
+    },
+    {
+      "Id": "ea3d9e86-c921-4aff-bd84-617c501ec1e6",
+      "Name": "Screen",
+      "Position": "-16.93652,-221.3996,254.2462",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "ScreenPanel",
+          "AutoScreenScale": true,
+          "Opacity": 1,
+          "Scale": 1,
+          "ZIndex": 100
+        },
+        {
+          "__type": "Hud",
+          "MyStringValue": "Hello World!"
+        }
+      ]
+    }
+  ],
+  "SceneProperties": {
+    "FixedUpdateFrequency": 50,
+    "Lerping": true,
+    "MaxFixedUpdates": 5,
+    "NetworkFrequency": 60,
+    "ThreadedAnimation": true,
+    "TimeScale": 1,
+    "UseFixedUpdate": true,
+    "NavMesh": {
+      "Enabled": false,
+      "IncludeStaticBodies": true,
+      "IncludeKeyframedBodies": true,
+      "EditorAutoUpdate": true,
+      "AgentHeight": 64,
+      "AgentRadius": 16,
+      "AgentStepSize": 18,
+      "AgentMaxSlope": 40,
+      "ExcludedBodies": "",
+      "IncludedBodies": ""
+    }
+  },
+  "Title": "minimal",
+  "Description": "",
+  "LastSaved": "2024-02-09T15:53:02.7296505-06:00",
+  "__references": []
+}

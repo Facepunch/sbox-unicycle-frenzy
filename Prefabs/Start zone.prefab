@@ -1,0 +1,53 @@
+{
+  "RootObject": {
+    "Id": "a06633a7-a845-497a-a122-e4b6c93f3e07",
+    "Name": "Start Zone",
+    "Position": "-160.1697,-1.287358,27.00858",
+    "Enabled": true,
+    "Components": [
+      {
+        "__type": "StartZone",
+        "Bounds": {
+          "Mins": "-63.93327,-155.4474,-23.36203",
+          "Maxs": "130.0931,109.5224,128.8793"
+        },
+        "EnterSound": null,
+        "ExitSound": "sounds/course/course.checkpoint.sound"
+      }
+    ],
+    "Children": [
+      {
+        "Id": "fa6d5c91-a1eb-4e96-9117-2d9ccaba61ae",
+        "Name": "Cube",
+        "Position": "34.15945,-21.49272,-27.97668",
+        "Scale": "3.909724,5.26596,0.1297799",
+        "Enabled": true,
+        "Components": [
+          {
+            "__type": "ModelRenderer",
+            "BodyGroups": 18446744073709551615,
+            "MaterialGroup": null,
+            "MaterialOverride": "materials/green8.vmat",
+            "Model": "models/dev/box.vmdl",
+            "RenderType": "On",
+            "Tint": "1,1,1,1"
+          },
+          {
+            "__type": "BoxCollider",
+            "Center": "0,0,0",
+            "IsTrigger": false,
+            "Scale": "50,50,50",
+            "Static": false,
+            "Surface": null
+          }
+        ]
+      }
+    ]
+  },
+  "ShowInMenu": false,
+  "MenuPath": null,
+  "MenuIcon": null,
+  "__references": [
+    "magikarp.green8"
+  ]
+}

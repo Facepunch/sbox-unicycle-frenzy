@@ -1,7 +1,0 @@
-{
-  "publish": {
-    "Enabled": true,
-    "Organisation": "local",
-    "Ident": "checkpoint_platform"
-  }
-}

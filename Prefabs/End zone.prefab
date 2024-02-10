@@ -1,0 +1,53 @@
+{
+  "RootObject": {
+    "Id": "f07963c3-b14d-424a-965e-2f0c52196d02",
+    "Name": "End Zone",
+    "Position": "511.3699,-392.3983,471.2643",
+    "Enabled": true,
+    "Components": [
+      {
+        "__type": "EndZone",
+        "Bounds": {
+          "Mins": "-60.2933,-87.76891,-23.10651",
+          "Maxs": "129.1628,102.4062,113.7802"
+        },
+        "EnterSound": "sounds/course/course.complete.sound",
+        "ExitSound": null
+      }
+    ],
+    "Children": [
+      {
+        "Id": "35abd72b-340b-4a6d-99a7-fdba5f765a1b",
+        "Name": "Cube (1)",
+        "Position": "34.26584,7.454529,-26.10336",
+        "Scale": "3.804789,3.809234,0.1297799",
+        "Enabled": true,
+        "Components": [
+          {
+            "__type": "ModelRenderer",
+            "BodyGroups": 18446744073709551615,
+            "MaterialGroup": null,
+            "MaterialOverride": "materials/red8.vmat",
+            "Model": "models/dev/box.vmdl",
+            "RenderType": "On",
+            "Tint": "1,1,1,1"
+          },
+          {
+            "__type": "BoxCollider",
+            "Center": "0,0,0",
+            "IsTrigger": false,
+            "Scale": "50,50,50",
+            "Static": false,
+            "Surface": null
+          }
+        ]
+      }
+    ]
+  },
+  "ShowInMenu": false,
+  "MenuPath": null,
+  "MenuIcon": null,
+  "__references": [
+    "magikarp.red8"
+  ]
+}
