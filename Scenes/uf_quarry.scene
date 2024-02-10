@@ -12,7 +12,7 @@
           "MapName": "facepunch.uf_quarry",
           "OnMapLoaded": null,
           "OnMapUnloaded": null,
-          "UseMapFromLaunch": false
+          "UseMapFromLaunch": true
         }
       ],
       "Children": []
@@ -297,6 +297,6 @@
   },
   "Title": "minimal",
   "Description": "",
-  "LastSaved": "2024-02-09T15:53:02.7296505-06:00",
+  "LastSaved": "2024-02-09T19:35:56.3776015-06:00",
   "__references": []
 }
