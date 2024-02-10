@@ -26,7 +26,7 @@
     "PerMapRanking": false,
     "LeaderboardType": "None",
     "CsProjName": "",
-    "StartupScene": "scenes/uf_quarry.scene",
+    "StartupScene": "scenes/menu.scene",
     "ProjectTemplate": null,
     "ControlModes": {},
     "InputSettings": {
