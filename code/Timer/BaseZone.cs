@@ -35,7 +35,7 @@ internal class BaseZone : Component
 		Gizmo.Draw.Color = ZoneColor;
 		Gizmo.Draw.LineBBox( Bounds );
 
-		if ( Gizmo.Control.BoundingBox( "bbox", Bounds, out var newBounds, false ) )
+		if ( Gizmo.Control.BoundingBox( "bbox", Bounds, out var newBounds ) )
 		{
 			Bounds = newBounds;
 		}
