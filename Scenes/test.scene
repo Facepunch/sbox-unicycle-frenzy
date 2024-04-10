@@ -1,20 +1,23 @@
 {
-  "Id": "05cd9e6e-374d-4f4a-b77a-917c57cd4d25",
+  "__guid": "05cd9e6e-374d-4f4a-b77a-917c57cd4d25",
   "GameObjects": [
     {
-      "Id": "469ca648-d4c5-4637-ad7c-3263fd8b4d64",
+      "__guid": "469ca648-d4c5-4637-ad7c-3263fd8b4d64",
       "Name": "player and camera",
       "Position": "-0.000003207322,0,53.80994",
       "Enabled": true,
+      "NetworkMode": 2,
       "Children": [
         {
-          "Id": "8ae78b7a-ce33-43cb-95fa-d8dd0ae32c15",
+          "__guid": "8ae78b7a-ce33-43cb-95fa-d8dd0ae32c15",
           "Name": "Camera",
           "Position": "0,0,0",
           "Enabled": true,
+          "NetworkMode": 2,
           "Components": [
             {
-              "__type": "CameraComponent",
+              "__type": "Sandbox.CameraComponent",
+              "__guid": "67a53820-d2ce-4691-9ff8-214c52254b7a",
               "BackgroundColor": "0.33333,0.46275,0.52157,1",
               "ClearFlags": "All",
               "FieldOfView": 60,
@@ -31,8 +34,10 @@
             },
             {
               "__type": "CameraController",
+              "__guid": "96be2bf9-9e0a-4400-9219-c510500e22d4",
               "Target": {
                 "_type": "component",
+                "component_id": "1922d4a5-f4df-49af-a9ca-a4369bc079de",
                 "go": "a994902a-9bbc-45e7-9246-a59a5cfe0493",
                 "component_type": "UnicycleController"
               }
@@ -40,22 +45,20 @@
           ]
         },
         {
-          "Id": "a994902a-9bbc-45e7-9246-a59a5cfe0493",
+          "__guid": "a994902a-9bbc-45e7-9246-a59a5cfe0493",
           "Name": "Player",
           "Position": "0,0,0",
           "Tags": "player",
           "Enabled": true,
+          "NetworkMode": 2,
           "Components": [
             {
               "__type": "UnicycleController",
-              "FallSound": null,
-              "JumpSound": null,
-              "PedalSound": null,
-              "PerfectPedalSound": null,
-              "RespawnSound": null
+              "__guid": "1922d4a5-f4df-49af-a9ca-a4369bc079de"
             },
             {
               "__type": "PlayerAnimator",
+              "__guid": "b55015fc-afe7-41b6-8503-0595d90d1840",
               "LeftPedal": {
                 "_type": "gameobject",
                 "go": "fcd4126c-b8e5-419f-a42f-100a47bf8e7c"
@@ -80,18 +83,17 @@
           ],
           "Children": [
             {
-              "Id": "90a71ede-06c9-49a7-b1fa-ed7d18e7253f",
+              "__guid": "90a71ede-06c9-49a7-b1fa-ed7d18e7253f",
               "Name": "Player",
               "Position": "0,0,35",
               "Enabled": true,
+              "NetworkMode": 2,
               "Components": [
                 {
-                  "__type": "SkinnedModelRenderer",
+                  "__type": "Sandbox.SkinnedModelRenderer",
+                  "__guid": "370f544b-20c3-4fb2-8204-6bdeb8f83296",
                   "BodyGroups": 341,
-                  "BoneMergeTarget": null,
                   "CreateBoneObjects": false,
-                  "MaterialGroup": null,
-                  "MaterialOverride": null,
                   "Model": "models/citizen/citizen.vmdl",
                   "RenderType": "On",
                   "Tint": "1,1,1,1"
@@ -99,23 +101,24 @@
               ]
             },
             {
-              "Id": "cd824a68-eac8-4f30-b706-ff3f9724eb17",
+              "__guid": "cd824a68-eac8-4f30-b706-ff3f9724eb17",
               "Name": "Unicycle",
               "Position": "0,0,0",
               "Scale": "0.8,0.8,0.8",
               "Enabled": true,
+              "NetworkMode": 2,
               "Children": [
                 {
-                  "Id": "41fdc534-879f-4114-87c5-2e3c15431013",
+                  "__guid": "41fdc534-879f-4114-87c5-2e3c15431013",
                   "Name": "Seat",
                   "Position": "0,0,32.68898",
                   "Enabled": true,
+                  "NetworkMode": 2,
                   "Components": [
                     {
-                      "__type": "ModelRenderer",
+                      "__type": "Sandbox.ModelRenderer",
+                      "__guid": "d334c63a-d1ae-4419-a51f-6bb7b53d5b78",
                       "BodyGroups": 18446744073709551615,
-                      "MaterialGroup": null,
-                      "MaterialOverride": null,
                       "Model": "models/unicycles/default/parts/seats/default_seat.vmdl",
                       "RenderType": "On",
                       "Tint": "1,1,1,1"
@@ -123,85 +126,87 @@
                   ]
                 },
                 {
-                  "Id": "1ca536e2-c4a5-4f14-b0be-c7c6d7bd6294",
+                  "__guid": "1ca536e2-c4a5-4f14-b0be-c7c6d7bd6294",
                   "Name": "Frame",
                   "Position": "0,0,10.50214",
                   "Enabled": true,
+                  "NetworkMode": 2,
                   "Components": [
                     {
-                      "__type": "Prop",
+                      "__type": "Sandbox.Prop",
+                      "__guid": "16a125c8-e994-44e4-9a98-b4a56957a33a",
+                      "BodyGroups": 18446744073709551615,
                       "Health": 0,
                       "IsStatic": true,
-                      "Model": "models/unicycles/default/parts/frames/default_frame.vmdl",
-                      "OnPropBreak": null,
-                      "OnPropTakeDamage": null,
-                      "ShowCreatedComponents": false
+                      "Model": "models/unicycles/default/parts/frames/default_frame.vmdl"
                     }
                   ]
                 },
                 {
-                  "Id": "ee3c8893-c5f7-4e20-accc-69798524aecd",
+                  "__guid": "ee3c8893-c5f7-4e20-accc-69798524aecd",
                   "Name": "WheelPivot",
                   "Position": "0,0,12",
                   "Enabled": true,
+                  "NetworkMode": 2,
                   "Children": [
                     {
-                      "Id": "90fef556-a954-456f-82f7-c158b5684a4e",
+                      "__guid": "90fef556-a954-456f-82f7-c158b5684a4e",
                       "Name": "Wheeel",
                       "Position": "0,0,-12",
                       "Enabled": true,
+                      "NetworkMode": 2,
                       "Components": [
                         {
-                          "__type": "Prop",
+                          "__type": "Sandbox.Prop",
+                          "__guid": "b3531e88-ba94-47d3-9514-ef78b85daecb",
+                          "BodyGroups": 18446744073709551615,
                           "Health": 0,
                           "IsStatic": true,
-                          "Model": "models/unicycles/default/parts/wheels/default_wheel.vmdl",
-                          "OnPropBreak": null,
-                          "OnPropTakeDamage": null,
-                          "ShowCreatedComponents": false
+                          "Model": "models/unicycles/default/parts/wheels/default_wheel.vmdl"
                         }
                       ]
                     }
                   ]
                 },
                 {
-                  "Id": "07a9fcd2-9977-4655-96be-74b9b9ae719b",
+                  "__guid": "07a9fcd2-9977-4655-96be-74b9b9ae719b",
                   "Name": "Pedals",
                   "Position": "0,0,12",
                   "Enabled": true,
+                  "NetworkMode": 2,
                   "Children": [
                     {
-                      "Id": "fcd4126c-b8e5-419f-a42f-100a47bf8e7c",
+                      "__guid": "fcd4126c-b8e5-419f-a42f-100a47bf8e7c",
                       "Name": "Left Pedal",
                       "Position": "0,5.200825,-5.631828",
                       "Enabled": true,
+                      "NetworkMode": 2,
                       "Components": [
                         {
-                          "__type": "Prop",
+                          "__type": "Sandbox.Prop",
+                          "__guid": "f56d7f1d-e6df-4d83-9aed-9c2e811a9ae0",
+                          "BodyGroups": 18446744073709551615,
                           "Health": 0,
                           "IsStatic": true,
-                          "Model": "models/unicycles/default/parts/pedals/default_pedal.vmdl",
-                          "OnPropBreak": null,
-                          "OnPropTakeDamage": null,
-                          "ShowCreatedComponents": false
+                          "Model": "models/unicycles/default/parts/pedals/default_pedal.vmdl"
                         }
                       ]
                     },
                     {
-                      "Id": "1915aca3-d119-413d-90b2-4ab182a38805",
+                      "__guid": "1915aca3-d119-413d-90b2-4ab182a38805",
                       "Name": "Right Pedal",
                       "Position": "0,-5.227394,7.001972",
                       "Rotation": "1,0,0,-0.00000004371139",
                       "Enabled": true,
+                      "NetworkMode": 2,
                       "Components": [
                         {
-                          "__type": "Prop",
+                          "__type": "Sandbox.Prop",
+                          "__guid": "217b64e3-f008-426f-bc4c-1de13b2d21ca",
+                          "BodyGroups": 18446744073709551615,
                           "Health": 0,
                           "IsStatic": true,
-                          "Model": "models/unicycles/default/parts/pedals/default_pedal.vmdl",
-                          "OnPropBreak": null,
-                          "OnPropTakeDamage": null,
-                          "ShowCreatedComponents": false
+                          "Model": "models/unicycles/default/parts/pedals/default_pedal.vmdl"
                         }
                       ]
                     }
@@ -214,14 +219,17 @@
       ]
     },
     {
-      "Id": "401f2432-00ee-4f46-ab6d-a5c3c4dfb4ce",
+      "__guid": "401f2432-00ee-4f46-ab6d-a5c3c4dfb4ce",
       "Name": "Sun",
       "Position": "96.06752,67.53409,17.62253",
       "Rotation": "-0.8597896,-0.04736708,0.4767269,0.1767769",
+      "Tags": "light_directional,light",
       "Enabled": true,
+      "NetworkMode": 2,
       "Components": [
         {
-          "__type": "DirectionalLight",
+          "__type": "Sandbox.DirectionalLight",
+          "__guid": "43c1c33a-cc32-4da6-b3fc-65a6c3f06e72",
           "FogMode": "Enabled",
           "FogStrength": 1,
           "LightColor": "0.91373,0.98039,1,1",
@@ -231,40 +239,147 @@
       ]
     },
     {
-      "Id": "c3a04015-2c56-4c2a-9ed7-58ca856e4930",
+      "__guid": "c3a04015-2c56-4c2a-9ed7-58ca856e4930",
       "Name": "Plane",
       "Scale": "7,7,1",
       "Enabled": true,
+      "NetworkMode": 2,
       "Components": [
         {
-          "__type": "ModelRenderer",
+          "__type": "Sandbox.ModelRenderer",
+          "__guid": "7d598d1b-223e-47c4-99e4-f6943da45d10",
           "BodyGroups": 18446744073709551615,
-          "MaterialGroup": null,
-          "MaterialOverride": null,
           "Model": "models/dev/plane.vmdl",
           "RenderType": "On",
           "Tint": "1,1,1,1"
         },
         {
-          "__type": "BoxCollider",
+          "__type": "Sandbox.BoxCollider",
+          "__guid": "aaf0309a-2c66-4a29-822e-59ac27944923",
           "Center": "0,0,0",
           "IsTrigger": false,
           "Scale": "97.6,98.2,5.699999",
-          "Static": false,
-          "Surface": null
+          "Static": false
         }
       ]
     },
     {
-      "Id": "6a54d9a8-61d8-4f99-9457-09f8fb37e3bf",
+      "__guid": "6a54d9a8-61d8-4f99-9457-09f8fb37e3bf",
       "Name": "2D Skybox",
       "Position": "8.036308,4.616638,74.12291",
+      "Tags": "skybox",
       "Enabled": true,
+      "NetworkMode": 2,
       "Components": [
         {
-          "__type": "SkyBox2D",
+          "__type": "Sandbox.SkyBox2D",
+          "__guid": "c7b2c1a9-b506-48c2-884d-2d70ca5dece6",
           "SkyMaterial": "materials/skybox/light_test_sky_sunny02.vmat",
           "Tint": "1,1,1,1"
+        }
+      ]
+    },
+    {
+      "__guid": "da5b78e9-f7fb-4fb8-b5f6-b4b34b2affa3",
+      "Name": "start",
+      "Position": "128,-0,0",
+      "Rotation": "0,0.00000004371139,-0.9999999,0",
+      "Tags": "gridtile",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "Components": [
+        {
+          "__type": "Sandbox.ModelRenderer",
+          "__guid": "c0295e11-7dd8-4c00-aa50-c7f0894692c4",
+          "BodyGroups": 18446744073709551615,
+          "Model": "models/ken/start.vmdl",
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        },
+        {
+          "__type": "Sandbox.ModelCollider",
+          "__guid": "89f869ee-f846-405c-8657-cf98153745b0",
+          "IsTrigger": false,
+          "Model": "models/ken/start.vmdl",
+          "Static": false
+        }
+      ]
+    },
+    {
+      "__guid": "0c8c7de4-69ce-4381-97e9-b902c7fa5f1a",
+      "Name": "straight",
+      "Position": "256,0,0",
+      "Rotation": "0,0.00000004371139,-0.9999999,0",
+      "Tags": "gridtile",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "Components": [
+        {
+          "__type": "Sandbox.ModelRenderer",
+          "__guid": "12eac5a5-8e71-44a2-b316-626c71d0ddda",
+          "BodyGroups": 18446744073709551615,
+          "Model": "models/ken/straight.vmdl",
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        },
+        {
+          "__type": "Sandbox.ModelCollider",
+          "__guid": "346f5fc6-08b0-4d23-ac4e-68ec1ddd8302",
+          "IsTrigger": false,
+          "Model": "models/ken/straight.vmdl",
+          "Static": false
+        }
+      ]
+    },
+    {
+      "__guid": "986facbe-db4c-463e-93ca-f8bbdbed11ac",
+      "Name": "straight",
+      "Position": "384,0,0",
+      "Rotation": "0,0.00000004371139,-0.9999999,0",
+      "Tags": "gridtile",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "Components": [
+        {
+          "__type": "Sandbox.ModelRenderer",
+          "__guid": "25891d14-43dd-4fbf-af29-cb2ed801ae5f",
+          "BodyGroups": 18446744073709551615,
+          "Model": "models/ken/straight.vmdl",
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        },
+        {
+          "__type": "Sandbox.ModelCollider",
+          "__guid": "0a82a5c3-fbdb-477b-bba0-173fe3ef3cf8",
+          "IsTrigger": false,
+          "Model": "models/ken/straight.vmdl",
+          "Static": false
+        }
+      ]
+    },
+    {
+      "__guid": "9ceae1d2-b31c-4d45-9b01-a1e8653eb95e",
+      "Name": "straight",
+      "Position": "512,0,0",
+      "Rotation": "0,0.00000004371139,-0.9999999,0",
+      "Tags": "gridtile",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "Components": [
+        {
+          "__type": "Sandbox.ModelRenderer",
+          "__guid": "d6e949b2-4316-489b-bea9-7ea4b28955d7",
+          "BodyGroups": 18446744073709551615,
+          "Model": "models/ken/straight.vmdl",
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        },
+        {
+          "__type": "Sandbox.ModelCollider",
+          "__guid": "0f3312ee-0c9b-43b0-ac56-c8f73d13fa04",
+          "IsTrigger": false,
+          "Model": "models/ken/straight.vmdl",
+          "Static": false
         }
       ]
     }
@@ -292,6 +407,8 @@
   },
   "Title": "test",
   "Description": "",
-  "LastSaved": "2024-02-09T18:11:26.6703483-06:00",
+  "LastSaved": "2024-04-10T20:31:57.5436912\u002B01:00",
+  "ResourceVersion": 1,
+  "__version": 1,
   "__references": []
 }
