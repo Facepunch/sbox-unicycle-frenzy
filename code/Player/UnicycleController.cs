@@ -77,7 +77,7 @@ internal class UnicycleController : Component
 	public float TimeSinceJumpDown { get; private set; }
 	public Rotation TargetForward { get; private set; }
 
-
+	private string groundSurface;
 	Vector3 GroundNormal;
 	GameObject Ground;
 	bool PrevGrounded;
@@ -308,7 +308,7 @@ internal class UnicycleController : Component
 
 	private void CheckGround()
 	{
-		var tr = TraceBBox( Position, Position + Vector3.Down * 4f, Mins, Maxs, 3f );
+		var tr = TraceBBox( Position, Position + Vector3.Down * 5f, Mins, Maxs, 3f );
 
 		if ( !tr.Hit || Vector3.GetAngle( Vector3.Up, tr.Normal ) < 5f && Velocity.z > 140f )
 		{
@@ -349,6 +349,7 @@ internal class UnicycleController : Component
 		//BaseVelocity = tr.Entity.Velocity;
 		Ground = tr.GameObject;
 		GroundNormal = tr.Normal;
+		groundSurface = tr.Surface.ResourceName;
 	}
 
 	private void CheckJump()
@@ -704,7 +705,7 @@ internal class UnicycleController : Component
 		var speed = Velocity.Length;
 		if ( speed < 0.1f ) return;
 
-		var drop = speed * Time.Delta * .1f * SurfaceFriction;
+		var drop = speed * Time.Delta * .1f * GetSurfaceFriction();
 		var newspeed = Math.Max( speed - drop, 0 );
 
 		if ( newspeed != speed )
@@ -712,6 +713,16 @@ internal class UnicycleController : Component
 			newspeed /= speed;
 			Velocity *= newspeed;
 		}
+	}
+	private float GetSurfaceFriction()
+	{
+		return groundSurface switch
+		{
+			"mud" => 5.0f,
+			"sand" => 20.0f,
+			"dirt" => 2.0f,
+			_ => 1.0f,
+		};
 	}
 
 	private void DoSlope()
