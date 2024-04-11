@@ -17,7 +17,7 @@
           "Components": [
             {
               "__type": "Sandbox.CameraComponent",
-              "__guid": "67a53820-d2ce-4691-9ff8-214c52254b7a",
+              "__guid": "d70e7642-3497-4c52-8c1d-6bac804ae3df",
               "BackgroundColor": "0.33333,0.46275,0.52157,1",
               "ClearFlags": "All",
               "FieldOfView": 60,
@@ -34,10 +34,10 @@
             },
             {
               "__type": "CameraController",
-              "__guid": "96be2bf9-9e0a-4400-9219-c510500e22d4",
+              "__guid": "0f1f203f-7503-4103-a07a-9ea5614ca846",
               "Target": {
                 "_type": "component",
-                "component_id": "1922d4a5-f4df-49af-a9ca-a4369bc079de",
+                "component_id": "c11193a2-8e80-4a50-964a-97ca3d6cda01",
                 "go": "a994902a-9bbc-45e7-9246-a59a5cfe0493",
                 "component_type": "UnicycleController"
               }
@@ -54,11 +54,11 @@
           "Components": [
             {
               "__type": "UnicycleController",
-              "__guid": "1922d4a5-f4df-49af-a9ca-a4369bc079de"
+              "__guid": "c11193a2-8e80-4a50-964a-97ca3d6cda01"
             },
             {
               "__type": "PlayerAnimator",
-              "__guid": "b55015fc-afe7-41b6-8503-0595d90d1840",
+              "__guid": "254f258b-2b68-4c36-be9d-98c115d08733",
               "LeftPedal": {
                 "_type": "gameobject",
                 "go": "fcd4126c-b8e5-419f-a42f-100a47bf8e7c"
@@ -91,7 +91,7 @@
               "Components": [
                 {
                   "__type": "Sandbox.SkinnedModelRenderer",
-                  "__guid": "370f544b-20c3-4fb2-8204-6bdeb8f83296",
+                  "__guid": "c99ca21c-add5-4428-8e10-978d36f4d2cc",
                   "BodyGroups": 341,
                   "CreateBoneObjects": false,
                   "Model": "models/citizen/citizen.vmdl",
@@ -117,7 +117,7 @@
                   "Components": [
                     {
                       "__type": "Sandbox.ModelRenderer",
-                      "__guid": "d334c63a-d1ae-4419-a51f-6bb7b53d5b78",
+                      "__guid": "667dee2d-7600-4852-9cba-eba1e866f4e9",
                       "BodyGroups": 18446744073709551615,
                       "Model": "models/unicycles/default/parts/seats/default_seat.vmdl",
                       "RenderType": "On",
@@ -134,7 +134,7 @@
                   "Components": [
                     {
                       "__type": "Sandbox.Prop",
-                      "__guid": "16a125c8-e994-44e4-9a98-b4a56957a33a",
+                      "__guid": "1342edfc-e989-4861-b68b-b41fa8876835",
                       "BodyGroups": 18446744073709551615,
                       "Health": 0,
                       "IsStatic": true,
@@ -158,7 +158,7 @@
                       "Components": [
                         {
                           "__type": "Sandbox.Prop",
-                          "__guid": "b3531e88-ba94-47d3-9514-ef78b85daecb",
+                          "__guid": "dba18f45-ec81-443f-b708-d15fe7a2f6ea",
                           "BodyGroups": 18446744073709551615,
                           "Health": 0,
                           "IsStatic": true,
@@ -184,7 +184,7 @@
                       "Components": [
                         {
                           "__type": "Sandbox.Prop",
-                          "__guid": "f56d7f1d-e6df-4d83-9aed-9c2e811a9ae0",
+                          "__guid": "40b45433-4b20-493a-90a4-84d2a8adc939",
                           "BodyGroups": 18446744073709551615,
                           "Health": 0,
                           "IsStatic": true,
@@ -202,7 +202,7 @@
                       "Components": [
                         {
                           "__type": "Sandbox.Prop",
-                          "__guid": "217b64e3-f008-426f-bc4c-1de13b2d21ca",
+                          "__guid": "603ba110-0d91-4179-9574-d484ed0a3b61",
                           "BodyGroups": 18446744073709551615,
                           "Health": 0,
                           "IsStatic": true,
@@ -229,7 +229,7 @@
       "Components": [
         {
           "__type": "Sandbox.DirectionalLight",
-          "__guid": "43c1c33a-cc32-4da6-b3fc-65a6c3f06e72",
+          "__guid": "2e0c8e33-9253-48bd-bf3c-bbd1a1c45578",
           "FogMode": "Enabled",
           "FogStrength": 1,
           "LightColor": "0.91373,0.98039,1,1",
@@ -247,7 +247,7 @@
       "Components": [
         {
           "__type": "Sandbox.ModelRenderer",
-          "__guid": "7d598d1b-223e-47c4-99e4-f6943da45d10",
+          "__guid": "149fd510-9d54-4766-a4ef-17462d8af8d6",
           "BodyGroups": 18446744073709551615,
           "Model": "models/dev/plane.vmdl",
           "RenderType": "On",
@@ -255,7 +255,7 @@
         },
         {
           "__type": "Sandbox.BoxCollider",
-          "__guid": "aaf0309a-2c66-4a29-822e-59ac27944923",
+          "__guid": "478be488-5685-40de-aec8-a1f246b5cd7d",
           "Center": "0,0,0",
           "IsTrigger": false,
           "Scale": "97.6,98.2,5.699999",
@@ -273,113 +273,9 @@
       "Components": [
         {
           "__type": "Sandbox.SkyBox2D",
-          "__guid": "c7b2c1a9-b506-48c2-884d-2d70ca5dece6",
+          "__guid": "d1b124ae-10df-4539-a974-d27310aeeef4",
           "SkyMaterial": "materials/skybox/light_test_sky_sunny02.vmat",
           "Tint": "1,1,1,1"
-        }
-      ]
-    },
-    {
-      "__guid": "da5b78e9-f7fb-4fb8-b5f6-b4b34b2affa3",
-      "Name": "start",
-      "Position": "128,-0,0",
-      "Rotation": "0,0.00000004371139,-0.9999999,0",
-      "Tags": "gridtile",
-      "Enabled": true,
-      "NetworkMode": 2,
-      "Components": [
-        {
-          "__type": "Sandbox.ModelRenderer",
-          "__guid": "c0295e11-7dd8-4c00-aa50-c7f0894692c4",
-          "BodyGroups": 18446744073709551615,
-          "Model": "models/ken/start.vmdl",
-          "RenderType": "On",
-          "Tint": "1,1,1,1"
-        },
-        {
-          "__type": "Sandbox.ModelCollider",
-          "__guid": "89f869ee-f846-405c-8657-cf98153745b0",
-          "IsTrigger": false,
-          "Model": "models/ken/start.vmdl",
-          "Static": false
-        }
-      ]
-    },
-    {
-      "__guid": "0c8c7de4-69ce-4381-97e9-b902c7fa5f1a",
-      "Name": "straight",
-      "Position": "256,0,0",
-      "Rotation": "0,0.00000004371139,-0.9999999,0",
-      "Tags": "gridtile",
-      "Enabled": true,
-      "NetworkMode": 2,
-      "Components": [
-        {
-          "__type": "Sandbox.ModelRenderer",
-          "__guid": "12eac5a5-8e71-44a2-b316-626c71d0ddda",
-          "BodyGroups": 18446744073709551615,
-          "Model": "models/ken/straight.vmdl",
-          "RenderType": "On",
-          "Tint": "1,1,1,1"
-        },
-        {
-          "__type": "Sandbox.ModelCollider",
-          "__guid": "346f5fc6-08b0-4d23-ac4e-68ec1ddd8302",
-          "IsTrigger": false,
-          "Model": "models/ken/straight.vmdl",
-          "Static": false
-        }
-      ]
-    },
-    {
-      "__guid": "986facbe-db4c-463e-93ca-f8bbdbed11ac",
-      "Name": "straight",
-      "Position": "384,0,0",
-      "Rotation": "0,0.00000004371139,-0.9999999,0",
-      "Tags": "gridtile",
-      "Enabled": true,
-      "NetworkMode": 2,
-      "Components": [
-        {
-          "__type": "Sandbox.ModelRenderer",
-          "__guid": "25891d14-43dd-4fbf-af29-cb2ed801ae5f",
-          "BodyGroups": 18446744073709551615,
-          "Model": "models/ken/straight.vmdl",
-          "RenderType": "On",
-          "Tint": "1,1,1,1"
-        },
-        {
-          "__type": "Sandbox.ModelCollider",
-          "__guid": "0a82a5c3-fbdb-477b-bba0-173fe3ef3cf8",
-          "IsTrigger": false,
-          "Model": "models/ken/straight.vmdl",
-          "Static": false
-        }
-      ]
-    },
-    {
-      "__guid": "9ceae1d2-b31c-4d45-9b01-a1e8653eb95e",
-      "Name": "straight",
-      "Position": "512,0,0",
-      "Rotation": "0,0.00000004371139,-0.9999999,0",
-      "Tags": "gridtile",
-      "Enabled": true,
-      "NetworkMode": 2,
-      "Components": [
-        {
-          "__type": "Sandbox.ModelRenderer",
-          "__guid": "d6e949b2-4316-489b-bea9-7ea4b28955d7",
-          "BodyGroups": 18446744073709551615,
-          "Model": "models/ken/straight.vmdl",
-          "RenderType": "On",
-          "Tint": "1,1,1,1"
-        },
-        {
-          "__type": "Sandbox.ModelCollider",
-          "__guid": "0f3312ee-0c9b-43b0-ac56-c8f73d13fa04",
-          "IsTrigger": false,
-          "Model": "models/ken/straight.vmdl",
-          "Static": false
         }
       ]
     }
@@ -407,7 +303,7 @@
   },
   "Title": "test",
   "Description": "",
-  "LastSaved": "2024-04-10T20:31:57.5436912\u002B01:00",
+  "LastSaved": "2024-04-11T16:15:41.2345929-04:00",
   "ResourceVersion": 1,
   "__version": 1,
   "__references": []
