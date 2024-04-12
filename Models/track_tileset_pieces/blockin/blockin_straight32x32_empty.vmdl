@@ -11,19 +11,9 @@
 				[
 					{
 						_class = "DefaultMaterialGroup"
-						remaps = 
-						[
-							{
-								from = "floor.vmat"
-								to = "materials/wood/hotspots/plywood_hs.vmat"
-							},
-							{
-								from = "wall.vmat"
-								to = "materials/track_tilesets/black_tarp/black_tarp.vmat"
-							},
-						]
-						use_global_default = false
-						global_default_material = "materials/wood/hotspots/plywood_hs.vmat"
+						remaps = [  ]
+						use_global_default = true
+						global_default_material = "materials/default.vmat"
 					},
 				]
 			},
@@ -58,7 +48,6 @@
 				[
 					{
 						_class = "PhysicsMeshFile"
-						name = "blockin_straight32x32_empty"
 						parent_bone = ""
 						surface_prop = "default"
 						collision_tags = "solid"
@@ -68,7 +57,7 @@
 						align_origin_x_type = "None"
 						align_origin_y_type = "None"
 						align_origin_z_type = "None"
-						filename = "Models/track_tileset_pieces/blockin/blockin_straight32x32_empty.fbx"
+						filename = "models/track_tileset_pieces/blockin/blockin_straight32x32_empty.fbx"
 						import_scale = 1.0
 						maxMeshVertices = 0
 						qemError = 0.0
