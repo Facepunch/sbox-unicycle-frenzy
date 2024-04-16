@@ -1,876 +1,12 @@
 {
   "RootObject": {
-    "__guid": "a049290f-d96c-46ad-bfab-44e7304f285c",
+    "__guid": "b07cac27-ed7a-4fea-9267-d45c7f3abf1d",
     "Name": "uf_tileset_blockin",
     "Enabled": true,
     "NetworkMode": 2,
     "Children": [
       {
-        "__guid": "778689b6-2144-4225-a2f3-93b1a69282fd",
-        "Name": "straight",
-        "Tags": "group",
-        "Enabled": true,
-        "NetworkMode": 2,
-        "Children": [
-          {
-            "__guid": "34bb00a0-75ed-4546-a49d-04d980a117f6",
-            "Name": "blockin_32x32",
-            "Enabled": true,
-            "NetworkMode": 2,
-            "Components": [
-              {
-                "__type": "Sandbox.ModelRenderer",
-                "__guid": "f6f896c9-81b8-444f-abc5-c23555be6f0c",
-                "BodyGroups": 18446744073709551615,
-                "Model": "models/track_tileset_pieces/blockin/blockin_32x32.vmdl",
-                "RenderType": "On",
-                "Tint": "1,1,1,1"
-              },
-              {
-                "__type": "Sandbox.ModelCollider",
-                "__guid": "d56a1fbb-bdcc-4940-8259-cd3a691fa012",
-                "IsTrigger": false,
-                "Model": "models/track_tileset_pieces/blockin/blockin_32x32.vmdl",
-                "Static": false
-              }
-            ]
-          },
-          {
-            "__guid": "1c67f609-bc25-4025-a005-5d5282015209",
-            "Name": "blockin_32x32_walls_both",
-            "Position": "0,-640,0",
-            "Enabled": true,
-            "NetworkMode": 2,
-            "Components": [
-              {
-                "__type": "Sandbox.ModelRenderer",
-                "__guid": "a39f1a0f-1569-4f2a-a307-f5d629e45cf3",
-                "BodyGroups": 18446744073709551615,
-                "Model": "models/track_tileset_pieces/blockin/blockin_32x32_walls_both.vmdl",
-                "RenderType": "On",
-                "Tint": "1,1,1,1"
-              },
-              {
-                "__type": "Sandbox.ModelCollider",
-                "__guid": "0df35aae-ccce-4cae-acf4-da36cc081e52",
-                "IsTrigger": false,
-                "Model": "models/track_tileset_pieces/blockin/blockin_32x32_walls_both.vmdl",
-                "Static": false
-              }
-            ]
-          },
-          {
-            "__guid": "7d5874f8-5b57-434a-b47b-6624aee72080",
-            "Name": "blockin_angle_32x32",
-            "Position": "0,-1280,0",
-            "Enabled": true,
-            "NetworkMode": 2,
-            "Components": [
-              {
-                "__type": "Sandbox.ModelRenderer",
-                "__guid": "9f7b65a1-5a8a-40d7-8a12-b890e6a21687",
-                "BodyGroups": 18446744073709551615,
-                "Model": "models/track_tileset_pieces/blockin/blockin_angle_32x32.vmdl",
-                "RenderType": "On",
-                "Tint": "1,1,1,1"
-              },
-              {
-                "__type": "Sandbox.ModelCollider",
-                "__guid": "cde374d9-ce2a-476b-a362-160fff87c10b",
-                "IsTrigger": false,
-                "Model": "models/track_tileset_pieces/blockin/blockin_angle_32x32.vmdl",
-                "Static": false
-              }
-            ]
-          },
-          {
-            "__guid": "ceef0eb3-a750-460b-a0fa-240de4996f0f",
-            "Name": "blockin_angle_32x32_walls_both",
-            "Position": "0,-1920,0",
-            "Enabled": true,
-            "NetworkMode": 2,
-            "Components": [
-              {
-                "__type": "Sandbox.ModelRenderer",
-                "__guid": "9ca87284-f658-48cd-a955-2c512f9afa5a",
-                "BodyGroups": 18446744073709551615,
-                "Model": "models/track_tileset_pieces/blockin/blockin_angle_32x32_walls_both.vmdl",
-                "RenderType": "On",
-                "Tint": "1,1,1,1"
-              },
-              {
-                "__type": "Sandbox.ModelCollider",
-                "__guid": "762de650-fbe8-4f13-86ed-490258676a0e",
-                "IsTrigger": false,
-                "Model": "models/track_tileset_pieces/blockin/blockin_angle_32x32_walls_both.vmdl",
-                "Static": false
-              }
-            ]
-          },
-          {
-            "__guid": "d776b64f-31cf-4a25-8a58-67dd9fe515de",
-            "Name": "blockin_angle_right_32x32_walls_both",
-            "Position": "0,-2560,0",
-            "Enabled": true,
-            "NetworkMode": 2,
-            "Components": [
-              {
-                "__type": "Sandbox.ModelRenderer",
-                "__guid": "ba8c3e49-fe89-450d-a689-919529c02475",
-                "BodyGroups": 18446744073709551615,
-                "Model": "models/track_tileset_pieces/blockin/blockin_angle_right_32x32_walls_both.vmdl",
-                "RenderType": "On",
-                "Tint": "1,1,1,1"
-              },
-              {
-                "__type": "Sandbox.ModelCollider",
-                "__guid": "244324eb-213c-414a-9eb6-de2b40170a38",
-                "IsTrigger": false,
-                "Model": "models/track_tileset_pieces/blockin/blockin_angle_right_32x32_walls_both.vmdl",
-                "Static": false
-              }
-            ]
-          },
-          {
-            "__guid": "32d161b3-5a41-4de2-815f-80a85f3c6f17",
-            "Name": "blockin_angle_steep_32x32",
-            "Position": "0,-3200,0",
-            "Enabled": true,
-            "NetworkMode": 2,
-            "Components": [
-              {
-                "__type": "Sandbox.ModelRenderer",
-                "__guid": "52161c91-dc19-4a92-b841-d2beaea8bdcc",
-                "BodyGroups": 18446744073709551615,
-                "Model": "models/track_tileset_pieces/blockin/blockin_angle_steep_32x32.vmdl",
-                "RenderType": "On",
-                "Tint": "1,1,1,1"
-              },
-              {
-                "__type": "Sandbox.ModelCollider",
-                "__guid": "721450ef-a9fd-450b-a489-78265bee9e00",
-                "IsTrigger": false,
-                "Model": "models/track_tileset_pieces/blockin/blockin_angle_steep_32x32.vmdl",
-                "Static": false
-              }
-            ]
-          },
-          {
-            "__guid": "d7282416-5f35-44be-a151-99b56b11c3c8",
-            "Name": "blockin_angle_steep_32x32_walls_both",
-            "Position": "0,-3840,0",
-            "Enabled": true,
-            "NetworkMode": 2,
-            "Components": [
-              {
-                "__type": "Sandbox.ModelRenderer",
-                "__guid": "70d80f03-2d52-4a2a-a021-3abb0cb69b5e",
-                "BodyGroups": 18446744073709551615,
-                "Model": "models/track_tileset_pieces/blockin/blockin_angle_steep_32x32_walls_both.vmdl",
-                "RenderType": "On",
-                "Tint": "1,1,1,1"
-              },
-              {
-                "__type": "Sandbox.ModelCollider",
-                "__guid": "bca5445d-e32c-4393-8ffe-ffd7f799e2fc",
-                "IsTrigger": false,
-                "Model": "models/track_tileset_pieces/blockin/blockin_angle_steep_32x32_walls_both.vmdl",
-                "Static": false
-              }
-            ]
-          },
-          {
-            "__guid": "f6f7ef23-6e6b-4d58-88f4-8a1e17038c92",
-            "Name": "blockin_angle_steep_right_32x32_walls_both",
-            "Position": "0,-4480,0",
-            "Enabled": true,
-            "NetworkMode": 2,
-            "Components": [
-              {
-                "__type": "Sandbox.ModelRenderer",
-                "__guid": "13f33c00-5265-4aec-a9fa-af5d5462410d",
-                "BodyGroups": 18446744073709551615,
-                "Model": "models/track_tileset_pieces/blockin/blockin_angle_steep_right_32x32_walls_both.vmdl",
-                "RenderType": "On",
-                "Tint": "1,1,1,1"
-              },
-              {
-                "__type": "Sandbox.ModelCollider",
-                "__guid": "55425da6-ab24-47ee-bd7c-62a1e192a882",
-                "IsTrigger": false,
-                "Model": "models/track_tileset_pieces/blockin/blockin_angle_steep_right_32x32_walls_both.vmdl",
-                "Static": false
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "__guid": "990cce2d-3b9a-42ec-bf30-6fa2cf01a57d",
-        "Name": "turns",
-        "Position": "1536,0,0",
-        "Tags": "group",
-        "Enabled": true,
-        "NetworkMode": 2,
-        "Children": [
-          {
-            "__guid": "c3e6388c-c387-44ca-bc8b-9e3ef9133386",
-            "Name": "blockin_turn_32x32",
-            "Position": "0,0,0",
-            "Enabled": true,
-            "NetworkMode": 2,
-            "Components": [
-              {
-                "__type": "Sandbox.ModelRenderer",
-                "__guid": "cddb3f80-e6c0-4add-ba32-81a91e3fec13",
-                "BodyGroups": 18446744073709551615,
-                "Model": "models/track_tileset_pieces/blockin/blockin_turn_32x32.vmdl",
-                "RenderType": "On",
-                "Tint": "1,1,1,1"
-              },
-              {
-                "__type": "Sandbox.ModelCollider",
-                "__guid": "14d22df5-f82a-4ee7-8ce4-b662cd47d7b0",
-                "IsTrigger": false,
-                "Model": "models/track_tileset_pieces/blockin/blockin_turn_32x32.vmdl",
-                "Static": false
-              }
-            ]
-          },
-          {
-            "__guid": "469280e7-c63a-4107-974d-1c3342e7db5c",
-            "Name": "blockin_turn_32x32_walls_both",
-            "Position": "0,-640,0",
-            "Enabled": true,
-            "NetworkMode": 2,
-            "Components": [
-              {
-                "__type": "Sandbox.ModelRenderer",
-                "__guid": "ac073927-8408-46f8-a046-743bdd0f7850",
-                "BodyGroups": 18446744073709551615,
-                "Model": "models/track_tileset_pieces/blockin/blockin_turn_32x32_walls_both.vmdl",
-                "RenderType": "On",
-                "Tint": "1,1,1,1"
-              },
-              {
-                "__type": "Sandbox.ModelCollider",
-                "__guid": "a91ea810-77d6-468c-87fd-1056e9aae3f3",
-                "IsTrigger": false,
-                "Model": "models/track_tileset_pieces/blockin/blockin_turn_32x32_walls_both.vmdl",
-                "Static": false
-              }
-            ]
-          },
-          {
-            "__guid": "dc7828af-f4c4-46d0-bc2b-177e547389a8",
-            "Name": "blockin_turn_64x64",
-            "Position": "0,-1280,0",
-            "Enabled": true,
-            "NetworkMode": 2,
-            "Components": [
-              {
-                "__type": "Sandbox.ModelRenderer",
-                "__guid": "5b47ec21-2099-485d-bd32-6374c891fac0",
-                "BodyGroups": 18446744073709551615,
-                "Model": "models/track_tileset_pieces/blockin/blockin_turn_64x64.vmdl",
-                "RenderType": "On",
-                "Tint": "1,1,1,1"
-              },
-              {
-                "__type": "Sandbox.ModelCollider",
-                "__guid": "1d6a28fb-fded-4816-9c6b-2da97d971c13",
-                "IsTrigger": false,
-                "Model": "models/track_tileset_pieces/blockin/blockin_turn_64x64.vmdl",
-                "Static": false
-              }
-            ]
-          },
-          {
-            "__guid": "4d9f3917-73b8-4909-bc0f-41d59e756f40",
-            "Name": "blockin_turn_64x64_walls_both",
-            "Position": "0,-2304,0",
-            "Enabled": true,
-            "NetworkMode": 2,
-            "Components": [
-              {
-                "__type": "Sandbox.ModelRenderer",
-                "__guid": "3a84eaaa-b047-4a40-9483-8537aeb7b6ed",
-                "BodyGroups": 18446744073709551615,
-                "Model": "models/track_tileset_pieces/blockin/blockin_turn_64x64_walls_both.vmdl",
-                "RenderType": "On",
-                "Tint": "1,1,1,1"
-              },
-              {
-                "__type": "Sandbox.ModelCollider",
-                "__guid": "1358ee7b-27c5-4031-ac71-05a3ed15b862",
-                "IsTrigger": false,
-                "Model": "models/track_tileset_pieces/blockin/blockin_turn_64x64_walls_both.vmdl",
-                "Static": false
-              }
-            ]
-          },
-          {
-            "__guid": "4537058e-cd5c-4dd4-bcec-a0c1fb5df017",
-            "Name": "blockin_turn_slant_steep_64x64",
-            "Position": "0,-3328,0",
-            "Enabled": true,
-            "NetworkMode": 2,
-            "Components": [
-              {
-                "__type": "Sandbox.ModelRenderer",
-                "__guid": "d3fffa2f-54c6-4c3b-a573-24eaf33d1acc",
-                "BodyGroups": 18446744073709551615,
-                "Model": "models/track_tileset_pieces/blockin/blockin_turn_slant_steep_64x64.vmdl",
-                "RenderType": "On",
-                "Tint": "1,1,1,1"
-              },
-              {
-                "__type": "Sandbox.ModelCollider",
-                "__guid": "79f80430-e784-4ba1-8bf1-d8f1369ff3ee",
-                "IsTrigger": false,
-                "Model": "models/track_tileset_pieces/blockin/blockin_turn_slant_steep_64x64.vmdl",
-                "Static": false
-              }
-            ]
-          },
-          {
-            "__guid": "672438e2-3b7e-4057-841a-a628d12604ae",
-            "Name": "blockin_turn_slant_steep_64x64_walls_both",
-            "Position": "0,-4352,0",
-            "Enabled": true,
-            "NetworkMode": 2,
-            "Components": [
-              {
-                "__type": "Sandbox.ModelRenderer",
-                "__guid": "de6a18e8-e97c-40bd-8a8e-30de6c9dfbf9",
-                "BodyGroups": 18446744073709551615,
-                "Model": "models/track_tileset_pieces/blockin/blockin_turn_slant_steep_64x64_walls_both.vmdl",
-                "RenderType": "On",
-                "Tint": "1,1,1,1"
-              },
-              {
-                "__type": "Sandbox.ModelCollider",
-                "__guid": "74bf87cf-df7a-44d6-a217-8ca926b6add0",
-                "IsTrigger": false,
-                "Model": "models/track_tileset_pieces/blockin/blockin_turn_slant_steep_64x64_walls_both.vmdl",
-                "Static": false
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "__guid": "f6ed008d-0490-462f-b07b-cf996ee16466",
-        "Name": "transitions",
-        "Position": "-3200,0,0",
-        "Tags": "group",
-        "Enabled": true,
-        "NetworkMode": 2,
-        "Children": [
-          {
-            "__guid": "06f57b67-9671-474b-817d-dbe71ca77498",
-            "Name": "blockin_angle_transition_left_32x32",
-            "Position": "0,0,0",
-            "Enabled": true,
-            "NetworkMode": 2,
-            "Components": [
-              {
-                "__type": "Sandbox.ModelRenderer",
-                "__guid": "59c4d4a6-f6b3-49ad-bcfa-80e6590e85dc",
-                "BodyGroups": 18446744073709551615,
-                "Model": "models/track_tileset_pieces/blockin/blockin_angle_transition_left_32x32.vmdl",
-                "RenderType": "On",
-                "Tint": "1,1,1,1"
-              },
-              {
-                "__type": "Sandbox.ModelCollider",
-                "__guid": "2988e6ee-6163-4234-bce5-62e16574e6ca",
-                "IsTrigger": false,
-                "Model": "models/track_tileset_pieces/blockin/blockin_angle_transition_left_32x32.vmdl",
-                "Static": false
-              }
-            ]
-          },
-          {
-            "__guid": "212e6d05-8035-4bb1-aff1-ac76c5d5609a",
-            "Name": "blockin_angle_transition_left_32x32_walls_both",
-            "Position": "0,-640,0",
-            "Enabled": true,
-            "NetworkMode": 2,
-            "Components": [
-              {
-                "__type": "Sandbox.ModelRenderer",
-                "__guid": "3482d4d1-0228-4e00-89fb-104ac8dfd480",
-                "BodyGroups": 18446744073709551615,
-                "Model": "models/track_tileset_pieces/blockin/blockin_angle_transition_left_32x32_walls_both.vmdl",
-                "RenderType": "On",
-                "Tint": "1,1,1,1"
-              },
-              {
-                "__type": "Sandbox.ModelCollider",
-                "__guid": "9f8e04b4-4a6c-44e2-a7ac-42807265edb4",
-                "IsTrigger": false,
-                "Model": "models/track_tileset_pieces/blockin/blockin_angle_transition_left_32x32_walls_both.vmdl",
-                "Static": false
-              }
-            ]
-          },
-          {
-            "__guid": "6e42a6e1-1cf6-4ca0-b91e-c9ddc28a4e58",
-            "Name": "blockin_angle_transition_right_32x32",
-            "Position": "-1024,0,0",
-            "Enabled": true,
-            "NetworkMode": 2,
-            "Components": [
-              {
-                "__type": "Sandbox.ModelRenderer",
-                "__guid": "2f2cbe4c-2007-4d41-bfb5-69d9b3c3c6ef",
-                "BodyGroups": 18446744073709551615,
-                "Model": "models/track_tileset_pieces/blockin/blockin_angle_transition_right_32x32.vmdl",
-                "RenderType": "On",
-                "Tint": "1,1,1,1"
-              },
-              {
-                "__type": "Sandbox.ModelCollider",
-                "__guid": "52831bfc-acc0-4eff-af63-70f2dc828003",
-                "IsTrigger": false,
-                "Model": "models/track_tileset_pieces/blockin/blockin_angle_transition_right_32x32.vmdl",
-                "Static": false
-              }
-            ]
-          },
-          {
-            "__guid": "bed477b0-f5f0-4ad7-9c93-23ac9b0126df",
-            "Name": "blockin_angle_transition_right_32x32_walls_both",
-            "Position": "-1024,-640,0",
-            "Enabled": true,
-            "NetworkMode": 2,
-            "Components": [
-              {
-                "__type": "Sandbox.ModelRenderer",
-                "__guid": "c3c1c229-7128-4614-bd53-a72bf4aaa357",
-                "BodyGroups": 18446744073709551615,
-                "Model": "models/track_tileset_pieces/blockin/blockin_angle_transition_right_32x32_walls_both.vmdl",
-                "RenderType": "On",
-                "Tint": "1,1,1,1"
-              },
-              {
-                "__type": "Sandbox.ModelCollider",
-                "__guid": "e2dc4cb7-0001-4e1b-8fc0-a6295cf3a890",
-                "IsTrigger": false,
-                "Model": "models/track_tileset_pieces/blockin/blockin_angle_transition_right_32x32_walls_both.vmdl",
-                "Static": false
-              }
-            ]
-          },
-          {
-            "__guid": "c38530af-f99b-414d-87df-5f0291a1128e",
-            "Name": "blockin_angle_transition_steep_left_32x32",
-            "Position": "0,-1280,0",
-            "Enabled": true,
-            "NetworkMode": 2,
-            "Components": [
-              {
-                "__type": "Sandbox.ModelRenderer",
-                "__guid": "191e2ed5-d727-4d51-a523-73611bab1255",
-                "BodyGroups": 18446744073709551615,
-                "Model": "models/track_tileset_pieces/blockin/blockin_angle_transition_steep_left_32x32.vmdl",
-                "RenderType": "On",
-                "Tint": "1,1,1,1"
-              },
-              {
-                "__type": "Sandbox.ModelCollider",
-                "__guid": "07c2d588-0983-4efa-8226-fbf54cc20cc0",
-                "IsTrigger": false,
-                "Model": "models/track_tileset_pieces/blockin/blockin_angle_transition_steep_left_32x32.vmdl",
-                "Static": false
-              }
-            ]
-          },
-          {
-            "__guid": "3b0333d8-a4db-443e-9084-f86998844313",
-            "Name": "blockin_angle_transition_steep_left_32x32_walls_both",
-            "Position": "0,-1920,0",
-            "Enabled": true,
-            "NetworkMode": 2,
-            "Components": [
-              {
-                "__type": "Sandbox.ModelRenderer",
-                "__guid": "d2271f44-13f2-4df2-a2da-8f2833b8c925",
-                "BodyGroups": 18446744073709551615,
-                "Model": "models/track_tileset_pieces/blockin/blockin_angle_transition_steep_left_32x32_walls_both.vmdl",
-                "RenderType": "On",
-                "Tint": "1,1,1,1"
-              },
-              {
-                "__type": "Sandbox.ModelCollider",
-                "__guid": "653f1bdf-2127-43cd-af69-8e96ed360936",
-                "IsTrigger": false,
-                "Model": "models/track_tileset_pieces/blockin/blockin_angle_transition_steep_left_32x32_walls_both.vmdl",
-                "Static": false
-              }
-            ]
-          },
-          {
-            "__guid": "caefc036-92da-447e-982d-cc13b89da9e2",
-            "Name": "blockin_angle_transition_steep_left_32x64",
-            "Position": "0,-2560,0",
-            "Enabled": true,
-            "NetworkMode": 2,
-            "Components": [
-              {
-                "__type": "Sandbox.ModelRenderer",
-                "__guid": "5a71631b-344b-486d-9415-5d08aeb629ca",
-                "BodyGroups": 18446744073709551615,
-                "Model": "models/track_tileset_pieces/blockin/blockin_angle_transition_steep_left_32x64.vmdl",
-                "RenderType": "On",
-                "Tint": "1,1,1,1"
-              },
-              {
-                "__type": "Sandbox.ModelCollider",
-                "__guid": "ada5e715-6de4-48ba-93fc-652cb3392dbe",
-                "IsTrigger": false,
-                "Model": "models/track_tileset_pieces/blockin/blockin_angle_transition_steep_left_32x64.vmdl",
-                "Static": false
-              }
-            ]
-          },
-          {
-            "__guid": "ea8dc865-d579-4f68-9d2b-7bd2f60481a0",
-            "Name": "blockin_angle_transition_steep_left_32x64_walls_both",
-            "Position": "0,-3200,0",
-            "Enabled": true,
-            "NetworkMode": 2,
-            "Components": [
-              {
-                "__type": "Sandbox.ModelRenderer",
-                "__guid": "197354b6-c116-46ec-a4e7-a2e0c1a75dc2",
-                "BodyGroups": 18446744073709551615,
-                "Model": "models/track_tileset_pieces/blockin/blockin_angle_transition_steep_left_32x64_walls_both.vmdl",
-                "RenderType": "On",
-                "Tint": "1,1,1,1"
-              },
-              {
-                "__type": "Sandbox.ModelCollider",
-                "__guid": "8aff6a9b-9962-4bfc-8494-6379f2d67185",
-                "IsTrigger": false,
-                "Model": "models/track_tileset_pieces/blockin/blockin_angle_transition_steep_left_32x64_walls_both.vmdl",
-                "Static": false
-              }
-            ]
-          },
-          {
-            "__guid": "5e0bf2d2-2a2f-4ce9-9ed7-bf3a367ca3b5",
-            "Name": "blockin_angle_transition_steep_right_32x32",
-            "Position": "-1024,-1280,0",
-            "Enabled": true,
-            "NetworkMode": 2,
-            "Components": [
-              {
-                "__type": "Sandbox.ModelRenderer",
-                "__guid": "ffde41d8-0a9d-4ddb-aea6-c4986840464b",
-                "BodyGroups": 18446744073709551615,
-                "Model": "models/track_tileset_pieces/blockin/blockin_angle_transition_steep_right_32x32.vmdl",
-                "RenderType": "On",
-                "Tint": "1,1,1,1"
-              },
-              {
-                "__type": "Sandbox.ModelCollider",
-                "__guid": "46c4505e-2add-42a6-9efa-8d25c33dd0c9",
-                "IsTrigger": false,
-                "Model": "models/track_tileset_pieces/blockin/blockin_angle_transition_steep_right_32x32.vmdl",
-                "Static": false
-              }
-            ]
-          },
-          {
-            "__guid": "8b98aeea-80cf-41cd-b6fe-3e4c1c98d1db",
-            "Name": "blockin_angle_transition_steep_right_32x32_walls_both",
-            "Position": "-1024,-1920,0",
-            "Enabled": true,
-            "NetworkMode": 2,
-            "Components": [
-              {
-                "__type": "Sandbox.ModelRenderer",
-                "__guid": "87ef7d72-2411-430e-b0f9-4e0fa30eaab0",
-                "BodyGroups": 18446744073709551615,
-                "Model": "models/track_tileset_pieces/blockin/blockin_angle_transition_steep_right_32x32_walls_both.vmdl",
-                "RenderType": "On",
-                "Tint": "1,1,1,1"
-              },
-              {
-                "__type": "Sandbox.ModelCollider",
-                "__guid": "5c52e6fd-0619-444c-9da4-4f2866fa3319",
-                "IsTrigger": false,
-                "Model": "models/track_tileset_pieces/blockin/blockin_angle_transition_steep_right_32x32_walls_both.vmdl",
-                "Static": false
-              }
-            ]
-          },
-          {
-            "__guid": "1a0a4f22-364a-47a4-9bca-713d151c1836",
-            "Name": "blockin_angle_transition_steep_right_32x64",
-            "Position": "-1024,-2560,0",
-            "Enabled": true,
-            "NetworkMode": 2,
-            "Components": [
-              {
-                "__type": "Sandbox.ModelRenderer",
-                "__guid": "5c72c055-f1c1-4423-b656-6f4ca6e4bd92",
-                "BodyGroups": 18446744073709551615,
-                "Model": "models/track_tileset_pieces/blockin/blockin_angle_transition_steep_right_32x64.vmdl",
-                "RenderType": "On",
-                "Tint": "1,1,1,1"
-              },
-              {
-                "__type": "Sandbox.ModelCollider",
-                "__guid": "105b5136-f786-4fec-98ab-e74b926b17f9",
-                "IsTrigger": false,
-                "Model": "models/track_tileset_pieces/blockin/blockin_angle_transition_steep_right_32x64.vmdl",
-                "Static": false
-              }
-            ]
-          },
-          {
-            "__guid": "7b2a902c-dc48-4430-845c-b9ec8153ca65",
-            "Name": "blockin_angle_transition_steep_right_32x64_walls_both",
-            "Position": "-1024,-3200,0",
-            "Enabled": true,
-            "NetworkMode": 2,
-            "Components": [
-              {
-                "__type": "Sandbox.ModelRenderer",
-                "__guid": "168983d6-92d0-4479-845d-3d04feca100c",
-                "BodyGroups": 18446744073709551615,
-                "Model": "models/track_tileset_pieces/blockin/blockin_angle_transition_steep_right_32x64_walls_both.vmdl",
-                "RenderType": "On",
-                "Tint": "1,1,1,1"
-              },
-              {
-                "__type": "Sandbox.ModelCollider",
-                "__guid": "dfe74224-3e3b-41b1-bb24-352eea366192",
-                "IsTrigger": false,
-                "Model": "models/track_tileset_pieces/blockin/blockin_angle_transition_steep_right_32x64_walls_both.vmdl",
-                "Static": false
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "__guid": "aa294866-9565-45c4-ab89-26bd0ef6a7e3",
-        "Name": "curved",
-        "Position": "-1792,0,0",
-        "Tags": "group",
-        "Enabled": true,
-        "NetworkMode": 2,
-        "Children": [
-          {
-            "__guid": "88260ef1-106c-4e47-a09d-28068ff4f15e",
-            "Name": "blockin_curved_32x32",
-            "Position": "0,0,0",
-            "Enabled": true,
-            "NetworkMode": 2,
-            "Components": [
-              {
-                "__type": "Sandbox.ModelRenderer",
-                "__guid": "94bf27ac-f611-4a3b-8a40-55237cc4ae51",
-                "BodyGroups": 18446744073709551615,
-                "Model": "models/track_tileset_pieces/blockin/blockin_curved_32x32.vmdl",
-                "RenderType": "On",
-                "Tint": "1,1,1,1"
-              },
-              {
-                "__type": "Sandbox.ModelCollider",
-                "__guid": "5f00e3d4-e14e-4475-a0b7-2c298f01bc01",
-                "IsTrigger": false,
-                "Model": "models/track_tileset_pieces/blockin/blockin_curved_32x32.vmdl",
-                "Static": false
-              }
-            ]
-          },
-          {
-            "__guid": "64074826-2e86-483d-b14c-8e4548226c7b",
-            "Name": "blockin_curved_transition_32x32",
-            "Position": "0,-640,0",
-            "Enabled": true,
-            "NetworkMode": 2,
-            "Components": [
-              {
-                "__type": "Sandbox.ModelRenderer",
-                "__guid": "566f34ff-564c-4b55-bbb7-7dee7375ffd8",
-                "BodyGroups": 18446744073709551615,
-                "Model": "models/track_tileset_pieces/blockin/blockin_curved_transition_32x32.vmdl",
-                "RenderType": "On",
-                "Tint": "1,1,1,1"
-              },
-              {
-                "__type": "Sandbox.ModelCollider",
-                "__guid": "1220e9c2-90e7-4dda-b0cd-799d175811ed",
-                "IsTrigger": false,
-                "Model": "models/track_tileset_pieces/blockin/blockin_curved_transition_32x32.vmdl",
-                "Static": false
-              }
-            ]
-          },
-          {
-            "__guid": "703bf4fa-860f-4eac-861a-a824e9b12711",
-            "Name": "blockin_curved_turn_64x64",
-            "Position": "0,-1280,0",
-            "Enabled": true,
-            "NetworkMode": 2,
-            "Components": [
-              {
-                "__type": "Sandbox.ModelRenderer",
-                "__guid": "b99f4235-8ae6-4803-9787-58b5bbdac2aa",
-                "BodyGroups": 18446744073709551615,
-                "Model": "models/track_tileset_pieces/blockin/blockin_curved_turn_64x64.vmdl",
-                "RenderType": "On",
-                "Tint": "1,1,1,1"
-              },
-              {
-                "__type": "Sandbox.ModelCollider",
-                "__guid": "81df0cbd-a7d9-4999-bb29-11f5912cad61",
-                "IsTrigger": false,
-                "Model": "models/track_tileset_pieces/blockin/blockin_curved_turn_64x64.vmdl",
-                "Static": false
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "__guid": "d16e3896-85b9-467d-be01-aaa41414119d",
-        "Name": "narrow",
-        "Position": "-768,0,0",
-        "Tags": "group",
-        "Enabled": true,
-        "NetworkMode": 2,
-        "Children": [
-          {
-            "__guid": "cf5045f3-957c-4f65-9190-ed83ef0134b6",
-            "Name": "blockin_narrow_2x32",
-            "Position": "0,0,0",
-            "Enabled": true,
-            "NetworkMode": 2,
-            "Components": [
-              {
-                "__type": "Sandbox.ModelRenderer",
-                "__guid": "4c73ba0c-7126-456c-85c0-5a57cfaaf60f",
-                "BodyGroups": 18446744073709551615,
-                "Model": "models/track_tileset_pieces/blockin/blockin_narrow_2x32.vmdl",
-                "RenderType": "On",
-                "Tint": "1,1,1,1"
-              },
-              {
-                "__type": "Sandbox.ModelCollider",
-                "__guid": "bd22bef3-f398-4003-bddc-a5adb659e8d6",
-                "IsTrigger": false,
-                "Model": "models/track_tileset_pieces/blockin/blockin_narrow_2x32.vmdl",
-                "Static": false
-              }
-            ]
-          },
-          {
-            "__guid": "93b08a22-f191-4fb4-ab6d-72706c90efa0",
-            "Name": "blockin_narrow_angle_2x32",
-            "Position": "0,-640,0",
-            "Enabled": true,
-            "NetworkMode": 2,
-            "Components": [
-              {
-                "__type": "Sandbox.ModelRenderer",
-                "__guid": "2a3ebea2-d00f-40e3-8181-03f7f1821b74",
-                "BodyGroups": 18446744073709551615,
-                "Model": "models/track_tileset_pieces/blockin/blockin_narrow_angle_2x32.vmdl",
-                "RenderType": "On",
-                "Tint": "1,1,1,1"
-              },
-              {
-                "__type": "Sandbox.ModelCollider",
-                "__guid": "c5634a02-5e84-475c-a41b-0b9d3233e498",
-                "IsTrigger": false,
-                "Model": "models/track_tileset_pieces/blockin/blockin_narrow_angle_2x32.vmdl",
-                "Static": false
-              }
-            ]
-          },
-          {
-            "__guid": "d81e9d87-8424-423b-b452-4a88f8e6e177",
-            "Name": "blockin_narrow_angle_steep_2x32",
-            "Position": "0,-1280,0",
-            "Enabled": true,
-            "NetworkMode": 2,
-            "Components": [
-              {
-                "__type": "Sandbox.ModelRenderer",
-                "__guid": "14e3f60d-2560-4c82-9542-2d56478cde28",
-                "BodyGroups": 18446744073709551615,
-                "Model": "models/track_tileset_pieces/blockin/blockin_narrow_angle_steep_2x32.vmdl",
-                "RenderType": "On",
-                "Tint": "1,1,1,1"
-              },
-              {
-                "__type": "Sandbox.ModelCollider",
-                "__guid": "767b2f5a-9f44-4bc9-81a3-f8202c6bda3f",
-                "IsTrigger": false,
-                "Model": "models/track_tileset_pieces/blockin/blockin_narrow_angle_steep_2x32.vmdl",
-                "Static": false
-              }
-            ]
-          },
-          {
-            "__guid": "e0fd584e-4e28-4977-8d33-cf6aa8852a92",
-            "Name": "blockin_narrow_turn_2x32",
-            "Position": "0,-1792,0",
-            "Enabled": true,
-            "NetworkMode": 2,
-            "Components": [
-              {
-                "__type": "Sandbox.ModelRenderer",
-                "__guid": "40f908ee-7558-4f63-87a1-77c06fb0b174",
-                "BodyGroups": 18446744073709551615,
-                "Model": "models/track_tileset_pieces/blockin/blockin_narrow_turn_2x32.vmdl",
-                "RenderType": "On",
-                "Tint": "1,1,1,1"
-              },
-              {
-                "__type": "Sandbox.ModelCollider",
-                "__guid": "67936461-fa81-4096-a9ea-b4923eacabd1",
-                "IsTrigger": false,
-                "Model": "models/track_tileset_pieces/blockin/blockin_narrow_turn_2x32.vmdl",
-                "Static": false
-              }
-            ]
-          },
-          {
-            "__guid": "da60435b-e60e-4c42-8115-c027ca77b3e0",
-            "Name": "blockin_narrow_turn_2x64",
-            "Position": "0,-2304,0",
-            "Enabled": true,
-            "NetworkMode": 2,
-            "Components": [
-              {
-                "__type": "Sandbox.ModelRenderer",
-                "__guid": "fca648b1-4285-4e81-a662-4edb99948f56",
-                "BodyGroups": 18446744073709551615,
-                "Model": "models/track_tileset_pieces/blockin/blockin_narrow_turn_2x64.vmdl",
-                "RenderType": "On",
-                "Tint": "1,1,1,1"
-              },
-              {
-                "__type": "Sandbox.ModelCollider",
-                "__guid": "fd268d59-5b24-463e-986d-2f5959041d8f",
-                "IsTrigger": false,
-                "Model": "models/track_tileset_pieces/blockin/blockin_narrow_turn_2x64.vmdl",
-                "Static": false
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "__guid": "2401e9ad-8182-49a4-b501-5d6303e120a8",
+        "__guid": "952ac0ef-cf18-4ecc-9b5d-07e7e56093b2",
         "Name": "Sun",
         "Position": "0,0,803.719",
         "Rotation": "0,0.4880258,0,0.8728292",
@@ -880,12 +16,774 @@
         "Components": [
           {
             "__type": "Sandbox.DirectionalLight",
-            "__guid": "0b882e23-d8a3-41ba-834b-16ab88da1575",
+            "__guid": "897046ef-e18b-4d07-a1e9-b1a5d962ee4f",
             "FogMode": "Enabled",
             "FogStrength": 1,
             "LightColor": "0.91373,0.98039,1,1",
             "Shadows": true,
             "SkyColor": "0.05882,0.07451,0.08235,1"
+          }
+        ]
+      },
+      {
+        "__guid": "834c9647-4798-43ec-b8eb-ed0f9d7c6825",
+        "Name": "straight",
+        "Tags": "group",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "Children": [
+          {
+            "__guid": "f1f14137-f21d-4485-b5e8-be0c2dc08139",
+            "Name": "blockin_32x32",
+            "Enabled": true,
+            "NetworkMode": 2,
+            "Components": [
+              {
+                "__type": "Sandbox.Prop",
+                "__guid": "7cf0d71a-4b8d-4717-a534-144f7e97f3ad",
+                "BodyGroups": 18446744073709551615,
+                "Health": 0,
+                "IsStatic": true,
+                "Model": "models/track_tileset_pieces/blockin/blockin_32x32.vmdl"
+              }
+            ]
+          },
+          {
+            "__guid": "cf7ff96a-04c9-4eb8-8a36-473c7bdd0fb1",
+            "Name": "blockin_32x32_walls_both",
+            "Position": "0,-640,0",
+            "Enabled": true,
+            "NetworkMode": 2,
+            "Components": [
+              {
+                "__type": "Sandbox.Prop",
+                "__guid": "99f1e411-d904-4717-8b12-25fd24169f5d",
+                "BodyGroups": 18446744073709551615,
+                "Health": 0,
+                "IsStatic": true,
+                "Model": "models/track_tileset_pieces/blockin/blockin_32x32_walls_both.vmdl"
+              }
+            ]
+          },
+          {
+            "__guid": "31831fc0-e125-4e8d-9524-b5b6bfbba97a",
+            "Name": "blockin_angle_32x32",
+            "Position": "0,-1280,0",
+            "Enabled": true,
+            "NetworkMode": 2,
+            "Components": [
+              {
+                "__type": "Sandbox.Prop",
+                "__guid": "2e81d176-7a6c-4d62-a283-48441553ede6",
+                "BodyGroups": 18446744073709551615,
+                "Health": 0,
+                "IsStatic": true,
+                "Model": "models/track_tileset_pieces/blockin/blockin_angle_32x32.vmdl"
+              }
+            ]
+          },
+          {
+            "__guid": "fe2fc642-7d45-4a94-b714-f78a1d34e56b",
+            "Name": "blockin_angle_32x32_walls_both",
+            "Position": "0,-1920,0",
+            "Enabled": true,
+            "NetworkMode": 2,
+            "Components": [
+              {
+                "__type": "Sandbox.Prop",
+                "__guid": "8d510b9b-726a-4b9d-a16a-dd786818e1a9",
+                "BodyGroups": 18446744073709551615,
+                "Health": 0,
+                "IsStatic": true,
+                "Model": "models/track_tileset_pieces/blockin/blockin_angle_32x32_walls_both.vmdl"
+              }
+            ]
+          },
+          {
+            "__guid": "278e94bb-dadc-45fc-8ae1-fe6780a4cc24",
+            "Name": "blockin_angle_steep_32x32_walls_both",
+            "Position": "0,-2560,0",
+            "Enabled": true,
+            "NetworkMode": 2,
+            "Components": [
+              {
+                "__type": "Sandbox.Prop",
+                "__guid": "efa77615-5b35-4d73-a3f1-dd1c28f55acc",
+                "BodyGroups": 18446744073709551615,
+                "Health": 0,
+                "IsStatic": true,
+                "Model": "models/track_tileset_pieces/blockin/blockin_angle_steep_32x32_walls_both.vmdl"
+              }
+            ]
+          },
+          {
+            "__guid": "e42d0281-b94f-4f33-aca2-65b25a25e112",
+            "Name": "blockin_angle_steep_32x32",
+            "Position": "0,-3200,0",
+            "Enabled": true,
+            "NetworkMode": 2,
+            "Components": [
+              {
+                "__type": "Sandbox.Prop",
+                "__guid": "0b778beb-ef8e-48eb-b764-54a3f0261b29",
+                "BodyGroups": 18446744073709551615,
+                "Health": 0,
+                "IsStatic": true,
+                "Model": "models/track_tileset_pieces/blockin/blockin_angle_steep_32x32.vmdl"
+              }
+            ]
+          },
+          {
+            "__guid": "3f6d823e-ce92-482d-9cc8-6e2eb9fc7bf2",
+            "Name": "blockin_16x32",
+            "Position": "0,-3712,0",
+            "Enabled": true,
+            "NetworkMode": 2,
+            "Components": [
+              {
+                "__type": "Sandbox.Prop",
+                "__guid": "67bf4f73-eea2-4244-b940-ff4978339de8",
+                "BodyGroups": 18446744073709551615,
+                "Health": 0,
+                "IsStatic": true,
+                "Model": "models/track_tileset_pieces/blockin/blockin_16x32.vmdl"
+              }
+            ]
+          },
+          {
+            "__guid": "b2d406b1-1722-4c93-8d08-4338e7e04027",
+            "Name": "blockin_16x32_walls_both",
+            "Position": "0,-4096,0",
+            "Enabled": true,
+            "NetworkMode": 2,
+            "Components": [
+              {
+                "__type": "Sandbox.Prop",
+                "__guid": "bfe28fdf-5eac-49ed-9361-c2364f17d27c",
+                "BodyGroups": 18446744073709551615,
+                "Health": 0,
+                "IsStatic": true,
+                "Model": "models/track_tileset_pieces/blockin/blockin_16x32_walls_both.vmdl"
+              }
+            ]
+          },
+          {
+            "__guid": "91b86b29-a23f-4a5a-9be5-266986850cc0",
+            "Name": "blockin_angle_16x32",
+            "Position": "0,-4480,0",
+            "Enabled": true,
+            "NetworkMode": 2,
+            "Components": [
+              {
+                "__type": "Sandbox.Prop",
+                "__guid": "d27b6fd0-3c62-486d-a8f6-ba5b2a8972bb",
+                "BodyGroups": 18446744073709551615,
+                "Health": 0,
+                "IsStatic": true,
+                "Model": "models/track_tileset_pieces/blockin/blockin_angle_16x32.vmdl"
+              }
+            ]
+          },
+          {
+            "__guid": "8bb7213f-17bf-4af3-980a-c66c49fd2835",
+            "Name": "blockin_angle_16x32_walls_both",
+            "Position": "0,-4864,0",
+            "Enabled": true,
+            "NetworkMode": 2,
+            "Components": [
+              {
+                "__type": "Sandbox.Prop",
+                "__guid": "fa00d59d-009c-4d5d-9d2f-abbab2072ebd",
+                "BodyGroups": 18446744073709551615,
+                "Health": 0,
+                "IsStatic": true,
+                "Model": "models/track_tileset_pieces/blockin/blockin_angle_16x32_walls_both.vmdl"
+              }
+            ]
+          },
+          {
+            "__guid": "f4aeee92-9cde-406e-9d23-bdc8528e46a2",
+            "Name": "blockin_angle_steep_16x32",
+            "Position": "0,-5248,0",
+            "Enabled": true,
+            "NetworkMode": 2,
+            "Components": [
+              {
+                "__type": "Sandbox.Prop",
+                "__guid": "5fe1ca25-e060-49b7-933a-eb6ba493c81a",
+                "BodyGroups": 18446744073709551615,
+                "Health": 0,
+                "IsStatic": true,
+                "Model": "models/track_tileset_pieces/blockin/blockin_angle_steep_16x32.vmdl"
+              }
+            ]
+          },
+          {
+            "__guid": "4b2af2b4-26bd-4dbd-8a69-8a505aae8a2d",
+            "Name": "blockin_angle_steep_16x32_walls_both",
+            "Position": "0,-5632,0",
+            "Enabled": true,
+            "NetworkMode": 2,
+            "Components": [
+              {
+                "__type": "Sandbox.Prop",
+                "__guid": "de1e5808-f93c-4d30-9cad-4795b30bc38b",
+                "BodyGroups": 18446744073709551615,
+                "Health": 0,
+                "IsStatic": true,
+                "Model": "models/track_tileset_pieces/blockin/blockin_angle_steep_16x32_walls_both.vmdl"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "__guid": "fe12346c-bc68-46c6-9d4b-21944503fbbf",
+        "Name": "turns",
+        "Position": "1536,0,0",
+        "Tags": "group",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "Children": [
+          {
+            "__guid": "690250ae-9da0-4069-be7c-dc970c7378d1",
+            "Name": "blockin_turn_32x32",
+            "Position": "0,0,0",
+            "Enabled": true,
+            "NetworkMode": 2,
+            "Components": [
+              {
+                "__type": "Sandbox.Prop",
+                "__guid": "605f1d92-a920-4dd9-b277-0f0e6fc8779f",
+                "BodyGroups": 18446744073709551615,
+                "Health": 0,
+                "IsStatic": true,
+                "Model": "models/track_tileset_pieces/blockin/blockin_turn_32x32.vmdl"
+              }
+            ]
+          },
+          {
+            "__guid": "9b2d68ac-63b4-4c7f-8936-1838a50d25ec",
+            "Name": "blockin_turn_32x32_walls_both",
+            "Position": "0,-640,0",
+            "Enabled": true,
+            "NetworkMode": 2,
+            "Components": [
+              {
+                "__type": "Sandbox.Prop",
+                "__guid": "8b0afc54-2d56-4dc5-a06a-a4395c9b0433",
+                "BodyGroups": 18446744073709551615,
+                "Health": 0,
+                "IsStatic": true,
+                "Model": "models/track_tileset_pieces/blockin/blockin_turn_32x32_walls_both.vmdl"
+              }
+            ]
+          },
+          {
+            "__guid": "986e2b1d-9591-4e4e-98c6-bff071424a86",
+            "Name": "blockin_turn_32x64",
+            "Position": "0,-1280,0",
+            "Enabled": true,
+            "NetworkMode": 2,
+            "Components": [
+              {
+                "__type": "Sandbox.Prop",
+                "__guid": "d5b76ecd-192e-477f-b0b1-bbc328970645",
+                "BodyGroups": 18446744073709551615,
+                "Health": 0,
+                "IsStatic": true,
+                "Model": "models/track_tileset_pieces/blockin/blockin_turn_32x64.vmdl"
+              }
+            ]
+          },
+          {
+            "__guid": "b6865a78-513b-423e-ad75-51fdcb8f7ed1",
+            "Name": "blockin_turn_32x64_walls_both",
+            "Position": "0,-2176,0",
+            "Enabled": true,
+            "NetworkMode": 2,
+            "Components": [
+              {
+                "__type": "Sandbox.Prop",
+                "__guid": "6bdccdce-d7fe-4132-a7cd-69fa303e8de5",
+                "BodyGroups": 18446744073709551615,
+                "Health": 0,
+                "IsStatic": true,
+                "Model": "models/track_tileset_pieces/blockin/blockin_turn_32x64_walls_both.vmdl"
+              }
+            ]
+          },
+          {
+            "__guid": "05a31a9c-aca9-4911-a6df-12b6bcb79986",
+            "Name": "blockin_turn_slant_steep_32x64",
+            "Position": "0,-3072,0",
+            "Enabled": true,
+            "NetworkMode": 2,
+            "Components": [
+              {
+                "__type": "Sandbox.Prop",
+                "__guid": "b5dc7201-51d3-4c16-944c-9d6921911a31",
+                "BodyGroups": 18446744073709551615,
+                "Health": 0,
+                "IsStatic": true,
+                "Model": "models/track_tileset_pieces/blockin/blockin_turn_slant_steep_32x64.vmdl"
+              }
+            ]
+          },
+          {
+            "__guid": "c6b17924-b5e0-403d-bb38-7f7fdb213afe",
+            "Name": "blockin_turn_slant_steep_32x64_walls_both",
+            "Position": "0,-3840,0",
+            "Enabled": true,
+            "NetworkMode": 2,
+            "Components": [
+              {
+                "__type": "Sandbox.Prop",
+                "__guid": "830bd6cf-f834-489f-bfb3-bc5c26326818",
+                "BodyGroups": 18446744073709551615,
+                "Health": 0,
+                "IsStatic": true,
+                "Model": "models/track_tileset_pieces/blockin/blockin_turn_slant_steep_32x64_walls_both.vmdl"
+              }
+            ]
+          },
+          {
+            "__guid": "b6ee7d5c-15d2-464c-a24d-2d88565447cf",
+            "Name": "blockin_turn_16x32",
+            "Position": "0,-4736,0",
+            "Enabled": true,
+            "NetworkMode": 2,
+            "Components": [
+              {
+                "__type": "Sandbox.Prop",
+                "__guid": "c4cccf03-591f-4829-aca5-c501bd9dbaf6",
+                "BodyGroups": 18446744073709551615,
+                "Health": 0,
+                "IsStatic": true,
+                "Model": "models/track_tileset_pieces/blockin/blockin_turn_16x32.vmdl"
+              }
+            ]
+          },
+          {
+            "__guid": "7b17c651-7347-4a87-8658-5a46b28f1e78",
+            "Name": "blockin_turn_16x32_walls_both",
+            "Position": "0,-5248,0",
+            "Enabled": true,
+            "NetworkMode": 2,
+            "Components": [
+              {
+                "__type": "Sandbox.Prop",
+                "__guid": "9fc2e8a3-4e4d-4b20-a4d7-3c5f741f33b0",
+                "BodyGroups": 18446744073709551615,
+                "Health": 0,
+                "IsStatic": true,
+                "Model": "models/track_tileset_pieces/blockin/blockin_turn_16x32_walls_both.vmdl"
+              }
+            ]
+          },
+          {
+            "__guid": "abd790a1-bab6-4d20-8bef-38d0ddb73938",
+            "Name": "blockin_turn_16x64",
+            "Position": "0,-5632,0",
+            "Enabled": true,
+            "NetworkMode": 2,
+            "Components": [
+              {
+                "__type": "Sandbox.Prop",
+                "__guid": "156628ca-dfcb-4752-9a2a-bdc1b6dbb561",
+                "BodyGroups": 18446744073709551615,
+                "Health": 0,
+                "IsStatic": true,
+                "Model": "models/track_tileset_pieces/blockin/blockin_turn_16x64.vmdl"
+              }
+            ]
+          },
+          {
+            "__guid": "5942eeca-a558-4929-9fe1-5a554842ce55",
+            "Name": "blockin_turn_16x64_walls_both",
+            "Position": "0,-6400,0",
+            "Enabled": true,
+            "NetworkMode": 2,
+            "Components": [
+              {
+                "__type": "Sandbox.Prop",
+                "__guid": "a86b1578-921e-4991-9dcf-ef6fa5c9e0c9",
+                "BodyGroups": 18446744073709551615,
+                "Health": 0,
+                "IsStatic": true,
+                "Model": "models/track_tileset_pieces/blockin/blockin_turn_16x64_walls_both.vmdl"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "__guid": "16aa86fc-0f79-42c6-85ca-460b1416b63b",
+        "Name": "transitions",
+        "Position": "-3200,0,0",
+        "Tags": "group",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "Children": [
+          {
+            "__guid": "3706d87f-9d86-4c52-a3a7-b9faec2a8760",
+            "Name": "blockin_angle_transition_left_32x32",
+            "Position": "0,0,0",
+            "Enabled": true,
+            "NetworkMode": 2,
+            "Components": [
+              {
+                "__type": "Sandbox.Prop",
+                "__guid": "7f80b2ee-f65d-47f1-b418-d9d0ee2b90be",
+                "BodyGroups": 18446744073709551615,
+                "Health": 0,
+                "IsStatic": true,
+                "Model": "models/track_tileset_pieces/blockin/blockin_angle_transition_left_32x32.vmdl"
+              }
+            ]
+          },
+          {
+            "__guid": "cd5abf48-afe8-44a8-bae4-247b85e5f23a",
+            "Name": "blockin_angle_transition_left_32x32_walls_both",
+            "Position": "0,-640,0",
+            "Enabled": true,
+            "NetworkMode": 2,
+            "Components": [
+              {
+                "__type": "Sandbox.Prop",
+                "__guid": "9c3e2cfb-cb1c-4a56-b8ab-47082a972589",
+                "BodyGroups": 18446744073709551615,
+                "Health": 0,
+                "IsStatic": true,
+                "Model": "models/track_tileset_pieces/blockin/blockin_angle_transition_left_32x32_walls_both.vmdl"
+              }
+            ]
+          },
+          {
+            "__guid": "ba6964e5-6926-4920-b3c6-ea8acdedcb57",
+            "Name": "blockin_angle_transition_right_32x32",
+            "Position": "0,-1280,0",
+            "Enabled": true,
+            "NetworkMode": 2,
+            "Components": [
+              {
+                "__type": "Sandbox.Prop",
+                "__guid": "785265b9-2fb6-431c-becf-278beb497f19",
+                "BodyGroups": 18446744073709551615,
+                "Health": 0,
+                "IsStatic": true,
+                "Model": "models/track_tileset_pieces/blockin/blockin_angle_transition_right_32x32.vmdl"
+              }
+            ]
+          },
+          {
+            "__guid": "37aa6992-d3f3-4349-8d0c-ce4e10305ce2",
+            "Name": "blockin_angle_transition_right_32x32_walls_both",
+            "Position": "0,-1920,0",
+            "Enabled": true,
+            "NetworkMode": 2,
+            "Components": [
+              {
+                "__type": "Sandbox.Prop",
+                "__guid": "78bd3e16-c392-4323-8319-1d52138c240a",
+                "BodyGroups": 18446744073709551615,
+                "Health": 0,
+                "IsStatic": true,
+                "Model": "models/track_tileset_pieces/blockin/blockin_angle_transition_right_32x32_walls_both.vmdl"
+              }
+            ]
+          },
+          {
+            "__guid": "2809b341-0bd6-4864-9514-5fe3cb9e1581",
+            "Name": "blockin_angle_transition_steep_left_32x32",
+            "Position": "0,-2560,0",
+            "Enabled": true,
+            "NetworkMode": 2,
+            "Components": [
+              {
+                "__type": "Sandbox.Prop",
+                "__guid": "23eefc09-5d3a-466d-a4e3-7f08be342feb",
+                "BodyGroups": 18446744073709551615,
+                "Health": 0,
+                "IsStatic": true,
+                "Model": "models/track_tileset_pieces/blockin/blockin_angle_transition_steep_left_32x32.vmdl"
+              }
+            ]
+          },
+          {
+            "__guid": "bd6b104f-8a48-4ec5-ba83-463e3e24e01d",
+            "Name": "blockin_angle_transition_steep_left_32x32_walls_both",
+            "Position": "0,-3200,0",
+            "Enabled": true,
+            "NetworkMode": 2,
+            "Components": [
+              {
+                "__type": "Sandbox.Prop",
+                "__guid": "fe661b25-1d3c-419a-b5b7-61c924ac50af",
+                "BodyGroups": 18446744073709551615,
+                "Health": 0,
+                "IsStatic": true,
+                "Model": "models/track_tileset_pieces/blockin/blockin_angle_transition_steep_left_32x32_walls_both.vmdl"
+              }
+            ]
+          },
+          {
+            "__guid": "46ad1455-0168-4c15-8268-5643b851bf46",
+            "Name": "blockin_angle_transition_steep_left_32x64",
+            "Position": "0,-3840,0",
+            "Enabled": true,
+            "NetworkMode": 2,
+            "Components": [
+              {
+                "__type": "Sandbox.Prop",
+                "__guid": "c0fa81cc-60bd-4a98-81b0-3d686511720c",
+                "BodyGroups": 18446744073709551615,
+                "Health": 0,
+                "IsStatic": true,
+                "Model": "models/track_tileset_pieces/blockin/blockin_angle_transition_steep_left_32x64.vmdl"
+              }
+            ]
+          },
+          {
+            "__guid": "3326c508-c6b6-452b-9c62-2346f48ef273",
+            "Name": "blockin_angle_transition_steep_left_32x64_walls_both",
+            "Position": "0,-4480,0",
+            "Enabled": true,
+            "NetworkMode": 2,
+            "Components": [
+              {
+                "__type": "Sandbox.Prop",
+                "__guid": "4e117343-37a3-4454-ab92-67062782b210",
+                "BodyGroups": 18446744073709551615,
+                "Health": 0,
+                "IsStatic": true,
+                "Model": "models/track_tileset_pieces/blockin/blockin_angle_transition_steep_left_32x64_walls_both.vmdl"
+              }
+            ]
+          },
+          {
+            "__guid": "eb12585c-f5c5-4479-b7f9-fc6eab3053ea",
+            "Name": "blockin_angle_transition_steep_right_32x32",
+            "Position": "0,-5120,0",
+            "Enabled": true,
+            "NetworkMode": 2,
+            "Components": [
+              {
+                "__type": "Sandbox.Prop",
+                "__guid": "80e9b832-82d8-4831-b44d-cd6a1dc6b5c3",
+                "BodyGroups": 18446744073709551615,
+                "Health": 0,
+                "IsStatic": true,
+                "Model": "models/track_tileset_pieces/blockin/blockin_angle_transition_steep_right_32x32.vmdl"
+              }
+            ]
+          },
+          {
+            "__guid": "9ab083cc-2cb6-400b-b260-11152e687830",
+            "Name": "blockin_angle_transition_steep_right_32x32_walls_both",
+            "Position": "0,-5760,0",
+            "Enabled": true,
+            "NetworkMode": 2,
+            "Components": [
+              {
+                "__type": "Sandbox.Prop",
+                "__guid": "3bd07159-3cba-4a90-9e7a-f529f47ce2ad",
+                "BodyGroups": 18446744073709551615,
+                "Health": 0,
+                "IsStatic": true,
+                "Model": "models/track_tileset_pieces/blockin/blockin_angle_transition_steep_right_32x32_walls_both.vmdl"
+              }
+            ]
+          },
+          {
+            "__guid": "07feb3c6-ca7d-4771-a38e-f516d2d413bd",
+            "Name": "blockin_angle_transition_steep_right_32x64",
+            "Position": "0,-6400,0",
+            "Enabled": true,
+            "NetworkMode": 2,
+            "Components": [
+              {
+                "__type": "Sandbox.Prop",
+                "__guid": "71daf183-df2a-4d12-a7bb-3fe2577ae6de",
+                "BodyGroups": 18446744073709551615,
+                "Health": 0,
+                "IsStatic": true,
+                "Model": "models/track_tileset_pieces/blockin/blockin_angle_transition_steep_right_32x64.vmdl"
+              }
+            ]
+          },
+          {
+            "__guid": "48b2239e-541e-4bf8-a135-b1e7fc72e922",
+            "Name": "blockin_angle_transition_steep_right_32x64_walls_both",
+            "Position": "0,-7040,0",
+            "Enabled": true,
+            "NetworkMode": 2,
+            "Components": [
+              {
+                "__type": "Sandbox.Prop",
+                "__guid": "e15ae908-4f54-4f83-a899-d477416f1247",
+                "BodyGroups": 18446744073709551615,
+                "Health": 0,
+                "IsStatic": true,
+                "Model": "models/track_tileset_pieces/blockin/blockin_angle_transition_steep_right_32x64_walls_both.vmdl"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "__guid": "a2f48cc1-8210-45b5-a22d-e465e2a94eed",
+        "Name": "curved",
+        "Position": "-1792,0,0",
+        "Tags": "group",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "Children": [
+          {
+            "__guid": "a9766974-1f45-453e-9e34-20fdd89ecf6c",
+            "Name": "blockin_curved_32x32",
+            "Position": "0,0,0",
+            "Enabled": true,
+            "NetworkMode": 2,
+            "Components": [
+              {
+                "__type": "Sandbox.Prop",
+                "__guid": "c3b49d2b-bcbf-4559-a3e4-1268a14d759d",
+                "BodyGroups": 18446744073709551615,
+                "Health": 0,
+                "IsStatic": true,
+                "Model": "models/track_tileset_pieces/blockin/blockin_curved_32x32.vmdl"
+              }
+            ]
+          },
+          {
+            "__guid": "d071fbb1-6fa6-4cf1-85dc-c6c1e2e6313f",
+            "Name": "blockin_curved_transition_32x32",
+            "Position": "0,-640,0",
+            "Enabled": true,
+            "NetworkMode": 2,
+            "Components": [
+              {
+                "__type": "Sandbox.Prop",
+                "__guid": "4c45b3bc-5d93-48df-b3fa-7cdfa686cc4b",
+                "BodyGroups": 18446744073709551615,
+                "Health": 0,
+                "IsStatic": true,
+                "Model": "models/track_tileset_pieces/blockin/blockin_curved_transition_32x32.vmdl"
+              }
+            ]
+          },
+          {
+            "__guid": "e5564c59-96f2-44c3-8399-5dd13d256df2",
+            "Name": "blockin_curved_turn_32x64",
+            "Position": "0,-1152,0",
+            "Enabled": true,
+            "NetworkMode": 2,
+            "Components": [
+              {
+                "__type": "Sandbox.Prop",
+                "__guid": "b380c0bd-e91c-4c81-8e00-85a2243219c8",
+                "BodyGroups": 18446744073709551615,
+                "Health": 0,
+                "IsStatic": true,
+                "Model": "models/track_tileset_pieces/blockin/blockin_curved_turn_32x64.vmdl"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "__guid": "b410f1c0-898b-48fb-a690-35485fe95228",
+        "Name": "narrow",
+        "Position": "-768,0,0",
+        "Tags": "group",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "Children": [
+          {
+            "__guid": "1f98d980-e16c-410d-ab0a-f787a921ba43",
+            "Name": "blockin_narrow_2x32",
+            "Position": "0,0,0",
+            "Enabled": true,
+            "NetworkMode": 2,
+            "Components": [
+              {
+                "__type": "Sandbox.Prop",
+                "__guid": "5ffaf54a-b311-4df0-a6a9-b2a181521388",
+                "BodyGroups": 18446744073709551615,
+                "Health": 0,
+                "IsStatic": true,
+                "Model": "models/track_tileset_pieces/blockin/blockin_narrow_2x32.vmdl"
+              }
+            ]
+          },
+          {
+            "__guid": "ecdcab70-a1f1-4f96-b269-e5a6097cbb72",
+            "Name": "blockin_narrow_angle_2x32",
+            "Position": "0,-640,0",
+            "Enabled": true,
+            "NetworkMode": 2,
+            "Components": [
+              {
+                "__type": "Sandbox.Prop",
+                "__guid": "11942188-6110-4a44-9157-dd75e04e2815",
+                "BodyGroups": 18446744073709551615,
+                "Health": 0,
+                "IsStatic": true,
+                "Model": "models/track_tileset_pieces/blockin/blockin_narrow_angle_2x32.vmdl"
+              }
+            ]
+          },
+          {
+            "__guid": "57c147e3-ddf8-4c81-b22a-f029bdc03183",
+            "Name": "blockin_narrow_angle_steep_2x32",
+            "Position": "0,-1280,0",
+            "Enabled": true,
+            "NetworkMode": 2,
+            "Components": [
+              {
+                "__type": "Sandbox.Prop",
+                "__guid": "0dfcce47-5bd5-4fb1-9ce4-5843c064773f",
+                "BodyGroups": 18446744073709551615,
+                "Health": 0,
+                "IsStatic": true,
+                "Model": "models/track_tileset_pieces/blockin/blockin_narrow_angle_steep_2x32.vmdl"
+              }
+            ]
+          },
+          {
+            "__guid": "39ea43f8-d588-4712-b8b5-df6f65f1ebde",
+            "Name": "blockin_narrow_turn_2x32",
+            "Position": "0,-1792,0",
+            "Enabled": true,
+            "NetworkMode": 2,
+            "Components": [
+              {
+                "__type": "Sandbox.Prop",
+                "__guid": "5e2cd8a2-d881-4957-9efb-a13a3e3110fe",
+                "BodyGroups": 18446744073709551615,
+                "Health": 0,
+                "IsStatic": true,
+                "Model": "models/track_tileset_pieces/blockin/blockin_narrow_turn_2x32.vmdl"
+              }
+            ]
+          },
+          {
+            "__guid": "7ca6683a-353f-468b-bf79-affc69ecc9a6",
+            "Name": "blockin_narrow_turn_2x64",
+            "Position": "0,-2304,0",
+            "Enabled": true,
+            "NetworkMode": 2,
+            "Components": [
+              {
+                "__type": "Sandbox.Prop",
+                "__guid": "fa3902b6-5099-46cd-b371-3869dbdda1b2",
+                "BodyGroups": 18446744073709551615,
+                "Health": 0,
+                "IsStatic": true,
+                "Model": "models/track_tileset_pieces/blockin/blockin_narrow_turn_2x64.vmdl"
+              }
+            ]
           }
         ]
       }
