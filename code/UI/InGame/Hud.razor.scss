@@ -23,9 +23,10 @@ HudTimer {
     font-size: 40px;
     text-shadow: 2px 2px 2px black;
     flex-direction: column;
+    font-family: $stylefont;
 
     .timer-time {
-        color: yellow;
+        color: $lightest-purple;
     }
 
     .timer-state {

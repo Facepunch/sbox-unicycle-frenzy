@@ -64,8 +64,7 @@
         },
         {
           "__type": "Menu",
-          "__guid": "1f3bef2e-95e7-4b21-817f-92e61162d724",
-          "MyStringValue": "Hello World!"
+          "__guid": "1f3bef2e-95e7-4b21-817f-92e61162d724"
         }
       ]
     }
@@ -93,7 +92,7 @@
   },
   "Title": "menu",
   "Description": "",
-  "LastSaved": "2024-04-16T12:16:53.8970087-07:00",
+  "LastSaved": "2024-04-16T12:27:41.0217814-07:00",
   "ResourceVersion": 1,
   "__version": 1,
   "__references": []
