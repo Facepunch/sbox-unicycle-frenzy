@@ -1,0 +1,14 @@
+
+.button {
+    padding: 10px;
+    border-radius: 8px;
+    background-color: rgba(lightgray, .44);
+    text-transform: uppercase;
+    font-size: 20px;
+    color: black;
+    cursor: pointer;
+
+    &:hover {
+        background-color: lighten( rgba(lightgray, .9), 20% );
+    }
+}

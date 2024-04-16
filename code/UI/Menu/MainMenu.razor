@@ -1,0 +1,25 @@
+
+@inherits NavHostPanel
+
+<root>
+	<div class="sidebar">
+		<div class="navbar">
+			<a class="button" href="/home">Home</a>
+			<a class="button" href="/solo">Solo</a>
+			<a class="button" href="/online">Online</a>
+			<a class="button" href="/customize">Customize</a>
+			<a class="button" href="/settings">Settings</a>
+			<a class="button" onmousedown="@OpenTutorialDialog">Tutorial</a>
+		</div>
+	</div>
+	<div class="body">
+		<div @ref="NavigatorCanvas" />
+	</div>
+</root>
+
+@code {
+	void OpenTutorialDialog()
+	{
+		Log.Error("OPEN THE TUTORIAL");
+	}
+}

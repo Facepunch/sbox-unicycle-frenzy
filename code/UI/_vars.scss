@@ -1,3 +1,4 @@
+
 $fontcolor: #fff;
 $fontcolorfaded: #b1b1b1;
 $primary: #55ccd9;
@@ -118,4 +119,8 @@ $text-shadow-black-4: 4px 4px 0 #000;
 
 .hidden {
     display: none;
+}
+
+i, icon, .i {
+    font-family: "MaterialIcons";
 }

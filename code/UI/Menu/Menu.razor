@@ -3,6 +3,17 @@
 @inherits PanelComponent
 
 <root>
-	<div class="logo"></div>
-	<MapList />
+	<MainMenu @ref="MainMenu" />
 </root>
+
+@code {
+	public MainMenu MainMenu { get; protected set; }
+
+	protected override void OnTreeFirstBuilt()
+	{
+		base.OnTreeFirstBuilt();
+
+		MainMenu.Navigate("/home");
+	}
+}
+
