@@ -1,36 +1,35 @@
-
 @inherits Panel
 
 <style>
-    .thumbnail {
-        background-image: url(@ThumbnailUrl);
-    }
+	.thumbnail {
+		background-image: url(@ThumbnailUrl);
+	}
 </style>
 
 <root>
-    <div class="thumbnail" ref="Thumbnail" />
+	<div class="thumbnail" ref="Thumbnail" />
 </root>
 
 @code {
-    public Package MapPackage { get; set; }
-    public string ScenePath { get; set; }
+	public Package MapPackage { get; set; }
+	public string ScenePath { get; set; }
 
-    string ThumbnailUrl = "";
+	string ThumbnailUrl = "";
 
-    protected override void OnMouseDown(MousePanelEvent e)
-    {
-        base.OnMouseDown(e);
+	protected override void OnMouseDown(MousePanelEvent e)
+	{
+		base.OnMouseDown(e);
 
-        GameManager.ActiveScene.LoadFromFile(ScenePath);
-    }
+		GameManager.ActiveScene.LoadFromFile(ScenePath);
+	}
 
-    protected override void OnParametersSet()
-    {
-        base.OnParametersSet();
+	protected override void OnParametersSet()
+	{
+		base.OnParametersSet();
 
-        if (MapPackage == null) return;
+		if (MapPackage == null) return;
 
-        ThumbnailUrl = MapPackage.Thumb;
-        StateHasChanged();
-    }
+		ThumbnailUrl = MapPackage.Thumb;
+		StateHasChanged();
+	}
 }
