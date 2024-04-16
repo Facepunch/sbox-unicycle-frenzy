@@ -14,7 +14,7 @@
                             _class = "DefaultMaterialGroup"
                             remaps = [  ]
                             use_global_default = true
-                            global_default_material = "materials/default.vmat"
+                            global_default_material = "materials/dev/dev_measuregeneric01b.vmat"
                         },
                     ]
                 },
