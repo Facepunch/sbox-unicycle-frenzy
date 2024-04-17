@@ -1,0 +1,14 @@
+G:\SteamLibrary\steamapps\common\sbox\.vs\output\roguefps.editor.xml
+G:\SteamLibrary\steamapps\common\sbox\.vs\output\roguefps.editor.deps.json
+G:\SteamLibrary\steamapps\common\sbox\.vs\output\roguefps.editor.dll
+G:\SteamLibrary\steamapps\common\sbox\.vs\output\roguefps.editor.pdb
+G:\sbox-work\s&box projects\sbox-roguefps\code\Editor\obj\Debug\roguefps.editor.csproj.AssemblyReference.cache
+G:\sbox-work\s&box projects\sbox-roguefps\code\Editor\obj\Debug\roguefps.editor.GeneratedMSBuildEditorConfig.editorconfig
+G:\sbox-work\s&box projects\sbox-roguefps\code\Editor\obj\Debug\roguefps.editor.AssemblyInfoInputs.cache
+G:\sbox-work\s&box projects\sbox-roguefps\code\Editor\obj\Debug\roguefps.editor.AssemblyInfo.cs
+G:\sbox-work\s&box projects\sbox-roguefps\code\Editor\obj\Debug\roguefps.editor.csproj.CoreCompileInputs.cache
+G:\sbox-work\s&box projects\sbox-roguefps\code\Editor\obj\Debug\roguefps.editor.csproj.CopyComplete
+G:\sbox-work\s&box projects\sbox-roguefps\code\Editor\obj\Debug\roguefps.editor.dll
+G:\sbox-work\s&box projects\sbox-roguefps\code\Editor\obj\Debug\refint\roguefps.editor.dll
+G:\sbox-work\s&box projects\sbox-roguefps\code\Editor\obj\Debug\roguefps.editor.pdb
+G:\sbox-work\s&box projects\sbox-roguefps\code\Editor\obj\Debug\ref\roguefps.editor.dll

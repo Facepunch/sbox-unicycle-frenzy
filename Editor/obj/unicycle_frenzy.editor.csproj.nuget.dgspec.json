@@ -1,0 +1,219 @@
+{
+  "format": 1,
+  "restore": {
+    "G:\\sbox-work\\s&box projects\\sbox-unicycle-frenzy\\code\\Editor\\unicycle_frenzy.editor.csproj": {}
+  },
+  "projects": {
+    "G:\\sbox-work\\s&box projects\\sbox-unicycle-frenzy\\code\\Editor\\unicycle_frenzy.editor.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "G:\\sbox-work\\s&box projects\\sbox-unicycle-frenzy\\code\\Editor\\unicycle_frenzy.editor.csproj",
+        "projectName": "unicycle_frenzy.editor",
+        "projectPath": "G:\\sbox-work\\s&box projects\\sbox-unicycle-frenzy\\code\\Editor\\unicycle_frenzy.editor.csproj",
+        "packagesPath": "C:\\Users\\LT_8\\.nuget\\packages\\",
+        "outputPath": "G:\\sbox-work\\s&box projects\\sbox-unicycle-frenzy\\code\\Editor\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\LT_8\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "G:\\sbox-work\\s&box projects\\sbox-unicycle-frenzy\\code\\unicycle_frenzy.csproj": {
+                "projectPath": "G:\\sbox-work\\s&box projects\\sbox-unicycle-frenzy\\code\\unicycle_frenzy.csproj"
+              },
+              "G:\\SteamLibrary\\steamapps\\common\\sbox\\addons\\tools\\code\\Base Editor Library.csproj": {
+                "projectPath": "G:\\SteamLibrary\\steamapps\\common\\sbox\\addons\\tools\\code\\Base Editor Library.csproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "G:\\sbox-work\\s&box projects\\sbox-unicycle-frenzy\\code\\unicycle_frenzy.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "G:\\sbox-work\\s&box projects\\sbox-unicycle-frenzy\\code\\unicycle_frenzy.csproj",
+        "projectName": "unicycle_frenzy",
+        "projectPath": "G:\\sbox-work\\s&box projects\\sbox-unicycle-frenzy\\code\\unicycle_frenzy.csproj",
+        "packagesPath": "C:\\Users\\LT_8\\.nuget\\packages\\",
+        "outputPath": "G:\\sbox-work\\s&box projects\\sbox-unicycle-frenzy\\code\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\LT_8\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "G:\\SteamLibrary\\steamapps\\common\\sbox\\addons\\base\\code\\Base Library.csproj": {
+                "projectPath": "G:\\SteamLibrary\\steamapps\\common\\sbox\\addons\\base\\code\\Base Library.csproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "G:\\SteamLibrary\\steamapps\\common\\sbox\\addons\\base\\code\\Base Library.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "G:\\SteamLibrary\\steamapps\\common\\sbox\\addons\\base\\code\\Base Library.csproj",
+        "projectName": "Base Library",
+        "projectPath": "G:\\SteamLibrary\\steamapps\\common\\sbox\\addons\\base\\code\\Base Library.csproj",
+        "packagesPath": "C:\\Users\\LT_8\\.nuget\\packages\\",
+        "outputPath": "G:\\SteamLibrary\\steamapps\\common\\sbox\\addons\\base\\code\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\LT_8\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "G:\\SteamLibrary\\steamapps\\common\\sbox\\addons\\tools\\code\\Base Editor Library.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "G:\\SteamLibrary\\steamapps\\common\\sbox\\addons\\tools\\code\\Base Editor Library.csproj",
+        "projectName": "Base Editor Library",
+        "projectPath": "G:\\SteamLibrary\\steamapps\\common\\sbox\\addons\\tools\\code\\Base Editor Library.csproj",
+        "packagesPath": "C:\\Users\\LT_8\\.nuget\\packages\\",
+        "outputPath": "G:\\SteamLibrary\\steamapps\\common\\sbox\\addons\\tools\\code\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\LT_8\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

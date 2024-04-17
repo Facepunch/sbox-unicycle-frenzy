@@ -5,11 +5,7 @@
   "Ident": "unicycle_frenzy",
   "Tags": null,
   "Schema": 1,
-  "HasAssets": true,
-  "AssetsPath": "",
   "Resources": "/fonts/*\n/ui/*\n/scenes/*",
-  "HasCode": true,
-  "CodePath": "/code/",
   "PackageReferences": [],
   "EditorReferences": null,
   "Metadata": {
