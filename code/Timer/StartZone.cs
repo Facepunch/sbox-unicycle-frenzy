@@ -4,7 +4,6 @@ internal class StartZone : BaseZone
 	protected override Color ZoneColor => Color.Green;
 	public bool RunStarted { get; set; }
 
-
 	protected override void OnPlayerEnter( UnicycleController player )
 	{
 		base.OnPlayerEnter( player );

@@ -42,6 +42,32 @@ internal class CourseTimer : Component
 			if ( check == null ) continue;
 
 			check.CurrentCheckpoint = false;
+
+			var start = checkpoint.Components.Get<StartZone>();
+			if ( start == null ) continue;
+
+			start.RunStarted = false;
+		}
+	}
+
+	public void ResetCheckpoints()
+	{
+		//CheckpointsReached = 0;
+
+		State = TimerStates.Finished;
+		CurrentCheckpoint = null;
+		foreach ( var checkpoint in Scene.Children )
+		{
+
+			var start = checkpoint.Components.Get<StartZone>();
+			if ( start == null ) continue;
+
+			start.RunStarted = false;
+
+			var check = checkpoint.Components.Get<CheckPointZone>();
+			if ( check == null ) continue;
+
+			check.CurrentCheckpoint = false;
 		}
 	}
 
@@ -76,10 +102,11 @@ internal class CourseTimer : Component
 			{
 				position = startZone.Transform.Local.PointToWorld( startZone.Bounds.Center );
 				forward = startZone.Transform.Rotation.Forward.EulerAngles;
+				Log.Info( "No current checkpoint" );
 				return true;
 			}
-			var check = CurrentCheckpoint.Components.Get<CheckPointZone>();
 
+			var check = CurrentCheckpoint.Components.Get<CheckPointZone>();
 			if ( check.CurrentCheckpoint )
 			{
 				position = check.Transform.Local.PointToWorld( check.Bounds.Center );
