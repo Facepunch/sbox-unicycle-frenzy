@@ -9,9 +9,12 @@ internal class CheckPointZone : BaseZone
 		base.OnPlayerEnter( player );
 
 		var timer = player.Components.Get<CourseTimer>();
+
+		if ( CurrentCheckpoint ) return;
 		CurrentCheckpoint = true;
 
 		CourseTimer.Local.CurrentCheckpoint = this;
+		CourseTimer.Local.CheckpointsReached++;
 	}
 
 	protected override void OnPlayerExit( UnicycleController player )

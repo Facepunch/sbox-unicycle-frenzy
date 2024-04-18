@@ -12,6 +12,7 @@ internal class StartZone : BaseZone
 		var timer = player.Components.Get<CourseTimer>();
 		timer?.ResetTimer();
 		RunStarted = false;
+		timer.CheckpointsReached = 0;
 	}
 
 	protected override void OnPlayerExit( UnicycleController player )
@@ -21,6 +22,11 @@ internal class StartZone : BaseZone
 		var timer = player.Components.Get<CourseTimer>();
 		timer?.StartTimer();
 		RunStarted = true;
+
+		if(RunStarted)
+		{
+			timer.CheckpointsReached++;
+		}
 	}
 
 }

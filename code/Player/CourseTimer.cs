@@ -17,8 +17,8 @@ internal class CourseTimer : Component
 	public TimerStates State { get; set; }
 	public RealTimeSince TimeSinceStart { get; set; }
 	public double FinishTime { get; private set; }
-//	public int CurrentCheckpoint { get; set; }
-
+	public int CheckpointsReached { get; set; }
+	public int TotalCheckpoints { get; set; }
 	public CheckPointZone CurrentCheckpoint { get; set; }
 
 	protected override void OnAwake()
@@ -26,6 +26,8 @@ internal class CourseTimer : Component
 		base.OnAwake();
 
 		Local = this;
+
+		TotalCheckpoints = Scene.Children.Count( x => x.Components.Get<BaseZone>() != null );
 	}
 
 	public void ResetTimer()
@@ -33,6 +35,14 @@ internal class CourseTimer : Component
 		State = TimerStates.Idle;
 		TimeSinceStart = 0;
 		FinishTime = 0;
+
+		foreach ( var checkpoint in Scene.Children )
+		{
+			var check = checkpoint.Components.Get<CheckPointZone>();
+			if ( check == null ) continue;
+
+			check.CurrentCheckpoint = false;
+		}
 	}
 
 	public void StartTimer()
