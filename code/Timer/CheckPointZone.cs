@@ -1,7 +1,7 @@
 ﻿
 internal class CheckPointZone : BaseZone
 {
-	protected override Color ZoneColor => Color.Green;
+	protected override Color ZoneColor => Color.Cyan;
 	public bool CurrentCheckpoint { get; set; }
 
 	protected override void OnPlayerEnter( UnicycleController player )
