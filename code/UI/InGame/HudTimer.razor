@@ -6,12 +6,15 @@
 <root>
     <div class="timer-state">@TimerState</div>
     <div class="timer-time">@TimerTime</div>
+	<div class="checkpoints">@CheckpointState</div>
 </root>
 
 @code
 {
     string TimerState;
     string TimerTime;
+
+	string CheckpointState;
 
     public override void Tick()
     {
@@ -36,7 +39,9 @@
             var timeSpan = TimeSpan.FromSeconds(timer.FinishTime);
             TimerTime = timeSpan.ToString(@"mm\:ss");
         }
+
+		CheckpointState = timer.CheckpointsReached.ToString() + " / " + timer.TotalCheckpoints.ToString();
     }
 
-    protected override int BuildHash() => System.HashCode.Combine(TimerState, TimerTime);
+	protected override int BuildHash() => System.HashCode.Combine(TimerState, TimerTime, CheckpointState);
 }
