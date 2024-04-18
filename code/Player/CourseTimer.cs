@@ -59,10 +59,15 @@ internal class CourseTimer : Component
 		{
 			return false;
 		}
+
 		if(startZone.RunStarted)
 		{
-			if ( CurrentCheckpoint == null ) return false;
-			
+			if ( CurrentCheckpoint == null )
+			{
+				position = startZone.Transform.Local.PointToWorld( startZone.Bounds.Center );
+				forward = startZone.Transform.Rotation.Forward.EulerAngles;
+				return true;
+			}
 			var check = CurrentCheckpoint.Components.Get<CheckPointZone>();
 
 			if ( check.CurrentCheckpoint )
