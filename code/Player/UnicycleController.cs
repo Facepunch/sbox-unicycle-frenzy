@@ -165,12 +165,19 @@ internal class UnicycleController : Component
 		if ( !Dead && ShouldFall() )
 		{
 			Fall();
+
+			var mapsetting = Scene.GetAllComponents<MapSettings>().FirstOrDefault();
+			if ( !IsProxy && mapsetting != null )
+			{
+				mapsetting.AddFall();
+			}
 		}
 	}
 
 	GameObject Ragdoll;
 	public async void Fall()
 	{
+
 		Dead = true;
 
 		if ( Ragdoll != null )
