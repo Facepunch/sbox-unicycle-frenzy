@@ -17,6 +17,9 @@ internal class CourseTimer : Component
 	public TimerStates State { get; set; }
 	public RealTimeSince TimeSinceStart { get; set; }
 	public double FinishTime { get; private set; }
+//	public int CurrentCheckpoint { get; set; }
+
+	public CheckPointZone CurrentCheckpoint { get; set; }
 
 	protected override void OnAwake()
 	{
@@ -56,9 +59,25 @@ internal class CourseTimer : Component
 		{
 			return false;
 		}
+		if(startZone.RunStarted)
+		{
+			if ( CurrentCheckpoint == null ) return false;
+			
+			var check = CurrentCheckpoint.Components.Get<CheckPointZone>();
 
-		position = startZone.Transform.Local.PointToWorld( startZone.Bounds.Center );
-		forward = startZone.Transform.Rotation.Forward.EulerAngles;
+			if ( check.CurrentCheckpoint )
+			{
+				position = check.Transform.Local.PointToWorld( check.Bounds.Center );
+				forward = check.Transform.Rotation.Forward.EulerAngles;
+				return true;
+			}
+			
+		}
+		else
+		{
+			position = startZone.Transform.Local.PointToWorld( startZone.Bounds.Center );
+			forward = startZone.Transform.Rotation.Forward.EulerAngles;
+		}
 
 		return true;
 	}
