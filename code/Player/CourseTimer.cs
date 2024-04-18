@@ -52,10 +52,9 @@ internal class CourseTimer : Component
 
 	public void ResetCheckpoints()
 	{
-		//CheckpointsReached = 0;
-
 		State = TimerStates.Finished;
 		CurrentCheckpoint = null;
+
 		foreach ( var checkpoint in Scene.Children )
 		{
 

@@ -1,44 +1,44 @@
 {
   "RootObject": {
-    "Id": "a06633a7-a845-497a-a122-e4b6c93f3e07",
-    "Name": "Start Zone",
-    "Position": "-160.1697,-1.287358,27.00858",
+    "__guid": "a06633a7-a845-497a-a122-e4b6c93f3e07",
+    "Name": "start zone",
     "Enabled": true,
+    "NetworkMode": 2,
     "Components": [
       {
         "__type": "StartZone",
+        "__guid": "480c32bd-7f24-440b-82fa-286688e94bd5",
         "Bounds": {
-          "Mins": "-63.93327,-155.4474,-23.36203",
-          "Maxs": "130.0931,109.5224,128.8793"
+          "Mins": "75,75,75",
+          "Maxs": "-75,-75,0"
         },
-        "EnterSound": null,
         "ExitSound": "sounds/course/course.checkpoint.sound"
       }
     ],
     "Children": [
       {
-        "Id": "fa6d5c91-a1eb-4e96-9117-2d9ccaba61ae",
+        "__guid": "fa6d5c91-a1eb-4e96-9117-2d9ccaba61ae",
         "Name": "Cube",
-        "Position": "34.15945,-21.49272,-27.97668",
-        "Scale": "3.909724,5.26596,0.1297799",
+        "Scale": "3,3,0.1",
         "Enabled": true,
+        "NetworkMode": 2,
         "Components": [
           {
-            "__type": "ModelRenderer",
+            "__type": "Sandbox.ModelRenderer",
+            "__guid": "1aabb105-6059-4d4f-a6cc-143fb02c740e",
             "BodyGroups": 18446744073709551615,
-            "MaterialGroup": null,
             "MaterialOverride": "materials/green8.vmat",
             "Model": "models/dev/box.vmdl",
             "RenderType": "On",
             "Tint": "1,1,1,1"
           },
           {
-            "__type": "BoxCollider",
+            "__type": "Sandbox.BoxCollider",
+            "__guid": "87fbffb1-8ab3-4bba-9198-e7b7c4812dd0",
             "Center": "0,0,0",
             "IsTrigger": false,
             "Scale": "50,50,50",
-            "Static": false,
-            "Surface": null
+            "Static": false
           }
         ]
       }
@@ -47,6 +47,8 @@
   "ShowInMenu": false,
   "MenuPath": null,
   "MenuIcon": null,
+  "ResourceVersion": 1,
+  "__version": 1,
   "__references": [
     "magikarp.green8"
   ]

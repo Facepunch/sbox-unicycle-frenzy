@@ -253,7 +253,7 @@
     {
       "__guid": "a06633a7-a845-497a-a122-e4b6c93f3e07",
       "Name": "Start Zone",
-      "Position": "-160.1697,-1.287358,27.00858",
+      "Position": "-160.1697,-1.287358,0.7746925",
       "Enabled": true,
       "NetworkMode": 2,
       "__Prefab": "prefabs/start zone.prefab"
@@ -261,7 +261,7 @@
     {
       "__guid": "f07963c3-b14d-424a-965e-2f0c52196d02",
       "Name": "End Zone",
-      "Position": "511.3699,-392.3983,471.2643",
+      "Position": "544,-392.3983,448",
       "Enabled": true,
       "NetworkMode": 2,
       "__Prefab": "prefabs/end zone.prefab"
@@ -290,58 +290,11 @@
     {
       "__guid": "01c16b13-bfbd-4bab-b856-eaacff5bb6dd",
       "Name": "CheckPoint Zone",
-      "Position": "128,-384,-14.12348",
+      "Position": "336,336,128",
+      "Rotation": "0,0,0.7071068,0.7071069",
       "Enabled": true,
       "NetworkMode": 2,
       "__Prefab": "prefabs/checkpoint zone.prefab"
-    },
-    {
-      "__guid": "aec86ab2-18fa-4b96-bac9-17738f744f25",
-      "Name": "Start Zone (2)",
-      "Position": "736.815,-384,7.003202",
-      "Enabled": true,
-      "NetworkMode": 2,
-      "Components": [
-        {
-          "__type": "CheckPointZone",
-          "__guid": "a71795a5-6073-4ed0-8774-fd320091c0a0",
-          "Bounds": {
-            "Mins": "75,75,106.3286",
-            "Maxs": "-75,-75,2.633492"
-          },
-          "EnterSound": "sounds/course/course.checkpoint.sound"
-        }
-      ],
-      "Children": [
-        {
-          "__guid": "8f8cb348-ea99-40cd-89c4-b0010cd16e82",
-          "Name": "Cube",
-          "Position": "0,0,0",
-          "Rotation": "0,0,0,0.9999872",
-          "Scale": "3,3,0.2",
-          "Enabled": true,
-          "NetworkMode": 2,
-          "Components": [
-            {
-              "__type": "Sandbox.ModelRenderer",
-              "__guid": "d12a082c-af0b-47f9-9364-ca16a6b898dd",
-              "BodyGroups": 18446744073709551615,
-              "MaterialOverride": "materials/green8.vmat",
-              "Model": "models/dev/box.vmdl",
-              "RenderType": "On",
-              "Tint": "0.91628,0.11081,0.63436,1"
-            },
-            {
-              "__type": "Sandbox.BoxCollider",
-              "__guid": "98df33bd-46d6-44b5-b738-47ecc4b24324",
-              "Center": "0,0,0",
-              "IsTrigger": false,
-              "Scale": "50,50,50",
-              "Static": false
-            }
-          ]
-        }
-      ]
     }
   ],
   "SceneProperties": {
@@ -367,10 +320,8 @@
   },
   "Title": "minimal",
   "Description": "",
-  "LastSaved": "2024-04-18T12:26:57.5652689\u002B01:00",
+  "LastSaved": "2024-04-18T13:52:09.4571187\u002B01:00",
   "ResourceVersion": 1,
   "__version": 1,
-  "__references": [
-    "magikarp.green8"
-  ]
+  "__references": []
 }
