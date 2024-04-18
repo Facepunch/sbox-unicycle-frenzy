@@ -35,6 +35,14 @@ internal class BaseZone : Component
 		Gizmo.Draw.Color = ZoneColor;
 		Gizmo.Draw.LineBBox( Bounds );
 
+		using ( Gizmo.Scope( "arrow" ) )
+		{
+			Gizmo.Transform = new Transform( Transform.Position, Rotation.From( 0, 0, 0 ) );
+			Gizmo.Draw.Arrow( Vector3.Zero + Vector3.Up * 30, Vector3.Zero + Transform.Rotation.Forward * 32 + Vector3.Up * 30 );
+		}
+		
+		if ( !Gizmo.IsSelected ) return;
+
 		if ( Gizmo.Control.BoundingBox( "bbox", Bounds, out var newBounds ) )
 		{
 			Bounds = newBounds;
