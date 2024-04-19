@@ -108,38 +108,64 @@ LeanDisplay {
 MapTimes {
     position: absolute;
     top: 20%;
-    left: 5%;
-    padding: 10px;
-    font-size: 12px;
+    left: 0%;
+    padding-left: 16px;
+    width: 300px;
+    font-size: 16px;
     color: $lightest-purple;
     font-family: $stylefont;
     text-align: right;
     flex-direction: column;
+    background-color: rgba( $dark-purple, .5 );
+
+    .medal-time {
+        margin: 8px;
+        flex-direction: row;
+        justify-content: space-between;
+    }
 
     .time {
         margin-bottom: 5px;
-        flex-direction: column;
-        font-size: 20px;
+        flex-direction: row;
+        text-shadow: 2px 2px 2px black;
+        justify-content: flex-start;
+    }
+
+    .medal {
+        text-transform: uppercase;
+        font-weight: bold;
         text-shadow: 2px 2px 2px black;
     }
 
+    .medal-circle {
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        margin-right: 5px;
+        box-shadow: 2px 2px 20px black;
+    }
+
     .bronze {
-        color: $bronze;
+        background-color: $bronze;
     }
 
     .silver {
-        color: $silver;
+        background-color: $silver;
     }
 
     .gold {
-        color: $gold;
+        background-color: $gold;
     }
 
     .platinum {
-        color: $platinum;
+        background-color: $platinum;
     }
 
     .pb {
-        color: $pb-green;
+        background-color: $pb-green;
+    }
+
+    .space {
+        box-shadow: 0px 0px 0px rgba(0,0,0,0);
     }
 }

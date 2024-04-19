@@ -4,24 +4,36 @@
 @using Sandbox.UI;
 
 <root>
-	<div class="time bronze">
-		<span>Bronze</span>
-		<span>@BronzeTime</span</div>
-	<div class="time silver">
-	<span>Silver</span>
-		<span>@SilverTime</span>
+	<div class="medal-time">
+		<div class="medal-circle space"></div>
+		<div class="medal">Medal</div>
+		<div class="time">Time</div>
 	</div>
-	<div class="time gold">
-		<span>Gold</span>
-		<span>@GoldTime</span>
+	<div class="medal-time">
+		<div class="medal-circle bronze"></div>
+		<div class="medal">Bronze</div>
+		<div class="time">@BronzeTime</div>
 	</div>
-	<div class="time platinum">
-		<span>Platinum</span>
-		<span>@PlatinumTime</span>
+	<div class="medal-time">
+		<div class="medal-circle silver"></div>
+		<div class="medal">Silver</div>
+		<div class="time">@SilverTime</div>
 	</div>
-	<div class="time pb">
-		<span>Personal Best</span>
-		<span>@PersonalBestTime</span</div>
+	<div class="medal-time">
+		<div class="medal-circle gold"></div>
+		<div class="medal">Gold</div>
+		<div class="time">@GoldTime</div>
+	</div>
+	<div class="medal-time">
+		<div class="medal-circle platinum"></div>
+		<div class="medal">Platinum</div>
+		<div class="time">@PlatinumTime</div>
+	</div>
+	<div class="medal-time">
+		<div class="medal-circle pb"></div>
+		<div class="medal">Personal Best</div>
+		<div class="time">@PersonalBestTime</div>
+	</div>
 </root>
 
 @code {
