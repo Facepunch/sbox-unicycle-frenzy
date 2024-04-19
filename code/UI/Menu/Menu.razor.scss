@@ -65,32 +65,38 @@ SoloPage {
 	backdrop-filter: blur( 10px );
 
 	.medal {
-		width: 30px;
-		height: 30px;
-		border-radius: 50%;
+		width: 50px;
+		height: 100%;
 		position: absolute;
 		right: 0;
 		align-self: center;
+		align-content:center;
+		justify-content:center;
+		aspect-ratio:1;
 	}
 
 	.bronze {
-		background-color: $bronze;
-		right: 10px;
+		background-image: url("textures/achievements/bronze_medal.png");
+		background-size: cover;
+		right: 0px;
 	}
 
 	.silver {
-		background-color: $silver;
-		right: 30px;
+		background-image: url("textures/achievements/silver_medal.png");
+		background-size: cover;
+		right: 20px;
 	}
 
 	.gold {
-		background-color: $gold;
-		right: 50px;
+		background-image: url("textures/achievements/gold_medal.png");
+		background-size: cover;
+		right: 40px;
 	}
 
 	.platinum {
-		background-color: $platinum;
-		right: 70px;
+		background-image: url("textures/achievements/expert.png");
+		background-size: cover;
+		right: 60px;
 	}
 
 
@@ -132,10 +138,9 @@ SoloPage {
 			padding: 10px;
 			font-family: $stylefont;
 			font-size: 30px;
-			flex-direction:column;
+			flex-direction: column;
 
 			.track-time {
-
 			}
 		}
 	}
