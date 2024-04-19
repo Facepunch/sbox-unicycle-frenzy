@@ -26,26 +26,13 @@ PartyPanel {
 	}
 }
 
-.sidebar {
-	width: 500px;
-	flex-shrink: 0;
+HomePage{
+
 }
 
-.body {
-	flex-grow: 1;
-	padding: 20px;
-	margin: 20px;
-	border-radius: 4px;
-
-	HomePage {
-		width: 100%;
-
-		.party-panel {
-			position: absolute;
-			bottom: 32px;
-			right: 32px;
-		}
-	}
+.sidebar {
+	width: 300px;
+	flex-shrink: 0;
 }
 
 .navbar {
@@ -70,6 +57,114 @@ PartyPanel {
 
 		&:hover {
 			background-color: rgba( lighten(lightgray, 10%), .8 );
+		}
+	}
+}
+SoloPage {
+	width: 100%;
+
+	.track-container {
+		position: absolute;
+		top: 30%;
+		width: 100%;
+		height: 500px;
+		justify-content: space-evenly;
+	}
+
+	.track-panel {
+		height: 500px;
+		width: 500px;
+		background-color: red;
+
+		.track-name {
+			font-family: $stylefont;
+			font-size: 30px;
+			position:absolute;
+			bottom:0;
+			right:0;
+			padding: 10px;
+		}
+
+		.track-icon {
+			width: 100%;
+			height: 100%;
+			background-size: cover;
+			background-position: center;
+			background-repeat: no-repeat;
+		}
+	}
+
+	.tracks {
+		flex-direction: column;
+		background-color: rgba( lightgray, .05 );
+
+		.track {
+			padding: 10px;
+			background-color: rgba( lightgray, .35 );
+			margin: 20px;
+			font-family: $stylefont;
+			width: 250px;
+
+			&:hover {
+				background-color: rgba( lighten(lightgray, 10%), .8 );
+			}
+
+			.track-icon {
+				background-size: cover;
+				background-position: center;
+				background-repeat: no-repeat;
+				width: 100%;
+				height: 100%;
+				aspect-ratio: 1;
+			}
+
+			.track-name {
+				text-align: left;
+				font-size: 24px;
+			}
+
+			.track-artist {
+				font-size: 15px;
+			}
+
+			.track-duration {
+				font-size: 15px;
+			}
+
+			.track-play {
+				&:hover {
+					color: $blue;
+				}
+			}
+
+			.track-pause {
+				&:hover {
+					color: $blue;
+				}
+			}
+
+			.track-delete {
+				&:hover {
+					color: $blue
+				}
+			}
+		}
+
+
+		.green {
+			background-color: rgba( green, .35 );
+		}
+
+		.yellow {
+			background-color: rgba( yellow, .35 );
+		}
+
+		.orange {
+			background-color: rgba( orange, .35 );
+		}
+
+		.red {
+			background-color: rgba( red, .35 );
 		}
 	}
 }

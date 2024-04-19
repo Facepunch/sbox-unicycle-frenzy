@@ -3,5 +3,67 @@
 @page "/solo";
 
 <root>
-	This is the solo page
+	<div class="sidebar">
+		<div class="navbar">
+			<a class="button" href="/home">Return</a>
+		</div>
+	</div>
+	<div class="track-container">
+		<div class="tracks">
+			@foreach (var map in Seasons.FirstOrDefault().GreenMaps)
+			{
+				<div class="track green" onmouseover="@(() => HoverTrack(map))">
+					<div class="track-name">@map.MapName</div>
+				</div>
+			}
+		</div>
+		<div class="tracks">
+			@foreach (var map in Seasons.FirstOrDefault().YellowMaps)
+			{
+				<div class="track yellow" onmouseover="@(() => HoverTrack(map))">
+					<div class="track-name">@map.MapName</div>
+				</div>
+			}
+		</div>
+		<div class="tracks">
+			@foreach (var map in Seasons.FirstOrDefault().OrangeMaps)
+			{
+				<div class="track orange" onmouseover="@(() => HoverTrack(map))">
+					<div class="track-name">@map.MapName</div>
+				</div>
+			}
+		</div>
+		<div class="tracks">
+			@foreach (var map in Seasons.FirstOrDefault().RedMaps)
+			{
+				<div class="track red" onmouseover="@(() => HoverTrack(map))">
+					<div class="track-name">@map.MapName</div>
+				</div>
+			}
+		</div>
+		<div class="track-panel">
+			<div class="track-icon" style="background-image: url('@HoveredMap?.MapIcon')"></div>
+			<div class="track-name">@HoveredMap?.MapName</div>
+		</div>
+	</div>
 </root>
+@code {
+
+	List<UnicycleFrenzySeason> Seasons = new List<UnicycleFrenzySeason>();
+
+	List<UnicycleFrenzyMap> UFMaps = new List<UnicycleFrenzyMap>();
+
+	UnicycleFrenzyMap HoveredMap;
+
+	public SoloPage()
+	{
+		UFMaps = ResourceLibrary.GetAll<UnicycleFrenzyMap>().ToList();
+		Seasons = ResourceLibrary.GetAll<UnicycleFrenzySeason>().ToList();
+	}
+
+	public void HoverTrack(UnicycleFrenzyMap map)
+	{
+		Log.Error("HOVER TRACK: " + map.MapName);
+		HoveredMap = map;
+	}
+}
