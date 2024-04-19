@@ -1,0 +1,24 @@
+{
+  "SeasonName": "Season 1",
+  "Author": "Facepunch",
+  "Description": "Description",
+  "SeasonIcon": "textures/ui/screenshot-1.jpg",
+  "GreenMaps": [
+    "resources/maps/s1/testmap.ufmap",
+    "resources/maps/s1/testmap.ufmap",
+    "resources/maps/s1/testmap.ufmap",
+    "resources/maps/s1/testmaptwo.ufmap"
+  ],
+  "YellowMaps": [
+    "resources/maps/s1/testmaptwo.ufmap"
+  ],
+  "OrangeMaps": [
+    "resources/maps/s1/testmap.ufmap"
+  ],
+  "RedMaps": [
+    "resources/maps/s1/testmaptwo.ufmap"
+  ],
+  "ResourceVersion": 0,
+  "__version": 0,
+  "__references": []
+}

@@ -1,0 +1,10 @@
+{
+  "MapName": "Not Quarry",
+  "Author": "NotHowie",
+  "Description": "This is a test message for maps, this map was made by howie from Facepunch! This message is pointless really.",
+  "MapIcon": "textures/ui/screenshot-2.jpg",
+  "MapScene": "scenes/uf_quarry.scene",
+  "ResourceVersion": 0,
+  "__version": 0,
+  "__references": []
+}
