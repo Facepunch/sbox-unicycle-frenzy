@@ -306,11 +306,14 @@
         {
           "__type": "MapSettings",
           "__guid": "b75f906d-b8c2-4f2f-8393-d09df8788d1c",
-          "BronzeTime": 60,
+          "Author": "Howie",
+          "BronzeTime": 75,
+          "Description": "A Cool map!",
           "Difficulty": "Tier1",
-          "GoldTime": 30,
-          "PlatinumTime": 15,
-          "SilverTime": 45
+          "GoldTime": 43,
+          "MapName": "Quarry",
+          "PlatinumTime": 37,
+          "SilverTime": 60
         }
       ]
     }
@@ -338,7 +341,7 @@
   },
   "Title": "Quarry",
   "Description": "",
-  "LastSaved": "2024-04-19T11:26:49.780577\u002B01:00",
+  "LastSaved": "2024-04-19T12:11:35.8797305\u002B01:00",
   "ResourceVersion": 1,
   "__version": 1,
   "__references": []
