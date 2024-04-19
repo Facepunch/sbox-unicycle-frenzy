@@ -165,7 +165,7 @@ internal class UnicycleController : Component
 		var mapsetting = Scene.GetAllComponents<MapSettings>().FirstOrDefault();
 		if ( mapsetting != null )
 		{
-			mapsetting.AddTimePlayed( 1 );
+			mapsetting.AddTimePlayed( 0.01f );
 		}
 		if ( !Dead && ShouldFall() )
 		{

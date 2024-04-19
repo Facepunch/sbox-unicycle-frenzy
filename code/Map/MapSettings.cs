@@ -27,8 +27,6 @@ internal class MapSettings : Component
 	{
 		Local.Falls++;
 		Save();
-
-		Log.Info( "Falls: " + Local.Falls );
 	}
 	public void AddTimePlayed( float seconds )
 	{
@@ -98,7 +96,6 @@ public class MapProgress
 	public int Completions { get; set; }
 	public float BestTime { get; set; }
 	public float TimePlayed { get; set; }
-
 	public bool HasBronzeMedal { get; set; }
 	public bool HasSilverMedal { get; set; }
 	public bool HasGoldMedal { get; set; }

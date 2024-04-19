@@ -110,6 +110,7 @@
 			<div class="track-icon" style="background-image: url('@HoveredMap?.MapIcon')"></div>
 			<div class="track-name">@HoveredMap?.MapName</div>
 			<div class="track-info">
+				<div class="track-falls">Falls: @Falls(HoveredMap?.MapName)</div>
 			<div class="track-time">Best Time: @BestTime(HoveredMap?.MapName)</div>
 			<div class="track-time">Play Time: @PlayTime(HoveredMap?.MapName)</div>
 			</div>
@@ -118,14 +119,21 @@
 </root>
 @code {
 	List<UnicycleFrenzySeason> Seasons = new List<UnicycleFrenzySeason>();
-	List<UnicycleFrenzyMap> UFMaps = new List<UnicycleFrenzyMap>();
 
 	UnicycleFrenzyMap HoveredMap;
 
 	public SoloPage()
 	{
-		UFMaps = ResourceLibrary.GetAll<UnicycleFrenzyMap>().ToList();
 		Seasons = ResourceLibrary.GetAll<UnicycleFrenzySeason>().ToList();
+
+		HoveredMap = Seasons.FirstOrDefault().GreenMaps.FirstOrDefault();
+	}
+
+	public string Falls(string mapName)
+	{
+		var map = FileSystem.Data.ReadJson<MapProgress>("unicycle.stats." + mapName + ".json");
+		if (map == null) return "0";
+		return map.Falls.ToString();
 	}
 
 	public string BestTime(string mapName)
