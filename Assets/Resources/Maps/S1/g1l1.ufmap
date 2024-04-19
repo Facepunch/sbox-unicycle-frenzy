@@ -1,0 +1,10 @@
+{
+  "MapName": "G1L1",
+  "Author": "Bakky",
+  "Description": "This is a test message for maps, this map was made by howie from Facepunch! This message is pointless really.",
+  "MapIcon": "textures/maps/s1/green/g1l1.jpg",
+  "MapScene": "scenes/maps/s1/green/g1l1.scene",
+  "ResourceVersion": 0,
+  "__version": 0,
+  "__references": []
+}

@@ -176,13 +176,13 @@
 
 	public void HoverTrack(UnicycleFrenzyMap map)
 	{
-		Log.Error("HOVER TRACK: " + map.MapName);
+		//Log.Error("HOVER TRACK: " + map.MapName);
 		HoveredMap = map;
 	}
 
 	public void SelectTrack(UnicycleFrenzyMap map)
 	{
-		Log.Error("SELECT TRACK: " + map.MapName);
+		//Log.Error("SELECT TRACK: " + map.MapName);
 		GameManager.ActiveScene.LoadFromFile(map.MapScene.ResourcePath);
 	}
 }
