@@ -86,6 +86,7 @@ internal class CourseTimer : Component
 		var mapsetting = Scene.GetAllComponents<MapSettings>().FirstOrDefault();
 		if ( mapsetting == null ) return;
 		mapsetting.SetBestTime( (float)FinishTime );
+		mapsetting.MedalCheck( (float)FinishTime );
 	}
 
 	public bool TryFindCheckpoint( out Vector3 position, out Angles forward )
