@@ -12,7 +12,24 @@
 		<div class="tracks">
 			@foreach (var map in Seasons.FirstOrDefault().GreenMaps)
 			{
-				<div class="track green" onmouseover="@(() => HoverTrack(map))">
+				<div class="track green" onmouseover="@(() => HoverTrack(map))" onclick="@(() => SelectTrack(map))">
+					@* This is ugly af, ill re do it later *@
+					@if(HasBronze(map.MapName) == "bronze")
+					{
+						<div class="medal bronze"></div>
+					}
+					@if (HasSilver(map.MapName) == "silver")
+					{
+						<div class="medal silver"></div>
+					}
+					@if (HasGold(map.MapName) == "gold")
+					{
+						<div class="medal gold"></div>
+					}
+					@if (HasPlatinum(map.MapName) == "platinum")
+					{
+						<div class="medal platinum"></div>
+					}
 					<div class="track-name">@map.MapName</div>
 				</div>
 			}
@@ -20,7 +37,23 @@
 		<div class="tracks">
 			@foreach (var map in Seasons.FirstOrDefault().YellowMaps)
 			{
-				<div class="track yellow" onmouseover="@(() => HoverTrack(map))">
+				<div class="track yellow" onmouseover="@(() => HoverTrack(map))" onclick="@(() => SelectTrack(map))">
+					@if (HasBronze(map.MapName) == "bronze")
+					{
+						<div class="medal bronze"></div>
+					}
+					@if (HasSilver(map.MapName) == "silver")
+					{
+						<div class="medal silver"></div>
+					}
+					@if (HasGold(map.MapName) == "gold")
+					{
+						<div class="medal gold"></div>
+					}
+					@if (HasPlatinum(map.MapName) == "platinum")
+					{
+						<div class="medal platinum"></div>
+					}
 					<div class="track-name">@map.MapName</div>
 				</div>
 			}
@@ -28,7 +61,23 @@
 		<div class="tracks">
 			@foreach (var map in Seasons.FirstOrDefault().OrangeMaps)
 			{
-				<div class="track orange" onmouseover="@(() => HoverTrack(map))">
+				<div class="track orange" onmouseover="@(() => HoverTrack(map))" onclick="@(() => SelectTrack(map))">
+					@if (HasBronze(map.MapName) == "bronze")
+					{
+						<div class="medal bronze"></div>
+					}
+					@if (HasSilver(map.MapName) == "silver")
+					{
+						<div class="medal silver"></div>
+					}
+					@if (HasGold(map.MapName) == "gold")
+					{
+						<div class="medal gold"></div>
+					}
+					@if (HasPlatinum(map.MapName) == "platinum")
+					{
+						<div class="medal platinum"></div>
+					}
 					<div class="track-name">@map.MapName</div>
 				</div>
 			}
@@ -36,7 +85,23 @@
 		<div class="tracks">
 			@foreach (var map in Seasons.FirstOrDefault().RedMaps)
 			{
-				<div class="track red" onmouseover="@(() => HoverTrack(map))">
+				<div class="track red" onmouseover="@(() => HoverTrack(map))" onclick="@(() => SelectTrack(map))">
+					@if (HasBronze(map.MapName) == "bronze")
+					{
+						<div class="medal bronze"></div>
+					}
+					@if (HasSilver(map.MapName) == "silver")
+					{
+						<div class="medal silver"></div>
+					}
+					@if (HasGold(map.MapName) == "gold")
+					{
+						<div class="medal gold"></div>
+					}
+					@if (HasPlatinum(map.MapName) == "platinum")
+					{
+						<div class="medal platinum"></div>
+					}
 					<div class="track-name">@map.MapName</div>
 				</div>
 			}
@@ -48,9 +113,7 @@
 	</div>
 </root>
 @code {
-
 	List<UnicycleFrenzySeason> Seasons = new List<UnicycleFrenzySeason>();
-
 	List<UnicycleFrenzyMap> UFMaps = new List<UnicycleFrenzyMap>();
 
 	UnicycleFrenzyMap HoveredMap;
@@ -61,9 +124,65 @@
 		Seasons = ResourceLibrary.GetAll<UnicycleFrenzySeason>().ToList();
 	}
 
+	public string HasBronze(string mapName)
+	{
+		var map = FileSystem.Data.ReadJson<MapProgress>("unicycle.stats." + mapName + ".json");
+		if (map == null) return "";
+		if(map.HasBronzeMedal)
+		{
+			return "bronze";
+		}
+
+		return "";
+	}
+
+	public string HasSilver(string mapName)
+	{
+		var map = FileSystem.Data.ReadJson<MapProgress>("unicycle.stats." + mapName + ".json");
+		if (map == null) return "";
+		if(map.HasSilverMedal)
+		{
+			return "silver";
+		}
+
+		return "";
+	}
+
+	public string HasGold(string mapName)
+	{
+		var map = FileSystem.Data.ReadJson<MapProgress>("unicycle.stats." + mapName + ".json");
+		if (map == null) return "";
+		if(map.HasGoldMedal)
+		{
+			return "gold";
+		}
+
+		return "";
+	}
+
+	public string HasPlatinum(string mapName)
+	{
+		var map = FileSystem.Data.ReadJson<MapProgress>("unicycle.stats." + mapName + ".json");
+		if (map == null) return "";
+		if(map.HasPlatinumMedal)
+		{
+			return "platinum";
+		}
+
+		return "";
+	}
+
+
+
 	public void HoverTrack(UnicycleFrenzyMap map)
 	{
 		Log.Error("HOVER TRACK: " + map.MapName);
 		HoveredMap = map;
+	}
+
+	public void SelectTrack(UnicycleFrenzyMap map)
+	{
+		Log.Error("SELECT TRACK: " + map.MapName);
+		GameManager.ActiveScene.LoadFromFile(map.MapScene.ResourcePath);
 	}
 }

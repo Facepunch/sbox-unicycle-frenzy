@@ -63,6 +63,37 @@ HomePage{
 SoloPage {
 	width: 100%;
 
+	.medal {
+		width: 30px;
+		height: 30px;
+		border-radius: 50%;
+		position: absolute;
+		right: 0;
+		align-self: center;
+	}
+
+	.bronze {
+		background-color: $bronze;
+		right: 10px;
+	}
+
+	.silver {
+		background-color: $silver;
+		right: 30px;
+	}
+
+	.gold {
+		background-color: $gold;
+		right: 50px;
+	}
+
+	.platinum {
+		background-color: $platinum;
+		right: 70px;
+	}
+
+
+
 	.track-container {
 		position: absolute;
 		top: 30%;
@@ -79,9 +110,9 @@ SoloPage {
 		.track-name {
 			font-family: $stylefont;
 			font-size: 30px;
-			position:absolute;
-			bottom:0;
-			right:0;
+			position: absolute;
+			bottom: 0;
+			right: 0;
 			padding: 10px;
 		}
 

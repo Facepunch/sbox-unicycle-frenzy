@@ -35,13 +35,34 @@ internal class MapSettings : Component
 		Local.TimePlayed += seconds;
 		Save();
 	}
-
 	public void SetBestTime( float newTime )
 	{
 		if ( Local.BestTime != default && Local.BestTime < newTime ) return;
 		Local.BestTime = newTime;
 		Save();
 	}
+
+	public void MedalCheck( float time )
+	{
+		if ( time <= BronzeTime )
+		{
+			Local.HasBronzeMedal = true;
+		}
+		if ( time <= SilverTime )
+		{
+			Local.HasSilverMedal = true;
+		}
+		if ( time <= GoldTime )
+		{
+			Local.HasGoldMedal = true;
+		}
+		if ( time <= PlatinumTime )
+		{
+			Local.HasPlatinumMedal = true;
+		}
+		Save();
+	}
+
 	public float GetBestTime()
 	{
 		Fetch();
@@ -77,6 +98,11 @@ public class MapProgress
 	public int Completions { get; set; }
 	public float BestTime { get; set; }
 	public float TimePlayed { get; set; }
+
+	public bool HasBronzeMedal { get; set; }
+	public bool HasSilverMedal { get; set; }
+	public bool HasGoldMedal { get; set; }
+	public bool HasPlatinumMedal { get; set; }
 }
 
 public enum Difficulty
