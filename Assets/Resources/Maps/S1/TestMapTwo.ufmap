@@ -1,9 +1,9 @@
 {
-  "MapName": "Not Quarry",
-  "Author": "NotHowie",
+  "MapName": "Flow",
+  "Author": "Howie",
   "Description": "This is a test message for maps, this map was made by howie from Facepunch! This message is pointless really.",
-  "MapIcon": "textures/ui/screenshot-2.jpg",
-  "MapScene": "scenes/uf_quarry.scene",
+  "MapIcon": "textures/ui/screenshot-1.jpg",
+  "MapScene": "scenes/uf_flow.scene",
   "ResourceVersion": 0,
   "__version": 0,
   "__references": []
