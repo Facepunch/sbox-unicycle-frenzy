@@ -1,0 +1,65 @@
+@inherits Panel
+@using Sandbox;
+@using System;
+@using Sandbox.UI;
+
+<root>
+	<div class="time bronze">
+		<span>Bronze</span>
+		<span>@BronzeTime</span</div>
+	<div class="time silver">
+	<span>Silver</span>
+		<span>@SilverTime</span>
+	</div>
+	<div class="time gold">
+		<span>Gold</span>
+		<span>@GoldTime</span>
+	</div>
+	<div class="time platinum">
+		<span>Platinum</span>
+		<span>@PlatinumTime</span>
+	</div>
+	<div class="time pb">
+		<span>Personal Best</span>
+		<span>@PersonalBestTime</span</div>
+</root>
+
+@code {
+	string BronzeTime;
+	string SilverTime;
+	string GoldTime;
+	string PlatinumTime;
+	
+	string PersonalBestTime;
+
+	MapSettings settings;
+
+	public override void Tick()
+	{
+		if(settings == null)
+		{
+			settings = Scene.GetAllComponents<MapSettings>().FirstOrDefault();
+		}
+		else
+		{
+			return;
+		}
+
+		var bronzeTime = TimeSpan.FromSeconds(settings.BronzeTime);
+		var silverTime = TimeSpan.FromSeconds(settings.SilverTime);
+		var goldTime = TimeSpan.FromSeconds(settings.GoldTime);
+		var platinumTime = TimeSpan.FromSeconds(settings.PlatinumTime);
+
+		BronzeTime = bronzeTime.ToString(@"mm\:ss");
+		SilverTime = silverTime.ToString(@"mm\:ss");
+		GoldTime = goldTime.ToString(@"mm\:ss");
+		PlatinumTime = platinumTime.ToString(@"mm\:ss");
+
+		var personalBestTime = TimeSpan.FromSeconds(settings.GetBestTime());
+
+		PersonalBestTime = personalBestTime.ToString(@"mm\:ss");
+    }
+
+	
+	protected override int BuildHash() => System.HashCode.Combine(BronzeTime, SilverTime, GoldTime, PlatinumTime, PersonalBestTime, settings?.GetBestTime());
+}
