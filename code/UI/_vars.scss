@@ -35,6 +35,8 @@ $light-green: #d2ffdf;
 
 // UI Block Elements Colours
 $lightest-purple: #bebed3;
+//Lightest Purple with some alpha
+$lightest-purple-alpha: rgba($lightest-purple, 0.5);
 $light-purple: #30273a;
 $dark-purple: #130e26;
 $darker-purple: #0a0714;
