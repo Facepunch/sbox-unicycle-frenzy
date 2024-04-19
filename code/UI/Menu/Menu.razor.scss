@@ -124,6 +124,20 @@ SoloPage {
 			background-position: center;
 			background-repeat: no-repeat;
 		}
+
+		.track-info {
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			padding: 10px;
+			font-family: $stylefont;
+			font-size: 30px;
+			flex-direction:column;
+
+			.track-time {
+
+			}
+		}
 	}
 
 	.tracks {

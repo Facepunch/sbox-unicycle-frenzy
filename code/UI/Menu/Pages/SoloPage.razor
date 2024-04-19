@@ -109,6 +109,10 @@
 		<div class="track-panel">
 			<div class="track-icon" style="background-image: url('@HoveredMap?.MapIcon')"></div>
 			<div class="track-name">@HoveredMap?.MapName</div>
+			<div class="track-info">
+			<div class="track-time">Best Time: @BestTime(HoveredMap?.MapName)</div>
+			<div class="track-time">Play Time: @PlayTime(HoveredMap?.MapName)</div>
+			</div>
 		</div>
 	</div>
 </root>
@@ -122,6 +126,22 @@
 	{
 		UFMaps = ResourceLibrary.GetAll<UnicycleFrenzyMap>().ToList();
 		Seasons = ResourceLibrary.GetAll<UnicycleFrenzySeason>().ToList();
+	}
+
+	public string BestTime(string mapName)
+	{
+		var map = FileSystem.Data.ReadJson<MapProgress>("unicycle.stats." + mapName + ".json");
+		if (map == null) return "--:--";
+		var time = TimeSpan.FromSeconds(map.BestTime);
+		return time.ToString(@"mm\:ss");
+	}
+
+	public string PlayTime(string mapName)
+	{
+		var map = FileSystem.Data.ReadJson<MapProgress>("unicycle.stats." + mapName + ".json");
+		if (map == null) return "--:--";
+		var time = TimeSpan.FromSeconds(map.TimePlayed);
+		return time.ToString(@"mm\:ss");
 	}
 
 	public string HasBronze(string mapName)
