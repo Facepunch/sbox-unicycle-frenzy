@@ -32,12 +32,12 @@
         else if (timer.State == TimerStates.Started)
         {
             var timeSpan = TimeSpan.FromSeconds(timer.TimeSinceStart);
-            TimerTime = timeSpan.ToString(@"mm\:ss");
+			TimerTime = timeSpan.ToString(@"mm\:ss\:ff");
         }
         else if (timer.State == TimerStates.Finished)
         {
             var timeSpan = TimeSpan.FromSeconds(timer.FinishTime);
-            TimerTime = timeSpan.ToString(@"mm\:ss");
+			TimerTime = timeSpan.ToString(@"mm\:ss\:ff");
         }
 
 		CheckpointState = timer.CheckpointsReached.ToString() + " / " + timer.TotalCheckpoints.ToString();

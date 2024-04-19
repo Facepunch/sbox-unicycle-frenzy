@@ -66,14 +66,14 @@
 		var goldTime = TimeSpan.FromSeconds(settings.GoldTime);
 		var platinumTime = TimeSpan.FromSeconds(settings.PlatinumTime);
 
-		BronzeTime = bronzeTime.ToString(@"mm\:ss");
-		SilverTime = silverTime.ToString(@"mm\:ss");
-		GoldTime = goldTime.ToString(@"mm\:ss");
-		PlatinumTime = platinumTime.ToString(@"mm\:ss");
+		BronzeTime = bronzeTime.ToString(@"mm\:ss\:ff");
+		SilverTime = silverTime.ToString(@"mm\:ss\:ff");
+		GoldTime = goldTime.ToString(@"mm\:ss\:ff");
+		PlatinumTime = platinumTime.ToString(@"mm\:ss\:ff");
 
 		var personalBestTime = TimeSpan.FromSeconds(settings.GetBestTime());
 
-		PersonalBestTime = personalBestTime.ToString(@"mm\:ss");
+		PersonalBestTime = personalBestTime.ToString(@"mm\:ss\:ff");
     }
 
 	

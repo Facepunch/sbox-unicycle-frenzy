@@ -110,7 +110,7 @@
 			<div class="track-icon" style="background-image: url('@HoveredMap?.MapIcon')"></div>
 			<div class="track-name">@HoveredMap?.MapName</div>
 			<div class="track-info">
-				<div class="track-falls">Falls: @Falls(HoveredMap?.MapName)</div>
+			<div class="track-falls">Falls: @Falls(HoveredMap?.MapName)</div>
 			<div class="track-time">Best Time: @BestTime(HoveredMap?.MapName)</div>
 			<div class="track-time">Play Time: @PlayTime(HoveredMap?.MapName)</div>
 			</div>
@@ -141,7 +141,7 @@
 		var map = FileSystem.Data.ReadJson<MapProgress>("unicycle.stats." + mapName + ".json");
 		if (map == null) return "--:--";
 		var time = TimeSpan.FromSeconds(map.BestTime);
-		return time.ToString(@"mm\:ss");
+		return time.ToString(@"mm\:ss\:ff");
 	}
 
 	public string PlayTime(string mapName)
