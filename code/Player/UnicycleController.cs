@@ -163,9 +163,10 @@ internal class UnicycleController : Component
 		PrevVelocity = beforeVelocity;
 
 		var mapsetting = Scene.GetAllComponents<MapSettings>().FirstOrDefault();
-
-		mapsetting.AddTimePlayed( 1 );
-
+		if ( mapsetting != null )
+		{
+			mapsetting.AddTimePlayed( 1 );
+		}
 		if ( !Dead && ShouldFall() )
 		{
 			Fall();
