@@ -16,7 +16,7 @@
           "Description": "A Cool map!",
           "Difficulty": "Tier1",
           "GoldTime": 17,
-          "MapName": "G1L1",
+          "MapName": "g1l1",
           "PlatinumTime": 15,
           "SilverTime": 20
         }
@@ -654,7 +654,7 @@
   },
   "Title": "g1l1",
   "Description": "",
-  "LastSaved": "2024-04-19T21:24:44.0124447\u002B01:00",
+  "LastSaved": "2024-04-19T21:41:21.8282257\u002B01:00",
   "ResourceVersion": 1,
   "__version": 1,
   "__references": []

@@ -71,7 +71,7 @@ internal class MapSettings : Component
 
 	void Fetch()
 	{
-		Local = FileSystem.Data.ReadJson<MapProgress>( "unicycle.stats." + Game.ActiveScene.Title + ".json" );
+		Local = FileSystem.Data.ReadJson<MapProgress>( "unicycle.stats." + MapName + ".json" );
 		if(Local == null)
 		{
 			Local = new MapProgress();
@@ -84,7 +84,7 @@ internal class MapSettings : Component
 		{
 			Fetch();
 		}
-		FileSystem.Data.WriteJson( "unicycle.stats." + Game.ActiveScene.Title + ".json", Local );
+		FileSystem.Data.WriteJson( "unicycle.stats." + MapName + ".json", Local );
 	}
 
 	public static MapProgress Local;
