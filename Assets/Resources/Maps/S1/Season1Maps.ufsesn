@@ -7,7 +7,8 @@
     "resources/maps/s1/testmap.ufmap",
     "resources/maps/s1/testmap.ufmap",
     "resources/maps/s1/testmap.ufmap",
-    "resources/maps/s1/testmaptwo.ufmap"
+    "resources/maps/s1/testmaptwo.ufmap",
+    "resources/maps/s1/testmapthree.ufmap"
   ],
   "YellowMaps": [
     "resources/maps/s1/testmaptwo.ufmap"
@@ -17,39 +18,6 @@
   ],
   "RedMaps": [
     "resources/maps/s1/testmaptwo.ufmap"
-  ],
-  "AllMaps": [
-    {
-      "MapName": "Quarry",
-      "Author": "Howie",
-      "Description": "Yeh Howie Made this!",
-      "MapIcon": "textures/ui/menu-background.png",
-      "MapScene": "scenes/uf_quarry.scene"
-    },
-    {
-      "MapName": "Flow",
-      "Author": "Howie",
-      "Description": "Yeh\t\t",
-      "MapIcon": "textures/ui/screenshot-2.jpg",
-      "MapScene": "scenes/uf_flow.scene",
-      "Difficulty": "Yellow"
-    },
-    {
-      "MapName": "Quarry",
-      "Author": "Howie",
-      "Description": "Yeh Howie Made this!",
-      "MapIcon": "textures/ui/menu-background.png",
-      "MapScene": "scenes/uf_quarry.scene",
-      "Difficulty": "Orange"
-    },
-    {
-      "MapName": "Flow",
-      "Author": "Howie",
-      "Description": "Yeh\t\t",
-      "MapIcon": "textures/ui/screenshot-2.jpg",
-      "MapScene": "scenes/uf_flow.scene",
-      "Difficulty": "Red"
-    }
   ],
   "ResourceVersion": 0,
   "__version": 0,
