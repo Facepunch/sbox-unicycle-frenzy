@@ -261,7 +261,7 @@
     {
       "__guid": "f07963c3-b14d-424a-965e-2f0c52196d02",
       "Name": "End Zone",
-      "Position": "544,-392.3983,448",
+      "Position": "128,-507.417,-10.82928",
       "Enabled": true,
       "NetworkMode": 2,
       "__Prefab": "prefabs/end zone.prefab"
@@ -290,50 +290,15 @@
     {
       "__guid": "01c16b13-bfbd-4bab-b856-eaacff5bb6dd",
       "Name": "CheckPoint Zone",
-      "Position": "336,336,128",
+      "Position": "96,-160,-5.865921",
       "Rotation": "0,0,0.7071068,0.7071069",
       "Enabled": true,
       "NetworkMode": 2,
       "__Prefab": "prefabs/checkpoint zone.prefab"
     },
     {
-      "__guid": "d5eeca41-eb8e-4128-99f0-e95b8690d0b6",
-      "Name": "CheckPoint Zone (1)",
-      "Position": "-79.99957,-736.0002,144",
-      "Rotation": "0,0,0.707107,-0.7071067",
-      "Enabled": true,
-      "NetworkMode": 2,
-      "__Prefab": "prefabs/checkpoint zone.prefab"
-    },
-    {
-      "__guid": "272286c3-7da6-4207-ba48-926c4b11b309",
-      "Name": "CheckPoint Zone (2)",
-      "Position": "800.0004,320.0004,256",
-      "Rotation": "0,0,-0.7071066,-0.7071071",
-      "Enabled": true,
-      "NetworkMode": 2,
-      "__Prefab": "prefabs/checkpoint zone.prefab"
-    },
-    {
-      "__guid": "36aa5933-0009-4aba-b6bb-23d6fd1c1da9",
-      "Name": "CheckPoint Zone (3)",
-      "Position": "-608.0001,-127.9993,255.9996",
-      "Rotation": "0,0,-0.7071072,0.7071064",
-      "Enabled": true,
-      "NetworkMode": 2,
-      "__Prefab": "prefabs/checkpoint zone.prefab"
-    },
-    {
-      "__guid": "77903973-3842-4a30-a392-f806d7951338",
-      "Name": "CheckPoint Zone (4)",
-      "Position": "1376,-1152,384",
-      "Enabled": true,
-      "NetworkMode": 2,
-      "__Prefab": "prefabs/checkpoint zone.prefab"
-    },
-    {
       "__guid": "e69fcea1-04b9-44b4-a461-bbd5684d73f6",
-      "Name": "Object",
+      "Name": "Map Settings",
       "Position": "0,0,304",
       "Enabled": true,
       "NetworkMode": 0,
@@ -373,7 +338,7 @@
   },
   "Title": "Quarry",
   "Description": "",
-  "LastSaved": "2024-04-18T16:42:49.3731461\u002B01:00",
+  "LastSaved": "2024-04-19T11:26:49.780577\u002B01:00",
   "ResourceVersion": 1,
   "__version": 1,
   "__references": []

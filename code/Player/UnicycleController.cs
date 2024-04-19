@@ -162,11 +162,14 @@ internal class UnicycleController : Component
 		PrevGrounded = beforeGrounded;
 		PrevVelocity = beforeVelocity;
 
+		var mapsetting = Scene.GetAllComponents<MapSettings>().FirstOrDefault();
+
+		mapsetting.AddTimePlayed( 1 );
+
 		if ( !Dead && ShouldFall() )
 		{
 			Fall();
 
-			var mapsetting = Scene.GetAllComponents<MapSettings>().FirstOrDefault();
 			if ( !IsProxy && mapsetting != null )
 			{
 				mapsetting.AddFall();
@@ -201,6 +204,10 @@ internal class UnicycleController : Component
 
 			var smr = go.Components.Create<SkinnedModelRenderer>();
 			smr.Model = mr.Model;
+			if (mr.Tags.Has("clothing"))
+			{
+				smr.Tags.Add("clothing");
+			}
 
 			var mphys = go.Components.Create<ModelPhysics>();
 			mphys.Model = mr.Model;

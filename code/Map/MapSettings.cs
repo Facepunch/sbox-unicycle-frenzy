@@ -27,6 +27,23 @@ internal class MapSettings : Component
 
 		Log.Info( "Falls: " + Local.Falls );
 	}
+	public void AddTimePlayed( float seconds )
+	{
+		Local.TimePlayed += seconds;
+		Save();
+	}
+
+	public void SetBestTime( float newTime )
+	{
+		if ( Local.BestTime != default && Local.BestTime < newTime ) return;
+		Local.BestTime = newTime;
+		Save();
+	}
+	public float GetBestTime()
+	{
+		Fetch();
+		return Local.BestTime;
+	}
 
 	void Fetch()
 	{
