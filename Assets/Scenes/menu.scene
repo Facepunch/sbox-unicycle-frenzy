@@ -4,7 +4,8 @@
     {
       "__guid": "07a2d926-0e53-4bf0-b981-36e8bb88e8da",
       "Name": "Main Camera",
-      "Position": "-300,0,100",
+      "Position": "-288.4951,0.6913691,64.87724",
+      "Rotation": "0.02865466,0.1069407,-0.2572279,0.9599877",
       "Enabled": true,
       "NetworkMode": 2,
       "Components": [
@@ -41,9 +42,9 @@
           "__guid": "d9c203c8-54b6-48bd-95e2-8e129bbd061b",
           "FogMode": "Enabled",
           "FogStrength": 1,
-          "LightColor": "0.91373,0.98039,1,1",
+          "LightColor": "0.09302,0.08849,0.08567,1",
           "Shadows": true,
-          "SkyColor": "0.05882,0.07451,0.08235,1"
+          "SkyColor": "0.03368,0.03913,0.04186,1"
         }
       ]
     },
@@ -65,6 +66,415 @@
         {
           "__type": "Menu",
           "__guid": "1f3bef2e-95e7-4b21-817f-92e61162d724"
+        }
+      ]
+    },
+    {
+      "__guid": "cb6d45a8-9d79-446c-8c7e-57546fe70834",
+      "Name": "Box",
+      "Position": "0,-320,-64.00001",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "Components": [
+        {
+          "__type": "Sandbox.MeshComponent",
+          "__guid": "2e4ff88a-0592-47b3-8dbd-458f30915d1c",
+          "Collision": "Mesh",
+          "Color": "1,1,1,1",
+          "IsTrigger": false,
+          "Mesh": {
+            "Topology": "H4sIAAAAAAAACuNgYGCQAGI2IGYHYkYgZgZiViD\u002BjwaAQmDABFUHEoPpAQEWqBxInBHKBgGQ2SAzQeIgGoSRAUgcm31DDcD8gg4A3urL72QBAAA=",
+            "TextureOrigin": "0,-320,64.00002",
+            "Positions": [
+              "-384,-320,64",
+              "480,-320,64",
+              "480,608,64",
+              "-384,608,64",
+              "-384,608,-63.99999",
+              "480,608,-63.99999",
+              "480,-320,-63.99999",
+              "-384,-320,-63.99999"
+            ],
+            "TextureUAxis": [
+              "1,0,0",
+              "1,0,0",
+              "0,-1,0",
+              "0,1,0",
+              "-1,0,0",
+              "1,0,0"
+            ],
+            "TextureVAxis": [
+              "0,-1,0",
+              "0,-1,0",
+              "0,0,-1",
+              "0,0,-1",
+              "0,0,-1",
+              "0,0,-1"
+            ],
+            "TextureScale": [
+              "0.25,0.25",
+              "0.25,0.25",
+              "0.25,0.25",
+              "0.25,0.25",
+              "0.25,0.25",
+              "0.25,0.25"
+            ],
+            "TextureAngle": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "MaterialIndex": [
+              1,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "EdgeFlags": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "Materials": [
+              "materials/dev/reflectivity_30.vmat",
+              "materials/concrete/floor/floor_tile_01.vmat"
+            ]
+          },
+          "SmoothingAngle": 40,
+          "Static": true
+        }
+      ]
+    },
+    {
+      "__guid": "a7f43004-73a9-4ed2-bafd-7108b90153ca",
+      "Name": "citizen",
+      "Position": "-190.7829,-85.53548,-0.0000002521072",
+      "Rotation": "0,0,0.8660253,0.5000001",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "Components": [
+        {
+          "__type": "Sandbox.SkinnedModelRenderer",
+          "__guid": "98b1f2cb-8328-4339-99fc-df192bb4f369",
+          "BodyGroups": 341,
+          "CreateBoneObjects": false,
+          "Model": "models/citizen/citizen.vmdl",
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        }
+      ]
+    },
+    {
+      "__guid": "df91c267-296e-46aa-8f29-6759e2b013d4",
+      "Name": "player and camera",
+      "Position": "-174.7829,-61.53548,4.999992",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "Children": [
+        {
+          "__guid": "471e947b-29e4-4212-8c68-3589e642543e",
+          "Name": "Player",
+          "Position": "0.9187469,-0.4064026,0",
+          "Tags": "player",
+          "Enabled": true,
+          "NetworkMode": 2,
+          "Children": [
+            {
+              "__guid": "8922f649-30d4-4903-a49e-f91d0bf20ea0",
+              "Name": "Unicycle",
+              "Position": "0,0,0",
+              "Rotation": "0,0,0.9958593,0.09090802",
+              "Scale": "0.8,0.8,0.8",
+              "Enabled": true,
+              "NetworkMode": 2,
+              "Children": [
+                {
+                  "__guid": "e8eeda84-85d8-4583-a2da-57607cf8faf3",
+                  "Name": "Seat",
+                  "Position": "0,0,25.93234",
+                  "Enabled": true,
+                  "NetworkMode": 2,
+                  "Components": [
+                    {
+                      "__type": "Sandbox.ModelRenderer",
+                      "__guid": "801175ae-7874-4b28-a8c0-153f304def7b",
+                      "BodyGroups": 18446744073709551615,
+                      "Model": "models/unicycles/default/parts/seats/default_seat.vmdl",
+                      "RenderType": "On",
+                      "Tint": "1,1,1,1"
+                    }
+                  ]
+                },
+                {
+                  "__guid": "788781c8-0927-4dac-938d-6f3e904e4131",
+                  "Name": "Frame",
+                  "Position": "0,0,3.750014",
+                  "Enabled": true,
+                  "NetworkMode": 2,
+                  "Components": [
+                    {
+                      "__type": "Sandbox.Prop",
+                      "__guid": "8d8c64c8-96da-4fc1-92a0-8f5746d5d3df",
+                      "BodyGroups": 18446744073709551615,
+                      "Health": 0,
+                      "IsStatic": true,
+                      "Model": "models/unicycles/default/parts/frames/default_frame.vmdl"
+                    }
+                  ]
+                },
+                {
+                  "__guid": "f8ee8520-247d-408b-904d-68f4c82fbd12",
+                  "Name": "WheelPivot",
+                  "Position": "0,0,12",
+                  "Enabled": true,
+                  "NetworkMode": 2,
+                  "Children": [
+                    {
+                      "__guid": "7e4c8815-ca00-44ec-ab86-5d7bba132acd",
+                      "Name": "Wheeel",
+                      "Position": "0,0,-18.24999",
+                      "Enabled": true,
+                      "NetworkMode": 2,
+                      "Components": [
+                        {
+                          "__type": "Sandbox.Prop",
+                          "__guid": "cc3c5d12-2927-4e48-9c72-2f184a8e0ef8",
+                          "BodyGroups": 18446744073709551615,
+                          "Health": 0,
+                          "IsStatic": true,
+                          "Model": "models/unicycles/default/parts/wheels/default_wheel.vmdl"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "__guid": "e787120c-8499-4d5e-b16f-9845e8b845a9",
+                  "Name": "Pedals",
+                  "Position": "0,0,12",
+                  "Enabled": true,
+                  "NetworkMode": 2,
+                  "Children": [
+                    {
+                      "__guid": "62318272-9110-4cd5-baad-12a540190a43",
+                      "Name": "Left Pedal",
+                      "Position": "0.0000005960464,5.200828,-12.7902",
+                      "Enabled": true,
+                      "NetworkMode": 2,
+                      "Components": [
+                        {
+                          "__type": "Sandbox.Prop",
+                          "__guid": "00143e49-08ef-47d2-9845-b121d7f8eb67",
+                          "BodyGroups": 18446744073709551615,
+                          "Health": 0,
+                          "IsStatic": true,
+                          "Model": "models/unicycles/default/parts/pedals/default_pedal.vmdl"
+                        }
+                      ]
+                    },
+                    {
+                      "__guid": "f9ccdbac-ff8c-487b-8d5d-b0670392d01a",
+                      "Name": "Right Pedal",
+                      "Position": "-0.0000005960464,-5.227397,-0.1563954",
+                      "Rotation": "1,0.00000002980232,0,-0.00000004371139",
+                      "Enabled": true,
+                      "NetworkMode": 2,
+                      "Components": [
+                        {
+                          "__type": "Sandbox.Prop",
+                          "__guid": "9a91f377-3e63-4026-9887-5069e74e1e33",
+                          "BodyGroups": 18446744073709551615,
+                          "Health": 0,
+                          "IsStatic": true,
+                          "Model": "models/unicycles/default/parts/pedals/default_pedal.vmdl"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "__guid": "9dc16dba-c759-4505-8c9c-7ba574e2bb8e",
+      "Name": "Box",
+      "Position": "20,-224,63.99807",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "Components": [
+        {
+          "__type": "Sandbox.MeshComponent",
+          "__guid": "20e5323e-16f2-426d-bb6a-eac364d1dc34",
+          "Collision": "Mesh",
+          "Color": "1,1,1,1",
+          "IsTrigger": false,
+          "Mesh": {
+            "Topology": "H4sIAAAAAAAACk3QCQ7CMBBD0bAUylp2uP9J8ZMmUkb6ysTjOGnn1tov7MI9rMI3TOEZDuEdLqHXunzTcEZta7YJr\u002BqVbJq5bP1YfI\u002BayzpWtr036OnnIetTPf0a9uXzVj19Ht50K11vVfy\u002BSx59KT/6nWanuqtrVno/x\u002B8/KXfKMaPx/wEMd\u002BZ5ZAEAAA==",
+            "TextureOrigin": "20,-224,63.99807",
+            "Positions": [
+              "-75.99999,-392,192.0019",
+              "75.99998,-392,192.0019",
+              "75.99998,392,192.0019",
+              "-75.99999,392,192.0019",
+              "-75.99999,392,-64",
+              "75.99999,392,-64",
+              "75.99999,-392,-64",
+              "-75.99999,-392,-64"
+            ],
+            "TextureUAxis": [
+              "1,0,0",
+              "1,0,0",
+              "0,-1,0",
+              "0,1,0",
+              "-1,0,0",
+              "1,0,0"
+            ],
+            "TextureVAxis": [
+              "0,-1,0",
+              "0,-1,0",
+              "0,0,-1",
+              "0,0,-1",
+              "0,0,-1",
+              "0,0,-1"
+            ],
+            "TextureScale": [
+              "0.25,0.25",
+              "0.25,0.25",
+              "0.25,0.25",
+              "0.25,0.25",
+              "0.25,0.25",
+              "0.25,0.25"
+            ],
+            "TextureAngle": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "MaterialIndex": [
+              0,
+              0,
+              2,
+              0,
+              0,
+              0
+            ],
+            "EdgeFlags": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "Materials": [
+              "materials/dev/reflectivity_30.vmat",
+              "materials/generic/wall_brick_b.vmat",
+              "materials/generic/wall_brick_d.vmat"
+            ]
+          },
+          "SmoothingAngle": 40,
+          "Static": true
+        }
+      ]
+    },
+    {
+      "__guid": "839affe2-3bfd-4115-a5dd-8c611bbf1d85",
+      "Name": "Object",
+      "Position": "-208,-40,71.99998",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "Components": [
+        {
+          "__type": "Sandbox.EnvmapProbe",
+          "__guid": "f0b7a260-54b4-4c74-b623-148fa06e806b",
+          "Bounds": {
+            "Mins": "-512,-512,-512",
+            "Maxs": "512,512,512"
+          },
+          "DelayBetweenUpdates": 0.1,
+          "Feathering": 0.02,
+          "FrameInterval": 5,
+          "MaxDistance": 512,
+          "Projection": "Sphere",
+          "RenderDynamically": true,
+          "TintColor": "1,1,1,1",
+          "UpdateStrategy": "OnEnabled",
+          "ZFar": 4096,
+          "ZNear": 16
+        }
+      ]
+    },
+    {
+      "__guid": "95cba2f0-2b0f-40a4-957a-816518e64c1a",
+      "Name": "Spot Light",
+      "Position": "-227.2928,-105.6826,136",
+      "Rotation": "-0.25,0.4330127,0.4330127,0.7500001",
+      "Tags": "light_spot,light",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "Components": [
+        {
+          "__type": "Sandbox.SpotLight",
+          "__guid": "d8c17ff8-0b6b-432b-8799-c5eb1599ff31",
+          "Attenuation": 0.61,
+          "ConeInner": 15,
+          "ConeOuter": 45,
+          "Cookie": "materials/effects/lightcookies/dirt2.vtex",
+          "FogMode": "Enabled",
+          "FogStrength": 1,
+          "LightColor": "0.66047,0.49581,0.24883,1",
+          "Radius": 500,
+          "Shadows": true
         }
       ]
     }
@@ -92,8 +502,12 @@
   },
   "Title": "menu",
   "Description": "",
-  "LastSaved": "2024-04-16T13:04:39.5161626-07:00",
+  "LastSaved": "2024-04-19T21:01:39.1194902\u002B01:00",
   "ResourceVersion": 1,
   "__version": 1,
-  "__references": []
+  "__references": [
+    "facepunch.floor_tile_01",
+    "facepunch.wall_brick_b",
+    "facepunch.wall_brick_d"
+  ]
 }

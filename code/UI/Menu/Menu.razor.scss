@@ -17,7 +17,7 @@ MainMenu {
 	color: white;
 	flex-direction: row;
 	pointer-events: all;
-	background-image: url("textures/ui/menu-background.png");
+	//background-image: url("textures/ui/menu-background.png");
 	background-size: 100%;
 }
 
@@ -62,6 +62,7 @@ HomePage{
 }
 SoloPage {
 	width: 100%;
+	backdrop-filter: blur( 10px );
 
 	.medal {
 		width: 30px;
