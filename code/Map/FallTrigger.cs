@@ -1,11 +1,10 @@
 using Sandbox;
 
 [EditorHandle( "textures/sprays/spray_bomb.png" )]
-public sealed class FallTrigger : Component
+public sealed class FallTrigger : Component, Component.ITriggerListener
 {
 	[Property] public BBox Bounds { get; set; } = BBox.FromPositionAndSize( 0, 64 );
 	BoxCollider Box;
-	List<UnicycleController> LastTouching = new();
 	protected override void DrawGizmos()
 	{
 		base.DrawGizmos();
@@ -32,28 +31,12 @@ public sealed class FallTrigger : Component
 		Box.Scale = Bounds.Size;
 		Box.Center = Bounds.Center;
 		Box.IsTrigger = true;
+		Tags.Add("trigger");
 	}
-	protected override void OnFixedUpdate()
+	void ITriggerListener.OnTriggerEnter( Collider other )
 	{
-		base.OnFixedUpdate();
-
-		var touching = Box.Touching;
-		var touchingThisFrame = new List<UnicycleController>();
-		foreach ( var touch in touching )
-		{
-			var player = touch.Components.Get<UnicycleController>();
-			if ( player == null ) continue;
-
-			touchingThisFrame.Add( player );
-
-			player.Fall();
-		}
-
-		for ( int i = LastTouching.Count - 1; i >= 0; i-- )
-		{
-			var player = LastTouching[i];
-			if ( touchingThisFrame.Contains( player ) ) continue;
-			LastTouching.RemoveAt( i );
-		}
+		var ply = other.Components.Get<UnicycleController>();
+		if ( ply == null ) return;
+		ply.ForceFall = true;
 	}
 }

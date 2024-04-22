@@ -49,6 +49,7 @@ internal class UnicycleController : Component
 
 	public bool Dead { get; private set; }
 
+	public bool ForceFall { get; set; }
 
 	public Vector3 Mins => new( -1, -1, 0 );
 	public Vector3 Maxs => new( 1, 1, 16 );
@@ -167,7 +168,7 @@ internal class UnicycleController : Component
 		{
 			mapsetting.AddTimePlayed( 0.01f );
 		}
-		if ( !Dead && ShouldFall() )
+		if ( !Dead && ShouldFall() || ForceFall )
 		{
 			Fall();
 
@@ -181,7 +182,6 @@ internal class UnicycleController : Component
 	GameObject Ragdoll;
 	public async void Fall()
 	{
-
 		Dead = true;
 
 		if ( Ragdoll != null )
@@ -243,6 +243,7 @@ internal class UnicycleController : Component
 		}
 
 		Dead = false;
+		ForceFall = false;
 
 		this.Tilt = default;
 		this.JumpTilt = default;
