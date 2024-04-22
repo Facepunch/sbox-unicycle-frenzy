@@ -629,6 +629,23 @@
           "Model": "models/track_tileset_pieces/blockin/blockin_straight32x32_wall_sides.vmdl"
         }
       ]
+    },
+    {
+      "__guid": "2990c0f2-f2bf-4b74-a7e0-4eb97cb37f21",
+      "Name": "Object",
+      "Position": "253.9417,-619.0142,-128",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "Components": [
+        {
+          "__type": "FallTrigger",
+          "__guid": "7d79a45c-8d9c-4b19-990d-f2b6c41628b4",
+          "Bounds": {
+            "Mins": "-3132.669,-2197.159,-322.5071",
+            "Maxs": "2656.868,2759.792,-151.845"
+          }
+        }
+      ]
     }
   ],
   "SceneProperties": {
@@ -654,7 +671,7 @@
   },
   "Title": "g1l1",
   "Description": "",
-  "LastSaved": "2024-04-19T21:41:21.8282257\u002B01:00",
+  "LastSaved": "2024-04-22T14:58:44.176378\u002B01:00",
   "ResourceVersion": 1,
   "__version": 1,
   "__references": []
