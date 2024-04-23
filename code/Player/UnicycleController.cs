@@ -47,6 +47,8 @@ internal class UnicycleController : Component
 	public float RightVelocityTilt => 1.5f;
 	public int MaxHorizontalSpeed => 800;
 
+	public float CurrentSpeed => Velocity.Length;
+
 	public bool Dead { get; private set; }
 
 	public bool ForceFall { get; set; }

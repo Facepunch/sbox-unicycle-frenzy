@@ -1,0 +1,25 @@
+@inherits Panel
+@using Sandbox;
+@using System;
+@using Sandbox.UI;
+
+<root>
+	<div class="speedo-speed">@Speed</div>
+	<div class="speedo-unit">u/s</div>
+
+</root>
+
+@code {
+
+	string Speed;
+
+	public override void Tick()
+	{
+		var controller = UnicycleController.Local;
+		if (controller == null) return;
+
+		Speed = controller.CurrentSpeed.CeilToInt().ToString();
+	}
+
+	protected override int BuildHash() => System.HashCode.Combine(Speed);
+}

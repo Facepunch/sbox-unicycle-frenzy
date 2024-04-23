@@ -1,0 +1,11 @@
+{
+  "ItemName": null,
+  "ItemDescription": null,
+  "ItemImage": null,
+  "ItemModel": "models/unicycles/default/parts/frames/colours/default_frame_black.vmdl",
+  "ItemCategory": "Frame",
+  "ItemRarity": "Common",
+  "ResourceVersion": 0,
+  "__version": 0,
+  "__references": []
+}

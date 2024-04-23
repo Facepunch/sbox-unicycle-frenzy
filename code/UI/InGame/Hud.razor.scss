@@ -186,3 +186,27 @@ MapTimes {
         text-shadow: 2px 2px 2px black;
     }
 }
+
+Speedo{
+position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: $stylefont;
+    font-size: 16px;
+    color: $lightest-purple;
+    text-shadow: 2px 2px 2px black;
+
+    .speedo-speed {
+        font-size: 40px;
+    }
+
+    .speedo-unit {
+        font-size: 20px;
+        opacity:0.5;
+    }
+}

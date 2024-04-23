@@ -23,6 +23,22 @@
       ]
     },
     {
+      "__guid": "10e605d5-c85a-42ac-bc64-572833cd10a3",
+      "Name": "Sky",
+      "Position": "446.0449,-704.0881,359.334",
+      "Tags": "skybox",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "Components": [
+        {
+          "__type": "Sandbox.SkyBox2D",
+          "__guid": "d6453648-ae92-415e-9544-8313bc1a282e",
+          "SkyMaterial": "materials/sky/atmosphere_sky.vmat",
+          "Tint": "1,1,1,1"
+        }
+      ]
+    },
+    {
       "__guid": "8c9933fe-a1d4-40fe-b5a8-189adcc26079",
       "Name": "End Zone",
       "Position": "-256,1152,128",
@@ -783,7 +799,7 @@
   },
   "Title": "g1l1",
   "Description": "",
-  "LastSaved": "2024-04-23T11:52:21.4544971\u002B01:00",
+  "LastSaved": "2024-04-23T12:27:45.3307358\u002B01:00",
   "ResourceVersion": 1,
   "__version": 1,
   "__references": []
