@@ -27,7 +27,10 @@ internal class CourseTimer : Component
 
 		Local = this;
 
-		TotalCheckpoints = Scene.Children.Count( x => x.Components.Get<BaseZone>() != null );
+		TotalCheckpoints = Scene.Children
+								  .Select( x => x.Components.Get<BaseZone>() )
+								  .Where( x => x != null && x.IsCheckPoint )
+								  .Count();
 	}
 
 	public void ResetTimer()
