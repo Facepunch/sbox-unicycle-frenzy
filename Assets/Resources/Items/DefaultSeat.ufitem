@@ -1,0 +1,11 @@
+{
+  "ItemName": "Default Seat",
+  "ItemDescription": null,
+  "ItemImage": null,
+  "ItemModel": "models/unicycles/default/parts/seats/default_seat.vmdl",
+  "ItemCategory": "Seat",
+  "ItemRarity": "Common",
+  "ResourceVersion": 0,
+  "__version": 0,
+  "__references": []
+}

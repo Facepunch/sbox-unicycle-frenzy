@@ -7,4 +7,95 @@
 			<a class="button" href="/home">Return</a>
 		</div>
 	</div>
+	<div class="clothingpage-container">
+	<div class="category-tabs">
+		@foreach (var category in Enum.GetValues(typeof(ItemCategories)).Cast<ItemCategories>())
+		{
+			<div class="tab-button @(SelectedCategory == category ? "active" : "")"
+					onclick="@(() => FilterItemsByCategory(category))">
+				@category
+			</div>
+		}
+	</div>
+	<div class="clothing-container">
+		@if (FilteredItems.Any())
+		{
+			@foreach (var item in FilteredItems)
+			{
+					<div class="clothing-item" onclick="@(() => SetNewItem(item))">
+					<div class="item-name">@item.ItemName</div>
+					<div class="item-image" style="background-image: url('@item.ItemImage')"></div>
+				</div>
+			}
+		}
+		else
+		{
+			<div>No items found in this category.</div>
+		}
+	</div>
+	</div>
 </root>
+
+
+@code {
+	public static UnicycleDressed Local;
+	List<UnicycleFrenzyItems> Items = new List<UnicycleFrenzyItems>();
+	List<UnicycleFrenzyItems> FilteredItems = new List<UnicycleFrenzyItems>();
+	ItemCategories SelectedCategory = ItemCategories.Frame; // Default category
+
+	public CustomizePage()
+	{
+		Fetch();
+		Items = ResourceLibrary.GetAll<UnicycleFrenzyItems>().ToList();
+		FilterItemsByCategory(SelectedCategory); // Initial filter
+	}
+
+	void Fetch()
+	{
+		Local = FileSystem.Data.ReadJson<UnicycleDressed>("unicycle.dress.json");
+		if (Local == null)
+		{
+			Local = new UnicycleDressed();
+			Save();
+		}
+	}
+
+	void SetNewItem(UnicycleFrenzyItems item)
+	{
+		switch (SelectedCategory)
+		{
+			case ItemCategories.Frame:
+				Local.Frame = item;
+				break;
+			case ItemCategories.Seat:
+				Local.Seat = item;
+				break;
+			case ItemCategories.Wheel:
+				Local.Wheel = item;
+				break;
+			case ItemCategories.Pedal:
+				Local.Pedal = item;
+				break;
+			default:
+				break;
+		}
+
+		Save();
+	}
+
+	private void Save()
+	{
+		if (Local == null)
+		{
+			Fetch();
+		}
+		FileSystem.Data.WriteJson("unicycle.dress.json", Local);
+	}
+
+	void FilterItemsByCategory(ItemCategories category)
+	{
+		SelectedCategory = category;
+		FilteredItems = Items.Where(item => item.ItemCategory == SelectedCategory).ToList();
+	}
+
+}

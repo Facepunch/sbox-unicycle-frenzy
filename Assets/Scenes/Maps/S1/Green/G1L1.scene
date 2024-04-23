@@ -236,6 +236,42 @@
               "Scale": "0.8,0.8,0.8",
               "Enabled": true,
               "NetworkMode": 2,
+              "Components": [
+                {
+                  "__type": "UnicycleDresser",
+                  "__guid": "5fb96cd4-f64e-4457-a2ed-442d1d8916ad",
+                  "Frame": {
+                    "_type": "component",
+                    "component_id": "60d9895d-d2db-4c1e-a629-722f105496cd",
+                    "go": "014de3ce-546c-4acf-ab6c-dd518dab5562",
+                    "component_type": "ModelRenderer"
+                  },
+                  "LeftPedal": {
+                    "_type": "component",
+                    "component_id": "07d595ca-c890-4432-9881-e21eef677ad7",
+                    "go": "d81b9f73-1fc4-4210-b21a-b4aeb5c66a2a",
+                    "component_type": "SkinnedModelRenderer"
+                  },
+                  "RightPedal": {
+                    "_type": "component",
+                    "component_id": "3df8ffcb-5b52-4999-8c2f-a4627063879d",
+                    "go": "92f604e1-fd92-425d-83e8-3b4a3707d2f6",
+                    "component_type": "SkinnedModelRenderer"
+                  },
+                  "Seat": {
+                    "_type": "component",
+                    "component_id": "a2621e98-94d1-4dcf-9541-d32297a8b1af",
+                    "go": "ed97a2c2-08f7-487f-b651-2fbd4313ca8c",
+                    "component_type": "ModelRenderer"
+                  },
+                  "Wheel": {
+                    "_type": "component",
+                    "component_id": "6986f840-cf9b-43d3-84a8-fc35088e83e6",
+                    "go": "2b91eae5-4b47-43b6-8037-4bd77d10ec1f",
+                    "component_type": "ModelRenderer"
+                  }
+                }
+              ],
               "Children": [
                 {
                   "__guid": "ed97a2c2-08f7-487f-b651-2fbd4313ca8c",
@@ -799,7 +835,7 @@
   },
   "Title": "g1l1",
   "Description": "",
-  "LastSaved": "2024-04-23T12:27:45.3307358\u002B01:00",
+  "LastSaved": "2024-04-23T13:26:49.2572634\u002B01:00",
   "ResourceVersion": 1,
   "__version": 1,
   "__references": []

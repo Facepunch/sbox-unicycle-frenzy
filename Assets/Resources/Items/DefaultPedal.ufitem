@@ -1,9 +1,9 @@
 {
-  "ItemName": null,
+  "ItemName": "Default Pedal",
   "ItemDescription": null,
   "ItemImage": null,
-  "ItemModel": "models/unicycles/default/parts/frames/colours/default_frame_black.vmdl",
-  "ItemCategory": "Frame",
+  "ItemModel": "models/unicycles/default/parts/pedals/default_pedal.vmdl",
+  "ItemCategory": "Pedal",
   "ItemRarity": "Common",
   "ResourceVersion": 0,
   "__version": 0,
