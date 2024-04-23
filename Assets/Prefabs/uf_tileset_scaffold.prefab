@@ -1,0 +1,136 @@
+{
+  "RootObject": {
+    "__guid": "dc28b906-98b6-420c-bc68-b1be1515081f",
+    "Name": "uf_tileset_scaffold",
+    "Enabled": true,
+    "NetworkMode": 2,
+    "Children": [
+      {
+        "__guid": "8976d6fd-3157-4145-8d33-0b4f206f2ff1",
+        "Name": "foot",
+        "Tags": "group",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "Children": [
+          {
+            "__guid": "6eb2919a-a384-47b9-a5cd-bfe205333f12",
+            "Name": "scaffold_foot_32x32",
+            "Enabled": true,
+            "NetworkMode": 2,
+            "Components": [
+              {
+                "__type": "Sandbox.Prop",
+                "__guid": "c2a3a023-1cc4-4423-bddf-1691551aeb8c",
+                "BodyGroups": 18446744073709551615,
+                "Health": 0,
+                "IsStatic": true,
+                "Model": "models/track_tileset_pieces/scaffold/scaffold_foot_32x32.vmdl"
+              }
+            ]
+          },
+          {
+            "__guid": "d380658b-b2b0-4fd8-b865-ed4ce109331c",
+            "Name": "scaffold_foot_angle_steep_32x32",
+            "Position": "384,10.70532,0.0001224645",
+            "Enabled": true,
+            "NetworkMode": 2,
+            "Components": [
+              {
+                "__type": "Sandbox.Prop",
+                "__guid": "b968c0a4-83be-4fbb-94ab-74d1e2c4a2d5",
+                "BodyGroups": 18446744073709551615,
+                "Health": 0,
+                "IsStatic": true,
+                "Model": "models/track_tileset_pieces/scaffold/scaffold_foot_angle_steep_32x32.vmdl"
+              }
+            ]
+          },
+          {
+            "__guid": "26c877d9-ee79-471d-a9d0-f12eb8e73b53",
+            "Name": "scaffold_foot_cap_32x32",
+            "Position": "512,0,0",
+            "Enabled": true,
+            "NetworkMode": 2,
+            "Components": [
+              {
+                "__type": "Sandbox.Prop",
+                "__guid": "c85ac681-3c44-4a58-ac0a-5184cd097db1",
+                "BodyGroups": 18446744073709551615,
+                "Health": 0,
+                "IsStatic": true,
+                "Model": "models/track_tileset_pieces/scaffold/scaffold_foot_cap_32x32.vmdl"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "__guid": "56dfc39b-9679-4bb1-9658-9a63700048a9",
+        "Name": "mid",
+        "Position": "0,-640,0",
+        "Tags": "group",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "Children": [
+          {
+            "__guid": "e1a7d008-e901-4e7e-b665-a65850471911",
+            "Name": "scaffold_mid_cap_32x32",
+            "Position": "701.7764,0,0",
+            "Enabled": true,
+            "NetworkMode": 2,
+            "Components": [
+              {
+                "__type": "Sandbox.Prop",
+                "__guid": "9950b8ea-0170-494a-b1cb-9989347706e3",
+                "BodyGroups": 18446744073709551615,
+                "Health": 0,
+                "IsStatic": true,
+                "Model": "models/track_tileset_pieces/scaffold/scaffold_mid_cap_32x32.vmdl"
+              }
+            ]
+          },
+          {
+            "__guid": "b00c293d-34ce-45bc-bf00-868854cbb49a",
+            "Name": "scaffold_mid_angle_steep_32x32",
+            "Position": "512,0,0",
+            "Enabled": true,
+            "NetworkMode": 2,
+            "Components": [
+              {
+                "__type": "Sandbox.Prop",
+                "__guid": "acb80440-e258-45dd-966e-aa38a6759e72",
+                "BodyGroups": 18446744073709551615,
+                "Health": 0,
+                "IsStatic": true,
+                "Model": "models/track_tileset_pieces/scaffold/scaffold_mid_angle_steep_32x32.vmdl"
+              }
+            ]
+          },
+          {
+            "__guid": "1e68e705-6c1f-4cc0-aa76-108282e3106b",
+            "Name": "scaffold_mid_32x32",
+            "Position": "0,0,0",
+            "Enabled": true,
+            "NetworkMode": 2,
+            "Components": [
+              {
+                "__type": "Sandbox.Prop",
+                "__guid": "ecec5902-8040-4ab1-ac5c-114e3945332f",
+                "BodyGroups": 18446744073709551615,
+                "Health": 0,
+                "IsStatic": true,
+                "Model": "models/track_tileset_pieces/scaffold/scaffold_mid_32x32.vmdl"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "ShowInMenu": false,
+  "MenuPath": null,
+  "MenuIcon": null,
+  "ResourceVersion": 1,
+  "__version": 1,
+  "__references": []
+}
