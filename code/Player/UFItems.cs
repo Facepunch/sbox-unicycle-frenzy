@@ -7,6 +7,7 @@ public class UnicycleFrenzyItems : GameResource
 	public Model ItemModel { get; set; }
 	public ItemCategories ItemCategory { get; set; } = ItemCategories.Frame;
 	public ItemRare ItemRarity { get; set; } = ItemRare.Common;
+	public List<Skin> Skins { get; set; }
 
 	/// <summary>
 	/// Icon for this clothing piece.
@@ -18,15 +19,26 @@ public class UnicycleFrenzyItems : GameResource
 	{
 		public string Path { get; set; }
 	}
+
+	public struct Skin
+	{
+		public Material Material { get; set; }
+		public Color Color { get; set; }
+	}
 }
 
 public class UnicycleDressed
 {
 	public UnicycleFrenzyItems Frame { get; set; }
+	public int FrameSkin { get; set; }
 	public UnicycleFrenzyItems Seat { get; set; }
+	public int SeatSkin { get; set; }
 	public UnicycleFrenzyItems Wheel { get; set; }
+	public int WheelSkin { get; set; }
 	public UnicycleFrenzyItems Accessory { get; set; }
+	public int AccessorySkin { get; set; }
 	public UnicycleFrenzyItems Pedal { get; set; }
+	public int PedalSkin { get; set; }
 }
 
 public enum ItemCategories
@@ -92,11 +104,11 @@ internal class UnicycleDresser : Component
 		{
 			Local = FileSystem.Data.ReadJson<UnicycleDressed>( "unicycle.dress.json" );
 			Frame.Model = Local.Frame.ItemModel;
-			Seat.Model = Local.Seat.ItemModel;
-			Wheel.Model = Local.Wheel.ItemModel;
+			//Seat.Model = Local.Seat.ItemModel;
+			//Wheel.Model = Local.Wheel.ItemModel;
 			//Accessory.Model = Local.Accessory.ItemModel;
-			LeftPedal.Model = Local.Pedal.ItemModel;
-			RightPedal.Model = Local.Pedal.ItemModel;
+			//LeftPedal.Model = Local.Pedal.ItemModel;
+			//RightPedal.Model = Local.Pedal.ItemModel;
 		}
 
 	}

@@ -4,35 +4,72 @@
 <root>
 	<div class="sidebar">
 		<div class="navbar">
+			<div class="button" onclick="@(() => Apply())">Apply</div>
 			<a class="button" href="/home">Return</a>
 		</div>
 	</div>
+	<div class="right-side">
+
+	</div>
 	<div class="clothingpage-container">
-	<div class="category-tabs">
-		@foreach (var category in Enum.GetValues(typeof(ItemCategories)).Cast<ItemCategories>())
-		{
-			<div class="tab-button @(SelectedCategory == category ? "active" : "")"
-					onclick="@(() => FilterItemsByCategory(category))">
-				@category
-			</div>
-		}
-	</div>
-	<div class="clothing-container">
-		@if (FilteredItems.Any())
-		{
-			@foreach (var item in FilteredItems)
-			{
-				<div class="clothing-item" onclick="@(() => SetNewItem(item.ResourcePath))">
-					<div class="item-name">@item.ItemName</div>
-					<div class="item-image" style="background-image: url('@item.ItemImage')"></div>
+		<div class="clothing-container">
+			<div class="item">
+				<div class="item-title">Frames</div>
+				<div class="clothing-skin">
+					<div class="clothing-item">
+						<div class="arrow left" onclick="@(() => CycleSelection(Frames, ref CurrentFrame, false))"></div>
+						<div class="item-image" style=" background-image: url('@CurrentFrame.ItemImage')"></div>
+						<div class="item-name">@CurrentFrame.ItemName</div>
+						<div class="arrow" onclick="@(() => CycleSelection(Frames, ref CurrentFrame, true))"></div>
+					</div>
+					<div class="skin-items">
+						@if(CurrentFrame.Skins.Count() == 0)
+						{
+							<div class="skin-item">
+								<div class="item-image"></div>
+							</div>
+						}
+						else
+						{
+							@foreach (var skin in CurrentFrame.Skins)
+							{
+								<div class="skin-item">
+									<div class="item-image" style="background-color: @(skin.Color.Hex)"></div>
+								</div>
+							}
+						}
+					</div>
 				</div>
-			}
-		}
-		else
-		{
-			<div>No items found in this category.</div>
-		}
-	</div>
+			</div>
+			<div class="item">
+				<div class="item-title">Wheels</div>
+				<div class="clothing-skin">
+					<div class="clothing-item">
+						<div class="arrow left" onclick="@(() => CycleSelection(Wheels, ref CurrentWheel, false))"></div>
+						<div class="item-image" style=" background-image: url('@CurrentWheel.ItemImage')"></div>
+						<div class="item-name">@CurrentWheel.ItemName</div>
+						<div class="arrow" onclick="@(() => CycleSelection(Wheels, ref CurrentWheel, true))"></div>
+					</div>
+					<div class="skin-items">
+						@if (CurrentWheel.Skins.Count() == 0)
+						{
+							<div class="skin-item">
+								<div class="item-image"></div>
+							</div>
+						}
+						else
+						{
+							@foreach (var skin in CurrentWheel.Skins)
+							{
+								<div class="skin-item">
+									<div class="item-image" style="background-color: @(skin.Color.Hex)"></div>
+								</div>
+							}
+						}
+					</div>
+				</div>
+			</div>
+		</div>
 	</div>
 </root>
 
@@ -43,11 +80,29 @@
 	List<UnicycleFrenzyItems> FilteredItems = new List<UnicycleFrenzyItems>();
 	ItemCategories SelectedCategory = ItemCategories.Frame; // Default category
 
+	List<UnicycleFrenzyItems> Frames = new List<UnicycleFrenzyItems>();
+	UnicycleFrenzyItems CurrentFrame;
+
+	List<UnicycleFrenzyItems> Wheels = new List<UnicycleFrenzyItems>();
+	UnicycleFrenzyItems CurrentWheel;
+
 	public CustomizePage()
 	{
 		Fetch();
 		Items = ResourceLibrary.GetAll<UnicycleFrenzyItems>().ToList();
 		FilterItemsByCategory(SelectedCategory); // Initial filter
+
+		Frames = Items.Where(item => item.ItemCategory == ItemCategories.Frame).ToList();
+		CurrentFrame = Local.Frame;
+
+		Wheels = Items.Where(item => item.ItemCategory == ItemCategories.Wheel).ToList();
+		CurrentWheel = Local.Wheel;
+	}
+
+	void Apply()
+	{
+		SetNewItem(CurrentFrame, ItemCategories.Frame);
+		SetNewItem(CurrentWheel, ItemCategories.Wheel);
 	}
 
 	void Fetch()
@@ -60,21 +115,44 @@
 		}
 	}
 
-	void SetNewItem(string item)
+	void CycleSelection( List<UnicycleFrenzyItems> items, ref UnicycleFrenzyItems currentItem, bool forward)
 	{
-		switch (SelectedCategory)
+		var currentIndex = items.IndexOf(currentItem);
+		if (forward)
+		{
+			currentIndex++;
+			if (currentIndex >= items.Count)
+			{
+				currentIndex = 0;
+			}
+		}
+		else
+		{
+			currentIndex--;
+			if (currentIndex < 0)
+			{
+				currentIndex = items.Count - 1;
+			}
+		}
+		currentItem = items[currentIndex];
+		Save();
+	}
+
+	void SetNewItem(UnicycleFrenzyItems item, ItemCategories cate)
+	{
+		switch (cate)
 		{
 			case ItemCategories.Frame:
-				Local.Frame = ResourceLibrary.Get<UnicycleFrenzyItems>(item);
+				Local.Frame = item;
 				break;
 			case ItemCategories.Seat:
-				Local.Seat = ResourceLibrary.Get<UnicycleFrenzyItems>(item);
+				Local.Seat = item;
 				break;
 			case ItemCategories.Wheel:
-				Local.Wheel = ResourceLibrary.Get<UnicycleFrenzyItems>(item);
+				Local.Wheel = item;
 				break;
 			case ItemCategories.Pedal:
-				Local.Pedal = ResourceLibrary.Get<UnicycleFrenzyItems>(item);
+				Local.Pedal = item;
 				break;
 			default:
 				break;

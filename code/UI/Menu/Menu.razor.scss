@@ -3,276 +3,355 @@
 @import "../_button.scss";
 
 menu {
-	width: 100%;
-	height: 100%;
-	flex-direction: column;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
 }
 
 MainMenu {
-	position: absolute;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	color: white;
-	flex-direction: row;
-	pointer-events: all;
-	//background-image: url("textures/ui/menu-background.png");
-	background-size: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    color: white;
+    flex-direction: row;
+    pointer-events: all;
+    //background-image: url("textures/ui/menu-background.png");
+    background-size: 100%;
 }
 
 PartyPanel {
-	.invite-friend {
-	}
+    .invite-friend {
+    }
 }
 
-HomePage{
-
+HomePage {
 }
 
 .sidebar {
-	width: 300px;
-	flex-shrink: 0;
+    width: 300px;
+    flex-shrink: 0;
 }
 
 .navbar {
-	flex-direction: column;
-	width: 100%;
-	flex-shrink: 1;
-	position: absolute;
-	bottom: 100px;
+    flex-direction: column;
+    width: 100%;
+    flex-shrink: 1;
+    position: absolute;
+    bottom: 100px;
 
-	.button {
-		color: black;
-		font-size: 30px;
-		font-weight: 800;
-		padding: 15px;
-		background-color: rgba( lightgray, .35 );
-		cursor: pointer;
-		border-radius: 0 10px 10px 0;
-		margin-bottom: 8px;
-		justify-content: flex-end;
-		padding-right: 30px;
-		text-transform: uppercase;
+    .button {
+        color: black;
+        font-size: 30px;
+        font-weight: 800;
+        padding: 15px;
+        background-color: rgba( lightgray, .35 );
+        cursor: pointer;
+        border-radius: 0 10px 10px 0;
+        margin-bottom: 8px;
+        justify-content: flex-end;
+        padding-right: 30px;
+        text-transform: uppercase;
 
-		&:hover {
-			background-color: rgba( lighten(lightgray, 10%), .8 );
-		}
-	}
+        &:hover {
+            background-color: rgba( lighten(lightgray, 10%), .8 );
+        }
+    }
 }
+
 SoloPage {
-	width: 100%;
-	backdrop-filter: blur( 10px );
+    width: 100%;
+    backdrop-filter: blur( 10px );
 
-	.medal {
-		width: 50px;
-		height: 100%;
-		position: absolute;
-		right: 0;
-		align-self: center;
-		align-content:center;
-		justify-content:center;
-		aspect-ratio:1;
-	}
+    .medal {
+        width: 50px;
+        height: 100%;
+        position: absolute;
+        right: 0;
+        align-self: center;
+        align-content: center;
+        justify-content: center;
+        aspect-ratio: 1;
+    }
 
-	.bronze {
-		background-image: url("textures/achievements/bronze_medal.png");
-		background-size: cover;
-		right: 0px;
-	}
+    .bronze {
+        background-image: url("textures/achievements/bronze_medal.png");
+        background-size: cover;
+        right: 0px;
+    }
 
-	.silver {
-		background-image: url("textures/achievements/silver_medal.png");
-		background-size: cover;
-		right: 20px;
-	}
+    .silver {
+        background-image: url("textures/achievements/silver_medal.png");
+        background-size: cover;
+        right: 20px;
+    }
 
-	.gold {
-		background-image: url("textures/achievements/gold_medal.png");
-		background-size: cover;
-		right: 40px;
-	}
+    .gold {
+        background-image: url("textures/achievements/gold_medal.png");
+        background-size: cover;
+        right: 40px;
+    }
 
-	.platinum {
-		background-image: url("textures/achievements/expert.png");
-		background-size: cover;
-		right: 60px;
-	}
-
-
-
-	.track-container {
-		position: absolute;
-		top: 30%;
-		width: 100%;
-		height: 500px;
-		justify-content: space-evenly;
-	}
-
-	.track-panel {
-		height: 500px;
-		width: 500px;
-		background-color: red;
-
-		.track-name {
-			font-family: $stylefont;
-			font-size: 30px;
-			position: absolute;
-			bottom: 0;
-			right: 0;
-			padding: 10px;
-		}
-
-		.track-icon {
-			width: 100%;
-			height: 100%;
-			background-size: cover;
-			background-position: center;
-			background-repeat: no-repeat;
-		}
-
-		.track-info {
-			position: absolute;
-			bottom: 0;
-			left: 0;
-			padding: 10px;
-			font-family: $stylefont;
-			font-size: 30px;
-			flex-direction: column;
-
-			.track-time {
-			}
-		}
-	}
-
-	.tracks {
-		flex-direction: column;
-		background-color: rgba( lightgray, .05 );
-
-		.track {
-			padding: 10px;
-			background-color: rgba( lightgray, .35 );
-			margin: 20px;
-			font-family: $stylefont;
-			width: 250px;
-
-			&:hover {
-				background-color: rgba( lighten(lightgray, 10%), .8 );
-			}
-
-			.track-icon {
-				background-size: cover;
-				background-position: center;
-				background-repeat: no-repeat;
-				width: 100%;
-				height: 100%;
-				aspect-ratio: 1;
-			}
-
-			.track-name {
-				text-align: left;
-				font-size: 24px;
-			}
-
-			.track-artist {
-				font-size: 15px;
-			}
-
-			.track-duration {
-				font-size: 15px;
-			}
-
-			.track-play {
-				&:hover {
-					color: $blue;
-				}
-			}
-
-			.track-pause {
-				&:hover {
-					color: $blue;
-				}
-			}
-
-			.track-delete {
-				&:hover {
-					color: $blue
-				}
-			}
-		}
+    .platinum {
+        background-image: url("textures/achievements/expert.png");
+        background-size: cover;
+        right: 60px;
+    }
 
 
-		.green {
-			background-color: rgba( green, .35 );
-		}
 
-		.yellow {
-			background-color: rgba( yellow, .35 );
-		}
+    .track-container {
+        position: absolute;
+        top: 30%;
+        width: 100%;
+        height: 500px;
+        justify-content: space-evenly;
+    }
 
-		.orange {
-			background-color: rgba( orange, .35 );
-		}
+    .track-panel {
+        height: 500px;
+        width: 500px;
+        background-color: red;
 
-		.red {
-			background-color: rgba( red, .35 );
-		}
-	}
+        .track-name {
+            font-family: $stylefont;
+            font-size: 30px;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            padding: 10px;
+        }
+
+        .track-icon {
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        .track-info {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            padding: 10px;
+            font-family: $stylefont;
+            font-size: 30px;
+            flex-direction: column;
+
+            .track-time {
+            }
+        }
+    }
+
+    .tracks {
+        flex-direction: column;
+        background-color: rgba( lightgray, .05 );
+
+        .track {
+            padding: 10px;
+            background-color: rgba( lightgray, .35 );
+            margin: 20px;
+            font-family: $stylefont;
+            width: 250px;
+
+            &:hover {
+                background-color: rgba( lighten(lightgray, 10%), .8 );
+            }
+
+            .track-icon {
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+                width: 100%;
+                height: 100%;
+                aspect-ratio: 1;
+            }
+
+            .track-name {
+                text-align: left;
+                font-size: 24px;
+            }
+
+            .track-artist {
+                font-size: 15px;
+            }
+
+            .track-duration {
+                font-size: 15px;
+            }
+
+            .track-play {
+                &:hover {
+                    color: $blue;
+                }
+            }
+
+            .track-pause {
+                &:hover {
+                    color: $blue;
+                }
+            }
+
+            .track-delete {
+                &:hover {
+                    color: $blue
+                }
+            }
+        }
+
+
+        .green {
+            background-color: rgba( green, .35 );
+        }
+
+        .yellow {
+            background-color: rgba( yellow, .35 );
+        }
+
+        .orange {
+            background-color: rgba( orange, .35 );
+        }
+
+        .red {
+            background-color: rgba( red, .35 );
+        }
+    }
 }
 
 CustomizePage {
 
-	.clothingpage-container {
-		width: 750px;
-		height: 100%;
-		flex-direction: column;
-		padding: 50px;
-	}
+    .right-side {
+        right: 0;
+        bottom:0;
+        .button {
+            width: 100%;
+            height: 100%;
+            padding: 10px;
+            border-radius: 8px;
+            background-color: rgba(lightgray, .44);
+            text-transform: uppercase;
+            font-size: 20px;
+            color: black;
+            cursor: pointer;
 
-	.clothing-container {
-		width: 100%;
-		height: 100%;
-		flex-direction: row;
-	}
+            &:hover {
+                background-color: lighten( rgba(lightgray, .9), 20% );
+            }
+        }
+    }
 
-	.category-tabs {
-		padding: 10px;
-		border-radius: 8px;
-		text-transform: uppercase;
-		font-size: 20px;
-		color: black;
-		cursor: pointer;
-	}
 
-	.tab-button {
-		text-align: center;
-		font-family: $stylefont;
-		color: white;
-		width: 100%;
-		height: 100%;
-		padding: 10px;
-		border-radius: 8px;
-		flex-direction: column;
-		background-color: rgba(lightgray, .44);
-	}
 
-	.clothing-item {
-		width: 250px;
-		height: 250px;
-		background-color: rgba( lightgray, .35 );
-		flex-direction: column;
+    .clothingpage-container {
+        width: 750px;
+        height: 100%;
+        flex-direction: column;
+        padding: 50px;
+    }
 
-		.item-name {
-			font-size: 20px;
-			font-family: $stylefont;
-		}
+    .clothing-container {
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+    }
 
-		.item-image {
-			width: 100%;
-			height: 100%;
-			background-size: cover;
-			background-position: center;
-			background-repeat: no-repeat;
-		}
-	}
+    .tab-button {
+        text-align: center;
+        font-family: $stylefont;
+        color: white;
+        width: 100%;
+        height: 100%;
+        padding: 10px;
+        border-radius: 8px;
+        flex-direction: column;
+        background-color: rgba(lightgray, .44);
+    }
+
+    .clothing-skin {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .item {
+        flex-direction: column;
+        align-content: center;
+        align-items: flex-start;
+        justify-content: center;
+        pointer-events: none;
+        padding: 20px;
+
+        .item-title {
+            font-size: 30px;
+            font-family: $stylefont;
+        }
+
+        .skin-items {
+            width: 350px;
+            padding: 20px;
+
+            .skin-item {
+
+                .item-image {
+                    width: 48px;
+                    height: 48px;
+                    padding: 10px;
+                    margin: 10px;
+                    background-size: cover;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-color: rebeccapurple;
+                    border: 5px solid black;
+                }
+            }
+        }
+    }
+
+    .clothing-item {
+        width: 300px;
+        height: 200px;
+        background-color: rgba( lightgray, .35 );
+        flex-direction: row;
+        align-content: center;
+        align-items: center;
+        justify-content: center;
+        pointer-events: none;
+
+        .item-name {
+            font-size: 20px;
+            font-family: $stylefont;
+            bottom: 0;
+            position: absolute;
+        }
+
+        .item-image {
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        .arrow {
+            width: 100px;
+            height: 100%;
+            background-image: url("tools/images/common/arrow_right.png");
+            background-size: 50px;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-color: rgba( lightgray, .35 );
+            cursor: pointer;
+            z-index: 100;
+            pointer-events: all;
+
+            &:hover {
+                background-color: rgba( lighten(lightgray, 10%), .8 );
+            }
+        }
+
+        .left {
+            background-image: url("tools/images/common/arrow_left.png");
+        }
+    }
 }
