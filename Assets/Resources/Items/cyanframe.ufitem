@@ -1,12 +1,12 @@
 {
   "ItemName": "Default Frame",
   "ItemDescription": null,
-  "ItemImage": "resources/items/defaultframe.png",
-  "ItemModel": "models/unicycles/default/parts/frames/default_frame.vmdl",
+  "ItemImage": "resources/items/cyanframe.png",
+  "ItemModel": "models/unicycles/default/parts/frames/colours/default_frame_cyan.vmdl",
   "ItemCategory": "Frame",
   "ItemRarity": "Common",
   "Icon": {
-    "Path": "resources\\items/defaultframe.png"
+    "Path": "resources\\items/cyanframe.png"
   },
   "ResourceVersion": 0,
   "__version": 0,

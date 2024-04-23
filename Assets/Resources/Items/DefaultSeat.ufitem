@@ -1,10 +1,13 @@
 {
   "ItemName": "Default Seat",
   "ItemDescription": null,
-  "ItemImage": null,
+  "ItemImage": "resources/items/defaultseat.png",
   "ItemModel": "models/unicycles/default/parts/seats/default_seat.vmdl",
   "ItemCategory": "Seat",
   "ItemRarity": "Common",
+  "Icon": {
+    "Path": "resources\\items/defaultseat.png"
+  },
   "ResourceVersion": 0,
   "__version": 0,
   "__references": []

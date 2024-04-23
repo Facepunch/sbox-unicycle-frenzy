@@ -1,0 +1,14 @@
+{
+  "ItemName": "White Wheel",
+  "ItemDescription": null,
+  "ItemImage": "resources/items/whitewheel.png",
+  "ItemModel": "models/unicycles/default/parts/wheels/colours/default_wheel_white.vmdl",
+  "ItemCategory": "Wheel",
+  "ItemRarity": "Common",
+  "Icon": {
+    "Path": "resources\\items/whitewheel.png"
+  },
+  "ResourceVersion": 0,
+  "__version": 0,
+  "__references": []
+}

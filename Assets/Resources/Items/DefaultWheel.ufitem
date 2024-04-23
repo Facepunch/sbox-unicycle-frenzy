@@ -1,10 +1,13 @@
 {
   "ItemName": "Default Wheel",
   "ItemDescription": null,
-  "ItemImage": "textures/achievements/silver_medal.png",
+  "ItemImage": "resources/items/defaultwheel.png",
   "ItemModel": "models/unicycles/default/parts/wheels/default_wheel.vmdl",
   "ItemCategory": "Wheel",
   "ItemRarity": "Common",
+  "Icon": {
+    "Path": "resources\\items/defaultwheel.png"
+  },
   "ResourceVersion": 0,
   "__version": 0,
   "__references": []

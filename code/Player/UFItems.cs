@@ -7,6 +7,17 @@ public class UnicycleFrenzyItems : GameResource
 	public Model ItemModel { get; set; }
 	public ItemCategories ItemCategory { get; set; } = ItemCategories.Frame;
 	public ItemRare ItemRarity { get; set; } = ItemRare.Common;
+
+	/// <summary>
+	/// Icon for this clothing piece.
+	/// </summary>
+	[Hide]
+	public IconSetup Icon { get; set; }
+
+	public struct IconSetup
+	{
+		public string Path { get; set; }
+	}
 }
 
 public class UnicycleDressed
@@ -56,6 +67,12 @@ internal class UnicycleDresser : Component
 
 		Local = FileSystem.Data.ReadJson<UnicycleDressed>( "unicycle.dress.json" );
 
+	}
+
+	protected override void OnStart()
+	{
+		base.OnStart();
+
 		if ( Local != null )
 		{
 			Frame.Model = Local.Frame.ItemModel;
@@ -70,6 +87,17 @@ internal class UnicycleDresser : Component
 	protected override void OnUpdate()
 	{
 		base.OnUpdate();
+
+		if ( Local != null )
+		{
+			Local = FileSystem.Data.ReadJson<UnicycleDressed>( "unicycle.dress.json" );
+			Frame.Model = Local.Frame.ItemModel;
+			Seat.Model = Local.Seat.ItemModel;
+			Wheel.Model = Local.Wheel.ItemModel;
+			//Accessory.Model = Local.Accessory.ItemModel;
+			LeftPedal.Model = Local.Pedal.ItemModel;
+			RightPedal.Model = Local.Pedal.ItemModel;
+		}
 
 	}
 }

@@ -22,7 +22,7 @@
 		{
 			@foreach (var item in FilteredItems)
 			{
-					<div class="clothing-item" onclick="@(() => SetNewItem(item))">
+				<div class="clothing-item" onclick="@(() => SetNewItem(item.ResourcePath))">
 					<div class="item-name">@item.ItemName</div>
 					<div class="item-image" style="background-image: url('@item.ItemImage')"></div>
 				</div>
@@ -60,21 +60,21 @@
 		}
 	}
 
-	void SetNewItem(UnicycleFrenzyItems item)
+	void SetNewItem(string item)
 	{
 		switch (SelectedCategory)
 		{
 			case ItemCategories.Frame:
-				Local.Frame = item;
+				Local.Frame = ResourceLibrary.Get<UnicycleFrenzyItems>(item);
 				break;
 			case ItemCategories.Seat:
-				Local.Seat = item;
+				Local.Seat = ResourceLibrary.Get<UnicycleFrenzyItems>(item);
 				break;
 			case ItemCategories.Wheel:
-				Local.Wheel = item;
+				Local.Wheel = ResourceLibrary.Get<UnicycleFrenzyItems>(item);
 				break;
 			case ItemCategories.Pedal:
-				Local.Pedal = item;
+				Local.Pedal = ResourceLibrary.Get<UnicycleFrenzyItems>(item);
 				break;
 			default:
 				break;
