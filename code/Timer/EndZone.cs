@@ -1,7 +1,6 @@
 ﻿
 internal class EndZone : BaseZone
 {
-
 	protected override Color ZoneColor => Color.Red;
 
 	protected override void OnPlayerEnter( UnicycleController player )

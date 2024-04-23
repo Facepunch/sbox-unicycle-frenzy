@@ -644,6 +644,62 @@
             "Mins": "-3132.669,-2197.159,-322.5071",
             "Maxs": "2656.868,2759.792,-151.845"
           }
+        },
+        {
+          "__type": "Sandbox.BoxCollider",
+          "__guid": "a305f0f8-872c-47b8-9abb-d29daa7ace38",
+          "Center": "0,0,0",
+          "IsTrigger": true,
+          "Scale": "2660.998,3387.533,50",
+          "Static": false
+        }
+      ]
+    },
+    {
+      "__guid": "5f60f26d-a41a-47ac-865f-d8603dee5c2f",
+      "Name": "Object",
+      "Position": "1024,-1152,0",
+      "Rotation": "0,0,1,0.0000001947072",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "Components": [
+        {
+          "__type": "BoostZone",
+          "__guid": "22ccd391-a2e0-4cec-8098-e4040416a025",
+          "BoostAmount": 500,
+          "Bounds": {
+            "Mins": "-75,-75,0",
+            "Maxs": "74,75,75"
+          }
+        }
+      ],
+      "Children": [
+        {
+          "__guid": "4143c1de-8e0e-4ec3-b469-04a5008c0aab",
+          "Name": "Cube",
+          "Position": "0,0,0",
+          "Scale": "3,3,0.2",
+          "Enabled": true,
+          "NetworkMode": 2,
+          "Components": [
+            {
+              "__type": "Sandbox.ModelRenderer",
+              "__guid": "fa55a891-01cf-4f80-9e3c-f4a0896aa8d4",
+              "BodyGroups": 18446744073709551615,
+              "MaterialOverride": "materials/dev/simple/simple_tile.vmat",
+              "Model": "models/dev/box.vmdl",
+              "RenderType": "On",
+              "Tint": "1,0.68333,0,1"
+            },
+            {
+              "__type": "Sandbox.BoxCollider",
+              "__guid": "3035f425-fd3e-40d4-9f27-40ccf6b2d71c",
+              "Center": "0,0,0",
+              "IsTrigger": false,
+              "Scale": "50,50,50",
+              "Static": false
+            }
+          ]
         }
       ]
     }
@@ -671,7 +727,7 @@
   },
   "Title": "g1l1",
   "Description": "",
-  "LastSaved": "2024-04-22T14:58:44.176378\u002B01:00",
+  "LastSaved": "2024-04-23T09:57:12.6419046\u002B01:00",
   "ResourceVersion": 1,
   "__version": 1,
   "__references": []

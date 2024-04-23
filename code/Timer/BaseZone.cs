@@ -11,7 +11,9 @@ internal class BaseZone : Component
 	[Property]
 	public SoundEvent ExitSound { get; set; }
 	[Property]
-	public BBox Bounds { get; set; } = BBox.FromPositionAndSize( 0, 16 );
+	public BBox Bounds { get; set; } = BBox.FromPositionAndSize( 0, 64 );
+
+	public virtual bool IsCheckPoint { get; set; } = true;
 
 	BoxCollider Box;
 	List<UnicycleController> LastTouching = new();
