@@ -1,0 +1,15 @@
+{
+  "ItemName": "Solid Gold",
+  "ItemDescription": null,
+  "ItemImage": "resources/items/solidgoldwheel.png",
+  "ItemModel": "models/unicycles/default/parts/wheels/colours/default_wheel_solid_gold.vmdl",
+  "ItemCategory": "Wheel",
+  "ItemRarity": "Legendary",
+  "Skins": [],
+  "Icon": {
+    "Path": "resources\\items/solidgoldwheel.png"
+  },
+  "ResourceVersion": 0,
+  "__version": 0,
+  "__references": []
+}

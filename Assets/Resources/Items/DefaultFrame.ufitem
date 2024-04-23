@@ -5,6 +5,32 @@
   "ItemModel": "models/unicycles/default/parts/frames/default_frame.vmdl",
   "ItemCategory": "Frame",
   "ItemRarity": "Common",
+  "Skins": [
+    {
+      "Material": "models/unicycles/default/materials/colors/unicycle_orange.vmat",
+      "Color": "1,0.53333,0,1"
+    },
+    {
+      "Material": "models/unicycles/default/materials/colors/unicycle_cyan.vmat",
+      "Color": "0,1,0.85,1"
+    },
+    {
+      "Material": "models/unicycles/default/materials/colors/unicycle_pink.vmat",
+      "Color": "1,0,0.53333,1"
+    },
+    {
+      "Material": "models/unicycles/default/materials/colors/unicycle_yellow.vmat",
+      "Color": "0.95,1,0,1"
+    },
+    {
+      "Material": "models/unicycles/default/materials/colors/unicycle_blue.vmat",
+      "Color": "0.1,0,1,1"
+    },
+    {
+      "Material": "models/unicycles/default/materials/colors/unicycle_red.vmat",
+      "Color": "1,0,0,1"
+    }
+  ],
   "Icon": {
     "Path": "resources\\items/defaultframe.png"
   },

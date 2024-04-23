@@ -224,7 +224,8 @@ CustomizePage {
 
     .right-side {
         right: 0;
-        bottom:0;
+        bottom: 0;
+
         .button {
             width: 100%;
             height: 100%;
@@ -290,6 +291,8 @@ CustomizePage {
         .skin-items {
             width: 350px;
             padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
 
             .skin-item {
 
@@ -303,6 +306,14 @@ CustomizePage {
                     background-repeat: no-repeat;
                     background-color: rebeccapurple;
                     border: 5px solid black;
+                }
+
+                cursor: pointer;
+                z-index: 100;
+                pointer-events: all;
+
+                &:hover {
+                    background-color: rgba( lightgray, .35 );
                 }
             }
         }

@@ -5,6 +5,16 @@
   "ItemModel": "models/unicycles/default/parts/wheels/default_wheel.vmdl",
   "ItemCategory": "Wheel",
   "ItemRarity": "Common",
+  "Skins": [
+    {
+      "Material": "models/unicycles/default/materials/unicycledefault.vmat",
+      "Color": "0,0,0,1"
+    },
+    {
+      "Material": "models/unicycles/default/materials/wheels/unicycledefaultwhitewheel.vmat",
+      "Color": "1,1,1,1"
+    }
+  ],
   "Icon": {
     "Path": "resources\\items/defaultwheel.png"
   },

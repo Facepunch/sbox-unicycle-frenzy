@@ -73,6 +73,8 @@ internal class UnicycleDresser : Component
 
 	public static UnicycleDressed Local;
 
+	[Property] bool IsMenu { get; set; } = false;
+
 	protected override void OnAwake()
 	{
 		base.OnAwake();
@@ -87,12 +89,7 @@ internal class UnicycleDresser : Component
 
 		if ( Local != null )
 		{
-			Frame.Model = Local.Frame.ItemModel;
-			Seat.Model = Local.Seat.ItemModel;
-			Wheel.Model = Local.Wheel.ItemModel;
-			//Accessory.Model = Local.Accessory.ItemModel;
-			LeftPedal.Model = Local.Pedal.ItemModel;
-			RightPedal.Model = Local.Pedal.ItemModel;
+			SetUpUnicycle();
 		}
 	}
 
@@ -100,16 +97,40 @@ internal class UnicycleDresser : Component
 	{
 		base.OnUpdate();
 
+		if(!IsMenu) return;
+
 		if ( Local != null )
 		{
-			Local = FileSystem.Data.ReadJson<UnicycleDressed>( "unicycle.dress.json" );
-			Frame.Model = Local.Frame.ItemModel;
+			SetUpUnicycle();
 			//Seat.Model = Local.Seat.ItemModel;
-			//Wheel.Model = Local.Wheel.ItemModel;
 			//Accessory.Model = Local.Accessory.ItemModel;
 			//LeftPedal.Model = Local.Pedal.ItemModel;
 			//RightPedal.Model = Local.Pedal.ItemModel;
 		}
 
+	}
+
+	void SetUpUnicycle()
+	{
+		Local = FileSystem.Data.ReadJson<UnicycleDressed>( "unicycle.dress.json" );
+		Frame.Model = Local.Frame.ItemModel;
+		if ( Local.FrameSkin != 99 )
+		{
+			Frame.MaterialOverride = Local.Frame.Skins[Local.FrameSkin - 1].Material;
+		}
+		else
+		{
+			Frame.MaterialOverride = null;
+		}
+
+		Wheel.Model = Local.Wheel.ItemModel;
+		if ( Local.WheelSkin != 99 )
+		{
+			Wheel.MaterialOverride = Local.Wheel.Skins[Local.WheelSkin - 1].Material;
+		}
+		else
+		{
+			Wheel.MaterialOverride = null;
+		}
 	}
 }

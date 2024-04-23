@@ -15,31 +15,30 @@
 		<div class="clothing-container">
 			<div class="item">
 				<div class="item-title">Frames</div>
-				<div class="clothing-skin">
-					<div class="clothing-item">
-						<div class="arrow left" onclick="@(() => CycleSelection(Frames, ref CurrentFrame, false))"></div>
-						<div class="item-image" style=" background-image: url('@CurrentFrame.ItemImage')"></div>
-						<div class="item-name">@CurrentFrame.ItemName</div>
-						<div class="arrow" onclick="@(() => CycleSelection(Frames, ref CurrentFrame, true))"></div>
-					</div>
-					<div class="skin-items">
-						@if(CurrentFrame.Skins.Count() == 0)
-						{
-							<div class="skin-item">
-								<div class="item-image"></div>
-							</div>
-						}
-						else
-						{
-							@foreach (var skin in CurrentFrame.Skins)
+					<div class="clothing-skin">
+						<div class="clothing-item">
+							<div class="arrow left" onclick="@(() => CycleSelection(Frames, ref CurrentFrame, false))"></div>
+							<div class="item-image" style=" background-image: url('@CurrentFrame.ItemImage')"></div>
+							<div class="item-name">@CurrentFrame.ItemName</div>
+							<div class="arrow" onclick="@(() => CycleSelection(Frames, ref CurrentFrame, true))"></div>
+						</div>
+						<div class="skin-items">
+							@if(CurrentFrame.Skins.Count() == 0)
 							{
 								<div class="skin-item">
-									<div class="item-image" style="background-color: @(skin.Color.Hex)"></div>
 								</div>
 							}
-						}
+							else
+							{
+								@foreach (var skin in CurrentFrame.Skins)
+								{
+									<div class="skin-item" onclick="@(() => SetSkin(CurrentFrame.Skins.IndexOf(skin) + 1, ItemCategories.Frame))">
+										<div class="item-image" style="background-color: @(skin.Color.Hex)"></div>
+									</div>
+								}
+							}
+						</div>
 					</div>
-				</div>
 			</div>
 			<div class="item">
 				<div class="item-title">Wheels</div>
@@ -54,14 +53,14 @@
 						@if (CurrentWheel.Skins.Count() == 0)
 						{
 							<div class="skin-item">
-								<div class="item-image"></div>
+
 							</div>
 						}
 						else
 						{
 							@foreach (var skin in CurrentWheel.Skins)
 							{
-								<div class="skin-item">
+								<div class="skin-item" onclick="@(() => SetSkin(CurrentWheel.Skins.IndexOf(skin) + 1, ItemCategories.Wheel) )">
 									<div class="item-image" style="background-color: @(skin.Color.Hex)"></div>
 								</div>
 							}
@@ -81,9 +80,11 @@
 	ItemCategories SelectedCategory = ItemCategories.Frame; // Default category
 
 	List<UnicycleFrenzyItems> Frames = new List<UnicycleFrenzyItems>();
+	int CurrentFrameSkinIndex = 0;
 	UnicycleFrenzyItems CurrentFrame;
 
 	List<UnicycleFrenzyItems> Wheels = new List<UnicycleFrenzyItems>();
+	int CurrentWheelSkinIndex = 0;
 	UnicycleFrenzyItems CurrentWheel;
 
 	public CustomizePage()
@@ -94,15 +95,19 @@
 
 		Frames = Items.Where(item => item.ItemCategory == ItemCategories.Frame).ToList();
 		CurrentFrame = Local.Frame;
+		CurrentFrameSkinIndex = Local.FrameSkin;
 
 		Wheels = Items.Where(item => item.ItemCategory == ItemCategories.Wheel).ToList();
+		CurrentWheelSkinIndex = Local.WheelSkin;
 		CurrentWheel = Local.Wheel;
 	}
 
 	void Apply()
 	{
 		SetNewItem(CurrentFrame, ItemCategories.Frame);
+		SetSkin(CurrentFrameSkinIndex, ItemCategories.Frame);
 		SetNewItem(CurrentWheel, ItemCategories.Wheel);
+		SetSkin(CurrentWheelSkinIndex, ItemCategories.Wheel);
 	}
 
 	void Fetch()
@@ -135,6 +140,17 @@
 			}
 		}
 		currentItem = items[currentIndex];
+
+		if(currentItem.Skins.Count() == 0)
+		{
+			SetSkin(99, currentItem.ItemCategory);
+		}
+		else
+		{
+			Log.Info("Setting skin");
+			SetSkin(1, currentItem.ItemCategory);
+		}
+		Apply();
 		Save();
 	}
 
@@ -153,6 +169,31 @@
 				break;
 			case ItemCategories.Pedal:
 				Local.Pedal = item;
+				break;
+			default:
+				break;
+		}
+
+		Save();
+	}
+
+	void SetSkin(int index, ItemCategories cate)
+	{
+		switch (cate)
+		{
+			case ItemCategories.Frame:
+				Local.FrameSkin = index;
+				CurrentFrameSkinIndex = index;
+				break;
+			case ItemCategories.Seat:
+				Local.SeatSkin = index;
+				break;
+			case ItemCategories.Wheel:
+				Local.WheelSkin = index;
+				CurrentWheelSkinIndex = index;
+				break;
+			case ItemCategories.Pedal:
+				Local.PedalSkin = index;
 				break;
 			default:
 				break;

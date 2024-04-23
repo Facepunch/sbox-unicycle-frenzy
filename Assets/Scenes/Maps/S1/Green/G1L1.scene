@@ -242,19 +242,20 @@
                   "__guid": "5fb96cd4-f64e-4457-a2ed-442d1d8916ad",
                   "Frame": {
                     "_type": "component",
-                    "component_id": "60d9895d-d2db-4c1e-a629-722f105496cd",
+                    "component_id": "77d87d7b-c7e6-4b64-8e2d-208a29cd05ea",
                     "go": "014de3ce-546c-4acf-ab6c-dd518dab5562",
                     "component_type": "ModelRenderer"
                   },
+                  "IsMenu": false,
                   "LeftPedal": {
                     "_type": "component",
-                    "component_id": "07d595ca-c890-4432-9881-e21eef677ad7",
+                    "component_id": "fb0df110-72fd-4e39-8593-5f03116900a0",
                     "go": "d81b9f73-1fc4-4210-b21a-b4aeb5c66a2a",
                     "component_type": "SkinnedModelRenderer"
                   },
                   "RightPedal": {
                     "_type": "component",
-                    "component_id": "3df8ffcb-5b52-4999-8c2f-a4627063879d",
+                    "component_id": "1a06eb46-0f78-4c81-8897-3aeb733d0548",
                     "go": "92f604e1-fd92-425d-83e8-3b4a3707d2f6",
                     "component_type": "SkinnedModelRenderer"
                   },
@@ -266,7 +267,7 @@
                   },
                   "Wheel": {
                     "_type": "component",
-                    "component_id": "6986f840-cf9b-43d3-84a8-fc35088e83e6",
+                    "component_id": "2893254b-0a41-4246-8bde-d3ed6e21ca25",
                     "go": "2b91eae5-4b47-43b6-8037-4bd77d10ec1f",
                     "component_type": "ModelRenderer"
                   }
@@ -810,6 +811,33 @@
           "Model": "models/track_tileset_pieces/scaffold/scaffold_mid_cap_32x32.vmdl"
         }
       ]
+    },
+    {
+      "__guid": "d0aadb91-d145-49ef-b129-45d169609a8f",
+      "Name": "Object",
+      "Position": "109.3552,-202.003,320",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "Components": [
+        {
+          "__type": "Sandbox.EnvmapProbe",
+          "__guid": "a5167dc1-a8fa-4de4-bf04-ad367f716521",
+          "Bounds": {
+            "Mins": "-1921.787,-2377.934,-1037.467",
+            "Maxs": "1921.787,2377.934,1024"
+          },
+          "DelayBetweenUpdates": 0.1,
+          "Feathering": 0.02,
+          "FrameInterval": 5,
+          "MaxDistance": 2377.934,
+          "Projection": "Box",
+          "RenderDynamically": true,
+          "TintColor": "1,1,1,1",
+          "UpdateStrategy": "OnEnabled",
+          "ZFar": 4096,
+          "ZNear": 16
+        }
+      ]
     }
   ],
   "SceneProperties": {
@@ -835,7 +863,7 @@
   },
   "Title": "g1l1",
   "Description": "",
-  "LastSaved": "2024-04-23T13:26:49.2572634\u002B01:00",
+  "LastSaved": "2024-04-23T21:55:52.9848645\u002B01:00",
   "ResourceVersion": 1,
   "__version": 1,
   "__references": []

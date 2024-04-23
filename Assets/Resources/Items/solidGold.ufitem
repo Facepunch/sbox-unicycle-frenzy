@@ -1,0 +1,15 @@
+{
+  "ItemName": "Solid Gold",
+  "ItemDescription": null,
+  "ItemImage": "resources/items/solidgold.png",
+  "ItemModel": "models/unicycles/default/parts/frames/colours/default_frame_solid_gold.vmdl",
+  "ItemCategory": "Frame",
+  "ItemRarity": "Legendary",
+  "Skins": [],
+  "Icon": {
+    "Path": "resources\\items/solidgold.png"
+  },
+  "ResourceVersion": 0,
+  "__version": 0,
+  "__references": []
+}
