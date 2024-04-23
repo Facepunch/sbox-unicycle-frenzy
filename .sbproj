@@ -29,27 +29,30 @@
         {
           "Name": "lean_forward",
           "KeyboardCode": "W",
+          "GamepadCode": "None",
           "GroupName": "Movement"
         },
         {
           "Name": "lean_back",
           "KeyboardCode": "S",
+          "GamepadCode": "None",
           "GroupName": "Movement"
         },
         {
           "Name": "lean_left",
           "KeyboardCode": "A",
+          "GamepadCode": "None",
           "GroupName": "Movement"
         },
         {
           "Name": "lean_right",
           "KeyboardCode": "D",
+          "GamepadCode": "None",
           "GroupName": "Movement"
         },
         {
           "Name": "jump",
           "KeyboardCode": "space",
-          "GamepadCode": "A",
           "GroupName": "Movement"
         },
         {
@@ -103,36 +106,43 @@
         {
           "Name": "Slot4",
           "KeyboardCode": "4",
+          "GamepadCode": "None",
           "GroupName": "Inventory"
         },
         {
           "Name": "Slot5",
           "KeyboardCode": "5",
+          "GamepadCode": "None",
           "GroupName": "Inventory"
         },
         {
           "Name": "Slot6",
           "KeyboardCode": "6",
+          "GamepadCode": "None",
           "GroupName": "Inventory"
         },
         {
           "Name": "Slot7",
           "KeyboardCode": "7",
+          "GamepadCode": "None",
           "GroupName": "Inventory"
         },
         {
           "Name": "Slot8",
           "KeyboardCode": "8",
+          "GamepadCode": "None",
           "GroupName": "Inventory"
         },
         {
           "Name": "Slot9",
           "KeyboardCode": "9",
+          "GamepadCode": "None",
           "GroupName": "Inventory"
         },
         {
           "Name": "Slot0",
           "KeyboardCode": "0",
+          "GamepadCode": "None",
           "GroupName": "Inventory"
         },
         {
@@ -156,15 +166,17 @@
         {
           "Name": "Voice",
           "KeyboardCode": "v",
+          "GamepadCode": "None",
           "GroupName": "Other"
         },
         {
-          "Name": "Drop",
+          "Name": "Restart",
           "KeyboardCode": "g",
+          "GamepadCode": "None",
           "GroupName": "Other"
         },
         {
-          "Name": "Flashlight",
+          "Name": "Reset",
           "KeyboardCode": "f",
           "GamepadCode": "DpadNorth",
           "GroupName": "Other"
@@ -184,9 +196,11 @@
         {
           "Name": "Chat",
           "KeyboardCode": "enter",
+          "GamepadCode": "None",
           "GroupName": "Other"
         }
-      ]
+      ],
+      "__guid": "0b1c9bc5-c5b5-453b-8a3e-2c4dec4cf13b"
     },
     "MapStartupScene": null,
     "LaunchMode": "Normal"

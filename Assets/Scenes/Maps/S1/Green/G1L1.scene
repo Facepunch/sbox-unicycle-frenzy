@@ -702,6 +702,62 @@
           ]
         }
       ]
+    },
+    {
+      "__guid": "f03c5bf0-f8d0-43cb-a237-7e21137f2faf",
+      "Name": "scaffold_foot_32x32",
+      "Position": "128,-1152,0",
+      "Tags": "gridtile",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "Components": [
+        {
+          "__type": "Sandbox.Prop",
+          "__guid": "c47c93c5-18c0-4c64-be15-5eb8d63518d2",
+          "BodyGroups": 18446744073709551615,
+          "Health": 0,
+          "IsStatic": true,
+          "Model": "models/track_tileset_pieces/scaffold/scaffold_foot_32x32.vmdl"
+        }
+      ]
+    },
+    {
+      "__guid": "9e1c8a68-e013-42ae-a9b5-29a889775890",
+      "Name": "scaffold_foot_angle_steep_32x32",
+      "Position": "512,-1152,0",
+      "Rotation": "0,0.00000004371139,-0.9999999,0",
+      "Tags": "gridtile",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "Components": [
+        {
+          "__type": "Sandbox.Prop",
+          "__guid": "cffdb616-1f9c-4a28-be44-e6de567fd503",
+          "BodyGroups": 18446744073709551615,
+          "Health": 0,
+          "IsStatic": true,
+          "Model": "models/track_tileset_pieces/scaffold/scaffold_foot_angle_steep_32x32.vmdl"
+        }
+      ]
+    },
+    {
+      "__guid": "83923e76-4f60-4136-9119-3a1b2e33aa54",
+      "Name": "scaffold_mid_cap_32x32",
+      "Position": "512,-1152,0",
+      "Rotation": "0,0.00000004371139,-0.9999999,0",
+      "Tags": "gridtile",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "Components": [
+        {
+          "__type": "Sandbox.Prop",
+          "__guid": "36cb5eb6-59c0-4d21-92fe-8ae51e2fdbb2",
+          "BodyGroups": 18446744073709551615,
+          "Health": 0,
+          "IsStatic": true,
+          "Model": "models/track_tileset_pieces/scaffold/scaffold_mid_cap_32x32.vmdl"
+        }
+      ]
     }
   ],
   "SceneProperties": {
@@ -727,7 +783,7 @@
   },
   "Title": "g1l1",
   "Description": "",
-  "LastSaved": "2024-04-23T09:57:12.6419046\u002B01:00",
+  "LastSaved": "2024-04-23T11:52:21.4544971\u002B01:00",
   "ResourceVersion": 1,
   "__version": 1,
   "__references": []

@@ -11,9 +11,7 @@ internal enum TimerStates
 
 internal class CourseTimer : Component
 {
-
 	public static CourseTimer Local;
-
 	public TimerStates State { get; set; }
 	public RealTimeSince TimeSinceStart { get; set; }
 	public double FinishTime { get; private set; }

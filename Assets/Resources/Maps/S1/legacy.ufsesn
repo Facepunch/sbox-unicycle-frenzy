@@ -1,0 +1,15 @@
+{
+  "SeasonName": "Legacy",
+  "Author": "Facepunch",
+  "Description": "Maps from before",
+  "SeasonIcon": "textures/ui/screenshot-2.jpg",
+  "GreenMaps": [
+    "resources/maps/legacy/quarry.ufmap"
+  ],
+  "YellowMaps": [],
+  "OrangeMaps": [],
+  "RedMaps": [],
+  "ResourceVersion": 0,
+  "__version": 0,
+  "__references": []
+}

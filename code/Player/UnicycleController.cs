@@ -105,6 +105,21 @@ internal class UnicycleController : Component
 		{
 			GameManager.ActiveScene.LoadFromFile( "scenes/menu.scene" );
 		}
+
+		if ( Input.Pressed( "Reset" ) )
+		{
+			Respawn();
+		}
+		if ( Input.Pressed( "Restart" ) )
+		{
+			var courseTimer = CourseTimer.Local;
+			if ( courseTimer != null )
+			{
+				courseTimer.ResetTimer();
+				courseTimer.ResetCheckpoints();
+				Respawn();
+			}
+		}
 	}
 
 	protected override void OnFixedUpdate()
