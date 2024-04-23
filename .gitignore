@@ -24,3 +24,4 @@ Editor/.vscode/*
 *.*_c
 *.los
 *.vpk
+*.sln
