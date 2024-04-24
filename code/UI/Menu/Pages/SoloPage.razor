@@ -14,6 +14,10 @@
 			{
 				<div class="track green" onmouseover="@(() => HoverTrack(map))" onclick="@(() => SelectTrack(map))">
 					@* This is ugly af, ill re do it later *@
+					@if (CollectedFrenzy(map.MapName) == "frenzy")
+					{
+						<div class="medal frenzy"></div>
+					}
 					@if(HasBronze(map.MapName) == "bronze")
 					{
 						<div class="medal bronze"></div>
@@ -38,6 +42,10 @@
 			@foreach (var map in Seasons.FirstOrDefault().YellowMaps)
 			{
 				<div class="track yellow" onmouseover="@(() => HoverTrack(map))" onclick="@(() => SelectTrack(map))">
+					@if (CollectedFrenzy(map.MapName) == "frenzy")
+					{
+						<div class="medal frenzy"></div>
+					}
 					@if (HasBronze(map.MapName) == "bronze")
 					{
 						<div class="medal bronze"></div>
@@ -62,6 +70,10 @@
 			@foreach (var map in Seasons.FirstOrDefault().OrangeMaps)
 			{
 				<div class="track orange" onmouseover="@(() => HoverTrack(map))" onclick="@(() => SelectTrack(map))">
+					@if (CollectedFrenzy(map.MapName) == "frenzy")
+					{
+						<div class="medal frenzy"></div>
+					}
 					@if (HasBronze(map.MapName) == "bronze")
 					{
 						<div class="medal bronze"></div>
@@ -86,6 +98,10 @@
 			@foreach (var map in Seasons.FirstOrDefault().RedMaps)
 			{
 				<div class="track red" onmouseover="@(() => HoverTrack(map))" onclick="@(() => SelectTrack(map))">
+					@if (CollectedFrenzy(map.MapName) == "frenzy")
+					{
+						<div class="medal frenzy"></div>
+					}
 					@if (HasBronze(map.MapName) == "bronze")
 					{
 						<div class="medal bronze"></div>
@@ -150,6 +166,18 @@
 		if (map == null) return "--:--";
 		var time = TimeSpan.FromSeconds(map.TimePlayed);
 		return time.ToString(@"mm\:ss");
+	}
+
+	public string CollectedFrenzy(string mapName)
+	{
+		var map = FileSystem.Data.ReadJson<MapProgress>("unicycle.stats." + mapName + ".json");
+		if (map == null) return "";
+		if (map.CollectedFrenzy)
+		{
+			return "frenzy";
+		}
+
+		return "";
 	}
 
 	public string HasBronze(string mapName)

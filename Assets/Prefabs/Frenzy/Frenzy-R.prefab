@@ -1,0 +1,51 @@
+{
+  "RootObject": {
+    "__guid": "ce431fbf-0d65-4164-a254-3365048a2154",
+    "Name": "Frenzy - R",
+    "Position": "960,0,64",
+    "Enabled": true,
+    "NetworkMode": 2,
+    "Components": [
+      {
+        "__type": "FrenzyPickUp",
+        "__guid": "47d154a0-9b3a-4e41-8d60-5b6e407f77a9",
+        "Letter": "R"
+      },
+      {
+        "__type": "Sandbox.SphereCollider",
+        "__guid": "bc0acc1d-8406-4479-8979-2da285323b1c",
+        "Center": "0,0,0",
+        "IsTrigger": true,
+        "Radius": 64,
+        "Static": false
+      },
+      {
+        "__type": "Sandbox.ModelRenderer",
+        "__guid": "b7fd1582-475c-4fb4-97c7-3a228579acf3",
+        "__enabled": false,
+        "BodyGroups": 18446744073709551615,
+        "RenderType": "On",
+        "Tint": "1,1,1,1"
+      },
+      {
+        "__type": "FrenzyLetterWorldUI",
+        "__guid": "a2a90280-c26e-4d21-8f87-be55db92453d"
+      },
+      {
+        "__type": "Sandbox.WorldPanel",
+        "__guid": "9d6ddd5b-71da-41aa-916e-d728979b4b26",
+        "HorizontalAlign": "Center",
+        "LookAtCamera": true,
+        "PanelSize": "2048,2048",
+        "RenderScale": 5,
+        "VerticalAlign": "Center"
+      }
+    ]
+  },
+  "ShowInMenu": false,
+  "MenuPath": null,
+  "MenuIcon": null,
+  "ResourceVersion": 1,
+  "__version": 1,
+  "__references": []
+}

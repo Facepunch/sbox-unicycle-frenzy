@@ -188,7 +188,7 @@ MapTimes {
 }
 
 Speedo{
-position: absolute;
+    position: absolute;
     bottom: 0;
     left: 0;
     width: 100%;
@@ -208,5 +208,34 @@ position: absolute;
     .speedo-unit {
         font-size: 20px;
         opacity:0.5;
+    }
+}
+FrenzyUI {
+    position: absolute;
+    top: 15%;
+    padding-left: 16px;
+
+    .frenzy-letters {
+        font-size: 25px;
+        font-family: "Luckiest Guy";
+        color: cyan;
+        text-shadow: 0px 0px 50px cyan;
+        text-stroke: 25px purple;
+        padding: 10px;
+
+        .letter {
+            margin: 10px;
+            font-size: 40px;
+            text-stroke: 10px purple;
+        }
+
+
+        > .has-letter {
+            opacity: 1;
+        }
+
+        .no-letter {
+            opacity: 0.1;
+        }
     }
 }

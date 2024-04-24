@@ -14,6 +14,8 @@ internal class MapSettings : Component
 	[Property, Category( "Time" )] public float PlatinumTime { get; set; } = 15f;
 	[Property, Category( "Difficulty" )] public Difficulty Difficulty { get; set; } = Difficulty.Tier1;
 
+	public List<FrenzyPickUp.FrenzyLetter> frenzyLetterList = new List<FrenzyPickUp.FrenzyLetter>();
+
 	protected override void OnStart()
 	{
 		Fetch();
@@ -73,6 +75,7 @@ internal class MapSettings : Component
 		if(Local == null)
 		{
 			Local = new MapProgress();
+			Local.CollectedFrenzy = false;
 		}
 	}
 
@@ -83,6 +86,28 @@ internal class MapSettings : Component
 			Fetch();
 		}
 		FileSystem.Data.WriteJson( "unicycle.stats." + MapName + ".json", Local );
+	}
+
+	public void OnFinish()
+	{
+		Local.Completions++;
+		if ( frenzyLetterList.Count == 6 )
+		{
+			Local.CollectedFrenzy = true;
+		}
+		Save();
+	}
+
+	public void FrenzyPickedUp( FrenzyPickUp.FrenzyLetter letter)
+	{
+		if(Local.CollectedFrenzy) return;
+
+		if(frenzyLetterList.Contains(letter))
+		{
+			return;
+		}
+
+		frenzyLetterList.Add(letter);
 	}
 
 	public static MapProgress Local;
@@ -100,6 +125,7 @@ public class MapProgress
 	public bool HasSilverMedal { get; set; }
 	public bool HasGoldMedal { get; set; }
 	public bool HasPlatinumMedal { get; set; }
+	public bool CollectedFrenzy { get; set; }
 }
 
 public enum Difficulty

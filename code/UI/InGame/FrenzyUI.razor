@@ -1,0 +1,59 @@
+@inherits Panel
+@using Sandbox;
+@using System;
+@using Sandbox.UI;
+
+<root>
+	<div class="frenzy-letters">
+		<div class="letter @HasLetter(HasF)">F</div>
+		<div class="letter @HasLetter(HasR)">R</div>
+		<div class="letter @HasLetter(HasE)">E</div>
+		<div class="letter @HasLetter(HasN)">N</div>
+		<div class="letter @HasLetter(HasZ)">Z</div>
+		<div class="letter @HasLetter(HasY)">Y</div>
+	</div>
+</root>
+
+@code {
+
+	MapSettings settings;
+
+	bool HasF;
+	bool HasR;
+	bool HasE;
+	bool HasN;
+	bool HasZ;
+	bool HasY;
+
+	public override void Tick()
+	{
+		if (settings == null)
+		{
+			settings = Scene.GetAllComponents<MapSettings>().FirstOrDefault();
+		}
+
+		HasF = settings.frenzyLetterList.Contains(FrenzyPickUp.FrenzyLetter.F);
+		HasR = settings.frenzyLetterList.Contains(FrenzyPickUp.FrenzyLetter.R);
+		HasE = settings.frenzyLetterList.Contains(FrenzyPickUp.FrenzyLetter.E);
+		HasN = settings.frenzyLetterList.Contains(FrenzyPickUp.FrenzyLetter.N);
+		HasZ = settings.frenzyLetterList.Contains(FrenzyPickUp.FrenzyLetter.Z);
+		HasY = settings.frenzyLetterList.Contains(FrenzyPickUp.FrenzyLetter.Y);
+
+		Log.Info(HasY);
+	}
+
+	private string HasLetter(bool letter)
+	{
+		if (letter)
+		{
+			return "has-letter";
+		}
+		else
+		{
+			return "no-letter";
+		}
+	}
+
+
+	protected override int BuildHash() => System.HashCode.Combine(HasF, HasR, HasE, HasN, HasZ, HasY);
+}

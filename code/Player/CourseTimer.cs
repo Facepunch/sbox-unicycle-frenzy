@@ -39,6 +39,15 @@ internal class CourseTimer : Component
 
 		foreach ( var checkpoint in Scene.Children )
 		{
+			var mapsetting = Scene.GetAllComponents<MapSettings>().FirstOrDefault();
+			if ( mapsetting == null ) return;
+			mapsetting.frenzyLetterList.Clear();
+
+			var frenzy = checkpoint.Components.Get<FrenzyPickUp>();
+			if ( frenzy == null ) continue;
+
+			frenzy.OnRestart();
+
 			var check = checkpoint.Components.Get<CheckPointZone>();
 			if ( check == null ) continue;
 
@@ -88,6 +97,7 @@ internal class CourseTimer : Component
 		if ( mapsetting == null ) return;
 		mapsetting.SetBestTime( (float)FinishTime );
 		mapsetting.MedalCheck( (float)FinishTime );
+		mapsetting.OnFinish();
 	}
 
 	public bool TryFindCheckpoint( out Vector3 position, out Angles forward )

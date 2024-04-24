@@ -242,20 +242,20 @@
                   "__guid": "5fb96cd4-f64e-4457-a2ed-442d1d8916ad",
                   "Frame": {
                     "_type": "component",
-                    "component_id": "77d87d7b-c7e6-4b64-8e2d-208a29cd05ea",
+                    "component_id": "3a80b35f-ab53-49db-a188-de2f20497b28",
                     "go": "014de3ce-546c-4acf-ab6c-dd518dab5562",
                     "component_type": "ModelRenderer"
                   },
                   "IsMenu": false,
                   "LeftPedal": {
                     "_type": "component",
-                    "component_id": "fb0df110-72fd-4e39-8593-5f03116900a0",
+                    "component_id": "52db96c6-3e04-4b35-8138-6f9d4ebd2816",
                     "go": "d81b9f73-1fc4-4210-b21a-b4aeb5c66a2a",
                     "component_type": "SkinnedModelRenderer"
                   },
                   "RightPedal": {
                     "_type": "component",
-                    "component_id": "1a06eb46-0f78-4c81-8897-3aeb733d0548",
+                    "component_id": "ed7437b6-6a27-495a-9519-dcbfea21f2bb",
                     "go": "92f604e1-fd92-425d-83e8-3b4a3707d2f6",
                     "component_type": "SkinnedModelRenderer"
                   },
@@ -267,7 +267,7 @@
                   },
                   "Wheel": {
                     "_type": "component",
-                    "component_id": "2893254b-0a41-4246-8bde-d3ed6e21ca25",
+                    "component_id": "2a317230-e4e4-4c81-a767-2d22371e1d0c",
                     "go": "2b91eae5-4b47-43b6-8037-4bd77d10ec1f",
                     "component_type": "ModelRenderer"
                   }
@@ -838,6 +838,54 @@
           "ZNear": 16
         }
       ]
+    },
+    {
+      "__guid": "2b272914-2ea4-4725-a0ca-f000adf62f12",
+      "Name": "Frenzy - F",
+      "Position": "1216,-64,64.00002",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "__Prefab": "prefabs/frenzy/frenzy-f.prefab"
+    },
+    {
+      "__guid": "ce431fbf-0d65-4164-a254-3365048a2154",
+      "Name": "Frenzy - R",
+      "Position": "1280,-1024,64",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "__Prefab": "prefabs/frenzy/frenzy-r.prefab"
+    },
+    {
+      "__guid": "6328ad5a-a19f-48fa-a952-04e9cc76020e",
+      "Name": "Frenzy - E",
+      "Position": "128,-1152,320",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "__Prefab": "prefabs/frenzy/frenzy-e.prefab"
+    },
+    {
+      "__guid": "fc0d7386-6187-4d79-b9f2-83a0dd8ab356",
+      "Name": "Frenzy - N",
+      "Position": "-384,-1152,63.99955",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "__Prefab": "prefabs/frenzy/frenzy-n.prefab"
+    },
+    {
+      "__guid": "3713459b-0e62-4004-a6ec-c0de34175d03",
+      "Name": "Frenzy - Z",
+      "Position": "-1152,-576,64.00008",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "__Prefab": "prefabs/frenzy/frenzy-z.prefab"
+    },
+    {
+      "__guid": "728d0839-b79f-4b36-9006-35b9581807fd",
+      "Name": "Frenzy - Y",
+      "Position": "128,64,192",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "__Prefab": "prefabs/frenzy/frenzy-y.prefab"
     }
   ],
   "SceneProperties": {
@@ -863,7 +911,7 @@
   },
   "Title": "g1l1",
   "Description": "",
-  "LastSaved": "2024-04-23T21:55:52.9848645\u002B01:00",
+  "LastSaved": "2024-04-24T12:08:48.4881448\u002B01:00",
   "ResourceVersion": 1,
   "__version": 1,
   "__references": []
