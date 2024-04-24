@@ -1,19 +1,76 @@
 @using Sandbox;
 @using Sandbox.UI;
 @inherits PanelComponent
-
+@implements INavigatorPage
 <root>
 	<MainMenu @ref="MainMenu" />
 </root>
 
 @code {
 	public MainMenu MainMenu { get; protected set; }
+	public static Menu Current { get; set; }
 
-	protected override void OnTreeFirstBuilt()
+	[Property] List<PageCameraSetup> CameraSetup { get; set; } = new();
+	[Property] public GameObject Camera { get; set; }
+
+	Vector3 lerpedPos = Vector3.Zero;
+	Rotation lerpedRot = Rotation.Identity;
+
+	bool firstUpdate = false;
+
+	[Property] public Action<string> OnUrlChangedAction { get; set; }
+
+	string currentUrl = "";
+	public void OnUrlChanged(string url)
 	{
-		base.OnTreeFirstBuilt();
+		OnUrlChangedAction?.Invoke(url);
+	}
 
-		MainMenu.Navigate("/home");
+	protected override void OnUpdate()
+	{
+		if (MainMenu is null) return;
+
+		Current = this;
+
+
+		var url = MainMenu.CurrentUrl;
+		if (url != currentUrl)
+		{
+			currentUrl = url;
+			OnUrlChanged(url);
+		}
+		Log.Info(url);
+		var setup = CameraSetup.FirstOrDefault(x => x.Url == MainMenu.CurrentUrl);
+
+		if (setup.CameraObject is null)
+		{
+			setup = CameraSetup.FirstOrDefault(x => x.Url == "/");
+		}
+
+		if (!firstUpdate)
+		{
+			lerpedPos = Camera.Transform.Position;
+			lerpedRot = Camera.Transform.Rotation;
+			firstUpdate = true;
+		}
+
+		var targetPos = setup.CameraObject.Transform.Position;
+		var targetRot = setup.CameraObject.Transform.Rotation;
+
+		lerpedPos = lerpedPos.LerpTo(targetPos, Time.Delta * setup.PositionLerpSpeed);
+		lerpedRot = Rotation.Lerp(lerpedRot, targetRot, Time.Delta * setup.RotationLerpSpeed);
+
+		Camera.Transform.Position = lerpedPos;
+		Camera.Transform.Rotation = lerpedRot;
+	}
+
+	public struct PageCameraSetup
+	{
+		[KeyProperty] public string Url { get; set; }
+		[KeyProperty] public GameObject CameraObject { get; set; }
+
+		public float PositionLerpSpeed { get; set; }
+		public float RotationLerpSpeed { get; set; }
 	}
 }
 

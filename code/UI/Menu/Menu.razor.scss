@@ -283,11 +283,13 @@ CustomizePage {
         }
 
         .skin-items {
+            width:200px;
             padding: 10px;
             display: flex;
             flex-wrap: wrap;
 
             .skin-item {
+
 
                 .item-image {
                     width: 28px;
