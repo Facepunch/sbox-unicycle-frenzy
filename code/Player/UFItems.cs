@@ -132,5 +132,35 @@ internal class UnicycleDresser : Component
 		{
 			Wheel.MaterialOverride = null;
 		}
+
+		LeftPedal.Model = Local.Pedal.ItemModel;
+		if ( Local.PedalSkin != 99 )
+		{
+			LeftPedal.MaterialOverride = Local.Pedal.Skins[Local.PedalSkin - 1].Material;
+		}
+		else
+		{
+			LeftPedal.MaterialOverride = null;
+		}
+
+		RightPedal.Model = Local.Pedal.ItemModel;
+		if ( Local.PedalSkin != 99 )
+		{
+			RightPedal.MaterialOverride = Local.Pedal.Skins[Local.PedalSkin - 1].Material;
+		}
+		else
+		{
+			RightPedal.MaterialOverride = null;
+		}
+
+		Seat.Model = Local.Seat.ItemModel;
+		if ( Local.SeatSkin != 99 )
+		{
+			Seat.MaterialOverride = Local.Seat.Skins[Local.SeatSkin - 1].Material;
+		}
+		else
+		{
+			Seat.MaterialOverride = null;
+		}
 	}
 }

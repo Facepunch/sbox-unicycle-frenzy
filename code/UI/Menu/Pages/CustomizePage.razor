@@ -4,70 +4,17 @@
 <root>
 	<div class="sidebar">
 		<div class="navbar">
-			<div class="button" onclick="@(() => Apply())">Apply</div>
 			<a class="button" href="/home">Return</a>
 		</div>
 	</div>
 	<div class="right-side">
-
 	</div>
 	<div class="clothingpage-container">
 		<div class="clothing-container">
-			<div class="item">
-				<div class="item-title">Frames</div>
-					<div class="clothing-skin">
-						<div class="clothing-item">
-							<div class="arrow left" onclick="@(() => CycleSelection(Frames, ref CurrentFrame, false))"></div>
-							<div class="item-image" style=" background-image: url('@CurrentFrame.ItemImage')"></div>
-							<div class="item-name">@CurrentFrame.ItemName</div>
-							<div class="arrow" onclick="@(() => CycleSelection(Frames, ref CurrentFrame, true))"></div>
-						</div>
-						<div class="skin-items">
-							@if(CurrentFrame.Skins.Count() == 0)
-							{
-								<div class="skin-item">
-								</div>
-							}
-							else
-							{
-								@foreach (var skin in CurrentFrame.Skins)
-								{
-									<div class="skin-item" onclick="@(() => SetSkin(CurrentFrame.Skins.IndexOf(skin) + 1, ItemCategories.Frame))">
-										<div class="item-image" style="background-color: @(skin.Color.Hex)"></div>
-									</div>
-								}
-							}
-						</div>
-					</div>
-			</div>
-			<div class="item">
-				<div class="item-title">Wheels</div>
-				<div class="clothing-skin">
-					<div class="clothing-item">
-						<div class="arrow left" onclick="@(() => CycleSelection(Wheels, ref CurrentWheel, false))"></div>
-						<div class="item-image" style=" background-image: url('@CurrentWheel.ItemImage')"></div>
-						<div class="item-name">@CurrentWheel.ItemName</div>
-						<div class="arrow" onclick="@(() => CycleSelection(Wheels, ref CurrentWheel, true))"></div>
-					</div>
-					<div class="skin-items">
-						@if (CurrentWheel.Skins.Count() == 0)
-						{
-							<div class="skin-item">
-
-							</div>
-						}
-						else
-						{
-							@foreach (var skin in CurrentWheel.Skins)
-							{
-								<div class="skin-item" onclick="@(() => SetSkin(CurrentWheel.Skins.IndexOf(skin) + 1, ItemCategories.Wheel) )">
-									<div class="item-image" style="background-color: @(skin.Color.Hex)"></div>
-								</div>
-							}
-						}
-					</div>
-				</div>
-			</div>
+			<CustomizePageItem SelectedCategory="@ItemCategories.Frame" Items="@Items" ></CustomizePageItem>
+			<CustomizePageItem SelectedCategory="@ItemCategories.Wheel" Items="@Items" ></CustomizePageItem>
+			<CustomizePageItem SelectedCategory="@ItemCategories.Pedal" Items="@Items" ></CustomizePageItem>
+			<CustomizePageItem SelectedCategory="@ItemCategories.Seat" Items="@Items" ></CustomizePageItem>
 		</div>
 	</div>
 </root>
@@ -77,145 +24,9 @@
 	public static UnicycleDressed Local;
 	List<UnicycleFrenzyItems> Items = new List<UnicycleFrenzyItems>();
 	List<UnicycleFrenzyItems> FilteredItems = new List<UnicycleFrenzyItems>();
-	ItemCategories SelectedCategory = ItemCategories.Frame; // Default category
-
-	List<UnicycleFrenzyItems> Frames = new List<UnicycleFrenzyItems>();
-	int CurrentFrameSkinIndex = 0;
-	UnicycleFrenzyItems CurrentFrame;
-
-	List<UnicycleFrenzyItems> Wheels = new List<UnicycleFrenzyItems>();
-	int CurrentWheelSkinIndex = 0;
-	UnicycleFrenzyItems CurrentWheel;
 
 	public CustomizePage()
 	{
-		Fetch();
 		Items = ResourceLibrary.GetAll<UnicycleFrenzyItems>().ToList();
-		FilterItemsByCategory(SelectedCategory); // Initial filter
-
-		Frames = Items.Where(item => item.ItemCategory == ItemCategories.Frame).ToList();
-		CurrentFrame = Local.Frame;
-		CurrentFrameSkinIndex = Local.FrameSkin;
-
-		Wheels = Items.Where(item => item.ItemCategory == ItemCategories.Wheel).ToList();
-		CurrentWheelSkinIndex = Local.WheelSkin;
-		CurrentWheel = Local.Wheel;
 	}
-
-	void Apply()
-	{
-		SetNewItem(CurrentFrame, ItemCategories.Frame);
-		SetSkin(CurrentFrameSkinIndex, ItemCategories.Frame);
-		SetNewItem(CurrentWheel, ItemCategories.Wheel);
-		SetSkin(CurrentWheelSkinIndex, ItemCategories.Wheel);
-	}
-
-	void Fetch()
-	{
-		Local = FileSystem.Data.ReadJson<UnicycleDressed>("unicycle.dress.json");
-		if (Local == null)
-		{
-			Local = new UnicycleDressed();
-			Save();
-		}
-	}
-
-	void CycleSelection( List<UnicycleFrenzyItems> items, ref UnicycleFrenzyItems currentItem, bool forward)
-	{
-		var currentIndex = items.IndexOf(currentItem);
-		if (forward)
-		{
-			currentIndex++;
-			if (currentIndex >= items.Count)
-			{
-				currentIndex = 0;
-			}
-		}
-		else
-		{
-			currentIndex--;
-			if (currentIndex < 0)
-			{
-				currentIndex = items.Count - 1;
-			}
-		}
-		currentItem = items[currentIndex];
-
-		if(currentItem.Skins.Count() == 0)
-		{
-			Log.Info("Setting skin 0");
-			SetSkin(99, currentItem.ItemCategory);
-		}
-		else
-		{
-			Log.Info("Setting skin");
-			SetSkin(1, currentItem.ItemCategory);
-		}
-		Apply();
-		Save();
-	}
-
-	void SetNewItem(UnicycleFrenzyItems item, ItemCategories cate)
-	{
-		switch (cate)
-		{
-			case ItemCategories.Frame:
-				Local.Frame = item;
-				break;
-			case ItemCategories.Seat:
-				Local.Seat = item;
-				break;
-			case ItemCategories.Wheel:
-				Local.Wheel = item;
-				break;
-			case ItemCategories.Pedal:
-				Local.Pedal = item;
-				break;
-			default:
-				break;
-		}
-
-		Save();
-	}
-
-	void SetSkin(int index, ItemCategories cate)
-	{
-		switch (cate)
-		{
-			case ItemCategories.Frame:
-				Local.FrameSkin = index;
-				CurrentFrameSkinIndex = index;
-				break;
-			case ItemCategories.Seat:
-				Local.SeatSkin = index;
-				break;
-			case ItemCategories.Wheel:
-				Local.WheelSkin = index;
-				CurrentWheelSkinIndex = index;
-				break;
-			case ItemCategories.Pedal:
-				Local.PedalSkin = index;
-				break;
-			default:
-				break;
-		}
-
-		Save();
-	}
-
-	private void Save()
-	{
-		if (Local == null)
-		{
-			Fetch();
-		}
-		FileSystem.Data.WriteJson("unicycle.dress.json", Local);
-	}
-
-	void FilterItemsByCategory(ItemCategories category)
-	{
-		SelectedCategory = category;
-		FilteredItems = Items.Where(item => item.ItemCategory == SelectedCategory).ToList();
-	}
-
 }

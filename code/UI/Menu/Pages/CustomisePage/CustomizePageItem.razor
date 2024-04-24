@@ -1,0 +1,203 @@
+@inherits Panel
+@page "/customize";
+
+<root>
+	<div class="item">
+		<div class="item-title">@SelectedCategory</div>
+		<div class="clothing-skin">
+			<div class="clothing-item">
+				<div class="arrow left" onclick="@(() => CycleSelection(CurrentItems, ref CurrentItem, false))"></div>
+				<div class="item-image" style=" background-image: url('@CurrentItem.ItemImage')"></div>
+				<div class="item-name">@CurrentItem.ItemName</div>
+				<div class="arrow" onclick="@(() => CycleSelection(CurrentItems, ref CurrentItem, true))"></div>
+			</div>
+			<div class="skin-items">
+				@if (CurrentItem.Skins.Count() == 0)
+				{
+					<div class="skin-item">
+					</div>
+				}
+				else
+				{
+					@foreach (var skin in CurrentItem.Skins)
+					{
+						<div class="skin-item" onclick="@(() => SetSkin(CurrentItem.Skins.IndexOf(skin) + 1, SelectedCategory))">
+							<div class="item-image" style="background-color: @(skin.Color.Hex)"></div>
+						</div>
+					}
+				}
+			</div>
+		</div>
+	</div>
+</root>
+
+
+@code {
+	public static UnicycleDressed Local;
+	public List<UnicycleFrenzyItems> Items;
+	public List<UnicycleFrenzyItems> FilteredItems = new List<UnicycleFrenzyItems>();
+	public ItemCategories SelectedCategory { get; set; }
+
+	List<UnicycleFrenzyItems> CurrentItems = new List<UnicycleFrenzyItems>();
+	int CurrentItemSkinIndex = 0;
+	UnicycleFrenzyItems CurrentItem;
+
+	protected override void OnAfterTreeRender(bool firstTime)
+	{
+		base.OnAfterTreeRender(firstTime);
+
+		Fetch();
+		FilterItemsByCategory(SelectedCategory); // Initial filter
+
+		CurrentItems = Items.Where(item => item.ItemCategory == SelectedCategory).ToList();
+
+		if(CurrentItem == null)
+		{
+			GetCurrentItem(SelectedCategory);
+		}
+	}
+
+	void GetCurrentItem(ItemCategories cate)
+	{
+		switch (cate)
+		{
+			case ItemCategories.Frame:
+				CurrentItem = Local.Frame;
+				CurrentItemSkinIndex = Local.FrameSkin;
+				break;
+			case ItemCategories.Seat:
+				CurrentItem = Local.Seat;
+				CurrentItemSkinIndex = Local.SeatSkin;
+				break;
+			case ItemCategories.Wheel:
+				CurrentItem = Local.Wheel;
+				CurrentItemSkinIndex = Local.WheelSkin;
+				break;
+			case ItemCategories.Pedal:
+				CurrentItem = Local.Pedal;
+				CurrentItemSkinIndex = Local.PedalSkin;
+				break;
+			default:
+				break;
+		}
+	}
+
+	void Apply()
+	{
+		SetNewItem(CurrentItem, SelectedCategory);
+		SetSkin(CurrentItemSkinIndex, SelectedCategory);
+	}
+
+	void Fetch()
+	{
+		Local = FileSystem.Data.ReadJson<UnicycleDressed>("unicycle.dress.json");
+		if (Local == null)
+		{
+			Local = new UnicycleDressed();
+			Save();
+		}
+	}
+
+	void CycleSelection( List<UnicycleFrenzyItems> items, ref UnicycleFrenzyItems currentItem, bool forward)
+	{
+		var currentIndex = items.IndexOf(currentItem);
+		if (forward)
+		{
+			currentIndex++;
+			if (currentIndex >= items.Count)
+			{
+				currentIndex = 0;
+			}
+		}
+		else
+		{
+			currentIndex--;
+			if (currentIndex < 0)
+			{
+				currentIndex = items.Count - 1;
+			}
+		}
+		currentItem = items[currentIndex];
+
+		if(currentItem.Skins.Count() == 0)
+		{
+			Log.Info("Setting skin 0");
+			SetSkin(99, currentItem.ItemCategory);
+		}
+		else
+		{
+			Log.Info("Setting skin");
+			SetSkin(1, currentItem.ItemCategory);
+		}
+		Apply();
+		Save();
+	}
+
+	void SetNewItem(UnicycleFrenzyItems item, ItemCategories cate)
+	{
+		switch (cate)
+		{
+			case ItemCategories.Frame:
+				Local.Frame = item;
+				break;
+			case ItemCategories.Seat:
+				Local.Seat = item;
+				break;
+			case ItemCategories.Wheel:
+				Local.Wheel = item;
+				break;
+			case ItemCategories.Pedal:
+				Local.Pedal = item;
+				break;
+			default:
+				break;
+		}
+
+		Save();
+	}
+
+	void SetSkin(int index, ItemCategories cate)
+	{
+		switch (cate)
+		{
+			case ItemCategories.Frame:
+				Local.FrameSkin = index;
+				CurrentItemSkinIndex = index;
+				break;
+			case ItemCategories.Seat:
+				Local.SeatSkin = index;
+				CurrentItemSkinIndex = index;
+				break;
+			case ItemCategories.Wheel:
+				Local.WheelSkin = index;
+				CurrentItemSkinIndex = index;
+				break;
+			case ItemCategories.Pedal:
+				Local.PedalSkin = index;
+				CurrentItemSkinIndex = index;
+				break;
+			default:
+				break;
+		}
+
+		Save();
+	}
+
+	private void Save()
+	{
+		if (Local == null)
+		{
+			Fetch();
+		}
+		FileSystem.Data.WriteJson("unicycle.dress.json", Local);
+	}
+
+	void FilterItemsByCategory(ItemCategories category)
+	{
+		SelectedCategory = category;
+		FilteredItems = Items.Where(item => item.ItemCategory == SelectedCategory).ToList();
+	}
+
+
+	protected override int BuildHash() => System.HashCode.Combine(CurrentItem);
+}

@@ -251,7 +251,7 @@ CustomizePage {
 
 
     .clothingpage-container {
-        width: 750px;
+        width: 100%;
         height: 100%;
         flex-direction: column;
         padding: 50px;
@@ -261,18 +261,8 @@ CustomizePage {
         width: 100%;
         height: 100%;
         flex-direction: column;
-    }
-
-    .tab-button {
-        text-align: center;
-        font-family: $stylefont;
-        color: white;
-        width: 100%;
-        height: 100%;
-        padding: 10px;
-        border-radius: 8px;
-        flex-direction: column;
-        background-color: rgba(lightgray, .44);
+        display: flex;
+        flex-wrap: wrap;
     }
 
     .clothing-skin {
@@ -283,10 +273,9 @@ CustomizePage {
     .item {
         flex-direction: column;
         align-content: center;
-        align-items: flex-start;
         justify-content: center;
         pointer-events: none;
-        padding: 20px;
+        gap:10px;
 
         .item-title {
             font-size: 30px;
@@ -294,23 +283,22 @@ CustomizePage {
         }
 
         .skin-items {
-            width: 350px;
-            padding: 20px;
+            padding: 10px;
             display: flex;
             flex-wrap: wrap;
 
             .skin-item {
 
                 .item-image {
-                    width: 48px;
-                    height: 48px;
+                    width: 28px;
+                    height: 28px;
                     padding: 10px;
                     margin: 10px;
                     background-size: cover;
                     background-position: center;
                     background-repeat: no-repeat;
                     background-color: rebeccapurple;
-                    border: 5px solid black;
+                    border: 3px solid black;
                 }
 
                 cursor: pointer;
@@ -325,8 +313,8 @@ CustomizePage {
     }
 
     .clothing-item {
-        width: 300px;
-        height: 200px;
+        width: 200px;
+        height: 150px;
         background-color: rgba( lightgray, .35 );
         flex-direction: row;
         align-content: center;
@@ -350,10 +338,10 @@ CustomizePage {
         }
 
         .arrow {
-            width: 100px;
+            width: 50px;
             height: 100%;
             background-image: url("tools/images/common/arrow_right.png");
-            background-size: 50px;
+            background-size: 30px;
             background-position: center;
             background-repeat: no-repeat;
             background-color: rgba( lightgray, .35 );

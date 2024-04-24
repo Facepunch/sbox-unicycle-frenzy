@@ -127,6 +127,7 @@
 			<div class="track-name">@HoveredMap?.MapName</div>
 			<div class="track-info">
 			<div class="track-falls">Falls: @Falls(HoveredMap?.MapName)</div>
+			<div class="track-falls">Completions: @Falls(HoveredMap?.MapName)</div>
 			<div class="track-time">Best Time: @BestTime(HoveredMap?.MapName)</div>
 			<div class="track-time">Play Time: @PlayTime(HoveredMap?.MapName)</div>
 			</div>
@@ -150,6 +151,13 @@
 		var map = FileSystem.Data.ReadJson<MapProgress>("unicycle.stats." + mapName + ".json");
 		if (map == null) return "0";
 		return map.Falls.ToString();
+	}
+
+	public string Completions(string mapName)
+	{
+		var map = FileSystem.Data.ReadJson<MapProgress>("unicycle.stats." + mapName + ".json");
+		if (map == null) return "0";
+		return map.Completions.ToString();
 	}
 
 	public string BestTime(string mapName)

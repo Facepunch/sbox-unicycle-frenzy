@@ -1,0 +1,15 @@
+{
+  "ItemName": "Solid Gold",
+  "ItemDescription": null,
+  "ItemImage": "resources/items/solidgoldpedal.png",
+  "ItemModel": "models/unicycles/default/parts/pedals/default_pedal_solid_gold.vmdl",
+  "ItemCategory": "Pedal",
+  "ItemRarity": "Legendary",
+  "Skins": [],
+  "Icon": {
+    "Path": "resources\\items/solidgoldpedal.png"
+  },
+  "ResourceVersion": 0,
+  "__version": 0,
+  "__references": []
+}
