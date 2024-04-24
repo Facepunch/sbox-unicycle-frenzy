@@ -12,8 +12,8 @@
     {
       "__guid": "10cd17af-303c-4cf4-91fb-7a6b5f74ab03",
       "Name": "CustomiseCameraPos",
-      "Position": "-171.2879,25.30042,17.42635",
-      "Rotation": "0,0,-0.7071068,0.7071068",
+      "Position": "-214.791,7.049812,17.70055",
+      "Rotation": "0,0,-0.4843262,0.8748875",
       "Enabled": true,
       "NetworkMode": 2
     },
@@ -58,7 +58,7 @@
           "__guid": "d9c203c8-54b6-48bd-95e2-8e129bbd061b",
           "FogMode": "Enabled",
           "FogStrength": 1,
-          "LightColor": "0.86512,0.76586,0.70416,1",
+          "LightColor": "0.35349,0.30685,0.27786,1",
           "Shadows": true,
           "SkyColor": "0.03368,0.03913,0.04186,1"
         },
@@ -360,13 +360,37 @@
         {
           "__type": "Sandbox.SpotLight",
           "__guid": "d8c17ff8-0b6b-432b-8799-c5eb1599ff31",
-          "Attenuation": 0.61,
+          "Attenuation": 0.24,
           "ConeInner": 15,
           "ConeOuter": 45,
           "Cookie": "materials/effects/lightcookies/dirt2.vtex",
           "FogMode": "Enabled",
           "FogStrength": 1,
           "LightColor": "0.66047,0.49581,0.24883,1",
+          "Radius": 500,
+          "Shadows": true
+        }
+      ]
+    },
+    {
+      "__guid": "fc3a9d75-8121-4d19-8836-66a2a603d585",
+      "Name": "Spot Light (1)",
+      "Position": "-166.691,-0.7173157,97.77127",
+      "Rotation": "-0.4444803,0.7698625,0.2289919,0.3966256",
+      "Tags": "light_spot,light",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "Components": [
+        {
+          "__type": "Sandbox.SpotLight",
+          "__guid": "88511bf6-7315-40f0-9e48-fedcaff29a7f",
+          "Attenuation": 0.17,
+          "ConeInner": 15,
+          "ConeOuter": 45,
+          "Cookie": "materials/effects/lightcookies/dirt2.vtex",
+          "FogMode": "Enabled",
+          "FogStrength": 1,
+          "LightColor": "0.9814,0.90471,0.78968,1",
           "Radius": 500,
           "Shadows": true
         }
@@ -672,7 +696,7 @@
   },
   "Title": "menu",
   "Description": "",
-  "LastSaved": "2024-04-24T14:47:58.4663805\u002B01:00",
+  "LastSaved": "2024-04-24T15:02:38.6879708\u002B01:00",
   "ResourceVersion": 1,
   "__version": 1,
   "__references": []
