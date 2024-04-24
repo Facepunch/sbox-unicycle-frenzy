@@ -298,6 +298,135 @@
             "Model": "models/track_tileset_pieces/wood/wood_cap_32.vmdl"
           }
         ]
+      },
+      {
+        "__guid": "8a82a88b-ea51-48ac-b0cd-4b4228491fe7",
+        "Name": "narrow",
+        "Position": "0,-3200,0",
+        "Tags": "group",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "Children": [
+          {
+            "__guid": "9a0d02f5-35ac-4aaf-9c95-5e4bc04c40dc",
+            "Name": "wood_narrow_16x32",
+            "Position": "0,0,0",
+            "Enabled": true,
+            "NetworkMode": 2,
+            "Components": [
+              {
+                "__type": "Sandbox.Prop",
+                "__guid": "1cedeb83-41e9-49f2-a412-9e7b13fb96dd",
+                "BodyGroups": 18446744073709551615,
+                "Health": 0,
+                "IsStatic": true,
+                "Model": "models/track_tileset_pieces/wood/narrow/wood_narrow_16x32.vmdl"
+              }
+            ]
+          },
+          {
+            "__guid": "b61e97d9-3a4a-42ee-9409-c4740037ea44",
+            "Name": "wood_narrow_turn_right_16x64",
+            "Position": "2560,-256,0",
+            "Enabled": true,
+            "NetworkMode": 2,
+            "Components": [
+              {
+                "__type": "Sandbox.Prop",
+                "__guid": "d604e142-8403-49df-9885-cf7ad2352fa4",
+                "BodyGroups": 18446744073709551615,
+                "Health": 0,
+                "IsStatic": true,
+                "Model": "models/track_tileset_pieces/wood/narrow/wood_narrow_turn_right_16x64.vmdl"
+              }
+            ]
+          },
+          {
+            "__guid": "7c9699fd-966d-4c1a-8417-266dda3b4d32",
+            "Name": "wood_narrow_turn_right_16x32",
+            "Position": "1664,-256,0",
+            "Enabled": true,
+            "NetworkMode": 2,
+            "Components": [
+              {
+                "__type": "Sandbox.Prop",
+                "__guid": "d2564c65-b7f2-4fc2-ad24-6514928f7cfc",
+                "BodyGroups": 18446744073709551615,
+                "Health": 0,
+                "IsStatic": true,
+                "Model": "models/track_tileset_pieces/wood/narrow/wood_narrow_turn_right_16x32.vmdl"
+              }
+            ]
+          },
+          {
+            "__guid": "b33e99d5-8ebe-4fef-9cda-d8e2f14f1d60",
+            "Name": "wood_narrow_turn_left_16x64",
+            "Position": "2560,0,0",
+            "Enabled": true,
+            "NetworkMode": 2,
+            "Components": [
+              {
+                "__type": "Sandbox.Prop",
+                "__guid": "591f4b79-baae-4da8-897b-c80d7b8b5735",
+                "BodyGroups": 18446744073709551615,
+                "Health": 0,
+                "IsStatic": true,
+                "Model": "models/track_tileset_pieces/wood/narrow/wood_narrow_turn_left_16x64.vmdl"
+              }
+            ]
+          },
+          {
+            "__guid": "e1512c00-89dd-43b5-9ece-78dff6f27fb1",
+            "Name": "wood_narrow_turn_left_16x32",
+            "Position": "1664,0,0",
+            "Enabled": true,
+            "NetworkMode": 2,
+            "Components": [
+              {
+                "__type": "Sandbox.Prop",
+                "__guid": "ae61e9c7-3936-4c94-b866-cdfdfa4c6fd2",
+                "BodyGroups": 18446744073709551615,
+                "Health": 0,
+                "IsStatic": true,
+                "Model": "models/track_tileset_pieces/wood/narrow/wood_narrow_turn_left_16x32.vmdl"
+              }
+            ]
+          },
+          {
+            "__guid": "93e8a78f-cadf-4957-958f-e27536b38a52",
+            "Name": "wood_narrow_angle_steep_16x32",
+            "Position": "1024,0,0",
+            "Enabled": true,
+            "NetworkMode": 2,
+            "Components": [
+              {
+                "__type": "Sandbox.Prop",
+                "__guid": "0aa92173-e832-4a0a-8291-5b7381089ae3",
+                "BodyGroups": 18446744073709551615,
+                "Health": 0,
+                "IsStatic": true,
+                "Model": "models/track_tileset_pieces/wood/narrow/wood_narrow_angle_steep_16x32.vmdl"
+              }
+            ]
+          },
+          {
+            "__guid": "d87cb0fd-774d-4100-a142-8c3a13e1f4f2",
+            "Name": "wood_narrow_angle_16x32",
+            "Position": "512,0,0",
+            "Enabled": true,
+            "NetworkMode": 2,
+            "Components": [
+              {
+                "__type": "Sandbox.Prop",
+                "__guid": "c928a615-fb25-4bec-8eaf-2b9c6a8b31c2",
+                "BodyGroups": 18446744073709551615,
+                "Health": 0,
+                "IsStatic": true,
+                "Model": "models/track_tileset_pieces/wood/narrow/wood_narrow_angle_16x32.vmdl"
+              }
+            ]
+          }
+        ]
       }
     ]
   },
