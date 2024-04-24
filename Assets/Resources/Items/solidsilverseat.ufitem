@@ -1,0 +1,15 @@
+{
+  "ItemName": "Solid Silver",
+  "ItemDescription": null,
+  "ItemImage": "resources/items/solidsilverseat.png",
+  "ItemModel": "models/unicycles/default/parts/seats/default_seat_solid_silver.vmdl",
+  "ItemCategory": "Seat",
+  "ItemRarity": "Epic",
+  "Skins": [],
+  "Icon": {
+    "Path": "resources\\items/solidsilverseat.png"
+  },
+  "ResourceVersion": 0,
+  "__version": 0,
+  "__references": []
+}

@@ -238,11 +238,109 @@
         {
           "__type": "Sandbox.SkinnedModelRenderer",
           "__guid": "98b1f2cb-8328-4339-99fc-df192bb4f369",
-          "BodyGroups": 341,
+          "BodyGroups": 21,
           "CreateBoneObjects": false,
           "Model": "models/citizen/citizen.vmdl",
           "RenderType": "On",
           "Tint": "1,1,1,1"
+        }
+      ],
+      "Children": [
+        {
+          "__guid": "79bb7e9e-0210-4de0-a2e4-e7b09aef0f21",
+          "Name": "Object",
+          "Position": "0,0,0",
+          "Enabled": true,
+          "NetworkMode": 2,
+          "Components": [
+            {
+              "__type": "Sandbox.SkinnedModelRenderer",
+              "__guid": "110396bf-e728-48ba-be0d-ec819e01a0c7",
+              "BodyGroups": 18446744073709551615,
+              "BoneMergeTarget": {
+                "_type": "component",
+                "component_id": "98b1f2cb-8328-4339-99fc-df192bb4f369",
+                "go": "a7f43004-73a9-4ed2-bafd-7108b90153ca",
+                "component_type": "SkinnedModelRenderer"
+              },
+              "CreateBoneObjects": false,
+              "Model": "models/citizen_clothes/hat/skater_helmet/models/skater_helmet_white.vmdl",
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            }
+          ]
+        },
+        {
+          "__guid": "c29cc909-11a0-471f-9d1f-91a3c28996aa",
+          "Name": "Object (1)",
+          "Position": "0,0,0",
+          "Enabled": true,
+          "NetworkMode": 2,
+          "Components": [
+            {
+              "__type": "Sandbox.SkinnedModelRenderer",
+              "__guid": "abce8b01-82e0-4b64-90ad-1af1fb014dfc",
+              "BodyGroups": 18446744073709551615,
+              "BoneMergeTarget": {
+                "_type": "component",
+                "component_id": "98b1f2cb-8328-4339-99fc-df192bb4f369",
+                "go": "a7f43004-73a9-4ed2-bafd-7108b90153ca",
+                "component_type": "SkinnedModelRenderer"
+              },
+              "CreateBoneObjects": false,
+              "Model": "models/citizen_clothes/gloves/goalie_gloves/models/goalie_gloves.vmdl",
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            }
+          ]
+        },
+        {
+          "__guid": "635e9578-f83a-4ca8-b4c9-b28e67907e91",
+          "Name": "Object (2)",
+          "Rotation": "0,0,-0.8660253,0.5000001",
+          "Enabled": true,
+          "NetworkMode": 2,
+          "Components": [
+            {
+              "__type": "Sandbox.SkinnedModelRenderer",
+              "__guid": "f50685b9-d0c9-4cc1-86b4-41570c2d50fa",
+              "BodyGroups": 18446744073709551615,
+              "BoneMergeTarget": {
+                "_type": "component",
+                "component_id": "98b1f2cb-8328-4339-99fc-df192bb4f369",
+                "go": "a7f43004-73a9-4ed2-bafd-7108b90153ca",
+                "component_type": "SkinnedModelRenderer"
+              },
+              "CreateBoneObjects": false,
+              "Model": "models/citizen_clothes/shirt/leotard/models/leotard_blue.vmdl",
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            }
+          ]
+        },
+        {
+          "__guid": "db84428c-c50c-4cb2-9ebc-8d6949341876",
+          "Name": "Object (2)",
+          "Rotation": "0,0,-0.8660253,0.5000001",
+          "Enabled": true,
+          "NetworkMode": 2,
+          "Components": [
+            {
+              "__type": "Sandbox.SkinnedModelRenderer",
+              "__guid": "c18b2eae-7971-4bec-a355-ac29888c4ff0",
+              "BodyGroups": 18446744073709551615,
+              "BoneMergeTarget": {
+                "_type": "component",
+                "component_id": "98b1f2cb-8328-4339-99fc-df192bb4f369",
+                "go": "a7f43004-73a9-4ed2-bafd-7108b90153ca",
+                "component_type": "SkinnedModelRenderer"
+              },
+              "CreateBoneObjects": false,
+              "Model": "models/citizen_clothes/shoes/boots/models/black_boots.vmdl",
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            }
+          ]
         }
       ]
     },
@@ -909,7 +1007,7 @@
   },
   "Title": "menu",
   "Description": "",
-  "LastSaved": "2024-04-24T15:24:34.038172\u002B01:00",
+  "LastSaved": "2024-04-24T15:36:49.8655308\u002B01:00",
   "ResourceVersion": 1,
   "__version": 1,
   "__references": []

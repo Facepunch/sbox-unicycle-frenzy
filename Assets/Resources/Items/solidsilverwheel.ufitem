@@ -1,0 +1,15 @@
+{
+  "ItemName": "Solid Silver",
+  "ItemDescription": null,
+  "ItemImage": "resources/items/solidsilverwheel.png",
+  "ItemModel": "models/unicycles/default/parts/wheels/colours/default_wheel_solid_silver.vmdl",
+  "ItemCategory": "Wheel",
+  "ItemRarity": "Epic",
+  "Skins": [],
+  "Icon": {
+    "Path": "resources\\items/solidsilverwheel.png"
+  },
+  "ResourceVersion": 0,
+  "__version": 0,
+  "__references": []
+}
