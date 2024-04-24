@@ -48,7 +48,6 @@ HomePage {
         padding: 15px;
         background-color: rgba( lightgray, .35 );
         cursor: pointer;
-        border-radius: 0 10px 10px 0;
         margin-bottom: 8px;
         justify-content: flex-end;
         padding-right: 30px;
@@ -235,7 +234,6 @@ CustomizePage {
             width: 100%;
             height: 100%;
             padding: 10px;
-            border-radius: 8px;
             background-color: rgba(lightgray, .44);
             text-transform: uppercase;
             font-size: 20px;
@@ -247,8 +245,6 @@ CustomizePage {
             }
         }
     }
-
-
 
     .clothingpage-container {
         width: 100%;
@@ -275,7 +271,7 @@ CustomizePage {
         align-content: center;
         justify-content: center;
         pointer-events: none;
-        gap:10px;
+        gap: 10px;
 
         .item-title {
             font-size: 30px;
@@ -283,7 +279,7 @@ CustomizePage {
         }
 
         .skin-items {
-            width:200px;
+            width: 200px;
             padding: 10px;
             display: flex;
             flex-wrap: wrap;

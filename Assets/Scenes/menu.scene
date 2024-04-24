@@ -57,6 +57,74 @@
           "Viewport": "0,0,1,1",
           "ZFar": 10000,
           "ZNear": 10
+        },
+        {
+          "__type": "Sandbox.Bloom",
+          "__guid": "531d934e-e19d-4b0e-9628-87ba447fa383",
+          "BloomColor": {
+            "color": [
+              {
+                "c": "1,1,1,1"
+              },
+              {
+                "t": 1,
+                "c": "1,1,1,1"
+              }
+            ],
+            "alpha": []
+          },
+          "BloomCurve": [
+            {
+              "y": 0.5
+            },
+            {
+              "x": 1,
+              "y": 1
+            }
+          ],
+          "Mode": "Screen",
+          "Strength": 0.69,
+          "Threshold": 1.56,
+          "ThresholdWidth": 0
+        },
+        {
+          "__type": "Sandbox.Tonemapping",
+          "__guid": "bb62449f-d697-4b1b-a47f-4e225957a5cb",
+          "ExposureCompensation": 0,
+          "MaximumExposure": 1.86,
+          "MinimumExposure": 1.29,
+          "Rate": 1
+        },
+        {
+          "__type": "Sandbox.MotionBlur",
+          "__guid": "3dad0c90-9bf7-4210-acd4-6e4da094f86d",
+          "Samples": 32,
+          "Scale": 0.68
+        }
+      ],
+      "Children": [
+        {
+          "__guid": "6f5c4108-1494-4ad3-8689-7a880f41bbc3",
+          "Name": "Spot Light",
+          "Position": "51.43153,-0.00006734808,38.70238",
+          "Rotation": "-0.0000001192093,0.7071066,0.0000002216548,0.7071068",
+          "Tags": "light_spot,light",
+          "Enabled": true,
+          "NetworkMode": 2,
+          "Components": [
+            {
+              "__type": "Sandbox.SpotLight",
+              "__guid": "6a5e3b69-0a88-4d09-b529-3d32bea6a0d5",
+              "Attenuation": 0.5,
+              "ConeInner": 39.65,
+              "ConeOuter": 45.67,
+              "FogMode": "Enabled",
+              "FogStrength": 1,
+              "LightColor": "0.75461,0.99535,0.98732,1",
+              "Radius": 500,
+              "Shadows": true
+            }
+          ]
         }
       ]
     },
@@ -77,12 +145,6 @@
           "LightColor": "0.35349,0.30685,0.27786,1",
           "Shadows": true,
           "SkyColor": "0.03368,0.03913,0.04186,1"
-        },
-        {
-          "__type": "Sandbox.SkyBox2D",
-          "__guid": "283f01fa-565e-4c1b-828e-dc4a5bc81ac1",
-          "SkyMaterial": "materials/skybox/skybox_day_01.vmat",
-          "Tint": "1,1,1,1"
         }
       ]
     },
@@ -847,7 +909,7 @@
   },
   "Title": "menu",
   "Description": "",
-  "LastSaved": "2024-04-24T15:11:31.5436119\u002B01:00",
+  "LastSaved": "2024-04-24T15:24:34.038172\u002B01:00",
   "ResourceVersion": 1,
   "__version": 1,
   "__references": []
