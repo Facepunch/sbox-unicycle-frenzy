@@ -1545,6 +1545,24 @@
           "Model": "models/track_tileset_pieces/scaffold/scaffold_96/foot/scaffold_foot_turnl_96x192.vmdl"
         }
       ]
+    },
+    {
+      "__guid": "7a988dcb-7005-4681-b704-295a0272d5fe",
+      "Name": "scaffold_foot_cap_96",
+      "Position": "4736,-2560,0",
+      "Tags": "gridtile",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "Components": [
+        {
+          "__type": "Sandbox.Prop",
+          "__guid": "1f1c2423-603c-4084-b27e-b863737bafcb",
+          "BodyGroups": 18446744073709551615,
+          "Health": 0,
+          "IsStatic": true,
+          "Model": "models/track_tileset_pieces/scaffold/scaffold_96/foot/scaffold_foot_cap_96.vmdl"
+        }
+      ]
     }
   ],
   "SceneProperties": {
@@ -1570,7 +1588,7 @@
   },
   "Title": "test",
   "Description": "",
-  "LastSaved": "2024-04-25T16:36:47.7653397-04:00",
+  "LastSaved": "2024-04-25T17:08:27.4062746-04:00",
   "ResourceVersion": 1,
   "__version": 1,
   "__references": [
