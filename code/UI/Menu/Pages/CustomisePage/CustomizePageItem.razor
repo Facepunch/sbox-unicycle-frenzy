@@ -62,20 +62,52 @@
 		switch (cate)
 		{
 			case ItemCategories.Frame:
-				CurrentItem = Local.Frame;
-				CurrentItemSkinIndex = Local.FrameSkin;
+				if(Local.Frame != null)
+				{
+					CurrentItem = Local.Frame;
+					CurrentItemSkinIndex = Local.FrameSkin;
+				}
+				else
+				{
+					CurrentItem = FilteredItems.FirstOrDefault();
+					CurrentItemSkinIndex = 0;
+				}
 				break;
 			case ItemCategories.Seat:
-				CurrentItem = Local.Seat;
-				CurrentItemSkinIndex = Local.SeatSkin;
+				if(Local.Seat != null)
+				{
+					CurrentItem = Local.Seat;
+					CurrentItemSkinIndex = Local.SeatSkin;
+				}
+				else
+				{
+					CurrentItem = FilteredItems.FirstOrDefault();
+					CurrentItemSkinIndex = 0;
+				}
 				break;
 			case ItemCategories.Wheel:
-				CurrentItem = Local.Wheel;
-				CurrentItemSkinIndex = Local.WheelSkin;
+				if(Local.Wheel != null)
+				{
+					CurrentItem = Local.Wheel;
+					CurrentItemSkinIndex = Local.WheelSkin;
+				}
+				else
+				{
+					CurrentItem = FilteredItems.FirstOrDefault();
+					CurrentItemSkinIndex = 0;
+				}
 				break;
 			case ItemCategories.Pedal:
-				CurrentItem = Local.Pedal;
-				CurrentItemSkinIndex = Local.PedalSkin;
+				if(Local.Pedal != null)
+				{
+					CurrentItem = Local.Pedal;
+					CurrentItemSkinIndex = Local.PedalSkin;
+				}
+				else
+				{
+					CurrentItem = FilteredItems.FirstOrDefault();
+					CurrentItemSkinIndex = 0;
+				}
 				break;
 			default:
 				break;
@@ -93,7 +125,6 @@
 		Local = FileSystem.Data.ReadJson<UnicycleDressed>("unicycle.dress.json");
 		if (Local == null)
 		{
-			Local = new UnicycleDressed();
 			Save();
 		}
 	}

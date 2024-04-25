@@ -297,6 +297,7 @@
         {
           "__guid": "635e9578-f83a-4ca8-b4c9-b28e67907e91",
           "Name": "Object (2)",
+          "Position": "0,0,0",
           "Rotation": "0,0,-0.8660253,0.5000001",
           "Enabled": true,
           "NetworkMode": 2,
@@ -321,6 +322,7 @@
         {
           "__guid": "db84428c-c50c-4cb2-9ebc-8d6949341876",
           "Name": "Object (2)",
+          "Position": "0,0,0",
           "Rotation": "0,0,-0.8660253,0.5000001",
           "Enabled": true,
           "NetworkMode": 2,
@@ -373,20 +375,20 @@
                   "__guid": "8264d516-b6a0-4302-89a1-aae6cd09d376",
                   "Frame": {
                     "_type": "component",
-                    "component_id": "03bffb83-eb50-492b-900e-66da89b2039c",
+                    "component_id": "487c3b31-23f0-48d4-a943-ffc409c2a867",
                     "go": "788781c8-0927-4dac-938d-6f3e904e4131",
                     "component_type": "ModelRenderer"
                   },
                   "IsMenu": true,
                   "LeftPedal": {
                     "_type": "component",
-                    "component_id": "b28ab5e0-e0f8-4dac-835f-e6b0ca1a08c7",
+                    "component_id": "e13b8443-2a89-4e58-87b0-b00196897457",
                     "go": "62318272-9110-4cd5-baad-12a540190a43",
                     "component_type": "SkinnedModelRenderer"
                   },
                   "RightPedal": {
                     "_type": "component",
-                    "component_id": "dbdd2cdd-d88c-454b-8484-d883e5f3b2f8",
+                    "component_id": "0dcb6519-ee69-414a-b9b8-fdc6822f1d8d",
                     "go": "f9ccdbac-ff8c-487b-8d5d-b0670392d01a",
                     "component_type": "SkinnedModelRenderer"
                   },
@@ -398,7 +400,7 @@
                   },
                   "Wheel": {
                     "_type": "component",
-                    "component_id": "e5c67b93-2534-439e-ab9b-f46923616512",
+                    "component_id": "385007e4-f55a-425d-a963-3d4d649d5de0",
                     "go": "7e4c8815-ca00-44ec-ab86-5d7bba132acd",
                     "component_type": "ModelRenderer"
                   }
@@ -1007,7 +1009,7 @@
   },
   "Title": "menu",
   "Description": "",
-  "LastSaved": "2024-04-24T15:36:49.8655308\u002B01:00",
+  "LastSaved": "2024-04-25T09:53:19.169133\u002B01:00",
   "ResourceVersion": 1,
   "__version": 1,
   "__references": []
