@@ -133,17 +133,76 @@
 			</div>
 		</div>
 	</div>
+	<div class="xp-bar-container">
+		<div class="xp-bar">
+			<div class="xp-bar-fill" style="width: @XPBar()%"></div>
+			<div class="xp-bar-text">@Progression.CurrentXP XP</div>
+			@foreach (var item in ItemPass.ItemsInPass)
+			{
+				@if (!item.ShowInPass) continue;
+				<div class="xp-bar-item" style="background-image: url('@item.Item.ItemImage'); left:@IconToBar(item.XPNeeded)">
+					<div class="xp-bar-arrow"></div>
+					<div class="xp-bar-amount">@item.XPNeeded XP</div>
+				</div>
+			}
+		</div>
+
+	</div>
 </root>
 @code {
 	List<UnicycleFrenzySeason> Seasons = new List<UnicycleFrenzySeason>();
 
 	UnicycleFrenzyMap HoveredMap;
 
+	UnicycleProgression Progression { get; set; }
+	UFItemProgression ItemPass { get; set; }
+
 	public SoloPage()
 	{
 		Seasons = ResourceLibrary.GetAll<UnicycleFrenzySeason>().ToList();
 
 		HoveredMap = Seasons.FirstOrDefault().GreenMaps.FirstOrDefault();
+
+
+		//If it has the bool IsCurrentPass then get that one.
+		ItemPass = ResourceLibrary.GetAll<UFItemProgression>().Where(x => x.IsCurrentPass).FirstOrDefault();
+		Save();
+	}
+
+
+	public void GetProgress()
+	{
+		Progression = FileSystem.Data.ReadJson<UnicycleProgression>("unicycle.progression.json");
+		if (Progression == null)
+		{
+			Progression = new UnicycleProgression
+				{
+					CurrentXP = 100,
+				};
+		}
+	}
+
+	private void Save()
+	{
+		if (Progression == null)
+		{
+			GetProgress();
+		}
+		FileSystem.Data.WriteJson("unicycle.progression.json", Progression);
+	}
+
+	public string IconToBar(float value)
+	{
+		return (value / ItemPass.MaxSeasonXP * 100).ToString() + "%";	
+	}
+
+	public string XPBar()
+	{
+		var MaxXP = ItemPass.MaxSeasonXP;
+		var CurrentXP = Progression.CurrentXP;
+
+		return (CurrentXP / MaxXP * 100).ToString() + "%";
+
 	}
 
 	public string Falls(string mapName)

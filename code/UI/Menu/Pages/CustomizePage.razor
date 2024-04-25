@@ -23,10 +23,42 @@
 @code {
 	public static UnicycleDressed Local;
 	List<UnicycleFrenzyItems> Items = new List<UnicycleFrenzyItems>();
-	List<UnicycleFrenzyItems> FilteredItems = new List<UnicycleFrenzyItems>();
+	UnicycleProgression Progression { get; set; }
+	UFItemProgression ProgressionResource { get; set; }
 
 	public CustomizePage()
 	{
-		Items = ResourceLibrary.GetAll<UnicycleFrenzyItems>().ToList();
+
+	}
+
+	protected override void OnAfterTreeRender(bool firstTime)
+	{
+		base.OnAfterTreeRender(firstTime);
+
+		if (!firstTime) return;
+
+		Fetch();
+
+		ProgressionResource = ResourceLibrary.GetAll<UFItemProgression>().Where(x => x.IsCurrentPass).FirstOrDefault();
+		Items = Progression.UnlockedItems;
+
+	}
+
+	void Fetch()
+	{
+		Progression = FileSystem.Data.ReadJson<UnicycleProgression>("unicycle.progression.json");
+		if (Progression == null)
+		{
+			Progression = new UnicycleProgression();
+		}
+	}
+
+	void Save()
+	{
+		if (Progression == null)
+		{
+			Fetch();
+		}
+		FileSystem.Data.WriteJson("unicycle.progression.json", Progression);
 	}
 }

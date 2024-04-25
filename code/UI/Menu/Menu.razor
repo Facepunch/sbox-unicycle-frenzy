@@ -39,7 +39,7 @@
 			currentUrl = url;
 			OnUrlChanged(url);
 		}
-		Log.Info(url);
+
 		var setup = CameraSetup.FirstOrDefault(x => x.Url == MainMenu.CurrentUrl);
 
 		if (setup.CameraObject is null)

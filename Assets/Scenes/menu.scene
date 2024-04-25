@@ -224,6 +224,10 @@
               "RotationLerpSpeed": 10
             }
           ]
+        },
+        {
+          "__type": "ItemManager",
+          "__guid": "1585dae5-28f3-4583-826a-7a8ac40ab5eb"
         }
       ]
     },
@@ -375,20 +379,20 @@
                   "__guid": "8264d516-b6a0-4302-89a1-aae6cd09d376",
                   "Frame": {
                     "_type": "component",
-                    "component_id": "487c3b31-23f0-48d4-a943-ffc409c2a867",
+                    "component_id": "881961e0-dea8-4a02-a1ff-3bd273837031",
                     "go": "788781c8-0927-4dac-938d-6f3e904e4131",
                     "component_type": "ModelRenderer"
                   },
                   "IsMenu": true,
                   "LeftPedal": {
                     "_type": "component",
-                    "component_id": "e13b8443-2a89-4e58-87b0-b00196897457",
+                    "component_id": "c619d697-fec1-40aa-b5de-94b291479db7",
                     "go": "62318272-9110-4cd5-baad-12a540190a43",
                     "component_type": "SkinnedModelRenderer"
                   },
                   "RightPedal": {
                     "_type": "component",
-                    "component_id": "0dcb6519-ee69-414a-b9b8-fdc6822f1d8d",
+                    "component_id": "eb813601-8f49-4b8a-bfa9-0306e7d59dd2",
                     "go": "f9ccdbac-ff8c-487b-8d5d-b0670392d01a",
                     "component_type": "SkinnedModelRenderer"
                   },
@@ -400,7 +404,7 @@
                   },
                   "Wheel": {
                     "_type": "component",
-                    "component_id": "385007e4-f55a-425d-a963-3d4d649d5de0",
+                    "component_id": "b069d8c4-1fe9-4cf7-b4df-a9fea596f2c4",
                     "go": "7e4c8815-ca00-44ec-ab86-5d7bba132acd",
                     "component_type": "ModelRenderer"
                   }
@@ -1009,7 +1013,7 @@
   },
   "Title": "menu",
   "Description": "",
-  "LastSaved": "2024-04-25T09:53:19.169133\u002B01:00",
+  "LastSaved": "2024-04-25T15:45:06.546081\u002B01:00",
   "ResourceVersion": 1,
   "__version": 1,
   "__references": []

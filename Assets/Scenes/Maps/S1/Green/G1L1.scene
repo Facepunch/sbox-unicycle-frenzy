@@ -242,20 +242,20 @@
                   "__guid": "5fb96cd4-f64e-4457-a2ed-442d1d8916ad",
                   "Frame": {
                     "_type": "component",
-                    "component_id": "3a80b35f-ab53-49db-a188-de2f20497b28",
+                    "component_id": "04c00fdc-4813-42ba-bcde-d4529b717084",
                     "go": "014de3ce-546c-4acf-ab6c-dd518dab5562",
                     "component_type": "ModelRenderer"
                   },
                   "IsMenu": false,
                   "LeftPedal": {
                     "_type": "component",
-                    "component_id": "52db96c6-3e04-4b35-8138-6f9d4ebd2816",
+                    "component_id": "82cdd8e5-6ad9-4014-ac9a-bdbcaec9b425",
                     "go": "d81b9f73-1fc4-4210-b21a-b4aeb5c66a2a",
                     "component_type": "SkinnedModelRenderer"
                   },
                   "RightPedal": {
                     "_type": "component",
-                    "component_id": "ed7437b6-6a27-495a-9519-dcbfea21f2bb",
+                    "component_id": "fdc2272e-8c15-476f-9ce2-96b132826f44",
                     "go": "92f604e1-fd92-425d-83e8-3b4a3707d2f6",
                     "component_type": "SkinnedModelRenderer"
                   },
@@ -267,7 +267,7 @@
                   },
                   "Wheel": {
                     "_type": "component",
-                    "component_id": "2a317230-e4e4-4c81-a767-2d22371e1d0c",
+                    "component_id": "1c6e9393-325a-41c1-bc66-c1de01309bf7",
                     "go": "2b91eae5-4b47-43b6-8037-4bd77d10ec1f",
                     "component_type": "ModelRenderer"
                   }
@@ -586,7 +586,7 @@
           "BodyGroups": 18446744073709551615,
           "Health": 0,
           "IsStatic": true,
-          "Model": "models/track_tileset_pieces/wood/wood_angle_up_steep_32x32.vmdl"
+          "Model": "models/track_tileset_pieces/wood/wood_angle_steep_32x32.vmdl"
         }
       ]
     },
@@ -604,7 +604,7 @@
           "BodyGroups": 18446744073709551615,
           "Health": 0,
           "IsStatic": true,
-          "Model": "models/track_tileset_pieces/wood/wood_angle_up_steep_32x32.vmdl"
+          "Model": "models/track_tileset_pieces/wood/wood_angle_steep_32x32.vmdl"
         }
       ]
     },
@@ -679,7 +679,7 @@
           "BodyGroups": 18446744073709551615,
           "Health": 0,
           "IsStatic": true,
-          "Model": "models/track_tileset_pieces/blockin/blockin_straight32x32_wall_sides.vmdl"
+          "Model": "models/track_tileset_pieces/blockin/blockin_angle_right_32x32_walls_both.vmdl"
         }
       ]
     },
@@ -911,7 +911,7 @@
   },
   "Title": "g1l1",
   "Description": "",
-  "LastSaved": "2024-04-24T12:08:48.4881448\u002B01:00",
+  "LastSaved": "2024-04-25T11:34:25.9390543\u002B01:00",
   "ResourceVersion": 1,
   "__version": 1,
   "__references": []
