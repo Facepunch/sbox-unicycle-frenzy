@@ -560,42 +560,178 @@
       {
         "__guid": "64cabb04-cbcf-425c-8467-ef2fb4387b54",
         "Name": "angle no walls",
-        "Position": "0,-3968,0",
+        "Position": "0,-4096,0",
         "Tags": "group",
         "Enabled": true,
         "NetworkMode": 2,
         "Children": [
           {
-            "__guid": "53b888e6-1894-448b-a299-05bcbc468f5d",
-            "Name": "wood_nowalls_tran_angle15r_384",
+            "__guid": "a45c2dc0-b07b-4227-9903-d98f1daae087",
+            "Name": "wood_nowalls_angle15l_straight_384",
             "Position": "0,0,0",
             "Enabled": true,
             "NetworkMode": 2,
             "Components": [
               {
                 "__type": "Sandbox.Prop",
-                "__guid": "8b5afff9-c5d7-4c52-ad70-0c7f92943ea1",
+                "__guid": "06463ff1-aaf7-4d51-8f6f-b0601077f733",
                 "BodyGroups": 18446744073709551615,
                 "Health": 0,
                 "IsStatic": true,
-                "Model": "models/track_tileset_pieces/wood/angle/nowalls/wood_nowalls_tran_angle15r_384.vmdl"
+                "Model": "models/track_tileset_pieces/wood/angle/nowalls/wood_nowalls_angle15l_straight_384.vmdl"
               }
             ]
           },
           {
-            "__guid": "9781bd3d-1e96-496d-aabe-6f98f5bbea59",
-            "Name": "wood_nowalls_straight_angle15r_384",
+            "__guid": "0f5e8867-bfc3-4756-833b-e3e29952a3e9",
+            "Name": "wood_nowalls_angle15l_tranin_384",
             "Position": "512,0,0",
             "Enabled": true,
             "NetworkMode": 2,
             "Components": [
               {
                 "__type": "Sandbox.Prop",
-                "__guid": "cf6b8cad-7ada-4dd1-a579-97c3c2348172",
+                "__guid": "779652b1-b521-4cda-b335-92f59e198809",
                 "BodyGroups": 18446744073709551615,
                 "Health": 0,
                 "IsStatic": true,
-                "Model": "models/track_tileset_pieces/wood/angle/nowalls/wood_nowalls_straight_angle15r_384.vmdl"
+                "Model": "models/track_tileset_pieces/wood/angle/nowalls/wood_nowalls_angle15l_tranin_384.vmdl"
+              }
+            ]
+          },
+          {
+            "__guid": "182beb26-5ede-45de-81f3-5f48a207c226",
+            "Name": "wood_nowalls_angle15l_tranout_384",
+            "Position": "1024,0,0",
+            "Enabled": true,
+            "NetworkMode": 2,
+            "Components": [
+              {
+                "__type": "Sandbox.Prop",
+                "__guid": "33adc358-fbd4-4765-8d64-68b4263e6368",
+                "BodyGroups": 18446744073709551615,
+                "Health": 0,
+                "IsStatic": true,
+                "Model": "models/track_tileset_pieces/wood/angle/nowalls/wood_nowalls_angle15l_tranout_384.vmdl"
+              }
+            ]
+          },
+          {
+            "__guid": "0b095ecd-2400-49e6-bd5d-49ed91786c95",
+            "Name": "wood_nowalls_angle15l_turnl_192",
+            "Position": "1536,0,0",
+            "Enabled": true,
+            "NetworkMode": 2,
+            "Components": [
+              {
+                "__type": "Sandbox.Prop",
+                "__guid": "992147d3-bbde-4f3b-9c64-7d493f31811f",
+                "BodyGroups": 18446744073709551615,
+                "Health": 0,
+                "IsStatic": true,
+                "Model": "models/track_tileset_pieces/wood/angle/nowalls/wood_nowalls_angle15l_turnl_192.vmdl"
+              }
+            ]
+          },
+          {
+            "__guid": "10cdf738-23d0-475a-9e50-30eb0dcd6a0b",
+            "Name": "wood_nowalls_angle15l_turnl_576",
+            "Position": "2432,0,0",
+            "Enabled": true,
+            "NetworkMode": 2,
+            "Components": [
+              {
+                "__type": "Sandbox.Prop",
+                "__guid": "c3131020-8571-4dd3-919f-96eaee599f3a",
+                "BodyGroups": 18446744073709551615,
+                "Health": 0,
+                "IsStatic": true,
+                "Model": "models/track_tileset_pieces/wood/angle/nowalls/wood_nowalls_angle15l_turnl_576.vmdl"
+              }
+            ]
+          },
+          {
+            "__guid": "9d9310cc-5861-4b16-9f27-4126fd2a6f2a",
+            "Name": "wood_nowalls_angle15r_straight_384",
+            "Position": "0,-512,0",
+            "Enabled": true,
+            "NetworkMode": 2,
+            "Components": [
+              {
+                "__type": "Sandbox.Prop",
+                "__guid": "6f7c1a97-d39e-441f-80d6-68f828e38b1a",
+                "BodyGroups": 18446744073709551615,
+                "Health": 0,
+                "IsStatic": true,
+                "Model": "models/track_tileset_pieces/wood/angle/nowalls/wood_nowalls_angle15r_straight_384.vmdl"
+              }
+            ]
+          },
+          {
+            "__guid": "80424668-9b3e-4caf-8555-451774d39147",
+            "Name": "wood_nowalls_angle15r_tranin_384",
+            "Position": "512,-512,0",
+            "Enabled": true,
+            "NetworkMode": 2,
+            "Components": [
+              {
+                "__type": "Sandbox.Prop",
+                "__guid": "17383faa-5954-4af1-ba13-7300c2b176a3",
+                "BodyGroups": 18446744073709551615,
+                "Health": 0,
+                "IsStatic": true,
+                "Model": "models/track_tileset_pieces/wood/angle/nowalls/wood_nowalls_angle15r_tranin_384.vmdl"
+              }
+            ]
+          },
+          {
+            "__guid": "3d405b26-7e87-4e12-8d4f-4681c74e4299",
+            "Name": "wood_nowalls_angle15r_tranout_384",
+            "Position": "1024,-512,0",
+            "Enabled": true,
+            "NetworkMode": 2,
+            "Components": [
+              {
+                "__type": "Sandbox.Prop",
+                "__guid": "3c108aeb-1d09-46a9-852e-d9d8d4a73a61",
+                "BodyGroups": 18446744073709551615,
+                "Health": 0,
+                "IsStatic": true,
+                "Model": "models/track_tileset_pieces/wood/angle/nowalls/wood_nowalls_angle15r_tranout_384.vmdl"
+              }
+            ]
+          },
+          {
+            "__guid": "bf245607-c4f7-4323-8778-2e2563b249db",
+            "Name": "wood_nowalls_angle15r_turnr_192",
+            "Position": "1536,-512,0",
+            "Enabled": true,
+            "NetworkMode": 2,
+            "Components": [
+              {
+                "__type": "Sandbox.Prop",
+                "__guid": "870a8b64-d1b5-4b7a-8511-2cb4f6f58567",
+                "BodyGroups": 18446744073709551615,
+                "Health": 0,
+                "IsStatic": true,
+                "Model": "models/track_tileset_pieces/wood/angle/nowalls/wood_nowalls_angle15r_turnr_192.vmdl"
+              }
+            ]
+          },
+          {
+            "__guid": "a4ecdc79-73ab-4c3f-834e-b37f0a3e1e54",
+            "Name": "wood_nowalls_angle15r_turnr_576",
+            "Position": "2432,-512,0",
+            "Enabled": true,
+            "NetworkMode": 2,
+            "Components": [
+              {
+                "__type": "Sandbox.Prop",
+                "__guid": "7c0e92a3-a4e1-49b7-9f73-09172f5bfe7f",
+                "BodyGroups": 18446744073709551615,
+                "Health": 0,
+                "IsStatic": true,
+                "Model": "models/track_tileset_pieces/wood/angle/nowalls/wood_nowalls_angle15r_turnr_576.vmdl"
               }
             ]
           }

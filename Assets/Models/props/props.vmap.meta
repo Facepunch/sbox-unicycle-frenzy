@@ -1,0 +1,37 @@
+{
+  "publish": {
+    "Allowed": true,
+    "Enabled": false,
+    "ProjectConfig": {
+      "Title": "props",
+      "Type": "map",
+      "Org": "local",
+      "Ident": "props",
+      "Tags": null,
+      "Schema": 0,
+      "Resources": null,
+      "PackageReferences": [],
+      "EditorReferences": [
+        "facepunch.wood_trim_02#43510",
+        "wujekfoliarz.sl_skybox4#36620",
+        "rustextended.glass_dirty#43276",
+        "facepunch.pvc_panel_2#47054",
+        "sboxmp.frank_mp#53434",
+        "facepunch.metal_trim_02#47037",
+        "facepunch.industrial_wall_light#43061",
+        "facepunch.plastic_trim#43496",
+        "rustextended.dev_white#43273",
+        "facepunch.scaffolding_tube_a#27434",
+        "sugmatextures.grass#34974",
+        "facepunch.wood_plank_hs_01#33582",
+        "facepunch.plastic_trim_dirty_blend#43499",
+        "facepunch.tree_oak_medium_a#33692",
+        "facepunch.plastic_glossy_a_hs#28966",
+        "facepunch.plastic_trim_clean#43497"
+      ],
+      "Metadata": {
+        "SingleAssetSource": "models/props/props.vmap"
+      }
+    }
+  }
+}
