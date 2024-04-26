@@ -40,7 +40,7 @@ internal class UnicycleController : Component
 	public float GroundTurnSpeed => 1.4f;
 	public float AirTurnSpeed => 2f;
 	public float SlopeSpeed => 800f;
-	public float BrakeStrength => 4.5f;
+	public float BrakeStrength => 2f;
 	public float StopSpeed => 10f;
 	public float MaxAirTurnSpeed => 35f;
 	public float ForwardVelocityTilt => 3f;
