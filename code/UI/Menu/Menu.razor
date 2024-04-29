@@ -67,7 +67,11 @@
 		if (citizen != null)
 		{
 
-			var lookAt = Camera.Transform.Position - citizen.Transform.Position - Vector3.Up * 70;
+			var ray = Scene.Camera.ScreenPixelToRay(Mouse.Position);
+
+			var tr = Scene.Trace.Ray(ray, 100).Run();
+
+			lookAt = tr.EndPosition - citizen.Transform.Position - Vector3.Up * 50;
 
 			citizen.SetLookDirection("aim_eyes", lookAt);
 			citizen.SetLookDirection("aim_head", lookAt);
@@ -75,9 +79,7 @@
 		}
 	}
 
-	Vector3 lookPos;
-	Vector3 headPos;
-	Vector3 aimPos;
+	Vector3 lookAt;
 
 	public struct PageCameraSetup
 	{
