@@ -1,0 +1,17 @@
+{
+  "ItemName": "Flower Power",
+  "ItemDescription": null,
+  "ItemImage": "resources/items/flower_power_frame.png",
+  "IsMaterial": true,
+  "ItemModel": "models/unicycles/default/parts/frames/default_frame.vmdl",
+  "ItemMaterial": "models/unicycles/flower power/unicycleflowerpower.vmat",
+  "ItemCategory": "Frame",
+  "ItemRarity": "Common",
+  "Skins": [],
+  "Icon": {
+    "Path": "resources\\items/flower_power_frame.png"
+  },
+  "ResourceVersion": 0,
+  "__version": 0,
+  "__references": []
+}

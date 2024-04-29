@@ -1,0 +1,17 @@
+{
+  "ItemName": "LKA",
+  "ItemDescription": null,
+  "ItemImage": "resources/items/lka_skin.png",
+  "IsMaterial": true,
+  "ItemModel": "models/unicycles/default/parts/frames/default_frame.vmdl",
+  "ItemMaterial": "models/unicycles/lka/unicyclelka.vmat",
+  "ItemCategory": "Frame",
+  "ItemRarity": "Common",
+  "Skins": [],
+  "Icon": {
+    "Path": "resources\\items/lka_skin.png"
+  },
+  "ResourceVersion": 0,
+  "__version": 0,
+  "__references": []
+}

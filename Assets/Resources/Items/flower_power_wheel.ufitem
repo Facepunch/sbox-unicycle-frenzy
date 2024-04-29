@@ -1,0 +1,17 @@
+{
+  "ItemName": "Flower Power",
+  "ItemDescription": null,
+  "ItemImage": "resources/items/flower_power_wheel.png",
+  "IsMaterial": true,
+  "ItemModel": "models/unicycles/default/parts/wheels/default_wheel.vmdl",
+  "ItemMaterial": "models/unicycles/flower power/unicycleflowerpower.vmat",
+  "ItemCategory": "Wheel",
+  "ItemRarity": "Common",
+  "Skins": [],
+  "Icon": {
+    "Path": "resources\\items/flower_power_wheel.png"
+  },
+  "ResourceVersion": 0,
+  "__version": 0,
+  "__references": []
+}
