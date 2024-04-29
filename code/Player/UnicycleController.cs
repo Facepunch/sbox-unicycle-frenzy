@@ -227,11 +227,13 @@ internal class UnicycleController : Component
 				smr.Tags.Add("clothing");
 			}
 
+			smr.MaterialOverride = mr.MaterialOverride;
+
 			var mphys = go.Components.Create<ModelPhysics>();
 			mphys.Model = mr.Model;
 			mphys.Renderer = smr;
 
-			mphys.Enabled = false;
+			mphys.Enabled = true;
 			mphys.Enabled = true;
 		}
 
