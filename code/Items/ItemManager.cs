@@ -27,8 +27,6 @@ public sealed class ItemManager : Component
 	{
 		foreach ( var item in ProgressionResource.ItemsInPass )
 		{
-			Log.Info( item.Item.ItemName );
-
 			if( Progression.UnlockedItems.Contains( item.Item ) ) continue;
 			if( Progression.CurrentXP < item.XPNeeded ) continue;
 			Progression.UnlockedItems.Add( item.Item );

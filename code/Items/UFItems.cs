@@ -120,10 +120,6 @@ internal class UnicycleDresser : Component
 		if ( Local != null )
 		{
 			SetUpUnicycle();
-			//Seat.Model = Local.Seat.ItemModel;
-			//Accessory.Model = Local.Accessory.ItemModel;
-			//LeftPedal.Model = Local.Pedal.ItemModel;
-			//RightPedal.Model = Local.Pedal.ItemModel;
 		}
 
 	}
