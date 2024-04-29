@@ -46,6 +46,11 @@
                 "Health": 0,
                 "IsStatic": true,
                 "Model": "models/track_tileset_pieces/wood/wood_straight_384.vmdl"
+              },
+              {
+                "__type": "TrackPiece",
+                "__guid": "d9008eee-56d5-4603-ba7e-bf56c95376b4",
+                "Offset": 384
               }
             ]
           },
@@ -63,6 +68,11 @@
                 "Health": 0,
                 "IsStatic": true,
                 "Model": "models/track_tileset_pieces/wood/wood_slope_384x96.vmdl"
+              },
+              {
+                "__type": "TrackPiece",
+                "__guid": "fb3a0df1-974a-4207-bde4-ad74e93da3c6",
+                "Offset": 384
               }
             ]
           },
@@ -80,6 +90,11 @@
                 "Health": 0,
                 "IsStatic": true,
                 "Model": "models/track_tileset_pieces/wood/wood_slope_384x192.vmdl"
+              },
+              {
+                "__type": "TrackPiece",
+                "__guid": "d3b7e41d-5e8e-4fb8-aaf8-f194c0d7028b",
+                "Offset": 384
               }
             ]
           },
@@ -97,6 +112,11 @@
                 "Health": 0,
                 "IsStatic": true,
                 "Model": "models/track_tileset_pieces/wood/wood_posts.vmdl"
+              },
+              {
+                "__type": "TrackPiece",
+                "__guid": "cb0c8fbf-1116-4fee-9121-f773df8f7367",
+                "Offset": 384
               }
             ]
           },
@@ -114,6 +134,11 @@
                 "Health": 0,
                 "IsStatic": true,
                 "Model": "models/track_tileset_pieces/wood/wood_turnl_192.vmdl"
+              },
+              {
+                "__type": "TrackPiece",
+                "__guid": "a39665fc-d7d4-456a-a3ac-baf073b590e4",
+                "Offset": 384
               }
             ]
           },
@@ -131,6 +156,11 @@
                 "Health": 0,
                 "IsStatic": true,
                 "Model": "models/track_tileset_pieces/wood/wood_turnl_576.vmdl"
+              },
+              {
+                "__type": "TrackPiece",
+                "__guid": "aaed230b-7301-47ad-bdfe-072735a4f7af",
+                "Offset": 384
               }
             ]
           },
@@ -148,6 +178,11 @@
                 "Health": 0,
                 "IsStatic": true,
                 "Model": "models/track_tileset_pieces/wood/wood_turnr_192.vmdl"
+              },
+              {
+                "__type": "TrackPiece",
+                "__guid": "112bef38-2dbe-4d0b-bbc0-978159043e9c",
+                "Offset": 384
               }
             ]
           },
@@ -165,6 +200,11 @@
                 "Health": 0,
                 "IsStatic": true,
                 "Model": "models/track_tileset_pieces/wood/wood_turnr_576.vmdl"
+              },
+              {
+                "__type": "TrackPiece",
+                "__guid": "b0b22e1b-0640-4f66-9eeb-9cb56498a5ee",
+                "Offset": 1152
               }
             ]
           }
@@ -192,6 +232,11 @@
                 "Health": 0,
                 "IsStatic": true,
                 "Model": "models/track_tileset_pieces/wood/nowalls/wood_nowalls_straight_384.vmdl"
+              },
+              {
+                "__type": "TrackPiece",
+                "__guid": "1e720f6d-575b-465a-a54b-67e67e877a2f",
+                "Offset": 384
               }
             ]
           },
@@ -209,6 +254,11 @@
                 "Health": 0,
                 "IsStatic": true,
                 "Model": "models/track_tileset_pieces/wood/nowalls/wood_nowalls_slope_384x96.vmdl"
+              },
+              {
+                "__type": "TrackPiece",
+                "__guid": "4e44a801-ddee-4df1-916e-720608553b1d",
+                "Offset": 384
               }
             ]
           },
@@ -226,6 +276,11 @@
                 "Health": 0,
                 "IsStatic": true,
                 "Model": "models/track_tileset_pieces/wood/nowalls/wood_nowalls_slope_384x192.vmdl"
+              },
+              {
+                "__type": "TrackPiece",
+                "__guid": "38062cca-cbe6-4ea5-aef0-4fc9b6922090",
+                "Offset": 384
               }
             ]
           },
@@ -243,6 +298,11 @@
                 "Health": 0,
                 "IsStatic": true,
                 "Model": "models/track_tileset_pieces/wood/nowalls/wood_nowalls_turnl_192.vmdl"
+              },
+              {
+                "__type": "TrackPiece",
+                "__guid": "8960f5c5-4fb6-41d6-bc5a-d7a82232446d",
+                "Offset": 384
               }
             ]
           },
@@ -260,6 +320,11 @@
                 "Health": 0,
                 "IsStatic": true,
                 "Model": "models/track_tileset_pieces/wood/nowalls/wood_nowalls_turnl_576.vmdl"
+              },
+              {
+                "__type": "TrackPiece",
+                "__guid": "7812a17f-8202-42fd-8b9f-8acc7322ea1a",
+                "Offset": 384
               }
             ]
           },
@@ -277,6 +342,11 @@
                 "Health": 0,
                 "IsStatic": true,
                 "Model": "models/track_tileset_pieces/wood/nowalls/wood_nowalls_turnr_192.vmdl"
+              },
+              {
+                "__type": "TrackPiece",
+                "__guid": "cbf548dd-d76a-41d7-b039-1e89ce07f0c1",
+                "Offset": 384
               }
             ]
           },
@@ -294,6 +364,11 @@
                 "Health": 0,
                 "IsStatic": true,
                 "Model": "models/track_tileset_pieces/wood/nowalls/wood_nowalls_turnr_576.vmdl"
+              },
+              {
+                "__type": "TrackPiece",
+                "__guid": "57a1bdb7-7320-4c30-b030-e2df76957726",
+                "Offset": 1152
               }
             ]
           }
@@ -321,6 +396,11 @@
                 "Health": 0,
                 "IsStatic": true,
                 "Model": "models/track_tileset_pieces/wood/narrow/wood_narrow_384.vmdl"
+              },
+              {
+                "__type": "TrackPiece",
+                "__guid": "c8a83bae-61c4-4c54-8731-bada11bec83d",
+                "Offset": 128
               }
             ]
           },
@@ -338,6 +418,11 @@
                 "Health": 0,
                 "IsStatic": true,
                 "Model": "models/track_tileset_pieces/wood/narrow/wood_narrow_slope_384x96.vmdl"
+              },
+              {
+                "__type": "TrackPiece",
+                "__guid": "07656e7c-f219-4d09-b2ac-793357e4eb7f",
+                "Offset": 128
               }
             ]
           },
@@ -355,6 +440,11 @@
                 "Health": 0,
                 "IsStatic": true,
                 "Model": "models/track_tileset_pieces/wood/narrow/wood_narrow_slope_384x192.vmdl"
+              },
+              {
+                "__type": "TrackPiece",
+                "__guid": "a492a106-54da-4f98-918e-f3acfa4e4bda",
+                "Offset": 128
               }
             ]
           },
@@ -372,6 +462,11 @@
                 "Health": 0,
                 "IsStatic": true,
                 "Model": "models/track_tileset_pieces/wood/narrow/wood_narrow_turnl_192.vmdl"
+              },
+              {
+                "__type": "TrackPiece",
+                "__guid": "f849482c-c64b-4243-a37a-251d00664808",
+                "Offset": 128
               }
             ]
           },
@@ -389,6 +484,11 @@
                 "Health": 0,
                 "IsStatic": true,
                 "Model": "models/track_tileset_pieces/wood/narrow/wood_narrow_turnl_576.vmdl"
+              },
+              {
+                "__type": "TrackPiece",
+                "__guid": "70d3cb5a-97f7-4708-880a-9711f4a30ae3",
+                "Offset": 128
               }
             ]
           },
@@ -406,6 +506,11 @@
                 "Health": 0,
                 "IsStatic": true,
                 "Model": "models/track_tileset_pieces/wood/narrow/wood_narrow_turnr_192.vmdl"
+              },
+              {
+                "__type": "TrackPiece",
+                "__guid": "b6509303-1d1b-4d00-b066-c8134c7ee02a",
+                "Offset": 384
               }
             ]
           },
@@ -423,6 +528,11 @@
                 "Health": 0,
                 "IsStatic": true,
                 "Model": "models/track_tileset_pieces/wood/narrow/wood_narrow_turnr_576.vmdl"
+              },
+              {
+                "__type": "TrackPiece",
+                "__guid": "5eb60d77-0e5d-40ad-9c7b-ed5b170dcdbc",
+                "Offset": 1152
               }
             ]
           }
@@ -450,6 +560,11 @@
                 "Health": 0,
                 "IsStatic": true,
                 "Model": "models/track_tileset_pieces/wood/skinny/wood_skinny_384.vmdl"
+              },
+              {
+                "__type": "TrackPiece",
+                "__guid": "da18e5b2-3b2a-40c2-b263-82f7839e6fc8",
+                "Offset": 16
               }
             ]
           },
@@ -467,6 +582,11 @@
                 "Health": 0,
                 "IsStatic": true,
                 "Model": "models/track_tileset_pieces/wood/skinny/wood_skinny_slope_384x96.vmdl"
+              },
+              {
+                "__type": "TrackPiece",
+                "__guid": "43a9b6cb-86d1-45a7-8abc-8cf962b9999a",
+                "Offset": 16
               }
             ]
           },
@@ -484,6 +604,11 @@
                 "Health": 0,
                 "IsStatic": true,
                 "Model": "models/track_tileset_pieces/wood/skinny/wood_skinny_slope_384x192.vmdl"
+              },
+              {
+                "__type": "TrackPiece",
+                "__guid": "a3f23212-5a20-4079-b954-fc97f7d13ff4",
+                "Offset": 16
               }
             ]
           },
@@ -501,6 +626,11 @@
                 "Health": 0,
                 "IsStatic": true,
                 "Model": "models/track_tileset_pieces/wood/skinny/wood_skinny_turnl_192.vmdl"
+              },
+              {
+                "__type": "TrackPiece",
+                "__guid": "8dab15ef-66d4-4349-8738-1d8e11c8ee44",
+                "Offset": 16
               }
             ]
           },
@@ -518,6 +648,11 @@
                 "Health": 0,
                 "IsStatic": true,
                 "Model": "models/track_tileset_pieces/wood/skinny/wood_skinny_turnl_64.vmdl"
+              },
+              {
+                "__type": "TrackPiece",
+                "__guid": "841a9dac-1de1-47e5-b929-492bab8f8c9c",
+                "Offset": 16
               }
             ]
           },
@@ -535,6 +670,11 @@
                 "Health": 0,
                 "IsStatic": true,
                 "Model": "models/track_tileset_pieces/wood/skinny/wood_skinny_turnr_192.vmdl"
+              },
+              {
+                "__type": "TrackPiece",
+                "__guid": "62df4dda-156a-41da-bdd0-4af549d674bc",
+                "Offset": 384
               }
             ]
           },
@@ -552,6 +692,11 @@
                 "Health": 0,
                 "IsStatic": true,
                 "Model": "models/track_tileset_pieces/wood/skinny/wood_skinny_turnr_64.vmdl"
+              },
+              {
+                "__type": "TrackPiece",
+                "__guid": "473218a6-68ba-4057-818e-5998f25260ab",
+                "Offset": 128
               }
             ]
           }
@@ -579,6 +724,11 @@
                 "Health": 0,
                 "IsStatic": true,
                 "Model": "models/track_tileset_pieces/wood/angle/nowalls/wood_nowalls_angle15l_straight_384.vmdl"
+              },
+              {
+                "__type": "TrackPiece",
+                "__guid": "48f7d859-ed23-4f22-ac32-0ea18bf84de9",
+                "Offset": 384
               }
             ]
           },
@@ -596,6 +746,11 @@
                 "Health": 0,
                 "IsStatic": true,
                 "Model": "models/track_tileset_pieces/wood/angle/nowalls/wood_nowalls_angle15l_tranin_384.vmdl"
+              },
+              {
+                "__type": "TrackPiece",
+                "__guid": "d7e6f074-81fb-4ac3-a782-f0eb199a1b5a",
+                "Offset": 384
               }
             ]
           },
@@ -613,6 +768,11 @@
                 "Health": 0,
                 "IsStatic": true,
                 "Model": "models/track_tileset_pieces/wood/angle/nowalls/wood_nowalls_angle15l_tranout_384.vmdl"
+              },
+              {
+                "__type": "TrackPiece",
+                "__guid": "4a9f307d-7ac3-4708-8d93-24d032fc50ea",
+                "Offset": 384
               }
             ]
           },
@@ -630,6 +790,11 @@
                 "Health": 0,
                 "IsStatic": true,
                 "Model": "models/track_tileset_pieces/wood/angle/nowalls/wood_nowalls_angle15l_turnl_192.vmdl"
+              },
+              {
+                "__type": "TrackPiece",
+                "__guid": "7627b74e-28ed-4205-a70d-585a54503905",
+                "Offset": 384
               }
             ]
           },
@@ -647,6 +812,11 @@
                 "Health": 0,
                 "IsStatic": true,
                 "Model": "models/track_tileset_pieces/wood/angle/nowalls/wood_nowalls_angle15l_turnl_576.vmdl"
+              },
+              {
+                "__type": "TrackPiece",
+                "__guid": "2846a41e-9a21-416f-a457-e9d3b417f449",
+                "Offset": 384
               }
             ]
           },
@@ -664,6 +834,11 @@
                 "Health": 0,
                 "IsStatic": true,
                 "Model": "models/track_tileset_pieces/wood/angle/nowalls/wood_nowalls_angle15r_straight_384.vmdl"
+              },
+              {
+                "__type": "TrackPiece",
+                "__guid": "79439f48-a0c5-4b9d-a589-4b85bf9496b8",
+                "Offset": 384
               }
             ]
           },
@@ -681,6 +856,11 @@
                 "Health": 0,
                 "IsStatic": true,
                 "Model": "models/track_tileset_pieces/wood/angle/nowalls/wood_nowalls_angle15r_tranin_384.vmdl"
+              },
+              {
+                "__type": "TrackPiece",
+                "__guid": "a7a61d8a-c664-4624-8581-610258707eaa",
+                "Offset": 384
               }
             ]
           },
@@ -698,6 +878,11 @@
                 "Health": 0,
                 "IsStatic": true,
                 "Model": "models/track_tileset_pieces/wood/angle/nowalls/wood_nowalls_angle15r_tranout_384.vmdl"
+              },
+              {
+                "__type": "TrackPiece",
+                "__guid": "305752ca-a70e-4c56-801c-074babf44ef7",
+                "Offset": 384
               }
             ]
           },
@@ -715,6 +900,11 @@
                 "Health": 0,
                 "IsStatic": true,
                 "Model": "models/track_tileset_pieces/wood/angle/nowalls/wood_nowalls_angle15r_turnr_192.vmdl"
+              },
+              {
+                "__type": "TrackPiece",
+                "__guid": "c0a289d1-6ba7-4da3-842e-d54c19a2a217",
+                "Offset": 384
               }
             ]
           },
@@ -732,6 +922,11 @@
                 "Health": 0,
                 "IsStatic": true,
                 "Model": "models/track_tileset_pieces/wood/angle/nowalls/wood_nowalls_angle15r_turnr_576.vmdl"
+              },
+              {
+                "__type": "TrackPiece",
+                "__guid": "df141537-e705-4db9-8fcc-d4fdabe703e0",
+                "Offset": 1152
               }
             ]
           }
