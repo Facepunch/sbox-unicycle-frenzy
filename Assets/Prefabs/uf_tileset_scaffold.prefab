@@ -27,6 +27,11 @@
                 "Health": 0,
                 "IsStatic": true,
                 "Model": "models/track_tileset_pieces/scaffold/scaffold_192/foot/scaffold_foot_192.vmdl"
+              },
+              {
+                "__type": "TrackPiece",
+                "__guid": "93db833c-c808-4300-b4ab-33bfff6f6139",
+                "Offset": 384
               }
             ]
           },
@@ -44,6 +49,11 @@
                 "Health": 0,
                 "IsStatic": true,
                 "Model": "models/track_tileset_pieces/scaffold/scaffold_192/foot/scaffold_foot_slope_192.vmdl"
+              },
+              {
+                "__type": "TrackPiece",
+                "__guid": "9e5d3643-7cee-45e8-9d9d-d6e012d33cec",
+                "Offset": 384
               }
             ]
           },
@@ -61,6 +71,11 @@
                 "Health": 0,
                 "IsStatic": true,
                 "Model": "models/track_tileset_pieces/scaffold/scaffold_192/foot/scaffold_foot_turnl_192x192.vmdl"
+              },
+              {
+                "__type": "TrackPiece",
+                "__guid": "a8bd8a4c-16c6-40e0-8ec5-5ab7913fc1a1",
+                "Offset": 384
               }
             ]
           },
@@ -78,6 +93,11 @@
                 "Health": 0,
                 "IsStatic": true,
                 "Model": "models/track_tileset_pieces/scaffold/scaffold_192/foot/scaffold_foot_turnl_192x576.vmdl"
+              },
+              {
+                "__type": "TrackPiece",
+                "__guid": "76ffc649-fffb-4751-a015-c4763966bbe9",
+                "Offset": 384
               }
             ]
           },
@@ -95,6 +115,11 @@
                 "Health": 0,
                 "IsStatic": true,
                 "Model": "models/track_tileset_pieces/scaffold/scaffold_192/foot/scaffold_foot_turnr_192x192.vmdl"
+              },
+              {
+                "__type": "TrackPiece",
+                "__guid": "ea1b53ca-f229-4b3f-82f0-539c70b35329",
+                "Offset": 384
               }
             ]
           },
@@ -112,6 +137,11 @@
                 "Health": 0,
                 "IsStatic": true,
                 "Model": "models/track_tileset_pieces/scaffold/scaffold_192/foot/scaffold_foot_turnr_192x576.vmdl"
+              },
+              {
+                "__type": "TrackPiece",
+                "__guid": "52eac055-c094-41d7-8b54-d24537a2d216",
+                "Offset": 1152
               }
             ]
           },
@@ -129,6 +159,11 @@
                 "Health": 0,
                 "IsStatic": true,
                 "Model": "models/track_tileset_pieces/scaffold/scaffold_192/foot/scaffold_foot_cap_192.vmdl"
+              },
+              {
+                "__type": "TrackPiece",
+                "__guid": "e2786afe-9fcd-4778-9445-7f59cb9c6d1c",
+                "Offset": 384
               }
             ]
           }
@@ -156,6 +191,11 @@
                 "Health": 0,
                 "IsStatic": true,
                 "Model": "models/track_tileset_pieces/scaffold/scaffold_192/mid/scaffold_mid_192.vmdl"
+              },
+              {
+                "__type": "TrackPiece",
+                "__guid": "91bb00dd-bd91-4b83-8cb1-2c35a8776c95",
+                "Offset": 384
               }
             ]
           },
@@ -173,6 +213,11 @@
                 "Health": 0,
                 "IsStatic": true,
                 "Model": "models/track_tileset_pieces/scaffold/scaffold_192/mid/scaffold_mid_slope_192.vmdl"
+              },
+              {
+                "__type": "TrackPiece",
+                "__guid": "fb72316a-799a-4b10-99aa-cff359c5ad4c",
+                "Offset": 384
               }
             ]
           },
@@ -190,6 +235,11 @@
                 "Health": 0,
                 "IsStatic": true,
                 "Model": "models/track_tileset_pieces/scaffold/scaffold_192/mid/scaffold_mid_turnl_192x192.vmdl"
+              },
+              {
+                "__type": "TrackPiece",
+                "__guid": "7382a0d2-3c32-4e7d-9251-1028cee7233f",
+                "Offset": 384
               }
             ]
           },
@@ -207,6 +257,11 @@
                 "Health": 0,
                 "IsStatic": true,
                 "Model": "models/track_tileset_pieces/scaffold/scaffold_192/mid/scaffold_mid_turnl_192x576.vmdl"
+              },
+              {
+                "__type": "TrackPiece",
+                "__guid": "3c84de6c-9550-40d8-bef4-0430269d2237",
+                "Offset": 384
               }
             ]
           },
@@ -224,6 +279,11 @@
                 "Health": 0,
                 "IsStatic": true,
                 "Model": "models/track_tileset_pieces/scaffold/scaffold_192/mid/scaffold_mid_turnr_192x192.vmdl"
+              },
+              {
+                "__type": "TrackPiece",
+                "__guid": "40c6788c-712e-43e9-a74c-ef09d4269e94",
+                "Offset": 384
               }
             ]
           },
@@ -241,6 +301,11 @@
                 "Health": 0,
                 "IsStatic": true,
                 "Model": "models/track_tileset_pieces/scaffold/scaffold_192/mid/scaffold_mid_turnr_192x576.vmdl"
+              },
+              {
+                "__type": "TrackPiece",
+                "__guid": "3442b339-f09d-4787-8b29-cee095c5c5d4",
+                "Offset": 1152
               }
             ]
           },
@@ -258,6 +323,11 @@
                 "Health": 0,
                 "IsStatic": true,
                 "Model": "models/track_tileset_pieces/scaffold/scaffold_192/mid/scaffold_mid_cap_192.vmdl"
+              },
+              {
+                "__type": "TrackPiece",
+                "__guid": "ad641a95-2a08-4264-aa29-db1491a40916",
+                "Offset": 384
               }
             ]
           }
@@ -285,6 +355,11 @@
                 "Health": 0,
                 "IsStatic": true,
                 "Model": "models/track_tileset_pieces/scaffold/scaffold_96/foot/scaffold_foot_96.vmdl"
+              },
+              {
+                "__type": "TrackPiece",
+                "__guid": "69f6baa4-8b4f-4c26-8f27-e653035a249a",
+                "Offset": 384
               }
             ]
           },
@@ -302,6 +377,11 @@
                 "Health": 0,
                 "IsStatic": true,
                 "Model": "models/track_tileset_pieces/scaffold/scaffold_96/foot/scaffold_foot_slope_96.vmdl"
+              },
+              {
+                "__type": "TrackPiece",
+                "__guid": "b22a31c2-b2c7-438a-a640-4c31fad77fb6",
+                "Offset": 384
               }
             ]
           },
@@ -319,6 +399,11 @@
                 "Health": 0,
                 "IsStatic": true,
                 "Model": "models/track_tileset_pieces/scaffold/scaffold_96/foot/scaffold_foot_turnl_96x192.vmdl"
+              },
+              {
+                "__type": "TrackPiece",
+                "__guid": "251fc5f6-6d98-45f3-a710-840279202d9a",
+                "Offset": 384
               }
             ]
           },
@@ -336,6 +421,11 @@
                 "Health": 0,
                 "IsStatic": true,
                 "Model": "models/track_tileset_pieces/scaffold/scaffold_96/foot/scaffold_foot_turnl_96x576.vmdl"
+              },
+              {
+                "__type": "TrackPiece",
+                "__guid": "bcb0818c-3936-4af9-b8a6-f099138baf9a",
+                "Offset": 384
               }
             ]
           },
@@ -353,6 +443,11 @@
                 "Health": 0,
                 "IsStatic": true,
                 "Model": "models/track_tileset_pieces/scaffold/scaffold_96/foot/scaffold_foot_turnr_96x192.vmdl"
+              },
+              {
+                "__type": "TrackPiece",
+                "__guid": "a6d47a37-f931-473f-b120-748e59e4ae89",
+                "Offset": 384
               }
             ]
           },
@@ -370,6 +465,11 @@
                 "Health": 0,
                 "IsStatic": true,
                 "Model": "models/track_tileset_pieces/scaffold/scaffold_96/foot/scaffold_foot_turnr_96x576.vmdl"
+              },
+              {
+                "__type": "TrackPiece",
+                "__guid": "bc6d5453-ed84-47bc-b233-6849a1f7b85e",
+                "Offset": 1152
               }
             ]
           },
@@ -387,6 +487,11 @@
                 "Health": 0,
                 "IsStatic": true,
                 "Model": "models/track_tileset_pieces/scaffold/scaffold_96/foot/scaffold_foot_cap_96.vmdl"
+              },
+              {
+                "__type": "TrackPiece",
+                "__guid": "b5c16797-e1c3-4bea-a7b5-51079902cac2",
+                "Offset": 384
               }
             ]
           }
@@ -414,6 +519,11 @@
                 "Health": 0,
                 "IsStatic": true,
                 "Model": "models/track_tileset_pieces/scaffold/scaffold_96/mid/scaffold_mid_96.vmdl"
+              },
+              {
+                "__type": "TrackPiece",
+                "__guid": "e4246447-7328-45c1-b86b-d7eb7e80da4f",
+                "Offset": 384
               }
             ]
           },
@@ -431,6 +541,11 @@
                 "Health": 0,
                 "IsStatic": true,
                 "Model": "models/track_tileset_pieces/scaffold/scaffold_96/mid/scaffold_mid_slope_96.vmdl"
+              },
+              {
+                "__type": "TrackPiece",
+                "__guid": "5a504797-cafe-44c5-827b-139b8bbd433e",
+                "Offset": 384
               }
             ]
           },
@@ -448,6 +563,11 @@
                 "Health": 0,
                 "IsStatic": true,
                 "Model": "models/track_tileset_pieces/scaffold/scaffold_96/mid/scaffold_mid_turnl_96x192.vmdl"
+              },
+              {
+                "__type": "TrackPiece",
+                "__guid": "c7363ae3-3c52-494b-a515-254416aa60df",
+                "Offset": 384
               }
             ]
           },
@@ -465,6 +585,11 @@
                 "Health": 0,
                 "IsStatic": true,
                 "Model": "models/track_tileset_pieces/scaffold/scaffold_96/mid/scaffold_mid_turnl_96x576.vmdl"
+              },
+              {
+                "__type": "TrackPiece",
+                "__guid": "6b9eea05-968f-4adf-b3f8-22c9dccced00",
+                "Offset": 384
               }
             ]
           },
@@ -482,6 +607,11 @@
                 "Health": 0,
                 "IsStatic": true,
                 "Model": "models/track_tileset_pieces/scaffold/scaffold_96/mid/scaffold_mid_turnr_96x192.vmdl"
+              },
+              {
+                "__type": "TrackPiece",
+                "__guid": "51de762b-278b-41aa-bc21-6f07e74c1de1",
+                "Offset": 384
               }
             ]
           },
@@ -499,6 +629,11 @@
                 "Health": 0,
                 "IsStatic": true,
                 "Model": "models/track_tileset_pieces/scaffold/scaffold_96/mid/scaffold_mid_turnr_96x576.vmdl"
+              },
+              {
+                "__type": "TrackPiece",
+                "__guid": "6ae5e15f-beb3-4863-b8b9-ef1b2e2c8bf7",
+                "Offset": 1152
               }
             ]
           },
@@ -516,6 +651,11 @@
                 "Health": 0,
                 "IsStatic": true,
                 "Model": "models/track_tileset_pieces/scaffold/scaffold_96/mid/scaffold_mid_cap_96.vmdl"
+              },
+              {
+                "__type": "TrackPiece",
+                "__guid": "ea357b2c-9b29-4d59-8d48-e3ce6a0c22bb",
+                "Offset": 384
               }
             ]
           }

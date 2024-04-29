@@ -1,0 +1,566 @@
+{
+  "__guid": "2e3749e6-2ca1-4616-b738-a22b78c22e26",
+  "GameObjects": [
+    {
+      "__guid": "acdebafa-a7bf-4c40-878f-0affddc5cb3d",
+      "Name": "environment lighting",
+      "Position": "0,0,1000",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "Children": [
+        {
+          "__guid": "354f8179-2a94-4f61-8861-dab0ddd8ee74",
+          "Name": "2D Skybox",
+          "Position": "0,0,0",
+          "Tags": "skybox",
+          "Enabled": true,
+          "NetworkMode": 2,
+          "Components": [
+            {
+              "__type": "Sandbox.SkyBox2D",
+              "__guid": "bd1424af-861c-46cb-903e-a6699b1a85a8",
+              "SkyMaterial": "materials/skybox/kloofendal_43d_clear_puresky.vmat",
+              "Tint": "1,1,1,1"
+            }
+          ]
+        },
+        {
+          "__guid": "4034a5e2-7b6f-4326-bf0b-ed162ce9d03f",
+          "Name": "Volumetric Fog",
+          "Position": "0,0,0",
+          "Enabled": true,
+          "NetworkMode": 2,
+          "Components": [
+            {
+              "__type": "Sandbox.VolumetricFogVolume",
+              "__guid": "77606ed5-964d-4fe4-97d1-b37286b5e2b7",
+              "Bounds": {
+                "Mins": "-15000,-15000,-15000",
+                "Maxs": "15000,15000,15000"
+              },
+              "FalloffExponent": 1,
+              "Strength": 0.05
+            }
+          ]
+        },
+        {
+          "__guid": "b4e3cfa1-624d-4299-93e0-3d28e1e5f225",
+          "Name": "Directional Light",
+          "Position": "0,0,0",
+          "Rotation": "-0.2459842,0.5938582,0.2931525,0.7077327",
+          "Tags": "light_directional,light",
+          "Enabled": true,
+          "NetworkMode": 2,
+          "Components": [
+            {
+              "__type": "Sandbox.DirectionalLight",
+              "__guid": "cd2eb645-accb-4f71-b54c-fb9c25c66cfe",
+              "FogMode": "Enabled",
+              "FogStrength": 1,
+              "LightColor": "1,0.95974,0.91373,1",
+              "Shadows": true,
+              "SkyColor": "0.35366,0.44353,0.62326,1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "__guid": "be3fc204-0ec2-4504-b2f3-8a584d46a836",
+      "Name": "ground_grass",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "Components": [
+        {
+          "__type": "Sandbox.Prop",
+          "__guid": "df145964-ceba-476a-9dcd-e66f1d30c9b3",
+          "BodyGroups": 18446744073709551615,
+          "Health": 0,
+          "IsStatic": true,
+          "Model": "models/ground_grass.vmdl"
+        }
+      ]
+    },
+    {
+      "__guid": "16395429-4f87-4f08-ae4a-fe25267e5b4f",
+      "Name": "Map Settings",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "Components": [
+        {
+          "__type": "MapSettings",
+          "__guid": "c39f2124-592f-4458-a0e3-982d928eb6da",
+          "Author": "Howie",
+          "BronzeTime": 60,
+          "Description": "A tutorial map to teach the basics of Unicycle Frenzy",
+          "Difficulty": "Tier1",
+          "GoldTime": 30,
+          "MapName": "Tutorial",
+          "PlatinumTime": 15,
+          "SilverTime": 45
+        }
+      ]
+    },
+    {
+      "__guid": "a3d15ef3-e73f-4262-a7d4-ef63d0bb9051",
+      "Name": "player and camera",
+      "Position": "-6272,2944,422.1695",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "Children": [
+        {
+          "__guid": "ef12c141-9e48-478c-96b6-8e652d53c606",
+          "Name": "Camera",
+          "Position": "0,0,0",
+          "Enabled": true,
+          "NetworkMode": 2,
+          "Components": [
+            {
+              "__type": "Sandbox.CameraComponent",
+              "__guid": "0aea4ce8-b701-40d6-a73a-7d2bac319861",
+              "BackgroundColor": "0.33333,0.46275,0.52157,1",
+              "ClearFlags": "All",
+              "FieldOfView": 60,
+              "IsMainCamera": true,
+              "Orthographic": false,
+              "OrthographicHeight": 1204,
+              "Priority": 1,
+              "RenderExcludeTags": "",
+              "RenderTags": "",
+              "TargetEye": "None",
+              "Viewport": "0,0,1,1",
+              "ZFar": 10000,
+              "ZNear": 10
+            },
+            {
+              "__type": "CameraController",
+              "__guid": "56538644-cf3f-4f17-9260-6a1da368eaf0",
+              "Target": {
+                "_type": "component",
+                "component_id": "09816ef2-843b-4adf-83a5-f7b00af7c7c0",
+                "go": "9c225cb4-2dc0-47c1-91bc-eebcac9d5f99",
+                "component_type": "UnicycleController"
+              }
+            }
+          ]
+        },
+        {
+          "__guid": "9c225cb4-2dc0-47c1-91bc-eebcac9d5f99",
+          "Name": "Player",
+          "Position": "0,0,0",
+          "Tags": "player",
+          "Enabled": true,
+          "NetworkMode": 2,
+          "Components": [
+            {
+              "__type": "UnicycleController",
+              "__guid": "09816ef2-843b-4adf-83a5-f7b00af7c7c0",
+              "FallSound": "sounds/unicycle/unicycle.crash.default.sound",
+              "JumpSound": "sounds/unicycle/unicycle.jump.sound",
+              "PedalSound": "sounds/unicycle/unicycle.pedal.sound",
+              "PerfectPedalSound": "sounds/unicycle/unicycle.pedal.perfect.sound"
+            },
+            {
+              "__type": "PlayerAnimator",
+              "__guid": "86228b77-edf1-46a2-9f7d-df7106d38110",
+              "LeftPedal": {
+                "_type": "gameobject",
+                "go": "24b05e96-c9d0-4c42-8403-16181066b1f0"
+              },
+              "PedalPivot": {
+                "_type": "gameobject",
+                "go": "ad2b77a6-6d92-4f0a-81b8-ffdc1cde0025"
+              },
+              "RightPedal": {
+                "_type": "gameobject",
+                "go": "202a9091-a6f1-4d70-83d5-fa33c561ef27"
+              },
+              "Wheel": {
+                "_type": "gameobject",
+                "go": "8030b0f1-3693-44b8-8b0d-1b5d4c3c83eb"
+              },
+              "WheelPivot": {
+                "_type": "gameobject",
+                "go": "ea0ef395-7f55-434d-a4a5-643a47296527"
+              }
+            },
+            {
+              "__type": "Sandbox.BoxCollider",
+              "__guid": "38f9217d-6319-4396-b274-b7039e9d0897",
+              "Center": "0,0,36",
+              "IsTrigger": false,
+              "Scale": "20,20,72",
+              "Static": false
+            },
+            {
+              "__type": "CourseTimer",
+              "__guid": "fe50f148-eef7-411d-8b82-43d242a7d164"
+            }
+          ],
+          "Children": [
+            {
+              "__guid": "15adc035-4a02-4a7e-ad3f-c5d4b121daf9",
+              "Name": "Player",
+              "Position": "0,0,35",
+              "Enabled": true,
+              "NetworkMode": 2,
+              "Components": [
+                {
+                  "__type": "Sandbox.SkinnedModelRenderer",
+                  "__guid": "b9285a27-2081-49ec-be5f-5f14806aa278",
+                  "BodyGroups": 341,
+                  "CreateBoneObjects": false,
+                  "Model": "models/citizen/citizen.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                }
+              ]
+            },
+            {
+              "__guid": "acdfa38c-3030-4847-aef1-8c13448cb904",
+              "Name": "Unicycle",
+              "Position": "0,0,0",
+              "Scale": "0.8,0.8,0.8",
+              "Enabled": true,
+              "NetworkMode": 2,
+              "Children": [
+                {
+                  "__guid": "b71aa866-dabf-4081-87bf-7085aba3c814",
+                  "Name": "Seat",
+                  "Position": "0,0,32.68898",
+                  "Enabled": true,
+                  "NetworkMode": 2,
+                  "Components": [
+                    {
+                      "__type": "Sandbox.ModelRenderer",
+                      "__guid": "a98b20f0-fcb9-443d-b490-d7a5e521e6f3",
+                      "BodyGroups": 18446744073709551615,
+                      "Model": "models/unicycles/default/parts/seats/default_seat.vmdl",
+                      "RenderType": "On",
+                      "Tint": "1,1,1,1"
+                    }
+                  ]
+                },
+                {
+                  "__guid": "648b2da4-01a0-4e75-830c-05873bb3e130",
+                  "Name": "Frame",
+                  "Position": "0,0,10.50214",
+                  "Enabled": true,
+                  "NetworkMode": 2,
+                  "Components": [
+                    {
+                      "__type": "Sandbox.Prop",
+                      "__guid": "9eb61dc6-7cf1-461d-9c42-b80789eeff1e",
+                      "BodyGroups": 18446744073709551615,
+                      "Health": 0,
+                      "IsStatic": true,
+                      "Model": "models/unicycles/default/parts/frames/default_frame.vmdl"
+                    }
+                  ]
+                },
+                {
+                  "__guid": "ea0ef395-7f55-434d-a4a5-643a47296527",
+                  "Name": "WheelPivot",
+                  "Position": "0,0,12",
+                  "Enabled": true,
+                  "NetworkMode": 2,
+                  "Children": [
+                    {
+                      "__guid": "8030b0f1-3693-44b8-8b0d-1b5d4c3c83eb",
+                      "Name": "Wheel",
+                      "Position": "0,0,-12",
+                      "Enabled": true,
+                      "NetworkMode": 2,
+                      "Components": [
+                        {
+                          "__type": "Sandbox.Prop",
+                          "__guid": "d37ca7aa-baea-497e-9dfd-c232c36cf7d8",
+                          "BodyGroups": 18446744073709551615,
+                          "Health": 0,
+                          "IsStatic": true,
+                          "Model": "models/unicycles/default/parts/wheels/default_wheel.vmdl"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "__guid": "ad2b77a6-6d92-4f0a-81b8-ffdc1cde0025",
+                  "Name": "Pedals",
+                  "Position": "0,0,12",
+                  "Enabled": true,
+                  "NetworkMode": 2,
+                  "Children": [
+                    {
+                      "__guid": "24b05e96-c9d0-4c42-8403-16181066b1f0",
+                      "Name": "Left Pedal",
+                      "Position": "0,5.200825,-5.631828",
+                      "Enabled": true,
+                      "NetworkMode": 2,
+                      "Components": [
+                        {
+                          "__type": "Sandbox.Prop",
+                          "__guid": "f6759a65-7382-4acb-a927-23adf58065e1",
+                          "BodyGroups": 18446744073709551615,
+                          "Health": 0,
+                          "IsStatic": true,
+                          "Model": "models/unicycles/default/parts/pedals/default_pedal.vmdl"
+                        }
+                      ]
+                    },
+                    {
+                      "__guid": "202a9091-a6f1-4d70-83d5-fa33c561ef27",
+                      "Name": "Right Pedal",
+                      "Position": "0,-5.227394,7.001972",
+                      "Rotation": "1,0,0,-0.00000004371139",
+                      "Enabled": true,
+                      "NetworkMode": 2,
+                      "Components": [
+                        {
+                          "__type": "Sandbox.Prop",
+                          "__guid": "36cbf631-745f-4df4-b02e-c84359f9d522",
+                          "BodyGroups": 18446744073709551615,
+                          "Health": 0,
+                          "IsStatic": true,
+                          "Model": "models/unicycles/default/parts/pedals/default_pedal.vmdl"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "__guid": "2935164f-620b-4054-9fde-18d78a39ca5e",
+      "Name": "wood_straight_384",
+      "Position": "-6272,2944,384",
+      "Tags": "gridtile",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "Components": [
+        {
+          "__type": "Sandbox.Prop",
+          "__guid": "d7435bdf-2014-42f3-9dca-5f7c9071effd",
+          "BodyGroups": 18446744073709551615,
+          "Health": 0,
+          "IsStatic": true,
+          "Model": "models/track_tileset_pieces/wood/wood_straight_384.vmdl"
+        },
+        {
+          "__type": "TrackPiece",
+          "__guid": "1d9422f7-51a3-4311-91e6-c33db287ad86"
+        }
+      ]
+    },
+    {
+      "__guid": "a5d08283-723d-4d8f-881f-35ab2dec9d78",
+      "Name": "wood_straight_384",
+      "Position": "-5888,2944,384",
+      "Tags": "gridtile",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "Components": [
+        {
+          "__type": "Sandbox.Prop",
+          "__guid": "2d0154f6-d32c-4416-80cd-89faf4db2091",
+          "BodyGroups": 18446744073709551615,
+          "Health": 0,
+          "IsStatic": true,
+          "Model": "models/track_tileset_pieces/wood/wood_straight_384.vmdl"
+        },
+        {
+          "__type": "TrackPiece",
+          "__guid": "3649ffb7-0f1d-4ddf-8c7a-bdb26bd4cc86"
+        }
+      ]
+    },
+    {
+      "__guid": "df915fed-f60e-429c-852e-8616808fe017",
+      "Name": "wood_straight_384",
+      "Position": "-5504,2944,384",
+      "Tags": "gridtile",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "Components": [
+        {
+          "__type": "Sandbox.Prop",
+          "__guid": "4346ab07-7a13-40b1-906c-d75df74cdc81",
+          "BodyGroups": 18446744073709551615,
+          "Health": 0,
+          "IsStatic": true,
+          "Model": "models/track_tileset_pieces/wood/wood_straight_384.vmdl"
+        },
+        {
+          "__type": "TrackPiece",
+          "__guid": "f81cce28-cdd3-4f52-b9bc-dc7886533493"
+        }
+      ]
+    },
+    {
+      "__guid": "c7efd1aa-423e-4dac-b8a2-949f5b84dc56",
+      "Name": "wood_straight_384",
+      "Position": "-5120,2944,384",
+      "Tags": "gridtile",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "Components": [
+        {
+          "__type": "Sandbox.Prop",
+          "__guid": "d65ec7a7-47bf-4362-8f6f-567226d323f7",
+          "BodyGroups": 18446744073709551615,
+          "Health": 0,
+          "IsStatic": true,
+          "Model": "models/track_tileset_pieces/wood/wood_straight_384.vmdl"
+        },
+        {
+          "__type": "TrackPiece",
+          "__guid": "cd4fc6d4-5a2a-4ab3-9b89-ba3204ab1573"
+        }
+      ]
+    },
+    {
+      "__guid": "523ea0e3-7334-4ce0-a73d-635580ae7e8d",
+      "Name": "wood_turnr_192",
+      "Position": "-4736,2944,384.0001",
+      "Tags": "gridtile",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "Components": [
+        {
+          "__type": "Sandbox.Prop",
+          "__guid": "33fb0abf-47cc-4ea4-bb5a-6d4bfd4d7d64",
+          "BodyGroups": 18446744073709551615,
+          "Health": 0,
+          "IsStatic": true,
+          "Model": "models/track_tileset_pieces/wood/wood_turnr_192.vmdl"
+        },
+        {
+          "__type": "TrackPiece",
+          "__guid": "6b628da2-6c10-467c-af7f-ea92443fb49b"
+        }
+      ]
+    },
+    {
+      "__guid": "3c3c57d8-96d7-4cfe-859c-83350d93ddda",
+      "Name": "wood_turnl_192",
+      "Position": "-4736,2560,384",
+      "Rotation": "0.00000005960464,0.00000005960464,-0.7071068,0.7071068",
+      "Tags": "gridtile",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "Components": [
+        {
+          "__type": "Sandbox.Prop",
+          "__guid": "e093ec84-5441-47ec-bb69-dfccff713560",
+          "BodyGroups": 18446744073709551615,
+          "Health": 0,
+          "IsStatic": true,
+          "Model": "models/track_tileset_pieces/wood/wood_turnl_192.vmdl"
+        },
+        {
+          "__type": "TrackPiece",
+          "__guid": "3672db58-0836-4c4d-920c-df02c69dde98"
+        }
+      ]
+    },
+    {
+      "__guid": "7ced9edd-cb90-41a0-8dd3-e5895c7b109e",
+      "Name": "wood_straight_384",
+      "Position": "-4352,2560,384",
+      "Tags": "gridtile",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "Components": [
+        {
+          "__type": "Sandbox.Prop",
+          "__guid": "d08ae06c-9036-4029-894f-e42c2be77c09",
+          "BodyGroups": 18446744073709551615,
+          "Health": 0,
+          "IsStatic": true,
+          "Model": "models/track_tileset_pieces/wood/wood_straight_384.vmdl"
+        },
+        {
+          "__type": "TrackPiece",
+          "__guid": "4bfb4b10-1dad-42b2-ac7f-d1f4928981b7"
+        }
+      ]
+    },
+    {
+      "__guid": "124dd633-c8a0-418e-be2f-033a0ac0a7b3",
+      "Name": "wood_straight_384",
+      "Position": "-3968,2560,384",
+      "Tags": "gridtile",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "Components": [
+        {
+          "__type": "Sandbox.Prop",
+          "__guid": "61d4253b-9acb-4804-922c-cc6b6506f2dc",
+          "BodyGroups": 18446744073709551615,
+          "Health": 0,
+          "IsStatic": true,
+          "Model": "models/track_tileset_pieces/wood/wood_straight_384.vmdl"
+        },
+        {
+          "__type": "TrackPiece",
+          "__guid": "03180acb-8d28-4a42-ad6f-40ad97002552"
+        }
+      ]
+    },
+    {
+      "__guid": "de8e05a9-9505-41db-9591-3f05155893c4",
+      "Name": "wood_straight_384",
+      "Position": "-3584,2560,384",
+      "Tags": "gridtile",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "Components": [
+        {
+          "__type": "Sandbox.Prop",
+          "__guid": "e94f9323-0b91-4bb7-b7c8-ed38e877853c",
+          "BodyGroups": 18446744073709551615,
+          "Health": 0,
+          "IsStatic": true,
+          "Model": "models/track_tileset_pieces/wood/wood_straight_384.vmdl"
+        },
+        {
+          "__type": "TrackPiece",
+          "__guid": "44b7536c-b2fb-4dc6-8b29-53d0efec53c3"
+        }
+      ]
+    }
+  ],
+  "SceneProperties": {
+    "FixedUpdateFrequency": 50,
+    "Lerping": true,
+    "MaxFixedUpdates": 5,
+    "NetworkFrequency": 30,
+    "ThreadedAnimation": true,
+    "TimeScale": 1,
+    "UseFixedUpdate": true,
+    "NavMesh": {
+      "Enabled": false,
+      "IncludeStaticBodies": true,
+      "IncludeKeyframedBodies": true,
+      "EditorAutoUpdate": true,
+      "AgentHeight": 64,
+      "AgentRadius": 16,
+      "AgentStepSize": 18,
+      "AgentMaxSlope": 40,
+      "ExcludedBodies": "",
+      "IncludedBodies": ""
+    }
+  },
+  "Title": "tutorial_01",
+  "Description": "",
+  "LastSaved": "2024-04-29T14:42:19.0091475-04:00",
+  "ResourceVersion": 1,
+  "__version": 1,
+  "__references": [
+    "polyhaven.kloofendal_43d_clear_puresky"
+  ]
+}
