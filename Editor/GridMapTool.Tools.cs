@@ -7,7 +7,7 @@ namespace Editor;
 public partial class GridMapTool
 {
 	private SceneTraceResult projectedPoint;
-	public int FloorHeight = 128;
+	public int FloorHeight = 96;
 
 	public SceneTraceResult CursorRay (Ray cursorRay )
 	{
