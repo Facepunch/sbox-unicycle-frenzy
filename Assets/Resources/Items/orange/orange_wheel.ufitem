@@ -1,0 +1,17 @@
+{
+  "ItemName": "Orange",
+  "ItemDescription": null,
+  "ItemImage": "resources/items/orange/orange_wheel.png",
+  "IsMaterial": true,
+  "ItemModel": "models/unicycles/default/parts/wheels/default_wheel.vmdl",
+  "ItemMaterial": "models/unicycles/orange/unicycleorange.vmat",
+  "ItemCategory": "Wheel",
+  "ItemRarity": "Common",
+  "Skins": [],
+  "Icon": {
+    "Path": "resources\\items\\orange/orange_wheel.png"
+  },
+  "ResourceVersion": 0,
+  "__version": 0,
+  "__references": []
+}

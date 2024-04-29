@@ -1,0 +1,17 @@
+{
+  "ItemName": "LKA",
+  "ItemDescription": null,
+  "ItemImage": "resources/items/ika/lka_wheel.png",
+  "IsMaterial": true,
+  "ItemModel": "models/unicycles/default/parts/wheels/default_wheel.vmdl",
+  "ItemMaterial": "models/unicycles/lka/unicyclelka.vmat",
+  "ItemCategory": "Wheel",
+  "ItemRarity": "Common",
+  "Skins": [],
+  "Icon": {
+    "Path": "resources\\items\\ika/lka_wheel.png"
+  },
+  "ResourceVersion": 0,
+  "__version": 0,
+  "__references": []
+}

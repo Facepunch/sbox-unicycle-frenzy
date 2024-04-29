@@ -62,7 +62,22 @@
 
 		Camera.Transform.Position = lerpedPos;
 		Camera.Transform.Rotation = lerpedRot;
+
+		var citizen = Scene.GetAllComponents<SkinnedModelRenderer>().FirstOrDefault(x => x.Tags.Has("citizen"));
+		if (citizen != null)
+		{
+
+			var lookAt = Camera.Transform.Position - citizen.Transform.Position - Vector3.Up * 70;
+
+			citizen.SetLookDirection("aim_eyes", lookAt);
+			citizen.SetLookDirection("aim_head", lookAt);
+			citizen.SetLookDirection("aim_body", lookAt);
+		}
 	}
+
+	Vector3 lookPos;
+	Vector3 headPos;
+	Vector3 aimPos;
 
 	public struct PageCameraSetup
 	{

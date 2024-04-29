@@ -232,123 +232,12 @@
       ]
     },
     {
-      "__guid": "a7f43004-73a9-4ed2-bafd-7108b90153ca",
-      "Name": "citizen",
+      "__guid": "bcc4bed1-8c0d-423d-aac7-fed6bf584dfa",
+      "Name": "Object",
       "Position": "-190.7829,-85.53548,-0.0000002521072",
       "Rotation": "0,0,0.8660253,0.5000001",
       "Enabled": true,
-      "NetworkMode": 2,
-      "Components": [
-        {
-          "__type": "Sandbox.SkinnedModelRenderer",
-          "__guid": "98b1f2cb-8328-4339-99fc-df192bb4f369",
-          "BodyGroups": 21,
-          "CreateBoneObjects": false,
-          "Model": "models/citizen/citizen.vmdl",
-          "RenderType": "On",
-          "Tint": "1,1,1,1"
-        }
-      ],
-      "Children": [
-        {
-          "__guid": "79bb7e9e-0210-4de0-a2e4-e7b09aef0f21",
-          "Name": "Object",
-          "Position": "0,0,0",
-          "Enabled": true,
-          "NetworkMode": 2,
-          "Components": [
-            {
-              "__type": "Sandbox.SkinnedModelRenderer",
-              "__guid": "110396bf-e728-48ba-be0d-ec819e01a0c7",
-              "BodyGroups": 18446744073709551615,
-              "BoneMergeTarget": {
-                "_type": "component",
-                "component_id": "98b1f2cb-8328-4339-99fc-df192bb4f369",
-                "go": "a7f43004-73a9-4ed2-bafd-7108b90153ca",
-                "component_type": "SkinnedModelRenderer"
-              },
-              "CreateBoneObjects": false,
-              "Model": "models/citizen_clothes/hat/skater_helmet/models/skater_helmet_white.vmdl",
-              "RenderType": "On",
-              "Tint": "1,1,1,1"
-            }
-          ]
-        },
-        {
-          "__guid": "c29cc909-11a0-471f-9d1f-91a3c28996aa",
-          "Name": "Object (1)",
-          "Position": "0,0,0",
-          "Enabled": true,
-          "NetworkMode": 2,
-          "Components": [
-            {
-              "__type": "Sandbox.SkinnedModelRenderer",
-              "__guid": "abce8b01-82e0-4b64-90ad-1af1fb014dfc",
-              "BodyGroups": 18446744073709551615,
-              "BoneMergeTarget": {
-                "_type": "component",
-                "component_id": "98b1f2cb-8328-4339-99fc-df192bb4f369",
-                "go": "a7f43004-73a9-4ed2-bafd-7108b90153ca",
-                "component_type": "SkinnedModelRenderer"
-              },
-              "CreateBoneObjects": false,
-              "Model": "models/citizen_clothes/gloves/goalie_gloves/models/goalie_gloves.vmdl",
-              "RenderType": "On",
-              "Tint": "1,1,1,1"
-            }
-          ]
-        },
-        {
-          "__guid": "635e9578-f83a-4ca8-b4c9-b28e67907e91",
-          "Name": "Object (2)",
-          "Position": "0,0,0",
-          "Rotation": "0,0,-0.8660253,0.5000001",
-          "Enabled": true,
-          "NetworkMode": 2,
-          "Components": [
-            {
-              "__type": "Sandbox.SkinnedModelRenderer",
-              "__guid": "f50685b9-d0c9-4cc1-86b4-41570c2d50fa",
-              "BodyGroups": 18446744073709551615,
-              "BoneMergeTarget": {
-                "_type": "component",
-                "component_id": "98b1f2cb-8328-4339-99fc-df192bb4f369",
-                "go": "a7f43004-73a9-4ed2-bafd-7108b90153ca",
-                "component_type": "SkinnedModelRenderer"
-              },
-              "CreateBoneObjects": false,
-              "Model": "models/citizen_clothes/shirt/leotard/models/leotard_blue.vmdl",
-              "RenderType": "On",
-              "Tint": "1,1,1,1"
-            }
-          ]
-        },
-        {
-          "__guid": "db84428c-c50c-4cb2-9ebc-8d6949341876",
-          "Name": "Object (2)",
-          "Position": "0,0,0",
-          "Rotation": "0,0,-0.8660253,0.5000001",
-          "Enabled": true,
-          "NetworkMode": 2,
-          "Components": [
-            {
-              "__type": "Sandbox.SkinnedModelRenderer",
-              "__guid": "c18b2eae-7971-4bec-a355-ac29888c4ff0",
-              "BodyGroups": 18446744073709551615,
-              "BoneMergeTarget": {
-                "_type": "component",
-                "component_id": "98b1f2cb-8328-4339-99fc-df192bb4f369",
-                "go": "a7f43004-73a9-4ed2-bafd-7108b90153ca",
-                "component_type": "SkinnedModelRenderer"
-              },
-              "CreateBoneObjects": false,
-              "Model": "models/citizen_clothes/shoes/boots/models/black_boots.vmdl",
-              "RenderType": "On",
-              "Tint": "1,1,1,1"
-            }
-          ]
-        }
-      ]
+      "NetworkMode": 2
     },
     {
       "__guid": "df91c267-296e-46aa-8f29-6759e2b013d4",
@@ -379,20 +268,20 @@
                   "__guid": "8264d516-b6a0-4302-89a1-aae6cd09d376",
                   "Frame": {
                     "_type": "component",
-                    "component_id": "67ec970b-fa9a-407c-8226-7ffe430fed1b",
+                    "component_id": "80280f0e-c477-4d36-b0ae-e3634aee24dd",
                     "go": "788781c8-0927-4dac-938d-6f3e904e4131",
                     "component_type": "ModelRenderer"
                   },
                   "IsMenu": true,
                   "LeftPedal": {
                     "_type": "component",
-                    "component_id": "fb3e9808-6239-4486-a1b8-54254226c77c",
+                    "component_id": "a6a99560-ddb5-49c1-85de-787f15e0ee0a",
                     "go": "62318272-9110-4cd5-baad-12a540190a43",
                     "component_type": "SkinnedModelRenderer"
                   },
                   "RightPedal": {
                     "_type": "component",
-                    "component_id": "742bf148-eda2-4ef0-8631-75c96fa6ff17",
+                    "component_id": "401c0f96-789e-4bd6-9927-2f70da76a269",
                     "go": "f9ccdbac-ff8c-487b-8d5d-b0670392d01a",
                     "component_type": "SkinnedModelRenderer"
                   },
@@ -404,7 +293,7 @@
                   },
                   "Wheel": {
                     "_type": "component",
-                    "component_id": "dd7e74e7-c243-40a1-b243-d83b2dd10988",
+                    "component_id": "4bd61ac5-d04e-4c33-b160-dc4a4dbf65df",
                     "go": "7e4c8815-ca00-44ec-ab86-5d7bba132acd",
                     "component_type": "ModelRenderer"
                   }
@@ -988,6 +877,30 @@
           "Static": true
         }
       ]
+    },
+    {
+      "__guid": "6388b61d-c644-4985-b9aa-2fe1ef96340f",
+      "Name": "Object",
+      "Position": "-147.9419,-120.1903,43.97271",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "Components": [
+        {
+          "__type": "Sandbox.NetworkHelper",
+          "__guid": "65e832c9-26dd-4210-83b5-c175d59e83ee",
+          "PlayerPrefab": {
+            "_type": "gameobject",
+            "prefab": "prefabs/menu/menu_citizen.prefab"
+          },
+          "SpawnPoints": [
+            {
+              "_type": "gameobject",
+              "go": "bcc4bed1-8c0d-423d-aac7-fed6bf584dfa"
+            }
+          ],
+          "StartServer": true
+        }
+      ]
     }
   ],
   "SceneProperties": {
@@ -1013,7 +926,7 @@
   },
   "Title": "menu",
   "Description": "",
-  "LastSaved": "2024-04-29T19:55:08.0113009\u002B01:00",
+  "LastSaved": "2024-04-29T21:04:54.0856206\u002B01:00",
   "ResourceVersion": 1,
   "__version": 1,
   "__references": []

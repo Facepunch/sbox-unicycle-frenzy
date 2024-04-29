@@ -1,0 +1,17 @@
+{
+  "ItemName": "Racer",
+  "ItemDescription": null,
+  "ItemImage": "resources/items/racer/racer_pedal.png",
+  "IsMaterial": true,
+  "ItemModel": "models/unicycles/default/parts/pedals/default_pedal.vmdl",
+  "ItemMaterial": "models/unicycles/racer set/unicycleracer.vmat",
+  "ItemCategory": "Pedal",
+  "ItemRarity": "Common",
+  "Skins": [],
+  "Icon": {
+    "Path": "resources\\items\\racer/racer_pedal.png"
+  },
+  "ResourceVersion": 0,
+  "__version": 0,
+  "__references": []
+}

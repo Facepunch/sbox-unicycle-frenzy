@@ -1,0 +1,17 @@
+{
+  "ItemName": "LKA",
+  "ItemDescription": null,
+  "ItemImage": "resources/items/ika/lka_seat.png",
+  "IsMaterial": true,
+  "ItemModel": "models/unicycles/default/parts/seats/default_seat.vmdl",
+  "ItemMaterial": "models/unicycles/lka/unicyclelka.vmat",
+  "ItemCategory": "Seat",
+  "ItemRarity": "Common",
+  "Skins": [],
+  "Icon": {
+    "Path": "resources\\items\\ika/lka_seat.png"
+  },
+  "ResourceVersion": 0,
+  "__version": 0,
+  "__references": []
+}

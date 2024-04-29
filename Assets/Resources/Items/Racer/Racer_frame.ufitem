@@ -1,0 +1,17 @@
+{
+  "ItemName": "Racer",
+  "ItemDescription": null,
+  "ItemImage": "resources/items/racer/racer_frame.png",
+  "IsMaterial": true,
+  "ItemModel": "models/unicycles/default/parts/frames/default_frame.vmdl",
+  "ItemMaterial": "models/unicycles/racer set/unicycleracer.vmat",
+  "ItemCategory": "Frame",
+  "ItemRarity": "Common",
+  "Skins": [],
+  "Icon": {
+    "Path": "resources\\items\\racer/racer_frame.png"
+  },
+  "ResourceVersion": 0,
+  "__version": 0,
+  "__references": []
+}

@@ -1,0 +1,17 @@
+{
+  "ItemName": "Orange",
+  "ItemDescription": null,
+  "ItemImage": "resources/items/orange/orange_frame.png",
+  "IsMaterial": true,
+  "ItemModel": "models/unicycles/default/parts/frames/default_frame.vmdl",
+  "ItemMaterial": "models/unicycles/orange/unicycleorange.vmat",
+  "ItemCategory": "Frame",
+  "ItemRarity": "Common",
+  "Skins": [],
+  "Icon": {
+    "Path": "resources\\items\\orange/orange_frame.png"
+  },
+  "ResourceVersion": 0,
+  "__version": 0,
+  "__references": []
+}

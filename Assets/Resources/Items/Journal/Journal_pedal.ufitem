@@ -1,0 +1,17 @@
+{
+  "ItemName": "Journal",
+  "ItemDescription": null,
+  "ItemImage": "resources/items/journal/journal_pedal.png",
+  "IsMaterial": true,
+  "ItemModel": "models/unicycles/default/parts/pedals/default_pedal.vmdl",
+  "ItemMaterial": "models/unicycles/journal set/unicyclejournal.vmat",
+  "ItemCategory": "Pedal",
+  "ItemRarity": "Common",
+  "Skins": [],
+  "Icon": {
+    "Path": "resources\\items\\journal/journal_pedal.png"
+  },
+  "ResourceVersion": 0,
+  "__version": 0,
+  "__references": []
+}

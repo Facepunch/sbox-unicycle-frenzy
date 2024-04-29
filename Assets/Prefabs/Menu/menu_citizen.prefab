@@ -1,0 +1,37 @@
+{
+  "RootObject": {
+    "__guid": "5bb84f22-349b-4592-a358-93d053b8b81d",
+    "Name": "menu_citizen",
+    "Tags": "citizen",
+    "Enabled": true,
+    "NetworkMode": 2,
+    "Components": [
+      {
+        "__type": "Sandbox.SkinnedModelRenderer",
+        "__guid": "10140326-96fc-454e-b226-6da6182d94a1",
+        "BodyGroups": 341,
+        "CreateBoneObjects": false,
+        "Model": "models/citizen/citizen.vmdl",
+        "RenderType": "On",
+        "Tint": "1,1,1,1"
+      },
+      {
+        "__type": "ClothingDresser",
+        "__guid": "4624b806-705a-4a6e-ab24-cf40c0c49f7b",
+        "BodyRenderer": {
+          "_type": "component",
+          "component_id": "10140326-96fc-454e-b226-6da6182d94a1",
+          "go": "5bb84f22-349b-4592-a358-93d053b8b81d",
+          "component_type": "SkinnedModelRenderer"
+        }
+      }
+    ],
+    "Children": []
+  },
+  "ShowInMenu": false,
+  "MenuPath": null,
+  "MenuIcon": null,
+  "ResourceVersion": 1,
+  "__version": 1,
+  "__references": []
+}

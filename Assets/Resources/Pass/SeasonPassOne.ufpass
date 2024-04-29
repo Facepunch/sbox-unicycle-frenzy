@@ -39,6 +39,62 @@
       "Item": "resources/items/ika/lka_skin.ufitem",
       "XPNeeded": 800,
       "ShowInPass": true
+    },
+    {
+      "Item": "resources/items/orange/orange_seat.ufitem",
+      "XPNeeded": 10,
+      "ShowInPass": true
+    },
+    {
+      "Item": "resources/items/orange/orange_pedal.ufitem",
+      "XPNeeded": 20,
+      "ShowInPass": true
+    },
+    {
+      "Item": "resources/items/orange/orange_wheel.ufitem",
+      "XPNeeded": 30,
+      "ShowInPass": true
+    },
+    {
+      "Item": "resources/items/orange/orange_frame.ufitem",
+      "XPNeeded": 50,
+      "ShowInPass": true
+    },
+    {
+      "Item": "resources/items/journal/journal_seat.ufitem",
+      "XPNeeded": 1
+    },
+    {
+      "Item": "resources/items/journal/journal_pedal.ufitem",
+      "XPNeeded": 2
+    },
+    {
+      "Item": "resources/items/journal/journal_wheel.ufitem",
+      "XPNeeded": 3
+    },
+    {
+      "Item": "resources/items/journal/journal_frame.ufitem",
+      "XPNeeded": 4
+    },
+    {
+      "Item": "resources/items/racer/racer_pedal.ufitem",
+      "XPNeeded": 1
+    },
+    {
+      "Item": "resources/items/racer/racer_seat.ufitem",
+      "XPNeeded": 2
+    },
+    {
+      "Item": "resources/items/racer/racer_wheel.ufitem",
+      "XPNeeded": 3
+    },
+    {
+      "Item": "resources/items/racer/racer_frame.ufitem",
+      "XPNeeded": 4
+    },
+    {
+      "Item": "resources/items/ika/lka_seat.ufitem",
+      "XPNeeded": 4
     }
   ],
   "MaxSeasonXP": 1000,
