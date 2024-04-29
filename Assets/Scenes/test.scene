@@ -4,7 +4,7 @@
     {
       "__guid": "469ca648-d4c5-4637-ad7c-3263fd8b4d64",
       "Name": "player and camera",
-      "Position": "-1152,768,53.81021",
+      "Position": "-1056,800,53.81094",
       "Enabled": true,
       "NetworkMode": 2,
       "Children": [
@@ -221,8 +221,8 @@
     {
       "__guid": "401f2432-00ee-4f46-ab6d-a5c3c4dfb4ce",
       "Name": "Sun",
-      "Position": "96.06752,0,512",
-      "Rotation": "-0.1464466,0.3535534,0.3535534,0.8535535",
+      "Position": "811.607,0,512",
+      "Rotation": "-0.2081446,0.3211269,0.5025055,0.7752687",
       "Tags": "light_directional,light",
       "Enabled": true,
       "NetworkMode": 2,
@@ -241,7 +241,8 @@
     {
       "__guid": "6a54d9a8-61d8-4f99-9457-09f8fb37e3bf",
       "Name": "2D Skybox",
-      "Position": "8.036308,0,512",
+      "Position": "723.5758,0,512",
+      "Rotation": "0,0,0.792823,0.6094519",
       "Tags": "skybox",
       "Enabled": true,
       "NetworkMode": 2,
@@ -271,278 +272,6 @@
       ]
     },
     {
-      "__guid": "7290b6af-f4d3-48b5-8a24-66ab23c2e328",
-      "Name": "wood_straight_384",
-      "Position": "128,-64,0",
-      "Tags": "gridtile",
-      "Enabled": true,
-      "NetworkMode": 2,
-      "Components": [
-        {
-          "__type": "Sandbox.Prop",
-          "__guid": "04eb2049-905d-4aa6-bc24-5e14cc45ec97",
-          "BodyGroups": 18446744073709551615,
-          "Health": 0,
-          "IsStatic": true,
-          "Model": "models/track_tileset_pieces/wood/wood_straight_384.vmdl"
-        }
-      ]
-    },
-    {
-      "__guid": "15f77288-7c83-45c4-bb11-c589eeeb7ecb",
-      "Name": "wood_straight_384",
-      "Position": "512,-64,0",
-      "Tags": "gridtile",
-      "Enabled": true,
-      "NetworkMode": 2,
-      "Components": [
-        {
-          "__type": "Sandbox.Prop",
-          "__guid": "bfd6a309-2a7d-4b66-af9b-85a5fac05779",
-          "BodyGroups": 18446744073709551615,
-          "Health": 0,
-          "IsStatic": true,
-          "Model": "models/track_tileset_pieces/wood/wood_straight_384.vmdl"
-        }
-      ]
-    },
-    {
-      "__guid": "33835ead-14bd-4ba7-9138-8d10f35699c0",
-      "Name": "wood_straight_384",
-      "Position": "896,-64,0",
-      "Tags": "gridtile",
-      "Enabled": true,
-      "NetworkMode": 2,
-      "Components": [
-        {
-          "__type": "Sandbox.Prop",
-          "__guid": "f6ccb870-7555-4d78-a4c5-4307a3ce6428",
-          "BodyGroups": 18446744073709551615,
-          "Health": 0,
-          "IsStatic": true,
-          "Model": "models/track_tileset_pieces/wood/wood_straight_384.vmdl"
-        }
-      ]
-    },
-    {
-      "__guid": "507d1aa4-b090-4f57-ad66-03777719cb9e",
-      "Name": "wood_straight_384",
-      "Position": "1280,-64,0",
-      "Tags": "gridtile",
-      "Enabled": true,
-      "NetworkMode": 2,
-      "Components": [
-        {
-          "__type": "Sandbox.Prop",
-          "__guid": "7669e3be-be03-4cc4-ba99-c80dec8866b8",
-          "BodyGroups": 18446744073709551615,
-          "Health": 0,
-          "IsStatic": true,
-          "Model": "models/track_tileset_pieces/wood/wood_straight_384.vmdl"
-        }
-      ]
-    },
-    {
-      "__guid": "fcccb51d-072d-4cf7-82eb-2c4e08161301",
-      "Name": "wood_slope_384x96",
-      "Position": "1664,-64,0",
-      "Tags": "gridtile",
-      "Enabled": true,
-      "NetworkMode": 2,
-      "Components": [
-        {
-          "__type": "Sandbox.Prop",
-          "__guid": "b6adc3b9-e250-4fc6-bdd9-516684c4d6d2",
-          "BodyGroups": 18446744073709551615,
-          "Health": 0,
-          "IsStatic": true,
-          "Model": "models/track_tileset_pieces/wood/wood_slope_384x96.vmdl"
-        }
-      ]
-    },
-    {
-      "__guid": "80f48be5-16cd-4350-b9d5-a38a7e52abe2",
-      "Name": "wood_slope_384x192",
-      "Position": "2048,-64,96",
-      "Tags": "gridtile",
-      "Enabled": true,
-      "NetworkMode": 2,
-      "Components": [
-        {
-          "__type": "Sandbox.Prop",
-          "__guid": "daf47e25-bed6-44d4-b7fd-363dc820826b",
-          "BodyGroups": 18446744073709551615,
-          "Health": 0,
-          "IsStatic": true,
-          "Model": "models/track_tileset_pieces/wood/wood_slope_384x192.vmdl"
-        }
-      ]
-    },
-    {
-      "__guid": "58c9b1ae-5ef3-4cfd-bc65-2c323a1ffb62",
-      "Name": "wood_straight_384",
-      "Position": "2432,-64,288",
-      "Tags": "gridtile",
-      "Enabled": true,
-      "NetworkMode": 2,
-      "Components": [
-        {
-          "__type": "Sandbox.Prop",
-          "__guid": "85ba2bc1-0ca7-4314-980a-30219f8091af",
-          "BodyGroups": 18446744073709551615,
-          "Health": 0,
-          "IsStatic": true,
-          "Model": "models/track_tileset_pieces/wood/wood_straight_384.vmdl"
-        }
-      ]
-    },
-    {
-      "__guid": "2f62f45f-a83e-42b6-a15e-0dd841af1a2b",
-      "Name": "wood_turnr_192",
-      "Position": "2816,-64,288.0001",
-      "Tags": "gridtile",
-      "Enabled": true,
-      "NetworkMode": 2,
-      "Components": [
-        {
-          "__type": "Sandbox.Prop",
-          "__guid": "1f3b4b54-30de-4544-9676-9228f4c268f8",
-          "BodyGroups": 18446744073709551615,
-          "Health": 0,
-          "IsStatic": true,
-          "Model": "models/track_tileset_pieces/wood/wood_turnr_192.vmdl"
-        }
-      ]
-    },
-    {
-      "__guid": "e43f6b2b-2dae-4a00-8770-697179b88ebb",
-      "Name": "wood_turnl_192",
-      "Position": "2816,-448,288",
-      "Rotation": "0.00000005960464,0.00000005960464,-0.7071068,0.7071068",
-      "Tags": "gridtile",
-      "Enabled": true,
-      "NetworkMode": 2,
-      "Components": [
-        {
-          "__type": "Sandbox.Prop",
-          "__guid": "e66afe93-c93f-4687-a1c4-4018a54b2d75",
-          "BodyGroups": 18446744073709551615,
-          "Health": 0,
-          "IsStatic": true,
-          "Model": "models/track_tileset_pieces/wood/wood_turnl_192.vmdl"
-        }
-      ]
-    },
-    {
-      "__guid": "a82e7497-e0e3-41d9-8ae9-93311ea4a220",
-      "Name": "wood_straight_384",
-      "Position": "3200,-448,288",
-      "Tags": "gridtile",
-      "Enabled": true,
-      "NetworkMode": 2,
-      "Components": [
-        {
-          "__type": "Sandbox.Prop",
-          "__guid": "5d4c0c9d-5d2c-4477-bcf8-6d7defb609c8",
-          "BodyGroups": 18446744073709551615,
-          "Health": 0,
-          "IsStatic": true,
-          "Model": "models/track_tileset_pieces/wood/wood_straight_384.vmdl"
-        }
-      ]
-    },
-    {
-      "__guid": "50449be8-91d6-4212-be62-a272a6367a3d",
-      "Name": "wood_straight_384",
-      "Position": "3584,-448,288",
-      "Tags": "gridtile",
-      "Enabled": true,
-      "NetworkMode": 2,
-      "Components": [
-        {
-          "__type": "Sandbox.Prop",
-          "__guid": "e5cf460e-c24b-4bfe-af39-78c8635abaf0",
-          "BodyGroups": 18446744073709551615,
-          "Health": 0,
-          "IsStatic": true,
-          "Model": "models/track_tileset_pieces/wood/wood_straight_384.vmdl"
-        }
-      ]
-    },
-    {
-      "__guid": "ce025fef-f7bd-4691-b611-55bf51eee365",
-      "Name": "wood_turnl_576",
-      "Position": "4352,-448,288",
-      "Tags": "gridtile",
-      "Enabled": true,
-      "NetworkMode": 2,
-      "Components": [
-        {
-          "__type": "Sandbox.Prop",
-          "__guid": "a04ebc73-ed53-41fc-bd23-14563dadfc5d",
-          "BodyGroups": 18446744073709551615,
-          "Health": 0,
-          "IsStatic": true,
-          "Model": "models/track_tileset_pieces/wood/wood_turnl_576.vmdl"
-        }
-      ]
-    },
-    {
-      "__guid": "b36522bd-c491-496b-baac-5fbdf23fb507",
-      "Name": "wood_turnr_576",
-      "Position": "4352,704,288",
-      "Rotation": "0,0,0.7071067,0.7071067",
-      "Tags": "gridtile",
-      "Enabled": true,
-      "NetworkMode": 2,
-      "Components": [
-        {
-          "__type": "Sandbox.Prop",
-          "__guid": "b5cb9ca0-33bb-4832-8348-46900ddcbc37",
-          "BodyGroups": 18446744073709551615,
-          "Health": 0,
-          "IsStatic": true,
-          "Model": "models/track_tileset_pieces/wood/wood_turnr_576.vmdl"
-        }
-      ]
-    },
-    {
-      "__guid": "4ff75008-7d2b-4faa-82c0-f067db80faed",
-      "Name": "wood_posts",
-      "Position": "128,-64,0",
-      "Tags": "gridtile",
-      "Enabled": true,
-      "NetworkMode": 2,
-      "Components": [
-        {
-          "__type": "Sandbox.Prop",
-          "__guid": "bffee0e5-e594-48c6-8225-db9c1a6a4eee",
-          "BodyGroups": 18446744073709551615,
-          "Health": 0,
-          "IsStatic": true,
-          "Model": "models/track_tileset_pieces/wood/wood_posts.vmdl"
-        }
-      ]
-    },
-    {
-      "__guid": "99daa63e-5e20-4f99-bab1-1238c4c5b013",
-      "Name": "wood_nowalls_straight_384",
-      "Position": "128,-1024,0",
-      "Tags": "gridtile",
-      "Enabled": true,
-      "NetworkMode": 2,
-      "Components": [
-        {
-          "__type": "Sandbox.Prop",
-          "__guid": "29c03c74-b279-4211-bf67-e40917126072",
-          "BodyGroups": 18446744073709551615,
-          "Health": 0,
-          "IsStatic": true,
-          "Model": "models/track_tileset_pieces/wood/nowalls/wood_nowalls_straight_384.vmdl"
-        }
-      ]
-    },
-    {
       "__guid": "6d7c4ac3-2ccd-4f06-a444-fe7962542b42",
       "Name": "wood_nowalls_straight_384 (3)",
       "Position": "-1024,768,0",
@@ -557,1035 +286,6 @@
           "Health": 0,
           "IsStatic": true,
           "Model": "models/track_tileset_pieces/wood/nowalls/wood_nowalls_straight_384.vmdl"
-        }
-      ]
-    },
-    {
-      "__guid": "87ae7e4e-1d33-4453-bbcc-c63f98db4b42",
-      "Name": "wood_nowalls_straight_384",
-      "Position": "512,-1024,0.00006103516",
-      "Tags": "gridtile",
-      "Enabled": true,
-      "NetworkMode": 2,
-      "Components": [
-        {
-          "__type": "Sandbox.Prop",
-          "__guid": "5b942a39-5306-4e8b-b95c-2614d708c584",
-          "BodyGroups": 18446744073709551615,
-          "Health": 0,
-          "IsStatic": true,
-          "Model": "models/track_tileset_pieces/wood/nowalls/wood_nowalls_straight_384.vmdl"
-        }
-      ]
-    },
-    {
-      "__guid": "70208554-45ae-48f4-a3fe-1d63487e9d4b",
-      "Name": "wood_nowalls_straight_384",
-      "Position": "896,-1024,0.00006103516",
-      "Tags": "gridtile",
-      "Enabled": true,
-      "NetworkMode": 2,
-      "Components": [
-        {
-          "__type": "Sandbox.Prop",
-          "__guid": "f561cf8f-f3c2-4202-9cff-43bf968014b6",
-          "BodyGroups": 18446744073709551615,
-          "Health": 0,
-          "IsStatic": true,
-          "Model": "models/track_tileset_pieces/wood/nowalls/wood_nowalls_straight_384.vmdl"
-        }
-      ]
-    },
-    {
-      "__guid": "d47575e3-1a28-42de-b1d4-a908c3dd14a2",
-      "Name": "wood_nowalls_slope_384x96",
-      "Position": "1280,-1024,0",
-      "Tags": "gridtile",
-      "Enabled": true,
-      "NetworkMode": 2,
-      "Components": [
-        {
-          "__type": "Sandbox.Prop",
-          "__guid": "73076747-0249-48ef-bdf5-49b058464a1f",
-          "BodyGroups": 18446744073709551615,
-          "Health": 0,
-          "IsStatic": true,
-          "Model": "models/track_tileset_pieces/wood/nowalls/wood_nowalls_slope_384x96.vmdl"
-        }
-      ]
-    },
-    {
-      "__guid": "ad4899d6-6801-450a-9fee-28c39187cab9",
-      "Name": "wood_nowalls_slope_384x192",
-      "Position": "1664,-1024,96",
-      "Tags": "gridtile",
-      "Enabled": true,
-      "NetworkMode": 2,
-      "Components": [
-        {
-          "__type": "Sandbox.Prop",
-          "__guid": "ad4fc300-5790-42ac-bffe-5eb011abb64c",
-          "BodyGroups": 18446744073709551615,
-          "Health": 0,
-          "IsStatic": true,
-          "Model": "models/track_tileset_pieces/wood/nowalls/wood_nowalls_slope_384x192.vmdl"
-        }
-      ]
-    },
-    {
-      "__guid": "22431c23-72f4-4e9f-961e-aee348637a8d",
-      "Name": "wood_nowalls_straight_384",
-      "Position": "2048,-1024,288",
-      "Tags": "gridtile",
-      "Enabled": true,
-      "NetworkMode": 2,
-      "Components": [
-        {
-          "__type": "Sandbox.Prop",
-          "__guid": "94cf6b1b-47e4-4af2-9e29-5579745ebb21",
-          "BodyGroups": 18446744073709551615,
-          "Health": 0,
-          "IsStatic": true,
-          "Model": "models/track_tileset_pieces/wood/nowalls/wood_nowalls_straight_384.vmdl"
-        }
-      ]
-    },
-    {
-      "__guid": "a2c0590b-f27c-4c4f-9571-2f4cb05dafa7",
-      "Name": "wood_nowalls_turnr_192",
-      "Position": "2432,-1024,288",
-      "Tags": "gridtile",
-      "Enabled": true,
-      "NetworkMode": 2,
-      "Components": [
-        {
-          "__type": "Sandbox.Prop",
-          "__guid": "86dde50c-d72a-4417-bf5f-df230166c35a",
-          "BodyGroups": 18446744073709551615,
-          "Health": 0,
-          "IsStatic": true,
-          "Model": "models/track_tileset_pieces/wood/nowalls/wood_nowalls_turnr_192.vmdl"
-        }
-      ]
-    },
-    {
-      "__guid": "457f9501-29d1-42f6-abee-a2cb99fcfa76",
-      "Name": "wood_nowalls_turnl_192",
-      "Position": "2432,-1408,288",
-      "Rotation": "0.00000005960464,0.00000005960464,-0.7071068,0.7071068",
-      "Tags": "gridtile",
-      "Enabled": true,
-      "NetworkMode": 2,
-      "Components": [
-        {
-          "__type": "Sandbox.Prop",
-          "__guid": "8f937b54-8702-4a7b-95fc-b2999de81f37",
-          "BodyGroups": 18446744073709551615,
-          "Health": 0,
-          "IsStatic": true,
-          "Model": "models/track_tileset_pieces/wood/nowalls/wood_nowalls_turnl_192.vmdl"
-        }
-      ]
-    },
-    {
-      "__guid": "9e175a20-0989-4876-8d1b-6a158446f69a",
-      "Name": "wood_nowalls_straight_384",
-      "Position": "2816,-1408,288",
-      "Rotation": "0.00000005960464,0.00000005960464,-0.7071068,0.7071068",
-      "Tags": "gridtile",
-      "Enabled": true,
-      "NetworkMode": 2,
-      "Components": [
-        {
-          "__type": "Sandbox.Prop",
-          "__guid": "fb7190ec-2db4-4da3-b017-799821a418eb",
-          "BodyGroups": 18446744073709551615,
-          "Health": 0,
-          "IsStatic": true,
-          "Model": "models/track_tileset_pieces/wood/nowalls/wood_nowalls_straight_384.vmdl"
-        }
-      ]
-    },
-    {
-      "__guid": "6f472c24-f8ee-472a-ab36-441400b4aa85",
-      "Name": "wood_nowalls_straight_384",
-      "Position": "3200,-1408,288",
-      "Rotation": "0.00000005960464,0.00000005960464,-0.7071068,0.7071068",
-      "Tags": "gridtile",
-      "Enabled": true,
-      "NetworkMode": 2,
-      "Components": [
-        {
-          "__type": "Sandbox.Prop",
-          "__guid": "4df5c282-4481-46b4-b176-e422e7c2997e",
-          "BodyGroups": 18446744073709551615,
-          "Health": 0,
-          "IsStatic": true,
-          "Model": "models/track_tileset_pieces/wood/nowalls/wood_nowalls_straight_384.vmdl"
-        }
-      ]
-    },
-    {
-      "__guid": "5fa1c185-9ccd-4cce-8c4b-74f2542a4247",
-      "Name": "wood_nowalls_straight_384",
-      "Position": "3584,-1408,288",
-      "Rotation": "0.00000005960464,0.00000005960464,-0.7071068,0.7071068",
-      "Tags": "gridtile",
-      "Enabled": true,
-      "NetworkMode": 2,
-      "Components": [
-        {
-          "__type": "Sandbox.Prop",
-          "__guid": "0d6c2fad-3d92-47a3-b224-21ec6a55a904",
-          "BodyGroups": 18446744073709551615,
-          "Health": 0,
-          "IsStatic": true,
-          "Model": "models/track_tileset_pieces/wood/nowalls/wood_nowalls_straight_384.vmdl"
-        }
-      ]
-    },
-    {
-      "__guid": "7b40d3b5-40d8-49a5-a969-1babdd39f6d5",
-      "Name": "wood_nowalls_turnr_576",
-      "Position": "4352,-1408,288",
-      "Tags": "gridtile",
-      "Enabled": true,
-      "NetworkMode": 2,
-      "Components": [
-        {
-          "__type": "Sandbox.Prop",
-          "__guid": "9f642f39-d3ce-46cf-a90e-951051b25b98",
-          "BodyGroups": 18446744073709551615,
-          "Health": 0,
-          "IsStatic": true,
-          "Model": "models/track_tileset_pieces/wood/nowalls/wood_nowalls_turnr_576.vmdl"
-        }
-      ]
-    },
-    {
-      "__guid": "7d22dd0a-611b-40f1-9a50-719d1975392e",
-      "Name": "wood_nowalls_turnl_576",
-      "Position": "4352,-2560,288",
-      "Rotation": "0.00000005960464,0.00000005960464,-0.7071068,0.7071068",
-      "Tags": "gridtile",
-      "Enabled": true,
-      "NetworkMode": 2,
-      "Components": [
-        {
-          "__type": "Sandbox.Prop",
-          "__guid": "783d7243-2146-452f-85d3-18437283fcad",
-          "BodyGroups": 18446744073709551615,
-          "Health": 0,
-          "IsStatic": true,
-          "Model": "models/track_tileset_pieces/wood/nowalls/wood_nowalls_turnl_576.vmdl"
-        }
-      ]
-    },
-    {
-      "__guid": "8bce6691-b19c-4c7e-80a8-ba4722e26f83",
-      "Name": "wood_narrow_384",
-      "Position": "128,-2560,0",
-      "Tags": "gridtile",
-      "Enabled": true,
-      "NetworkMode": 2,
-      "Components": [
-        {
-          "__type": "Sandbox.Prop",
-          "__guid": "7992508b-e133-4e57-9631-bcf7ffcfb1f0",
-          "BodyGroups": 18446744073709551615,
-          "Health": 0,
-          "IsStatic": true,
-          "Model": "models/track_tileset_pieces/wood/narrow/wood_narrow_384.vmdl"
-        }
-      ]
-    },
-    {
-      "__guid": "d802935d-3a35-442b-b548-1a28ef55cf37",
-      "Name": "wood_narrow_384",
-      "Position": "512,-2560,0.0002441406",
-      "Tags": "gridtile",
-      "Enabled": true,
-      "NetworkMode": 2,
-      "Components": [
-        {
-          "__type": "Sandbox.Prop",
-          "__guid": "65ca7d72-4114-4841-81d9-7895b4486a0e",
-          "BodyGroups": 18446744073709551615,
-          "Health": 0,
-          "IsStatic": true,
-          "Model": "models/track_tileset_pieces/wood/narrow/wood_narrow_384.vmdl"
-        }
-      ]
-    },
-    {
-      "__guid": "89228041-caea-47d7-9a49-3f0667c7ed30",
-      "Name": "wood_narrow_slope_384x96",
-      "Position": "896,-2560,0",
-      "Tags": "gridtile",
-      "Enabled": true,
-      "NetworkMode": 2,
-      "Components": [
-        {
-          "__type": "Sandbox.Prop",
-          "__guid": "db8b8414-73e8-4156-8b59-22cef730a882",
-          "BodyGroups": 18446744073709551615,
-          "Health": 0,
-          "IsStatic": true,
-          "Model": "models/track_tileset_pieces/wood/narrow/wood_narrow_slope_384x96.vmdl"
-        }
-      ]
-    },
-    {
-      "__guid": "b6f63d8a-32a0-47ef-a266-5e9c803ab571",
-      "Name": "wood_narrow_slope_384x192",
-      "Position": "1280,-2560,96",
-      "Tags": "gridtile",
-      "Enabled": true,
-      "NetworkMode": 2,
-      "Components": [
-        {
-          "__type": "Sandbox.Prop",
-          "__guid": "157a1565-8b91-45b6-8f83-d6118a82a214",
-          "BodyGroups": 18446744073709551615,
-          "Health": 0,
-          "IsStatic": true,
-          "Model": "models/track_tileset_pieces/wood/narrow/wood_narrow_slope_384x192.vmdl"
-        }
-      ]
-    },
-    {
-      "__guid": "4dbf26d1-1897-4733-a11a-996c8289d2e0",
-      "Name": "wood_narrow_384",
-      "Position": "1664,-2560,288",
-      "Tags": "gridtile",
-      "Enabled": true,
-      "NetworkMode": 2,
-      "Components": [
-        {
-          "__type": "Sandbox.Prop",
-          "__guid": "7e67ad46-54cf-431a-8116-2164c1c005fc",
-          "BodyGroups": 18446744073709551615,
-          "Health": 0,
-          "IsStatic": true,
-          "Model": "models/track_tileset_pieces/wood/narrow/wood_narrow_384.vmdl"
-        }
-      ]
-    },
-    {
-      "__guid": "0986349d-9d94-4991-8447-1e226402face",
-      "Name": "wood_narrow_turnl_192",
-      "Position": "2048,-2560,288",
-      "Tags": "gridtile",
-      "Enabled": true,
-      "NetworkMode": 2,
-      "Components": [
-        {
-          "__type": "Sandbox.Prop",
-          "__guid": "c63d1f76-42e8-46d0-9cf8-4933cb557eaa",
-          "BodyGroups": 18446744073709551615,
-          "Health": 0,
-          "IsStatic": true,
-          "Model": "models/track_tileset_pieces/wood/narrow/wood_narrow_turnl_192.vmdl"
-        }
-      ]
-    },
-    {
-      "__guid": "c98419af-5c5d-4deb-8d55-8905b69149e2",
-      "Name": "wood_narrow_turnr_192",
-      "Position": "2048,-2176,288",
-      "Rotation": "-0.00000002980232,0.00000002980232,0.7071067,0.7071067",
-      "Tags": "gridtile",
-      "Enabled": true,
-      "NetworkMode": 2,
-      "Components": [
-        {
-          "__type": "Sandbox.Prop",
-          "__guid": "f95dec59-a5c3-4d3f-b7b6-c75415048f54",
-          "BodyGroups": 18446744073709551615,
-          "Health": 0,
-          "IsStatic": true,
-          "Model": "models/track_tileset_pieces/wood/narrow/wood_narrow_turnr_192.vmdl"
-        }
-      ]
-    },
-    {
-      "__guid": "7309f3ac-569a-465f-b566-3cc80bf43b41",
-      "Name": "wood_narrow_turnr_576",
-      "Position": "2816,-2176,288",
-      "Tags": "gridtile",
-      "Enabled": true,
-      "NetworkMode": 2,
-      "Components": [
-        {
-          "__type": "Sandbox.Prop",
-          "__guid": "440997b0-15ef-44e7-bb8e-ffaeaaf7983b",
-          "BodyGroups": 18446744073709551615,
-          "Health": 0,
-          "IsStatic": true,
-          "Model": "models/track_tileset_pieces/wood/narrow/wood_narrow_turnr_576.vmdl"
-        }
-      ]
-    },
-    {
-      "__guid": "7042ee60-5d48-4dc8-842c-43ef51a85c6e",
-      "Name": "wood_narrow_turnl_576",
-      "Position": "2816,-3328,288",
-      "Rotation": "0,0,-0.7071067,0.7071067",
-      "Tags": "gridtile",
-      "Enabled": true,
-      "NetworkMode": 2,
-      "Components": [
-        {
-          "__type": "Sandbox.Prop",
-          "__guid": "6a28005b-33d6-476d-b92c-860b43a033b1",
-          "BodyGroups": 18446744073709551615,
-          "Health": 0,
-          "IsStatic": true,
-          "Model": "models/track_tileset_pieces/wood/narrow/wood_narrow_turnl_576.vmdl"
-        }
-      ]
-    },
-    {
-      "__guid": "d44a5285-cd32-4832-9faa-45d58c75bef9",
-      "Name": "wood_skinny_384",
-      "Position": "128,-3328,0",
-      "Tags": "gridtile",
-      "Enabled": true,
-      "NetworkMode": 2,
-      "Components": [
-        {
-          "__type": "Sandbox.Prop",
-          "__guid": "fa063869-ba25-4ffe-b3bc-324cfcbee8e9",
-          "BodyGroups": 18446744073709551615,
-          "Health": 0,
-          "IsStatic": true,
-          "Model": "models/track_tileset_pieces/wood/skinny/wood_skinny_384.vmdl"
-        }
-      ]
-    },
-    {
-      "__guid": "eabbc46d-c97e-4e3d-b562-43a76fddb279",
-      "Name": "wood_skinny_384",
-      "Position": "512,-3328,0",
-      "Tags": "gridtile",
-      "Enabled": true,
-      "NetworkMode": 2,
-      "Components": [
-        {
-          "__type": "Sandbox.Prop",
-          "__guid": "5b3e13d3-6584-4181-9dbe-952505f8a4e4",
-          "BodyGroups": 18446744073709551615,
-          "Health": 0,
-          "IsStatic": true,
-          "Model": "models/track_tileset_pieces/wood/skinny/wood_skinny_384.vmdl"
-        }
-      ]
-    },
-    {
-      "__guid": "b8d71531-5f96-47e8-8015-830ccb59a338",
-      "Name": "wood_skinny_384",
-      "Position": "896,-3328,0",
-      "Tags": "gridtile",
-      "Enabled": true,
-      "NetworkMode": 2,
-      "Components": [
-        {
-          "__type": "Sandbox.Prop",
-          "__guid": "10fb7102-4f59-4286-9568-26f53dafa9e1",
-          "BodyGroups": 18446744073709551615,
-          "Health": 0,
-          "IsStatic": true,
-          "Model": "models/track_tileset_pieces/wood/skinny/wood_skinny_384.vmdl"
-        }
-      ]
-    },
-    {
-      "__guid": "d1eccdec-b2f2-48c3-92f8-8d8220929c9b",
-      "Name": "wood_skinny_384",
-      "Position": "1280,-3328,0",
-      "Tags": "gridtile",
-      "Enabled": true,
-      "NetworkMode": 2,
-      "Components": [
-        {
-          "__type": "Sandbox.Prop",
-          "__guid": "acfeacb2-9860-45e6-adfa-34ff2c4d4eed",
-          "BodyGroups": 18446744073709551615,
-          "Health": 0,
-          "IsStatic": true,
-          "Model": "models/track_tileset_pieces/wood/skinny/wood_skinny_384.vmdl"
-        }
-      ]
-    },
-    {
-      "__guid": "5b8f7fe9-e333-4692-bdad-b1e1c8428a6b",
-      "Name": "wood_skinny_slope_384x96",
-      "Position": "1664,-3328,0",
-      "Tags": "gridtile",
-      "Enabled": true,
-      "NetworkMode": 2,
-      "Components": [
-        {
-          "__type": "Sandbox.Prop",
-          "__guid": "65f2803a-c675-4b0d-b1a9-767756aa091b",
-          "BodyGroups": 18446744073709551615,
-          "Health": 0,
-          "IsStatic": true,
-          "Model": "models/track_tileset_pieces/wood/skinny/wood_skinny_slope_384x96.vmdl"
-        }
-      ]
-    },
-    {
-      "__guid": "8efc9981-90bd-490b-b273-61f37af229a9",
-      "Name": "wood_skinny_slope_384x192",
-      "Position": "2048,-3328,96",
-      "Tags": "gridtile",
-      "Enabled": true,
-      "NetworkMode": 2,
-      "Components": [
-        {
-          "__type": "Sandbox.Prop",
-          "__guid": "0a7ce88e-4152-4f4d-949b-e2797c982cd7",
-          "BodyGroups": 18446744073709551615,
-          "Health": 0,
-          "IsStatic": true,
-          "Model": "models/track_tileset_pieces/wood/skinny/wood_skinny_slope_384x192.vmdl"
-        }
-      ]
-    },
-    {
-      "__guid": "616f3fd6-3f69-496a-b988-12a33bc810da",
-      "Name": "wood_skinny_384",
-      "Position": "2432,-3328,288",
-      "Tags": "gridtile",
-      "Enabled": true,
-      "NetworkMode": 2,
-      "Components": [
-        {
-          "__type": "Sandbox.Prop",
-          "__guid": "1d4a29ed-1104-4f97-8621-61f04e05825b",
-          "BodyGroups": 18446744073709551615,
-          "Health": 0,
-          "IsStatic": true,
-          "Model": "models/track_tileset_pieces/wood/skinny/wood_skinny_384.vmdl"
-        }
-      ]
-    },
-    {
-      "__guid": "10a9f2b7-33a9-41e2-89e5-ec8a9ff86954",
-      "Name": "wood_skinny_turnr_64",
-      "Position": "2688,-3328,288",
-      "Tags": "gridtile",
-      "Enabled": true,
-      "NetworkMode": 2,
-      "Components": [
-        {
-          "__type": "Sandbox.Prop",
-          "__guid": "cfe34401-5fc9-4db3-b216-03795f171387",
-          "BodyGroups": 18446744073709551615,
-          "Health": 0,
-          "IsStatic": true,
-          "Model": "models/track_tileset_pieces/wood/skinny/wood_skinny_turnr_64.vmdl"
-        }
-      ]
-    },
-    {
-      "__guid": "37f98d30-7b41-4d1f-b38e-d58c9616a5ab",
-      "Name": "wood_skinny_384",
-      "Position": "2688,-3584,288",
-      "Rotation": "-0.00000002980232,0.00000002980232,0.7071067,0.7071067",
-      "Tags": "gridtile",
-      "Enabled": true,
-      "NetworkMode": 2,
-      "Components": [
-        {
-          "__type": "Sandbox.Prop",
-          "__guid": "fd599dfc-472c-44b9-ab72-a36c8adddfb8",
-          "BodyGroups": 18446744073709551615,
-          "Health": 0,
-          "IsStatic": true,
-          "Model": "models/track_tileset_pieces/wood/skinny/wood_skinny_384.vmdl"
-        }
-      ]
-    },
-    {
-      "__guid": "44a0aef5-af30-400c-a026-c1931083c82c",
-      "Name": "wood_skinny_384",
-      "Position": "2688,-3968,288",
-      "Rotation": "-0.00000002980232,0.00000002980232,0.7071067,0.7071067",
-      "Tags": "gridtile",
-      "Enabled": true,
-      "NetworkMode": 2,
-      "Components": [
-        {
-          "__type": "Sandbox.Prop",
-          "__guid": "f67293a8-f1b8-41a0-b16d-104eb21efe77",
-          "BodyGroups": 18446744073709551615,
-          "Health": 0,
-          "IsStatic": true,
-          "Model": "models/track_tileset_pieces/wood/skinny/wood_skinny_384.vmdl"
-        }
-      ]
-    },
-    {
-      "__guid": "4bcdea5d-6ea0-4409-b5ef-45d5931b8e3c",
-      "Name": "wood_skinny_turnl_64",
-      "Position": "2688,-4224,288",
-      "Rotation": "0.00000005960464,0.00000005960464,-0.7071068,0.7071068",
-      "Tags": "gridtile",
-      "Enabled": true,
-      "NetworkMode": 2,
-      "Components": [
-        {
-          "__type": "Sandbox.Prop",
-          "__guid": "9b276328-83fd-4b8d-ab4a-abbc70dccbd5",
-          "BodyGroups": 18446744073709551615,
-          "Health": 0,
-          "IsStatic": true,
-          "Model": "models/track_tileset_pieces/wood/skinny/wood_skinny_turnl_64.vmdl"
-        }
-      ]
-    },
-    {
-      "__guid": "c6028f37-0d23-498f-8fda-1bb8538467f7",
-      "Name": "wood_skinny_384",
-      "Position": "2944,-4224,288",
-      "Tags": "gridtile",
-      "Enabled": true,
-      "NetworkMode": 2,
-      "Components": [
-        {
-          "__type": "Sandbox.Prop",
-          "__guid": "7383ae58-c737-4bc9-b47c-183ce2c549ee",
-          "BodyGroups": 18446744073709551615,
-          "Health": 0,
-          "IsStatic": true,
-          "Model": "models/track_tileset_pieces/wood/skinny/wood_skinny_384.vmdl"
-        }
-      ]
-    },
-    {
-      "__guid": "2babf881-9b31-493c-85f5-d4d4d44ea7f4",
-      "Name": "wood_skinny_turnr_192",
-      "Position": "3328,-4224,288",
-      "Tags": "gridtile",
-      "Enabled": true,
-      "NetworkMode": 2,
-      "Components": [
-        {
-          "__type": "Sandbox.Prop",
-          "__guid": "98a517bf-21fa-40f3-a763-aa4af91df40f",
-          "BodyGroups": 18446744073709551615,
-          "Health": 0,
-          "IsStatic": true,
-          "Model": "models/track_tileset_pieces/wood/skinny/wood_skinny_turnr_192.vmdl"
-        }
-      ]
-    },
-    {
-      "__guid": "f26d564b-dfb2-4682-a241-82111911d2ce",
-      "Name": "wood_skinny_turnl_192",
-      "Position": "3328,-4608,288",
-      "Tags": "gridtile",
-      "Enabled": true,
-      "NetworkMode": 2,
-      "Components": [
-        {
-          "__type": "Sandbox.Prop",
-          "__guid": "86b4647d-778d-4c9f-8033-7e3f3c99b237",
-          "BodyGroups": 18446744073709551615,
-          "Health": 0,
-          "IsStatic": true,
-          "Model": "models/track_tileset_pieces/wood/skinny/wood_skinny_turnl_192.vmdl"
-        }
-      ]
-    },
-    {
-      "__guid": "d7a70b81-651f-48eb-977a-e4177ee02ad6",
-      "Name": "scaffold_foot_slope_96",
-      "Position": "1280,-1024,0",
-      "Tags": "gridtile",
-      "Enabled": true,
-      "NetworkMode": 2,
-      "Components": [
-        {
-          "__type": "Sandbox.Prop",
-          "__guid": "fbd2dc90-e7d1-4c46-833f-a9405d59283d",
-          "BodyGroups": 18446744073709551615,
-          "Health": 0,
-          "IsStatic": true,
-          "Model": "models/track_tileset_pieces/scaffold/scaffold_96/foot/scaffold_foot_slope_96.vmdl"
-        }
-      ]
-    },
-    {
-      "__guid": "872150e1-4c3b-47c7-b241-5e1869853b1a",
-      "Name": "scaffold_foot_96",
-      "Position": "1664,-1024,0",
-      "Tags": "gridtile",
-      "Enabled": true,
-      "NetworkMode": 2,
-      "Components": [
-        {
-          "__type": "Sandbox.Prop",
-          "__guid": "9cbe32de-5c2a-4b04-8270-d51a3b5fdbb9",
-          "BodyGroups": 18446744073709551615,
-          "Health": 0,
-          "IsStatic": true,
-          "Model": "models/track_tileset_pieces/scaffold/scaffold_96/foot/scaffold_foot_96.vmdl"
-        }
-      ]
-    },
-    {
-      "__guid": "4efec8f9-9e48-44ab-9c19-22243d71b3c9",
-      "Name": "scaffold_foot_96",
-      "Position": "2048,-1024,0",
-      "Tags": "gridtile",
-      "Enabled": true,
-      "NetworkMode": 2,
-      "Components": [
-        {
-          "__type": "Sandbox.Prop",
-          "__guid": "1cdf26aa-ffe0-4b3c-826f-b664a2ac684e",
-          "BodyGroups": 18446744073709551615,
-          "Health": 0,
-          "IsStatic": true,
-          "Model": "models/track_tileset_pieces/scaffold/scaffold_96/foot/scaffold_foot_96.vmdl"
-        }
-      ]
-    },
-    {
-      "__guid": "b06fdcfa-4e5a-4f2a-b4e8-81778b76e6ae",
-      "Name": "scaffold_mid_192",
-      "Position": "2048,-1024,96",
-      "Tags": "gridtile",
-      "Enabled": true,
-      "NetworkMode": 2,
-      "Components": [
-        {
-          "__type": "Sandbox.ModelRenderer",
-          "__guid": "24b99b78-e27c-4773-83ae-df2409b44f14",
-          "BodyGroups": 18446744073709551615,
-          "Model": "models/track_tileset_pieces/scaffold/scaffold_192/mid/scaffold_mid_192.vmdl",
-          "RenderType": "On",
-          "Tint": "1,1,1,1"
-        },
-        {
-          "__type": "Sandbox.ModelCollider",
-          "__guid": "9113b730-3b61-4f41-a44b-1a357b2784a6",
-          "IsTrigger": false,
-          "Model": "models/track_tileset_pieces/scaffold/scaffold_192/mid/scaffold_mid_192.vmdl",
-          "Static": false
-        }
-      ]
-    },
-    {
-      "__guid": "4de084e3-d812-402e-b350-67e456056f43",
-      "Name": "scaffold_mid_slope_192",
-      "Position": "1664,-1024,96",
-      "Tags": "gridtile",
-      "Enabled": true,
-      "NetworkMode": 2,
-      "Components": [
-        {
-          "__type": "Sandbox.Prop",
-          "__guid": "b2448c72-1f73-483a-958d-21b6a3cd327c",
-          "BodyGroups": 18446744073709551615,
-          "Health": 0,
-          "IsStatic": true,
-          "Model": "models/track_tileset_pieces/scaffold/scaffold_192/mid/scaffold_mid_slope_192.vmdl"
-        }
-      ]
-    },
-    {
-      "__guid": "ca25180e-6a14-4821-af6e-4388d6a46019",
-      "Name": "scaffold_mid_turnr_192x192",
-      "Position": "2432,-1024,96",
-      "Tags": "gridtile",
-      "Enabled": true,
-      "NetworkMode": 2,
-      "Components": [
-        {
-          "__type": "Sandbox.Prop",
-          "__guid": "16ec3c8d-23b2-4ba9-8d54-29d8d1c2433e",
-          "BodyGroups": 18446744073709551615,
-          "Health": 0,
-          "IsStatic": true,
-          "Model": "models/track_tileset_pieces/scaffold/scaffold_192/mid/scaffold_mid_turnr_192x192.vmdl"
-        }
-      ]
-    },
-    {
-      "__guid": "c9167e89-0783-4011-bc96-4f5caa746a5d",
-      "Name": "scaffold_mid_192",
-      "Position": "2816,-1408,96",
-      "Tags": "gridtile",
-      "Enabled": true,
-      "NetworkMode": 2,
-      "Components": [
-        {
-          "__type": "Sandbox.Prop",
-          "__guid": "35faa29b-8d8e-4bf1-8012-3242e304ac48",
-          "BodyGroups": 18446744073709551615,
-          "Health": 0,
-          "IsStatic": true,
-          "Model": "models/track_tileset_pieces/scaffold/scaffold_192/mid/scaffold_mid_192.vmdl"
-        }
-      ]
-    },
-    {
-      "__guid": "380a788c-caab-4731-b753-751994dc24d5",
-      "Name": "scaffold_mid_192",
-      "Position": "3200,-1408,96",
-      "Tags": "gridtile",
-      "Enabled": true,
-      "NetworkMode": 2,
-      "Components": [
-        {
-          "__type": "Sandbox.Prop",
-          "__guid": "62604a2c-16ed-49f0-9abe-27aed08ac311",
-          "BodyGroups": 18446744073709551615,
-          "Health": 0,
-          "IsStatic": true,
-          "Model": "models/track_tileset_pieces/scaffold/scaffold_192/mid/scaffold_mid_192.vmdl"
-        }
-      ]
-    },
-    {
-      "__guid": "dc391c4b-fe3d-4d6d-97aa-46b31ae02b7b",
-      "Name": "scaffold_mid_192",
-      "Position": "3584,-1408,96",
-      "Tags": "gridtile",
-      "Enabled": true,
-      "NetworkMode": 2,
-      "Components": [
-        {
-          "__type": "Sandbox.Prop",
-          "__guid": "ae756387-0758-4c1a-b4ad-a75e90420e45",
-          "BodyGroups": 18446744073709551615,
-          "Health": 0,
-          "IsStatic": true,
-          "Model": "models/track_tileset_pieces/scaffold/scaffold_192/mid/scaffold_mid_192.vmdl"
-        }
-      ]
-    },
-    {
-      "__guid": "859379a6-f24b-467a-99a3-08f16f143381",
-      "Name": "scaffold_mid_turnr_192x576",
-      "Position": "4352,-1408,96",
-      "Tags": "gridtile",
-      "Enabled": true,
-      "NetworkMode": 2,
-      "Components": [
-        {
-          "__type": "Sandbox.Prop",
-          "__guid": "a289b682-5b41-4311-b8fb-adcd845a5bfd",
-          "BodyGroups": 18446744073709551615,
-          "Health": 0,
-          "IsStatic": true,
-          "Model": "models/track_tileset_pieces/scaffold/scaffold_192/mid/scaffold_mid_turnr_192x576.vmdl"
-        }
-      ]
-    },
-    {
-      "__guid": "7c794d36-62e6-4a15-8b2e-18d7403ceebd",
-      "Name": "scaffold_mid_turnl_192x576",
-      "Position": "4352,-2560,96",
-      "Rotation": "0.00000005960464,0.00000005960464,-0.7071068,0.7071068",
-      "Tags": "gridtile",
-      "Enabled": true,
-      "NetworkMode": 2,
-      "Components": [
-        {
-          "__type": "Sandbox.Prop",
-          "__guid": "4fe1997e-34c7-4407-8ce5-738956447c5c",
-          "BodyGroups": 18446744073709551615,
-          "Health": 0,
-          "IsStatic": true,
-          "Model": "models/track_tileset_pieces/scaffold/scaffold_192/mid/scaffold_mid_turnl_192x576.vmdl"
-        }
-      ]
-    },
-    {
-      "__guid": "f6d05b88-fbe8-4bdf-80fe-0d1b7ca3036a",
-      "Name": "scaffold_mid_cap_192",
-      "Position": "4736,-2560,96",
-      "Tags": "gridtile",
-      "Enabled": true,
-      "NetworkMode": 2,
-      "Components": [
-        {
-          "__type": "Sandbox.Prop",
-          "__guid": "f84f04c2-fc12-412c-a4c3-a6af95b7b985",
-          "BodyGroups": 18446744073709551615,
-          "Health": 0,
-          "IsStatic": true,
-          "Model": "models/track_tileset_pieces/scaffold/scaffold_192/mid/scaffold_mid_cap_192.vmdl"
-        }
-      ]
-    },
-    {
-      "__guid": "a6c8ca0d-97a3-4451-8b2e-e7ddfae1f865",
-      "Name": "scaffold_foot_turnr_96x192",
-      "Position": "2432,-1024,0",
-      "Tags": "gridtile",
-      "Enabled": true,
-      "NetworkMode": 2,
-      "Components": [
-        {
-          "__type": "Sandbox.Prop",
-          "__guid": "70eba746-663d-4493-8af1-a47a3277f909",
-          "BodyGroups": 18446744073709551615,
-          "Health": 0,
-          "IsStatic": true,
-          "Model": "models/track_tileset_pieces/scaffold/scaffold_96/foot/scaffold_foot_turnr_96x192.vmdl"
-        }
-      ]
-    },
-    {
-      "__guid": "f68c884a-9a0e-4653-a159-0e637daa0f24",
-      "Name": "scaffold_foot_96",
-      "Position": "2816,-1408,0",
-      "Tags": "gridtile",
-      "Enabled": true,
-      "NetworkMode": 2,
-      "Components": [
-        {
-          "__type": "Sandbox.Prop",
-          "__guid": "0f209fc4-b931-47ad-8d36-0ecd5a3a89f9",
-          "BodyGroups": 18446744073709551615,
-          "Health": 0,
-          "IsStatic": true,
-          "Model": "models/track_tileset_pieces/scaffold/scaffold_96/foot/scaffold_foot_96.vmdl"
-        }
-      ]
-    },
-    {
-      "__guid": "d39fef0a-5e4a-4dba-8244-a1c7451a73a8",
-      "Name": "scaffold_foot_96",
-      "Position": "3200,-1408,0",
-      "Tags": "gridtile",
-      "Enabled": true,
-      "NetworkMode": 2,
-      "Components": [
-        {
-          "__type": "Sandbox.Prop",
-          "__guid": "e14db16b-03b3-4453-9bd1-78ed8777f4d0",
-          "BodyGroups": 18446744073709551615,
-          "Health": 0,
-          "IsStatic": true,
-          "Model": "models/track_tileset_pieces/scaffold/scaffold_96/foot/scaffold_foot_96.vmdl"
-        }
-      ]
-    },
-    {
-      "__guid": "f5d3485c-9f1d-415a-b8cd-1e1ab5e05be6",
-      "Name": "scaffold_foot_96",
-      "Position": "3584,-1408,0",
-      "Tags": "gridtile",
-      "Enabled": true,
-      "NetworkMode": 2,
-      "Components": [
-        {
-          "__type": "Sandbox.Prop",
-          "__guid": "ad752322-0aa0-48b8-8547-ca1a17b48cd8",
-          "BodyGroups": 18446744073709551615,
-          "Health": 0,
-          "IsStatic": true,
-          "Model": "models/track_tileset_pieces/scaffold/scaffold_96/foot/scaffold_foot_96.vmdl"
-        }
-      ]
-    },
-    {
-      "__guid": "3cccea2f-efe0-451d-9b50-bbb462f51cdc",
-      "Name": "scaffold_foot_turnr_96x576",
-      "Position": "4352,-1408,0",
-      "Tags": "gridtile",
-      "Enabled": true,
-      "NetworkMode": 2,
-      "Components": [
-        {
-          "__type": "Sandbox.Prop",
-          "__guid": "3ef6e872-33b5-4c22-9cd0-0591eb653857",
-          "BodyGroups": 18446744073709551615,
-          "Health": 0,
-          "IsStatic": true,
-          "Model": "models/track_tileset_pieces/scaffold/scaffold_96/foot/scaffold_foot_turnr_96x576.vmdl"
-        }
-      ]
-    },
-    {
-      "__guid": "0775c990-ea78-4c14-99b4-bb45405e9135",
-      "Name": "scaffold_foot_turnl_96x576",
-      "Position": "4352,-2560,0.00006103516",
-      "Rotation": "0.00000005960464,0.00000005960464,-0.7071068,0.7071068",
-      "Tags": "gridtile",
-      "Enabled": true,
-      "NetworkMode": 2,
-      "Components": [
-        {
-          "__type": "Sandbox.Prop",
-          "__guid": "8e8a8f16-48ed-4745-b766-2a60ba7ba7f7",
-          "BodyGroups": 18446744073709551615,
-          "Health": 0,
-          "IsStatic": true,
-          "Model": "models/track_tileset_pieces/scaffold/scaffold_96/foot/scaffold_foot_turnl_96x576.vmdl"
-        }
-      ]
-    },
-    {
-      "__guid": "2fc95538-70d3-4b8e-8a48-8d0070da5b01",
-      "Name": "scaffold_mid_turnl_192x192",
-      "Position": "2432,-1408,96",
-      "Rotation": "0,0,-0.7071067,0.7071067",
-      "Tags": "gridtile",
-      "Enabled": true,
-      "NetworkMode": 2,
-      "Components": [
-        {
-          "__type": "Sandbox.Prop",
-          "__guid": "68b8dfae-c3e7-41e2-9068-5ad0514609f3",
-          "BodyGroups": 18446744073709551615,
-          "Health": 0,
-          "IsStatic": true,
-          "Model": "models/track_tileset_pieces/scaffold/scaffold_192/mid/scaffold_mid_turnl_192x192.vmdl"
-        }
-      ]
-    },
-    {
-      "__guid": "fe574a29-1fd6-4752-9230-97acab3d6d12",
-      "Name": "scaffold_foot_turnl_96x192",
-      "Position": "2432,-1408,0",
-      "Rotation": "0.00000005960464,0.00000005960464,-0.7071068,0.7071068",
-      "Tags": "gridtile",
-      "Enabled": true,
-      "NetworkMode": 2,
-      "Components": [
-        {
-          "__type": "Sandbox.Prop",
-          "__guid": "f699e347-ebd6-420a-b9e3-5c9fbf0f2fc2",
-          "BodyGroups": 18446744073709551615,
-          "Health": 0,
-          "IsStatic": true,
-          "Model": "models/track_tileset_pieces/scaffold/scaffold_96/foot/scaffold_foot_turnl_96x192.vmdl"
-        }
-      ]
-    },
-    {
-      "__guid": "7a988dcb-7005-4681-b704-295a0272d5fe",
-      "Name": "scaffold_foot_cap_96",
-      "Position": "4736,-2560,0",
-      "Tags": "gridtile",
-      "Enabled": true,
-      "NetworkMode": 2,
-      "Components": [
-        {
-          "__type": "Sandbox.Prop",
-          "__guid": "1f1c2423-603c-4084-b27e-b863737bafcb",
-          "BodyGroups": 18446744073709551615,
-          "Health": 0,
-          "IsStatic": true,
-          "Model": "models/track_tileset_pieces/scaffold/scaffold_96/foot/scaffold_foot_cap_96.vmdl"
         }
       ]
     },
@@ -2353,7 +1053,7 @@
     {
       "__guid": "128e119e-5327-4eab-85d4-3a216fd7ee55",
       "Name": "tent01_lrg",
-      "Position": "509.25,1765.41,-10",
+      "Position": "531.6973,1743.447,-9.999998",
       "Enabled": true,
       "NetworkMode": 2,
       "Components": [
@@ -2420,6 +1120,2647 @@
           "Model": "models/props/porta_potty.vmdl"
         }
       ]
+    },
+    {
+      "__guid": "b4b2ca22-40ba-48ec-9fea-0f4c9eab7a55",
+      "Name": "wood_nowalls_straight_384",
+      "Position": "2304,-3200,0",
+      "Rotation": "0,0.00000004371139,-0.9999999,0",
+      "Tags": "gridtile",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "Components": [
+        {
+          "__type": "Sandbox.Prop",
+          "__guid": "48e1f455-c5c4-484d-bcc0-20ce9894a4c0",
+          "BodyGroups": 18446744073709551615,
+          "Health": 0,
+          "IsStatic": true,
+          "Model": "models/track_tileset_pieces/wood/nowalls/wood_nowalls_straight_384.vmdl"
+        }
+      ]
+    },
+    {
+      "__guid": "f75c5a80-0dd0-456f-a1d1-ab21eeedd69e",
+      "Name": "wood_nowalls_straight_384",
+      "Position": "1920,-3200,0",
+      "Rotation": "0,0.00000004371139,-0.9999999,0",
+      "Tags": "gridtile",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "Components": [
+        {
+          "__type": "Sandbox.Prop",
+          "__guid": "e0f2f6ae-2589-444f-85db-99b718f3b32c",
+          "BodyGroups": 18446744073709551615,
+          "Health": 0,
+          "IsStatic": true,
+          "Model": "models/track_tileset_pieces/wood/nowalls/wood_nowalls_straight_384.vmdl"
+        }
+      ]
+    },
+    {
+      "__guid": "9dd7f4dd-347e-443e-aa00-6d2511149a67",
+      "Name": "wood_nowalls_straight_384",
+      "Position": "1536,-3200,0",
+      "Rotation": "0,0.00000004371139,-0.9999999,0",
+      "Tags": "gridtile",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "Components": [
+        {
+          "__type": "Sandbox.Prop",
+          "__guid": "4064688e-0eb5-4ec0-a46a-19532c0d4883",
+          "BodyGroups": 18446744073709551615,
+          "Health": 0,
+          "IsStatic": true,
+          "Model": "models/track_tileset_pieces/wood/nowalls/wood_nowalls_straight_384.vmdl"
+        }
+      ]
+    },
+    {
+      "__guid": "292dc2c5-d6c6-4302-8d4f-e352acdec264",
+      "Name": "wood_nowalls_straight_384",
+      "Position": "1152,-3200,0",
+      "Rotation": "0,0.00000004371139,-0.9999999,0",
+      "Tags": "gridtile",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "Components": [
+        {
+          "__type": "Sandbox.Prop",
+          "__guid": "a9085c88-9c80-469d-870f-5b71db251b41",
+          "BodyGroups": 18446744073709551615,
+          "Health": 0,
+          "IsStatic": true,
+          "Model": "models/track_tileset_pieces/wood/nowalls/wood_nowalls_straight_384.vmdl"
+        }
+      ]
+    },
+    {
+      "__guid": "f1dbb99d-2022-45b5-a57d-872ad8eadbd9",
+      "Name": "wood_nowalls_turnl_576",
+      "Position": "3072,-3200,0",
+      "Rotation": "0,0,0.7071067,0.7071067",
+      "Tags": "gridtile",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "Components": [
+        {
+          "__type": "Sandbox.Prop",
+          "__guid": "f8b86df9-be61-4aa7-8609-766f4a071692",
+          "BodyGroups": 18446744073709551615,
+          "Health": 0,
+          "IsStatic": true,
+          "Model": "models/track_tileset_pieces/wood/nowalls/wood_nowalls_turnl_576.vmdl"
+        }
+      ]
+    },
+    {
+      "__guid": "3afa10ed-72fe-4189-9c35-42553a63df4b",
+      "Name": "wood_straight_384",
+      "Position": "768,-3200,0",
+      "Rotation": "0,0.00000004371139,0.9999999,0",
+      "Tags": "gridtile",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "Components": [
+        {
+          "__type": "Sandbox.Prop",
+          "__guid": "e2453747-e389-4068-b3a5-ed58bfa02a35",
+          "BodyGroups": 18446744073709551615,
+          "Health": 0,
+          "IsStatic": true,
+          "Model": "models/track_tileset_pieces/wood/wood_straight_384.vmdl"
+        }
+      ]
+    },
+    {
+      "__guid": "47b90950-cc5d-4a2c-80e0-c9165b035769",
+      "Name": "wood_posts",
+      "Position": "768,-3200,0",
+      "Rotation": "0,0.00000004371139,0.9999999,0",
+      "Tags": "gridtile",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "Components": [
+        {
+          "__type": "Sandbox.Prop",
+          "__guid": "5f2e09cc-7e2f-43a3-8e3b-0952b0bb657c",
+          "BodyGroups": 18446744073709551615,
+          "Health": 0,
+          "IsStatic": true,
+          "Model": "models/track_tileset_pieces/wood/wood_posts.vmdl"
+        }
+      ]
+    },
+    {
+      "__guid": "255a68c4-3289-458d-bbe3-01c9cf1ffa0b",
+      "Name": "wood_slope_384x96",
+      "Position": "384,-3200,0",
+      "Rotation": "0,0.00000004371139,0.9999999,0",
+      "Tags": "gridtile",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "Components": [
+        {
+          "__type": "Sandbox.Prop",
+          "__guid": "8f19a557-2179-4778-b490-e1b9015f3726",
+          "BodyGroups": 18446744073709551615,
+          "Health": 0,
+          "IsStatic": true,
+          "Model": "models/track_tileset_pieces/wood/wood_slope_384x96.vmdl"
+        }
+      ]
+    },
+    {
+      "__guid": "ce2f8806-35da-414d-bb60-bb8b406ad13b",
+      "Name": "wood_slope_384x192",
+      "Position": "-0,-3200,96",
+      "Rotation": "0,0.00000004371139,0.9999999,0",
+      "Tags": "gridtile",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "Components": [
+        {
+          "__type": "Sandbox.Prop",
+          "__guid": "9006387e-6587-42f2-bd64-ebb6f815780f",
+          "BodyGroups": 18446744073709551615,
+          "Health": 0,
+          "IsStatic": true,
+          "Model": "models/track_tileset_pieces/wood/wood_slope_384x192.vmdl"
+        }
+      ]
+    },
+    {
+      "__guid": "b6c9633d-408c-4dc4-97f1-9dcd4e757251",
+      "Name": "wood_turnr_576",
+      "Position": "-768,-3200,288",
+      "Rotation": "0,0.00000004371139,0.9999999,0",
+      "Tags": "gridtile",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "Components": [
+        {
+          "__type": "Sandbox.Prop",
+          "__guid": "cc364fab-e090-4dd6-b9a1-7e9bdb325571",
+          "BodyGroups": 18446744073709551615,
+          "Health": 0,
+          "IsStatic": true,
+          "Model": "models/track_tileset_pieces/wood/wood_turnr_576.vmdl"
+        }
+      ]
+    },
+    {
+      "__guid": "64657bdb-2b35-4ed8-9dca-5f89aa8320e9",
+      "Name": "wood_straight_384",
+      "Position": "-768,-2432,288",
+      "Rotation": "-0.00000002980232,0.00000002980232,0.7071067,0.7071067",
+      "Tags": "gridtile",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "Components": [
+        {
+          "__type": "Sandbox.Prop",
+          "__guid": "84f1ea4b-4a4e-4009-842f-043ed3bb847f",
+          "BodyGroups": 18446744073709551615,
+          "Health": 0,
+          "IsStatic": true,
+          "Model": "models/track_tileset_pieces/wood/wood_straight_384.vmdl"
+        }
+      ]
+    },
+    {
+      "__guid": "701c07c3-3805-4a22-b11e-5b76caee0a5b",
+      "Name": "wood_turnr_576",
+      "Position": "-768,-1664,288",
+      "Rotation": "-0.00000002980232,0.00000002980232,0.7071067,0.7071067",
+      "Tags": "gridtile",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "Components": [
+        {
+          "__type": "Sandbox.Prop",
+          "__guid": "e492eb63-5c0a-4aac-92b2-3c83c9f66641",
+          "BodyGroups": 18446744073709551615,
+          "Health": 0,
+          "IsStatic": true,
+          "Model": "models/track_tileset_pieces/wood/wood_turnr_576.vmdl"
+        }
+      ]
+    },
+    {
+      "__guid": "1aab2f6b-5252-4dfe-98f3-53185680711a",
+      "Name": "wood_slope_384x96",
+      "Position": "-0,-1664,288",
+      "Tags": "gridtile",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "Components": [
+        {
+          "__type": "Sandbox.Prop",
+          "__guid": "6ea00c01-ede6-4452-bc58-aafab0841541",
+          "BodyGroups": 18446744073709551615,
+          "Health": 0,
+          "IsStatic": true,
+          "Model": "models/track_tileset_pieces/wood/wood_slope_384x96.vmdl"
+        }
+      ]
+    },
+    {
+      "__guid": "a1472925-1469-4d7c-b80b-16dd356a6e51",
+      "Name": "wood_slope_384x96",
+      "Position": "384,-1664,384",
+      "Tags": "gridtile",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "Components": [
+        {
+          "__type": "Sandbox.Prop",
+          "__guid": "cc3f59a8-06ea-4d6e-b30b-d91b9be646d4",
+          "BodyGroups": 18446744073709551615,
+          "Health": 0,
+          "IsStatic": true,
+          "Model": "models/track_tileset_pieces/wood/wood_slope_384x96.vmdl"
+        }
+      ]
+    },
+    {
+      "__guid": "0d88ead0-f1fc-419d-a2aa-09dedf75fb4d",
+      "Name": "wood_slope_384x96",
+      "Position": "768,-1664,480",
+      "Tags": "gridtile",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "Components": [
+        {
+          "__type": "Sandbox.Prop",
+          "__guid": "cafd8c83-d9d2-4889-a7b0-34cc1587ca03",
+          "BodyGroups": 18446744073709551615,
+          "Health": 0,
+          "IsStatic": true,
+          "Model": "models/track_tileset_pieces/wood/wood_slope_384x96.vmdl"
+        }
+      ]
+    },
+    {
+      "__guid": "5e360ed5-d8c2-48cb-b03e-63fcf4d250c1",
+      "Name": "wood_slope_384x96",
+      "Position": "1152,-1664,576",
+      "Tags": "gridtile",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "Components": [
+        {
+          "__type": "Sandbox.Prop",
+          "__guid": "93e29d92-1dbc-4707-98a1-ff84f60673b3",
+          "BodyGroups": 18446744073709551615,
+          "Health": 0,
+          "IsStatic": true,
+          "Model": "models/track_tileset_pieces/wood/wood_slope_384x96.vmdl"
+        }
+      ]
+    },
+    {
+      "__guid": "f0923836-3506-4730-902e-fa3b2dea799e",
+      "Name": "wood_straight_384",
+      "Position": "1536,-1664,672",
+      "Tags": "gridtile",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "Components": [
+        {
+          "__type": "Sandbox.Prop",
+          "__guid": "2499f826-ce27-495b-a5f4-856c77bbeb39",
+          "BodyGroups": 18446744073709551615,
+          "Health": 0,
+          "IsStatic": true,
+          "Model": "models/track_tileset_pieces/wood/wood_straight_384.vmdl"
+        }
+      ]
+    },
+    {
+      "__guid": "da690311-527b-432b-a125-779bf253b464",
+      "Name": "wood_straight_384",
+      "Position": "1920,-1664,672",
+      "Tags": "gridtile",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "Components": [
+        {
+          "__type": "Sandbox.Prop",
+          "__guid": "4d7bf971-4f34-41cc-a032-d0626a12491e",
+          "BodyGroups": 18446744073709551615,
+          "Health": 0,
+          "IsStatic": true,
+          "Model": "models/track_tileset_pieces/wood/wood_straight_384.vmdl"
+        }
+      ]
+    },
+    {
+      "__guid": "f5589d81-989e-4278-9c0e-47feda1cd2c2",
+      "Name": "wood_straight_384",
+      "Position": "2304,-1664,672",
+      "Tags": "gridtile",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "Components": [
+        {
+          "__type": "Sandbox.Prop",
+          "__guid": "b043229b-87e5-48a3-8505-646feda3bf10",
+          "BodyGroups": 18446744073709551615,
+          "Health": 0,
+          "IsStatic": true,
+          "Model": "models/track_tileset_pieces/wood/wood_straight_384.vmdl"
+        }
+      ]
+    },
+    {
+      "__guid": "f8e13c2c-4d78-4503-9952-39f6080f244e",
+      "Name": "wood_straight_384",
+      "Position": "2688,-1664,672",
+      "Tags": "gridtile",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "Components": [
+        {
+          "__type": "Sandbox.Prop",
+          "__guid": "0c5e243f-9833-443f-b072-ebdf82751a12",
+          "BodyGroups": 18446744073709551615,
+          "Health": 0,
+          "IsStatic": true,
+          "Model": "models/track_tileset_pieces/wood/wood_straight_384.vmdl"
+        }
+      ]
+    },
+    {
+      "__guid": "4bb6dfe0-a10d-4d97-8f88-32cae0408fa6",
+      "Name": "scaffold_foot_slope_96",
+      "Position": "384,-3200,0",
+      "Rotation": "0,0.00000004371139,-0.9999999,0",
+      "Tags": "gridtile",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "Components": [
+        {
+          "__type": "Sandbox.Prop",
+          "__guid": "f11d6061-8d83-43e5-b853-584d5888b666",
+          "BodyGroups": 18446744073709551615,
+          "Health": 0,
+          "IsStatic": true,
+          "Model": "models/track_tileset_pieces/scaffold/scaffold_96/foot/scaffold_foot_slope_96.vmdl"
+        }
+      ]
+    },
+    {
+      "__guid": "309108dc-dee4-4229-9f6d-7b9e8fcf0a1a",
+      "Name": "scaffold_foot_96",
+      "Position": "-0,-3200,-0.00003051758",
+      "Rotation": "0,0.00000004371139,-0.9999999,0",
+      "Tags": "gridtile",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "Components": [
+        {
+          "__type": "Sandbox.Prop",
+          "__guid": "e1cb81b1-864c-4702-8eb6-6a09d0949ab4",
+          "BodyGroups": 18446744073709551615,
+          "Health": 0,
+          "IsStatic": true,
+          "Model": "models/track_tileset_pieces/scaffold/scaffold_96/foot/scaffold_foot_96.vmdl"
+        }
+      ]
+    },
+    {
+      "__guid": "35df2ed5-fe7b-46c6-89de-55d2d43fe015",
+      "Name": "scaffold_foot_turnr_96x576",
+      "Position": "-768,-3200,0",
+      "Rotation": "0,0.00000004371139,-0.9999999,0",
+      "Tags": "gridtile",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "Components": [
+        {
+          "__type": "Sandbox.Prop",
+          "__guid": "43971503-f1db-4af2-bc97-21fa03fe184b",
+          "BodyGroups": 18446744073709551615,
+          "Health": 0,
+          "IsStatic": true,
+          "Model": "models/track_tileset_pieces/scaffold/scaffold_96/foot/scaffold_foot_turnr_96x576.vmdl"
+        }
+      ]
+    },
+    {
+      "__guid": "b10aded0-7f8b-4fab-b650-005cf7c74f4a",
+      "Name": "scaffold_foot_96",
+      "Position": "-768,-2432,0",
+      "Rotation": "0,0,0.7071067,0.7071067",
+      "Tags": "gridtile",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "Components": [
+        {
+          "__type": "Sandbox.Prop",
+          "__guid": "83c75ea7-4037-4ff5-926f-34f47ca4ebdd",
+          "BodyGroups": 18446744073709551615,
+          "Health": 0,
+          "IsStatic": true,
+          "Model": "models/track_tileset_pieces/scaffold/scaffold_96/foot/scaffold_foot_96.vmdl"
+        }
+      ]
+    },
+    {
+      "__guid": "01886eba-ded3-4177-9e8c-f3b2d53909f8",
+      "Name": "scaffold_foot_turnr_96x576",
+      "Position": "-768,-1664,0",
+      "Rotation": "0,0,0.7071067,0.7071067",
+      "Tags": "gridtile",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "Components": [
+        {
+          "__type": "Sandbox.Prop",
+          "__guid": "4cee9f06-310b-46a2-94d9-1fce7d532ac3",
+          "BodyGroups": 18446744073709551615,
+          "Health": 0,
+          "IsStatic": true,
+          "Model": "models/track_tileset_pieces/scaffold/scaffold_96/foot/scaffold_foot_turnr_96x576.vmdl"
+        }
+      ]
+    },
+    {
+      "__guid": "1c244c58-02dc-491d-9ea0-f87761cb18c4",
+      "Name": "scaffold_foot_96",
+      "Position": "-0,-1664,0",
+      "Tags": "gridtile",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "Components": [
+        {
+          "__type": "Sandbox.Prop",
+          "__guid": "8df44b79-6857-45a1-8cf7-21962aeb829e",
+          "BodyGroups": 18446744073709551615,
+          "Health": 0,
+          "IsStatic": true,
+          "Model": "models/track_tileset_pieces/scaffold/scaffold_96/foot/scaffold_foot_96.vmdl"
+        }
+      ]
+    },
+    {
+      "__guid": "0bb1c697-71b5-429c-8372-7de148715102",
+      "Name": "scaffold_foot_96",
+      "Position": "384,-1664,0",
+      "Tags": "gridtile",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "Components": [
+        {
+          "__type": "Sandbox.Prop",
+          "__guid": "eab50a22-c586-484a-b565-029e8fbb4764",
+          "BodyGroups": 18446744073709551615,
+          "Health": 0,
+          "IsStatic": true,
+          "Model": "models/track_tileset_pieces/scaffold/scaffold_96/foot/scaffold_foot_96.vmdl"
+        }
+      ]
+    },
+    {
+      "__guid": "df4de79f-1d20-4a80-97a0-2f79b1bee926",
+      "Name": "scaffold_foot_96",
+      "Position": "768,-1664,0",
+      "Tags": "gridtile",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "Components": [
+        {
+          "__type": "Sandbox.Prop",
+          "__guid": "1d6cabe3-3684-4fcf-9650-e252ecfe9355",
+          "BodyGroups": 18446744073709551615,
+          "Health": 0,
+          "IsStatic": true,
+          "Model": "models/track_tileset_pieces/scaffold/scaffold_96/foot/scaffold_foot_96.vmdl"
+        }
+      ]
+    },
+    {
+      "__guid": "a8f7a907-2cce-4436-9fc7-0ede64fb4b01",
+      "Name": "scaffold_foot_96",
+      "Position": "1152,-1664,0",
+      "Tags": "gridtile",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "Components": [
+        {
+          "__type": "Sandbox.Prop",
+          "__guid": "613574f1-c115-4eff-9029-fdecbf3e2d11",
+          "BodyGroups": 18446744073709551615,
+          "Health": 0,
+          "IsStatic": true,
+          "Model": "models/track_tileset_pieces/scaffold/scaffold_96/foot/scaffold_foot_96.vmdl"
+        }
+      ]
+    },
+    {
+      "__guid": "3205fe6b-852a-4658-9e1f-5dd844952f4f",
+      "Name": "scaffold_foot_96",
+      "Position": "1536,-1664,0",
+      "Tags": "gridtile",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "Components": [
+        {
+          "__type": "Sandbox.Prop",
+          "__guid": "5d0bdb6e-cb20-4768-abc4-7dc83a21cc48",
+          "BodyGroups": 18446744073709551615,
+          "Health": 0,
+          "IsStatic": true,
+          "Model": "models/track_tileset_pieces/scaffold/scaffold_96/foot/scaffold_foot_96.vmdl"
+        }
+      ]
+    },
+    {
+      "__guid": "44e54396-4a26-4bcc-b352-0585dafe03bd",
+      "Name": "scaffold_foot_96",
+      "Position": "1920,-1664,0",
+      "Tags": "gridtile",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "Components": [
+        {
+          "__type": "Sandbox.Prop",
+          "__guid": "bc746cc0-3a7e-47b2-a9f2-75e6ad13499c",
+          "BodyGroups": 18446744073709551615,
+          "Health": 0,
+          "IsStatic": true,
+          "Model": "models/track_tileset_pieces/scaffold/scaffold_96/foot/scaffold_foot_96.vmdl"
+        }
+      ]
+    },
+    {
+      "__guid": "04831f0b-1900-49b2-8f0e-af6d28445674",
+      "Name": "scaffold_foot_96",
+      "Position": "2304,-1664,0.00003051758",
+      "Tags": "gridtile",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "Components": [
+        {
+          "__type": "Sandbox.Prop",
+          "__guid": "8856a7f4-09df-47fe-9db0-569f74936959",
+          "BodyGroups": 18446744073709551615,
+          "Health": 0,
+          "IsStatic": true,
+          "Model": "models/track_tileset_pieces/scaffold/scaffold_96/foot/scaffold_foot_96.vmdl"
+        }
+      ]
+    },
+    {
+      "__guid": "a8d5f5a5-f4c8-4f49-82e7-ee3aec0b88e1",
+      "Name": "scaffold_foot_96",
+      "Position": "2688,-1664,-0.00003051758",
+      "Tags": "gridtile",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "Components": [
+        {
+          "__type": "Sandbox.Prop",
+          "__guid": "701a449e-a7c3-4ae1-8868-599dafa79843",
+          "BodyGroups": 18446744073709551615,
+          "Health": 0,
+          "IsStatic": true,
+          "Model": "models/track_tileset_pieces/scaffold/scaffold_96/foot/scaffold_foot_96.vmdl"
+        }
+      ]
+    },
+    {
+      "__guid": "68f39a36-d928-48c7-b8c6-4d942c5a3cf1",
+      "Name": "scaffold_foot_96",
+      "Position": "3072,-1664,0",
+      "Tags": "gridtile",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "Components": [
+        {
+          "__type": "Sandbox.Prop",
+          "__guid": "8e3d1ed8-d61b-45bf-a486-2fa49c8289a4",
+          "BodyGroups": 18446744073709551615,
+          "Health": 0,
+          "IsStatic": true,
+          "Model": "models/track_tileset_pieces/scaffold/scaffold_96/foot/scaffold_foot_96.vmdl"
+        }
+      ]
+    },
+    {
+      "__guid": "2a1727c6-f4da-477b-b8f7-ac4138c68c2d",
+      "Name": "scaffold_mid_slope_192",
+      "Position": "-0,-3200,96",
+      "Rotation": "0,0.00000004371139,-0.9999999,0",
+      "Tags": "gridtile",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "Components": [
+        {
+          "__type": "Sandbox.Prop",
+          "__guid": "8f012747-dc5a-4b3e-ab85-63fbec26f0a1",
+          "BodyGroups": 18446744073709551615,
+          "Health": 0,
+          "IsStatic": true,
+          "Model": "models/track_tileset_pieces/scaffold/scaffold_192/mid/scaffold_mid_slope_192.vmdl"
+        }
+      ]
+    },
+    {
+      "__guid": "cf27fa16-32ab-4d96-b425-941f03fbbdf1",
+      "Name": "scaffold_mid_turnr_192x576",
+      "Position": "-768,-3200,96",
+      "Rotation": "0,0.00000004371139,-0.9999999,0",
+      "Tags": "gridtile",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "Components": [
+        {
+          "__type": "Sandbox.Prop",
+          "__guid": "6bacc368-9e57-4061-9f9c-cf7723a0d077",
+          "BodyGroups": 18446744073709551615,
+          "Health": 0,
+          "IsStatic": true,
+          "Model": "models/track_tileset_pieces/scaffold/scaffold_192/mid/scaffold_mid_turnr_192x576.vmdl"
+        }
+      ]
+    },
+    {
+      "__guid": "c33d9a8e-ba7a-49ac-81f7-8fbe844df7ad",
+      "Name": "scaffold_mid_192",
+      "Position": "-768,-2432,96",
+      "Rotation": "0,0,0.7071067,0.7071067",
+      "Tags": "gridtile",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "Components": [
+        {
+          "__type": "Sandbox.Prop",
+          "__guid": "eb0145d2-00bf-4b4d-b522-64128b859bce",
+          "BodyGroups": 18446744073709551615,
+          "Health": 0,
+          "IsStatic": true,
+          "Model": "models/track_tileset_pieces/scaffold/scaffold_192/mid/scaffold_mid_192.vmdl"
+        }
+      ]
+    },
+    {
+      "__guid": "98ece8ce-d725-460f-8aa4-59aa03880e61",
+      "Name": "scaffold_mid_turnr_192x576",
+      "Position": "-768,-1664,96",
+      "Rotation": "0,0,0.7071067,0.7071067",
+      "Tags": "gridtile",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "Components": [
+        {
+          "__type": "Sandbox.Prop",
+          "__guid": "3702e0f4-5a61-4804-b284-3b9f9926a5d0",
+          "BodyGroups": 18446744073709551615,
+          "Health": 0,
+          "IsStatic": true,
+          "Model": "models/track_tileset_pieces/scaffold/scaffold_192/mid/scaffold_mid_turnr_192x576.vmdl"
+        }
+      ]
+    },
+    {
+      "__guid": "f8717a22-989b-42be-9079-eec2328991a8",
+      "Name": "scaffold_mid_192",
+      "Position": "-0,-1664,96",
+      "Tags": "gridtile",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "Components": [
+        {
+          "__type": "Sandbox.Prop",
+          "__guid": "98c97eb5-615c-4fcf-a4f9-44c79682d990",
+          "BodyGroups": 18446744073709551615,
+          "Health": 0,
+          "IsStatic": true,
+          "Model": "models/track_tileset_pieces/scaffold/scaffold_192/mid/scaffold_mid_192.vmdl"
+        }
+      ]
+    },
+    {
+      "__guid": "5c8a7cef-b382-445e-a088-dcdcb84efcae",
+      "Name": "scaffold_mid_192",
+      "Position": "384,-1664,96",
+      "Tags": "gridtile",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "Components": [
+        {
+          "__type": "Sandbox.Prop",
+          "__guid": "52cd2a1a-1ebe-4549-9315-8434ccdeb0a5",
+          "BodyGroups": 18446744073709551615,
+          "Health": 0,
+          "IsStatic": true,
+          "Model": "models/track_tileset_pieces/scaffold/scaffold_192/mid/scaffold_mid_192.vmdl"
+        }
+      ]
+    },
+    {
+      "__guid": "a33f808a-9ce6-4d76-8ea8-dad850d1b68d",
+      "Name": "scaffold_mid_192",
+      "Position": "768,-1664,96",
+      "Tags": "gridtile",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "Components": [
+        {
+          "__type": "Sandbox.Prop",
+          "__guid": "0e38affe-c8be-4a50-ba50-8c1477c1284c",
+          "BodyGroups": 18446744073709551615,
+          "Health": 0,
+          "IsStatic": true,
+          "Model": "models/track_tileset_pieces/scaffold/scaffold_192/mid/scaffold_mid_192.vmdl"
+        }
+      ]
+    },
+    {
+      "__guid": "a3255aa2-803d-4c5b-835f-a3ae046e8149",
+      "Name": "scaffold_mid_192",
+      "Position": "1152,-1664,96",
+      "Tags": "gridtile",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "Components": [
+        {
+          "__type": "Sandbox.Prop",
+          "__guid": "1bbfddea-ce9f-4315-a890-4b96c8cfe1b6",
+          "BodyGroups": 18446744073709551615,
+          "Health": 0,
+          "IsStatic": true,
+          "Model": "models/track_tileset_pieces/scaffold/scaffold_192/mid/scaffold_mid_192.vmdl"
+        }
+      ]
+    },
+    {
+      "__guid": "a5be78fb-93b9-487b-a88d-cc7257929fc9",
+      "Name": "scaffold_mid_192",
+      "Position": "1536,-1664,96",
+      "Tags": "gridtile",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "Components": [
+        {
+          "__type": "Sandbox.Prop",
+          "__guid": "a8609dca-837d-40fd-8123-5fd2afc359d8",
+          "BodyGroups": 18446744073709551615,
+          "Health": 0,
+          "IsStatic": true,
+          "Model": "models/track_tileset_pieces/scaffold/scaffold_192/mid/scaffold_mid_192.vmdl"
+        }
+      ]
+    },
+    {
+      "__guid": "ca3ebe08-95e8-4875-b0c9-7b40adca467f",
+      "Name": "scaffold_mid_192",
+      "Position": "1920,-1664,96",
+      "Tags": "gridtile",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "Components": [
+        {
+          "__type": "Sandbox.Prop",
+          "__guid": "8db08d28-413c-45a6-80ee-72d02b53880e",
+          "BodyGroups": 18446744073709551615,
+          "Health": 0,
+          "IsStatic": true,
+          "Model": "models/track_tileset_pieces/scaffold/scaffold_192/mid/scaffold_mid_192.vmdl"
+        }
+      ]
+    },
+    {
+      "__guid": "f4947569-69e1-4e37-ae39-fb1128c0efd1",
+      "Name": "scaffold_mid_192",
+      "Position": "2304,-1664,96",
+      "Tags": "gridtile",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "Components": [
+        {
+          "__type": "Sandbox.Prop",
+          "__guid": "269e92d9-9c00-48aa-939b-ac2d601914cb",
+          "BodyGroups": 18446744073709551615,
+          "Health": 0,
+          "IsStatic": true,
+          "Model": "models/track_tileset_pieces/scaffold/scaffold_192/mid/scaffold_mid_192.vmdl"
+        }
+      ]
+    },
+    {
+      "__guid": "047280dc-36eb-40f5-9243-e967ec82222b",
+      "Name": "scaffold_mid_192",
+      "Position": "2688,-1664,96",
+      "Tags": "gridtile",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "Components": [
+        {
+          "__type": "Sandbox.Prop",
+          "__guid": "d2429f8c-ab2f-4683-9181-6e81bbfc788c",
+          "BodyGroups": 18446744073709551615,
+          "Health": 0,
+          "IsStatic": true,
+          "Model": "models/track_tileset_pieces/scaffold/scaffold_192/mid/scaffold_mid_192.vmdl"
+        }
+      ]
+    },
+    {
+      "__guid": "58e49d94-6f60-463a-8fdd-db3db9146440",
+      "Name": "scaffold_mid_192",
+      "Position": "3072,-1664,96",
+      "Tags": "gridtile",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "Components": [
+        {
+          "__type": "Sandbox.Prop",
+          "__guid": "82df1830-61d1-4570-9119-aead0d22d773",
+          "BodyGroups": 18446744073709551615,
+          "Health": 0,
+          "IsStatic": true,
+          "Model": "models/track_tileset_pieces/scaffold/scaffold_192/mid/scaffold_mid_192.vmdl"
+        }
+      ]
+    },
+    {
+      "__guid": "968ee375-ab4d-4075-b74e-951b8df5e7e2",
+      "Name": "scaffold_mid_slope_96",
+      "Position": "0,-1664,288",
+      "Tags": "gridtile",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "Components": [
+        {
+          "__type": "Sandbox.Prop",
+          "__guid": "6644ddc8-8576-473b-a23d-4537a198a8a4",
+          "BodyGroups": 18446744073709551615,
+          "Health": 0,
+          "IsStatic": true,
+          "Model": "models/track_tileset_pieces/scaffold/scaffold_96/mid/scaffold_mid_slope_96.vmdl"
+        }
+      ]
+    },
+    {
+      "__guid": "df7c3ff6-6ea8-4efd-9cd4-864da7c7bce7",
+      "Name": "scaffold_mid_96",
+      "Position": "384,-1664,288",
+      "Tags": "gridtile",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "Components": [
+        {
+          "__type": "Sandbox.Prop",
+          "__guid": "804b228a-3560-4856-8922-438cefebc28d",
+          "BodyGroups": 18446744073709551615,
+          "Health": 0,
+          "IsStatic": true,
+          "Model": "models/track_tileset_pieces/scaffold/scaffold_96/mid/scaffold_mid_96.vmdl"
+        }
+      ]
+    },
+    {
+      "__guid": "7fe8e250-1f8a-4f00-b086-09e07e242bbc",
+      "Name": "scaffold_mid_192",
+      "Position": "768,-1664,288",
+      "Tags": "gridtile",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "Components": [
+        {
+          "__type": "Sandbox.Prop",
+          "__guid": "90a08413-932b-45c1-ab1d-17808e241304",
+          "BodyGroups": 18446744073709551615,
+          "Health": 0,
+          "IsStatic": true,
+          "Model": "models/track_tileset_pieces/scaffold/scaffold_192/mid/scaffold_mid_192.vmdl"
+        }
+      ]
+    },
+    {
+      "__guid": "2cedfe14-97c1-48a6-ac12-f8d8f2d2be1f",
+      "Name": "scaffold_mid_192",
+      "Position": "1152,-1664,288",
+      "Tags": "gridtile",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "Components": [
+        {
+          "__type": "Sandbox.Prop",
+          "__guid": "248a3da2-4691-4ded-a27c-b20b508e09e2",
+          "BodyGroups": 18446744073709551615,
+          "Health": 0,
+          "IsStatic": true,
+          "Model": "models/track_tileset_pieces/scaffold/scaffold_192/mid/scaffold_mid_192.vmdl"
+        }
+      ]
+    },
+    {
+      "__guid": "169d240f-ff96-4652-8155-1a921f283441",
+      "Name": "scaffold_mid_192",
+      "Position": "1536,-1664,288",
+      "Tags": "gridtile",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "Components": [
+        {
+          "__type": "Sandbox.Prop",
+          "__guid": "6d9411c5-3fdf-4dfc-a1c6-258466788cb1",
+          "BodyGroups": 18446744073709551615,
+          "Health": 0,
+          "IsStatic": true,
+          "Model": "models/track_tileset_pieces/scaffold/scaffold_192/mid/scaffold_mid_192.vmdl"
+        }
+      ]
+    },
+    {
+      "__guid": "79f26797-6d47-461a-af41-369f3d2fdab6",
+      "Name": "scaffold_mid_192",
+      "Position": "1920,-1664,288",
+      "Tags": "gridtile",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "Components": [
+        {
+          "__type": "Sandbox.Prop",
+          "__guid": "f9a78eea-620d-46e0-90d4-b3de80fa4cbf",
+          "BodyGroups": 18446744073709551615,
+          "Health": 0,
+          "IsStatic": true,
+          "Model": "models/track_tileset_pieces/scaffold/scaffold_192/mid/scaffold_mid_192.vmdl"
+        }
+      ]
+    },
+    {
+      "__guid": "00d1eb6e-c6c0-4a87-80ef-7d550832c715",
+      "Name": "scaffold_mid_192",
+      "Position": "2304,-1664,288",
+      "Tags": "gridtile",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "Components": [
+        {
+          "__type": "Sandbox.Prop",
+          "__guid": "2f5c4de1-6ef2-4190-812d-d8f6891eee21",
+          "BodyGroups": 18446744073709551615,
+          "Health": 0,
+          "IsStatic": true,
+          "Model": "models/track_tileset_pieces/scaffold/scaffold_192/mid/scaffold_mid_192.vmdl"
+        }
+      ]
+    },
+    {
+      "__guid": "55d5a585-8547-482d-910d-92cfad6b5b14",
+      "Name": "scaffold_mid_192",
+      "Position": "2688,-1664,288",
+      "Tags": "gridtile",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "Components": [
+        {
+          "__type": "Sandbox.Prop",
+          "__guid": "e6e6369b-6e37-4be8-9548-7dea9d9a0902",
+          "BodyGroups": 18446744073709551615,
+          "Health": 0,
+          "IsStatic": true,
+          "Model": "models/track_tileset_pieces/scaffold/scaffold_192/mid/scaffold_mid_192.vmdl"
+        }
+      ]
+    },
+    {
+      "__guid": "f16f0c41-bd73-4043-a020-8b0e0bca952a",
+      "Name": "scaffold_mid_192",
+      "Position": "3072,-1664,288",
+      "Tags": "gridtile",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "Components": [
+        {
+          "__type": "Sandbox.Prop",
+          "__guid": "def13e29-7f1f-40a4-abfb-d6cc744c5bc3",
+          "BodyGroups": 18446744073709551615,
+          "Health": 0,
+          "IsStatic": true,
+          "Model": "models/track_tileset_pieces/scaffold/scaffold_192/mid/scaffold_mid_192.vmdl"
+        }
+      ]
+    },
+    {
+      "__guid": "a97c6505-700e-45aa-b065-ce5abc616674",
+      "Name": "scaffold_mid_192",
+      "Position": "1536,-1664,480",
+      "Tags": "gridtile",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "Components": [
+        {
+          "__type": "Sandbox.Prop",
+          "__guid": "a1109fc1-f2dd-4088-a41a-bd6ac0957d7d",
+          "BodyGroups": 18446744073709551615,
+          "Health": 0,
+          "IsStatic": true,
+          "Model": "models/track_tileset_pieces/scaffold/scaffold_192/mid/scaffold_mid_192.vmdl"
+        }
+      ]
+    },
+    {
+      "__guid": "484a23d9-fb8e-482d-b0d4-bb99e84909f9",
+      "Name": "scaffold_mid_192",
+      "Position": "1920,-1664,480",
+      "Tags": "gridtile",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "Components": [
+        {
+          "__type": "Sandbox.Prop",
+          "__guid": "0ad32ab6-1815-43ee-a542-6e265c5bff18",
+          "BodyGroups": 18446744073709551615,
+          "Health": 0,
+          "IsStatic": true,
+          "Model": "models/track_tileset_pieces/scaffold/scaffold_192/mid/scaffold_mid_192.vmdl"
+        }
+      ]
+    },
+    {
+      "__guid": "9446c1bd-feb4-45ef-92fb-7b4756206831",
+      "Name": "scaffold_mid_192",
+      "Position": "2304,-1664,480",
+      "Tags": "gridtile",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "Components": [
+        {
+          "__type": "Sandbox.Prop",
+          "__guid": "8f7eba4c-9ac5-41d2-b7ea-8c7768e49776",
+          "BodyGroups": 18446744073709551615,
+          "Health": 0,
+          "IsStatic": true,
+          "Model": "models/track_tileset_pieces/scaffold/scaffold_192/mid/scaffold_mid_192.vmdl"
+        }
+      ]
+    },
+    {
+      "__guid": "986c9a9d-7813-4479-8eac-89cac6690581",
+      "Name": "scaffold_mid_192",
+      "Position": "2688,-1664,480",
+      "Tags": "gridtile",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "Components": [
+        {
+          "__type": "Sandbox.Prop",
+          "__guid": "cae70db8-a337-4ab5-9f28-f4bd3914356d",
+          "BodyGroups": 18446744073709551615,
+          "Health": 0,
+          "IsStatic": true,
+          "Model": "models/track_tileset_pieces/scaffold/scaffold_192/mid/scaffold_mid_192.vmdl"
+        }
+      ]
+    },
+    {
+      "__guid": "18e34640-96af-4352-8a68-10660eb2eb3d",
+      "Name": "scaffold_mid_192",
+      "Position": "3072,-1664,480",
+      "Tags": "gridtile",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "Components": [
+        {
+          "__type": "Sandbox.Prop",
+          "__guid": "b4b8286a-863b-4207-a0f1-b966a042e3b5",
+          "BodyGroups": 18446744073709551615,
+          "Health": 0,
+          "IsStatic": true,
+          "Model": "models/track_tileset_pieces/scaffold/scaffold_192/mid/scaffold_mid_192.vmdl"
+        }
+      ]
+    },
+    {
+      "__guid": "d1e22aa0-cf1a-4348-973d-837bb0c94e26",
+      "Name": "scaffold_mid_96",
+      "Position": "1152,-1664,480",
+      "Tags": "gridtile",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "Components": [
+        {
+          "__type": "Sandbox.Prop",
+          "__guid": "cf8a0993-b7cb-4a79-ac9e-a258c13996ea",
+          "BodyGroups": 18446744073709551615,
+          "Health": 0,
+          "IsStatic": true,
+          "Model": "models/track_tileset_pieces/scaffold/scaffold_96/mid/scaffold_mid_96.vmdl"
+        }
+      ]
+    },
+    {
+      "__guid": "2298efbe-ce2d-4fe2-a316-74f6fced213e",
+      "Name": "scaffold_mid_slope_96",
+      "Position": "384,-1664,384",
+      "Tags": "gridtile",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "Components": [
+        {
+          "__type": "Sandbox.Prop",
+          "__guid": "d8ca744e-f477-44a1-b943-8d82b9ee463e",
+          "BodyGroups": 18446744073709551615,
+          "Health": 0,
+          "IsStatic": true,
+          "Model": "models/track_tileset_pieces/scaffold/scaffold_96/mid/scaffold_mid_slope_96.vmdl"
+        }
+      ]
+    },
+    {
+      "__guid": "2aa47f65-2b9a-4d36-970e-3cb961701291",
+      "Name": "scaffold_mid_slope_96",
+      "Position": "768,-1664,480",
+      "Tags": "gridtile",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "Components": [
+        {
+          "__type": "Sandbox.Prop",
+          "__guid": "b140262c-e429-4a99-9baf-45183494745e",
+          "BodyGroups": 18446744073709551615,
+          "Health": 0,
+          "IsStatic": true,
+          "Model": "models/track_tileset_pieces/scaffold/scaffold_96/mid/scaffold_mid_slope_96.vmdl"
+        }
+      ]
+    },
+    {
+      "__guid": "ebd52303-e5a7-4ead-a7f8-bd9f75930751",
+      "Name": "scaffold_mid_slope_96",
+      "Position": "1152,-1664,576",
+      "Tags": "gridtile",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "Components": [
+        {
+          "__type": "Sandbox.Prop",
+          "__guid": "44bf1cd6-03e0-4ae9-aacd-fceaab9496f5",
+          "BodyGroups": 18446744073709551615,
+          "Health": 0,
+          "IsStatic": true,
+          "Model": "models/track_tileset_pieces/scaffold/scaffold_96/mid/scaffold_mid_slope_96.vmdl"
+        }
+      ]
+    },
+    {
+      "__guid": "79c05a96-7a19-4aa6-ac0d-f3a59697cf44",
+      "Name": "bleachers",
+      "Position": "1808,-2873.28,-10",
+      "Rotation": "0,0,-0.7071067,0.7071068",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "Children": [
+        {
+          "__guid": "eead4766-4d8a-44bf-9dea-5a416af9fd9b",
+          "Name": "bleachers",
+          "Position": "-0.00008010864,-448,0",
+          "Enabled": true,
+          "NetworkMode": 2,
+          "Components": [
+            {
+              "__type": "Sandbox.ModelRenderer",
+              "__guid": "8bc24dc5-139f-478c-b450-b927dff80937",
+              "BodyGroups": 18446744073709551615,
+              "Model": "models/props/bleachers.vmdl",
+              "RenderType": "On",
+              "Tint": "0.53488,0.13186,0.08707,1"
+            },
+            {
+              "__type": "Sandbox.ModelCollider",
+              "__guid": "e4e63d7c-a779-4398-bdd9-e876ad196c8e",
+              "IsTrigger": false,
+              "Model": "models/props/bleachers.vmdl",
+              "Static": true
+            }
+          ]
+        },
+        {
+          "__guid": "56c38bdc-c43d-48c0-b083-d2e064f1ab1f",
+          "Name": "bleachers (7)",
+          "Position": "-0.0005111694,-127.9999,0",
+          "Enabled": true,
+          "NetworkMode": 2,
+          "Components": [
+            {
+              "__type": "Sandbox.ModelRenderer",
+              "__guid": "d3d069ce-53e6-492e-826e-da79cc8da363",
+              "BodyGroups": 18446744073709551615,
+              "Model": "models/props/bleachers.vmdl",
+              "RenderType": "On",
+              "Tint": "0.53488,0.13186,0.08707,1"
+            },
+            {
+              "__type": "Sandbox.ModelCollider",
+              "__guid": "0d76152e-9fee-491a-b477-34e691b5a5ea",
+              "IsTrigger": false,
+              "Model": "models/props/bleachers.vmdl",
+              "Static": true
+            }
+          ]
+        },
+        {
+          "__guid": "6ae378ab-6e4e-404a-a885-37f15092781f",
+          "Name": "bleachers (7)",
+          "Position": "-0.0009422302,192,0",
+          "Enabled": true,
+          "NetworkMode": 2,
+          "Components": [
+            {
+              "__type": "Sandbox.ModelRenderer",
+              "__guid": "5ebc0b84-ddf3-45aa-9da2-3b0f8f3294b5",
+              "BodyGroups": 18446744073709551615,
+              "Model": "models/props/bleachers.vmdl",
+              "RenderType": "On",
+              "Tint": "0.53488,0.13186,0.08707,1"
+            },
+            {
+              "__type": "Sandbox.ModelCollider",
+              "__guid": "1771840f-2334-4778-a942-442d4fc75c8b",
+              "IsTrigger": false,
+              "Model": "models/props/bleachers.vmdl",
+              "Static": true
+            }
+          ]
+        },
+        {
+          "__guid": "e461ebcc-de4b-44e7-bb8f-232ce3679a12",
+          "Name": "bleachers (7)",
+          "Position": "-0.0005455016,-319.9995,0",
+          "Enabled": true,
+          "NetworkMode": 2,
+          "Components": [
+            {
+              "__type": "Sandbox.ModelRenderer",
+              "__guid": "3bfe56d6-1f2d-42d1-bee8-dbce6ef01460",
+              "BodyGroups": 18446744073709551615,
+              "Model": "models/props/bleachers.vmdl",
+              "RenderType": "On",
+              "Tint": "0.53488,0.13186,0.08707,1"
+            },
+            {
+              "__type": "Sandbox.ModelCollider",
+              "__guid": "f286bfd3-6f5f-4ae9-a2c0-5b2eb4a12b40",
+              "IsTrigger": false,
+              "Model": "models/props/bleachers.vmdl",
+              "Static": true
+            }
+          ]
+        },
+        {
+          "__guid": "fc4a47e8-b492-429d-9c60-7e10e65d7b81",
+          "Name": "bleachers (7)",
+          "Position": "-0.0009765623,0.0006103517,0",
+          "Enabled": true,
+          "NetworkMode": 2,
+          "Components": [
+            {
+              "__type": "Sandbox.ModelRenderer",
+              "__guid": "0f06fb30-0343-49a3-8b75-0e24b49bd969",
+              "BodyGroups": 18446744073709551615,
+              "Model": "models/props/bleachers.vmdl",
+              "RenderType": "On",
+              "Tint": "0.53488,0.13186,0.08707,1"
+            },
+            {
+              "__type": "Sandbox.ModelCollider",
+              "__guid": "451506a7-94ff-41c3-9307-aa15243f6c53",
+              "IsTrigger": false,
+              "Model": "models/props/bleachers.vmdl",
+              "Static": true
+            }
+          ]
+        },
+        {
+          "__guid": "0a48e7f9-b28a-47d6-9621-dd90a1a28de9",
+          "Name": "bleachers (7)",
+          "Position": "-0.001407623,320.0005,0",
+          "Enabled": true,
+          "NetworkMode": 2,
+          "Components": [
+            {
+              "__type": "Sandbox.ModelRenderer",
+              "__guid": "693f1fbd-0c1b-46c0-8c00-a577d00c1f24",
+              "BodyGroups": 18446744073709551615,
+              "Model": "models/props/bleachers.vmdl",
+              "RenderType": "On",
+              "Tint": "0.53488,0.13186,0.08707,1"
+            },
+            {
+              "__type": "Sandbox.ModelCollider",
+              "__guid": "9f24102d-3e56-4ef8-afad-64487bce8e11",
+              "IsTrigger": false,
+              "Model": "models/props/bleachers.vmdl",
+              "Static": true
+            }
+          ]
+        },
+        {
+          "__guid": "353ebc13-8c01-43f0-84ce-bc1c658e938b",
+          "Name": "bleachers_support (3)",
+          "Position": "0,0,0",
+          "Enabled": true,
+          "NetworkMode": 2,
+          "Components": [
+            {
+              "__type": "Sandbox.Prop",
+              "__guid": "b87d6abb-ff67-478c-b89e-b9b0b0dc57c4",
+              "BodyGroups": 18446744073709551615,
+              "Health": 0,
+              "IsStatic": true,
+              "Model": "models/props/bleachers_support.vmdl"
+            }
+          ]
+        },
+        {
+          "__guid": "2f31d464-4a0f-4242-93b2-0eb7d47dae4e",
+          "Name": "bleachers_support",
+          "Position": "-0.00005722046,-320,0",
+          "Enabled": true,
+          "NetworkMode": 2,
+          "Components": [
+            {
+              "__type": "Sandbox.Prop",
+              "__guid": "eadb48cb-2e14-4eb5-b841-69a68af8b4ce",
+              "BodyGroups": 18446744073709551615,
+              "Health": 0,
+              "IsStatic": true,
+              "Model": "models/props/bleachers_support.vmdl"
+            }
+          ]
+        },
+        {
+          "__guid": "1728a8d5-a86e-42ee-8ff3-017cfefcc7ca",
+          "Name": "bleachers_support (4)",
+          "Position": "0.00005722046,320,0",
+          "Enabled": true,
+          "NetworkMode": 2,
+          "Components": [
+            {
+              "__type": "Sandbox.Prop",
+              "__guid": "496ea765-453d-4fa0-a15b-0ff8f31cba98",
+              "BodyGroups": 18446744073709551615,
+              "Health": 0,
+              "IsStatic": true,
+              "Model": "models/props/bleachers_support.vmdl"
+            }
+          ]
+        },
+        {
+          "__guid": "0fa5e198-c4ce-4e27-9546-0b6d63583664",
+          "Name": "bleachers_stairs",
+          "Position": "-0.00004005432,-224,0",
+          "Enabled": true,
+          "NetworkMode": 2,
+          "Components": [
+            {
+              "__type": "Sandbox.Prop",
+              "__guid": "7efefa3f-8737-45d9-a852-30c8c721911a",
+              "BodyGroups": 18446744073709551615,
+              "Health": 0,
+              "IsStatic": true,
+              "Model": "models/props/bleachers_stairs.vmdl"
+            }
+          ]
+        },
+        {
+          "__guid": "4de48fa8-e537-4b95-83c4-0c88679549fc",
+          "Name": "bleachers_stairs (7)",
+          "Position": "-0.00009727458,-543.9988,0",
+          "Enabled": true,
+          "NetworkMode": 2,
+          "Components": [
+            {
+              "__type": "Sandbox.Prop",
+              "__guid": "5d0ebd69-a090-4eeb-ab49-da7244114203",
+              "BodyGroups": 18446744073709551615,
+              "Health": 0,
+              "IsStatic": true,
+              "Model": "models/props/bleachers_stairs.vmdl"
+            }
+          ]
+        },
+        {
+          "__guid": "1e97e191-c76b-4442-8575-877e23d9daf6",
+          "Name": "bleachers_stairs (5)",
+          "Position": "0.00001716614,95.99999,0",
+          "Enabled": true,
+          "NetworkMode": 2,
+          "Components": [
+            {
+              "__type": "Sandbox.Prop",
+              "__guid": "9f9c6461-2021-4c3e-aeff-fdc418817645",
+              "BodyGroups": 18446744073709551615,
+              "Health": 0,
+              "IsStatic": true,
+              "Model": "models/props/bleachers_stairs.vmdl"
+            }
+          ]
+        },
+        {
+          "__guid": "2be658ab-7fa5-4fb4-a8b1-5b1a04e384ee",
+          "Name": "bleachers_stairs (6)",
+          "Position": "0.0000743866,416,0",
+          "Enabled": true,
+          "NetworkMode": 2,
+          "Components": [
+            {
+              "__type": "Sandbox.Prop",
+              "__guid": "fd656881-ea34-4df3-a048-f0b7d4feb56e",
+              "BodyGroups": 18446744073709551615,
+              "Health": 0,
+              "IsStatic": true,
+              "Model": "models/props/bleachers_stairs.vmdl"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "__guid": "b907362c-4d5f-452c-8140-8942cc07873b",
+      "Name": "bleachers (6)",
+      "Position": "1712,-3502.63,-10",
+      "Rotation": "0,0,0.7071068,0.7071068",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "Children": [
+        {
+          "__guid": "81f2bd4f-d013-42af-a911-f486611492b0",
+          "Name": "bleachers",
+          "Position": "-33.37033,-448.0007,0",
+          "Enabled": true,
+          "NetworkMode": 2,
+          "Components": [
+            {
+              "__type": "Sandbox.ModelRenderer",
+              "__guid": "75c22181-a2b6-4e29-8bbf-158a5b9e7e3b",
+              "BodyGroups": 18446744073709551615,
+              "Model": "models/props/bleachers.vmdl",
+              "RenderType": "On",
+              "Tint": "0.53333,0.12941,0.08627,1"
+            },
+            {
+              "__type": "Sandbox.ModelCollider",
+              "__guid": "9e9ab794-3b94-45cd-b063-1e2d536a3f98",
+              "IsTrigger": false,
+              "Model": "models/props/bleachers.vmdl",
+              "Static": true
+            }
+          ]
+        },
+        {
+          "__guid": "bfb25830-811b-4054-9dc5-1a9fcffa2bdd",
+          "Name": "bleachers (7)",
+          "Position": "-33.37035,-128.0011,0",
+          "Enabled": true,
+          "NetworkMode": 2,
+          "Components": [
+            {
+              "__type": "Sandbox.ModelRenderer",
+              "__guid": "eca66002-ff25-4c01-b898-47435c709b68",
+              "BodyGroups": 18446744073709551615,
+              "Model": "models/props/bleachers.vmdl",
+              "RenderType": "On",
+              "Tint": "0.53333,0.12941,0.08627,1"
+            },
+            {
+              "__type": "Sandbox.ModelCollider",
+              "__guid": "c3811018-e6aa-49a9-b382-5333c32f4bfb",
+              "IsTrigger": false,
+              "Model": "models/props/bleachers.vmdl",
+              "Static": true
+            }
+          ]
+        },
+        {
+          "__guid": "993045ba-7f0b-40ef-b41d-91a10c43cb95",
+          "Name": "bleachers (7)",
+          "Position": "-33.37037,191.9991,0",
+          "Enabled": true,
+          "NetworkMode": 2,
+          "Components": [
+            {
+              "__type": "Sandbox.ModelRenderer",
+              "__guid": "318e8d4f-3209-4c05-8efb-38813786733c",
+              "BodyGroups": 18446744073709551615,
+              "Model": "models/props/bleachers.vmdl",
+              "RenderType": "On",
+              "Tint": "0.53333,0.12941,0.08627,1"
+            },
+            {
+              "__type": "Sandbox.ModelCollider",
+              "__guid": "5e6d38d4-b825-425f-8178-d52205863f4f",
+              "IsTrigger": false,
+              "Model": "models/props/bleachers.vmdl",
+              "Static": true
+            }
+          ]
+        },
+        {
+          "__guid": "d6c4e5b4-6f9b-4988-9146-5add0c30c9b1",
+          "Name": "bleachers (7)",
+          "Position": "-33.37034,-320.0013,0",
+          "Enabled": true,
+          "NetworkMode": 2,
+          "Components": [
+            {
+              "__type": "Sandbox.ModelRenderer",
+              "__guid": "1169e2be-2c8e-43ce-bb24-5180ecf28355",
+              "BodyGroups": 18446744073709551615,
+              "Model": "models/props/bleachers.vmdl",
+              "RenderType": "On",
+              "Tint": "0.53333,0.12941,0.08627,1"
+            },
+            {
+              "__type": "Sandbox.ModelCollider",
+              "__guid": "d17f1cdc-1777-40e7-bf4d-790e1fd8da1e",
+              "IsTrigger": false,
+              "Model": "models/props/bleachers.vmdl",
+              "Static": true
+            }
+          ]
+        },
+        {
+          "__guid": "e447ca9a-5fdb-43e1-892c-e78d1bb198e2",
+          "Name": "bleachers (7)",
+          "Position": "-33.37036,-0.001710973,0",
+          "Enabled": true,
+          "NetworkMode": 2,
+          "Components": [
+            {
+              "__type": "Sandbox.ModelRenderer",
+              "__guid": "993bf2c1-86e5-4935-b6ea-f0f53c1f1eff",
+              "BodyGroups": 18446744073709551615,
+              "Model": "models/props/bleachers.vmdl",
+              "RenderType": "On",
+              "Tint": "0.53333,0.12941,0.08627,1"
+            },
+            {
+              "__type": "Sandbox.ModelCollider",
+              "__guid": "737ff678-b396-4789-be61-ff277e1ef1ba",
+              "IsTrigger": false,
+              "Model": "models/props/bleachers.vmdl",
+              "Static": true
+            }
+          ]
+        },
+        {
+          "__guid": "2867fa10-1401-41c6-a52e-7a7adc3ca683",
+          "Name": "bleachers (7)",
+          "Position": "-33.37038,319.9985,0",
+          "Enabled": true,
+          "NetworkMode": 2,
+          "Components": [
+            {
+              "__type": "Sandbox.ModelRenderer",
+              "__guid": "d680b262-5a04-4c80-b832-87f4132f76c2",
+              "BodyGroups": 18446744073709551615,
+              "Model": "models/props/bleachers.vmdl",
+              "RenderType": "On",
+              "Tint": "0.53333,0.12941,0.08627,1"
+            },
+            {
+              "__type": "Sandbox.ModelCollider",
+              "__guid": "7fcbd8b2-81cf-41d7-92ee-21f49da60a22",
+              "IsTrigger": false,
+              "Model": "models/props/bleachers.vmdl",
+              "Static": true
+            }
+          ]
+        },
+        {
+          "__guid": "05c2ea8f-9abc-494d-a359-42e505574660",
+          "Name": "bleachers_support (3)",
+          "Position": "-33.37036,-0.0007344108,0",
+          "Enabled": true,
+          "NetworkMode": 2,
+          "Components": [
+            {
+              "__type": "Sandbox.Prop",
+              "__guid": "582d9b55-3800-4338-a4e8-095206e20aa3",
+              "BodyGroups": 18446744073709551615,
+              "Health": 0,
+              "IsStatic": true,
+              "Model": "models/props/bleachers_support.vmdl"
+            }
+          ]
+        },
+        {
+          "__guid": "9baab22c-0b0a-4728-86c0-04c34d7678fe",
+          "Name": "bleachers_support",
+          "Position": "-33.37034,-320.0007,0",
+          "Enabled": true,
+          "NetworkMode": 2,
+          "Components": [
+            {
+              "__type": "Sandbox.Prop",
+              "__guid": "a54b358d-94dd-414e-b240-02aebcb722eb",
+              "BodyGroups": 18446744073709551615,
+              "Health": 0,
+              "IsStatic": true,
+              "Model": "models/props/bleachers_support.vmdl"
+            }
+          ]
+        },
+        {
+          "__guid": "0ef060d2-9ed4-4537-b766-a0a6d19e1de8",
+          "Name": "bleachers_support (4)",
+          "Position": "-33.37038,319.999,0",
+          "Enabled": true,
+          "NetworkMode": 2,
+          "Components": [
+            {
+              "__type": "Sandbox.Prop",
+              "__guid": "b36e5dad-8b81-4e16-9b2c-52be73874ee8",
+              "BodyGroups": 18446744073709551615,
+              "Health": 0,
+              "IsStatic": true,
+              "Model": "models/props/bleachers_support.vmdl"
+            }
+          ]
+        },
+        {
+          "__guid": "48d2a89d-c15c-4ac0-91e7-27b77060b324",
+          "Name": "bleachers_stairs",
+          "Position": "-33.37034,-224.0007,0",
+          "Enabled": true,
+          "NetworkMode": 2,
+          "Components": [
+            {
+              "__type": "Sandbox.Prop",
+              "__guid": "6f0875a6-27aa-47bb-a776-3f950b614195",
+              "BodyGroups": 18446744073709551615,
+              "Health": 0,
+              "IsStatic": true,
+              "Model": "models/props/bleachers_stairs.vmdl"
+            }
+          ]
+        },
+        {
+          "__guid": "76e2f562-0642-4b36-8727-03537756739b",
+          "Name": "bleachers_stairs (7)",
+          "Position": "-33.37032,-544.0007,0",
+          "Enabled": true,
+          "NetworkMode": 2,
+          "Components": [
+            {
+              "__type": "Sandbox.Prop",
+              "__guid": "af5670fc-e5cd-42f0-be56-840454131dfc",
+              "BodyGroups": 18446744073709551615,
+              "Health": 0,
+              "IsStatic": true,
+              "Model": "models/props/bleachers_stairs.vmdl"
+            }
+          ]
+        },
+        {
+          "__guid": "cc164f02-34f1-450c-a3fe-cc674697346e",
+          "Name": "bleachers_stairs (5)",
+          "Position": "-33.37036,95.99926,0",
+          "Enabled": true,
+          "NetworkMode": 2,
+          "Components": [
+            {
+              "__type": "Sandbox.Prop",
+              "__guid": "26fdfda9-3170-4b33-a3e4-10a55233c066",
+              "BodyGroups": 18446744073709551615,
+              "Health": 0,
+              "IsStatic": true,
+              "Model": "models/props/bleachers_stairs.vmdl"
+            }
+          ]
+        },
+        {
+          "__guid": "ab536b9a-73ba-4e6b-b1f3-45388a47acb4",
+          "Name": "bleachers_stairs (6)",
+          "Position": "-33.37038,415.999,0",
+          "Enabled": true,
+          "NetworkMode": 2,
+          "Components": [
+            {
+              "__type": "Sandbox.Prop",
+              "__guid": "4957a8c3-c8d2-4960-b66b-c38059397b2b",
+              "BodyGroups": 18446744073709551615,
+              "Health": 0,
+              "IsStatic": true,
+              "Model": "models/props/bleachers_stairs.vmdl"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "__guid": "3ca54d07-9f9f-4b87-b346-6670bec67e70",
+      "Name": "tent01",
+      "Position": "864,-2784,-10.00006",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "Components": [
+        {
+          "__type": "Sandbox.Prop",
+          "__guid": "8ff1f288-db8f-4996-8fd2-afd62962aa90",
+          "BodyGroups": 18446744073709551615,
+          "Health": 0,
+          "IsStatic": true,
+          "Model": "models/props/tent01.vmdl"
+        }
+      ]
+    },
+    {
+      "__guid": "8f166d0c-6845-4172-bc8e-29ce3281438c",
+      "Name": "tent01 (5)",
+      "Position": "-1154.51,-3296,-10.00018",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "Components": [
+        {
+          "__type": "Sandbox.Prop",
+          "__guid": "767a7fd6-a588-41b5-b864-983b514b348b",
+          "BodyGroups": 18446744073709551615,
+          "Health": 0,
+          "IsStatic": true,
+          "Model": "models/props/tent01.vmdl"
+        }
+      ]
+    },
+    {
+      "__guid": "0993dd0f-4557-494d-99e9-7b683b739bcb",
+      "Name": "tent01 (8)",
+      "Position": "-1154.51,-3616,-10.00018",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "Components": [
+        {
+          "__type": "Sandbox.Prop",
+          "__guid": "aa8097c8-9374-40d9-8bd1-3c23e9d1a61f",
+          "BodyGroups": 18446744073709551615,
+          "Health": 0,
+          "IsStatic": true,
+          "Model": "models/props/tent01.vmdl"
+        }
+      ]
+    },
+    {
+      "__guid": "c798b8a5-74e4-4ddd-835f-eb9eccedac97",
+      "Name": "tent01 (10)",
+      "Position": "-1154.51,-4000,-10.00018",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "Components": [
+        {
+          "__type": "Sandbox.Prop",
+          "__guid": "77f26fb0-ba1b-4c2b-8baf-0efdbdf7c10c",
+          "BodyGroups": 18446744073709551615,
+          "Health": 0,
+          "IsStatic": true,
+          "Model": "models/props/tent01.vmdl"
+        }
+      ]
+    },
+    {
+      "__guid": "69d33c6c-2e54-45a5-9275-79df549d99c8",
+      "Name": "tent01 (9)",
+      "Position": "-1154.51,-4416,-10.00018",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "Components": [
+        {
+          "__type": "Sandbox.Prop",
+          "__guid": "18dcc135-8399-4e3c-a866-679b65ee9fc8",
+          "BodyGroups": 18446744073709551615,
+          "Health": 0,
+          "IsStatic": true,
+          "Model": "models/props/tent01.vmdl"
+        }
+      ]
+    },
+    {
+      "__guid": "7afad2e6-2f3e-4e03-8518-151793450152",
+      "Name": "tent01 (4)",
+      "Position": "1423.791,-3838.65,-10.00003",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "Components": [
+        {
+          "__type": "Sandbox.Prop",
+          "__guid": "9e92a6da-7dec-46fd-837d-e41daca7c679",
+          "BodyGroups": 18446744073709551615,
+          "Health": 0,
+          "IsStatic": true,
+          "Model": "models/props/tent01.vmdl"
+        }
+      ]
+    },
+    {
+      "__guid": "dd1a2b34-1d14-441a-836b-736ca79bc311",
+      "Name": "tent01 (1)",
+      "Position": "672,-2784,-10.00006",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "Components": [
+        {
+          "__type": "Sandbox.Prop",
+          "__guid": "fb22bf7b-ae63-4cdb-b82b-2c0392b90f96",
+          "BodyGroups": 18446744073709551615,
+          "Health": 0,
+          "IsStatic": true,
+          "Model": "models/props/tent01.vmdl"
+        }
+      ]
+    },
+    {
+      "__guid": "8b58ece7-0ffc-4eae-bdc1-38c66bb335cf",
+      "Name": "tent01 (2)",
+      "Position": "480,-2784,-10.00006",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "Components": [
+        {
+          "__type": "Sandbox.Prop",
+          "__guid": "df90c24d-bd56-4a36-b390-57318e518230",
+          "BodyGroups": 18446744073709551615,
+          "Health": 0,
+          "IsStatic": true,
+          "Model": "models/props/tent01.vmdl"
+        }
+      ]
+    },
+    {
+      "__guid": "8da5afc6-eb79-42c6-9ee4-acac36658c1a",
+      "Name": "tent01 (3)",
+      "Position": "288,-2784,-10.00006",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "Components": [
+        {
+          "__type": "Sandbox.Prop",
+          "__guid": "3dbe7728-77ee-4f48-b30a-e25aa84938f0",
+          "BodyGroups": 18446744073709551615,
+          "Health": 0,
+          "IsStatic": true,
+          "Model": "models/props/tent01.vmdl"
+        }
+      ]
+    },
+    {
+      "__guid": "9febf9a5-8581-4cdd-8167-3b99f55eb103",
+      "Name": "tent01_lrg",
+      "Position": "1076.36,-2286.348,-10",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "Components": [
+        {
+          "__type": "Sandbox.Prop",
+          "__guid": "985a1bc1-b578-4da1-b380-cb48e2fec540",
+          "BodyGroups": 18446744073709551615,
+          "Health": 0,
+          "IsStatic": true,
+          "Model": "models/props/tent01_lrg.vmdl"
+        }
+      ]
+    },
+    {
+      "__guid": "25a8829e-51fd-4dd9-859f-bff3caa297a8",
+      "Name": "tent01_lrg (3)",
+      "Position": "400,-3643.036,-10",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "Components": [
+        {
+          "__type": "Sandbox.Prop",
+          "__guid": "6ca326bd-5e8f-4596-a417-f47ed17d1909",
+          "BodyGroups": 18446744073709551615,
+          "Health": 0,
+          "IsStatic": true,
+          "Model": "models/props/tent01_lrg.vmdl"
+        }
+      ]
+    },
+    {
+      "__guid": "f0431068-4ca1-4180-a0e6-6b10c2a8f1f9",
+      "Name": "tent01_lrg (1)",
+      "Position": "1567.517,-2286.348,-10",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "Components": [
+        {
+          "__type": "Sandbox.Prop",
+          "__guid": "715d8bc4-6eb1-48ce-a044-71bd4a72fe49",
+          "BodyGroups": 18446744073709551615,
+          "Health": 0,
+          "IsStatic": true,
+          "Model": "models/props/tent01_lrg.vmdl"
+        }
+      ]
+    },
+    {
+      "__guid": "ba204f78-e631-4fd7-ae25-4097ae8642c5",
+      "Name": "tent01_lrg (2)",
+      "Position": "2029.918,-2286.348,-10",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "Components": [
+        {
+          "__type": "Sandbox.Prop",
+          "__guid": "9a8ad43d-602f-4f41-8cdc-8b576c8dc188",
+          "BodyGroups": 18446744073709551615,
+          "Health": 0,
+          "IsStatic": true,
+          "Model": "models/props/tent01_lrg.vmdl"
+        }
+      ]
+    },
+    {
+      "__guid": "dac3b140-d92d-42fc-8c23-14476c801354",
+      "Name": "wood_beam_pile",
+      "Position": "1075.008,-2760.036,-10.00003",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "Components": [
+        {
+          "__type": "Sandbox.Prop",
+          "__guid": "503579ca-ac42-4231-9231-555be5861c6c",
+          "BodyGroups": 18446744073709551615,
+          "Health": 0,
+          "IsStatic": true,
+          "Model": "models/props/wood_beam_pile.vmdl"
+        }
+      ]
+    },
+    {
+      "__guid": "12788d4c-7814-4932-b824-6a0cc83ab4eb",
+      "Name": "wood_beam_pile",
+      "Position": "2192,-2654.399,-10.00003",
+      "Rotation": "0,0,-0.8660254,0.5000001",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "Components": [
+        {
+          "__type": "Sandbox.Prop",
+          "__guid": "86f5e99c-0f93-4148-877d-84cd3730489d",
+          "BodyGroups": 18446744073709551615,
+          "Health": 0,
+          "IsStatic": true,
+          "Model": "models/props/wood_beam_pile.vmdl"
+        }
+      ]
+    },
+    {
+      "__guid": "d101bf49-0fed-4479-9d1f-5a901c4413b7",
+      "Name": "wood_beam_pile",
+      "Position": "899.8643,-3489.693,-10",
+      "Rotation": "0,0,-0.6557978,0.7549366",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "Components": [
+        {
+          "__type": "Sandbox.Prop",
+          "__guid": "d9ebc969-882e-4992-ac19-43dacb872768",
+          "BodyGroups": 18446744073709551615,
+          "Health": 0,
+          "IsStatic": true,
+          "Model": "models/props/wood_beam_pile.vmdl"
+        }
+      ]
+    },
+    {
+      "__guid": "493e39c7-fa18-4cb1-9ce7-e5229fac98b8",
+      "Name": "wood_beam_pile (5)",
+      "Position": "-103.8526,-3593.899,-10",
+      "Rotation": "0,0,-0.06070313,0.9981558",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "Components": [
+        {
+          "__type": "Sandbox.Prop",
+          "__guid": "c5ed59ea-aa4a-475d-bc23-0e8db0886ac0",
+          "BodyGroups": 18446744073709551615,
+          "Health": 0,
+          "IsStatic": true,
+          "Model": "models/props/wood_beam_pile.vmdl"
+        }
+      ]
+    },
+    {
+      "__guid": "fe76505e-118c-4ef4-974f-2e5dbe12247a",
+      "Name": "wood_beam_pile (6)",
+      "Position": "-462.0999,-3931.927,-10.00002",
+      "Rotation": "0,0,-0.9454058,0.3258954",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "Components": [
+        {
+          "__type": "Sandbox.Prop",
+          "__guid": "4b1dcc14-cf42-46e5-ac94-8cd6f838b318",
+          "BodyGroups": 18446744073709551615,
+          "Health": 0,
+          "IsStatic": true,
+          "Model": "models/props/wood_beam_pile.vmdl"
+        }
+      ]
+    },
+    {
+      "__guid": "d916688e-d801-402f-93b0-eea9f108f5ca",
+      "Name": "wood_beam_pile (4)",
+      "Position": "1284.791,-3830.387,-9.999991",
+      "Rotation": "0,0,-0.8288439,0.5594798",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "Components": [
+        {
+          "__type": "Sandbox.Prop",
+          "__guid": "54b1c31b-3cb2-4eae-a5e4-7300b559cb7b",
+          "BodyGroups": 18446744073709551615,
+          "Health": 0,
+          "IsStatic": true,
+          "Model": "models/props/wood_beam_pile.vmdl"
+        }
+      ]
+    },
+    {
+      "__guid": "b9beaebf-118d-41b8-b671-e66c016a6ef8",
+      "Name": "porta_potty",
+      "Position": "223.8027,-2278.758,-7.999969",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "Components": [
+        {
+          "__type": "Sandbox.Prop",
+          "__guid": "b4964871-e4fb-4aa7-a5e5-0a15949852ab",
+          "BodyGroups": 18446744073709551615,
+          "Health": 0,
+          "IsStatic": true,
+          "Model": "models/props/porta_potty.vmdl"
+        }
+      ]
+    },
+    {
+      "__guid": "14657ecb-dede-44c5-be85-b375e7442b71",
+      "Name": "porta_potty (5)",
+      "Position": "563.0298,-3986.894,-7.999918",
+      "Rotation": "0,0,0.7071067,0.7071068",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "Components": [
+        {
+          "__type": "Sandbox.Prop",
+          "__guid": "4d521e2a-70b4-4eb3-85f3-4eb912ffec5c",
+          "BodyGroups": 18446744073709551615,
+          "Health": 0,
+          "IsStatic": true,
+          "Model": "models/props/porta_potty.vmdl"
+        }
+      ]
+    },
+    {
+      "__guid": "79e4c537-b97f-49a0-b8b1-14733ac0dd95",
+      "Name": "porta_potty (8)",
+      "Position": "381.2719,-3986.894,-7.999918",
+      "Rotation": "0,0,0.7071067,0.7071068",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "Components": [
+        {
+          "__type": "Sandbox.Prop",
+          "__guid": "12671778-052a-4077-b414-83773796aea9",
+          "BodyGroups": 18446744073709551615,
+          "Health": 0,
+          "IsStatic": true,
+          "Model": "models/props/porta_potty.vmdl"
+        }
+      ]
+    },
+    {
+      "__guid": "a43fd26e-c70a-42c0-9109-67cf4bbc755f",
+      "Name": "porta_potty (6)",
+      "Position": "472.4847,-3986.893,-7.999918",
+      "Rotation": "0,0,0.7071067,0.7071068",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "Components": [
+        {
+          "__type": "Sandbox.Prop",
+          "__guid": "5d834e82-7ad6-4256-825b-61d6f2c9dc6d",
+          "BodyGroups": 18446744073709551615,
+          "Health": 0,
+          "IsStatic": true,
+          "Model": "models/props/porta_potty.vmdl"
+        }
+      ]
+    },
+    {
+      "__guid": "509c4334-3110-47c2-b3b4-71dd2fa9eae6",
+      "Name": "porta_potty (7)",
+      "Position": "290.7267,-3986.893,-7.999918",
+      "Rotation": "0,0,0.7071067,0.7071068",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "Components": [
+        {
+          "__type": "Sandbox.Prop",
+          "__guid": "a6269145-c59d-4222-b5aa-0d4ee5629052",
+          "BodyGroups": 18446744073709551615,
+          "Health": 0,
+          "IsStatic": true,
+          "Model": "models/props/porta_potty.vmdl"
+        }
+      ]
+    },
+    {
+      "__guid": "a7c38eb4-2d8c-434f-ab11-f2fae18d6486",
+      "Name": "porta_potty (3)",
+      "Position": "223.8027,-2206.605,-7.999969",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "Components": [
+        {
+          "__type": "Sandbox.Prop",
+          "__guid": "5a7c522c-c576-434f-9c56-7ffd036edeb8",
+          "BodyGroups": 18446744073709551615,
+          "Health": 0,
+          "IsStatic": true,
+          "Model": "models/props/porta_potty.vmdl"
+        }
+      ]
+    },
+    {
+      "__guid": "47f9b119-f576-4b6c-a864-4f8ad245de86",
+      "Name": "porta_potty (4)",
+      "Position": "223.8027,-2137.241,-7.999969",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "Components": [
+        {
+          "__type": "Sandbox.Prop",
+          "__guid": "4ff59a0c-a712-48be-9a23-6ec0799360f3",
+          "BodyGroups": 18446744073709551615,
+          "Health": 0,
+          "IsStatic": true,
+          "Model": "models/props/porta_potty.vmdl"
+        }
+      ]
+    },
+    {
+      "__guid": "d7fdc809-a830-47e8-a7b5-26bd22fa12d7",
+      "Name": "porta_potty (9)",
+      "Position": "1037.658,-1934.179,-7.999969",
+      "Rotation": "0,0,-0.7071067,0.7071068",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "Components": [
+        {
+          "__type": "Sandbox.Prop",
+          "__guid": "fde72d14-436a-401a-aa39-18d5f6db3085",
+          "BodyGroups": 18446744073709551615,
+          "Health": 0,
+          "IsStatic": true,
+          "Model": "models/props/porta_potty.vmdl"
+        }
+      ]
+    },
+    {
+      "__guid": "d417dae3-0af1-450d-8b3d-2401a0f3029d",
+      "Name": "porta_potty (10)",
+      "Position": "1112.943,-1934.179,-7.999969",
+      "Rotation": "0,0,-0.7071067,0.7071068",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "Components": [
+        {
+          "__type": "Sandbox.Prop",
+          "__guid": "8b411a8d-2d07-4a43-8cbc-cc8b59d687ed",
+          "BodyGroups": 18446744073709551615,
+          "Health": 0,
+          "IsStatic": true,
+          "Model": "models/props/porta_potty.vmdl"
+        }
+      ]
+    },
+    {
+      "__guid": "612646a0-34de-4ae1-aad3-606528525a9c",
+      "Name": "porta_potty (11)",
+      "Position": "1193.349,-1934.179,-7.999969",
+      "Rotation": "0,0,-0.7071067,0.7071068",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "Components": [
+        {
+          "__type": "Sandbox.Prop",
+          "__guid": "4409160b-ea39-4614-b54e-5ec30d6afa6d",
+          "BodyGroups": 18446744073709551615,
+          "Health": 0,
+          "IsStatic": true,
+          "Model": "models/props/porta_potty.vmdl"
+        }
+      ]
+    },
+    {
+      "__guid": "5f55041c-e08d-417c-8c83-b53263bb4e37",
+      "Name": "scaffold_foot_192",
+      "Position": "-1408,-4864,0",
+      "Rotation": "-0.00000002980232,0.00000002980232,0.7071067,0.7071067",
+      "Tags": "gridtile",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "Components": [
+        {
+          "__type": "Sandbox.Prop",
+          "__guid": "689d7bb0-305b-46f3-817c-3f3d16de365c",
+          "BodyGroups": 18446744073709551615,
+          "Health": 0,
+          "IsStatic": true,
+          "Model": "models/track_tileset_pieces/scaffold/scaffold_192/foot/scaffold_foot_192.vmdl"
+        }
+      ]
+    },
+    {
+      "__guid": "7f7fae6d-67cf-457a-b43d-646271ab8e4f",
+      "Name": "scaffold_foot_192",
+      "Position": "-1408,-4480,0",
+      "Rotation": "-0.00000002980232,0.00000002980232,0.7071067,0.7071067",
+      "Tags": "gridtile",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "Components": [
+        {
+          "__type": "Sandbox.Prop",
+          "__guid": "ac539dfd-91ce-443a-afe2-facce57cd86d",
+          "BodyGroups": 18446744073709551615,
+          "Health": 0,
+          "IsStatic": true,
+          "Model": "models/track_tileset_pieces/scaffold/scaffold_192/foot/scaffold_foot_192.vmdl"
+        }
+      ]
+    },
+    {
+      "__guid": "c6d135d0-ba68-462f-8709-be96b6055b10",
+      "Name": "scaffold_foot_192",
+      "Position": "-1408,-4096,0",
+      "Rotation": "-0.00000002980232,0.00000002980232,0.7071067,0.7071067",
+      "Tags": "gridtile",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "Components": [
+        {
+          "__type": "Sandbox.Prop",
+          "__guid": "60878317-b8ac-4516-a0e1-0db5638eacb0",
+          "BodyGroups": 18446744073709551615,
+          "Health": 0,
+          "IsStatic": true,
+          "Model": "models/track_tileset_pieces/scaffold/scaffold_192/foot/scaffold_foot_192.vmdl"
+        }
+      ]
+    },
+    {
+      "__guid": "1a5204c4-519a-4485-afe5-0f4006cf3e26",
+      "Name": "scaffold_foot_192",
+      "Position": "-1408,-3712,0",
+      "Rotation": "-0.00000002980232,0.00000002980232,0.7071067,0.7071067",
+      "Tags": "gridtile",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "Components": [
+        {
+          "__type": "Sandbox.Prop",
+          "__guid": "c4d8ab70-9fc8-4be9-9e95-660d980dfc7f",
+          "BodyGroups": 18446744073709551615,
+          "Health": 0,
+          "IsStatic": true,
+          "Model": "models/track_tileset_pieces/scaffold/scaffold_192/foot/scaffold_foot_192.vmdl"
+        }
+      ]
+    },
+    {
+      "__guid": "d549576a-6835-4e5c-adfd-3c76eec8fe6a",
+      "Name": "scaffold_foot_192",
+      "Position": "-1408,-3328,0",
+      "Rotation": "-0.00000002980232,0.00000002980232,0.7071067,0.7071067",
+      "Tags": "gridtile",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "Components": [
+        {
+          "__type": "Sandbox.Prop",
+          "__guid": "730a4180-1d37-42e2-b345-e7c9b4393974",
+          "BodyGroups": 18446744073709551615,
+          "Health": 0,
+          "IsStatic": true,
+          "Model": "models/track_tileset_pieces/scaffold/scaffold_192/foot/scaffold_foot_192.vmdl"
+        }
+      ]
+    },
+    {
+      "__guid": "5d53448e-bc5b-4774-b08f-77630c0b4ffc",
+      "Name": "scaffold_foot_192",
+      "Position": "-1408,-5248,0",
+      "Rotation": "-0.00000002980232,0.00000002980232,0.7071067,0.7071067",
+      "Tags": "gridtile",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "Components": [
+        {
+          "__type": "Sandbox.Prop",
+          "__guid": "e5d9d217-47b9-405c-b7e2-f6105180ceb2",
+          "BodyGroups": 18446744073709551615,
+          "Health": 0,
+          "IsStatic": true,
+          "Model": "models/track_tileset_pieces/scaffold/scaffold_192/foot/scaffold_foot_192.vmdl"
+        }
+      ]
+    },
+    {
+      "__guid": "a7d793cd-3d3c-4e06-b9ab-1722e90f444f",
+      "Name": "scaffold_foot_192",
+      "Position": "-1408,-2944,0",
+      "Rotation": "-0.00000002980232,0.00000002980232,0.7071067,0.7071067",
+      "Tags": "gridtile",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "Components": [
+        {
+          "__type": "Sandbox.Prop",
+          "__guid": "3b6c0c6b-3863-4856-8343-3087e7ab4f64",
+          "BodyGroups": 18446744073709551615,
+          "Health": 0,
+          "IsStatic": true,
+          "Model": "models/track_tileset_pieces/scaffold/scaffold_192/foot/scaffold_foot_192.vmdl"
+        }
+      ]
+    },
+    {
+      "__guid": "166b00ee-9304-4508-8e1c-71e75e0b22b0",
+      "Name": "scaffold_mid_slope_192",
+      "Position": "-1408,-4096,192",
+      "Rotation": "0.00000005960464,0.00000005960464,-0.7071068,0.7071068",
+      "Tags": "gridtile",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "Components": [
+        {
+          "__type": "Sandbox.Prop",
+          "__guid": "c0664250-a4e9-4717-9919-b05197ae57dd",
+          "BodyGroups": 18446744073709551615,
+          "Health": 0,
+          "IsStatic": true,
+          "Model": "models/track_tileset_pieces/scaffold/scaffold_192/mid/scaffold_mid_slope_192.vmdl"
+        }
+      ]
+    },
+    {
+      "__guid": "59bc46b9-2669-4a25-b2e3-d61bda897832",
+      "Name": "scaffold_mid_slope_96",
+      "Position": "-1408,-4480,384",
+      "Rotation": "0.00000005960464,0.00000005960464,-0.7071068,0.7071068",
+      "Tags": "gridtile",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "Components": [
+        {
+          "__type": "Sandbox.Prop",
+          "__guid": "d1ebdc4a-d7b3-4f0d-a083-dbf43540aecd",
+          "BodyGroups": 18446744073709551615,
+          "Health": 0,
+          "IsStatic": true,
+          "Model": "models/track_tileset_pieces/scaffold/scaffold_96/mid/scaffold_mid_slope_96.vmdl"
+        }
+      ]
+    },
+    {
+      "__guid": "09e1d2ec-3ffb-4226-8664-b194f5c319e6",
+      "Name": "scaffold_mid_192",
+      "Position": "-1408,-4480,192",
+      "Rotation": "0.00000005960464,0.00000005960464,-0.7071068,0.7071068",
+      "Tags": "gridtile",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "Components": [
+        {
+          "__type": "Sandbox.Prop",
+          "__guid": "a21b6e2d-7ab4-459e-93c2-e78b49de2fad",
+          "BodyGroups": 18446744073709551615,
+          "Health": 0,
+          "IsStatic": true,
+          "Model": "models/track_tileset_pieces/scaffold/scaffold_192/mid/scaffold_mid_192.vmdl"
+        }
+      ]
+    },
+    {
+      "__guid": "a61f3ede-0146-4e3e-bd48-f51cbde4f34e",
+      "Name": "scaffold_mid_192",
+      "Position": "-1408,-4864,192",
+      "Rotation": "0.00000005960464,0.00000005960464,-0.7071068,0.7071068",
+      "Tags": "gridtile",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "Components": [
+        {
+          "__type": "Sandbox.Prop",
+          "__guid": "9f1fe488-ca1f-45bd-8d6e-0bb5b3421bc9",
+          "BodyGroups": 18446744073709551615,
+          "Health": 0,
+          "IsStatic": true,
+          "Model": "models/track_tileset_pieces/scaffold/scaffold_192/mid/scaffold_mid_192.vmdl"
+        }
+      ]
+    },
+    {
+      "__guid": "80dac833-2885-4ae8-ab87-32fd12d6e4cf",
+      "Name": "scaffold_mid_192",
+      "Position": "-1408,-5248,192",
+      "Rotation": "0.00000005960464,0.00000005960464,-0.7071068,0.7071068",
+      "Tags": "gridtile",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "Components": [
+        {
+          "__type": "Sandbox.Prop",
+          "__guid": "6bdad9fc-3a25-4e36-ac34-81f6d378e602",
+          "BodyGroups": 18446744073709551615,
+          "Health": 0,
+          "IsStatic": true,
+          "Model": "models/track_tileset_pieces/scaffold/scaffold_192/mid/scaffold_mid_192.vmdl"
+        }
+      ]
+    },
+    {
+      "__guid": "3ae8bae7-1488-49f6-a2a8-815a2a9b8abb",
+      "Name": "scaffold_mid_96",
+      "Position": "-1408,-4864,384",
+      "Rotation": "0.00000005960464,0.00000005960464,-0.7071068,0.7071068",
+      "Tags": "gridtile",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "Components": [
+        {
+          "__type": "Sandbox.Prop",
+          "__guid": "5d2c86de-aef4-4e87-b04f-4db8186aa9c8",
+          "BodyGroups": 18446744073709551615,
+          "Health": 0,
+          "IsStatic": true,
+          "Model": "models/track_tileset_pieces/scaffold/scaffold_96/mid/scaffold_mid_96.vmdl"
+        }
+      ]
+    },
+    {
+      "__guid": "2d57b0af-8c1b-468a-9d2a-69392e32e3bb",
+      "Name": "scaffold_mid_96",
+      "Position": "-1408,-5248,384",
+      "Rotation": "0.00000005960464,0.00000005960464,-0.7071068,0.7071068",
+      "Tags": "gridtile",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "Components": [
+        {
+          "__type": "Sandbox.Prop",
+          "__guid": "d3c826fa-61f8-4e48-95a8-278ad7c38e3e",
+          "BodyGroups": 18446744073709551615,
+          "Health": 0,
+          "IsStatic": true,
+          "Model": "models/track_tileset_pieces/scaffold/scaffold_96/mid/scaffold_mid_96.vmdl"
+        }
+      ]
+    },
+    {
+      "__guid": "79f068bc-7b99-4093-9df0-bca10626bc9e",
+      "Name": "wood_straight_384",
+      "Position": "-1408,-3712,192",
+      "Rotation": "-0.00000002980232,0.00000002980232,0.7071067,0.7071067",
+      "Tags": "gridtile",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "Components": [
+        {
+          "__type": "Sandbox.Prop",
+          "__guid": "520c7ec9-932e-4709-ac0d-7929d3004f90",
+          "BodyGroups": 18446744073709551615,
+          "Health": 0,
+          "IsStatic": true,
+          "Model": "models/track_tileset_pieces/wood/wood_straight_384.vmdl"
+        }
+      ]
+    },
+    {
+      "__guid": "687c97e4-d645-4c10-acc1-d23129500053",
+      "Name": "wood_straight_384",
+      "Position": "-1408,-3328,192",
+      "Rotation": "-0.00000002980232,0.00000002980232,0.7071067,0.7071067",
+      "Tags": "gridtile",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "Components": [
+        {
+          "__type": "Sandbox.Prop",
+          "__guid": "85f21e98-375a-4f89-8b94-8a042f9ccf7a",
+          "BodyGroups": 18446744073709551615,
+          "Health": 0,
+          "IsStatic": true,
+          "Model": "models/track_tileset_pieces/wood/wood_straight_384.vmdl"
+        }
+      ]
+    },
+    {
+      "__guid": "2bd63284-5bb8-47e8-b4a1-fffe364f3f4e",
+      "Name": "wood_straight_384",
+      "Position": "-1408,-2944,192",
+      "Rotation": "-0.00000002980232,0.00000002980232,0.7071067,0.7071067",
+      "Tags": "gridtile",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "Components": [
+        {
+          "__type": "Sandbox.Prop",
+          "__guid": "be1239fb-bb28-4123-b2ae-f94818f2a827",
+          "BodyGroups": 18446744073709551615,
+          "Health": 0,
+          "IsStatic": true,
+          "Model": "models/track_tileset_pieces/wood/wood_straight_384.vmdl"
+        }
+      ]
+    },
+    {
+      "__guid": "d056275c-af11-4b4a-879b-cf490526bd12",
+      "Name": "wood_slope_384x192",
+      "Position": "-1408,-4096,192",
+      "Rotation": "0.00000005960464,0.00000005960464,-0.7071068,0.7071068",
+      "Tags": "gridtile",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "Components": [
+        {
+          "__type": "Sandbox.Prop",
+          "__guid": "8348291c-f98e-4a58-aa57-8bfacb2b6b60",
+          "BodyGroups": 18446744073709551615,
+          "Health": 0,
+          "IsStatic": true,
+          "Model": "models/track_tileset_pieces/wood/wood_slope_384x192.vmdl"
+        }
+      ]
+    },
+    {
+      "__guid": "db9a57de-51b6-4df5-ac2a-020e70673c86",
+      "Name": "wood_slope_384x96",
+      "Position": "-1408,-4480,384",
+      "Rotation": "0.00000005960464,0.00000005960464,-0.7071068,0.7071068",
+      "Tags": "gridtile",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "Components": [
+        {
+          "__type": "Sandbox.Prop",
+          "__guid": "209d6305-1aba-430f-9863-bf3f700de261",
+          "BodyGroups": 18446744073709551615,
+          "Health": 0,
+          "IsStatic": true,
+          "Model": "models/track_tileset_pieces/wood/wood_slope_384x96.vmdl"
+        }
+      ]
+    },
+    {
+      "__guid": "620581cb-0624-4bed-bcf0-f32683504280",
+      "Name": "wood_straight_384",
+      "Position": "-1408,-4864,480",
+      "Rotation": "0.00000005960464,0.00000005960464,-0.7071068,0.7071068",
+      "Tags": "gridtile",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "Components": [
+        {
+          "__type": "Sandbox.Prop",
+          "__guid": "2d93f583-f878-4ccb-bcea-c0862d0ada01",
+          "BodyGroups": 18446744073709551615,
+          "Health": 0,
+          "IsStatic": true,
+          "Model": "models/track_tileset_pieces/wood/wood_straight_384.vmdl"
+        }
+      ]
+    },
+    {
+      "__guid": "86c08961-e9a5-48a7-a49a-cbf3fb7dcfaa",
+      "Name": "wood_straight_384",
+      "Position": "-1408,-5248,480",
+      "Rotation": "0.00000005960464,0.00000005960464,-0.7071068,0.7071068",
+      "Tags": "gridtile",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "Components": [
+        {
+          "__type": "Sandbox.Prop",
+          "__guid": "91853c0c-2455-44d5-9864-f6843c476575",
+          "BodyGroups": 18446744073709551615,
+          "Health": 0,
+          "IsStatic": true,
+          "Model": "models/track_tileset_pieces/wood/wood_straight_384.vmdl"
+        }
+      ]
     }
   ],
   "SceneProperties": {
@@ -2445,7 +3786,7 @@
   },
   "Title": "test",
   "Description": "",
-  "LastSaved": "2024-04-26T16:36:07.1341746-04:00",
+  "LastSaved": "2024-04-29T11:28:49.0370128-04:00",
   "ResourceVersion": 1,
   "__version": 1,
   "__references": [
