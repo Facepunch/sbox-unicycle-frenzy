@@ -4,7 +4,9 @@ public class UnicycleFrenzyItems : GameResource
 	public string ItemName { get; set; }
 	public string ItemDescription { get; set; }
 	[ImageAssetPath] public string ItemImage { get; set; } = "textures/ui/map-thumbnail-placeholder.png";
-	public Model ItemModel { get; set; }
+	public bool IsMaterial { get; set; } = true;
+	public Model ItemModel { get; set; } = Model.Load( "models/unicycles/default/parts/frames/default_frame.vmdl" );
+	public Material ItemMaterial { get; set; }
 	public ItemCategories ItemCategory { get; set; } = ItemCategories.Frame;
 	public ItemRare ItemRarity { get; set; } = ItemRare.Common;
 	public List<Skin> Skins { get; set; }
@@ -137,7 +139,14 @@ internal class UnicycleDresser : Component
 		}
 		else
 		{
-			Frame.MaterialOverride = null;
+			if(Local.Frame.IsMaterial && Local.Frame.ItemMaterial != null)
+			{
+				Frame.MaterialOverride = Local.Frame.ItemMaterial;
+			}
+			else
+			{
+				Frame.MaterialOverride = null;
+			}
 		}
 
 		Wheel.Model = Local.Wheel.ItemModel;
@@ -147,7 +156,15 @@ internal class UnicycleDresser : Component
 		}
 		else
 		{
-			Wheel.MaterialOverride = null;
+			if(Local.Wheel.IsMaterial && Local.Wheel.ItemMaterial != null)
+			{
+				Wheel.MaterialOverride = Local.Wheel.ItemMaterial;
+			}
+			else
+			{
+				Wheel.MaterialOverride = null;
+			}
+			
 		}
 
 		LeftPedal.Model = Local.Pedal.ItemModel;
@@ -157,7 +174,14 @@ internal class UnicycleDresser : Component
 		}
 		else
 		{
-			LeftPedal.MaterialOverride = null;
+			if(Local.Pedal.IsMaterial && Local.Pedal.ItemMaterial != null)
+			{
+				LeftPedal.MaterialOverride = Local.Pedal.ItemMaterial;
+			}
+			else
+			{
+				LeftPedal.MaterialOverride = null;
+			}
 		}
 
 		RightPedal.Model = Local.Pedal.ItemModel;
@@ -167,7 +191,14 @@ internal class UnicycleDresser : Component
 		}
 		else
 		{
-			RightPedal.MaterialOverride = null;
+			if(Local.Pedal.IsMaterial && Local.Pedal.ItemMaterial != null)
+			{
+				RightPedal.MaterialOverride = Local.Pedal.ItemMaterial;
+			}
+			else
+			{
+				RightPedal.MaterialOverride = null;
+			}
 		}
 
 		Seat.Model = Local.Seat.ItemModel;
@@ -177,7 +208,14 @@ internal class UnicycleDresser : Component
 		}
 		else
 		{
-			Seat.MaterialOverride = null;
+			if(Local.Seat.IsMaterial && Local.Seat.ItemMaterial != null)
+			{
+				Seat.MaterialOverride = Local.Seat.ItemMaterial;
+			}
+			else
+			{
+				Seat.MaterialOverride = null;
+			}
 		}
 	}
 }

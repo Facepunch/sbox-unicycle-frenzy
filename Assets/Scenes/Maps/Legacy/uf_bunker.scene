@@ -1,0 +1,368 @@
+{
+  "__guid": "d8358e55-4b43-4226-a7b0-2942fced7a27",
+  "GameObjects": [
+    {
+      "__guid": "68588625-291b-4b2a-88ca-72eb043f4b0c",
+      "Name": "start zone (1)",
+      "Position": "-2461.75,3480,52.00002",
+      "Rotation": "0,0,0.00000005960464,-0.9999999",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "__Prefab": "prefabs/start zone.prefab"
+    },
+    {
+      "__guid": "12937885-8547-48f2-beb7-6f08d4a10cc1",
+      "Name": "CheckPoint Zone (1)",
+      "Position": "2464,3680,52.00049",
+      "Rotation": "0,0,-0.7071067,0.7071068",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "__Prefab": "prefabs/checkpoint zone.prefab"
+    },
+    {
+      "__guid": "3570968e-e92a-4a5e-9490-d76cb43ba317",
+      "Name": "CheckPoint Zone (3)",
+      "Position": "-544,3200,120",
+      "Rotation": "0,0,0.7071067,0.7071068",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "__Prefab": "prefabs/checkpoint zone.prefab"
+    },
+    {
+      "__guid": "f00fcbd6-e85d-4747-929d-e61bf00d2443",
+      "Name": "CheckPoint Zone (5)",
+      "Position": "1314.938,1547.917,335.7527",
+      "Rotation": "0.02421639,-0.000000004715105,0.9997067,0.0000001946501",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "__Prefab": "prefabs/checkpoint zone.prefab"
+    },
+    {
+      "__guid": "183f9657-145e-40a1-8a37-429cab7bc0ae",
+      "Name": "CheckPoint Zone (7)",
+      "Position": "4063.792,2624,335.2485",
+      "Rotation": "0.02816873,-0.000000005484654,0.9996032,0.0000001946299",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "__Prefab": "prefabs/checkpoint zone.prefab"
+    },
+    {
+      "__guid": "b21f5a31-243d-4419-ba64-730ed43d4686",
+      "Name": "Object",
+      "Position": "149.995,149.995,-212.125",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "Components": [
+        {
+          "__type": "Sandbox.MapInstance",
+          "__guid": "c24df3a7-0558-420f-9aae-df5f9fc18771",
+          "MapName": "facepunch/uf_bunker",
+          "UseMapFromLaunch": false
+        }
+      ],
+      "Children": []
+    },
+    {
+      "__guid": "66a76e27-14dc-4142-8204-546c30613042",
+      "Name": "Map Settings",
+      "Position": "-2223.187,3270.19,256.0001",
+      "Enabled": true,
+      "NetworkMode": 0,
+      "Components": [
+        {
+          "__type": "MapSettings",
+          "__guid": "ff30136f-8769-4ba7-b1c9-1d57568b0af3",
+          "Author": "Howie",
+          "BronzeTime": 30,
+          "Description": "A Cool map!",
+          "Difficulty": "Tier1",
+          "GoldTime": 17,
+          "MapName": "Bunker",
+          "PlatinumTime": 15,
+          "SilverTime": 20
+        }
+      ]
+    },
+    {
+      "__guid": "7699f0f6-41df-4fe1-a15d-854a8860e09b",
+      "Name": "Screen",
+      "Position": "-2255.187,3270.19,104.0001",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "Components": [
+        {
+          "__type": "Sandbox.ScreenPanel",
+          "__guid": "08333ad9-a7b8-4ee8-b7af-031d09f766c4",
+          "AutoScreenScale": true,
+          "Opacity": 1,
+          "Scale": 1,
+          "ZIndex": 100
+        },
+        {
+          "__type": "Hud",
+          "__guid": "2a12a302-6d5d-4397-b67c-327199f25deb"
+        }
+      ]
+    },
+    {
+      "__guid": "df7f12bf-2afe-4d98-ba53-9136815b3651",
+      "Name": "player and camera",
+      "Position": "-2384.813,3385.81,77.55947",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "Children": [
+        {
+          "__guid": "a37ac038-f8a9-4406-9766-fccf0490e961",
+          "Name": "Camera",
+          "Position": "0,0,0",
+          "Enabled": true,
+          "NetworkMode": 2,
+          "Components": [
+            {
+              "__type": "Sandbox.CameraComponent",
+              "__guid": "ebd8996d-3ffc-4b79-ab44-67cdf4b25450",
+              "BackgroundColor": "0.33333,0.46275,0.52157,1",
+              "ClearFlags": "All",
+              "FieldOfView": 60,
+              "IsMainCamera": true,
+              "Orthographic": false,
+              "OrthographicHeight": 1204,
+              "Priority": 1,
+              "RenderExcludeTags": "",
+              "RenderTags": "",
+              "TargetEye": "None",
+              "Viewport": "0,0,1,1",
+              "ZFar": 10000,
+              "ZNear": 10
+            },
+            {
+              "__type": "CameraController",
+              "__guid": "01cd54fc-7c32-4d50-ab58-6ea115df6c7c",
+              "Target": {
+                "_type": "component",
+                "component_id": "622fe0a2-d23f-4ecf-a582-d8c9f5046c4f",
+                "go": "02d49371-c321-4bfd-8e7f-e2c472aecd84",
+                "component_type": "UnicycleController"
+              }
+            }
+          ]
+        },
+        {
+          "__guid": "02d49371-c321-4bfd-8e7f-e2c472aecd84",
+          "Name": "Player",
+          "Position": "0,0,0",
+          "Tags": "player",
+          "Enabled": true,
+          "NetworkMode": 2,
+          "Components": [
+            {
+              "__type": "UnicycleController",
+              "__guid": "622fe0a2-d23f-4ecf-a582-d8c9f5046c4f",
+              "FallSound": "sounds/unicycle/unicycle.crash.default.sound",
+              "JumpSound": "sounds/unicycle/unicycle.jump.sound",
+              "PedalSound": "sounds/unicycle/unicycle.pedal.sound",
+              "PerfectPedalSound": "sounds/unicycle/unicycle.pedal.perfect.sound"
+            },
+            {
+              "__type": "PlayerAnimator",
+              "__guid": "df1eaaab-9238-4228-b94a-223a06ef8eab",
+              "LeftPedal": {
+                "_type": "gameobject",
+                "go": "3f209680-dd0a-4dc6-b4bc-2a44d7bd1f8f"
+              },
+              "PedalPivot": {
+                "_type": "gameobject",
+                "go": "0cdcb5f9-451b-40c8-887d-3990a2ca9f04"
+              },
+              "RightPedal": {
+                "_type": "gameobject",
+                "go": "12390345-023e-4bc4-a31e-089ca4820c79"
+              },
+              "Wheel": {
+                "_type": "gameobject",
+                "go": "7d3eea2c-5a1b-4408-9ae5-8e2f2b2a4644"
+              },
+              "WheelPivot": {
+                "_type": "gameobject",
+                "go": "39d6d43d-b8ef-4e85-a91c-f58244909b49"
+              }
+            },
+            {
+              "__type": "Sandbox.BoxCollider",
+              "__guid": "b8cebbb8-a0be-4e9f-87b8-13f251723229",
+              "Center": "0,0,36",
+              "IsTrigger": false,
+              "Scale": "20,20,72",
+              "Static": false
+            },
+            {
+              "__type": "CourseTimer",
+              "__guid": "14921a4b-b96f-4ec6-a477-90314c4c4e1b"
+            }
+          ],
+          "Children": [
+            {
+              "__guid": "5c4f768e-75ea-4e53-b72a-99301b4f996d",
+              "Name": "Player",
+              "Position": "0,0,35",
+              "Enabled": true,
+              "NetworkMode": 2,
+              "Components": [
+                {
+                  "__type": "Sandbox.SkinnedModelRenderer",
+                  "__guid": "4eaa446c-4edc-4413-a267-a95e528a36ff",
+                  "BodyGroups": 341,
+                  "CreateBoneObjects": false,
+                  "Model": "models/citizen/citizen.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                }
+              ]
+            },
+            {
+              "__guid": "6ac838f5-9b7d-4414-9f08-fa205499b85f",
+              "Name": "Unicycle",
+              "Position": "0,0,0",
+              "Scale": "0.8,0.8,0.8",
+              "Enabled": true,
+              "NetworkMode": 2,
+              "Children": [
+                {
+                  "__guid": "2fbd8e40-4344-4d6d-a3b3-25e8fa4e92f4",
+                  "Name": "Seat",
+                  "Position": "0,0,32.68898",
+                  "Enabled": true,
+                  "NetworkMode": 2,
+                  "Components": [
+                    {
+                      "__type": "Sandbox.ModelRenderer",
+                      "__guid": "055ec2f4-794e-461d-a99a-a5780ffe1ab5",
+                      "BodyGroups": 18446744073709551615,
+                      "Model": "models/unicycles/default/parts/seats/default_seat.vmdl",
+                      "RenderType": "On",
+                      "Tint": "1,1,1,1"
+                    }
+                  ]
+                },
+                {
+                  "__guid": "ee8d72d7-8f20-4bd4-adc8-b1fc547cbdec",
+                  "Name": "Frame",
+                  "Position": "0,0,10.50214",
+                  "Enabled": true,
+                  "NetworkMode": 2,
+                  "Components": [
+                    {
+                      "__type": "Sandbox.Prop",
+                      "__guid": "289db587-ce84-4830-a2e8-5575f301fdb0",
+                      "BodyGroups": 18446744073709551615,
+                      "Health": 0,
+                      "IsStatic": true,
+                      "Model": "models/unicycles/default/parts/frames/default_frame.vmdl"
+                    }
+                  ]
+                },
+                {
+                  "__guid": "39d6d43d-b8ef-4e85-a91c-f58244909b49",
+                  "Name": "WheelPivot",
+                  "Position": "0,0,12",
+                  "Enabled": true,
+                  "NetworkMode": 2,
+                  "Children": [
+                    {
+                      "__guid": "7d3eea2c-5a1b-4408-9ae5-8e2f2b2a4644",
+                      "Name": "Wheel",
+                      "Position": "0,0,-12",
+                      "Enabled": true,
+                      "NetworkMode": 2,
+                      "Components": [
+                        {
+                          "__type": "Sandbox.Prop",
+                          "__guid": "d1e08b68-dfe2-42c2-8054-bfeb0288f701",
+                          "BodyGroups": 18446744073709551615,
+                          "Health": 0,
+                          "IsStatic": true,
+                          "Model": "models/unicycles/default/parts/wheels/default_wheel.vmdl"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "__guid": "0cdcb5f9-451b-40c8-887d-3990a2ca9f04",
+                  "Name": "Pedals",
+                  "Position": "0,0,12",
+                  "Enabled": true,
+                  "NetworkMode": 2,
+                  "Children": [
+                    {
+                      "__guid": "3f209680-dd0a-4dc6-b4bc-2a44d7bd1f8f",
+                      "Name": "Left Pedal",
+                      "Position": "0,5.200825,-5.631828",
+                      "Enabled": true,
+                      "NetworkMode": 2,
+                      "Components": [
+                        {
+                          "__type": "Sandbox.Prop",
+                          "__guid": "c7c9963e-0041-43f2-b0ad-16e963e49388",
+                          "BodyGroups": 18446744073709551615,
+                          "Health": 0,
+                          "IsStatic": true,
+                          "Model": "models/unicycles/default/parts/pedals/default_pedal.vmdl"
+                        }
+                      ]
+                    },
+                    {
+                      "__guid": "12390345-023e-4bc4-a31e-089ca4820c79",
+                      "Name": "Right Pedal",
+                      "Position": "0,-5.227394,7.001972",
+                      "Rotation": "1,0,0,-0.00000004371139",
+                      "Enabled": true,
+                      "NetworkMode": 2,
+                      "Components": [
+                        {
+                          "__type": "Sandbox.Prop",
+                          "__guid": "16210015-1b97-439d-9afb-d4d007f83e74",
+                          "BodyGroups": 18446744073709551615,
+                          "Health": 0,
+                          "IsStatic": true,
+                          "Model": "models/unicycles/default/parts/pedals/default_pedal.vmdl"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "SceneProperties": {
+    "FixedUpdateFrequency": 50,
+    "Lerping": true,
+    "MaxFixedUpdates": 5,
+    "NetworkFrequency": 30,
+    "ThreadedAnimation": true,
+    "TimeScale": 1,
+    "UseFixedUpdate": true,
+    "NavMesh": {
+      "Enabled": false,
+      "IncludeStaticBodies": true,
+      "IncludeKeyframedBodies": true,
+      "EditorAutoUpdate": true,
+      "AgentHeight": 64,
+      "AgentRadius": 16,
+      "AgentStepSize": 18,
+      "AgentMaxSlope": 40,
+      "ExcludedBodies": "",
+      "IncludedBodies": ""
+    }
+  },
+  "Title": "uf_bunker",
+  "Description": "",
+  "LastSaved": "2024-04-22T14:44:10.3545292\u002B01:00",
+  "ResourceVersion": 1,
+  "__version": 1,
+  "__references": []
+}

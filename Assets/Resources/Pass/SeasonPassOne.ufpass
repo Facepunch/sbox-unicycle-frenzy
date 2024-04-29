@@ -16,27 +16,27 @@
       "DefaultItem": true
     },
     {
-      "Item": "resources/items/solidsilverpedal.ufitem",
+      "Item": "resources/items/lka_skin.ufitem",
       "XPNeeded": 250,
       "ShowInPass": true
     },
     {
-      "Item": "resources/items/solidsilverseat.ufitem",
+      "Item": "resources/items/flower_power_frame.ufitem",
       "XPNeeded": 350,
       "ShowInPass": true
     },
     {
-      "Item": "resources/items/solidgold.ufitem",
+      "Item": "resources/items/flower_power_seat.ufitem",
       "XPNeeded": 1000,
       "ShowInPass": true
     },
     {
-      "Item": "resources/items/solidgoldseat.ufitem",
+      "Item": "resources/items/flower_power_pedal.ufitem",
       "XPNeeded": 900,
       "ShowInPass": true
     },
     {
-      "Item": "resources/items/solidgoldwheel.ufitem",
+      "Item": "resources/items/flower_power_wheel.ufitem",
       "XPNeeded": 800,
       "ShowInPass": true
     }

@@ -182,6 +182,10 @@ internal class UnicycleFrenzyItemsWidget : BaseResourceEditor<UnicycleFrenzyItem
 
 			clothingModels = new SceneModel( World, clothing.ItemModel, Transform.Zero );
 			TargetModel = clothingModels;
+			if(clothing.IsMaterial && clothing.ItemMaterial != null)
+			{
+				TargetModel.SetMaterialOverride( clothing.ItemMaterial );
+			}
 		}
 
 		public void UpdateLighting()
