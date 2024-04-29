@@ -3,10 +3,10 @@ public class UFItemProgression : GameResource
 {
 	//Add the default ones
 	public List<ItemProgress> ItemsInPass { get; set; } = new List<ItemProgress> {
-		new ItemProgress { Item = ResourceLibrary.Get<UnicycleFrenzyItems>( "resources/items/defaultframe.ufitem" ), XPNeeded = 0, ShowInPass = false, DefaultItem = true },
-		new ItemProgress { Item = ResourceLibrary.Get<UnicycleFrenzyItems>( "resources/items/defaultseat.ufitem" ), XPNeeded = 0, ShowInPass = false, DefaultItem = true },
-		new ItemProgress { Item = ResourceLibrary.Get<UnicycleFrenzyItems>( "resources/items/defaultwheel.ufitem" ), XPNeeded = 0, ShowInPass = false , DefaultItem = true},
-		new ItemProgress { Item =  ResourceLibrary.Get<UnicycleFrenzyItems>( "resources/items/defaultpedal.ufitem" ), XPNeeded = 0, ShowInPass = false, DefaultItem = true }
+		new ItemProgress { Item = ResourceLibrary.Get<UnicycleFrenzyItems>( "resources/items/default/defaultframe.ufitem" ), XPNeeded = 0, ShowInPass = false, DefaultItem = true },
+		new ItemProgress { Item = ResourceLibrary.Get<UnicycleFrenzyItems>( "resources/items/default/defaultseat.ufitem" ), XPNeeded = 0, ShowInPass = false, DefaultItem = true },
+		new ItemProgress { Item = ResourceLibrary.Get<UnicycleFrenzyItems>( "resources/items/default/defaultwheel.ufitem" ), XPNeeded = 0, ShowInPass = false , DefaultItem = true},
+		new ItemProgress { Item =  ResourceLibrary.Get<UnicycleFrenzyItems>( "resources/items/default/defaultpedal.ufitem" ), XPNeeded = 0, ShowInPass = false, DefaultItem = true }
 		};
 	public float MaxSeasonXP { get; set; }
 	public bool IsCurrentPass { get; set; }

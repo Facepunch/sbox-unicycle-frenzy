@@ -1,15 +1,15 @@
 {
   "ItemName": "Flower Power",
   "ItemDescription": null,
-  "ItemImage": "resources/items/flower_power_seat.png",
+  "ItemImage": "resources/items/flowerpower/flower_power_frame.png",
   "IsMaterial": true,
-  "ItemModel": "models/unicycles/default/parts/pedals/default_pedal.vmdl",
+  "ItemModel": "models/unicycles/default/parts/frames/default_frame.vmdl",
   "ItemMaterial": "models/unicycles/flower power/unicycleflowerpower.vmat",
-  "ItemCategory": "Pedal",
+  "ItemCategory": "Frame",
   "ItemRarity": "Common",
   "Skins": [],
   "Icon": {
-    "Path": "resources\\items/flower_power_pedal.png"
+    "Path": "resources\\items/flower_power_frame.png"
   },
   "ResourceVersion": 0,
   "__version": 0,

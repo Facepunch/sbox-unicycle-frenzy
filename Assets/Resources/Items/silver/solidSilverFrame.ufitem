@@ -1,8 +1,10 @@
 {
   "ItemName": "Solid Silver",
   "ItemDescription": null,
-  "ItemImage": "resources/items/solidsilverframe.png",
-  "ItemModel": "models/unicycles/default/parts/frames/colours/default_frame_solid_silver.vmdl",
+  "ItemImage": "resources/items/silver/solidsilverframe.png",
+  "IsMaterial": true,
+  "ItemModel": "models/unicycles/default/parts/frames/default_frame.vmdl",
+  "ItemMaterial": "models/unicycles/default/materials/colors/unicycle_solid_silver.vmat",
   "ItemCategory": "Frame",
   "ItemRarity": "Epic",
   "Skins": [],

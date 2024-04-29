@@ -1,8 +1,10 @@
 {
   "ItemName": "Default",
   "ItemDescription": null,
-  "ItemImage": "resources/items/defaultpedal.png",
+  "ItemImage": "resources/items/default/defaultpedal.png",
+  "IsMaterial": false,
   "ItemModel": "models/unicycles/default/parts/pedals/default_pedal.vmdl",
+  "ItemMaterial": null,
   "ItemCategory": "Pedal",
   "ItemRarity": "Common",
   "Skins": [],

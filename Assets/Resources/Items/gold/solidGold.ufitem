@@ -1,15 +1,15 @@
 {
-  "ItemName": "LKA",
+  "ItemName": "Solid Gold",
   "ItemDescription": null,
-  "ItemImage": "resources/items/lka_skin.png",
+  "ItemImage": "resources/items/gold/solidgold.png",
   "IsMaterial": true,
   "ItemModel": "models/unicycles/default/parts/frames/default_frame.vmdl",
-  "ItemMaterial": "models/unicycles/lka/unicyclelka.vmat",
+  "ItemMaterial": "models/unicycles/default/materials/colors/unicycle_solid_gold.vmat",
   "ItemCategory": "Frame",
-  "ItemRarity": "Common",
+  "ItemRarity": "Legendary",
   "Skins": [],
   "Icon": {
-    "Path": "resources\\items/lka_skin.png"
+    "Path": "resources\\items/solidgold.png"
   },
   "ResourceVersion": 0,
   "__version": 0,

@@ -1,42 +1,42 @@
 {
   "ItemsInPass": [
     {
-      "Item": "resources/items/defaultframe.ufitem",
+      "Item": "resources/items/default/defaultwheel.ufitem",
       "DefaultItem": true
     },
     {
-      "Item": "resources/items/defaultseat.ufitem",
+      "Item": "resources/items/default/defaultframe.ufitem",
       "DefaultItem": true
     },
     {
-      "Item": "resources/items/defaultwheel.ufitem"
+      "Item": "resources/items/default/defaultpedal.ufitem"
     },
     {
-      "Item": "resources/items/defaultpedal.ufitem",
+      "Item": "resources/items/default/defaultseat.ufitem",
       "DefaultItem": true
     },
     {
-      "Item": "resources/items/lka_skin.ufitem",
+      "Item": "resources/items/flowerpower/flower_power_wheel.ufitem",
       "XPNeeded": 250,
       "ShowInPass": true
     },
     {
-      "Item": "resources/items/flower_power_frame.ufitem",
+      "Item": "resources/items/flowerpower/flower_power_frame.ufitem",
       "XPNeeded": 350,
       "ShowInPass": true
     },
     {
-      "Item": "resources/items/flower_power_seat.ufitem",
+      "Item": "resources/items/flowerpower/flower_power_pedal.ufitem",
       "XPNeeded": 1000,
       "ShowInPass": true
     },
     {
-      "Item": "resources/items/flower_power_pedal.ufitem",
+      "Item": "resources/items/flowerpower/flower_power_seat.ufitem",
       "XPNeeded": 900,
       "ShowInPass": true
     },
     {
-      "Item": "resources/items/flower_power_wheel.ufitem",
+      "Item": "resources/items/ika/lka_skin.ufitem",
       "XPNeeded": 800,
       "ShowInPass": true
     }

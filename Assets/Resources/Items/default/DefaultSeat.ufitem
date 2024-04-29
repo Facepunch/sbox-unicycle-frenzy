@@ -1,15 +1,15 @@
 {
-  "ItemName": "Flower Power",
+  "ItemName": "Default",
   "ItemDescription": null,
-  "ItemImage": "resources/items/flower_power_seat.png",
-  "IsMaterial": true,
+  "ItemImage": "resources/items/default/defaultseat.png",
+  "IsMaterial": false,
   "ItemModel": "models/unicycles/default/parts/seats/default_seat.vmdl",
-  "ItemMaterial": "models/unicycles/flower power/unicycleflowerpower.vmat",
+  "ItemMaterial": null,
   "ItemCategory": "Seat",
   "ItemRarity": "Common",
   "Skins": [],
   "Icon": {
-    "Path": "resources\\items/flower_power_seat.png"
+    "Path": "resources\\items/defaultseat.png"
   },
   "ResourceVersion": 0,
   "__version": 0,

@@ -1,8 +1,10 @@
 {
   "ItemName": "Solid Silver",
   "ItemDescription": null,
-  "ItemImage": "resources/items/solidsilverpedal.png",
-  "ItemModel": "models/unicycles/default/parts/pedals/default_pedal_solid_silver.vmdl",
+  "ItemImage": "resources/items/silver/solidsilverpedal.png",
+  "IsMaterial": true,
+  "ItemModel": "models/unicycles/default/parts/pedals/default_pedal.vmdl",
+  "ItemMaterial": "models/unicycles/default/materials/colors/unicycle_solid_silver.vmat",
   "ItemCategory": "Pedal",
   "ItemRarity": "Epic",
   "Skins": [],

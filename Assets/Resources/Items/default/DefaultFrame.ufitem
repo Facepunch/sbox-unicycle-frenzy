@@ -1,8 +1,10 @@
 {
   "ItemName": "Default",
   "ItemDescription": null,
-  "ItemImage": "resources/items/defaultframe.png",
+  "ItemImage": "resources/items/default/defaultframe.png",
+  "IsMaterial": false,
   "ItemModel": "models/unicycles/default/parts/frames/default_frame.vmdl",
+  "ItemMaterial": null,
   "ItemCategory": "Frame",
   "ItemRarity": "Common",
   "Skins": [

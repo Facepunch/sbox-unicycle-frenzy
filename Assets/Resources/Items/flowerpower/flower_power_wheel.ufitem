@@ -1,15 +1,15 @@
 {
   "ItemName": "Flower Power",
   "ItemDescription": null,
-  "ItemImage": "resources/items/flower_power_frame.png",
+  "ItemImage": "resources/items/flowerpower/flower_power_wheel.png",
   "IsMaterial": true,
-  "ItemModel": "models/unicycles/default/parts/frames/default_frame.vmdl",
+  "ItemModel": "models/unicycles/default/parts/wheels/default_wheel.vmdl",
   "ItemMaterial": "models/unicycles/flower power/unicycleflowerpower.vmat",
-  "ItemCategory": "Frame",
+  "ItemCategory": "Wheel",
   "ItemRarity": "Common",
   "Skins": [],
   "Icon": {
-    "Path": "resources\\items/flower_power_frame.png"
+    "Path": "resources\\items/flower_power_wheel.png"
   },
   "ResourceVersion": 0,
   "__version": 0,

@@ -1,15 +1,15 @@
 {
   "ItemName": "Solid Silver",
   "ItemDescription": null,
-  "ItemImage": "resources/items/solidsilverseat.png",
+  "ItemImage": "resources/items/silver/solidsilverwheel.png",
   "IsMaterial": true,
-  "ItemModel": "models/unicycles/default/parts/seats/default_seat.vmdl",
+  "ItemModel": "models/unicycles/default/parts/wheels/default_wheel.vmdl",
   "ItemMaterial": "models/unicycles/default/materials/colors/unicycle_solid_silver.vmat",
-  "ItemCategory": "Seat",
+  "ItemCategory": "Wheel",
   "ItemRarity": "Epic",
   "Skins": [],
   "Icon": {
-    "Path": "resources\\items/solidsilverseat.png"
+    "Path": "resources\\items/solidsilverwheel.png"
   },
   "ResourceVersion": 0,
   "__version": 0,

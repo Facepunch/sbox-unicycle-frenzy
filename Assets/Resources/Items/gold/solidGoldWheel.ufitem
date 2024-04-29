@@ -1,7 +1,7 @@
 {
   "ItemName": "Solid Gold",
   "ItemDescription": null,
-  "ItemImage": "resources/items/solidgoldwheel.png",
+  "ItemImage": "resources/items/gold/solidgoldwheel.png",
   "IsMaterial": true,
   "ItemModel": "models/unicycles/default/parts/wheels/default_wheel.vmdl",
   "ItemMaterial": "models/unicycles/default/materials/colors/unicycle_solid_gold.vmat",
