@@ -79,4 +79,14 @@ internal class CameraController : Component
 		Camera.FieldOfView = Screen.CreateVerticalFieldOfView( FieldOfView );
 	}
 
+	protected override void OnFixedUpdate()
+	{
+		base.OnFixedUpdate();
+		var diff = Rotation.Difference( Rotation.From( 0, ViewAngles.yaw, 0 ), Rotation.From( 0, Target.Rotation.Yaw(), 0 ) );
+		if ( diff.Angle() > 170 )
+		{
+			Input.AnalogLook = default;
+		}
+
+	}
 }
