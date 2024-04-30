@@ -4,6 +4,7 @@
     "Name": "uf_tileset_wood",
     "Enabled": true,
     "NetworkMode": 2,
+    "NetworkInterpolation": true,
     "Children": [
       {
         "__guid": "59f9b87d-04bb-4a6f-84ac-f81e544a8bbb",
@@ -13,6 +14,7 @@
         "Tags": "light_directional,light",
         "Enabled": true,
         "NetworkMode": 2,
+        "NetworkInterpolation": true,
         "Components": [
           {
             "__type": "Sandbox.DirectionalLight",
@@ -31,6 +33,7 @@
         "Tags": "group",
         "Enabled": true,
         "NetworkMode": 2,
+        "NetworkInterpolation": true,
         "Children": [
           {
             "__guid": "eee6275f-318c-4026-87a9-12119b31398d",
@@ -38,19 +41,26 @@
             "Position": "0,0,9",
             "Enabled": true,
             "NetworkMode": 2,
+            "NetworkInterpolation": true,
             "Components": [
               {
-                "__type": "Sandbox.Prop",
-                "__guid": "6fe3f8e1-3da1-494b-8c7c-f885d0c4ab9d",
-                "BodyGroups": 18446744073709551615,
-                "Health": 0,
-                "IsStatic": true,
-                "Model": "models/track_tileset_pieces/wood/wood_straight_384.vmdl"
+                "__type": "TrackPiece",
+                "__guid": "d9008eee-56d5-4603-ba7e-bf56c95376b4"
               },
               {
-                "__type": "TrackPiece",
-                "__guid": "d9008eee-56d5-4603-ba7e-bf56c95376b4",
-                "Offset": 384
+                "__type": "Sandbox.ModelRenderer",
+                "__guid": "d4c7cdcf-4db1-409c-8a34-55a81e9f97cd",
+                "BodyGroups": 18446744073709551615,
+                "Model": "models/track_tileset_pieces/wood/wood_straight_384.vmdl",
+                "RenderType": "On",
+                "Tint": "1,1,1,1"
+              },
+              {
+                "__type": "Sandbox.ModelCollider",
+                "__guid": "8ad34efa-3496-4b6d-aff6-c91b9a0357bb",
+                "IsTrigger": false,
+                "Model": "models/track_tileset_pieces/wood/wood_straight_384.vmdl",
+                "Static": true
               }
             ]
           },
@@ -60,19 +70,26 @@
             "Position": "512,0,9.70142",
             "Enabled": true,
             "NetworkMode": 2,
+            "NetworkInterpolation": true,
             "Components": [
               {
-                "__type": "Sandbox.Prop",
-                "__guid": "c5d7f5c9-e248-4100-aac9-533796120dc1",
-                "BodyGroups": 18446744073709551615,
-                "Health": 0,
-                "IsStatic": true,
-                "Model": "models/track_tileset_pieces/wood/wood_slope_384x96.vmdl"
+                "__type": "TrackPiece",
+                "__guid": "fb3a0df1-974a-4207-bde4-ad74e93da3c6"
               },
               {
-                "__type": "TrackPiece",
-                "__guid": "fb3a0df1-974a-4207-bde4-ad74e93da3c6",
-                "Offset": 384
+                "__type": "Sandbox.ModelRenderer",
+                "__guid": "aa231ced-ec93-4eed-8872-868dbcac7db6",
+                "BodyGroups": 18446744073709551615,
+                "Model": "models/track_tileset_pieces/wood/wood_slope_384x96.vmdl",
+                "RenderType": "On",
+                "Tint": "1,1,1,1"
+              },
+              {
+                "__type": "Sandbox.ModelCollider",
+                "__guid": "a9f74d42-6893-401d-aafe-df18df6fba09",
+                "IsTrigger": false,
+                "Model": "models/track_tileset_pieces/wood/wood_slope_384x96.vmdl",
+                "Static": true
               }
             ]
           },
@@ -82,19 +99,26 @@
             "Position": "1024,0,8.944287",
             "Enabled": true,
             "NetworkMode": 2,
+            "NetworkInterpolation": true,
             "Components": [
               {
-                "__type": "Sandbox.Prop",
-                "__guid": "a7c7727c-a58c-40a6-8ee8-7ae1a0964f25",
-                "BodyGroups": 18446744073709551615,
-                "Health": 0,
-                "IsStatic": true,
-                "Model": "models/track_tileset_pieces/wood/wood_slope_384x192.vmdl"
+                "__type": "TrackPiece",
+                "__guid": "d3b7e41d-5e8e-4fb8-aaf8-f194c0d7028b"
               },
               {
-                "__type": "TrackPiece",
-                "__guid": "d3b7e41d-5e8e-4fb8-aaf8-f194c0d7028b",
-                "Offset": 384
+                "__type": "Sandbox.ModelRenderer",
+                "__guid": "54ea0c6b-5be4-4e65-86b4-88d28f1f820e",
+                "BodyGroups": 18446744073709551615,
+                "Model": "models/track_tileset_pieces/wood/wood_slope_384x192.vmdl",
+                "RenderType": "On",
+                "Tint": "1,1,1,1"
+              },
+              {
+                "__type": "Sandbox.ModelCollider",
+                "__guid": "4247887c-a9dd-4467-b49a-ae9e65ccd13b",
+                "IsTrigger": false,
+                "Model": "models/track_tileset_pieces/wood/wood_slope_384x192.vmdl",
+                "Static": true
               }
             ]
           },
@@ -104,6 +128,7 @@
             "Position": "-512,0,0",
             "Enabled": true,
             "NetworkMode": 2,
+            "NetworkInterpolation": true,
             "Components": [
               {
                 "__type": "Sandbox.Prop",
@@ -115,8 +140,7 @@
               },
               {
                 "__type": "TrackPiece",
-                "__guid": "cb0c8fbf-1116-4fee-9121-f773df8f7367",
-                "Offset": 384
+                "__guid": "cb0c8fbf-1116-4fee-9121-f773df8f7367"
               }
             ]
           },
@@ -126,19 +150,26 @@
             "Position": "1536,0,0",
             "Enabled": true,
             "NetworkMode": 2,
+            "NetworkInterpolation": true,
             "Components": [
               {
-                "__type": "Sandbox.Prop",
-                "__guid": "197826a4-5124-47f8-ac9d-d584344549a3",
-                "BodyGroups": 18446744073709551615,
-                "Health": 0,
-                "IsStatic": true,
-                "Model": "models/track_tileset_pieces/wood/wood_turnl_192.vmdl"
+                "__type": "TrackPiece",
+                "__guid": "a39665fc-d7d4-456a-a3ac-baf073b590e4"
               },
               {
-                "__type": "TrackPiece",
-                "__guid": "a39665fc-d7d4-456a-a3ac-baf073b590e4",
-                "Offset": 384
+                "__type": "Sandbox.ModelRenderer",
+                "__guid": "1e837621-01ae-4ca2-bab6-9d9df59a9670",
+                "BodyGroups": 18446744073709551615,
+                "Model": "models/track_tileset_pieces/wood/wood_turnl_192.vmdl",
+                "RenderType": "On",
+                "Tint": "1,1,1,1"
+              },
+              {
+                "__type": "Sandbox.ModelCollider",
+                "__guid": "d29a7ccf-c14c-459e-94ac-3927cdaa6afe",
+                "IsTrigger": false,
+                "Model": "models/track_tileset_pieces/wood/wood_turnl_192.vmdl",
+                "Static": true
               }
             ]
           },
@@ -148,19 +179,26 @@
             "Position": "2432,0,0",
             "Enabled": true,
             "NetworkMode": 2,
+            "NetworkInterpolation": true,
             "Components": [
               {
-                "__type": "Sandbox.Prop",
-                "__guid": "42712527-4afc-42dc-a2e5-e444fc2643fe",
-                "BodyGroups": 18446744073709551615,
-                "Health": 0,
-                "IsStatic": true,
-                "Model": "models/track_tileset_pieces/wood/wood_turnl_576.vmdl"
+                "__type": "TrackPiece",
+                "__guid": "aaed230b-7301-47ad-bdfe-072735a4f7af"
               },
               {
-                "__type": "TrackPiece",
-                "__guid": "aaed230b-7301-47ad-bdfe-072735a4f7af",
-                "Offset": 384
+                "__type": "Sandbox.ModelRenderer",
+                "__guid": "7b088d85-c3a9-44f8-b3b0-9e467bab2b85",
+                "BodyGroups": 18446744073709551615,
+                "Model": "models/track_tileset_pieces/wood/wood_turnl_576.vmdl",
+                "RenderType": "On",
+                "Tint": "1,1,1,1"
+              },
+              {
+                "__type": "Sandbox.ModelCollider",
+                "__guid": "6ab138ba-f8b3-4042-9f1b-e4ee00bb8bb1",
+                "IsTrigger": false,
+                "Model": "models/track_tileset_pieces/wood/wood_turnl_576.vmdl",
+                "Static": true
               }
             ]
           },
@@ -170,19 +208,26 @@
             "Position": "2816,0,0",
             "Enabled": true,
             "NetworkMode": 2,
+            "NetworkInterpolation": true,
             "Components": [
               {
-                "__type": "Sandbox.Prop",
-                "__guid": "c69d6112-aa72-41be-9c41-7a7936519140",
-                "BodyGroups": 18446744073709551615,
-                "Health": 0,
-                "IsStatic": true,
-                "Model": "models/track_tileset_pieces/wood/wood_turnr_192.vmdl"
+                "__type": "TrackPiece",
+                "__guid": "112bef38-2dbe-4d0b-bbc0-978159043e9c"
               },
               {
-                "__type": "TrackPiece",
-                "__guid": "112bef38-2dbe-4d0b-bbc0-978159043e9c",
-                "Offset": 384
+                "__type": "Sandbox.ModelRenderer",
+                "__guid": "afb7c2d0-ae05-4763-a26b-46fadabe004b",
+                "BodyGroups": 18446744073709551615,
+                "Model": "models/track_tileset_pieces/wood/wood_turnr_192.vmdl",
+                "RenderType": "On",
+                "Tint": "1,1,1,1"
+              },
+              {
+                "__type": "Sandbox.ModelCollider",
+                "__guid": "cb4ac561-4f5d-49af-84b1-d5ab5c693cbd",
+                "IsTrigger": false,
+                "Model": "models/track_tileset_pieces/wood/wood_turnr_192.vmdl",
+                "Static": true
               }
             ]
           },
@@ -192,19 +237,26 @@
             "Position": "3712,0,0",
             "Enabled": true,
             "NetworkMode": 2,
+            "NetworkInterpolation": true,
             "Components": [
               {
-                "__type": "Sandbox.Prop",
-                "__guid": "d088b7f0-2481-4d28-9747-8e3ae4a9403c",
-                "BodyGroups": 18446744073709551615,
-                "Health": 0,
-                "IsStatic": true,
-                "Model": "models/track_tileset_pieces/wood/wood_turnr_576.vmdl"
+                "__type": "TrackPiece",
+                "__guid": "b0b22e1b-0640-4f66-9eeb-9cb56498a5ee"
               },
               {
-                "__type": "TrackPiece",
-                "__guid": "b0b22e1b-0640-4f66-9eeb-9cb56498a5ee",
-                "Offset": 1152
+                "__type": "Sandbox.ModelRenderer",
+                "__guid": "2a93cedd-7c37-4982-aecf-0705f03d4a56",
+                "BodyGroups": 18446744073709551615,
+                "Model": "models/track_tileset_pieces/wood/wood_turnr_576.vmdl",
+                "RenderType": "On",
+                "Tint": "1,1,1,1"
+              },
+              {
+                "__type": "Sandbox.ModelCollider",
+                "__guid": "c5d5426f-51a5-4952-badc-aaf693b9c7cf",
+                "IsTrigger": false,
+                "Model": "models/track_tileset_pieces/wood/wood_turnr_576.vmdl",
+                "Static": true
               }
             ]
           }
@@ -217,6 +269,7 @@
         "Tags": "group",
         "Enabled": true,
         "NetworkMode": 2,
+        "NetworkInterpolation": true,
         "Children": [
           {
             "__guid": "bf35e3a7-4acf-4f10-b56c-1490cf36383f",
@@ -224,6 +277,7 @@
             "Position": "0,0,0",
             "Enabled": true,
             "NetworkMode": 2,
+            "NetworkInterpolation": true,
             "Components": [
               {
                 "__type": "Sandbox.Prop",
@@ -235,8 +289,7 @@
               },
               {
                 "__type": "TrackPiece",
-                "__guid": "1e720f6d-575b-465a-a54b-67e67e877a2f",
-                "Offset": 384
+                "__guid": "1e720f6d-575b-465a-a54b-67e67e877a2f"
               }
             ]
           },
@@ -246,6 +299,7 @@
             "Position": "544,0,0",
             "Enabled": true,
             "NetworkMode": 2,
+            "NetworkInterpolation": true,
             "Components": [
               {
                 "__type": "Sandbox.Prop",
@@ -257,8 +311,7 @@
               },
               {
                 "__type": "TrackPiece",
-                "__guid": "4e44a801-ddee-4df1-916e-720608553b1d",
-                "Offset": 384
+                "__guid": "4e44a801-ddee-4df1-916e-720608553b1d"
               }
             ]
           },
@@ -268,6 +321,7 @@
             "Position": "1024,0,0",
             "Enabled": true,
             "NetworkMode": 2,
+            "NetworkInterpolation": true,
             "Components": [
               {
                 "__type": "Sandbox.Prop",
@@ -279,8 +333,7 @@
               },
               {
                 "__type": "TrackPiece",
-                "__guid": "38062cca-cbe6-4ea5-aef0-4fc9b6922090",
-                "Offset": 384
+                "__guid": "38062cca-cbe6-4ea5-aef0-4fc9b6922090"
               }
             ]
           },
@@ -290,6 +343,7 @@
             "Position": "1504,0,0",
             "Enabled": true,
             "NetworkMode": 2,
+            "NetworkInterpolation": true,
             "Components": [
               {
                 "__type": "Sandbox.Prop",
@@ -301,8 +355,7 @@
               },
               {
                 "__type": "TrackPiece",
-                "__guid": "8960f5c5-4fb6-41d6-bc5a-d7a82232446d",
-                "Offset": 384
+                "__guid": "8960f5c5-4fb6-41d6-bc5a-d7a82232446d"
               }
             ]
           },
@@ -312,6 +365,7 @@
             "Position": "2400,0,0",
             "Enabled": true,
             "NetworkMode": 2,
+            "NetworkInterpolation": true,
             "Components": [
               {
                 "__type": "Sandbox.Prop",
@@ -323,8 +377,7 @@
               },
               {
                 "__type": "TrackPiece",
-                "__guid": "7812a17f-8202-42fd-8b9f-8acc7322ea1a",
-                "Offset": 384
+                "__guid": "7812a17f-8202-42fd-8b9f-8acc7322ea1a"
               }
             ]
           },
@@ -334,6 +387,7 @@
             "Position": "2752,0,0",
             "Enabled": true,
             "NetworkMode": 2,
+            "NetworkInterpolation": true,
             "Components": [
               {
                 "__type": "Sandbox.Prop",
@@ -345,8 +399,7 @@
               },
               {
                 "__type": "TrackPiece",
-                "__guid": "cbf548dd-d76a-41d7-b039-1e89ce07f0c1",
-                "Offset": 384
+                "__guid": "cbf548dd-d76a-41d7-b039-1e89ce07f0c1"
               }
             ]
           },
@@ -356,6 +409,7 @@
             "Position": "3680,0,0",
             "Enabled": true,
             "NetworkMode": 2,
+            "NetworkInterpolation": true,
             "Components": [
               {
                 "__type": "Sandbox.Prop",
@@ -367,8 +421,7 @@
               },
               {
                 "__type": "TrackPiece",
-                "__guid": "57a1bdb7-7320-4c30-b030-e2df76957726",
-                "Offset": 1152
+                "__guid": "57a1bdb7-7320-4c30-b030-e2df76957726"
               }
             ]
           }
@@ -381,6 +434,7 @@
         "Tags": "group",
         "Enabled": true,
         "NetworkMode": 2,
+        "NetworkInterpolation": true,
         "Children": [
           {
             "__guid": "fccaff3b-2add-4e4e-b7bf-946d749e58f9",
@@ -388,6 +442,7 @@
             "Position": "0,0,0",
             "Enabled": true,
             "NetworkMode": 2,
+            "NetworkInterpolation": true,
             "Components": [
               {
                 "__type": "Sandbox.Prop",
@@ -399,8 +454,7 @@
               },
               {
                 "__type": "TrackPiece",
-                "__guid": "c8a83bae-61c4-4c54-8731-bada11bec83d",
-                "Offset": 128
+                "__guid": "c8a83bae-61c4-4c54-8731-bada11bec83d"
               }
             ]
           },
@@ -410,6 +464,7 @@
             "Position": "512,0,0",
             "Enabled": true,
             "NetworkMode": 2,
+            "NetworkInterpolation": true,
             "Components": [
               {
                 "__type": "Sandbox.Prop",
@@ -421,8 +476,7 @@
               },
               {
                 "__type": "TrackPiece",
-                "__guid": "07656e7c-f219-4d09-b2ac-793357e4eb7f",
-                "Offset": 128
+                "__guid": "07656e7c-f219-4d09-b2ac-793357e4eb7f"
               }
             ]
           },
@@ -432,6 +486,7 @@
             "Position": "1024,0,0",
             "Enabled": true,
             "NetworkMode": 2,
+            "NetworkInterpolation": true,
             "Components": [
               {
                 "__type": "Sandbox.Prop",
@@ -443,8 +498,7 @@
               },
               {
                 "__type": "TrackPiece",
-                "__guid": "a492a106-54da-4f98-918e-f3acfa4e4bda",
-                "Offset": 128
+                "__guid": "a492a106-54da-4f98-918e-f3acfa4e4bda"
               }
             ]
           },
@@ -454,6 +508,7 @@
             "Position": "1536,0,0",
             "Enabled": true,
             "NetworkMode": 2,
+            "NetworkInterpolation": true,
             "Components": [
               {
                 "__type": "Sandbox.Prop",
@@ -465,8 +520,7 @@
               },
               {
                 "__type": "TrackPiece",
-                "__guid": "f849482c-c64b-4243-a37a-251d00664808",
-                "Offset": 128
+                "__guid": "f849482c-c64b-4243-a37a-251d00664808"
               }
             ]
           },
@@ -476,6 +530,7 @@
             "Position": "2432,0,0",
             "Enabled": true,
             "NetworkMode": 2,
+            "NetworkInterpolation": true,
             "Components": [
               {
                 "__type": "Sandbox.Prop",
@@ -487,8 +542,7 @@
               },
               {
                 "__type": "TrackPiece",
-                "__guid": "70d3cb5a-97f7-4708-880a-9711f4a30ae3",
-                "Offset": 128
+                "__guid": "70d3cb5a-97f7-4708-880a-9711f4a30ae3"
               }
             ]
           },
@@ -498,6 +552,7 @@
             "Position": "2688,0,0",
             "Enabled": true,
             "NetworkMode": 2,
+            "NetworkInterpolation": true,
             "Components": [
               {
                 "__type": "Sandbox.Prop",
@@ -509,8 +564,7 @@
               },
               {
                 "__type": "TrackPiece",
-                "__guid": "b6509303-1d1b-4d00-b066-c8134c7ee02a",
-                "Offset": 384
+                "__guid": "b6509303-1d1b-4d00-b066-c8134c7ee02a"
               }
             ]
           },
@@ -520,6 +574,7 @@
             "Position": "3584,0,0",
             "Enabled": true,
             "NetworkMode": 2,
+            "NetworkInterpolation": true,
             "Components": [
               {
                 "__type": "Sandbox.Prop",
@@ -531,8 +586,7 @@
               },
               {
                 "__type": "TrackPiece",
-                "__guid": "5eb60d77-0e5d-40ad-9c7b-ed5b170dcdbc",
-                "Offset": 1152
+                "__guid": "5eb60d77-0e5d-40ad-9c7b-ed5b170dcdbc"
               }
             ]
           }
@@ -545,6 +599,7 @@
         "Tags": "group",
         "Enabled": true,
         "NetworkMode": 2,
+        "NetworkInterpolation": true,
         "Children": [
           {
             "__guid": "2745064c-f1dd-41bf-b1a5-4cb66af4013f",
@@ -552,6 +607,7 @@
             "Position": "0,0,0",
             "Enabled": true,
             "NetworkMode": 2,
+            "NetworkInterpolation": true,
             "Components": [
               {
                 "__type": "Sandbox.Prop",
@@ -563,8 +619,7 @@
               },
               {
                 "__type": "TrackPiece",
-                "__guid": "da18e5b2-3b2a-40c2-b263-82f7839e6fc8",
-                "Offset": 16
+                "__guid": "da18e5b2-3b2a-40c2-b263-82f7839e6fc8"
               }
             ]
           },
@@ -574,6 +629,7 @@
             "Position": "512,0,0",
             "Enabled": true,
             "NetworkMode": 2,
+            "NetworkInterpolation": true,
             "Components": [
               {
                 "__type": "Sandbox.Prop",
@@ -585,8 +641,7 @@
               },
               {
                 "__type": "TrackPiece",
-                "__guid": "43a9b6cb-86d1-45a7-8abc-8cf962b9999a",
-                "Offset": 16
+                "__guid": "43a9b6cb-86d1-45a7-8abc-8cf962b9999a"
               }
             ]
           },
@@ -596,6 +651,7 @@
             "Position": "1024,0,0",
             "Enabled": true,
             "NetworkMode": 2,
+            "NetworkInterpolation": true,
             "Components": [
               {
                 "__type": "Sandbox.Prop",
@@ -607,8 +663,7 @@
               },
               {
                 "__type": "TrackPiece",
-                "__guid": "a3f23212-5a20-4079-b954-fc97f7d13ff4",
-                "Offset": 16
+                "__guid": "a3f23212-5a20-4079-b954-fc97f7d13ff4"
               }
             ]
           },
@@ -618,6 +673,7 @@
             "Position": "1536,0,0",
             "Enabled": true,
             "NetworkMode": 2,
+            "NetworkInterpolation": true,
             "Components": [
               {
                 "__type": "Sandbox.Prop",
@@ -629,8 +685,7 @@
               },
               {
                 "__type": "TrackPiece",
-                "__guid": "8dab15ef-66d4-4349-8738-1d8e11c8ee44",
-                "Offset": 16
+                "__guid": "8dab15ef-66d4-4349-8738-1d8e11c8ee44"
               }
             ]
           },
@@ -640,6 +695,7 @@
             "Position": "1664,0,0",
             "Enabled": true,
             "NetworkMode": 2,
+            "NetworkInterpolation": true,
             "Components": [
               {
                 "__type": "Sandbox.Prop",
@@ -651,8 +707,7 @@
               },
               {
                 "__type": "TrackPiece",
-                "__guid": "841a9dac-1de1-47e5-b929-492bab8f8c9c",
-                "Offset": 16
+                "__guid": "841a9dac-1de1-47e5-b929-492bab8f8c9c"
               }
             ]
           },
@@ -662,6 +717,7 @@
             "Position": "1920,0,0",
             "Enabled": true,
             "NetworkMode": 2,
+            "NetworkInterpolation": true,
             "Components": [
               {
                 "__type": "Sandbox.Prop",
@@ -673,8 +729,7 @@
               },
               {
                 "__type": "TrackPiece",
-                "__guid": "62df4dda-156a-41da-bdd0-4af549d674bc",
-                "Offset": 384
+                "__guid": "62df4dda-156a-41da-bdd0-4af549d674bc"
               }
             ]
           },
@@ -684,6 +739,7 @@
             "Position": "2176,0,0",
             "Enabled": true,
             "NetworkMode": 2,
+            "NetworkInterpolation": true,
             "Components": [
               {
                 "__type": "Sandbox.Prop",
@@ -695,8 +751,7 @@
               },
               {
                 "__type": "TrackPiece",
-                "__guid": "473218a6-68ba-4057-818e-5998f25260ab",
-                "Offset": 128
+                "__guid": "473218a6-68ba-4057-818e-5998f25260ab"
               }
             ]
           }
@@ -709,6 +764,7 @@
         "Tags": "group",
         "Enabled": true,
         "NetworkMode": 2,
+        "NetworkInterpolation": true,
         "Children": [
           {
             "__guid": "a45c2dc0-b07b-4227-9903-d98f1daae087",
@@ -716,6 +772,7 @@
             "Position": "0,0,0",
             "Enabled": true,
             "NetworkMode": 2,
+            "NetworkInterpolation": true,
             "Components": [
               {
                 "__type": "Sandbox.Prop",
@@ -727,8 +784,7 @@
               },
               {
                 "__type": "TrackPiece",
-                "__guid": "48f7d859-ed23-4f22-ac32-0ea18bf84de9",
-                "Offset": 384
+                "__guid": "48f7d859-ed23-4f22-ac32-0ea18bf84de9"
               }
             ]
           },
@@ -738,6 +794,7 @@
             "Position": "512,0,0",
             "Enabled": true,
             "NetworkMode": 2,
+            "NetworkInterpolation": true,
             "Components": [
               {
                 "__type": "Sandbox.Prop",
@@ -749,8 +806,7 @@
               },
               {
                 "__type": "TrackPiece",
-                "__guid": "d7e6f074-81fb-4ac3-a782-f0eb199a1b5a",
-                "Offset": 384
+                "__guid": "d7e6f074-81fb-4ac3-a782-f0eb199a1b5a"
               }
             ]
           },
@@ -760,6 +816,7 @@
             "Position": "1024,0,0",
             "Enabled": true,
             "NetworkMode": 2,
+            "NetworkInterpolation": true,
             "Components": [
               {
                 "__type": "Sandbox.Prop",
@@ -771,8 +828,7 @@
               },
               {
                 "__type": "TrackPiece",
-                "__guid": "4a9f307d-7ac3-4708-8d93-24d032fc50ea",
-                "Offset": 384
+                "__guid": "4a9f307d-7ac3-4708-8d93-24d032fc50ea"
               }
             ]
           },
@@ -782,6 +838,7 @@
             "Position": "1536,0,0",
             "Enabled": true,
             "NetworkMode": 2,
+            "NetworkInterpolation": true,
             "Components": [
               {
                 "__type": "Sandbox.Prop",
@@ -793,8 +850,7 @@
               },
               {
                 "__type": "TrackPiece",
-                "__guid": "7627b74e-28ed-4205-a70d-585a54503905",
-                "Offset": 384
+                "__guid": "7627b74e-28ed-4205-a70d-585a54503905"
               }
             ]
           },
@@ -804,6 +860,7 @@
             "Position": "2432,0,0",
             "Enabled": true,
             "NetworkMode": 2,
+            "NetworkInterpolation": true,
             "Components": [
               {
                 "__type": "Sandbox.Prop",
@@ -815,8 +872,7 @@
               },
               {
                 "__type": "TrackPiece",
-                "__guid": "2846a41e-9a21-416f-a457-e9d3b417f449",
-                "Offset": 384
+                "__guid": "2846a41e-9a21-416f-a457-e9d3b417f449"
               }
             ]
           },
@@ -826,6 +882,7 @@
             "Position": "0,-512,0",
             "Enabled": true,
             "NetworkMode": 2,
+            "NetworkInterpolation": true,
             "Components": [
               {
                 "__type": "Sandbox.Prop",
@@ -837,8 +894,7 @@
               },
               {
                 "__type": "TrackPiece",
-                "__guid": "79439f48-a0c5-4b9d-a589-4b85bf9496b8",
-                "Offset": 384
+                "__guid": "79439f48-a0c5-4b9d-a589-4b85bf9496b8"
               }
             ]
           },
@@ -848,6 +904,7 @@
             "Position": "512,-512,0",
             "Enabled": true,
             "NetworkMode": 2,
+            "NetworkInterpolation": true,
             "Components": [
               {
                 "__type": "Sandbox.Prop",
@@ -859,8 +916,7 @@
               },
               {
                 "__type": "TrackPiece",
-                "__guid": "a7a61d8a-c664-4624-8581-610258707eaa",
-                "Offset": 384
+                "__guid": "a7a61d8a-c664-4624-8581-610258707eaa"
               }
             ]
           },
@@ -870,6 +926,7 @@
             "Position": "1024,-512,0",
             "Enabled": true,
             "NetworkMode": 2,
+            "NetworkInterpolation": true,
             "Components": [
               {
                 "__type": "Sandbox.Prop",
@@ -881,8 +938,7 @@
               },
               {
                 "__type": "TrackPiece",
-                "__guid": "305752ca-a70e-4c56-801c-074babf44ef7",
-                "Offset": 384
+                "__guid": "305752ca-a70e-4c56-801c-074babf44ef7"
               }
             ]
           },
@@ -892,6 +948,7 @@
             "Position": "1536,-512,0",
             "Enabled": true,
             "NetworkMode": 2,
+            "NetworkInterpolation": true,
             "Components": [
               {
                 "__type": "Sandbox.Prop",
@@ -903,8 +960,7 @@
               },
               {
                 "__type": "TrackPiece",
-                "__guid": "c0a289d1-6ba7-4da3-842e-d54c19a2a217",
-                "Offset": 384
+                "__guid": "c0a289d1-6ba7-4da3-842e-d54c19a2a217"
               }
             ]
           },
@@ -914,6 +970,7 @@
             "Position": "2432,-512,0",
             "Enabled": true,
             "NetworkMode": 2,
+            "NetworkInterpolation": true,
             "Components": [
               {
                 "__type": "Sandbox.Prop",
@@ -925,8 +982,7 @@
               },
               {
                 "__type": "TrackPiece",
-                "__guid": "df141537-e705-4db9-8fcc-d4fdabe703e0",
-                "Offset": 1152
+                "__guid": "df141537-e705-4db9-8fcc-d4fdabe703e0"
               }
             ]
           }

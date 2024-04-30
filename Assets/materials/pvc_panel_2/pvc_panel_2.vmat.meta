@@ -1,0 +1,25 @@
+{
+  "publish": {
+    "Allowed": true,
+    "Enabled": true,
+    "ProjectConfig": {
+      "Title": "PVC Panel 2",
+      "Type": "material",
+      "Org": "facepunch",
+      "Ident": "pvc_panel_2",
+      "Tags": null,
+      "Schema": 0,
+      "HasAssets": false,
+      "AssetsPath": null,
+      "Resources": null,
+      "MenuResources": "*",
+      "HasCode": false,
+      "CodePath": null,
+      "PackageReferences": null,
+      "EditorReferences": null,
+      "Metadata": {
+        "SingleAssetSource": "materials/pvc/pvc_panel_2/pvc_panel_2.vmat"
+      }
+    }
+  }
+}

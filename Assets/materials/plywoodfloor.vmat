@@ -11,8 +11,8 @@ Layer0
 
 	//---- Color ----
 	g_flModelTintAmount "0.000"
-	g_vColorTint "[1.000000 1.000000 1.000000 0.000000]"
-	TextureColor "textures/plywoodfloor/plywoodfloor_worn/TCom_PlywoodFloor_Worn_2K_albedo.tif"
+	g_vColorTint "[0.933333 0.835294 0.768628 0.000000]"
+	TextureColor "textures/plywoodfloor/plywoodfloor_new/tcom_plywoodfloor_new_v2_2k_albedo.tif"
 
 	//---- Fade ----
 	g_flFadeExponent "1.000"

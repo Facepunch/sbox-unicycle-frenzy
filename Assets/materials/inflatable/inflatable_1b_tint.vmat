@@ -1,0 +1,33 @@
+"Layer0"
+{
+	"shader"		"shaders/complex.shader"
+	"F_SPECULAR"		"1"
+	"g_flAmbientOcclusionDirectDiffuse"		"0.000000"
+	"g_flAmbientOcclusionDirectSpecular"		"0.000000"
+	"TextureAmbientOcclusion"		"materials/inflatable/inflatable_1a_tint_ao.png"
+	"g_flModelTintAmount"		"1.000000"
+	"g_vColorTint"		"[1.000000 1.000000 1.000000 0.000000]"
+	"TextureColor"		"materials/inflatable/inflatable_1a_tint_color.png"
+	"g_flFadeExponent"		"1.000000"
+	"g_bFogEnabled"		"1"
+	"g_flDirectionalLightmapMinZ"		"0.050000"
+	"g_flDirectionalLightmapStrength"		"1.000000"
+	"g_flMetalness"		"0.000000"
+	"TextureNormal"		"materials/inflatable/inflatable_1a_tint_normal.png"
+	"TextureRoughness"		"[0.605000 0.605000 0.605000 0.000000]"
+	"g_nScaleTexCoordUByModelScaleAxis"		"0"
+	"g_nScaleTexCoordVByModelScaleAxis"		"0"
+	"g_vTexCoordOffset"		"[0.000 0.000]"
+	"g_vTexCoordScale"		"[1.000 1.000]"
+	"g_vTexCoordScrollSpeed"		"[0.000 0.000]"
+	"SystemAttributes"
+	{
+		"PhysicsSurfaceProperties"		"plastic"
+		"WorldMappingWidth"		"128"
+		"WorldMappingHeight"		"128"
+	}
+	"ToolAttributes"
+	{
+		"SubrectDefinition"		"materials/inflatable/inflate_1_hs.rect"
+	}
+}

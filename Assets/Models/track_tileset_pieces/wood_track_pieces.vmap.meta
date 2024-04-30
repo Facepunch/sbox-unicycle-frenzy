@@ -27,7 +27,9 @@
         "facepunch.scaffolding_connector_a#27430",
         "facepunch.scaffolding_tube_a#27434",
         "facepunch.wood_plank_hs_01#33582",
-        "facepunch.plastic_trim_dirty_blend#43499"
+        "facepunch.plastic_trim_dirty_blend#43499",
+        "facepunch.plastic_trim_clean#43497",
+        "facepunch.plastic_trim_clean_blend#43498"
       ],
       "Metadata": {
         "SingleAssetSource": "models/track_tileset_pieces/wood_track_pieces.vmap"
