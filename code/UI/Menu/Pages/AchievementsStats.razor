@@ -1,0 +1,40 @@
+@inherits Panel
+@page "/w";
+
+<root>
+	<div class="sidebar">
+		<div class="navbar">
+			<a class="button" href="/home">Return</a>
+		</div>
+	</div>
+	<div class="achievements-container">
+		@foreach (var achievement in AchievementManager.Instance.Achievements)
+		{
+			<div class="achievement">
+				<div class="achievement-icon" style="background-image: url(@achievement.AchievementIcon);"></div>
+				<div class="achievement-info">
+					<div class="achievement-name">@achievement.AchievementName</div>
+					<div class="achievement-description">@achievement.AchievementDescription</div>
+					<div class="achievement-progress">@achievement.CurrentValue/@achievement.NeededValue</div>
+				</div>
+			</div>
+		}
+	</div>
+</root>
+
+
+@code {
+	AchievementManager AchievementManager;
+
+	protected override void OnAfterTreeRender(bool firstTime)
+	{
+		base.OnAfterTreeRender(firstTime);
+
+		if (!firstTime) return;
+		
+		AchievementManager = new AchievementManager();
+		AchievementManager.Fetch();
+		
+	}
+	protected override int BuildHash() => System.HashCode.Combine(AchievementManager);
+}

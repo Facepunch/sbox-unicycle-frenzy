@@ -30,7 +30,7 @@ HomePage {
 }
 
 .sidebar {
-    width: 300px;
+    width: 350px;
     flex-shrink: 0;
 }
 
@@ -316,7 +316,7 @@ CustomizePage {
         height: 50px;
         bottom: 12%;
         justify-content: center;
-
+        pointer-events:none;
         .input-rot-container {
             left: 60px;
             width: 208px;
@@ -440,5 +440,57 @@ CustomizePage {
         .left {
             background-image: url("tools/images/common/arrow_left.png");
         }
+    }
+}
+AchievementsStats {
+    backdrop-filter: blur( 10px );
+    width:100%;
+
+    .achievements-container {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .achievement {
+        display: flex;
+        align-items: center;
+        margin: 20px;
+        width: 100%;
+        height: 100px;
+        flex-direction: column;
+    }
+
+    .achievement-icon {
+        width: 70px;
+        height: 70px;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        flex-grow: 1;
+        flex-shrink: 0;
+        background-color: rgba( lightgray, .35 );
+    }
+
+    .achievement-info {
+        flex-grow: 1;
+        flex-shrink: 0;
+        flex-direction: column;
+        display: flex;
+    }
+
+    .achievement-name {
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    .achievement-description {
+        font-size: 14px;
+        color: #666;
+    }
+
+    .achievement-progress {
+        font-size: 12px;
+        margin-top: 5px;
     }
 }

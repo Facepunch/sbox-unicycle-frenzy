@@ -35,7 +35,10 @@ public class AchievementManager
 		// Get all achievements
 		Achievements = new List<BaseAchievement>
 		{
-			new PerfectPedal()
+			new PerfectPedalBronze(),
+			new PerfectPedalSilver(),
+			new PerfectPedalGold(),
+			new PerfectPedalPlatinum()
 		};
 	}
 }

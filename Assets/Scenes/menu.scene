@@ -1,5 +1,5 @@
 {
-  "__guid": "fca14b31-806b-44d5-aedf-77b9989cba6d",
+  "__guid": "b58ee382-dbb0-4894-ae24-70420ff7f6ec",
   "GameObjects": [
     {
       "__guid": "f97278ee-0164-48eb-b25b-777dc6151898",
@@ -30,6 +30,14 @@
       "Name": "SettingsCameraPos",
       "Position": "-208.4598,-72.46354,58.46043",
       "Rotation": "0,0,-0.241573,0.9703826",
+      "Enabled": true,
+      "NetworkMode": 2
+    },
+    {
+      "__guid": "de3a0496-25ba-42d9-8333-5615e3e06072",
+      "Name": "AchievementCameraPos",
+      "Position": "-174.3777,-61.051,46.78977",
+      "Rotation": "0.1195545,0.3370766,-0.3121669,0.8801352",
       "Enabled": true,
       "NetworkMode": 2
     },
@@ -232,6 +240,15 @@
               },
               "PositionLerpSpeed": 10,
               "RotationLerpSpeed": 10
+            },
+            {
+              "Url": "/AchievementsStats",
+              "CameraObject": {
+                "_type": "gameobject",
+                "go": "de3a0496-25ba-42d9-8333-5615e3e06072"
+              },
+              "PositionLerpSpeed": 10,
+              "RotationLerpSpeed": 10
             }
           ]
         },
@@ -278,20 +295,20 @@
                   "__guid": "8264d516-b6a0-4302-89a1-aae6cd09d376",
                   "Frame": {
                     "_type": "component",
-                    "component_id": "27002390-ae7e-4217-a2fc-95283c595015",
+                    "component_id": "6b143b7b-5447-4fd1-a967-8acab2acbcd6",
                     "go": "788781c8-0927-4dac-938d-6f3e904e4131",
                     "component_type": "ModelRenderer"
                   },
                   "IsMenu": true,
                   "LeftPedal": {
                     "_type": "component",
-                    "component_id": "545cdc05-51eb-4443-8f2e-c06f570c1124",
+                    "component_id": "218fe7d9-ed05-4edf-b778-96744f725ead",
                     "go": "62318272-9110-4cd5-baad-12a540190a43",
                     "component_type": "SkinnedModelRenderer"
                   },
                   "RightPedal": {
                     "_type": "component",
-                    "component_id": "54c7f154-a41f-43bf-b324-2db2bf3d4261",
+                    "component_id": "15e6b7b5-5bbe-42a8-aa98-e719d6148233",
                     "go": "f9ccdbac-ff8c-487b-8d5d-b0670392d01a",
                     "component_type": "SkinnedModelRenderer"
                   },
@@ -303,7 +320,7 @@
                   },
                   "Wheel": {
                     "_type": "component",
-                    "component_id": "e299883a-1a98-4012-bbbb-ad412a908c23",
+                    "component_id": "7255b637-d57c-43ac-b579-30ce90bd493c",
                     "go": "7e4c8815-ca00-44ec-ab86-5d7bba132acd",
                     "component_type": "ModelRenderer"
                   }
@@ -498,7 +515,7 @@
     {
       "__guid": "bdf502a9-bd07-4201-922f-b731b0bc4bcb",
       "Name": "Box",
-      "Position": "384,-512,-63.99999",
+      "Position": "384,-512,-64",
       "Enabled": true,
       "NetworkMode": 2,
       "Components": [
@@ -1009,7 +1026,7 @@
   },
   "Title": "menu",
   "Description": "",
-  "LastSaved": "2024-04-30T10:14:21.8352113\u002B01:00",
+  "LastSaved": "2024-04-30T14:26:58.9928085\u002B01:00",
   "ResourceVersion": 1,
   "__version": 1,
   "__references": []

@@ -553,12 +553,7 @@ internal class UnicycleController : Component
 			Sound.Play( PerfectPedalSound, Transform.Position );
 		}
 
-		var pedalAchievement = AchievementManager.Instance.GetAchievement( "Perfect Pedal" );
-		if ( pedalAchievement != null )
-		{
-			pedalAchievement.OnAchievementProgress();
-			AchievementManager.Save();
-		}
+		PedalAchievement();
 
 		//if ( Pawn.IsLocalPawn )
 		//{
@@ -567,6 +562,38 @@ internal class UnicycleController : Component
 		//}
 
 		Velocity += Rotation.Forward.WithZ( 0 ) * PerfectPedalBoost;
+	}
+
+	void PedalAchievement()
+	{
+		var pedalAchievementBronze = AchievementManager.Instance.GetAchievement( "Perfect Pedal Bronze" );
+		if ( pedalAchievementBronze != null )
+		{
+			Log.Info( "wow" );
+			pedalAchievementBronze.OnAchievementProgress();
+			AchievementManager.Save();
+		}
+
+		var pedalAchievementSilver = AchievementManager.Instance.GetAchievement( "Perfect Pedal Silver" );
+		if ( pedalAchievementSilver != null )
+		{
+			pedalAchievementSilver.OnAchievementProgress();
+			AchievementManager.Save();
+		}
+
+		var pedalAchievementGold = AchievementManager.Instance.GetAchievement( "Perfect Pedal Gold" );
+		if ( pedalAchievementGold != null )
+		{
+			pedalAchievementGold.OnAchievementProgress();
+			AchievementManager.Save();
+		}
+
+		var pedalAchievementPlatinum = AchievementManager.Instance.GetAchievement( "Perfect Pedal Platinum" );
+		if ( pedalAchievementPlatinum != null )
+		{
+			pedalAchievementPlatinum.OnAchievementProgress();
+			AchievementManager.Save();
+		}
 	}
 
 	private bool NoTilt => false;
