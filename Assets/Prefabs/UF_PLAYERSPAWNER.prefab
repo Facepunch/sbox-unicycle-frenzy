@@ -1,0 +1,28 @@
+{
+  "RootObject": {
+    "__guid": "8d712849-11ff-4056-8634-f04d463c372e",
+    "Name": "PlayerSpawner",
+    "Position": "684.2797,150.73,818.4615",
+    "Enabled": true,
+    "NetworkMode": 2,
+    "NetworkInterpolation": true,
+    "Components": [
+      {
+        "__type": "Sandbox.NetworkHelper",
+        "__guid": "2ce555e0-4ed1-463e-8243-397f7f480829",
+        "PlayerPrefab": {
+          "_type": "gameobject",
+          "prefab": "prefabs/uf_player.prefab"
+        },
+        "SpawnPoints": [],
+        "StartServer": true
+      }
+    ]
+  },
+  "ShowInMenu": false,
+  "MenuPath": null,
+  "MenuIcon": null,
+  "ResourceVersion": 1,
+  "__version": 1,
+  "__references": []
+}

@@ -1,0 +1,319 @@
+{
+  "RootObject": {
+    "__guid": "df1f2956-ceb8-4a87-9b80-fd21c2edc7e3",
+    "Name": "uf_player",
+    "Enabled": true,
+    "NetworkMode": 2,
+    "NetworkInterpolation": true,
+    "Children": [
+      {
+        "__guid": "f0c7535c-4add-49bd-80b1-ffa7c1a58568",
+        "Name": "Screen",
+        "Position": "129.6269,-115.6198,26.44059",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "NetworkInterpolation": true,
+        "Components": [
+          {
+            "__type": "Sandbox.ScreenPanel",
+            "__guid": "5f9f7b5c-0abe-42a4-a213-7be0fdad7ccd",
+            "AutoScreenScale": true,
+            "Opacity": 1,
+            "Scale": 1,
+            "ZIndex": 100
+          },
+          {
+            "__type": "Hud",
+            "__guid": "fd7d0e4a-bdc3-45e9-bb34-bf59b580af6d"
+          }
+        ]
+      },
+      {
+        "__guid": "e018630d-6cfe-427a-9f87-e6b90f481bb0",
+        "Name": "Camera",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "NetworkInterpolation": true,
+        "Components": [
+          {
+            "__type": "Sandbox.CameraComponent",
+            "__guid": "0db86851-7e0e-4f64-ab1a-943b03594623",
+            "BackgroundColor": "0.33333,0.46275,0.52157,1",
+            "ClearFlags": "All",
+            "FieldOfView": 60,
+            "IsMainCamera": true,
+            "Orthographic": false,
+            "OrthographicHeight": 1204,
+            "Priority": 1,
+            "RenderExcludeTags": "",
+            "RenderTags": "",
+            "TargetEye": "None",
+            "Viewport": "0,0,1,1",
+            "ZFar": 10000,
+            "ZNear": 10
+          },
+          {
+            "__type": "CameraController",
+            "__guid": "65dab0f6-6de3-4fde-8c4b-403d9ccce930",
+            "Target": {
+              "_type": "component",
+              "component_id": "a6f8953b-86f9-4bd8-b213-69d0cd1dea30",
+              "go": "b4a3ea4b-4f40-4ff3-810b-671b14eee741",
+              "component_type": "UnicycleController"
+            }
+          }
+        ]
+      },
+      {
+        "__guid": "b4a3ea4b-4f40-4ff3-810b-671b14eee741",
+        "Name": "Player",
+        "Tags": "player",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "NetworkInterpolation": true,
+        "Components": [
+          {
+            "__type": "UnicycleController",
+            "__guid": "a6f8953b-86f9-4bd8-b213-69d0cd1dea30",
+            "FallSound": "sounds/unicycle/unicycle.crash.default.sound",
+            "JumpSound": "sounds/unicycle/unicycle.jump.sound",
+            "PedalSound": "sounds/unicycle/unicycle.pedal.sound",
+            "PerfectPedalSound": "sounds/unicycle/unicycle.pedal.perfect.sound"
+          },
+          {
+            "__type": "PlayerAnimator",
+            "__guid": "365d8aa7-a4df-477f-9a1a-9647737cb1e1",
+            "LeftPedal": {
+              "_type": "gameobject",
+              "go": "20f5520f-b2c1-4279-bc55-50a4ea04d4b8"
+            },
+            "PedalPivot": {
+              "_type": "gameobject",
+              "go": "b164ce72-f420-4a37-b56c-703615ac3bb9"
+            },
+            "RightPedal": {
+              "_type": "gameobject",
+              "go": "d26dad9f-6225-4651-abcc-31331fb26fb9"
+            },
+            "Wheel": {
+              "_type": "gameobject",
+              "go": "03c09afb-d378-47f7-98b4-7029d3c42b92"
+            },
+            "WheelPivot": {
+              "_type": "gameobject",
+              "go": "13eb0cf3-37c7-4b17-a907-9f03030be997"
+            }
+          },
+          {
+            "__type": "Sandbox.BoxCollider",
+            "__guid": "03cabaf9-2721-4276-abce-dd7c8de63315",
+            "Center": "0,0,36",
+            "IsTrigger": false,
+            "Scale": "20,20,72",
+            "Static": false
+          },
+          {
+            "__type": "CourseTimer",
+            "__guid": "8c3db60c-2df7-4e80-b96d-538eb60e38bc"
+          }
+        ],
+        "Children": [
+          {
+            "__guid": "fc40a0ab-e67c-4ccc-8a62-869e942b484a",
+            "Name": "Player",
+            "Position": "0,0,35",
+            "Tags": "citizen",
+            "Enabled": true,
+            "NetworkMode": 2,
+            "NetworkInterpolation": true,
+            "Components": [
+              {
+                "__type": "Sandbox.SkinnedModelRenderer",
+                "__guid": "772d4d04-07b8-49d1-94e2-9d632f2928be",
+                "BodyGroups": 341,
+                "CreateBoneObjects": false,
+                "Model": "models/citizen/citizen.vmdl",
+                "RenderType": "On",
+                "Tint": "1,1,1,1"
+              },
+              {
+                "__type": "ClothingDresser",
+                "__guid": "0336d2a6-6f46-45e1-8c18-78e7fa7100df",
+                "BodyRenderer": {
+                  "_type": "component",
+                  "component_id": "772d4d04-07b8-49d1-94e2-9d632f2928be",
+                  "go": "fc40a0ab-e67c-4ccc-8a62-869e942b484a",
+                  "component_type": "SkinnedModelRenderer"
+                }
+              }
+            ]
+          },
+          {
+            "__guid": "937aec56-425e-45b5-897e-9fc3c5b6320e",
+            "Name": "Unicycle",
+            "Scale": "0.8,0.8,0.8",
+            "Enabled": true,
+            "NetworkMode": 2,
+            "NetworkInterpolation": true,
+            "Components": [
+              {
+                "__type": "UnicycleDresser",
+                "__guid": "25b2badb-8ebc-4102-91de-21b7fa20e68d",
+                "Frame": {
+                  "_type": "component",
+                  "component_id": "90875ae9-4274-46fa-8971-ee2cd621b07b",
+                  "go": "3d6f0b37-2933-4d3c-a94f-154bf00ed7b8",
+                  "component_type": "ModelRenderer"
+                },
+                "IsMenu": false,
+                "LeftPedal": {
+                  "_type": "component",
+                  "component_id": "8b7725a2-443f-4b74-9e63-0f144ea0cb2e",
+                  "go": "20f5520f-b2c1-4279-bc55-50a4ea04d4b8",
+                  "component_type": "SkinnedModelRenderer"
+                },
+                "RightPedal": {
+                  "_type": "component",
+                  "component_id": "75c94ecf-1cff-4cd0-85d8-1dc2bafb5dc8",
+                  "go": "d26dad9f-6225-4651-abcc-31331fb26fb9",
+                  "component_type": "SkinnedModelRenderer"
+                },
+                "Seat": {
+                  "_type": "component",
+                  "component_id": "4b6781bf-79ee-4c50-91f5-3522aa819d12",
+                  "go": "5b8bc185-f817-474f-9a82-3035377d1d5b",
+                  "component_type": "ModelRenderer"
+                },
+                "Wheel": {
+                  "_type": "component",
+                  "component_id": "28a3a65f-984d-4cce-a813-9e8a34217f97",
+                  "go": "03c09afb-d378-47f7-98b4-7029d3c42b92",
+                  "component_type": "ModelRenderer"
+                }
+              }
+            ],
+            "Children": [
+              {
+                "__guid": "5b8bc185-f817-474f-9a82-3035377d1d5b",
+                "Name": "Seat",
+                "Position": "0,0,32.68898",
+                "Enabled": true,
+                "NetworkMode": 2,
+                "NetworkInterpolation": true,
+                "Components": [
+                  {
+                    "__type": "Sandbox.ModelRenderer",
+                    "__guid": "4b6781bf-79ee-4c50-91f5-3522aa819d12",
+                    "BodyGroups": 18446744073709551615,
+                    "Model": "models/unicycles/default/parts/seats/default_seat.vmdl",
+                    "RenderType": "On",
+                    "Tint": "1,1,1,1"
+                  }
+                ]
+              },
+              {
+                "__guid": "3d6f0b37-2933-4d3c-a94f-154bf00ed7b8",
+                "Name": "Frame",
+                "Position": "0,0,10.50214",
+                "Enabled": true,
+                "NetworkMode": 2,
+                "NetworkInterpolation": true,
+                "Components": [
+                  {
+                    "__type": "Sandbox.Prop",
+                    "__guid": "17df07c8-0b06-4e37-ac5c-e254d2e1dbdf",
+                    "BodyGroups": 18446744073709551615,
+                    "Health": 0,
+                    "IsStatic": true,
+                    "Model": "models/unicycles/default/parts/frames/default_frame.vmdl"
+                  }
+                ]
+              },
+              {
+                "__guid": "13eb0cf3-37c7-4b17-a907-9f03030be997",
+                "Name": "WheelPivot",
+                "Position": "0,0,12",
+                "Enabled": true,
+                "NetworkMode": 2,
+                "NetworkInterpolation": true,
+                "Children": [
+                  {
+                    "__guid": "03c09afb-d378-47f7-98b4-7029d3c42b92",
+                    "Name": "Wheel",
+                    "Position": "0,0,0",
+                    "Enabled": true,
+                    "NetworkMode": 2,
+                    "NetworkInterpolation": true,
+                    "Components": [
+                      {
+                        "__type": "Sandbox.Prop",
+                        "__guid": "7bc64b23-786e-4fc1-8e07-bc3dae348d2f",
+                        "BodyGroups": 18446744073709551615,
+                        "Health": 0,
+                        "IsStatic": true,
+                        "Model": "models/unicycles/default/parts/wheels/default_wheel.vmdl"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "__guid": "b164ce72-f420-4a37-b56c-703615ac3bb9",
+                "Name": "Pedals",
+                "Position": "0,0,12",
+                "Enabled": true,
+                "NetworkMode": 2,
+                "NetworkInterpolation": true,
+                "Children": [
+                  {
+                    "__guid": "20f5520f-b2c1-4279-bc55-50a4ea04d4b8",
+                    "Name": "Left Pedal",
+                    "Position": "0,5.200825,-5.631828",
+                    "Enabled": true,
+                    "NetworkMode": 2,
+                    "NetworkInterpolation": true,
+                    "Components": [
+                      {
+                        "__type": "Sandbox.Prop",
+                        "__guid": "fb226d37-2295-44ca-8b07-b17d6ca9a965",
+                        "BodyGroups": 18446744073709551615,
+                        "Health": 0,
+                        "IsStatic": true,
+                        "Model": "models/unicycles/default/parts/pedals/default_pedal.vmdl"
+                      }
+                    ]
+                  },
+                  {
+                    "__guid": "d26dad9f-6225-4651-abcc-31331fb26fb9",
+                    "Name": "Right Pedal",
+                    "Position": "0,-5.227394,7.001972",
+                    "Rotation": "1,0,0,-0.00000004371139",
+                    "Enabled": true,
+                    "NetworkMode": 2,
+                    "NetworkInterpolation": true,
+                    "Components": [
+                      {
+                        "__type": "Sandbox.Prop",
+                        "__guid": "925855b6-cfba-4ac9-a046-c826fb3373a0",
+                        "BodyGroups": 18446744073709551615,
+                        "Health": 0,
+                        "IsStatic": true,
+                        "Model": "models/unicycles/default/parts/pedals/default_pedal.vmdl"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "ShowInMenu": false,
+  "MenuPath": null,
+  "MenuIcon": null,
+  "ResourceVersion": 1,
+  "__version": 1,
+  "__references": []
+}
