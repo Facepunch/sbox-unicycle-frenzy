@@ -82,12 +82,16 @@ internal class UnicycleDresser : Component
 		base.OnAwake();
 
 		Local = FileSystem.Data.ReadJson<UnicycleDressed>( "unicycle.dress.json" );
-
 	}
 
 	protected override void OnStart()
 	{
 		base.OnStart();
+
+		var achine = new AchievementManager();
+		achine.Fetch();
+
+		Log.Info(achine.Achievements.Count);
 
 		if ( Local != null )
 		{

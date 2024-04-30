@@ -85,6 +85,8 @@ internal class UnicycleController : Component
 	GameObject Ground;
 	bool PrevGrounded;
 
+	AchievementManager AchievementManager;
+
 	protected override void OnAwake()
 	{
 		base.OnAwake();
@@ -97,6 +99,9 @@ internal class UnicycleController : Component
 		base.OnStart();
 
 		Respawn();
+
+		AchievementManager = new AchievementManager();
+		AchievementManager.Fetch();
 	}
 
 	protected override void OnUpdate()
@@ -546,6 +551,13 @@ internal class UnicycleController : Component
 		if ( PerfectPedalSound != null )
 		{
 			Sound.Play( PerfectPedalSound, Transform.Position );
+		}
+
+		var pedalAchievement = AchievementManager.Instance.GetAchievement( "Perfect Pedal" );
+		if ( pedalAchievement != null )
+		{
+			pedalAchievement.OnAchievementProgress();
+			AchievementManager.Save();
 		}
 
 		//if ( Pawn.IsLocalPawn )
