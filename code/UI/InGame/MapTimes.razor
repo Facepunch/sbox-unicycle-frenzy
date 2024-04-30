@@ -61,6 +61,11 @@
 			return;
 		}
 
+		if(settings == null)
+		{
+			return;
+		}
+
 		var bronzeTime = TimeSpan.FromSeconds(settings.BronzeTime);
 		var silverTime = TimeSpan.FromSeconds(settings.SilverTime);
 		var goldTime = TimeSpan.FromSeconds(settings.GoldTime);

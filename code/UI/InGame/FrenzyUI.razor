@@ -32,6 +32,11 @@
 			settings = Scene.GetAllComponents<MapSettings>().FirstOrDefault();
 		}
 
+		if(settings == null)
+		{
+			return;
+		}
+
 		HasF = settings.frenzyLetterList.Contains(FrenzyPickUp.FrenzyLetter.F);
 		HasR = settings.frenzyLetterList.Contains(FrenzyPickUp.FrenzyLetter.R);
 		HasE = settings.frenzyLetterList.Contains(FrenzyPickUp.FrenzyLetter.E);
