@@ -87,11 +87,16 @@ internal class UnicycleController : Component
 
 	AchievementManager AchievementManager;
 
+	private UnicycleUnstuck unstuck;
+
 	protected override void OnAwake()
 	{
 		base.OnAwake();
 
 		Local = this;
+
+		unstuck = new UnicycleUnstuck();
+		unstuck.Controller = this;
 	}
 
 	protected override void OnStart()
@@ -134,6 +139,7 @@ internal class UnicycleController : Component
 		base.OnFixedUpdate();
 
 		if ( Dead ) return;
+		if ( unstuck.TestAndFix() ) return;
 
 		var beforeGrounded = Ground != null;
 		var beforeVelocity = Velocity;
@@ -351,7 +357,7 @@ internal class UnicycleController : Component
 		var mover = new CharacterControllerHelper();
 		mover.Velocity = Velocity;
 		mover.Position = Position;
-		mover.Trace = Scene.Trace.Size( Mins, Maxs ).WithoutTags( "player" );
+		mover.Trace = Scene.Trace.Size( Mins, Maxs ).WithoutTags( "player" ).IgnoreGameObject(GameObject);
 		mover.MaxStandableAngle = 75f;
 		mover.TryMoveWithStep( Time.Delta, 12 );
 
@@ -825,6 +831,7 @@ internal class UnicycleController : Component
 
 		var tr = Scene.Trace.Ray( start + TraceOffset, end + TraceOffset )
 					.Size( mins, maxs )
+					.IgnoreGameObject( GameObject )
 					.WithoutTags( "player" )
 					.Run();
 

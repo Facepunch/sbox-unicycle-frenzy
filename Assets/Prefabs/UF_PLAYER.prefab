@@ -115,6 +115,10 @@
           {
             "__type": "CourseTimer",
             "__guid": "8c3db60c-2df7-4e80-b96d-538eb60e38bc"
+          },
+          {
+            "__type": "UnicycleUnstuck",
+            "__guid": "27b20e2a-c731-43d4-a90a-1471441b1b25"
           }
         ],
         "Children": [
@@ -161,20 +165,20 @@
                 "__guid": "25b2badb-8ebc-4102-91de-21b7fa20e68d",
                 "Frame": {
                   "_type": "component",
-                  "component_id": "90875ae9-4274-46fa-8971-ee2cd621b07b",
+                  "component_id": "2f03819e-59dd-4462-bb40-b39c71dc6b42",
                   "go": "3d6f0b37-2933-4d3c-a94f-154bf00ed7b8",
                   "component_type": "ModelRenderer"
                 },
                 "IsMenu": false,
                 "LeftPedal": {
                   "_type": "component",
-                  "component_id": "8b7725a2-443f-4b74-9e63-0f144ea0cb2e",
+                  "component_id": "409da92c-b158-4314-8bea-4069fc652237",
                   "go": "20f5520f-b2c1-4279-bc55-50a4ea04d4b8",
                   "component_type": "SkinnedModelRenderer"
                 },
                 "RightPedal": {
                   "_type": "component",
-                  "component_id": "75c94ecf-1cff-4cd0-85d8-1dc2bafb5dc8",
+                  "component_id": "ee66f46e-1b4a-45e2-83df-dabd67d38fbf",
                   "go": "d26dad9f-6225-4651-abcc-31331fb26fb9",
                   "component_type": "SkinnedModelRenderer"
                 },
@@ -186,7 +190,7 @@
                 },
                 "Wheel": {
                   "_type": "component",
-                  "component_id": "28a3a65f-984d-4cce-a813-9e8a34217f97",
+                  "component_id": "092a8da0-aac9-47d0-baef-5064f92ff89d",
                   "go": "03c09afb-d378-47f7-98b4-7029d3c42b92",
                   "component_type": "ModelRenderer"
                 }
