@@ -310,6 +310,27 @@ CustomizePage {
         }
     }
 
+    .input-rot {
+        position: absolute;
+        width: 100%;
+        height: 50px;
+        bottom: 12%;
+        justify-content: center;
+
+        .input-rot-container {
+            left: 60px;
+            width: 208px;
+            flex-direction: row;
+            align-content: center;
+            align-items: center;
+
+            .input-rot-item {
+                font-size: 40px;
+                font-family: Material Icons;
+            }
+        }
+    }
+
     .clothingpage-container {
         width: 100%;
         height: 100%;

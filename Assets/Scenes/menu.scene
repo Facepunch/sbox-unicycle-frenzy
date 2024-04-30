@@ -115,7 +115,7 @@
             {
               "__type": "Sandbox.SpotLight",
               "__guid": "6a5e3b69-0a88-4d09-b529-3d32bea6a0d5",
-              "Attenuation": 0.5,
+              "Attenuation": 0.65,
               "ConeInner": 39.65,
               "ConeOuter": 45.67,
               "FogMode": "Enabled",
@@ -161,6 +161,16 @@
           "__guid": "c6e9250f-0bc5-44ee-84c5-d3e8305c7452",
           "SkyMaterial": "materials/skybox/skybox_day_01.vmat",
           "Tint": "1,1,1,1"
+        },
+        {
+          "__type": "Sandbox.GradientFog",
+          "__guid": "fe9443c4-d0e6-4587-b53a-0081d59e98d6",
+          "Color": "0.1428,0.1907,0.17314,1",
+          "EndDistance": 1025.7329,
+          "FalloffExponent": 0.7333282,
+          "Height": 489.06693,
+          "StartDistance": 683.53284,
+          "VerticalFalloffExponent": 1
         }
       ]
     },
@@ -268,20 +278,20 @@
                   "__guid": "8264d516-b6a0-4302-89a1-aae6cd09d376",
                   "Frame": {
                     "_type": "component",
-                    "component_id": "80280f0e-c477-4d36-b0ae-e3634aee24dd",
+                    "component_id": "27002390-ae7e-4217-a2fc-95283c595015",
                     "go": "788781c8-0927-4dac-938d-6f3e904e4131",
                     "component_type": "ModelRenderer"
                   },
                   "IsMenu": true,
                   "LeftPedal": {
                     "_type": "component",
-                    "component_id": "a6a99560-ddb5-49c1-85de-787f15e0ee0a",
+                    "component_id": "545cdc05-51eb-4443-8f2e-c06f570c1124",
                     "go": "62318272-9110-4cd5-baad-12a540190a43",
                     "component_type": "SkinnedModelRenderer"
                   },
                   "RightPedal": {
                     "_type": "component",
-                    "component_id": "401c0f96-789e-4bd6-9927-2f70da76a269",
+                    "component_id": "54c7f154-a41f-43bf-b324-2db2bf3d4261",
                     "go": "f9ccdbac-ff8c-487b-8d5d-b0670392d01a",
                     "component_type": "SkinnedModelRenderer"
                   },
@@ -293,7 +303,7 @@
                   },
                   "Wheel": {
                     "_type": "component",
-                    "component_id": "4bd61ac5-d04e-4c33-b160-dc4a4dbf65df",
+                    "component_id": "e299883a-1a98-4012-bbbb-ad412a908c23",
                     "go": "7e4c8815-ca00-44ec-ab86-5d7bba132acd",
                     "component_type": "ModelRenderer"
                   }
@@ -449,7 +459,7 @@
         {
           "__type": "Sandbox.SpotLight",
           "__guid": "d8c17ff8-0b6b-432b-8799-c5eb1599ff31",
-          "Attenuation": 0.24,
+          "Attenuation": 0.28,
           "ConeInner": 15,
           "ConeOuter": 45,
           "Cookie": "materials/effects/lightcookies/dirt2.vtex",
@@ -473,7 +483,7 @@
         {
           "__type": "Sandbox.SpotLight",
           "__guid": "88511bf6-7315-40f0-9e48-fedcaff29a7f",
-          "Attenuation": 0.17,
+          "Attenuation": 0.39,
           "ConeInner": 15,
           "ConeOuter": 45,
           "Cookie": "materials/effects/lightcookies/dirt2.vtex",
@@ -901,6 +911,79 @@
           "StartServer": true
         }
       ]
+    },
+    {
+      "__guid": "7fd92f95-931e-4e1b-8869-427959a8e267",
+      "Name": "Object",
+      "Position": "-240,-32,48",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "Components": [
+        {
+          "__type": "Sandbox.VolumetricFogVolume",
+          "__guid": "5e916a6f-df94-4443-b810-1def9d6d94c2",
+          "Bounds": {
+            "Mins": "-150,-150,-150",
+            "Maxs": "150,150,150"
+          },
+          "FalloffExponent": 1,
+          "Strength": 1
+        }
+      ]
+    },
+    {
+      "__guid": "7240315a-a237-4647-b245-8f43879e52fe",
+      "Name": "default_wheel",
+      "Position": "-137.2916,-96.94618,1.514645",
+      "Rotation": "-0.7071067,0,0,0.7071068",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "Components": [
+        {
+          "__type": "Sandbox.Prop",
+          "__guid": "7815efa0-e150-423e-b5f4-8f0c6d18f0f0",
+          "BodyGroups": 18446744073709551615,
+          "Health": 0,
+          "IsStatic": false,
+          "Model": "models/unicycles/default/parts/wheels/default_wheel.vmdl"
+        }
+      ]
+    },
+    {
+      "__guid": "63fde154-c6b1-45d2-88cf-6ccac1ddb2ea",
+      "Name": "default_wheel (1)",
+      "Position": "-135.609,-104.4894,5.9977",
+      "Rotation": "-0.6532815,-0.2705981,0.270598,0.6532816",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "Components": [
+        {
+          "__type": "Sandbox.Prop",
+          "__guid": "2430867f-66b3-47b5-ab4a-7b92f6803c25",
+          "BodyGroups": 18446744073709551615,
+          "Health": 0,
+          "IsStatic": false,
+          "Model": "models/unicycles/default/parts/wheels/default_wheel.vmdl"
+        }
+      ]
+    },
+    {
+      "__guid": "e574d8b0-4dae-45bc-8731-a54abb88d5ea",
+      "Name": "default_wheel (2)",
+      "Position": "-131.4903,-69.92157,11.57483",
+      "Rotation": "-0.1830128,-0.6830129,0.6830127,0.1830128",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "Components": [
+        {
+          "__type": "Sandbox.Prop",
+          "__guid": "c43e9ce5-57c3-4cef-ad9c-42c926d9008e",
+          "BodyGroups": 18446744073709551615,
+          "Health": 0,
+          "IsStatic": false,
+          "Model": "models/unicycles/default/parts/wheels/default_wheel.vmdl"
+        }
+      ]
     }
   ],
   "SceneProperties": {
@@ -926,7 +1009,7 @@
   },
   "Title": "menu",
   "Description": "",
-  "LastSaved": "2024-04-29T21:04:54.0856206\u002B01:00",
+  "LastSaved": "2024-04-30T10:14:21.8352113\u002B01:00",
   "ResourceVersion": 1,
   "__version": 1,
   "__references": []

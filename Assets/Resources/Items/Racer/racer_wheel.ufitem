@@ -1,7 +1,7 @@
 {
   "ItemName": "Racer",
   "ItemDescription": null,
-  "ItemImage": "resources/items/racer/racer_frame.png",
+  "ItemImage": "resources/items/racer/racer_wheel.png",
   "IsMaterial": true,
   "ItemModel": "models/unicycles/default/parts/wheels/default_wheel.vmdl",
   "ItemMaterial": "models/unicycles/racer set/unicycleracer.vmat",

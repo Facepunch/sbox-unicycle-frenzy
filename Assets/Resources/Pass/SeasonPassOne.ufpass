@@ -95,6 +95,10 @@
     {
       "Item": "resources/items/ika/lka_seat.ufitem",
       "XPNeeded": 4
+    },
+    {
+      "Item": "resources/items/ika/lka_wheel.ufitem",
+      "XPNeeded": 4
     }
   ],
   "MaxSeasonXP": 1000,

@@ -17,6 +17,15 @@
 			<CustomizePageItem SelectedCategory="@ItemCategories.Seat" Items="@Items" ></CustomizePageItem>
 		</div>
 	</div>
+	<div class="input-rot">
+		<div class="input-rot-container">
+			<div class="input-rot-item">autorenew</div>
+			<InputHint Size=@InputGlyphSize.Medium @Action="lean_left" />
+			<InputHint Size=@InputGlyphSize.Medium @Action="lean_right" />
+			<div class="input-rot-item">sync</div>
+
+		</div>
+	</div>
 </root>
 
 
@@ -29,6 +38,39 @@
 	public CustomizePage()
 	{
 
+	}
+
+	GameObject unicycle;
+	Rotation TargetRotation;
+	public override void Tick()
+	{
+		base.Tick();
+
+		if(unicycle == null)
+		{
+			unicycle = Scene.GetAllComponents<UnicycleDresser>().FirstOrDefault().GameObject;
+		}
+
+		if (unicycle != null)
+		{
+
+			if (Input.Down("left_pedal"))
+			{
+				var moveDelta = Mouse.Delta;
+				TargetRotation = unicycle.Transform.Rotation *  Rotation.FromYaw(moveDelta.x);
+			}
+			if(Input.Down("lean_left"))
+			{
+				TargetRotation = unicycle.Transform.Rotation * Rotation.FromYaw(-10);
+			}
+			if (Input.Down("lean_right"))
+			{
+				TargetRotation = unicycle.Transform.Rotation * Rotation.FromYaw(10);
+			}
+
+			unicycle.Transform.Rotation = Rotation.Lerp(unicycle.Transform.Rotation, TargetRotation, Time.Delta * 10);
+
+		}
 	}
 
 	protected override void OnAfterTreeRender(bool firstTime)
