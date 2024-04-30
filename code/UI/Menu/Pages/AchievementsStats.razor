@@ -7,17 +7,28 @@
 			<a class="button" href="/home">Return</a>
 		</div>
 	</div>
+
 	<div class="achievements-container">
-		@foreach (var achievement in AchievementManager.Instance.Achievements)
+		<div class="title">Achievements</div>
+		@if (AchievementManager.Achievements != null)
 		{
-			<div class="achievement">
-				<div class="achievement-icon" style="background-image: url(@achievement.AchievementIcon);"></div>
-				<div class="achievement-info">
-					<div class="achievement-name">@achievement.AchievementName</div>
-					<div class="achievement-description">@achievement.AchievementDescription</div>
-					<div class="achievement-progress">@achievement.CurrentValue/@achievement.NeededValue</div>
+			@foreach (var achievement in AchievementManager.Achievements)
+			{
+				<div class="achievement">
+					<div class="achievement-icon" style="background-image: url('@achievement.AchievementIcon');"></div>
+					<div class="achievement-info">
+						<div class="achievement-name">@achievement.AchievementName</div>
+						<div class="achievement-description">@achievement.AchievementDescription</div>
+						<div class="achievement-progress">
+							@achievement.CurrentValue / @achievement.NeededValue
+						</div>
+					</div>
 				</div>
-			</div>
+			}
+		}
+		else
+		{
+			<div>Loading achievements...</div>
 		}
 	</div>
 </root>
@@ -32,9 +43,7 @@
 
 		if (!firstTime) return;
 		
-		AchievementManager = new AchievementManager();
-		AchievementManager.Fetch();
-		
+		AchievementManager = AchievementManager.Instance ?? new AchievementManager();
 	}
 	protected override int BuildHash() => System.HashCode.Combine(AchievementManager);
 }

@@ -1,9 +1,9 @@
 ﻿public class BaseAchievement
 {
-	public virtual string AchievementName => "Achievement Name";
-	public virtual string AchievementDescription => "Achievement Description";
-	public virtual string AchievementIcon => "textures/ui/map-thumbnail-placeholder.png";
-	public virtual int AchievementPoints => 10;
+	public virtual string AchievementName { get; set; } = "Achievement Name";
+	public virtual string AchievementDescription { get; set; } = "Achievement Description";
+	public virtual string AchievementIcon { get; set; } = "textures/ui/map-thumbnail-placeholder.png";
+	public virtual int AchievementPoints { get; set; } = 10;
 	public virtual bool AchievementUnlocked { get; set; } = false;
 	public virtual int NeededValue { get; set; } = 100;
 	public virtual int CurrentValue { get; set; } = 0;
@@ -26,6 +26,5 @@
 		{
 			OnAchievementUnlocked();
 		}
-
 	}
 }

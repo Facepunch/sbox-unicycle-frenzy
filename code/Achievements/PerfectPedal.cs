@@ -41,14 +41,3 @@ public class PerfectPedalPlatinum : BaseAchievement
 	public override int NeededValue { get; set; } = 50000;
 
 }
-
-public class PerfectPedalDiamond : BaseAchievement
-{
-	public override string AchievementName => "Perfect Pedal Diamond";
-	public override string AchievementDescription => "Perfect Pedal 100000 times";
-	public override string AchievementIcon => "textures/sprays/spray_facepunch.png";
-	public override int AchievementPoints => 50;
-	public override bool AchievementUnlocked { get; set; } = false;
-	public override int NeededValue { get; set; } = 100000;
-
-}

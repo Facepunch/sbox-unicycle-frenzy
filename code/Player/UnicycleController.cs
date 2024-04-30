@@ -225,21 +225,34 @@ internal class UnicycleController : Component
 			go.Transform.Rotation = mr.Transform.Rotation;
 			go.Transform.Scale = mr.Transform.Scale;
 
+
+
 			var smr = go.Components.Create<SkinnedModelRenderer>();
 			smr.Model = mr.Model;
-			if (mr.Tags.Has("clothing"))
+			if ( mr.Tags.Has( "clothing" ))
 			{
-				smr.Tags.Add("clothing");
+				Log.Info( "Adding clothing tag" );
+				smr.Tags.Add( "clothing" );
+
+				var citizen = Ragdoll.Components.GetAll<SkinnedModelRenderer>().Where( x => x.Tags.Has( "citizen" ) ).FirstOrDefault();
+				Log.Info( $"Found citizen: {citizen}" );
+				smr.BoneMergeTarget = citizen;
 			}
+			else
+			{ 
+				var mphys = go.Components.Create<ModelPhysics>();
+				mphys.Model = mr.Model;
+				mphys.Renderer = smr;
 
+				mphys.Enabled = true;
+				mphys.Enabled = true;
+			}
+			if ( mr.Tags.Has( "citizen" ) && !mr.Tags.Has( "clothing" ) )
+			{
+				Log.Info( "Adding citizen tag" );
+				smr.Tags.Add( "citizen" );
+			}
 			smr.MaterialOverride = mr.MaterialOverride;
-
-			var mphys = go.Components.Create<ModelPhysics>();
-			mphys.Model = mr.Model;
-			mphys.Renderer = smr;
-
-			mphys.Enabled = true;
-			mphys.Enabled = true;
 		}
 
 		if ( FallSound != null )
@@ -566,34 +579,10 @@ internal class UnicycleController : Component
 
 	void PedalAchievement()
 	{
-		var pedalAchievementBronze = AchievementManager.Instance.GetAchievement( "Perfect Pedal Bronze" );
-		if ( pedalAchievementBronze != null )
-		{
-			Log.Info( "wow" );
-			pedalAchievementBronze.OnAchievementProgress();
-			AchievementManager.Save();
-		}
-
-		var pedalAchievementSilver = AchievementManager.Instance.GetAchievement( "Perfect Pedal Silver" );
-		if ( pedalAchievementSilver != null )
-		{
-			pedalAchievementSilver.OnAchievementProgress();
-			AchievementManager.Save();
-		}
-
-		var pedalAchievementGold = AchievementManager.Instance.GetAchievement( "Perfect Pedal Gold" );
-		if ( pedalAchievementGold != null )
-		{
-			pedalAchievementGold.OnAchievementProgress();
-			AchievementManager.Save();
-		}
-
-		var pedalAchievementPlatinum = AchievementManager.Instance.GetAchievement( "Perfect Pedal Platinum" );
-		if ( pedalAchievementPlatinum != null )
-		{
-			pedalAchievementPlatinum.OnAchievementProgress();
-			AchievementManager.Save();
-		}
+		AchievementManager.Instance.UpdateAchievementProgress( "Perfect Pedal Bronze" );
+		AchievementManager.Instance.UpdateAchievementProgress( "Perfect Pedal Silver" );
+		AchievementManager.Instance.UpdateAchievementProgress( "Perfect Pedal Gold" );
+		AchievementManager.Instance.UpdateAchievementProgress( "Perfect Pedal Platinum" );
 	}
 
 	private bool NoTilt => false;

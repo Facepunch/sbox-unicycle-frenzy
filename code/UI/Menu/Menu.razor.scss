@@ -444,26 +444,45 @@ CustomizePage {
 }
 AchievementsStats {
     backdrop-filter: blur( 10px );
-    width:100%;
+    width: 100%;
+    font-family: $stylefont;
 
     .achievements-container {
+        position: absolute;
         display: flex;
-        flex-direction: column;
-        padding: 10px;
+        flex-wrap: wrap;
+        right: 0;
+        width: 50%;
+        height: 100%;
+        flex-direction: row;
+        background-color: rgba( $dark-purple, .5 );
+        overflow: scroll;
+    }
+
+    .title {
+        font-size: 30px;
+        font-weight: bold;
+        color: white;
+        text-align: center;
+        position: absolute;
+        width: 100%;
+        background-color: rgba( $dark-purple, .5 );
     }
 
     .achievement {
         display: flex;
         align-items: center;
-        margin: 20px;
-        width: 100%;
-        height: 100px;
+        margin: 60px;
+        width: 100px;
         flex-direction: column;
+        flex-grow: 0;
+        flex-shrink: 1;
     }
 
     .achievement-icon {
-        width: 70px;
-        height: 70px;
+        position: absolute;
+        width: 100px;
+        height: 100px;
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
@@ -473,14 +492,17 @@ AchievementsStats {
     }
 
     .achievement-info {
-        flex-grow: 1;
-        flex-shrink: 0;
+        top: 100px;
+        flex-grow: 0;
+        flex-shrink: 1;
         flex-direction: column;
-        display: flex;
+        width: 100px;
+        height: 100px;
+        background-color: rgba( lightgray, .35 );
     }
 
     .achievement-name {
-        font-size: 18px;
+        font-size: 12px;
         font-weight: bold;
     }
 
