@@ -19,6 +19,14 @@ MainMenu {
     pointer-events: all;
     //background-image: url("textures/ui/menu-background.png");
     background-size: 100%;
+    .logo {
+        width: 500px;
+        height: 500px;
+        background-image: url("textures/ui/unicycle-frenzy-logo.png");
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
 }
 
 PartyPanel {

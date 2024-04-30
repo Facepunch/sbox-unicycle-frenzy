@@ -21,8 +21,8 @@
       "Color": "1,0,0.53333,1"
     },
     {
-      "Material": "models/unicycles/default/materials/colors/unicycle_yellow.vmat",
-      "Color": "0.95,1,0,1"
+      "Material": "models/unicycles/default/materials/colors/unicycle_purple.vmat",
+      "Color": "0.46667,0,1,1"
     },
     {
       "Material": "models/unicycles/default/materials/colors/unicycle_blue.vmat",
