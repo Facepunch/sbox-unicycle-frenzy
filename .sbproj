@@ -53,6 +53,7 @@
         {
           "Name": "jump",
           "KeyboardCode": "space",
+          "GamepadCode": "None",
           "GroupName": "Movement"
         },
         {

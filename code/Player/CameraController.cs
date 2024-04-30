@@ -84,11 +84,4 @@ internal class CameraController : Component
 		Transform.Rotation = Rotation;
 		Camera.FieldOfView = Screen.CreateVerticalFieldOfView( FieldOfView );
 	}
-
-	protected override void OnFixedUpdate()
-	{
-		base.OnFixedUpdate();
-
-
-	}
 }

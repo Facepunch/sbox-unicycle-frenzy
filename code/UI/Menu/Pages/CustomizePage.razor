@@ -21,6 +21,7 @@
 		<div class="input-rot-container">
 			<div class="input-rot-item">autorenew</div>
 			<InputHint Size=@InputGlyphSize.Medium @Action="lean_left" />
+			<InputHint Size=@InputGlyphSize.Medium @Action="left_pedal" />
 			<InputHint Size=@InputGlyphSize.Medium @Action="lean_right" />
 			<div class="input-rot-item">sync</div>
 
@@ -56,6 +57,7 @@
 
 			if (Input.Down("left_pedal"))
 			{
+				Log.Info("left pedal");
 				var moveDelta = Mouse.Delta;
 				TargetRotation = unicycle.Transform.Rotation *  Rotation.FromYaw(moveDelta.x);
 			}

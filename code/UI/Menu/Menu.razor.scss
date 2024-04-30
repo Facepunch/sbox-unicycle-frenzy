@@ -6,6 +6,7 @@ menu {
     width: 100%;
     height: 100%;
     flex-direction: column;
+    pointer-events: none;
 }
 
 MainMenu {
@@ -16,9 +17,10 @@ MainMenu {
     bottom: 0;
     color: white;
     flex-direction: row;
-    pointer-events: all;
     //background-image: url("textures/ui/menu-background.png");
     background-size: 100%;
+    pointer-events: none;
+
     .logo {
         width: 500px;
         height: 500px;
@@ -40,6 +42,7 @@ HomePage {
 .sidebar {
     width: 350px;
     flex-shrink: 0;
+    pointer-events: all;
 }
 
 .navbar {
@@ -48,6 +51,7 @@ HomePage {
     flex-shrink: 1;
     position: absolute;
     bottom: 100px;
+    pointer-events: all;
 
     .button {
         color: black;
@@ -63,6 +67,11 @@ HomePage {
 
         &:hover {
             background-color: rgba( lighten(lightgray, 10%), .8 );
+            sound-in: ui.button.over;
+        }
+
+        &:active {
+            sound-in: ui.button.press;
         }
     }
 }
@@ -170,6 +179,11 @@ SoloPage {
 
             &:hover {
                 background-color: rgba( lighten(lightgray, 10%), .8 );
+                sound-in: ui.button.over;
+            }
+
+            &:active {
+                sound-in: ui.button.press;
             }
 
             .track-icon {
@@ -271,7 +285,8 @@ SoloPage {
                 background-repeat: no-repeat;
                 z-index: 1;
             }
-            .xp-bar-amount{
+
+            .xp-bar-amount {
                 font-size: 20px;
                 font-family: $stylefont;
                 color: white;
@@ -297,10 +312,12 @@ SoloPage {
 }
 
 CustomizePage {
+    pointer-events: none;
 
     .right-side {
         right: 0;
         bottom: 0;
+        pointer-events: none;
 
         .button {
             width: 100%;
@@ -324,16 +341,15 @@ CustomizePage {
         height: 50px;
         bottom: 12%;
         justify-content: center;
-        pointer-events:none;
+        pointer-events: none;
+
         .input-rot-container {
             left: 60px;
-            width: 208px;
+            width: 258px;
             flex-direction: row;
-            align-content: center;
-            align-items: center;
 
             .input-rot-item {
-                font-size: 40px;
+                font-size: 42px;
                 font-family: Material Icons;
             }
         }
@@ -344,6 +360,7 @@ CustomizePage {
         height: 100%;
         flex-direction: column;
         padding: 50px;
+        pointer-events: none;
     }
 
     .clothing-container {
@@ -352,19 +369,21 @@ CustomizePage {
         flex-direction: column;
         display: flex;
         flex-wrap: wrap;
+        pointer-events: none;
     }
 
     .clothing-skin {
         flex-direction: row;
         align-items: center;
+        pointer-events: none;
     }
 
     .item {
         flex-direction: column;
         align-content: center;
         justify-content: center;
-        pointer-events: none;
         gap: 10px;
+        pointer-events: none;
 
         .item-title {
             font-size: 30px;
@@ -376,6 +395,7 @@ CustomizePage {
             padding: 10px;
             display: flex;
             flex-wrap: wrap;
+            pointer-events: none;
 
             .skin-item {
 
@@ -398,6 +418,11 @@ CustomizePage {
 
                 &:hover {
                     background-color: rgba( lightgray, .35 );
+                    sound-in: ui.button.over;
+                }
+
+                &:active {
+                    sound-in: ui.button.press;
                 }
             }
         }
@@ -442,6 +467,11 @@ CustomizePage {
 
             &:hover {
                 background-color: rgba( lighten(lightgray, 10%), .8 );
+                sound-in: ui.button.over;
+            }
+
+            &:active {
+                sound-in: ui.button.press;
             }
         }
 
