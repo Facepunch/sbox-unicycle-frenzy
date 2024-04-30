@@ -21,7 +21,7 @@
 		}
 
 		CurrentValue++;
-		Log.Info( $"Achievement {AchievementName} Progress: {CurrentValue}/{NeededValue}" );
+		//Log.Info( $"Achievement {AchievementName} Progress: {CurrentValue}/{NeededValue}" );
 		if ( CurrentValue >= NeededValue )
 		{
 			OnAchievementUnlocked();
