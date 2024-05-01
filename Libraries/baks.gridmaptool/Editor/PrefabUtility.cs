@@ -7,7 +7,7 @@ public static class PrefabUtility
 {
 	public static GameObject CreateGameObject( PrefabFile prefabFile, GameObject parent = null )
 	{
-		Assert.NotNull( GameManager.ActiveScene, "No Active Scene" );
+		Assert.NotNull( Game.ActiveScene, "No Active Scene" );
 
 		JsonObject json = prefabFile.RootObject;
 

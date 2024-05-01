@@ -115,7 +115,7 @@ internal class UnicycleController : Component
 
 		if ( Input.EscapePressed )
 		{
-			GameManager.ActiveScene.LoadFromFile( "scenes/menu.scene" );
+			Game.ActiveScene.LoadFromFile( "scenes/menu.scene" );
 		}
 
 		if ( Input.Pressed( "Reset" ) )
