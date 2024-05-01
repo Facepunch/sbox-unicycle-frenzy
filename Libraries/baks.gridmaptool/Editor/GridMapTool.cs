@@ -104,6 +104,8 @@ public partial class GridMapTool : EditorTool
 			}
 		}
 
+		FloorHeight = (int)ProjectCookie.Get<float>( "GridHeight", 128 );
+
 		MainWindow( so );
 		ThreeDGizmo( so );
 

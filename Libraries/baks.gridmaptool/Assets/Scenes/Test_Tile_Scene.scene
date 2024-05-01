@@ -1,0 +1,241 @@
+{
+  "Id": "862cbcf5-bfcc-433e-9db1-fc4948f3b47b",
+  "GameObjects": [
+    {
+      "Id": "dc9a01e4-ce43-4a8b-b035-acd383f15262",
+      "Name": "Sun",
+      "Position": "285.6799,822.649,643.4822",
+      "Rotation": "0.3464704,0.2151882,-0.7756222,0.4817287",
+      "Tags": "light",
+      "Enabled": true,
+      "Components": [
+        {
+          "__version": 0,
+          "__type": "DirectionalLight",
+          "__enabled": true,
+          "LightColor": "1.90099,1.98218,2,1",
+          "Shadows": true,
+          "SkyColor": "0.18317,0.18317,0.18317,1"
+        }
+      ]
+    },
+    {
+      "Id": "5e7b0aae-efce-40a5-b486-51d5b519a6ef",
+      "Name": "2D Skybox",
+      "Enabled": true,
+      "Components": [
+        {
+          "__version": 0,
+          "__type": "SkyBox2D",
+          "__enabled": true,
+          "SkyMaterial": "materials/sky/sky_002.vmat",
+          "Tint": "0.20792,0.20792,0.20792,1"
+        }
+      ]
+    },
+    {
+      "Id": "dfdca58b-c20a-4151-afd5-cf5cd2274110",
+      "Name": "Man",
+      "Position": "-28.30168,0,0",
+      "Tags": "collection",
+      "Enabled": true,
+      "Components": [
+        {
+          "__version": 0,
+          "__type": "ModelMerge",
+          "__enabled": false
+        }
+      ],
+      "Children": [
+        {
+          "Id": "ad285f85-fd60-429c-8ed7-9d9fc7788aa0",
+          "Name": "block",
+          "Position": "64,0,0",
+          "Tags": "gridtile,collection",
+          "Enabled": true,
+          "Components": [
+            {
+              "__version": 0,
+              "__type": "ModelRenderer",
+              "__enabled": true,
+              "BodyGroups": 18446744073709551615,
+              "MaterialGroup": null,
+              "MaterialOverride": null,
+              "Model": "models/ken/block.vmdl",
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            },
+            {
+              "__version": 0,
+              "__type": "ModelCollider",
+              "__enabled": true,
+              "IsTrigger": false,
+              "Model": "models/ken/block.vmdl",
+              "Static": false,
+              "Surface": null
+            }
+          ]
+        },
+        {
+          "Id": "55027ed1-2396-4073-92ba-7b33f5773b17",
+          "Name": "block",
+          "Position": "192,0,0",
+          "Tags": "gridtile,collection",
+          "Enabled": true,
+          "Components": [
+            {
+              "__version": 0,
+              "__type": "ModelRenderer",
+              "__enabled": true,
+              "BodyGroups": 18446744073709551615,
+              "MaterialGroup": null,
+              "MaterialOverride": null,
+              "Model": "models/ken/block.vmdl",
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            },
+            {
+              "__version": 0,
+              "__type": "ModelCollider",
+              "__enabled": true,
+              "IsTrigger": false,
+              "Model": "models/ken/block.vmdl",
+              "Static": false,
+              "Surface": null
+            }
+          ]
+        },
+        {
+          "Id": "cd2d1abc-eaa8-4c2b-924d-0350cb6e1d12",
+          "Name": "block",
+          "Position": "192,128,0",
+          "Tags": "gridtile,collection",
+          "Enabled": true,
+          "Components": [
+            {
+              "__version": 0,
+              "__type": "ModelRenderer",
+              "__enabled": true,
+              "BodyGroups": 18446744073709551615,
+              "MaterialGroup": null,
+              "MaterialOverride": null,
+              "Model": "models/ken/block.vmdl",
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            },
+            {
+              "__version": 0,
+              "__type": "ModelCollider",
+              "__enabled": true,
+              "IsTrigger": false,
+              "Model": "models/ken/block.vmdl",
+              "Static": false,
+              "Surface": null
+            }
+          ]
+        },
+        {
+          "Id": "a10106d7-fc9c-433e-bd15-904deb086738",
+          "Name": "block",
+          "Position": "64,128,0",
+          "Tags": "gridtile,collection",
+          "Enabled": true,
+          "Components": [
+            {
+              "__version": 0,
+              "__type": "ModelRenderer",
+              "__enabled": true,
+              "BodyGroups": 18446744073709551615,
+              "MaterialGroup": null,
+              "MaterialOverride": null,
+              "Model": "models/ken/block.vmdl",
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            },
+            {
+              "__version": 0,
+              "__type": "ModelCollider",
+              "__enabled": true,
+              "IsTrigger": false,
+              "Model": "models/ken/block.vmdl",
+              "Static": false,
+              "Surface": null
+            }
+          ]
+        },
+        {
+          "Id": "95ce0311-8532-496d-83da-5f3d435d8592",
+          "Name": "block",
+          "Position": "128,256,0",
+          "Tags": "gridtile,collection",
+          "Enabled": true,
+          "Components": [
+            {
+              "__version": 0,
+              "__type": "ModelRenderer",
+              "__enabled": true,
+              "BodyGroups": 18446744073709551615,
+              "MaterialGroup": null,
+              "MaterialOverride": null,
+              "Model": "models/ken/block.vmdl",
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            },
+            {
+              "__version": 0,
+              "__type": "ModelCollider",
+              "__enabled": true,
+              "IsTrigger": false,
+              "Model": "models/ken/block.vmdl",
+              "Static": false,
+              "Surface": null
+            }
+          ]
+        },
+        {
+          "Id": "cbaa59a3-20d7-4804-bfe8-abd1f3c375b4",
+          "Name": "block",
+          "Position": "128,-128,0",
+          "Tags": "gridtile,collection",
+          "Enabled": true,
+          "Components": [
+            {
+              "__version": 0,
+              "__type": "ModelRenderer",
+              "__enabled": true,
+              "BodyGroups": 18446744073709551615,
+              "MaterialGroup": null,
+              "MaterialOverride": null,
+              "Model": "models/ken/block.vmdl",
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            },
+            {
+              "__version": 0,
+              "__type": "ModelCollider",
+              "__enabled": true,
+              "IsTrigger": false,
+              "Model": "models/ken/block.vmdl",
+              "Static": false,
+              "Surface": null
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "SceneProperties": {
+    "FixedUpdateFrequency": 50,
+    "Lerping": true,
+    "MaxFixedUpdates": 5,
+    "NetworkFrequency": 30,
+    "ThreadedAnimation": true,
+    "TimeScale": 1,
+    "UseFixedUpdate": true
+  },
+  "Title": "test_tile_scene",
+  "Description": "",
+  "__references": [
+    "caro.bluecloudysky"
+  ]
+}
