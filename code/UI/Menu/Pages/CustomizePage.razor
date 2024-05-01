@@ -57,7 +57,6 @@
 
 			if (Input.Down("left_pedal"))
 			{
-				Log.Info("left pedal");
 				var moveDelta = Mouse.Delta;
 				TargetRotation = unicycle.Transform.Rotation *  Rotation.FromYaw(moveDelta.x);
 			}

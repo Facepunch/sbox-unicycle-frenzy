@@ -18,6 +18,12 @@ Editor/*.sln
 Editor/.vs/*
 Editor/.vscode/*
 
+*/Editor/obj/*
+*/Editor/Properties/*
+*/Editor/*.sln
+*/Editor/.vs/*
+*/Editor/.vscode/*
+*/UnitTests/*
 
 # Auto-generated asset related files
 *.generated.*
@@ -25,3 +31,7 @@ Editor/.vscode/*
 *.los
 *.vpk
 *.sln
+/Libraries/baks.gridmaptool/UnitTests
+/Libraries/baks.gridmaptool/Code/obj/*
+/Libraries/baks.gridmaptool/Editor/obj
+/Libraries/baks.gridmaptool/Code/Properties
