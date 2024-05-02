@@ -53,6 +53,13 @@ internal class UnicycleController : Component
 
 	public bool ForceFall { get; set; }
 
+	public bool LockTurning { get; set; }
+	public bool LockPedaling { get; set; }
+	public bool LockBraking { get; set; }
+	public bool LockJumping { get; set; }
+	public bool LockLean { get; set; }
+	public bool LockTilt { get; set; }
+
 	public Vector3 Mins => new( -1, -1, 0 );
 	public Vector3 Maxs => new( 1, 1, 16 );
 	public Vector3 Position
@@ -413,6 +420,8 @@ internal class UnicycleController : Component
 
 	private void CheckJump()
 	{
+		if( LockJumping ) return;
+
 		if ( Input.Released( "jump" ) && (Ground != null || TimeSinceNotGrounded < .1f) )
 		{
 			var t = Math.Min( TimeSinceJumpDown / MaxJumpStrengthTime, 1f );
@@ -470,6 +479,8 @@ internal class UnicycleController : Component
 
 	private void CheckPedal()
 	{
+		if( LockPedaling ) return;
+
 		if ( !PedalPosition.AlmostEqual( 0f, .1f ) && TimeSincePedalStart > PedalResetAfter )
 		{
 			SetPedalTarget( 0f, PedalResetTime );
@@ -508,7 +519,10 @@ internal class UnicycleController : Component
 		if ( PedalTargetPosition == 0 ) return;
 		if ( Ground == null ) return;
 
-		Tilt += new Angles( 0, 0, 15f * delta );
+		if ( !LockLean )
+		{
+			Tilt += new Angles( 0, 0, 15f * delta );
+		}
 
 		var spd = Velocity.WithZ( 0 ).Length;
 		if ( spd > MaxHorizontalSpeed ) return;
@@ -526,6 +540,7 @@ internal class UnicycleController : Component
 
 	private bool CheckBrake()
 	{
+		if( LockBraking ) return false;
 		if ( Ground == null ) return false;
 		if ( !Input.Down( "brake" ) ) return false;
 
@@ -595,6 +610,8 @@ internal class UnicycleController : Component
 	private float PitchAccumulator;
 	private void DoTilt()
 	{
+		if( LockTilt ) return;
+
 		if ( NoTilt )
 		{
 			Tilt = Angles.Zero;

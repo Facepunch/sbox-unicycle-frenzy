@@ -20,6 +20,7 @@ MainMenu {
     //background-image: url("textures/ui/menu-background.png");
     background-size: 100%;
     pointer-events: none;
+    font-family: $stylefont;
 
     .logo {
         width: 500px;
@@ -176,6 +177,7 @@ SoloPage {
             margin: 20px;
             font-family: $stylefont;
             width: 250px;
+            pointer-events:all;
 
             &:hover {
                 background-color: rgba( lighten(lightgray, 10%), .8 );
