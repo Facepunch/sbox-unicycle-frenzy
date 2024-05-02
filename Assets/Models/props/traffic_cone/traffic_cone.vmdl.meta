@@ -1,0 +1,28 @@
+{
+  "publish": {
+    "Enabled": true,
+    "ProjectConfig": {
+      "Title": "traffic cone",
+      "Type": "model",
+      "Org": "facepunch",
+      "Ident": "traffic_cone",
+      "Tags": "traffic cone",
+      "Schema": 0,
+      "HasAssets": false,
+      "AssetsPath": null,
+      "Resources": null,
+      "MenuResources": null,
+      "HasCode": false,
+      "CodePath": null,
+      "PackageReferences": null,
+      "EditorReferences": null,
+      "Metadata": {
+        "SingleAssetSource": "models/sbox_props/traffic_cone/traffic_cone.vmdl",
+        "Summary": "",
+        "Description": "A traffic cone",
+        "Public": true,
+        "ReplaceTags": "traffic cone street urban road"
+      }
+    }
+  }
+}

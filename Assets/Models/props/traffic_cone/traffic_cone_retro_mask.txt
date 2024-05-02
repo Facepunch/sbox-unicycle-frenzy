@@ -1,0 +1,5 @@
+"settings"
+{
+	"nomip"		"1"
+	"brightness"		"4.000000"
+}
