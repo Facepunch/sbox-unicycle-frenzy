@@ -7,12 +7,12 @@ Layer0
 	//---- Ambient Occlusion ----
 	g_flAmbientOcclusionDirectDiffuse "0.000"
 	g_flAmbientOcclusionDirectSpecular "0.000"
-	TextureAmbientOcclusion "textures/plywoodfloor/plywoodfloor_worn/TCom_PlywoodFloor_Worn_2K_ao.tif"
+	TextureAmbientOcclusion "textures/plywoodfloor/plywoodfloor_edited/plywood_ao.png"
 
 	//---- Color ----
 	g_flModelTintAmount "0.000"
-	g_vColorTint "[0.933333 0.835294 0.768628 0.000000]"
-	TextureColor "textures/plywoodfloor/plywoodfloor_new/tcom_plywoodfloor_new_v2_2k_albedo.tif"
+	g_vColorTint "[1.000000 1.000000 1.000000 0.000000]"
+	TextureColor "textures/plywoodfloor/plywoodfloor_edited/plywood_color.png"
 
 	//---- Fade ----
 	g_flFadeExponent "1.000"
@@ -24,7 +24,7 @@ Layer0
 	g_flMetalness "0.000"
 
 	//---- Normal ----
-	TextureNormal "textures/plywoodfloor/plywoodfloor_worn/TCom_PlywoodFloor_Worn_2K_normal.tif"
+	TextureNormal "textures/plywoodfloor/plywoodfloor_edited/plywood_normal.png"
 
 	//---- Roughness ----
 	g_flRoughnessScaleFactor "1.000"
