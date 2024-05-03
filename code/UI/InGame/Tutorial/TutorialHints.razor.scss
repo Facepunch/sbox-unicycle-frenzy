@@ -1,0 +1,74 @@
+TutorialHints {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	display: flex;
+	font-weight: bold;
+	font-family: "Luckiest Guy";
+
+	.tut {
+		position: absolute;
+		height: 50%;
+		right: 5%;
+		top: 20%;
+		padding: 50px;
+		width: 30%;
+		background-color: #130e26;
+
+		.tut-container {
+			flex-direction: column;
+			position: absolute;
+			margin: 20px;
+			flex-grow: 1;
+			flex-shrink: 0;
+			bottom:0;
+			width: 92%;
+		}
+
+		.tut-title {
+			font-size: 25px;
+			color: #fff;
+		}
+
+		.tut-text {
+			font-size: 20px;
+			color: #fff;
+		}
+
+		.videopanel {
+			position: absolute;
+			width: 92%;
+			flex-grow: 0;
+			flex-shrink: 1;
+			// Where we want the video controls
+			align-items: flex-end;
+			justify-content: center;
+			margin: 20px;
+		}
+
+		.skip-timer {
+			width: 100%; /* Full width of the container */
+			height: 28px; /* Sufficient height to be easily noticeable */
+			background-color: #eee; /* Light grey background */
+			border: 1px solid #ccc; /* Slightly darker border */
+			bottom:0;
+			margin-top:20px;
+			.skip-bar {
+				width: 0%; /* 0% width initially */
+				height: 100%; /* Full height */
+				background-color: #4CAF50; /* Green */
+			}
+
+			.skip-text {
+                position: absolute;
+                top: 0;
+                left: 0;
+                color: white;
+                font-size: 18px;
+                padding: 2px;
+            }
+		}
+	}
+}

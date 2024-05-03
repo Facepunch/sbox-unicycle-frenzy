@@ -1,0 +1,53 @@
+@using Sandbox;
+@using Sandbox.UI;
+@inherits PanelComponent
+
+<root>
+	<div class="tut">
+		<div class="tut-container">
+			<div class="tut-title">@tutorialHint.HintTitle</div>
+			<div class="tut-text">@tutorialHint.HintText</div>
+			<div class="skip-timer">
+			<div class="skip-bar" style="width:@CalculateBar(timeSinceCreated,3)"></div>
+				@if (timeSinceCreated > 3)
+				{
+					<div class="skip-text">Press the left pedal to skip</div>
+				}
+			</div>
+		</div>
+		<VideoPanel Source="@tutorialHint.HintVideo"></VideoPanel>
+	</div>
+</root>
+
+@code
+{
+	public TutorialType TutorialType { get; set; } = TutorialType.Lean;
+	public UFTutorialHint tutorialHint;
+
+	private RealTimeSince timeSinceCreated = 0;
+
+	public void ShowTutorial( TutorialType tutorialType )
+	{
+		TutorialType = tutorialType;
+		Game.ActiveScene.TimeScale = 0.5f;
+	}
+
+	protected override void OnUpdate()
+	{
+		if (Input.Pressed("left_pedal") && timeSinceCreated > 3)
+		{
+			Game.ActiveScene.TimeScale = 1.0f;
+			Destroy();
+		}
+	}
+
+	public string CalculateBar( float value, float max )
+	{
+		return $"{(value / max) * 100}%";
+	}
+
+	/// <summary>
+	/// the hash determines if the system should be rebuilt. If it changes, it will be rebuilt
+	/// </summary>
+	protected override int BuildHash() => System.HashCode.Combine(tutorialHint, timeSinceCreated, CalculateBar(timeSinceCreated, 3));
+}
