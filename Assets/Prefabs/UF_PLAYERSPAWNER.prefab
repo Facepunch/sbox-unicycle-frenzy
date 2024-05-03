@@ -1,8 +1,7 @@
 {
   "RootObject": {
     "__guid": "8d712849-11ff-4056-8634-f04d463c372e",
-    "Name": "PlayerSpawner",
-    "Position": "684.2797,150.73,818.4615",
+    "Name": "uf_playerspawner",
     "Enabled": true,
     "NetworkMode": 2,
     "NetworkInterpolation": true,
@@ -16,8 +15,13 @@
         },
         "SpawnPoints": [],
         "StartServer": true
+      },
+      {
+        "__type": "PlayerGizmo",
+        "__guid": "36bfa1af-58d0-4d95-ba42-74e7107f5c17"
       }
-    ]
+    ],
+    "Children": []
   },
   "ShowInMenu": false,
   "MenuPath": null,
