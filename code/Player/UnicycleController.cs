@@ -102,6 +102,8 @@ internal class UnicycleController : Component
 
 		Local = this;
 
+		Respawn();
+
 		unstuck = new UnicycleUnstuck();
 		unstuck.Controller = this;
 	}
