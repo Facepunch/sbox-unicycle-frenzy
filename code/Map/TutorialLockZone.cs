@@ -9,7 +9,7 @@ internal class TutorialLockZone : BaseZone
 	[Property] public bool LockJumping { get; set; }
 	[Property] public bool LockLean { get; set; }
 	[Property] public bool LockTilt { get; set; }
-	[Property] public TutorialType TutorialType { get; set; } = TutorialType.Lean;
+	[Property] public TutorialType TutorialType { get; set; } = TutorialType.YLean;
 
 	protected override void OnPlayerEnter( UnicycleController player )
 	{
@@ -43,12 +43,15 @@ internal class TutorialLockZone : BaseZone
 
 public enum TutorialType
 {
-	Lean,
-	Tilt,
+	Pedal,	
 	Turn,
-	Pedal,
+	YLean,
+	XLean,
+	Tilt,
 	Brake,
-	Jump
+	Jump,
+	HighJump,
+	LeanJump
 }
 
 [GameResource( "Unicycle Frenzy Tutorial Hint", "uftut", "UnicycleFrenzyTutorial", Icon = "help_outline", IconBgColor = "#2e1236", IconFgColor = "#f0f0f0" )]

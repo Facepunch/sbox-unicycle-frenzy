@@ -854,32 +854,6 @@
           ]
         },
         {
-          "__guid": "1fb4ef00-e018-4e50-a152-b18dcc6e9378",
-          "Name": "shipping_container_big",
-          "Position": "464,240,223.1945",
-          "Rotation": "-0.0000001819966,0.0000001278698,0.9238797,-0.3826829",
-          "Enabled": true,
-          "NetworkMode": 2,
-          "NetworkInterpolation": true,
-          "Components": [
-            {
-              "__type": "Sandbox.ModelRenderer",
-              "__guid": "7acf77f7-1221-4698-8a30-95ca2f6ede74",
-              "BodyGroups": 18446744073709551615,
-              "Model": "models/props/shipping_containers/uf_shipping_containers/shipping_container_big.vmdl",
-              "RenderType": "On",
-              "Tint": "0.52135,0.26185,0.63256,1"
-            },
-            {
-              "__type": "Sandbox.ModelCollider",
-              "__guid": "08387d6c-5562-4947-bb51-677bd186c960",
-              "IsTrigger": false,
-              "Model": "models/props/shipping_containers/uf_shipping_containers/shipping_container_big.vmdl",
-              "Static": true
-            }
-          ]
-        },
-        {
           "__guid": "b1100863-20db-4a3e-b74e-e3c5b2f52765",
           "Name": "netting_wall_straight_384",
           "Position": "-576,-64,64",
@@ -1239,7 +1213,7 @@
   },
   "Title": "test",
   "Description": "",
-  "LastSaved": "2024-05-02T17:20:38.804233-04:00",
+  "LastSaved": "2024-05-06T11:59:09.1159881-04:00",
   "ResourceVersion": 1,
   "__version": 1,
   "__references": [

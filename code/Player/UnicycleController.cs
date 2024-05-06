@@ -27,6 +27,7 @@ internal class UnicycleController : Component
 	public float PedalResetTime => .55f;
 	public float MinPedalStrength => 8f;
 	public float MaxPedalStrength => 35f;
+	public float PedalTiltStrength => 10f;
 	public float MinJumpStrength => 200f;
 	public float MaxJumpStrength => 375f;
 	public float MaxJumpStrengthTime => .8f;
@@ -527,7 +528,7 @@ internal class UnicycleController : Component
 
 		if ( !LockLean )
 		{
-			Tilt += new Angles( 0, 0, 15f * delta );
+			Tilt += new Angles( 0, 0, PedalTiltStrength * delta );
 		}
 
 		var spd = Velocity.WithZ( 0 ).Length;

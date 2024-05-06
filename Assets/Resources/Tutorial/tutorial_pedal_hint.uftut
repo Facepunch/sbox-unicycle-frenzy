@@ -1,7 +1,7 @@
 {
   "TutorialType": "Pedal",
-  "HintTitle": "How To Pedal",
-  "HintText": "Everybody, if you can, do the Bartman.\nWhoa!\nShake your body, turn it out if you can, man.\nShake it out, man!\nFront to the back, to the side if you can, can.\nBartman!",
+  "HintTitle": "Pedaling",
+  "HintText": "Control your character\u0027s movement by clicking the left mouse button to pedal the left foot and the right mouse button to pedal the right foot. This will make your character move forward!",
   "HintVideo": "https://files.facepunch.com/paddy/20230601/build_gibs.mp4",
   "ResourceVersion": 0,
   "__version": 0,
