@@ -148,6 +148,10 @@ internal class UnicycleController : Component
 		base.OnFixedUpdate();
 
 		if ( Dead ) return;
+		if ( unstuck == null )
+		{ 			unstuck = new UnicycleUnstuck();
+					unstuck.Controller = this;
+		}
 		if ( unstuck.TestAndFix() ) return;
 
 		var beforeGrounded = Ground != null;
