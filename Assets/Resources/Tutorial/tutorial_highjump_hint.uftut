@@ -1,8 +1,8 @@
 {
-  "TutorialType": "Pedal",
-  "HintTitle": null,
-  "HintText": null,
-  "HintVideo": null,
+  "TutorialType": "HighJump",
+  "HintTitle": "High Jumping",
+  "HintText": "The longer you hold space the more you will charge up your jump and when you release space you will jump higher.",
+  "HintVideo": " https://files.facepunch.com/garry/7ae9e5b4-e630-4f68-9e40-a88ca6db9dd8.mp4",
   "ResourceVersion": 0,
   "__version": 0,
   "__references": []

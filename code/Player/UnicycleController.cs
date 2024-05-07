@@ -58,8 +58,9 @@ internal class UnicycleController : Component
 	public bool LockPedaling { get; set; }
 	public bool LockBraking { get; set; }
 	public bool LockJumping { get; set; }
+	public bool LockPedalTilt { get; set; }
 	public bool LockLean { get; set; }
-	public bool LockTilt { get; set; }
+	private TimeSince timeSinceTutorialHintClosed;
 
 	public Vector3 Mins => new( -1, -1, 0 );
 	public Vector3 Maxs => new( 1, 1, 16 );
@@ -128,6 +129,8 @@ internal class UnicycleController : Component
 			Game.ActiveScene.LoadFromFile( "scenes/menu.scene" );
 		}
 
+		if ( Scene.GetAllComponents<TutorialHints>().Count() > 0 ) return;
+
 		if ( Input.Pressed( "Reset" ) )
 		{
 			Respawn();
@@ -148,13 +151,19 @@ internal class UnicycleController : Component
 	{
 		base.OnFixedUpdate();
 
-		if ( Dead ) return;
-		if ( unstuck == null )
-		{ 			unstuck = new UnicycleUnstuck();
-					unstuck.Controller = this;
+		if ( CheckShowingTutorial() )
+		{
+			return;
 		}
-		if ( unstuck.TestAndFix() ) return;
 
+		if ( Dead ) return;
+
+		if ( unstuck == null )
+		{ 			
+			unstuck = new UnicycleUnstuck();
+			unstuck.Controller = this;
+		}
+		
 		var beforeGrounded = Ground != null;
 		var beforeVelocity = Velocity;
 
@@ -219,6 +228,8 @@ internal class UnicycleController : Component
 				mapsetting.AddFall();
 			}
 		}
+
+		if ( unstuck.TestAndFix() ) return;
 	}
 
 	GameObject Ragdoll;
@@ -526,7 +537,7 @@ internal class UnicycleController : Component
 		if ( PedalTargetPosition == 0 ) return;
 		if ( Ground == null ) return;
 
-		if ( !LockLean )
+		if ( !LockPedalTilt )
 		{
 			Tilt += new Angles( 0, 0, PedalTiltStrength * delta );
 		}
@@ -617,7 +628,7 @@ internal class UnicycleController : Component
 	private float PitchAccumulator;
 	private void DoTilt()
 	{
-		if( LockTilt ) return;
+		if( LockLean ) return;
 
 		if ( NoTilt )
 		{
@@ -863,6 +874,25 @@ internal class UnicycleController : Component
 		return tr;
 	}
 
+	private bool CheckShowingTutorial()
+	{
+		if ( Scene.GetAllComponents<TutorialHints>().Count() > 0 )
+		{
+			timeSinceTutorialHintClosed = 0f;
+			return true;
+		}
+
+		timeSinceTutorialHintClosed += Time.Delta;
+
+		//so we can press space to close the tutorial hint without jumping in game
+		if(timeSinceTutorialHintClosed > 0.1f )
+		{
+			return false;
+		}
+
+		return true;
+	}
+
 	static Rotation FromToRotation( Vector3 aFrom, Vector3 aTo )
 	{
 		Vector3 axis = Vector3.Cross( aFrom, aTo );
@@ -905,5 +935,7 @@ internal class UnicycleController : Component
 		var vec = new Vector3( angle.pitch, angle.yaw, angle.roll );
 		return vec.Length;
 	}
+
+	
 
 }

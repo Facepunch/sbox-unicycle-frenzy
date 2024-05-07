@@ -8,10 +8,10 @@
 			<div class="tut-title">@tutorialHint.HintTitle</div>
 			<div class="tut-text">@tutorialHint.HintText</div>
 			<div class="skip-timer">
-			<div class="skip-bar" style="width:@CalculateBar(timeSinceCreated,3)"></div>
-				@if (timeSinceCreated > 3)
+			<div class="skip-bar" style="width:@CalculateBar(timeSinceCreated,1)"></div>
+				@if (timeSinceCreated > 1)
 				{
-					<div class="skip-text">Press the left pedal to skip</div>
+					<div class="skip-text">Press the spacebar to continue</div>
 				}
 			</div>
 		</div>
@@ -21,22 +21,23 @@
 
 @code
 {
-	public TutorialType TutorialType { get; set; } = TutorialType.YLean;
-	public UFTutorialHint tutorialHint;
+    public TutorialType TutorialType { get; set; } = TutorialType.YLean;
+    public UFTutorialHint tutorialHint;
+    //public UnicycleController Player { get; set; }
 
-	private RealTimeSince timeSinceCreated = 0;
+    private RealTimeSince timeSinceCreated = 0;
 
 	public void ShowTutorial( TutorialType tutorialType )
 	{
 		TutorialType = tutorialType;
-		Game.ActiveScene.TimeScale = 0.5f;
+		Game.ActiveScene.TimeScale = 0.01f;
 	}
 
 	protected override void OnUpdate()
 	{
-		if (Input.Pressed("left_pedal") && timeSinceCreated > 3)
+		if (Input.Released("jump") && timeSinceCreated > 1)
 		{
-			Game.ActiveScene.TimeScale = 1.0f;
+			Game.ActiveScene.TimeScale = 1.0f;            
 			Destroy();
 		}
 	}

@@ -37,6 +37,8 @@ internal class PlayerAnimator : Component
 	{
 		base.OnUpdate();
 
+		if ( Scene.GetAllComponents<TutorialHints>().Count() > 0 ) return;
+
 		InputDirection = GetInputDirection();
 
 		Controller ??= Components.Get<UnicycleController>( FindMode.EverythingInSelfAndChildren );

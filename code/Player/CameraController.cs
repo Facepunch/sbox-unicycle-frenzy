@@ -23,6 +23,7 @@ internal class CameraController : Component
 
 		if ( Camera == null ) return;
 		if ( Target == null ) return;
+		if ( Scene.GetAllComponents<TutorialHints>().Count() > 0 ) return;
 
 		if ( Target.Dead )
 		{
