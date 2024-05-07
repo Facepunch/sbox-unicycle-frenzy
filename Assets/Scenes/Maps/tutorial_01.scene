@@ -239,7 +239,7 @@
         {
           "__type": "TutorialMap",
           "__guid": "f7102383-5279-4fd4-ad0a-ab339453bfa8",
-          "ShowTutorial": true
+          "ShowTutorial": false
         }
       ]
     },
@@ -1832,7 +1832,7 @@
         {
           "__guid": "10fa6920-5b5b-4549-a7f1-52ade0a36314",
           "Name": "wood_straight_384 (86)",
-          "Position": "3199.986,7551.985,288.0003",
+          "Position": "3199.995,7551.985,288.0003",
           "Rotation": "-0.0000001192093,0.00000003104407,0.9999995,0.00000008940697",
           "Enabled": true,
           "NetworkMode": 2,
@@ -1851,7 +1851,7 @@
         {
           "__guid": "5a141fa3-836d-48d5-b074-5360e199988f",
           "Name": "wood_straight_384 (87)",
-          "Position": "3583.985,7551.985,288.0004",
+          "Position": "3583.994,7551.985,288.0004",
           "Rotation": "-0.0000001192093,0.00000003104407,0.9999995,0.00000008940697",
           "Enabled": true,
           "NetworkMode": 2,
@@ -1868,9 +1868,9 @@
           ]
         },
         {
-          "__guid": "2527e0f0-1a0c-490b-8d44-18d7dd9846cf",
-          "Name": "wood_straight_384 (88)",
-          "Position": "3967.984,7551.985,288.0005",
+          "__guid": "a5959ee9-fba5-414c-a118-a490c9fa0f15",
+          "Name": "wood_straight_384 (87)",
+          "Position": "3967.994,7551.985,288.0005",
           "Rotation": "-0.0000001192093,0.00000003104407,0.9999995,0.00000008940697",
           "Enabled": true,
           "NetworkMode": 2,
@@ -1878,7 +1878,7 @@
           "Components": [
             {
               "__type": "Sandbox.Prop",
-              "__guid": "c9aafb4b-667e-4d34-9806-97d8da397db9",
+              "__guid": "a6866205-ca4d-4f78-b4bb-d50a071a53eb",
               "BodyGroups": 18446744073709551615,
               "Health": 0,
               "IsStatic": true,
@@ -1887,9 +1887,9 @@
           ]
         },
         {
-          "__guid": "2e77bb34-818b-4f3d-8d30-12931c386e80",
-          "Name": "wood_straight_384 (88)",
-          "Position": "4352,7551.985,288.0005",
+          "__guid": "4dbd7d2e-a6b8-4865-a976-8ece55d7ca1e",
+          "Name": "wood_straight_384 (87)",
+          "Position": "4351.993,7551.984,288.0006",
           "Rotation": "-0.0000001192093,0.00000003104407,0.9999995,0.00000008940697",
           "Enabled": true,
           "NetworkMode": 2,
@@ -1897,7 +1897,7 @@
           "Components": [
             {
               "__type": "Sandbox.Prop",
-              "__guid": "97b5a3da-fee6-4344-b0ed-84cd48762903",
+              "__guid": "4e1961e8-fe60-44a2-8399-470df3094c51",
               "BodyGroups": 18446744073709551615,
               "Health": 0,
               "IsStatic": true,
@@ -1906,9 +1906,9 @@
           ]
         },
         {
-          "__guid": "ef34d00e-b453-4972-babb-aaf8e9790343",
-          "Name": "wood_straight_384 (90)",
-          "Position": "5312,7551.984,288.0006",
+          "__guid": "401dfa24-c925-40a0-bf16-8c524c4111ed",
+          "Name": "wood_straight_384 (87)",
+          "Position": "4735.992,7551.984,288.0007",
           "Rotation": "-0.0000001192093,0.00000003104407,0.9999995,0.00000008940697",
           "Enabled": true,
           "NetworkMode": 2,
@@ -1916,7 +1916,7 @@
           "Components": [
             {
               "__type": "Sandbox.Prop",
-              "__guid": "415916da-b33a-4f15-8792-014acca1ccb3",
+              "__guid": "5f160b8e-3059-436e-9799-0ec354fa723f",
               "BodyGroups": 18446744073709551615,
               "Health": 0,
               "IsStatic": true,
@@ -4703,7 +4703,7 @@
   },
   "Title": "tutorial_01",
   "Description": "",
-  "LastSaved": "2024-05-07T16:10:07.5314428-04:00",
+  "LastSaved": "2024-05-07T16:29:25.1255258-04:00",
   "ResourceVersion": 1,
   "__version": 1,
   "__references": [

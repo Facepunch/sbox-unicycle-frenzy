@@ -131,9 +131,9 @@ internal class UnicycleController : Component
 
 		if ( Scene.GetAllComponents<TutorialHints>().Count() > 0 ) return;
 
-		if ( Input.Pressed( "Reset" ) )
+		if ( Input.Pressed( "Reset" ))
 		{
-			Fall();
+			Respawn();
 		}
 		if ( Input.Pressed( "Restart" ) )
 		{
