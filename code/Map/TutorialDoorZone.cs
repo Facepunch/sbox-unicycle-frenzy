@@ -9,20 +9,31 @@ internal class TutorialDoorZone : BaseZone
 
 	private UnicycleController overlappingPlayer;
 	private bool doorsOpen = false;
-	private bool openDoors = false;
+	private bool openingDoors = false;
 
+	protected override void OnAwake()
+	{
+		base.OnAwake();
+
+		IsCheckPoint = false;
+
+		if ( !Scene.GetAllComponents<TutorialMap>().FirstOrDefault().ShowTutorial )
+		{
+			openingDoors = true;
+		}
+	}
 	protected override void OnUpdate()
 	{
 		base.OnUpdate();
+		if ( doorsOpen ) return;
+		if ( openingDoors ) OpenDoors();
 
 		if ( overlappingPlayer == null ) return;
 
-		if ( !overlappingPlayer.Dead && overlappingPlayer.CurrentSpeed.AlmostEqual( 0f, 0.0001f ) && !doorsOpen )
+		if ( !overlappingPlayer.Dead && overlappingPlayer.CurrentSpeed.AlmostEqual( 0f, 0.0001f ) && !openingDoors )
 		{
-			openDoors = true;
-		}
-
-		if ( openDoors ) OpenDoors();
+			openingDoors = true;
+		}		
 	}
 
 	protected override void OnPlayerEnter( UnicycleController player )
@@ -42,7 +53,7 @@ internal class TutorialDoorZone : BaseZone
 
 		if ( RightDoor.Transform.Rotation.Angles().yaw.AlmostEqual( -180f, 0.1f ) )
 		{
-			openDoors = false;
+			openingDoors = false;
 			doorsOpen = true;
 		}
 	}

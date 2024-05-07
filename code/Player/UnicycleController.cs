@@ -133,7 +133,7 @@ internal class UnicycleController : Component
 
 		if ( Input.Pressed( "Reset" ) )
 		{
-			Respawn();
+			Fall();
 		}
 		if ( Input.Pressed( "Restart" ) )
 		{

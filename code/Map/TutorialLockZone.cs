@@ -10,14 +10,27 @@ internal class TutorialLockZone : BaseZone
 	[Property] public bool LockLean { get; set; }
 	[Property] public bool LockPedalTilt { get; set; }
 	[Property] public TutorialType TutorialType { get; set; } = TutorialType.Pedal;
-	private UnicycleController uPlayer;
+
+	private bool triggered = false;
+
+	protected override void OnAwake()
+	{
+		base.OnAwake();
+
+		IsCheckPoint = false;
+
+		if( !Scene.GetAllComponents<TutorialMap>().FirstOrDefault().ShowTutorial )
+		{
+			Destroy();
+		}
+		
+	}
 
 	protected override void OnPlayerEnter( UnicycleController player )
 	{
 		base.OnPlayerEnter( player );
-		uPlayer = player;
 
-		if ( !IsTutorial ) return;
+		if ( !IsTutorial || triggered) return;
 
 		player.LockBraking = LockBraking;
 		player.LockJumping = LockJumping;
@@ -27,6 +40,7 @@ internal class TutorialLockZone : BaseZone
 		player.LockTurning = LockTurning;
 
 		ShowingTutorial();
+		triggered = true;
 
 	}
 
