@@ -104,7 +104,7 @@ internal class UnicycleController : Component
 
 		Local = this;
 
-		//Respawn();
+		Respawn();
 
 		unstuck = new UnicycleUnstuck();
 		unstuck.Controller = this;
@@ -147,12 +147,14 @@ internal class UnicycleController : Component
 		}
 	}
 
+	public bool FreezePlayer { get; set; }
+
 	protected override void OnFixedUpdate()
 	{
 		base.OnFixedUpdate();
 
 
-		if ( CheckShowingTutorial() )
+		if ( CheckShowingTutorial() || FreezePlayer )
 		{
 			return;
 		}

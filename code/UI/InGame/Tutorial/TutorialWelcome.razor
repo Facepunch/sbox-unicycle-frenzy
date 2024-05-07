@@ -1,0 +1,41 @@
+@using Sandbox;
+@using Sandbox.UI;
+@inherits PanelComponent
+
+<root>
+	<div class="tut">
+		<div class="tut-container">
+			<div class="tut-title">WELCOME</div>
+			<div class="tut-text">THIS IS HOW YOU PLAY THE GAME!</div>
+			<div class="tut-button">
+				<div class="button" onclick="@(() => DoTutorial())">Start Tutorial</div>
+				<div class="button" onclick="@(() => DoGold())">Go For Gold</div>
+			</div>
+		</div>
+		<VideoPanel Source=" https://files.facepunch.com/garry/7ae9e5b4-e630-4f68-9e40-a88ca6db9dd8.mp4"></VideoPanel>
+	</div>
+</root>
+
+@code
+{
+	[Property] public TutorialScreen tutorial { get; set; }
+
+	void DoTutorial()
+	{
+		Log.Info("DoTutorial");
+		tutorial.StartTutorial();
+		Destroy();
+	}
+
+	void DoGold()
+	{
+		Log.Info("DoGold");
+		tutorial.EndTutorial();
+		Destroy();
+	}
+
+	/// <summary>
+	/// the hash determines if the system should be rebuilt. If it changes, it will be rebuilt
+	/// </summary>
+	protected override int BuildHash() => System.HashCode.Combine(Time.Delta);
+}

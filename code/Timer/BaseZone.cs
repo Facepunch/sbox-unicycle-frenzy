@@ -20,6 +20,11 @@ internal class BaseZone : Component
 
 	protected virtual Color ZoneColor => Color.White;
 
+	public virtual void EndTutorial()
+	{
+
+	}
+
 	protected override void OnStart()
 	{
 		base.OnStart();

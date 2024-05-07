@@ -19,9 +19,17 @@ internal class TutorialDoorZone : BaseZone
 
 		if ( !Scene.GetAllComponents<TutorialMap>().FirstOrDefault().ShowTutorial )
 		{
-			openingDoors = true;
+			EndTutorial();
 		}
 	}
+
+	public override void EndTutorial()
+	{
+		base.EndTutorial();
+
+		openingDoors = true;
+	}
+
 	protected override void OnUpdate()
 	{
 		base.OnUpdate();

@@ -21,9 +21,15 @@ internal class TutorialLockZone : BaseZone
 
 		if( !Scene.GetAllComponents<TutorialMap>().FirstOrDefault().ShowTutorial )
 		{
-			Destroy();
+			EndTutorial();
 		}
 		
+	}
+
+	public override void EndTutorial()
+	{
+		base.EndTutorial();
+		Destroy();
 	}
 
 	protected override void OnPlayerEnter( UnicycleController player )

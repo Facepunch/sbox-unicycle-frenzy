@@ -10,7 +10,13 @@ Hud {
     justify-content: center;
     color: white;
     font-size: 16px;
+
+    &.hide {
+        display: none;
+    }
 }
+
+
 
 HudTimer {
     position: absolute;

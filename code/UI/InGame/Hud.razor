@@ -12,13 +12,17 @@
 
 @code {
 
-    protected override void OnStart()
-    {
-        base.OnStart();
-        if (Scene.GetAllComponents<TutorialMap>().FirstOrDefault().ShowTutorial)
-        {
-            Destroy();
-        }
+	protected override void OnStart()
+	{
+		base.OnStart();
+		if (Scene.GetAllComponents<TutorialMap>().FirstOrDefault().ShowTutorial)
+		{
+			AddClass("hide");
+		}
     }
 
+	public void ShowHud()
+	{
+		RemoveClass("hide");
+	}
 }

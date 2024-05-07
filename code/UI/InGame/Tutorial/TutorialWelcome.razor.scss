@@ -1,0 +1,79 @@
+TutorialWelcome {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	display: flex;
+	font-weight: bold;
+	font-family: "Luckiest Guy";
+	pointer-events: all;
+	justify-content: center;
+	align-items: center;
+
+	.tut {
+		position: absolute;
+		height: 60%;
+		padding: 50px;
+		width: 40%;
+		background-color: #130e26;
+
+		.tut-container {
+			flex-direction: column;
+			position: absolute;
+			margin: 20px;
+			flex-grow: 1;
+			flex-shrink: 0;
+			bottom: 0;
+			width: 92%;
+		}
+
+		.tut-title {
+			font-size: 25px;
+			color: #fff;
+		}
+
+		.tut-text {
+			font-size: 20px;
+			color: #fff;
+		}
+
+		.videopanel {
+			position: absolute;
+			width: 92%;
+			flex-grow: 0;
+			flex-shrink: 1;
+			// Where we want the video controls
+			align-items: flex-end;
+			justify-content: center;
+			margin: 20px;
+		}
+
+		.tut-button {
+			width: 92%;
+			flex-grow: 0;
+			flex-shrink: 1;
+			// Where we want the video controls
+			align-items: flex-end;
+			margin: 20px;
+			z-index: 100;
+			justify-content: space-between;
+
+			.button {
+				background-color: #4CAF50; /* Green */
+				border: none;
+				color: white;
+				padding: 15px 32px;
+				text-align: center;
+				font-size: 16px;
+				margin: 4px 2px;
+				cursor: pointer;
+
+				&:hover {
+					background-color: rgba( lighten(lightgray, 10%), .8 );
+					sound-in: ui.button.over;
+				}
+			}
+		}
+	}
+}
