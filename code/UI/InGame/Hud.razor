@@ -9,3 +9,16 @@
 	<Speedo />
 	<FrenzyUI />
 </root>
+
+@code {
+
+    protected override void OnStart()
+    {
+        base.OnStart();
+        if (Scene.GetAllComponents<TutorialMap>().FirstOrDefault().ShowTutorial)
+        {
+            Destroy();
+        }
+    }
+
+}
