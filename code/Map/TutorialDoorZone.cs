@@ -11,19 +11,18 @@ internal class TutorialDoorZone : BaseZone
 	private bool doorsOpen = false;
 	private bool openDoors = false;
 
-
-	protected override void OnFixedUpdate()
+	protected override void OnUpdate()
 	{
-		base.OnFixedUpdate();
+		base.OnUpdate();
 
 		if ( overlappingPlayer == null ) return;
 
-		if (overlappingPlayer.CurrentSpeed.AlmostEqual(0f, 0.1f) && !doorsOpen)
+		if ( !overlappingPlayer.Dead && overlappingPlayer.CurrentSpeed.AlmostEqual( 0f, 0.0001f ) && !doorsOpen )
 		{
 			openDoors = true;
 		}
 
-		if( openDoors ) OpenDoors();
+		if ( openDoors ) OpenDoors();
 	}
 
 	protected override void OnPlayerEnter( UnicycleController player )
@@ -31,7 +30,7 @@ internal class TutorialDoorZone : BaseZone
 		overlappingPlayer = player;
 	}
 
-	protected virtual void OnPlayerExit( UnicycleController player )
+	protected override void OnPlayerExit( UnicycleController player )
 	{
 		overlappingPlayer = null;
 	}

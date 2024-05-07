@@ -4,7 +4,7 @@
     {
       "__guid": "8e4282a9-9f10-496e-86bb-c1d40c1b1886",
       "Name": "uf_playerspawner",
-      "Position": "-6272,2944,400",
+      "Position": "-6272,2944,389.3938",
       "Enabled": true,
       "NetworkMode": 2,
       "NetworkInterpolation": true,
@@ -13,7 +13,7 @@
     {
       "__guid": "bcc8a467-3375-479d-abf4-13d976b1fd0d",
       "Name": "start zone",
-      "Position": "-6272,2944,387.0007",
+      "Position": "-6272,2944,384",
       "Enabled": true,
       "NetworkMode": 2,
       "NetworkInterpolation": true,
@@ -22,7 +22,7 @@
     {
       "__guid": "806d1861-2a82-4dce-9ae8-bd916291d8c9",
       "Name": "CheckPoint Zone",
-      "Position": "-4530.492,2944,389",
+      "Position": "-4530.492,2944,384",
       "Enabled": true,
       "NetworkMode": 2,
       "NetworkInterpolation": true,
@@ -31,7 +31,7 @@
     {
       "__guid": "5d381e3d-9ae0-463e-a97b-fce6299b61e2",
       "Name": "CheckPoint Zone (1)",
-      "Position": "-2432,-1280,389",
+      "Position": "-2432,-1280,384",
       "Enabled": true,
       "NetworkMode": 2,
       "NetworkInterpolation": true,
@@ -40,7 +40,7 @@
     {
       "__guid": "990504b6-97a5-4661-aacb-db7f0c59190b",
       "Name": "CheckPoint Zone (2)",
-      "Position": "5120,1024,388.9999",
+      "Position": "5120,1024,384",
       "Rotation": "0,0,-1,0.0000001947072",
       "Enabled": true,
       "NetworkMode": 2,
@@ -50,7 +50,7 @@
     {
       "__guid": "ce483800-d2ee-4f46-be65-04b33bd7e880",
       "Name": "CheckPoint Zone (3)",
-      "Position": "1408,2560,388.9999",
+      "Position": "1408,2560,384",
       "Enabled": true,
       "NetworkMode": 2,
       "NetworkInterpolation": true,
@@ -59,7 +59,7 @@
     {
       "__guid": "c64fe990-20f5-4454-841b-618d8907984e",
       "Name": "CheckPoint Zone (4)",
-      "Position": "2944,2560,388.9999",
+      "Position": "2944,2560,384",
       "Enabled": true,
       "NetworkMode": 2,
       "NetworkInterpolation": true,
@@ -68,7 +68,7 @@
     {
       "__guid": "37e2b520-f90c-4d2b-b446-e6e20c2c58ef",
       "Name": "CheckPoint Zone (5)",
-      "Position": "5632,4863.996,389",
+      "Position": "5632,4863.996,384",
       "Rotation": "0.000000000000008510921,0.00000004371138,0.9999999,0.0000003258413",
       "Enabled": true,
       "NetworkMode": 2,
@@ -87,7 +87,7 @@
     {
       "__guid": "814208c5-0fa5-4b23-824f-251def0b63de",
       "Name": "CheckPoint Zone (7)",
-      "Position": "640,6015.998,447.9995",
+      "Position": "640,6015.998,448",
       "Rotation": "0,0.00000004371138,0.9999999,0.0000001311342",
       "Enabled": true,
       "NetworkMode": 2,
@@ -3149,7 +3149,7 @@
   },
   "Title": "tutorial_01",
   "Description": "",
-  "LastSaved": "2024-05-07T13:32:09.4467971-04:00",
+  "LastSaved": "2024-05-07T14:01:29.4043145-04:00",
   "ResourceVersion": 1,
   "__version": 1,
   "__references": [
