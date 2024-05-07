@@ -1,0 +1,9 @@
+{
+  "TutorialType": "Checkpoint",
+  "HintTitle": "Checkpoint",
+  "HintText": "This is a checkpoint, in the event that you fall you will return here. Alternatively if you press R you will automatically return here. You can Also press F to restart from the beginning of the course.",
+  "HintVideo": " https://files.facepunch.com/garry/7ae9e5b4-e630-4f68-9e40-a88ca6db9dd8.mp4",
+  "ResourceVersion": 0,
+  "__version": 0,
+  "__references": []
+}

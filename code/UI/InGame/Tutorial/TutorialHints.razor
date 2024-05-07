@@ -30,14 +30,12 @@
 	public void ShowTutorial( TutorialType tutorialType )
 	{
 		TutorialType = tutorialType;
-		Game.ActiveScene.TimeScale = 0.01f;
 	}
 
 	protected override void OnUpdate()
 	{
 		if (Input.Released("jump") && timeSinceCreated > 1)
-		{
-			Game.ActiveScene.TimeScale = 1.0f;            
+		{     
 			Destroy();
 		}
 	}

@@ -22,8 +22,7 @@ internal class CameraController : Component
 		Camera ??= Components.Get<CameraComponent>();
 
 		if ( Camera == null ) return;
-		if ( Target == null ) return;
-		if ( Scene.GetAllComponents<TutorialHints>().Count() > 0 ) return;
+		if ( Target == null ) return;		
 
 		if ( Target.Dead )
 		{
@@ -49,7 +48,7 @@ internal class CameraController : Component
 		//ClearViewBlockers();
 		//UpdateViewBlockers( pawn );
 
-		if( Target.LockTurning)
+		if( Target.LockTurning || Scene.GetAllComponents<TutorialHints>().Count() > 0f )
 		{
 			Input.AnalogLook = default;
 		}

@@ -2,6 +2,15 @@
   "__guid": "2e3749e6-2ca1-4616-b738-a22b78c22e26",
   "GameObjects": [
     {
+      "__guid": "8e4282a9-9f10-496e-86bb-c1d40c1b1886",
+      "Name": "uf_playerspawner",
+      "Position": "-6272,2944,400",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "__Prefab": "prefabs/uf_playerspawner.prefab"
+    },
+    {
       "__guid": "bcc8a467-3375-479d-abf4-13d976b1fd0d",
       "Name": "start zone",
       "Position": "-6272,2944,387.0007",
@@ -13,7 +22,7 @@
     {
       "__guid": "806d1861-2a82-4dce-9ae8-bd916291d8c9",
       "Name": "CheckPoint Zone",
-      "Position": "-3584,2944,389",
+      "Position": "-4530.492,2944,389",
       "Enabled": true,
       "NetworkMode": 2,
       "NetworkInterpolation": true,
@@ -78,7 +87,7 @@
     {
       "__guid": "814208c5-0fa5-4b23-824f-251def0b63de",
       "Name": "CheckPoint Zone (7)",
-      "Position": "1408.001,6015.998,447.9995",
+      "Position": "640,6015.998,447.9995",
       "Rotation": "0,0.00000004371138,0.9999999,0.0000001311342",
       "Enabled": true,
       "NetworkMode": 2,
@@ -88,12 +97,38 @@
     {
       "__guid": "b7090a31-f19e-44b4-9b8c-2b8b9e0b1ef7",
       "Name": "end zone",
-      "Position": "5503.99,4480,2.999998",
+      "Position": "6463.985,4480,2.999998",
       "Rotation": "0,0,-0.7071067,0.7071068",
       "Enabled": true,
       "NetworkMode": 2,
       "NetworkInterpolation": true,
       "__Prefab": "prefabs/end zone.prefab"
+    },
+    {
+      "__guid": "cbd4203c-e60d-4076-9fa5-bbbbd7f8ad9f",
+      "Name": "Tutorial Door Trigger",
+      "Position": "2496,2559.942,400.1091",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "Components": [
+        {
+          "__type": "TutorialDoorZone",
+          "__guid": "16eb01f0-3f6a-4552-b169-3a22cbc4d2e7",
+          "Bounds": {
+            "Mins": "-100,-100,-32",
+            "Maxs": "100,100,32"
+          },
+          "LeftDoor": {
+            "_type": "gameobject",
+            "go": "9be42e97-8d77-4687-b2f4-9e2faba08912"
+          },
+          "RightDoor": {
+            "_type": "gameobject",
+            "go": "b3310b12-52c6-4313-a6f9-a14e73c8ed3d"
+          }
+        }
+      ]
     },
     {
       "__guid": "acdebafa-a7bf-4c40-878f-0affddc5cb3d",
@@ -269,32 +304,6 @@
               "Health": 100,
               "IsStatic": true,
               "Model": "models/sbox_props/metal_fences/metal_fence_gates/metal_fences_gate_right.vmdl"
-            }
-          ]
-        },
-        {
-          "__guid": "cbd4203c-e60d-4076-9fa5-bbbbd7f8ad9f",
-          "Name": "Tutorial Door Trigger",
-          "Position": "2496,2559.942,400.1091",
-          "Enabled": true,
-          "NetworkMode": 2,
-          "NetworkInterpolation": true,
-          "Components": [
-            {
-              "__type": "TutorialDoorZone",
-              "__guid": "b09975e3-1eea-41b6-a816-c263841cd245",
-              "Bounds": {
-                "Mins": "-90,-90,-17.38494",
-                "Maxs": "90,90,73.6999"
-              },
-              "LeftDoor": {
-                "_type": "gameobject",
-                "go": "9be42e97-8d77-4687-b2f4-9e2faba08912"
-              },
-              "RightDoor": {
-                "_type": "gameobject",
-                "go": "b3310b12-52c6-4313-a6f9-a14e73c8ed3d"
-              }
             }
           ]
         },
@@ -1551,7 +1560,7 @@
         {
           "__guid": "542486aa-e025-4741-a964-412df4a1f28e",
           "Name": "wood_straight_384 (69)",
-          "Position": "1792.003,6015.999,448.0001",
+          "Position": "1792.003,6015.999,512",
           "Rotation": "0.00000003104406,0.0000001192093,0.0000002384186,-0.9999995",
           "Enabled": true,
           "NetworkMode": 2,
@@ -1872,9 +1881,9 @@
           ]
         },
         {
-          "__guid": "077bc3b6-7ff7-43d1-8c66-6e5b7678d144",
-          "Name": "wood_straight_384 (89)",
-          "Position": "4351.984,7551.984,288.0005",
+          "__guid": "2e77bb34-818b-4f3d-8d30-12931c386e80",
+          "Name": "wood_straight_384 (88)",
+          "Position": "4352,7551.985,288.0005",
           "Rotation": "-0.0000001192093,0.00000003104407,0.9999995,0.00000008940697",
           "Enabled": true,
           "NetworkMode": 2,
@@ -1882,7 +1891,7 @@
           "Components": [
             {
               "__type": "Sandbox.Prop",
-              "__guid": "c1ae06a0-082c-43fc-acfe-42bd78f9ec6b",
+              "__guid": "97b5a3da-fee6-4344-b0ed-84cd48762903",
               "BodyGroups": 18446744073709551615,
               "Health": 0,
               "IsStatic": true,
@@ -1893,7 +1902,7 @@
         {
           "__guid": "ef34d00e-b453-4972-babb-aaf8e9790343",
           "Name": "wood_straight_384 (90)",
-          "Position": "4735.983,7551.984,288.0006",
+          "Position": "5312,7551.984,288.0006",
           "Rotation": "-0.0000001192093,0.00000003104407,0.9999995,0.00000008940697",
           "Enabled": true,
           "NetworkMode": 2,
@@ -1910,9 +1919,28 @@
           ]
         },
         {
+          "__guid": "ddb3b980-802a-482a-89e6-324a348a7101",
+          "Name": "wood_straight_384 (90)",
+          "Position": "5695.991,7551.984,288.0006",
+          "Rotation": "-0.0000001192093,0.00000003104407,0.9999995,0.00000008940697",
+          "Enabled": true,
+          "NetworkMode": 2,
+          "NetworkInterpolation": true,
+          "Components": [
+            {
+              "__type": "Sandbox.Prop",
+              "__guid": "839fbfd0-6177-4f68-9300-7ffcd7105bce",
+              "BodyGroups": 18446744073709551615,
+              "Health": 0,
+              "IsStatic": true,
+              "Model": "models/track_tileset_pieces/wood/wood_straight_384.vmdl"
+            }
+          ]
+        },
+        {
           "__guid": "f0097d8f-baeb-404c-a4dd-0536b61131f4",
           "Name": "wood_straight_384 (91)",
-          "Position": "5503.981,5631.988,0.0009268572",
+          "Position": "6463.976,5631.988,0.0009268572",
           "Rotation": "-0.0000001062452,-0.0000000623422,0.7071064,0.7071064",
           "Enabled": true,
           "NetworkMode": 2,
@@ -1931,7 +1959,7 @@
         {
           "__guid": "e2a84429-618b-4913-af57-33b56fcaadd7",
           "Name": "wood_straight_384 (92)",
-          "Position": "5503.993,5247.988,0.0009506993",
+          "Position": "6463.988,5247.988,0.0009506993",
           "Rotation": "-0.0000001062452,-0.0000000623422,0.7071064,0.7071064",
           "Enabled": true,
           "NetworkMode": 2,
@@ -1950,7 +1978,7 @@
         {
           "__guid": "384a7917-ff56-43a0-9d4e-cdeb51ca3b19",
           "Name": "wood_straight_384 (93)",
-          "Position": "5504.004,4863.989,0.0009745412",
+          "Position": "6463.999,4863.989,0.0009745412",
           "Rotation": "-0.0000001062452,-0.0000000623422,0.7071064,0.7071064",
           "Enabled": true,
           "NetworkMode": 2,
@@ -1969,7 +1997,7 @@
         {
           "__guid": "8252efba-2bee-406a-ab63-7a4c4b23c69e",
           "Name": "wood_straight_384 (94)",
-          "Position": "5504.014,4479.989,0.000998383",
+          "Position": "6464.009,4479.989,0.000998383",
           "Rotation": "-0.0000001062452,-0.0000000623422,0.7071064,0.7071064",
           "Enabled": true,
           "NetworkMode": 2,
@@ -2438,7 +2466,7 @@
         {
           "__guid": "64d3f60a-44b7-4d87-bc66-cb5ccba46685",
           "Name": "wood_turn_576 (8)",
-          "Position": "5503.987,7551.989,288",
+          "Position": "6463.981,7551.989,288",
           "Rotation": "0,0,0.9999997,0.0000001788139",
           "Enabled": true,
           "NetworkMode": 2,
@@ -2624,7 +2652,7 @@
         {
           "__guid": "c44c71f9-c77d-4fdf-a5e3-ba598e44e1fc",
           "Name": "wood_slope_384x96 (3)",
-          "Position": "5503.987,6784.009,192",
+          "Position": "6463.981,6784.009,192",
           "Rotation": "0,0,-0.7071066,0.7071068",
           "Enabled": true,
           "NetworkMode": 2,
@@ -2643,7 +2671,7 @@
         {
           "__guid": "39e6fc91-5487-49d6-911c-59062c3036dd",
           "Name": "wood_slope_384x96 (4)",
-          "Position": "5503.982,6400.005,96",
+          "Position": "6463.977,6400.005,96",
           "Rotation": "0,0,-0.7071066,0.7071068",
           "Enabled": true,
           "NetworkMode": 2,
@@ -2662,7 +2690,7 @@
         {
           "__guid": "6f7e625a-2ebd-4f4e-a986-4f8834b794eb",
           "Name": "wood_slope_384x96 (5)",
-          "Position": "5503.979,6016.004,0",
+          "Position": "6463.974,6016.004,0",
           "Rotation": "0,0,-0.7071066,0.7071068",
           "Enabled": true,
           "NetworkMode": 2,
@@ -2788,12 +2816,90 @@
               "Model": "models/track_tileset_pieces/wood/wood_turn_576.vmdl"
             }
           ]
+        },
+        {
+          "__guid": "7d0f3ca8-445d-4ca4-8ced-48d94d16ca4b",
+          "Name": "obstacle_block_384x24 (1)",
+          "Position": "4352,2560,392.001",
+          "Rotation": "0,-0.00000000000001065814,0.9999999,-0.00000000000003197443",
+          "Enabled": true,
+          "NetworkMode": 2,
+          "NetworkInterpolation": true,
+          "Components": [
+            {
+              "__type": "Sandbox.ModelRenderer",
+              "__guid": "d7e3f75f-578c-4beb-8ad3-694147713bd2",
+              "BodyGroups": 18446744073709551615,
+              "Model": "models/props/track_obstacles/obstacle_block_384x24.vmdl",
+              "RenderType": "On",
+              "Tint": "0,0.12157,0.40392,1"
+            },
+            {
+              "__type": "Sandbox.ModelCollider",
+              "__guid": "9237344f-bad7-4274-b674-325614401e93",
+              "IsTrigger": false,
+              "Model": "models/props/track_obstacles/obstacle_block_384x24.vmdl",
+              "Static": false
+            }
+          ]
+        },
+        {
+          "__guid": "4ee9a72f-1d8f-4514-ade2-5e55b30143a0",
+          "Name": "obstacle_block_384x24",
+          "Position": "3712,2560,392.001",
+          "Rotation": "0,-0.00000000000001065814,0.9999999,-0.00000000000003197443",
+          "Enabled": true,
+          "NetworkMode": 2,
+          "NetworkInterpolation": true,
+          "Components": [
+            {
+              "__type": "Sandbox.ModelRenderer",
+              "__guid": "dc552bd1-4026-4b00-a0a2-23dd07645fb5",
+              "BodyGroups": 18446744073709551615,
+              "Model": "models/props/track_obstacles/obstacle_block_384x24.vmdl",
+              "RenderType": "On",
+              "Tint": "0,0.12157,0.40392,1"
+            },
+            {
+              "__type": "Sandbox.ModelCollider",
+              "__guid": "3d3e181f-7abd-4637-b691-13ed66863e91",
+              "IsTrigger": false,
+              "Model": "models/props/track_obstacles/obstacle_block_384x24.vmdl",
+              "Static": false
+            }
+          ]
+        },
+        {
+          "__guid": "d2e1ab25-7a44-4f8e-acf9-25a6e563ed3f",
+          "Name": "obstacle_block_384x24 (2)",
+          "Position": "4992,2560,392.001",
+          "Rotation": "0,-0.00000000000001065814,0.9999999,-0.00000000000003197443",
+          "Enabled": true,
+          "NetworkMode": 2,
+          "NetworkInterpolation": true,
+          "Components": [
+            {
+              "__type": "Sandbox.ModelRenderer",
+              "__guid": "b3a4457c-6b5d-4146-bf74-21618183e4bb",
+              "BodyGroups": 18446744073709551615,
+              "Model": "models/props/track_obstacles/obstacle_block_384x24.vmdl",
+              "RenderType": "On",
+              "Tint": "0,0.12157,0.40392,1"
+            },
+            {
+              "__type": "Sandbox.ModelCollider",
+              "__guid": "935a5a81-1da0-45df-964e-b2a6753852a5",
+              "IsTrigger": false,
+              "Model": "models/props/track_obstacles/obstacle_block_384x24.vmdl",
+              "Static": false
+            }
+          ]
         }
       ]
     },
     {
       "__guid": "ff427963-5ca9-4be6-832b-dde9f7684019",
-      "Name": "Pedal Zone",
+      "Name": "Pedal Tutorial Zone",
       "Position": "-6272,2944,384",
       "Enabled": true,
       "NetworkMode": 2,
@@ -2804,13 +2910,13 @@
           "__guid": "df434440-65a9-4a5e-8b31-ba9c9cd8f59c",
           "Bounds": {
             "Mins": "-192,-192,0",
-            "Maxs": "192,192,384"
+            "Maxs": "192,192,192"
           },
           "LockBraking": true,
           "LockJumping": true,
-          "LockLean": false,
+          "LockLean": true,
           "LockPedaling": false,
-          "LockPedalTilt": false,
+          "LockPedalTilt": true,
           "LockTurning": true,
           "TutorialType": "Pedal"
         }
@@ -2818,8 +2924,8 @@
     },
     {
       "__guid": "99c43912-9851-4241-a929-cd9babc90708",
-      "Name": "Turn Zone",
-      "Position": "-3408,2944,384",
+      "Name": "Checkpoint Tutorial Zone",
+      "Position": "-4354.492,2944,384",
       "Enabled": true,
       "NetworkMode": 2,
       "NetworkInterpolation": true,
@@ -2829,13 +2935,38 @@
           "__guid": "f6e99936-7f8c-49f1-81dd-19384d3f70c1",
           "Bounds": {
             "Mins": "-192,-192,0",
-            "Maxs": "190,192,384"
+            "Maxs": "190,192,192"
           },
           "LockBraking": true,
           "LockJumping": true,
-          "LockLean": false,
+          "LockLean": true,
           "LockPedaling": false,
-          "LockPedalTilt": false,
+          "LockPedalTilt": true,
+          "LockTurning": true,
+          "TutorialType": "Checkpoint"
+        }
+      ]
+    },
+    {
+      "__guid": "0d2aabc3-c66c-436a-be03-aaa95d404141",
+      "Name": "Turn Tutorial Zone",
+      "Position": "-2624,2944,384",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "Components": [
+        {
+          "__type": "TutorialLockZone",
+          "__guid": "cd7ec56b-74dd-4779-b4c5-33d9a52a6216",
+          "Bounds": {
+            "Mins": "-192,-192,0",
+            "Maxs": "190,192,192"
+          },
+          "LockBraking": true,
+          "LockJumping": true,
+          "LockLean": true,
+          "LockPedaling": false,
+          "LockPedalTilt": true,
           "LockTurning": false,
           "TutorialType": "Turn"
         }
@@ -2843,7 +2974,7 @@
     },
     {
       "__guid": "47dc3ea4-2a06-4935-be44-c5f8f6215e5f",
-      "Name": "Y Axis Lean Zone",
+      "Name": "Y Axis Lean Tutorial Zone",
       "Position": "-2256,-1280,384",
       "Enabled": true,
       "NetworkMode": 2,
@@ -2854,7 +2985,7 @@
           "__guid": "8f25bd0d-5657-4896-b698-7e069b3c5cde",
           "Bounds": {
             "Mins": "-192,-192,0",
-            "Maxs": "190,192,384"
+            "Maxs": "190,192,192"
           },
           "LockBraking": true,
           "LockJumping": true,
@@ -2868,7 +2999,7 @@
     },
     {
       "__guid": "7de54ca1-b162-4963-867d-ef3e590be508",
-      "Name": "X Axis Lean Zone",
+      "Name": "X Axis Lean Tutorial Zone",
       "Position": "4944,1024,384.0003",
       "Rotation": "0,0,-1,0.0000001947072",
       "Enabled": true,
@@ -2880,7 +3011,7 @@
           "__guid": "40aaea25-c727-4abb-9f0d-33177f0ef8b0",
           "Bounds": {
             "Mins": "-192,-192,0",
-            "Maxs": "190,192,384"
+            "Maxs": "190,192,192"
           },
           "LockBraking": true,
           "LockJumping": true,
@@ -2894,7 +3025,7 @@
     },
     {
       "__guid": "72ad16b7-ebaa-4cb8-9ca0-012a8911bf45",
-      "Name": "Brake Zone",
+      "Name": "Brake Tutorial Zone",
       "Position": "1584,2560,384.0002",
       "Enabled": true,
       "NetworkMode": 2,
@@ -2905,7 +3036,7 @@
           "__guid": "03dc4be3-b9d3-471a-b6f4-5eec3a96bb79",
           "Bounds": {
             "Mins": "-192,-192,0",
-            "Maxs": "190,192,384"
+            "Maxs": "190,192,192"
           },
           "LockBraking": false,
           "LockJumping": true,
@@ -2919,7 +3050,7 @@
     },
     {
       "__guid": "bc6828da-9818-4a11-bdf6-01c7539973dd",
-      "Name": "Jump Zone",
+      "Name": "Jump Tutorial Zone",
       "Position": "3120,2560,384.0003",
       "Enabled": true,
       "NetworkMode": 2,
@@ -2930,7 +3061,7 @@
           "__guid": "bb456663-0f14-4728-acd8-d41c9a274289",
           "Bounds": {
             "Mins": "-192,-192,0",
-            "Maxs": "190,192,384"
+            "Maxs": "190,192,192"
           },
           "LockBraking": false,
           "LockJumping": false,
@@ -2944,7 +3075,7 @@
     },
     {
       "__guid": "701a52f7-7aae-4e66-9ec0-025520e10344",
-      "Name": "High Jump Zone",
+      "Name": "High Jump Tutorial Zone",
       "Position": "5456,4864,384.0005",
       "Rotation": "0,0,-1,0.0000001947072",
       "Enabled": true,
@@ -2956,7 +3087,7 @@
           "__guid": "a9f51278-9f49-41a5-9caa-e19378b3cd0f",
           "Bounds": {
             "Mins": "-192,-192,0",
-            "Maxs": "190,192,384"
+            "Maxs": "190,192,192"
           },
           "LockBraking": false,
           "LockJumping": false,
@@ -2970,7 +3101,7 @@
     },
     {
       "__guid": "cd769e18-c03c-4feb-87a3-ff3818a46667",
-      "Name": "Lean Jump Zone",
+      "Name": "Lean Jump Tutorial Zone",
       "Position": "432,7552,736",
       "Rotation": "0,0,-0.0000003894144,-1",
       "Enabled": true,
@@ -2982,7 +3113,7 @@
           "__guid": "b99c5ae2-f693-4d93-a0ee-16407d49ee44",
           "Bounds": {
             "Mins": "-192,-192,0",
-            "Maxs": "190,192,384"
+            "Maxs": "190,192,192"
           },
           "LockBraking": false,
           "LockJumping": false,
@@ -2991,93 +3122,6 @@
           "LockPedalTilt": false,
           "LockTurning": false,
           "TutorialType": "LeanJump"
-        }
-      ]
-    },
-    {
-      "__guid": "8e4282a9-9f10-496e-86bb-c1d40c1b1886",
-      "Name": "uf_playerspawner",
-      "Position": "-6272,2944,416",
-      "Enabled": true,
-      "NetworkMode": 2,
-      "NetworkInterpolation": true,
-      "__Prefab": "prefabs/uf_playerspawner.prefab"
-    },
-    {
-      "__guid": "4ee9a72f-1d8f-4514-ade2-5e55b30143a0",
-      "Name": "obstacle_block_384x24",
-      "Position": "3712,2560,392.001",
-      "Rotation": "0,-0.00000000000001065814,0.9999999,-0.00000000000003197443",
-      "Enabled": true,
-      "NetworkMode": 2,
-      "NetworkInterpolation": true,
-      "Components": [
-        {
-          "__type": "Sandbox.ModelRenderer",
-          "__guid": "dc552bd1-4026-4b00-a0a2-23dd07645fb5",
-          "BodyGroups": 18446744073709551615,
-          "Model": "models/props/track_obstacles/obstacle_block_384x24.vmdl",
-          "RenderType": "On",
-          "Tint": "0,0.12157,0.40392,1"
-        },
-        {
-          "__type": "Sandbox.ModelCollider",
-          "__guid": "3d3e181f-7abd-4637-b691-13ed66863e91",
-          "IsTrigger": false,
-          "Model": "models/props/track_obstacles/obstacle_block_384x24.vmdl",
-          "Static": false
-        }
-      ]
-    },
-    {
-      "__guid": "7d0f3ca8-445d-4ca4-8ced-48d94d16ca4b",
-      "Name": "obstacle_block_384x24 (1)",
-      "Position": "4352,2560,392.001",
-      "Rotation": "0,-0.00000000000001065814,0.9999999,-0.00000000000003197443",
-      "Enabled": true,
-      "NetworkMode": 2,
-      "NetworkInterpolation": true,
-      "Components": [
-        {
-          "__type": "Sandbox.ModelRenderer",
-          "__guid": "d7e3f75f-578c-4beb-8ad3-694147713bd2",
-          "BodyGroups": 18446744073709551615,
-          "Model": "models/props/track_obstacles/obstacle_block_384x24.vmdl",
-          "RenderType": "On",
-          "Tint": "0,0.12157,0.40392,1"
-        },
-        {
-          "__type": "Sandbox.ModelCollider",
-          "__guid": "9237344f-bad7-4274-b674-325614401e93",
-          "IsTrigger": false,
-          "Model": "models/props/track_obstacles/obstacle_block_384x24.vmdl",
-          "Static": false
-        }
-      ]
-    },
-    {
-      "__guid": "d2e1ab25-7a44-4f8e-acf9-25a6e563ed3f",
-      "Name": "obstacle_block_384x24 (2)",
-      "Position": "4992,2560,392.001",
-      "Rotation": "0,-0.00000000000001065814,0.9999999,-0.00000000000003197443",
-      "Enabled": true,
-      "NetworkMode": 2,
-      "NetworkInterpolation": true,
-      "Components": [
-        {
-          "__type": "Sandbox.ModelRenderer",
-          "__guid": "b3a4457c-6b5d-4146-bf74-21618183e4bb",
-          "BodyGroups": 18446744073709551615,
-          "Model": "models/props/track_obstacles/obstacle_block_384x24.vmdl",
-          "RenderType": "On",
-          "Tint": "0,0.12157,0.40392,1"
-        },
-        {
-          "__type": "Sandbox.ModelCollider",
-          "__guid": "935a5a81-1da0-45df-964e-b2a6753852a5",
-          "IsTrigger": false,
-          "Model": "models/props/track_obstacles/obstacle_block_384x24.vmdl",
-          "Static": false
         }
       ]
     }
@@ -3105,7 +3149,7 @@
   },
   "Title": "tutorial_01",
   "Description": "",
-  "LastSaved": "2024-05-07T11:02:52.9697579-04:00",
+  "LastSaved": "2024-05-07T13:32:09.4467971-04:00",
   "ResourceVersion": 1,
   "__version": 1,
   "__references": [

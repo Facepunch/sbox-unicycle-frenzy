@@ -52,7 +52,8 @@ public enum TutorialType
 	Brake,
 	Jump,
 	HighJump,
-	LeanJump
+	LeanJump,
+	Checkpoint
 }
 
 [GameResource( "Unicycle Frenzy Tutorial Hint", "uftut", "UnicycleFrenzyTutorial", Icon = "help_outline", IconBgColor = "#2e1236", IconFgColor = "#f0f0f0" )]

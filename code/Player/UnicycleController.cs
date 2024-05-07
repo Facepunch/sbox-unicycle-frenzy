@@ -104,7 +104,7 @@ internal class UnicycleController : Component
 
 		Local = this;
 
-		Respawn();
+		//Respawn();
 
 		unstuck = new UnicycleUnstuck();
 		unstuck.Controller = this;
@@ -150,6 +150,7 @@ internal class UnicycleController : Component
 	protected override void OnFixedUpdate()
 	{
 		base.OnFixedUpdate();
+
 
 		if ( CheckShowingTutorial() )
 		{
@@ -540,6 +541,11 @@ internal class UnicycleController : Component
 		if ( !LockPedalTilt )
 		{
 			Tilt += new Angles( 0, 0, PedalTiltStrength * delta );
+		}
+		else
+		{
+			//little bit of tilt so it doesnt look unaturally stiff
+			Tilt += new Angles( 0, 0, 1f * delta );
 		}
 
 		var spd = Velocity.WithZ( 0 ).Length;

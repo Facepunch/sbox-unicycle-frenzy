@@ -18,7 +18,7 @@ internal class TutorialDoorZone : BaseZone
 
 		if ( overlappingPlayer == null ) return;
 
-		if (overlappingPlayer.CurrentSpeed <= 0f && !doorsOpen)
+		if (overlappingPlayer.CurrentSpeed.AlmostEqual(0f, 0.1f) && !doorsOpen)
 		{
 			openDoors = true;
 		}
@@ -41,9 +41,8 @@ internal class TutorialDoorZone : BaseZone
 		RightDoor.Transform.Rotation = Angles.Lerp( RightDoor.Transform.Rotation.Angles(), new Angles(0, -180, 0), 3f * Time.Delta ).ToRotation();
 		LeftDoor.Transform.Rotation = Angles.Lerp( LeftDoor.Transform.Rotation.Angles(), new Angles( 0, 180, 0 ), 3f * Time.Delta ).ToRotation();
 
-		if(RightDoor.Transform.Rotation.Angles().yaw < -179f)
+		if ( RightDoor.Transform.Rotation.Angles().yaw.AlmostEqual( -180f, 0.1f ) )
 		{
-			Log.Info( "done" );
 			openDoors = false;
 			doorsOpen = true;
 		}
