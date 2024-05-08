@@ -1,10 +1,10 @@
 {
-  "__guid": "2e3749e6-2ca1-4616-b738-a22b78c22e26",
+  "__guid": "e046c5b6-ad45-4b43-a9d5-78a74038c994",
   "GameObjects": [
     {
       "__guid": "8e4282a9-9f10-496e-86bb-c1d40c1b1886",
       "Name": "uf_playerspawner",
-      "Position": "-6272,2944,389.3938",
+      "Position": "-6272,2944,392.2678",
       "Enabled": true,
       "NetworkMode": 2,
       "NetworkInterpolation": true,
@@ -239,7 +239,25 @@
         {
           "__type": "TutorialMap",
           "__guid": "f7102383-5279-4fd4-ad0a-ab339453bfa8",
-          "ShowTutorial": false
+          "ShowTutorial": true
+        },
+        {
+          "__type": "TutorialScreen",
+          "__guid": "4026b2bf-6d00-4f47-8401-3b88aa6be4f6",
+          "FirstTutorial": {
+            "_type": "gameobject",
+            "go": "ff427963-5ca9-4be6-832b-dde9f7684019"
+          },
+          "TutorialMap": {
+            "_type": "component",
+            "component_id": "f7102383-5279-4fd4-ad0a-ab339453bfa8",
+            "go": "16395429-4f87-4f08-ae4a-fe25267e5b4f",
+            "component_type": "TutorialMap"
+          },
+          "WelcomeCamera": {
+            "_type": "gameobject",
+            "go": "9de67d45-79a3-428e-961f-31f835a5de61"
+          }
         }
       ]
     },
@@ -4678,6 +4696,35 @@
           "Static": true
         }
       ]
+    },
+    {
+      "__guid": "9de67d45-79a3-428e-961f-31f835a5de61",
+      "Name": "Welcome Camera",
+      "Position": "-6752.176,-1216.465,2013.386",
+      "Rotation": "-0.0652631,0.113039,0.4957224,0.8586165",
+      "Tags": "maincamera",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "Components": [
+        {
+          "__type": "Sandbox.CameraComponent",
+          "__guid": "576a8f59-95cd-4bb3-977e-560f6cdf4ee9",
+          "BackgroundColor": "0.33333,0.46275,0.52157,1",
+          "ClearFlags": "All",
+          "FieldOfView": 60,
+          "IsMainCamera": false,
+          "Orthographic": false,
+          "OrthographicHeight": 1204,
+          "Priority": 1,
+          "RenderExcludeTags": "",
+          "RenderTags": "",
+          "TargetEye": "None",
+          "Viewport": "0,0,1,1",
+          "ZFar": 10000,
+          "ZNear": 10
+        }
+      ]
     }
   ],
   "SceneProperties": {
@@ -4703,7 +4750,7 @@
   },
   "Title": "tutorial_01",
   "Description": "",
-  "LastSaved": "2024-05-07T16:29:25.1255258-04:00",
+  "LastSaved": "2024-05-07T20:49:54.8024977-04:00",
   "ResourceVersion": 1,
   "__version": 1,
   "__references": [
