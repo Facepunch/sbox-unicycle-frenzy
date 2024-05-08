@@ -2,7 +2,7 @@
   "TutorialType": "Brake",
   "HintTitle": "Braking",
   "HintText": "To brake hold the shift key. Stop in the stop zone ahead to open the gates and progress",
-  "HintVideo": " https://files.facepunch.com/garry/7ae9e5b4-e630-4f68-9e40-a88ca6db9dd8.mp4",
+  "HintVideo": "Resources\\Tutorial\\instructional_videos\\tut_braking.mp4",
   "ResourceVersion": 0,
   "__version": 0,
   "__references": []

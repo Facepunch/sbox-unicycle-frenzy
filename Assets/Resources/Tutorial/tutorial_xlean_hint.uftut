@@ -2,7 +2,7 @@
   "TutorialType": "XLean",
   "HintTitle": "Leaning Part 2",
   "HintText": "In addition to leaning side to side you will often need to lean your character forward and back when moving up inclines and declines.",
-  "HintVideo": " https://files.facepunch.com/garry/7ae9e5b4-e630-4f68-9e40-a88ca6db9dd8.mp4",
+  "HintVideo": "Resources\\Tutorial\\instructional_videos\\tut_leaning_part1.mp4",
   "ResourceVersion": 0,
   "__version": 0,
   "__references": []
