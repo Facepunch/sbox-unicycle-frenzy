@@ -166,7 +166,9 @@ internal class UnicycleController : Component
 			unstuck = new UnicycleUnstuck();
 			unstuck.Controller = this;
 		}
-		
+
+		if ( unstuck.TestAndFix() ) return;
+
 		var beforeGrounded = Ground != null;
 		var beforeVelocity = Velocity;
 
@@ -231,8 +233,7 @@ internal class UnicycleController : Component
 				mapsetting.AddFall();
 			}
 		}
-
-		if ( unstuck.TestAndFix() ) return;
+		
 	}
 
 	GameObject Ragdoll;
