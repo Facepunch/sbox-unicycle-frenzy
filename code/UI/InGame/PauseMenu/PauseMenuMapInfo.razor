@@ -1,0 +1,64 @@
+@using Sandbox.UI
+@using Sandbox
+
+<root>
+	<div class="info-container">
+		<div class="info-map-name">Paused</div>
+		<div class="info-map-name">@settings.MapName</div>
+			<div class="medal-container">
+				<div class="medal-gold alignment">
+					<div class="medal-title">Gold</div>
+					<div class="medal-time">00:00.000</div>
+				</div>
+				<div class="medal-silver alignment">
+					<div class="medal-title">Silver</div>
+					<div class="medal-time">00:00.000</div>
+				</div>
+				<div class="medal-bronze alignment">
+					<div class="medal-title">Bronze</div>
+					<div class="medal-time">00:00.000</div>
+				</div>
+			</div>
+		<div class="info-frenzy-container">
+			<div class="info-frenzy-letter @HasLetter(0)">F</div>
+			<div class="info-frenzy-letter @HasLetter(1)">R</div>
+			<div class="info-frenzy-letter @HasLetter(2)">E</div>
+			<div class="info-frenzy-letter @HasLetter(3)">N</div>
+			<div class="info-frenzy-letter @HasLetter(4)">Z</div>
+			<div class="info-frenzy-letter @HasLetter(5)">Y</div>
+		</div>
+		<div class="info-map-best-time">Best Time: @BestTimeFormat(settings.GetBestTime())</div>
+	</div>
+</root>
+
+@code
+{
+	MapSettings settings;
+
+	public override void Tick()
+	{
+		base.Tick();
+
+		if (settings == null)
+		{
+			settings = Scene.GetAllComponents<MapSettings>().FirstOrDefault();
+		}
+	}
+
+	string HasLetter(int letter)
+	{
+		var frenzy = settings.frenzyLetterList.Contains((FrenzyPickUp.FrenzyLetter)letter);
+		return frenzy ? "has-letter" : "no-letter";
+	}
+
+	string BestTimeFormat(float time)
+	{
+		if (time == null)
+			return "N/A";
+
+		var timeSpan = TimeSpan.FromSeconds(time);
+		return timeSpan.ToString(@"mm\:ss\.fff");
+	}
+
+	protected override int BuildHash() => System.HashCode.Combine(Time.Delta);
+}

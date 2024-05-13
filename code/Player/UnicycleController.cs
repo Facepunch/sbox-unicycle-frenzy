@@ -300,6 +300,11 @@ internal class UnicycleController : Component
 		Respawn();
 	}
 
+	public void DoRespawn()
+	{
+		Respawn();
+	}
+
 	void Respawn()
 	{
 		if ( Ragdoll != null )

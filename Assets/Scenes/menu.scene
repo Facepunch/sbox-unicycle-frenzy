@@ -3,6 +3,7 @@
   "GameObjects": [
     {
       "__guid": "f97278ee-0164-48eb-b25b-777dc6151898",
+      "Flags": 0,
       "Name": "MainCameraPos",
       "Position": "-323.27,7.071135,72.39085",
       "Rotation": "0.02865466,0.1069407,-0.2572279,0.9599877",
@@ -12,6 +13,7 @@
     },
     {
       "__guid": "10cd17af-303c-4cf4-91fb-7a6b5f74ab03",
+      "Flags": 0,
       "Name": "CustomiseCameraPos",
       "Position": "-214.791,7.049812,17.70055",
       "Rotation": "0,0,-0.4843262,0.8748875",
@@ -21,6 +23,7 @@
     },
     {
       "__guid": "21b34305-3758-49c1-b893-c0b103e0aed7",
+      "Flags": 0,
       "Name": "SoloCameraPos",
       "Position": "-220.7972,-78.0751,23.59009",
       "Rotation": "0,0,0.2118186,0.9773089",
@@ -30,6 +33,7 @@
     },
     {
       "__guid": "3c378c48-bbbb-4052-8db3-769384842052",
+      "Flags": 0,
       "Name": "SettingsCameraPos",
       "Position": "-208.4598,-72.46354,58.46043",
       "Rotation": "0,0,-0.241573,0.9703826",
@@ -39,6 +43,7 @@
     },
     {
       "__guid": "de3a0496-25ba-42d9-8333-5615e3e06072",
+      "Flags": 0,
       "Name": "AchievementCameraPos",
       "Position": "-174.3777,-61.051,46.78977",
       "Rotation": "0.1195545,0.3370766,-0.3121669,0.8801352",
@@ -48,6 +53,7 @@
     },
     {
       "__guid": "07a2d926-0e53-4bf0-b981-36e8bb88e8da",
+      "Flags": 0,
       "Name": "Main Camera",
       "Position": "-323.27,7.071135,72.39085",
       "Rotation": "0.02865466,0.1069407,-0.2572279,0.9599877",
@@ -119,6 +125,7 @@
       "Children": [
         {
           "__guid": "6f5c4108-1494-4ad3-8689-7a880f41bbc3",
+          "Flags": 0,
           "Name": "Spot Light",
           "Position": "51.43153,-0.00006734808,38.70238",
           "Rotation": "-0.0000001192093,0.7071066,0.0000002216548,0.7071068",
@@ -145,6 +152,7 @@
     },
     {
       "__guid": "349384aa-dcf2-4367-ba39-a74f464259d3",
+      "Flags": 0,
       "Name": "Directional Light",
       "Position": "0,0,200",
       "Rotation": "-0.738216,0.1109078,0.2643387,0.6106237",
@@ -166,6 +174,7 @@
     },
     {
       "__guid": "66607f41-29d8-4fec-b8a1-9cb0156bf1ac",
+      "Flags": 0,
       "Name": "sky",
       "Position": "0,0,200",
       "Tags": "light_directional,light,skybox",
@@ -193,6 +202,7 @@
     },
     {
       "__guid": "149662f9-1d6e-4242-979c-01ad062f1108",
+      "Flags": 0,
       "Name": "Screen",
       "Position": "-232.0181,-201.9742,169.9855",
       "Enabled": true,
@@ -270,6 +280,7 @@
     },
     {
       "__guid": "bcc4bed1-8c0d-423d-aac7-fed6bf584dfa",
+      "Flags": 0,
       "Name": "Object",
       "Position": "-190.7829,-85.53548,-0.0000002521072",
       "Rotation": "0,0,0.8660253,0.5000001",
@@ -279,6 +290,7 @@
     },
     {
       "__guid": "df91c267-296e-46aa-8f29-6759e2b013d4",
+      "Flags": 0,
       "Name": "player and camera",
       "Position": "-174.7829,-61.53548,4.999992",
       "Enabled": true,
@@ -287,6 +299,7 @@
       "Children": [
         {
           "__guid": "471e947b-29e4-4212-8c68-3589e642543e",
+          "Flags": 0,
           "Name": "Player",
           "Position": "0.9187469,-0.4064026,0",
           "Tags": "player",
@@ -296,6 +309,7 @@
           "Children": [
             {
               "__guid": "8922f649-30d4-4903-a49e-f91d0bf20ea0",
+              "Flags": 0,
               "Name": "Unicycle",
               "Position": "0,0,0",
               "Rotation": "0,0,0.9958593,0.09090802",
@@ -309,20 +323,20 @@
                   "__guid": "8264d516-b6a0-4302-89a1-aae6cd09d376",
                   "Frame": {
                     "_type": "component",
-                    "component_id": "f192e170-7bb6-4cbb-ad43-f5f9cd9ef9d4",
+                    "component_id": "f5f92fe2-b01e-4d20-8a2e-a9c8fc6f40a7",
                     "go": "788781c8-0927-4dac-938d-6f3e904e4131",
                     "component_type": "ModelRenderer"
                   },
                   "IsMenu": true,
                   "LeftPedal": {
                     "_type": "component",
-                    "component_id": "1aafeeed-ce8d-451b-a51c-ce46ac35f073",
+                    "component_id": "4b432c58-74fc-4232-b2f6-d7fe2242ed4c",
                     "go": "62318272-9110-4cd5-baad-12a540190a43",
                     "component_type": "SkinnedModelRenderer"
                   },
                   "RightPedal": {
                     "_type": "component",
-                    "component_id": "c3a61005-7c5f-4357-97c6-ce770c65a52d",
+                    "component_id": "23854d34-ba81-4598-8a6c-e29f3757183e",
                     "go": "f9ccdbac-ff8c-487b-8d5d-b0670392d01a",
                     "component_type": "SkinnedModelRenderer"
                   },
@@ -334,7 +348,7 @@
                   },
                   "Wheel": {
                     "_type": "component",
-                    "component_id": "e0a69492-891a-4c66-b4da-4704d72f7349",
+                    "component_id": "683aa592-5b80-451b-bedb-81466fd8aa7f",
                     "go": "7e4c8815-ca00-44ec-ab86-5d7bba132acd",
                     "component_type": "ModelRenderer"
                   }
@@ -343,6 +357,7 @@
               "Children": [
                 {
                   "__guid": "e8eeda84-85d8-4583-a2da-57607cf8faf3",
+                  "Flags": 0,
                   "Name": "Seat",
                   "Position": "0,0,25.93234",
                   "Enabled": true,
@@ -361,6 +376,7 @@
                 },
                 {
                   "__guid": "788781c8-0927-4dac-938d-6f3e904e4131",
+                  "Flags": 0,
                   "Name": "Frame",
                   "Position": "0,0,3.750014",
                   "Enabled": true,
@@ -379,6 +395,7 @@
                 },
                 {
                   "__guid": "f8ee8520-247d-408b-904d-68f4c82fbd12",
+                  "Flags": 0,
                   "Name": "WheelPivot",
                   "Position": "0.0002816903,-0.0004766266,5.53076",
                   "Rotation": "0,0,0.0000002235174,0.9999967",
@@ -388,6 +405,7 @@
                   "Children": [
                     {
                       "__guid": "7e4c8815-ca00-44ec-ab86-5d7bba132acd",
+                      "Flags": 0,
                       "Name": "Wheeel",
                       "Position": "0,0,0",
                       "Enabled": true,
@@ -408,6 +426,7 @@
                 },
                 {
                   "__guid": "e787120c-8499-4d5e-b16f-9845e8b845a9",
+                  "Flags": 0,
                   "Name": "Pedals",
                   "Position": "0,0,12",
                   "Enabled": true,
@@ -416,6 +435,7 @@
                   "Children": [
                     {
                       "__guid": "62318272-9110-4cd5-baad-12a540190a43",
+                      "Flags": 0,
                       "Name": "Left Pedal",
                       "Position": "0.0000005960464,5.200828,-12.7902",
                       "Enabled": true,
@@ -434,6 +454,7 @@
                     },
                     {
                       "__guid": "f9ccdbac-ff8c-487b-8d5d-b0670392d01a",
+                      "Flags": 0,
                       "Name": "Right Pedal",
                       "Position": "-0.0000005960464,-5.227397,-0.1563954",
                       "Rotation": "1,0.00000002980232,0,-0.00000004371139",
@@ -461,6 +482,7 @@
     },
     {
       "__guid": "839affe2-3bfd-4115-a5dd-8c611bbf1d85",
+      "Flags": 0,
       "Name": "Object",
       "Position": "-208,-40,71.99998",
       "Enabled": true,
@@ -489,6 +511,7 @@
     },
     {
       "__guid": "95cba2f0-2b0f-40a4-957a-816518e64c1a",
+      "Flags": 0,
       "Name": "Spot Light",
       "Position": "-227.2928,-105.6826,136",
       "Rotation": "-0.25,0.4330127,0.4330127,0.7500001",
@@ -514,6 +537,7 @@
     },
     {
       "__guid": "fc3a9d75-8121-4d19-8836-66a2a603d585",
+      "Flags": 0,
       "Name": "Spot Light (1)",
       "Position": "-166.691,-0.7173157,97.77127",
       "Rotation": "-0.4444803,0.7698625,0.2289919,0.3966256",
@@ -539,6 +563,7 @@
     },
     {
       "__guid": "bdf502a9-bd07-4201-922f-b731b0bc4bcb",
+      "Flags": 0,
       "Name": "Box",
       "Position": "384,-512,-64",
       "Enabled": true,
@@ -553,7 +578,6 @@
           "IsTrigger": false,
           "Mesh": {
             "Topology": "H4sIAAAAAAAACoWVZ1OTQRSFE1pCQhoJAgkhCIgNEFBs2EGKioqC2JgRFRUF6WDH3v60njPzvDN8IzNnsu/es3dv3/ZQKPRXaBd6hUZhTigI80JM6BeSQoeQFwaEFuEJ584IM0Kf8Fw4LpwUZoUrwjXhunBTeCi8Fh4Jj4WnwjPhhfBGeCd8ED4JUSEs3BX2CMEvI1QKtUK5MIyd5pYJOfar4R0U4sgqhHr\u002B7WtE\u002BCa0caYKvY2crUZ3ijO2Kcu6Gb2byCvh2tY0uhPELozuGqEObppzl5BH4KaxNfC1l\u002B8IsgTnK7BlHnvLsb2ArIq7\u002BpGFiU3gWxmxmENvJbZXcz4M9xB79r2B/Up0\u002Bq7fQiuc/A7b/u3yc\u002BxK1FKE2Dmm\u002B9Fl3/YKo8jjcA/DTZC3dvyuwY4uuLZtn7CMPAH3ALbFuGuA7yg13sD91dTOD\u002BQJzrahP44tJbhhYuW4xrCniz7JsN9JbOLE6ojwijud\u002B27hHLIQub9DHl0rPcIFdPneo8IWcUvTgxfRVUXua7DNNhwThshdUTghrAlNxMi9exmZ904JK8QyS1\u002BPIIsRu2by49o6LZwnXrb3rHALWZJZ0Y2/Obiz\u002BJvE9wecT\u002BNLCn9T\u002BD4D1/4M4pP9S9NLfdhUiy/2tRz\u002BEDOqiD8j1FgM/jAxaMK\u002BMXyKwB8lBgV65SrzLUuOPO9us3ZvjTP7svDNnWbtGNxgLmbhm3uPtXVMoDML39xJbKvjrgm\u002BU8S6B5ljNEXMc5yf5M56bJjGB/ND1FoIWT22jPMdZRbfR5YkV1N8R5F17Mj/DDXQwCzx/F/g7G7zIUdtjBHvAu/GEvVSQ2\u002B1krsm3pRVcl3GbOvku8h7s06tZKiFQeqlmbdoA24Fs9V\u002Bpeg3v1OL\u002BJKndz8zl7z3Eh8b4C/So0nkC9RSI/4sMaPsb5630TMhjz8r\u002BBTM9WViUMDGNXzKwF\u002BlZ5vwZ4NZk4a/Ts8XsW8Ln1LwN4lBM33xljc5mNN\u002Bo78gc9zf816X2DP3FzLPyY\u002B85SX2zP2DzPq20Vliz9yvyFq4a5t1nlh/565G3m7H3HKf91nf6bVnsmf3T/g\u002B77OOsePtPdtqH70231zzbKthW\u002B2j154hfus8V63fOjxvPJM8V4Ke9b7nhP/9vnim\u002BB0I6to14Dg7F86Xcxr0tfvZPem\u002Bc225flwjrgPn2vl0zoI4OT72wXb\u002BBx1q6bPMCQAA",
-            "TextureOrigin": "384,-512,-64.00001",
             "Positions": [
               "-1072,-768,63.99999",
               "768,-768,63.99999",
@@ -591,6 +615,82 @@
               "0,768,448",
               "-1072,768,448",
               "-1072,704,448"
+            ],
+            "TextureOrigin": [
+              "0,0,0",
+              "0,0,0",
+              "0,0,0",
+              "0,0,0",
+              "0,0,0",
+              "0,0,0",
+              "0,0,0",
+              "0,0,0",
+              "0,0,0",
+              "0,0,0",
+              "0,0,0",
+              "0,0,0",
+              "0,0,0",
+              "0,0,0",
+              "0,0,0",
+              "0,0,0",
+              "0,0,0",
+              "0,0,0",
+              "0,0,0",
+              "0,0,0",
+              "0,0,0",
+              "0,0,0",
+              "0,0,0",
+              "0,0,0",
+              "0,0,0",
+              "0,0,0",
+              "0,0,0",
+              "0,0,0",
+              "0,0,0",
+              "0,0,0",
+              "0,0,0",
+              "0,0,0",
+              "0,0,0",
+              "0,0,0",
+              "0,0,0",
+              "0,0,0"
+            ],
+            "TextureRotation": [
+              "0,0,0,0",
+              "0,0,0,0",
+              "0,0,0,0",
+              "0,0,0,0",
+              "0,0,0,0",
+              "0,0,0,0",
+              "0,0,0,0",
+              "0,0,0,0",
+              "0,0,0,0",
+              "0,0,0,0",
+              "0,0,0,0",
+              "0,0,0,0",
+              "0,0,0,0",
+              "0,0,0,0",
+              "0,0,0,0",
+              "0,0,0,0",
+              "0,0,0,0",
+              "0,0,0,0",
+              "0,0,0,0",
+              "0,0,0,0",
+              "0,0,0,0",
+              "0,0,0,0",
+              "0,0,0,0",
+              "0,0,0,0",
+              "0,0,0,0",
+              "0,0,0,0",
+              "0,0,0,0",
+              "0,0,0,0",
+              "0,0,0,0",
+              "0,0,0,0",
+              "0,0,0,0",
+              "0,0,0,0",
+              "0,0,0,0",
+              "0,0,0,0",
+              "0,0,0,0",
+              "0,0,0,0"
             ],
             "TextureUAxis": [
               "1,0,0",
@@ -705,6 +805,44 @@
               "0.25,0.25",
               "0.25,0.25",
               "0.25,0.25"
+            ],
+            "TextureOffset": [
+              "0,0",
+              "0,0",
+              "0,0",
+              "0,0",
+              "0,0",
+              "0,0",
+              "0,0",
+              "0,0",
+              "0,0",
+              "0,0",
+              "0,0",
+              "0,0",
+              "0,0",
+              "0,0",
+              "0,0",
+              "0,0",
+              "0,0",
+              "0,0",
+              "0,0",
+              "0,0",
+              "0,0",
+              "0,0",
+              "0,0",
+              "0,0",
+              "0,0",
+              "0,0",
+              "0,0",
+              "0,0",
+              "0,0",
+              "0,0",
+              "0,0",
+              "0,0",
+              "0,0",
+              "0,0",
+              "0,0",
+              "0,0"
             ],
             "TextureAngle": [
               0,
@@ -933,6 +1071,7 @@
     },
     {
       "__guid": "6388b61d-c644-4985-b9aa-2fe1ef96340f",
+      "Flags": 0,
       "Name": "Object",
       "Position": "-147.9419,-120.1903,43.97271",
       "Enabled": true,
@@ -958,6 +1097,7 @@
     },
     {
       "__guid": "7fd92f95-931e-4e1b-8869-427959a8e267",
+      "Flags": 0,
       "Name": "Object",
       "Position": "-240,-32,48",
       "Enabled": true,
@@ -978,6 +1118,7 @@
     },
     {
       "__guid": "7240315a-a237-4647-b245-8f43879e52fe",
+      "Flags": 0,
       "Name": "default_wheel",
       "Position": "-137.2916,-96.94618,1.514645",
       "Rotation": "-0.7071067,0,0,0.7071068",
@@ -997,6 +1138,7 @@
     },
     {
       "__guid": "63fde154-c6b1-45d2-88cf-6ccac1ddb2ea",
+      "Flags": 0,
       "Name": "default_wheel (1)",
       "Position": "-135.609,-104.4894,5.9977",
       "Rotation": "-0.6532815,-0.2705981,0.270598,0.6532816",
@@ -1016,6 +1158,7 @@
     },
     {
       "__guid": "e574d8b0-4dae-45bc-8731-a54abb88d5ea",
+      "Flags": 0,
       "Name": "default_wheel (2)",
       "Position": "-131.4903,-69.92157,11.57483",
       "Rotation": "-0.1830128,-0.6830129,0.6830127,0.1830128",
@@ -1057,7 +1200,7 @@
   },
   "Title": "menu",
   "Description": "",
-  "LastSaved": "2024-04-30T21:19:15.7998272\u002B01:00",
+  "LastSaved": "2024-05-13T12:02:13.429227\u002B01:00",
   "ResourceVersion": 1,
   "__version": 1,
   "__references": []

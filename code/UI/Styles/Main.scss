@@ -16,8 +16,6 @@ MainMenu, PauseMenu {
     bottom: 0;
     color: white;
     flex-direction: row;
-    //background-image: url("textures/ui/menu-background.png");
-    background-size: 100%;
     pointer-events: none;
     font-family: $stylefont;
 
@@ -32,9 +30,8 @@ MainMenu, PauseMenu {
 }
 
 PauseMenuComponent {
-    background-color: rgba( black, 0.2 );
-    backdrop-filter: sepia( 50% );
-
+    z-index: 10000;
+    
 }
 
 PartyPanel {

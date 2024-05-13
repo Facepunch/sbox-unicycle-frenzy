@@ -2,7 +2,7 @@
 @using Sandbox.UI;
 @inherits PanelComponent
 
-<root>
+<root class="@(GameManager.IsPaused ? "open" : "")">
 	<HudTimer />
 	<LeanDisplay />
 	<MapTimes />
@@ -25,4 +25,6 @@
 	{
 		RemoveClass("hide");
 	}
+
+	protected override int BuildHash() => System.HashCode.Combine(GameManager.IsPaused);
 }

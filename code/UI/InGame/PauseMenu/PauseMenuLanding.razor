@@ -10,6 +10,9 @@
 			<div class="button" @onclick=@Resume>
 				RESUME
 			</div>
+			<div class="button" @onclick=@Restart>
+				Restart
+			</div>
 			<a class="button" href="/settings">
 				SETTINGS
 			</a>
@@ -18,12 +21,25 @@
 			</a>
 		</div>
 	</div>
+	<PauseMenuMapInfo/>
 </root>
 
 @code
 {
 	void Resume()
 	{
+		PauseMenuComponent.Current.Close();
+	}
+
+	void Restart()
+	{
+		var courseTimer = CourseTimer.Local;
+		if (courseTimer != null)
+		{
+			courseTimer.ResetTimer();
+			courseTimer.ResetCheckpoints();
+			UnicycleController.Local.DoRespawn();
+		}
 		PauseMenuComponent.Current.Close();
 	}
 
