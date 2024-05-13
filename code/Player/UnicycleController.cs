@@ -616,6 +616,9 @@ internal class UnicycleController : Component
 
 		PedalAchievement();
 
+		var cameraComponet = Scene.GetAllComponents<CameraComponent>().Where( c => c.IsMainCamera ).FirstOrDefault().Components.Get<CameraController>();
+		cameraComponet.PunchShake( 0.75f, 0.25f );
+
 		//if ( Pawn.IsLocalPawn )
 		//{
 		//	new FallCameraModifier( -100f );

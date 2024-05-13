@@ -11,7 +11,13 @@
 				[
 					{
 						_class = "DefaultMaterialGroup"
-						remaps = [  ]
+						remaps = 
+						[
+							{
+								from = "materials/terrain/grass/terrain_grass.vmat"
+								to = "materials/terrain/grass/terrain_grass.vmat"
+							},
+						]
 						use_global_default = false
 						global_default_material = "materials/default.vmat"
 					},

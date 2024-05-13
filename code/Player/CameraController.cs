@@ -1,6 +1,7 @@
 ﻿
 using Sandbox;
 using System;
+using static Sandbox.Citizen.CitizenAnimationHelper;
 
 internal class CameraController : Component
 {
@@ -88,5 +89,36 @@ internal class CameraController : Component
 		Transform.Position = Position;
 		Transform.Rotation = Rotation;
 		Camera.FieldOfView = Screen.CreateVerticalFieldOfView( FieldOfView );
+
+		if ( isShaking && timeSinceShakeStarted < shakeDuration )
+		{
+			ApplyCameraShake();
+		}
+		else
+		{
+			isShaking = false;
+		}
+	}
+
+	private bool isShaking = false;
+	private float shakeIntensity = 0.5f;
+	private float shakeDuration = 0.5f;
+	private TimeSince timeSinceShakeStarted;
+
+	public void PunchShake( float intensity, float duration )
+	{
+		isShaking = true;
+		shakeIntensity = intensity;
+		shakeDuration = duration;
+		timeSinceShakeStarted = 0;  // Reset the timer
+	}
+	private void ApplyCameraShake()
+	{
+		float shakeAmountX = Random.Shared.Float( -1, 1 ) * shakeIntensity;
+		float shakeAmountY = Random.Shared.Float( -1, 1 ) * shakeIntensity;
+		float shakeAmountZ = Random.Shared.Float( -1, 1 ) * shakeIntensity;
+		Transform.Position += new Vector3( shakeAmountX, shakeAmountY, shakeAmountZ );
+
+		FieldOfView = FieldOfView.LerpTo( FieldOfView * shakeIntensity * 2, Time.Delta * 0.5f );
 	}
 }
