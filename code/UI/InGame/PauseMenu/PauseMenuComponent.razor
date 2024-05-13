@@ -1,0 +1,55 @@
+@using Sandbox;
+@using Sandbox.UI;
+@inherits PanelComponent
+
+<root>
+	<PauseMenu @ref="Menu" />
+</root>
+
+@code
+{
+	public static PauseMenuComponent Current { get; set; }
+	public PauseMenu Menu { get; set; }
+
+	bool open = false;
+
+	public PauseMenuComponent()
+	{
+		Current = this;
+	}
+
+	void SetOpen(bool isOpen)
+	{
+		open = isOpen;
+		GameManager.IsPaused = isOpen;
+	}
+
+	public void Close()
+	{
+		SetOpen(false);
+	}
+
+	protected override void OnUpdate()
+	{
+		base.OnUpdate();
+
+		if (Input.EscapePressed)
+		{
+			SetOpen(!open);
+		}
+
+		if (open)
+		{
+			SetClass("open", true);
+		}
+		else
+		{
+			SetClass("open", false);
+		}
+	}
+
+	/// <summary>
+	/// the hash determines if the system should be rebuilt. If it changes, it will be rebuilt
+	/// </summary>
+	protected override int BuildHash() => System.HashCode.Combine(Time.Delta);
+}

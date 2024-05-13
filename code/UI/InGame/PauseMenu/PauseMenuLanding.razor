@@ -1,0 +1,47 @@
+@using Sandbox.UI
+@using Sandbox
+
+@inherits Panel
+
+<root class="body column">
+	<div class="sidebar">
+		<div class="logo"></div>
+		<div class="navbar">
+			<div class="button" @onclick=@Resume>
+				RESUME
+			</div>
+			<a class="button" href="/settings">
+				SETTINGS
+			</a>
+			<a class="button" onclick=@OpenScene>
+				RETURN TO MENU
+			</a>
+		</div>
+	</div>
+</root>
+
+@code
+{
+	void Resume()
+	{
+		PauseMenuComponent.Current.Close();
+	}
+
+	public SceneFile GetScene(string path)
+	{
+		return ResourceLibrary.Get<SceneFile>(path);
+	}
+
+	bool loadedScene = false;
+	public void OpenScene()
+	{
+		if (loadedScene) return;
+
+		loadedScene = true;
+
+		var scene = GetScene("scenes/menu.scene");
+
+		if (scene is not null)
+			Game.ActiveScene.Load(scene);
+	}
+}

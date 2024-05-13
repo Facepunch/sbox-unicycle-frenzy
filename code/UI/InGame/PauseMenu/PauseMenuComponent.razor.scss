@@ -1,0 +1,12 @@
+@import "/UI/Styles/Main.scss";
+
+PauseMenuComponent {
+	transition: opacity 0.25s ease;
+	opacity: 0;
+	pointer-events: none;
+
+	&.open {
+		pointer-events: all;
+		opacity: 1;
+	}
+}

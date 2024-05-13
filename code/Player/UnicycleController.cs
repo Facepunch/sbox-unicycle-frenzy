@@ -126,7 +126,7 @@ internal class UnicycleController : Component
 
 		if ( Input.EscapePressed )
 		{
-			Game.ActiveScene.LoadFromFile( "scenes/menu.scene" );
+			//Game.ActiveScene.LoadFromFile( "scenes/menu.scene" );
 		}
 
 		if ( Scene.GetAllComponents<TutorialHints>().Count() > 0 ) return;

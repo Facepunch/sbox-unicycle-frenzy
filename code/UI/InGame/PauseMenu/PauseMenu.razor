@@ -1,0 +1,20 @@
+@using Sandbox.Menu
+@using Sandbox.UI;
+
+@inherits NavHostPanel
+@attribute [StyleSheet]
+
+<root>
+	<div class="navigator-canvas" slot="navigator-canvas" />
+</root>
+
+@code
+{
+
+	public PauseMenu()
+	{
+		DefaultUrl = "/";
+		AddDestination("/", typeof(PauseMenuLanding));
+		AddDestination("/settings", typeof(SettingsPage));
+	}
+}

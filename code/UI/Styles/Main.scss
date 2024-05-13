@@ -1,0 +1,563 @@
+@import "../_vars.scss";
+@import "../_button.scss";
+
+menu {
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    pointer-events: none;
+}
+
+MainMenu, PauseMenu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    color: white;
+    flex-direction: row;
+    //background-image: url("textures/ui/menu-background.png");
+    background-size: 100%;
+    pointer-events: none;
+    font-family: $stylefont;
+
+    .logo {
+        width: 500px;
+        height: 500px;
+        background-image: url("textures/ui/unicycle-frenzy-logo.png");
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+}
+
+PauseMenuComponent {
+    background-color: rgba( black, 0.2 );
+    backdrop-filter: sepia( 50% );
+
+}
+
+PartyPanel {
+    .invite-friend {
+    }
+}
+HomePage {
+}
+
+.sidebar {
+    width: 350px;
+    flex-shrink: 0;
+    pointer-events: all;
+}
+
+.navbar {
+    flex-direction: column;
+    width: 100%;
+    flex-shrink: 1;
+    position: absolute;
+    bottom: 100px;
+    pointer-events: all;
+
+    .button {
+        color: black;
+        font-size: 30px;
+        font-weight: 800;
+        padding: 15px;
+        background-color: rgba( lightgray, .35 );
+        cursor: pointer;
+        margin-bottom: 8px;
+        justify-content: flex-end;
+        padding-right: 30px;
+        text-transform: uppercase;
+
+        &:hover {
+            background-color: rgba( lighten(lightgray, 10%), .8 );
+            sound-in: ui.button.over;
+        }
+
+        &:active {
+            sound-in: ui.button.press;
+        }
+    }
+}
+
+SoloPage {
+    width: 100%;
+    backdrop-filter: blur( 10px );
+
+    .medal {
+        width: 50px;
+        height: 100%;
+        position: absolute;
+        right: 0;
+        align-self: center;
+        align-content: center;
+        justify-content: center;
+        aspect-ratio: 1;
+    }
+
+    .bronze {
+        background-image: url("textures/achievements/bronze_medal.png");
+        background-size: cover;
+        right: 0px;
+    }
+
+    .silver {
+        background-image: url("textures/achievements/silver_medal.png");
+        background-size: cover;
+        right: 20px;
+    }
+
+    .gold {
+        background-image: url("textures/achievements/gold_medal.png");
+        background-size: cover;
+        right: 40px;
+    }
+
+    .platinum {
+        background-image: url("textures/achievements/expert.png");
+        background-size: cover;
+        right: 60px;
+    }
+
+    .frenzy {
+        background-image: url("textures/achievements/frenzy.png");
+        background-size: cover;
+        right: 100px;
+    }
+
+
+    .track-container {
+        position: absolute;
+        top: 15%;
+        width: 100%;
+        height: 500px;
+        justify-content: space-evenly;
+    }
+
+    .track-panel {
+        height: 500px;
+        width: 500px;
+        background-color: red;
+
+        .track-name {
+            font-family: $stylefont;
+            font-size: 30px;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            padding: 10px;
+        }
+
+        .track-icon {
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        .track-info {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            padding: 10px;
+            font-family: $stylefont;
+            font-size: 30px;
+            flex-direction: column;
+
+            .track-time {
+            }
+        }
+    }
+
+    .tracks {
+        flex-direction: column;
+        background-color: rgba( lightgray, .05 );
+
+        .track {
+            padding: 10px;
+            background-color: rgba( lightgray, .35 );
+            margin: 20px;
+            font-family: $stylefont;
+            width: 250px;
+            pointer-events: all;
+
+            &:hover {
+                background-color: rgba( lighten(lightgray, 10%), .8 );
+                sound-in: ui.button.over;
+            }
+
+            &:active {
+                sound-in: ui.button.press;
+            }
+
+            .track-icon {
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+                width: 100%;
+                height: 100%;
+                aspect-ratio: 1;
+            }
+
+            .track-name {
+                text-align: left;
+                font-size: 24px;
+            }
+
+            .track-artist {
+                font-size: 15px;
+            }
+
+            .track-duration {
+                font-size: 15px;
+            }
+
+            .track-play {
+                &:hover {
+                    color: $blue;
+                }
+            }
+
+            .track-pause {
+                &:hover {
+                    color: $blue;
+                }
+            }
+
+            .track-delete {
+                &:hover {
+                    color: $blue
+                }
+            }
+        }
+
+        .green {
+            background-color: rgba( green, .35 );
+        }
+
+        .yellow {
+            background-color: rgba( yellow, .35 );
+        }
+
+        .orange {
+            background-color: rgba( orange, .35 );
+        }
+
+        .red {
+            background-color: rgba( red, .35 );
+        }
+    }
+
+    .xp-bar-container {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        pointer-events: none;
+    }
+
+    .xp-bar {
+        width: 1200px;
+        height: 48px;
+        background-color: $darker-purple;
+        position: absolute;
+        bottom: 30%;
+        left: 20%;
+
+        .xp-bar-item {
+            width: 96px;
+            height: 96px;
+            background-color: $dark-purple;
+            border: 5px solid white;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            position: absolute;
+            transform: translateX(-50%);
+            top: 70px;
+            z-index: 2;
+            align-content: center;
+            align-items: center;
+            justify-content: center;
+
+            .xp-bar-arrow {
+                background-image: url("textures/ui/control_charge.png");
+                bottom: 58px;
+                width: 40px;
+                height: 30px;
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+                z-index: 1;
+            }
+
+            .xp-bar-amount {
+                font-size: 20px;
+                font-family: $stylefont;
+                color: white;
+                position: absolute;
+            }
+        }
+
+        .xp-bar-fill {
+            background-color: $blue;
+            height: 100%;
+        }
+
+        .xp-bar-text {
+            font-size: 30px;
+            font-family: $stylefont;
+            color: white;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+}
+
+CustomizePage {
+    pointer-events: none;
+
+    .right-side {
+        right: 0;
+        bottom: 0;
+        pointer-events: none;
+
+        .button {
+            width: 100%;
+            height: 100%;
+            padding: 10px;
+            background-color: rgba(lightgray, .44);
+            text-transform: uppercase;
+            font-size: 20px;
+            color: black;
+            cursor: pointer;
+
+            &:hover {
+                background-color: lighten( rgba(lightgray, .9), 20% );
+            }
+        }
+    }
+
+    .input-rot {
+        position: absolute;
+        width: 100%;
+        height: 50px;
+        bottom: 12%;
+        justify-content: center;
+        pointer-events: none;
+
+        .input-rot-container {
+            left: 60px;
+            width: 258px;
+            flex-direction: row;
+
+            .input-rot-item {
+                font-size: 42px;
+                font-family: Material Icons;
+            }
+        }
+    }
+
+    .clothingpage-container {
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        padding: 50px;
+        pointer-events: none;
+    }
+
+    .clothing-container {
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        display: flex;
+        flex-wrap: wrap;
+        pointer-events: none;
+    }
+
+    .clothing-skin {
+        flex-direction: row;
+        align-items: center;
+        pointer-events: none;
+    }
+
+    .item {
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        gap: 10px;
+        pointer-events: none;
+
+        .item-title {
+            font-size: 30px;
+            font-family: $stylefont;
+        }
+
+        .skin-items {
+            width: 200px;
+            padding: 10px;
+            display: flex;
+            flex-wrap: wrap;
+            pointer-events: none;
+
+            .skin-item {
+
+
+                .item-image {
+                    width: 28px;
+                    height: 28px;
+                    padding: 10px;
+                    margin: 10px;
+                    background-size: cover;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-color: rebeccapurple;
+                    border: 3px solid black;
+                }
+
+                cursor: pointer;
+                z-index: 100;
+                pointer-events: all;
+
+                &:hover {
+                    background-color: rgba( lightgray, .35 );
+                    sound-in: ui.button.over;
+                }
+
+                &:active {
+                    sound-in: ui.button.press;
+                }
+            }
+        }
+    }
+
+    .clothing-item {
+        width: 200px;
+        height: 150px;
+        background-color: rgba( lightgray, .35 );
+        flex-direction: row;
+        align-content: center;
+        align-items: center;
+        justify-content: center;
+        pointer-events: none;
+
+        .item-name {
+            font-size: 20px;
+            font-family: $stylefont;
+            bottom: 0;
+            position: absolute;
+        }
+
+        .item-image {
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        .arrow {
+            width: 50px;
+            height: 100%;
+            background-image: url("tools/images/common/arrow_right.png");
+            background-size: 30px;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-color: rgba( lightgray, .35 );
+            cursor: pointer;
+            z-index: 100;
+            pointer-events: all;
+
+            &:hover {
+                background-color: rgba( lighten(lightgray, 10%), .8 );
+                sound-in: ui.button.over;
+            }
+
+            &:active {
+                sound-in: ui.button.press;
+            }
+        }
+
+        .left {
+            background-image: url("tools/images/common/arrow_left.png");
+        }
+    }
+}
+
+AchievementsStats {
+    backdrop-filter: blur( 10px );
+    width: 100%;
+    font-family: $stylefont;
+
+    .achievements-container {
+        position: absolute;
+        display: flex;
+        flex-wrap: wrap;
+        right: 0;
+        width: 50%;
+        height: 100%;
+        flex-direction: row;
+        background-color: rgba( $dark-purple, .5 );
+        overflow: scroll;
+    }
+
+    .title {
+        font-size: 30px;
+        font-weight: bold;
+        color: white;
+        text-align: center;
+        position: absolute;
+        width: 100%;
+        background-color: rgba( $dark-purple, .5 );
+    }
+
+    .achievement {
+        display: flex;
+        align-items: center;
+        margin: 60px;
+        width: 100px;
+        flex-direction: column;
+        flex-grow: 0;
+        flex-shrink: 1;
+    }
+
+    .achievement-icon {
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        flex-grow: 1;
+        flex-shrink: 0;
+        background-color: rgba( lightgray, .35 );
+    }
+
+    .achievement-info {
+        top: 100px;
+        flex-grow: 0;
+        flex-shrink: 1;
+        flex-direction: column;
+        width: 100px;
+        height: 100px;
+        background-color: rgba( lightgray, .35 );
+    }
+
+    .achievement-name {
+        font-size: 12px;
+        font-weight: bold;
+    }
+
+    .achievement-description {
+        font-size: 14px;
+        color: #666;
+    }
+
+    .achievement-progress {
+        font-size: 12px;
+        margin-top: 5px;
+    }
+}
