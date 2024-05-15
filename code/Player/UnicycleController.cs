@@ -47,6 +47,7 @@ internal class UnicycleController : Component
 	public float ForwardVelocityTilt => 3f;
 	public float RightVelocityTilt => 1.5f;
 	public int MaxHorizontalSpeed => 800;
+	public float TireRadius => 10f;
 
 	public float CurrentSpeed => Velocity.Length;
 
@@ -174,7 +175,6 @@ internal class UnicycleController : Component
 
 		BaseVelocity = 0;
 
-		CheckGround();
 		CheckPedal();
 		var braking = CheckBrake();
 		CheckJump();
@@ -209,6 +209,8 @@ internal class UnicycleController : Component
 		Velocity += BaseVelocity;
 		Move();
 		Velocity -= BaseVelocity;
+
+		CheckGround();
 
 		if ( Ground != null && !PrevGrounded )
 		{
@@ -354,9 +356,9 @@ internal class UnicycleController : Component
 
 		if ( PrevVelocity.Length > StopSpeed )
 		{
-			var wallTrStart = Position;
+			var wallTrStart = Position + Vector3.Up * 32f;
 			var wallTrEnd = wallTrStart + PrevVelocity * Time.Delta;
-			var tr = TraceBBox( wallTrStart, wallTrEnd, Mins + Vector3.Up * 16, Maxs );
+			var tr = TraceTire( wallTrStart, wallTrEnd );
 
 			if ( tr.Hit && Vector3.GetAngle( tr.Normal, Vector3.Up ) > 85f )
 			{
@@ -388,22 +390,24 @@ internal class UnicycleController : Component
 
 	private void Move()
 	{
+		const float vertOffset = 0.5f;
+
 		var mover = new CharacterControllerHelper();
 		mover.Velocity = Velocity;
-		mover.Position = Position;
-		mover.Trace = Scene.Trace.Size( Mins, Maxs ).WithoutTags( "player" ).IgnoreGameObject(GameObject);
+		mover.Position = Position + Vector3.Up * (TireRadius + vertOffset);
+		mover.Trace = Scene.Trace.Sphere( TireRadius, 0f, 0f ).WithoutTags( "player" ).IgnoreGameObject(GameObject);
 		mover.MaxStandableAngle = 75f;
-		mover.TryMoveWithStep( Time.Delta, 12 );
+		mover.TryMoveWithStep( Time.Delta, TireRadius * 0.5f );
 
-		Position = mover.Position;
+		Position = mover.Position - Vector3.Up * (TireRadius + vertOffset);
 		Velocity = mover.Velocity;
 	}
 
 	private void CheckGround()
 	{
-		var tr = TraceBBox( Position, Position + Vector3.Down * 5f, Mins, Maxs, 3f );
+		var tr = TraceTire( Position + Vector3.Up * 2f, Position + Vector3.Down * 2f );
 
-		if ( !tr.Hit || Vector3.GetAngle( Vector3.Up, tr.Normal ) < 5f && Velocity.z > 140f )
+		if ( !tr.Hit || Vector3.Dot( tr.Normal, Velocity ) > 140f )
 		{
 			if ( Ground != null )
 			{
@@ -421,7 +425,6 @@ internal class UnicycleController : Component
 		{
 			//AddEvent( "land" );
 			Tilt = Rotation.Angles().WithYaw( 0 );
-			Position = Position.WithZ( tr.EndPosition.z );
 			//new FallCameraModifier( -200f );
 
 			if ( !LengthOf( JumpTilt ).AlmostEqual( 0, .1f ) )
@@ -439,7 +442,9 @@ internal class UnicycleController : Component
 			}
 
 		}
+
 		//BaseVelocity = tr.Entity.Velocity;
+		Position = Position.WithZ( tr.EndPosition.z );
 		Ground = tr.GameObject;
 		GroundNormal = tr.Normal;
 		groundSurface = tr.Surface.ResourceName;
@@ -497,7 +502,7 @@ internal class UnicycleController : Component
 		if ( Ground != null ) return true;
 		if ( TimeSinceNotGrounded < .75f ) return true;
 
-		var tr = TraceBBox( Position, Position + Vector3.Down * 75, Mins, Maxs, 5f );
+		var tr = TraceTire( Position, Position + Vector3.Down * 75 );
 
 		if ( !tr.Hit ) return false;
 
@@ -871,23 +876,17 @@ internal class UnicycleController : Component
 		}
 	}
 
-	public SceneTraceResult TraceBBox( Vector3 start, Vector3 end, Vector3 mins, Vector3 maxs, float liftFeet = 0.0f )
+	public SceneTraceResult TraceTire( Vector3 start, Vector3 end )
 	{
-		const float TraceOffset = 0f;
+		var centerOffset = Vector3.Up * TireRadius;
 
-		if ( liftFeet > 0 )
-		{
-			start += Vector3.Up * liftFeet;
-			maxs = maxs.WithZ( maxs.z - liftFeet );
-		}
+		var tr = Scene.Trace.Sphere( TireRadius, start + centerOffset, end + centerOffset )
+			.IgnoreGameObject( GameObject )
+			.WithoutTags( "player" )
+			.Run();
 
-		var tr = Scene.Trace.Ray( start + TraceOffset, end + TraceOffset )
-					.Size( mins, maxs )
-					.IgnoreGameObject( GameObject )
-					.WithoutTags( "player" )
-					.Run();
+		tr.EndPosition -= centerOffset;
 
-		tr.EndPosition -= TraceOffset;
 		return tr;
 	}
 

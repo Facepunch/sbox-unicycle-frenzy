@@ -9,7 +9,7 @@ internal class UnicycleUnstuck : Component
 	{
 		var mins = (Controller as UnicycleController).Mins;
 		var maxs = (Controller as UnicycleController).Maxs;
-		var result = Controller.TraceBBox( Controller.Position, Controller.Position, mins, maxs );
+		var result = Controller.TraceTire( Controller.Position, Controller.Position );
 
 		// Not stuck, we cool
 		if ( !result.StartedSolid )
@@ -30,7 +30,7 @@ internal class UnicycleUnstuck : Component
 				pos = Controller.Position + Vector3.Up * 5;
 			}
 
-			result = Controller.TraceBBox( pos, pos, mins, maxs );
+			result = Controller.TraceTire( pos, pos );
 
 			if ( !result.StartedSolid )
 			{
