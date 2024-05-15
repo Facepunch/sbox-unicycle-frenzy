@@ -117,7 +117,7 @@ internal class CameraController : Component
 		float shakeAmountX = Random.Shared.Float( -1, 1 ) * shakeIntensity;
 		float shakeAmountY = Random.Shared.Float( -1, 1 ) * shakeIntensity;
 		float shakeAmountZ = Random.Shared.Float( -1, 1 ) * shakeIntensity;
-		Transform.Position += new Vector3( shakeAmountX, shakeAmountY, shakeAmountZ );
+		//Transform.Position += new Vector3( shakeAmountX, shakeAmountY, shakeAmountZ );
 
 		FieldOfView = FieldOfView.LerpTo( FieldOfView * shakeIntensity * 2, Time.Delta * 0.5f );
 	}

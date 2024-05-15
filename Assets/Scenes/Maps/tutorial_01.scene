@@ -4894,6 +4894,106 @@
           "ZNear": 10
         }
       ]
+    },
+    {
+      "__guid": "1a2a2845-970f-451f-8f0f-b659d1df6d96",
+      "Flags": 0,
+      "Name": "traffic_cone_tank_trap",
+      "Position": "-2976,779.0256,384.2008",
+      "Rotation": "-0.0000001192093,0.0000000310441,1,0.00000009313229",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "Components": [
+        {
+          "__type": "Sandbox.Prop",
+          "__guid": "20564b88-e6a3-4fcd-8287-36e5816cd53e",
+          "BodyGroups": 18446744073709551615,
+          "Health": 0,
+          "IsStatic": true,
+          "Model": "models/props/traffic_cone_tank_trap/traffic_cone_tank_trap.vmdl"
+        }
+      ]
+    },
+    {
+      "__guid": "6e75b3f6-270c-43f4-a5bb-85f0785fadaf",
+      "Flags": 0,
+      "Name": "traffic_cone_tank_trap (2)",
+      "Position": "-2976,679.6549,384.2008",
+      "Rotation": "-0.00000008771624,0.00000008648962,0.8660254,0.5000001",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "Components": [
+        {
+          "__type": "Sandbox.Prop",
+          "__guid": "ec315b33-682e-4ea5-adae-151e622b9b6e",
+          "BodyGroups": 18446744073709551615,
+          "Health": 0,
+          "IsStatic": true,
+          "Model": "models/props/traffic_cone_tank_trap/traffic_cone_tank_trap.vmdl"
+        }
+      ]
+    },
+    {
+      "__guid": "0da59c25-7920-4086-ad56-ed406a9387ad",
+      "Flags": 0,
+      "Name": "traffic_cone_tank_trap (1)",
+      "Position": "-2432,508.1635,384.2008",
+      "Rotation": "-0.0000001231821,-0.0000000008673382,0.9659258,-0.2588189",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "Components": [
+        {
+          "__type": "Sandbox.Prop",
+          "__guid": "9d4a704d-c83d-42bb-8153-b1117cf4f077",
+          "BodyGroups": 18446744073709551615,
+          "Health": 0,
+          "IsStatic": true,
+          "Model": "models/props/traffic_cone_tank_trap/traffic_cone_tank_trap.vmdl"
+        }
+      ]
+    },
+    {
+      "__guid": "8bb2065b-4b1f-4f99-8a4a-62049c16adc7",
+      "Flags": 0,
+      "Name": "traffic_cone_tank_trap (3)",
+      "Position": "-4104.502,-254.2083,384.2008",
+      "Rotation": "-0.0000000623422,0.0000001062452,0.7071067,0.7071068",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "Components": [
+        {
+          "__type": "Sandbox.Prop",
+          "__guid": "2c32ed98-f73b-45d5-b4eb-ae7f0ed9ddf6",
+          "BodyGroups": 18446744073709551615,
+          "Health": 0,
+          "IsStatic": true,
+          "Model": "models/props/traffic_cone_tank_trap/traffic_cone_tank_trap.vmdl"
+        }
+      ]
+    },
+    {
+      "__guid": "b846938b-9b36-48f7-b2c3-92d6c0af0713",
+      "Flags": 0,
+      "Name": "traffic_cone_tank_trap (4)",
+      "Position": "-3835.866,-254.2083,384.2008",
+      "Rotation": "0.00000001521858,0.0000001222415,0.1305262,0.9914448",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "Components": [
+        {
+          "__type": "Sandbox.Prop",
+          "__guid": "be0fe485-d0a2-4ccd-9753-b4efe7efe574",
+          "BodyGroups": 18446744073709551615,
+          "Health": 0,
+          "IsStatic": true,
+          "Model": "models/props/traffic_cone_tank_trap/traffic_cone_tank_trap.vmdl"
+        }
+      ]
     }
   ],
   "SceneProperties": {
@@ -4919,7 +5019,7 @@
   },
   "Title": "tutorial_01",
   "Description": "",
-  "LastSaved": "2024-05-08T17:20:58.1762134-04:00",
+  "LastSaved": "2024-05-08T17:45:03.4624206-04:00",
   "ResourceVersion": 1,
   "__version": 1,
   "__references": [
