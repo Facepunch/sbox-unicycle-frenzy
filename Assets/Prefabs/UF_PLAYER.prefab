@@ -86,7 +86,39 @@
             "FallSound": "sounds/unicycle/unicycle.crash.default.sound",
             "JumpSound": "sounds/unicycle/unicycle.jump.sound",
             "PedalSound": "sounds/unicycle/unicycle.pedal.sound",
-            "PerfectPedalSound": "sounds/unicycle/unicycle.pedal.perfect.sound"
+            "PerfectPedalSound": "sounds/unicycle/unicycle.pedal.perfect.sound",
+            "SpeedGizmoGradient": {
+              "color": [
+                {
+                  "c": "0,0,0,1"
+                },
+                {
+                  "t": 0.25641027,
+                  "c": "1,0,0,1"
+                },
+                {
+                  "t": 0.52136755,
+                  "c": "1,0.75349,0.01395,1"
+                },
+                {
+                  "t": 0.767094,
+                  "c": "1,1,1,1"
+                },
+                {
+                  "t": 1,
+                  "c": "0,0.3,1,1"
+                }
+              ],
+              "alpha": [
+                {
+                  "a": 1
+                },
+                {
+                  "t": 1,
+                  "a": 1
+                }
+              ]
+            }
           },
           {
             "__type": "PlayerAnimator",
