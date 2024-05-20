@@ -22,6 +22,9 @@ internal class UnicycleController : Component
 	[Property]
 	public SoundEvent JumpSound { get; set; }
 
+	[Property]
+	public Gradient SpeedGizmoGradient { get; set; }
+
 	public float PedalTime => .45f;
 	public float PedalResetAfter => 1.5f;
 	public float PedalResetTime => .55f;
@@ -70,6 +73,7 @@ internal class UnicycleController : Component
 		get => Transform.Position;
 		set => Transform.Position = value;
 	}
+
 	public Rotation Rotation
 	{
 		get => Transform.Rotation;
@@ -89,6 +93,10 @@ internal class UnicycleController : Component
 	public float PedalPosition { get; private set; }
 	public float TimeSinceJumpDown { get; private set; }
 	public Rotation TargetForward { get; private set; }
+
+	private record struct MoveHistory( float Time, Vector3 Position, Vector3? GroundPos, Vector3? GroundNormal );
+
+	private readonly List<MoveHistory> _moveHistory = new();
 
 	private string groundSurface;
 	Vector3 GroundNormal;
@@ -342,6 +350,8 @@ internal class UnicycleController : Component
 			TargetForward = fwd;
 			CameraController.ViewAngles = fwd;
 		}
+
+		_moveHistory.Clear();
 	}
 
 	private bool ShouldFall()
@@ -406,6 +416,10 @@ internal class UnicycleController : Component
 	private void CheckGround()
 	{
 		var tr = TraceTire( Position + Vector3.Up * 2f, Position + Vector3.Down * 2f );
+
+		_moveHistory.Add( tr.Hit
+			? new MoveHistory( Time.Now, Position, tr.EndPosition, tr.Normal )
+			: new MoveHistory( Time.Now, Position, null, null ) );
 
 		if ( !tr.Hit || Vector3.Dot( tr.Normal, Velocity ) > 140f )
 		{
@@ -952,6 +966,59 @@ internal class UnicycleController : Component
 		return vec.Length;
 	}
 
-	
+	protected override void DrawGizmos()
+	{
+		if ( _moveHistory.Count == 0 )
+		{
+			return;
+		}
 
+		using var scope = Gizmo.Scope( "Move History" );
+
+		Gizmo.Transform = global::Transform.Zero;
+
+		Gizmo.Draw.LineSphere( Position + Vector3.Up * TireRadius, TireRadius );
+		
+		{
+			var prev = _moveHistory[0];
+
+			foreach ( var next in _moveHistory )
+			{
+				using var tScope = Gizmo.Scope();
+
+				var speed = (next.Position - prev.Position).Length / (next.Time - prev.Time);
+
+				if ( Gizmo.IsHovered )
+				{
+					var tr = TraceTire( next.Position, next.Position + Vector3.Down * 5f );
+
+					Gizmo.Draw.LineSphere( next.Position + Vector3.Up * TireRadius, TireRadius );
+					Gizmo.Draw.Text( $"{speed:F1}u/s", new Transform( next.Position + Vector3.Up * 32f ) );
+
+					if ( tr.Hit )
+					{
+						Gizmo.Draw.LineSphere( tr.HitPosition + Vector3.Up * TireRadius, TireRadius );
+					}
+				}
+
+				using var lScope = Gizmo.Hitbox.LineScope();
+
+				var color = SpeedGizmoGradient.Evaluate( Math.Clamp( speed / 1000f, 0f, 1f ) );
+
+				Gizmo.Draw.Color = color;
+				Gizmo.Draw.Line( prev.Position, next.Position );
+
+				prev = next;
+			}
+		}
+
+		foreach ( var next in _moveHistory )
+		{
+			if ( next.GroundNormal is { } normal )
+			{
+				Gizmo.Draw.Color = new Color( normal.x * 0.5f + 0.5f, normal.y * 0.5f + 0.5f, normal.z * 0.5f + 0.5f );
+				Gizmo.Draw.Line( next.Position, next.Position + normal * 4f );
+			}
+		}
+	}
 }
