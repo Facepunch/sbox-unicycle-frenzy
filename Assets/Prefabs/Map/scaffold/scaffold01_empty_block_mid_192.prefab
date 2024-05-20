@@ -1,0 +1,61 @@
+{
+  "RootObject": {
+    "__guid": "a2c30754-7ef5-4726-bd3e-99ed83e6b127",
+    "Flags": 0,
+    "Name": "scaffold01_empty_block_mid_192",
+    "Enabled": true,
+    "NetworkMode": 2,
+    "NetworkInterpolation": true,
+    "Children": [
+      {
+        "__guid": "c322d2a4-4894-4240-b2e0-c946423a2927",
+        "Flags": 0,
+        "Name": "scaffold01_empty_block_mid_192",
+        "Position": "-96,0,0",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "NetworkInterpolation": true,
+        "__Prefab": "prefabs/map/scaffold/scaffold01_empty_wallsection_mid_192x192.prefab"
+      },
+      {
+        "__guid": "d5808a06-9eae-4b3d-a0bf-72b231b880dd",
+        "Flags": 0,
+        "Name": "scaffold01_empty_block_mid_192 (2)",
+        "Position": "95.99998,0,0",
+        "Rotation": "0,0,1,0.0000001947072",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "NetworkInterpolation": true,
+        "__Prefab": "prefabs/map/scaffold/scaffold01_empty_wallsection_mid_192x192.prefab"
+      },
+      {
+        "__guid": "a2d64bc7-1736-4f2f-9be4-49350a7ec40a",
+        "Flags": 0,
+        "Name": "scaffold01_empty_block_mid_192 (1)",
+        "Position": "0,-96,0",
+        "Rotation": "0,0,0.7071067,0.7071068",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "NetworkInterpolation": true,
+        "__Prefab": "prefabs/map/scaffold/scaffold01_empty_wallsection_mid_192x192.prefab"
+      },
+      {
+        "__guid": "644e5784-ddfa-420f-93d4-57b483460b9a",
+        "Flags": 0,
+        "Name": "scaffold01_empty_block_mid_192 (3)",
+        "Position": "0.00001525879,96,0",
+        "Rotation": "0,0,0.7071069,-0.7071066",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "NetworkInterpolation": true,
+        "__Prefab": "prefabs/map/scaffold/scaffold01_empty_wallsection_mid_192x192.prefab"
+      }
+    ]
+  },
+  "ShowInMenu": false,
+  "MenuPath": null,
+  "MenuIcon": null,
+  "ResourceVersion": 1,
+  "__references": [],
+  "__version": 1
+}

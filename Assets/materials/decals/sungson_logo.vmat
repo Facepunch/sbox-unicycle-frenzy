@@ -8,7 +8,7 @@ Layer0
 	TextureAmbientOcclusion "materials/default/default_ao.tga"
 
 	//---- Color ----
-	TextureColor "textures/decals/sungson_tv_logo.png"
+	TextureColor "materials/decals/sungson_tv_logo.png"
 
 	//---- Fog ----
 	g_bFogEnabled "1"

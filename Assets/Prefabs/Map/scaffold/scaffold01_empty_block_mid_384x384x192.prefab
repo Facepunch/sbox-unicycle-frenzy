@@ -1,0 +1,61 @@
+{
+  "RootObject": {
+    "__guid": "a2c30754-7ef5-4726-bd3e-99ed83e6b127",
+    "Flags": 0,
+    "Name": "scaffold01_empty_block_mid_384x384x192",
+    "Enabled": true,
+    "NetworkMode": 2,
+    "NetworkInterpolation": true,
+    "Children": [
+      {
+        "__guid": "11926953-520a-4935-9f05-422f78b0098d",
+        "Flags": 0,
+        "Name": "scaffold01_wallsection_mid_384x192",
+        "Position": "-192,0,0",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "NetworkInterpolation": true,
+        "__Prefab": "prefabs/map/scaffold/scaffold01_empty_wallsection_mid_384x192.prefab"
+      },
+      {
+        "__guid": "0b48d41c-1663-4e37-89cb-bb0c887866e8",
+        "Flags": 0,
+        "Name": "scaffold01_wallsection_mid_384x192 (2)",
+        "Position": "-0.00003433228,-192,0",
+        "Rotation": "0,0,0.7071067,0.7071068",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "NetworkInterpolation": true,
+        "__Prefab": "prefabs/map/scaffold/scaffold01_empty_wallsection_mid_384x192.prefab"
+      },
+      {
+        "__guid": "b1262d54-c90b-44e7-b79e-b881df46337e",
+        "Flags": 0,
+        "Name": "scaffold01_wallsection_mid_384x192 (1)",
+        "Position": "192,0,0",
+        "Rotation": "0,0,1,0.0000001947072",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "NetworkInterpolation": true,
+        "__Prefab": "prefabs/map/scaffold/scaffold01_empty_wallsection_mid_384x192.prefab"
+      },
+      {
+        "__guid": "404babc9-1181-4110-892a-f571694ce0f3",
+        "Flags": 0,
+        "Name": "scaffold01_wallsection_mid_384x192 (3)",
+        "Position": "0.00003433228,192,0",
+        "Rotation": "0,0,0.7071069,-0.7071066",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "NetworkInterpolation": true,
+        "__Prefab": "prefabs/map/scaffold/scaffold01_empty_wallsection_mid_384x192.prefab"
+      }
+    ]
+  },
+  "ShowInMenu": false,
+  "MenuPath": null,
+  "MenuIcon": null,
+  "ResourceVersion": 1,
+  "__references": [],
+  "__version": 1
+}

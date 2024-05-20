@@ -1,0 +1,146 @@
+{
+  "RootObject": {
+    "__guid": "1a7fc311-d48d-432e-aa8e-d36beb8d0c0c",
+    "Flags": 0,
+    "Name": "scaffold01_tarp_block_mid_384",
+    "Enabled": true,
+    "NetworkMode": 2,
+    "NetworkInterpolation": true,
+    "Children": [
+      {
+        "__guid": "58750e0b-6c17-4b56-a951-e8f001323122",
+        "Flags": 0,
+        "Name": "scaffiller_tarp_wall_mid_384x384",
+        "Position": "192,0,0",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "NetworkInterpolation": true,
+        "Components": [
+          {
+            "__type": "Sandbox.Prop",
+            "__guid": "ea126998-62e2-451b-ba6d-d2b194452612",
+            "BodyGroups": 18446744073709551615,
+            "Health": 0,
+            "IsStatic": true,
+            "Model": "models/scaffolding/scaffold_filler/scaffiller_tarp_wall_mid_384x384.vmdl"
+          }
+        ]
+      },
+      {
+        "__guid": "9f5c3456-7965-4de3-ab53-3803e64aa3d9",
+        "Flags": 0,
+        "Name": "scaffiller_tarp_wall_mid_384x384 (3)",
+        "Position": "0.00003433228,-192,0",
+        "Rotation": "0,0,-0.7071067,0.7071068",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "NetworkInterpolation": true,
+        "Components": [
+          {
+            "__type": "Sandbox.Prop",
+            "__guid": "bbae0cc6-8eba-4386-ac18-aa5106672020",
+            "BodyGroups": 18446744073709551615,
+            "Health": 0,
+            "IsStatic": true,
+            "Model": "models/scaffolding/scaffold_filler/scaffiller_tarp_wall_mid_384x384.vmdl"
+          }
+        ]
+      },
+      {
+        "__guid": "2b34f8e5-8ce0-4c13-90fc-ee5e9f738d42",
+        "Flags": 0,
+        "Name": "scaffiller_tarp_wall_mid_384x384 (5)",
+        "Position": "0.00003433228,-0.00003433228,-192",
+        "Rotation": "0.5,0.4999999,-0.5,0.5000001",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "NetworkInterpolation": true,
+        "Components": [
+          {
+            "__type": "Sandbox.Prop",
+            "__guid": "0bffa39d-95a9-46f4-a813-224f05ed117d",
+            "BodyGroups": 18446744073709551615,
+            "Health": 0,
+            "IsStatic": true,
+            "Model": "models/scaffolding/scaffold_filler/scaffiller_tarp_wall_mid_384x384.vmdl"
+          }
+        ]
+      },
+      {
+        "__guid": "7a5e43f8-6206-4c00-91e3-2a83877b075c",
+        "Flags": 0,
+        "Name": "scaffiller_tarp_wall_mid_384x384 (1)",
+        "Position": "-192,0,0",
+        "Rotation": "0,0,-1,0.0000001947072",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "NetworkInterpolation": true,
+        "Components": [
+          {
+            "__type": "Sandbox.Prop",
+            "__guid": "c3e87159-71d0-4a9e-a92d-3e099c8a08f1",
+            "BodyGroups": 18446744073709551615,
+            "Health": 0,
+            "IsStatic": true,
+            "Model": "models/scaffolding/scaffold_filler/scaffiller_tarp_wall_mid_384x384.vmdl"
+          }
+        ]
+      },
+      {
+        "__guid": "dad20075-19cc-4ee9-92d7-04245700a38f",
+        "Flags": 0,
+        "Name": "scaffiller_tarp_wall_mid_384x384 (2)",
+        "Position": "-0.00003433228,192,0",
+        "Rotation": "0,0,-0.7071069,-0.7071066",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "NetworkInterpolation": true,
+        "Components": [
+          {
+            "__type": "Sandbox.Prop",
+            "__guid": "6011b921-fef6-412f-865f-7ed17e2dc6b5",
+            "BodyGroups": 18446744073709551615,
+            "Health": 0,
+            "IsStatic": true,
+            "Model": "models/scaffolding/scaffold_filler/scaffiller_tarp_wall_mid_384x384.vmdl"
+          }
+        ]
+      },
+      {
+        "__guid": "44b74c8e-60a5-44bc-b837-b1682bd8821e",
+        "Flags": 0,
+        "Name": "scaffiller_tarp_wall_mid_384x384 (4)",
+        "Position": "-0.00003433228,0.00003433228,192",
+        "Rotation": "-0.4999998,0.5,-0.5000001,-0.4999999",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "NetworkInterpolation": true,
+        "Components": [
+          {
+            "__type": "Sandbox.Prop",
+            "__guid": "1bd2cb25-7c4a-4bc0-89b2-70673eaa2142",
+            "BodyGroups": 18446744073709551615,
+            "Health": 0,
+            "IsStatic": true,
+            "Model": "models/scaffolding/scaffold_filler/scaffiller_tarp_wall_mid_384x384.vmdl"
+          }
+        ]
+      },
+      {
+        "__guid": "d2b93915-c635-41a3-a9ea-4622fb27eed7",
+        "Flags": 0,
+        "Name": "scaffold01_empty_block_mid_384",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "NetworkInterpolation": true,
+        "__Prefab": "prefabs/map/scaffold/scaffold01_empty_block_mid_384.prefab"
+      }
+    ]
+  },
+  "ShowInMenu": false,
+  "MenuPath": null,
+  "MenuIcon": null,
+  "ResourceVersion": 1,
+  "__references": [],
+  "__version": 1
+}

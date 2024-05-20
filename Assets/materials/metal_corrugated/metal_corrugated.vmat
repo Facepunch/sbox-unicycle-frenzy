@@ -1,0 +1,14 @@
+
+Layer0
+{
+	shader "shaders/complex.shader_c"
+
+	TextureColor "materials/metal_corrugated/tcom_metal_corrugated_2k_albedo.tif"
+	TextureAmbientOcclusion "materials/metal_corrugated/tcom_metal_corrugated_2k_ao.tif"
+	TextureNormal "materials/metal_corrugated/tcom_metal_corrugated_2k_normal.tif"
+	TextureRoughness "materials/metal_corrugated/tcom_metal_corrugated_2k_roughness.tif"
+	F_METALNESS_TEXTURE 1
+	F_SPECULAR 1
+	TextureMetalness "materials/metal_corrugated/tcom_metal_corrugated_2k_metallic.tif"
+
+}

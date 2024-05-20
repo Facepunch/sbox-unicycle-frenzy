@@ -8,7 +8,7 @@ Layer0
 	TextureAmbientOcclusion "materials/default/default_ao.tga"
 
 	//---- Color ----
-	TextureColor "textures/decals/bubble_logo.png"
+	TextureColor "materials/decals/bubble_logo.png"
 
 	//---- Fog ----
 	g_bFogEnabled "1"

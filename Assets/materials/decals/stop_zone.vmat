@@ -8,7 +8,7 @@ Layer0
 	TextureAmbientOcclusion "materials/default/default_ao.tga"
 
 	//---- Color ----
-	TextureColor "textures/decals/stop_zone.png"
+	TextureColor "materials/decals/stop_zone.png"
 
 	//---- Fog ----
 	g_bFogEnabled "1"

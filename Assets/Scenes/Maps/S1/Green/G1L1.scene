@@ -3,6 +3,7 @@
   "GameObjects": [
     {
       "__guid": "8ecb20fc-71e3-4078-82d3-6c80de61d1c0",
+      "Flags": 0,
       "Name": "Map Settings",
       "Position": "64,0.000002447457,256",
       "Enabled": true,
@@ -25,6 +26,7 @@
     },
     {
       "__guid": "10e605d5-c85a-42ac-bc64-572833cd10a3",
+      "Flags": 0,
       "Name": "Sky",
       "Position": "446.0449,-704.0881,359.334",
       "Tags": "skybox",
@@ -42,6 +44,7 @@
     },
     {
       "__guid": "8c9933fe-a1d4-40fe-b5a8-189adcc26079",
+      "Flags": 0,
       "Name": "End Zone",
       "Position": "-256,1152,128",
       "Rotation": "0,0,1,0.0000001947072",
@@ -52,6 +55,7 @@
     },
     {
       "__guid": "d6215e2a-5481-4089-9d22-a8e61a066619",
+      "Flags": 0,
       "Name": "Start Zone",
       "Position": "512,0,0.00003539117",
       "Enabled": true,
@@ -61,6 +65,7 @@
     },
     {
       "__guid": "ec668df0-60d4-4103-897d-c7a31436064f",
+      "Flags": 0,
       "Name": "CheckPoint Zone",
       "Position": "1536,-576,-0.0001296381",
       "Rotation": "0,0,0.7071069,-0.7071066",
@@ -71,6 +76,7 @@
     },
     {
       "__guid": "35086feb-1893-4a9d-af4c-aa9429c998a6",
+      "Flags": 0,
       "Name": "CheckPoint Zone (1)",
       "Position": "-640,0,-0.00001489244",
       "Rotation": "0,0,0.0000002980232,-0.9999999",
@@ -81,6 +87,7 @@
     },
     {
       "__guid": "0f877def-3e64-4ed0-a01b-e2717695cdb6",
+      "Flags": 0,
       "Name": "Sun",
       "Position": "-279.3411,-92.84686,402.4899",
       "Rotation": "-0.1697551,0.4098251,0.342972,0.8280077",
@@ -101,204 +108,8 @@
       ]
     },
     {
-      "__guid": "96475a7c-0633-4d2a-9d3d-399a6926d205",
-      "Name": "wood_32x32",
-      "Position": "384,-0,0",
-      "Tags": "gridtile",
-      "Enabled": true,
-      "NetworkMode": 2,
-      "NetworkInterpolation": true,
-      "Components": [
-        {
-          "__type": "Sandbox.Prop",
-          "__guid": "cfe423f9-18a0-4622-872a-6b03cd78874d",
-          "BodyGroups": 18446744073709551615,
-          "Health": 0,
-          "IsStatic": true,
-          "Model": "models/track_tileset_pieces/wood/wood_32x32.vmdl"
-        }
-      ]
-    },
-    {
-      "__guid": "0ef9ffde-e79d-45f2-91c4-8b0ced24ab04",
-      "Name": "wood_32x32",
-      "Position": "768,-0,0",
-      "Tags": "gridtile",
-      "Enabled": true,
-      "NetworkMode": 2,
-      "NetworkInterpolation": true,
-      "Components": [
-        {
-          "__type": "Sandbox.Prop",
-          "__guid": "e2d65139-a27c-44e3-a85e-e3c4db523987",
-          "BodyGroups": 18446744073709551615,
-          "Health": 0,
-          "IsStatic": true,
-          "Model": "models/track_tileset_pieces/wood/wood_32x32.vmdl"
-        }
-      ]
-    },
-    {
-      "__guid": "2a5e6a49-7fa4-4bc7-94ab-aedc5ebb131c",
-      "Name": "wood_turn_right_32x64",
-      "Position": "1536,-0,0",
-      "Tags": "gridtile",
-      "Enabled": true,
-      "NetworkMode": 2,
-      "NetworkInterpolation": true,
-      "Components": [
-        {
-          "__type": "Sandbox.Prop",
-          "__guid": "d27f5b6a-38c3-475b-9c85-cd47fff7ec8c",
-          "BodyGroups": 18446744073709551615,
-          "Health": 0,
-          "IsStatic": true,
-          "Model": "models/track_tileset_pieces/wood/wood_turn_right_32x64.vmdl"
-        }
-      ]
-    },
-    {
-      "__guid": "51628114-99ac-47ab-a896-26a1a6790661",
-      "Name": "wood_turn_right_32x64",
-      "Position": "1536,-1152,0",
-      "Rotation": "0.00000005960464,0.00000005960464,-0.7071068,0.7071068",
-      "Tags": "gridtile",
-      "Enabled": true,
-      "NetworkMode": 2,
-      "NetworkInterpolation": true,
-      "Components": [
-        {
-          "__type": "Sandbox.Prop",
-          "__guid": "0f9c1943-a7be-46b2-ab70-2afbe3efda5b",
-          "BodyGroups": 18446744073709551615,
-          "Health": 0,
-          "IsStatic": true,
-          "Model": "models/track_tileset_pieces/wood/wood_turn_right_32x64.vmdl"
-        }
-      ]
-    },
-    {
-      "__guid": "0caeaf94-1474-4237-b85b-d4dacfd36f52",
-      "Name": "wood_32x32",
-      "Position": "768,-1152,0",
-      "Rotation": "0.00000005960464,0.00000005960464,-0.7071068,0.7071068",
-      "Tags": "gridtile",
-      "Enabled": true,
-      "NetworkMode": 2,
-      "NetworkInterpolation": true,
-      "Components": [
-        {
-          "__type": "Sandbox.Prop",
-          "__guid": "070a421f-24f8-44f3-97f9-d355e7860a93",
-          "BodyGroups": 18446744073709551615,
-          "Health": 0,
-          "IsStatic": true,
-          "Model": "models/track_tileset_pieces/wood/wood_32x32.vmdl"
-        }
-      ]
-    },
-    {
-      "__guid": "4b54f2e2-2afa-4691-9958-0505c5108a16",
-      "Name": "wood_32x32",
-      "Position": "0,-1152,0",
-      "Rotation": "0.00000005960464,0.00000005960464,-0.7071068,0.7071068",
-      "Tags": "gridtile",
-      "Enabled": true,
-      "NetworkMode": 2,
-      "NetworkInterpolation": true,
-      "Components": [
-        {
-          "__type": "Sandbox.Prop",
-          "__guid": "2b3c2882-710c-4d3e-98bb-65e0610e67b2",
-          "BodyGroups": 18446744073709551615,
-          "Health": 0,
-          "IsStatic": true,
-          "Model": "models/track_tileset_pieces/wood/wood_32x32.vmdl"
-        }
-      ]
-    },
-    {
-      "__guid": "76e6883d-c988-4dec-aaf9-d9b69feb12ed",
-      "Name": "wood_32x32",
-      "Position": "-384,-1152,0",
-      "Rotation": "0.00000005960464,0.00000005960464,-0.7071068,0.7071068",
-      "Tags": "gridtile",
-      "Enabled": true,
-      "NetworkMode": 2,
-      "NetworkInterpolation": true,
-      "Components": [
-        {
-          "__type": "Sandbox.Prop",
-          "__guid": "593b6916-ddaf-42c8-a20f-a7e777d83aa8",
-          "BodyGroups": 18446744073709551615,
-          "Health": 0,
-          "IsStatic": true,
-          "Model": "models/track_tileset_pieces/wood/wood_32x32.vmdl"
-        }
-      ]
-    },
-    {
-      "__guid": "1366b7a2-d595-4a0f-bfbd-0f8953813d6f",
-      "Name": "wood_32x32",
-      "Position": "-384,0,-0.0001220703",
-      "Rotation": "0.00000005960464,0.00000005960464,-0.7071068,0.7071068",
-      "Tags": "gridtile",
-      "Enabled": true,
-      "NetworkMode": 2,
-      "NetworkInterpolation": true,
-      "Components": [
-        {
-          "__type": "Sandbox.Prop",
-          "__guid": "83010acc-c8a2-44a3-80f6-e169258ebcf6",
-          "BodyGroups": 18446744073709551615,
-          "Health": 0,
-          "IsStatic": true,
-          "Model": "models/track_tileset_pieces/wood/wood_32x32.vmdl"
-        }
-      ]
-    },
-    {
-      "__guid": "e51a9925-a0d2-45b4-9709-c6b26e4b222d",
-      "Name": "wood_turn_right_32x64_walls_both",
-      "Position": "-1152,-0,-0.0001220703",
-      "Rotation": "-0.00000002980232,0.00000002980232,0.7071067,0.7071067",
-      "Tags": "gridtile",
-      "Enabled": true,
-      "NetworkMode": 2,
-      "NetworkInterpolation": true,
-      "Components": [
-        {
-          "__type": "Sandbox.Prop",
-          "__guid": "45b27e46-86e7-40ae-bd08-86c3fc9b18b6",
-          "BodyGroups": 18446744073709551615,
-          "Health": 0,
-          "IsStatic": true,
-          "Model": "models/track_tileset_pieces/wood/wood_turn_right_32x64_walls_both.vmdl"
-        }
-      ]
-    },
-    {
-      "__guid": "2ae44900-6eef-4b06-ac00-fd8ba5d6410d",
-      "Name": "wood_turn_right_32x64_walls_both",
-      "Position": "-1152,-1152,0",
-      "Rotation": "0,0.00000004371139,-0.9999999,0",
-      "Tags": "gridtile",
-      "Enabled": true,
-      "NetworkMode": 2,
-      "NetworkInterpolation": true,
-      "Components": [
-        {
-          "__type": "Sandbox.Prop",
-          "__guid": "14c0c603-f115-46f0-8f29-704297966aa6",
-          "BodyGroups": 18446744073709551615,
-          "Health": 0,
-          "IsStatic": true,
-          "Model": "models/track_tileset_pieces/wood/wood_turn_right_32x64_walls_both.vmdl"
-        }
-      ]
-    },
-    {
       "__guid": "c302b763-c89a-4666-a94d-ca2c7a649fbb",
+      "Flags": 0,
       "Name": "wood_angle_up_steep_32x32",
       "Position": "512,-1152,0",
       "Rotation": "0,0.00000004371139,-0.9999999,0",
@@ -313,31 +124,13 @@
           "BodyGroups": 18446744073709551615,
           "Health": 0,
           "IsStatic": true,
-          "Model": "models/track_tileset_pieces/wood/wood_angle_steep_32x32.vmdl"
-        }
-      ]
-    },
-    {
-      "__guid": "4dcbfff7-3e6a-4e7b-aa24-dfac9187a226",
-      "Name": "wood_angle_up_steep_32x32",
-      "Position": "-128,0,-0.0001220703",
-      "Tags": "gridtile",
-      "Enabled": true,
-      "NetworkMode": 2,
-      "NetworkInterpolation": true,
-      "Components": [
-        {
-          "__type": "Sandbox.Prop",
-          "__guid": "dd7fb931-51fc-4e6b-8f81-ed8f26d62fe5",
-          "BodyGroups": 18446744073709551615,
-          "Health": 0,
-          "IsStatic": true,
-          "Model": "models/track_tileset_pieces/wood/wood_angle_steep_32x32.vmdl"
+          "Model": "models/dev/error.vmdl"
         }
       ]
     },
     {
       "__guid": "758e2629-abe1-4156-98c7-58e44a81bd7a",
+      "Flags": 0,
       "Name": "wood_turn_right_32x64",
       "Position": "512,-0,128",
       "Rotation": "0,0,-0.7071067,0.7071067",
@@ -352,12 +145,13 @@
           "BodyGroups": 18446744073709551615,
           "Health": 0,
           "IsStatic": true,
-          "Model": "models/track_tileset_pieces/wood/wood_turn_right_32x64.vmdl"
+          "Model": "models/dev/error.vmdl"
         }
       ]
     },
     {
       "__guid": "22afb636-75ae-4d1e-943f-7936f749b0d6",
+      "Flags": 0,
       "Name": "wood_turn_left_32x64_walls_both",
       "Position": "512,1152,128",
       "Rotation": "-0.00000002980232,0.00000002980232,0.7071067,0.7071067",
@@ -372,12 +166,13 @@
           "BodyGroups": 18446744073709551615,
           "Health": 0,
           "IsStatic": true,
-          "Model": "models/track_tileset_pieces/wood/wood_turn_left_32x64_walls_both.vmdl"
+          "Model": "models/dev/error.vmdl"
         }
       ]
     },
     {
       "__guid": "409942c9-8583-47df-adbf-17a899b7a22c",
+      "Flags": 0,
       "Name": "wood_32x32_walls_both",
       "Position": "-256,1152,128",
       "Rotation": "0,0.00000004371139,-0.9999999,0",
@@ -392,12 +187,13 @@
           "BodyGroups": 18446744073709551615,
           "Health": 0,
           "IsStatic": true,
-          "Model": "models/track_tileset_pieces/wood/wood_32x32_walls_both.vmdl"
+          "Model": "models/dev/error.vmdl"
         }
       ]
     },
     {
       "__guid": "5d33a4e0-96a0-49d0-a3a0-1334b9138bf6",
+      "Flags": 0,
       "Name": "blockin_straight32x32_wall_sides",
       "Position": "-640,1152,192",
       "Rotation": "0,0,0.7071067,0.7071068",
@@ -417,6 +213,7 @@
     },
     {
       "__guid": "2990c0f2-f2bf-4b74-a7e0-4eb97cb37f21",
+      "Flags": 0,
       "Name": "Object",
       "Position": "253.9417,-619.0142,-128",
       "Enabled": true,
@@ -443,6 +240,7 @@
     },
     {
       "__guid": "5f60f26d-a41a-47ac-865f-d8603dee5c2f",
+      "Flags": 0,
       "Name": "Object",
       "Position": "1024,-1152,0",
       "Rotation": "0,0,1,0.0000001947072",
@@ -463,6 +261,7 @@
       "Children": [
         {
           "__guid": "4143c1de-8e0e-4ec3-b469-04a5008c0aab",
+          "Flags": 0,
           "Name": "Cube",
           "Position": "0,0,0",
           "Scale": "3,3,0.2",
@@ -493,6 +292,7 @@
     },
     {
       "__guid": "f03c5bf0-f8d0-43cb-a237-7e21137f2faf",
+      "Flags": 0,
       "Name": "scaffold_foot_32x32",
       "Position": "128,-1152,0",
       "Tags": "gridtile",
@@ -506,12 +306,13 @@
           "BodyGroups": 18446744073709551615,
           "Health": 0,
           "IsStatic": true,
-          "Model": "models/track_tileset_pieces/scaffold/scaffold_foot_32x32.vmdl"
+          "Model": "models/dev/error.vmdl"
         }
       ]
     },
     {
       "__guid": "9e1c8a68-e013-42ae-a9b5-29a889775890",
+      "Flags": 0,
       "Name": "scaffold_foot_angle_steep_32x32",
       "Position": "512,-1152,0",
       "Rotation": "0,0.00000004371139,-0.9999999,0",
@@ -526,12 +327,13 @@
           "BodyGroups": 18446744073709551615,
           "Health": 0,
           "IsStatic": true,
-          "Model": "models/track_tileset_pieces/scaffold/scaffold_foot_angle_steep_32x32.vmdl"
+          "Model": "models/dev/error.vmdl"
         }
       ]
     },
     {
       "__guid": "83923e76-4f60-4136-9119-3a1b2e33aa54",
+      "Flags": 0,
       "Name": "scaffold_mid_cap_32x32",
       "Position": "512,-1152,0",
       "Rotation": "0,0.00000004371139,-0.9999999,0",
@@ -546,12 +348,13 @@
           "BodyGroups": 18446744073709551615,
           "Health": 0,
           "IsStatic": true,
-          "Model": "models/track_tileset_pieces/scaffold/scaffold_mid_cap_32x32.vmdl"
+          "Model": "models/dev/error.vmdl"
         }
       ]
     },
     {
       "__guid": "d0aadb91-d145-49ef-b129-45d169609a8f",
+      "Flags": 0,
       "Name": "Object",
       "Position": "109.3552,-202.003,320",
       "Enabled": true,
@@ -580,6 +383,7 @@
     },
     {
       "__guid": "2b272914-2ea4-4725-a0ca-f000adf62f12",
+      "Flags": 0,
       "Name": "Frenzy - F",
       "Position": "1216,-64,64.00002",
       "Enabled": true,
@@ -589,6 +393,7 @@
     },
     {
       "__guid": "ce431fbf-0d65-4164-a254-3365048a2154",
+      "Flags": 0,
       "Name": "Frenzy - R",
       "Position": "1280,-1024,64",
       "Enabled": true,
@@ -598,6 +403,7 @@
     },
     {
       "__guid": "6328ad5a-a19f-48fa-a952-04e9cc76020e",
+      "Flags": 0,
       "Name": "Frenzy - E",
       "Position": "128,-1152,320",
       "Enabled": true,
@@ -607,6 +413,7 @@
     },
     {
       "__guid": "fc0d7386-6187-4d79-b9f2-83a0dd8ab356",
+      "Flags": 0,
       "Name": "Frenzy - N",
       "Position": "-384,-1152,63.99955",
       "Enabled": true,
@@ -616,6 +423,7 @@
     },
     {
       "__guid": "3713459b-0e62-4004-a6ec-c0de34175d03",
+      "Flags": 0,
       "Name": "Frenzy - Z",
       "Position": "-1152,-576,64.00008",
       "Enabled": true,
@@ -625,6 +433,7 @@
     },
     {
       "__guid": "728d0839-b79f-4b36-9006-35b9581807fd",
+      "Flags": 0,
       "Name": "Frenzy - Y",
       "Position": "128,64,192",
       "Enabled": true,
@@ -634,12 +443,130 @@
     },
     {
       "__guid": "8d712849-11ff-4056-8634-f04d463c372e",
+      "Flags": 0,
       "Name": "PlayerSpawner",
       "Position": "684.2797,150.73,818.4615",
       "Enabled": true,
       "NetworkMode": 2,
       "NetworkInterpolation": true,
       "__Prefab": "prefabs/uf_playerspawner.prefab"
+    },
+    {
+      "__guid": "65e57f3c-e9a1-4f2d-a2d5-57b8847ca625",
+      "Flags": 0,
+      "Name": "std_plywood_straight_384",
+      "Position": "384,0,0",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "__Prefab": "prefabs/map/track_pieces/standard/std_plywood_straight_384.prefab"
+    },
+    {
+      "__guid": "e9a25f54-982b-40cf-91a2-aff235141673",
+      "Flags": 0,
+      "Name": "std_plywood_straight_384 (1)",
+      "Position": "768,0,0",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "__Prefab": "prefabs/map/track_pieces/standard/std_plywood_straight_384.prefab"
+    },
+    {
+      "__guid": "4f42cb09-58c7-42f4-afbb-5dd43b4fba1d",
+      "Flags": 0,
+      "Name": "std_plywood_straight_384 (2)",
+      "Position": "768,-1152,0",
+      "Rotation": "0,0,-1,0.0000001947072",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "__Prefab": "prefabs/map/track_pieces/standard/std_plywood_straight_384.prefab"
+    },
+    {
+      "__guid": "6b80e0a7-4720-4d4c-9300-fc1929895157",
+      "Flags": 0,
+      "Name": "std_plywood_straight_384 (3)",
+      "Position": "0,-1152,0",
+      "Rotation": "0,0,-1,0.0000001947072",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "__Prefab": "prefabs/map/track_pieces/standard/std_plywood_straight_384.prefab"
+    },
+    {
+      "__guid": "75895e56-8d92-4504-998b-406bc44d07e4",
+      "Flags": 0,
+      "Name": "std_plywood_straight_384 (4)",
+      "Position": "-384,-1152,0",
+      "Rotation": "0,0,-1,0.0000001947072",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "__Prefab": "prefabs/map/track_pieces/standard/std_plywood_straight_384.prefab"
+    },
+    {
+      "__guid": "d06c95be-e0b6-4ffa-b3a7-439b0912fb10",
+      "Flags": 0,
+      "Name": "std_plywood_straight_384 (5)",
+      "Position": "-384,0,0",
+      "Rotation": "0,0,-0.0000003894144,-1",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "__Prefab": "prefabs/map/track_pieces/standard/std_plywood_straight_384.prefab"
+    },
+    {
+      "__guid": "2c1a5396-1093-480b-b7fe-9097686531ab",
+      "Flags": 0,
+      "Name": "std_plywood_turn576",
+      "Position": "1536,0,0",
+      "Rotation": "-0.0000001192093,0.0000000310441,1,0.00000009313229",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "__Prefab": "prefabs/map/track_pieces/standard/std_plywood_turn576.prefab"
+    },
+    {
+      "__guid": "259c3db2-4fe9-48ca-8b2d-35bf172b6851",
+      "Flags": 0,
+      "Name": "std_plywood_turn576 (1)",
+      "Position": "1536,-1152,0",
+      "Rotation": "-0.00000006234222,0.0000001062452,0.7071068,0.7071068",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "__Prefab": "prefabs/map/track_pieces/standard/std_plywood_turn576.prefab"
+    },
+    {
+      "__guid": "e9f969e9-2889-4201-9d0a-6e2ec582d58f",
+      "Flags": 0,
+      "Name": "std_plywood_turn576 (2)",
+      "Position": "-1152,-1152,0",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "__Prefab": "prefabs/map/track_pieces/standard/std_plywood_turn576.prefab"
+    },
+    {
+      "__guid": "2861c0cf-cd1d-48b0-8b12-607f4eb19b0e",
+      "Flags": 0,
+      "Name": "std_plywood_turn576 (3)",
+      "Position": "-1152,0,0",
+      "Rotation": "0,0,-0.7071067,0.7071068",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "__Prefab": "prefabs/map/track_pieces/standard/std_plywood_turn576.prefab"
+    },
+    {
+      "__guid": "1717088a-be78-49bc-980d-d33708953662",
+      "Flags": 0,
+      "Name": "std_plywood_slope96_384",
+      "Rotation": "-0.0000001192093,0.00000003104401,1,0.00000009313204",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "__Prefab": "prefabs/map/track_pieces/standard/std_plywood_slope96_384.prefab"
     }
   ],
   "SceneProperties": {
@@ -665,8 +592,8 @@
   },
   "Title": "g1l1",
   "Description": "",
-  "LastSaved": "2024-04-30T22:24:56.5493692\u002B01:00",
+  "LastSaved": "2024-05-20T14:00:58.4108938-04:00",
   "ResourceVersion": 1,
-  "__version": 1,
-  "__references": []
+  "__references": [],
+  "__version": 1
 }

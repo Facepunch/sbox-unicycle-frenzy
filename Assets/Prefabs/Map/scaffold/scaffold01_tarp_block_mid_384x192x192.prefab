@@ -1,0 +1,181 @@
+{
+  "RootObject": {
+    "__guid": "13faaea2-fd19-49ea-8593-5a836b0b4468",
+    "Flags": 0,
+    "Name": "scaffold01_tarp_block_mid_384x192x192",
+    "Enabled": true,
+    "NetworkMode": 2,
+    "NetworkInterpolation": true,
+    "Children": [
+      {
+        "__guid": "a50f5590-52d2-4c3e-a615-2414063bde5e",
+        "Flags": 0,
+        "Name": "scaffold01_wallsection_mid_384x192 (2)",
+        "Position": "-0.00003433228,-96,0",
+        "Rotation": "0,0,0.7071067,0.7071068",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "NetworkInterpolation": true,
+        "__Prefab": "prefabs/map/scaffold/scaffold01_empty_wallsection_mid_384x192.prefab"
+      },
+      {
+        "__guid": "86e141f8-798d-48b5-9a01-ae22086ccf16",
+        "Flags": 0,
+        "Name": "scaffold01_wallsection_mid_384x192 (3)",
+        "Position": "0.00003433228,96,0",
+        "Rotation": "0,0,0.7071069,-0.7071066",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "NetworkInterpolation": true,
+        "__Prefab": "prefabs/map/scaffold/scaffold01_empty_wallsection_mid_384x192.prefab"
+      },
+      {
+        "__guid": "e50d03fb-c493-486d-8043-3078243566ec",
+        "Flags": 0,
+        "Name": "scaffold01_empty_wallsection_mid_192x192",
+        "Position": "-192,0,0",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "NetworkInterpolation": true,
+        "__Prefab": "prefabs/map/scaffold/scaffold01_empty_wallsection_mid_192x192.prefab"
+      },
+      {
+        "__guid": "c75bfaa8-89c2-461c-97ba-de53d0d3b58b",
+        "Flags": 0,
+        "Name": "scaffold01_empty_wallsection_mid_192x192 (1)",
+        "Position": "192,0,0",
+        "Rotation": "0,0,1,0.0000001947072",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "NetworkInterpolation": true,
+        "__Prefab": "prefabs/map/scaffold/scaffold01_empty_wallsection_mid_192x192.prefab"
+      },
+      {
+        "__guid": "3d853133-0c9a-44f7-b44f-0983a239e8fe",
+        "Flags": 0,
+        "Name": "scaffiller_tarp_wall_mid_192x192",
+        "Position": "-192,0,0",
+        "Rotation": "0,0,-1,0.00000008940697",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "NetworkInterpolation": true,
+        "Components": [
+          {
+            "__type": "Sandbox.Prop",
+            "__guid": "d5fee568-a47b-4ceb-b028-dbc65e6504c0",
+            "BodyGroups": 18446744073709551615,
+            "Health": 0,
+            "IsStatic": false,
+            "Model": "models/scaffolding/scaffold_filler/scaffiller_tarp_wall_mid_192x192.vmdl"
+          }
+        ]
+      },
+      {
+        "__guid": "16de0ec8-5c7d-4921-983f-3571de44c913",
+        "Flags": 0,
+        "Name": "scaffiller_tarp_wall_mid_192x192 (1)",
+        "Position": "192,0,0",
+        "Rotation": "0,0,-0.0000003894144,-1",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "NetworkInterpolation": true,
+        "Components": [
+          {
+            "__type": "Sandbox.Prop",
+            "__guid": "f3bab3f4-1379-4c68-8d16-153e4c163ce5",
+            "BodyGroups": 18446744073709551615,
+            "Health": 0,
+            "IsStatic": false,
+            "Model": "models/scaffolding/scaffold_filler/scaffiller_tarp_wall_mid_192x192.vmdl"
+          }
+        ]
+      },
+      {
+        "__guid": "7bec56c2-98e9-4088-b0e9-1bdc5b76338f",
+        "Flags": 0,
+        "Name": "scaffiller_tarp_wall_mid_384x192",
+        "Position": "0,96,0",
+        "Rotation": "0,0,0.7071067,0.7071068",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "NetworkInterpolation": true,
+        "Components": [
+          {
+            "__type": "Sandbox.Prop",
+            "__guid": "310784c3-40ac-4df2-9600-5d948af6ded4",
+            "BodyGroups": 18446744073709551615,
+            "Health": 0,
+            "IsStatic": false,
+            "Model": "models/scaffolding/scaffold_filler/scaffiller_tarp_wall_mid_384x192.vmdl"
+          }
+        ]
+      },
+      {
+        "__guid": "556df513-0058-48b5-a2eb-ed6d8edc3beb",
+        "Flags": 0,
+        "Name": "scaffiller_tarp_wall_mid_384x192 (3)",
+        "Position": "0,0.00001716614,95.99999",
+        "Rotation": "0.5,-0.4999999,0.5,0.5000001",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "NetworkInterpolation": true,
+        "Components": [
+          {
+            "__type": "Sandbox.Prop",
+            "__guid": "24cf7049-a677-4626-a8a2-1eaa99ccb88d",
+            "BodyGroups": 18446744073709551615,
+            "Health": 0,
+            "IsStatic": false,
+            "Model": "models/scaffolding/scaffold_filler/scaffiller_tarp_wall_mid_384x192.vmdl"
+          }
+        ]
+      },
+      {
+        "__guid": "c263602d-7107-496d-930a-a6b7592b2f8c",
+        "Flags": 0,
+        "Name": "scaffiller_tarp_wall_mid_384x192 (1)",
+        "Position": "0,-96,0",
+        "Rotation": "0,0,-0.7071067,0.7071068",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "NetworkInterpolation": true,
+        "Components": [
+          {
+            "__type": "Sandbox.Prop",
+            "__guid": "4c2a5e5b-194d-43e6-aed5-c6d4488eaea4",
+            "BodyGroups": 18446744073709551615,
+            "Health": 0,
+            "IsStatic": false,
+            "Model": "models/scaffolding/scaffold_filler/scaffiller_tarp_wall_mid_384x192.vmdl"
+          }
+        ]
+      },
+      {
+        "__guid": "dbd3bf74-edcf-4793-8e7e-269f7c0825d6",
+        "Flags": 0,
+        "Name": "scaffiller_tarp_wall_mid_384x192 (2)",
+        "Position": "0,-0.00001716614,-95.99999",
+        "Rotation": "0.5,0.4999999,-0.5,0.5000001",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "NetworkInterpolation": true,
+        "Components": [
+          {
+            "__type": "Sandbox.Prop",
+            "__guid": "4ee27c2d-684b-44c2-84f3-97f40cd45299",
+            "BodyGroups": 18446744073709551615,
+            "Health": 0,
+            "IsStatic": false,
+            "Model": "models/scaffolding/scaffold_filler/scaffiller_tarp_wall_mid_384x192.vmdl"
+          }
+        ]
+      }
+    ]
+  },
+  "ShowInMenu": false,
+  "MenuPath": null,
+  "MenuIcon": null,
+  "ResourceVersion": 1,
+  "__references": [],
+  "__version": 1
+}

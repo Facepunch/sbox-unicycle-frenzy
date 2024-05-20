@@ -8,7 +8,7 @@ Layer0
 	TextureAmbientOcclusion "materials/default/default_ao.tga"
 
 	//---- Color ----
-	TextureColor "textures/decals/wood_track_lines.png"
+	TextureColor "materials/decals/wood_track_lines.png"
 
 	//---- Fog ----
 	g_bFogEnabled "1"

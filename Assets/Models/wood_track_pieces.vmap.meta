@@ -1,0 +1,39 @@
+{
+  "publish": {
+    "Allowed": true,
+    "Enabled": false,
+    "ProjectConfig": {
+      "Title": "wood_track_pieces",
+      "Type": "map",
+      "Org": "local",
+      "Ident": "wood_track_pieces",
+      "Tags": null,
+      "Schema": 0,
+      "Resources": null,
+      "PackageReferences": [],
+      "EditorReferences": [
+        "luke.skeleman#19898",
+        "wujekfoliarz.sl_skybox4#36620",
+        "tiowevolve.dev_dark_08#52957",
+        "facepunch.tarpaulin_01#28796",
+        "rustextended.glass_dirty#43276",
+        "facepunch.pvc_panel_2#47054",
+        "sugmatextures.grass#34974",
+        "facepunch.wood_trim_02#43510",
+        "facepunch.metal_trim_02#47037",
+        "facepunch.wood_trim_01#43509",
+        "facepunch.plastic_trim#43496",
+        "facepunch.industrial_wall_light#43061",
+        "facepunch.scaffolding_connector_a#27430",
+        "facepunch.scaffolding_tube_a#27434",
+        "facepunch.wood_plank_hs_01#33582",
+        "facepunch.plastic_trim_dirty_blend#43499",
+        "facepunch.plastic_trim_clean#43497",
+        "facepunch.plastic_trim_clean_blend#43498"
+      ],
+      "Metadata": {
+        "SingleAssetSource": "models/track_tileset_pieces/wood_track_pieces.vmap"
+      }
+    }
+  }
+}

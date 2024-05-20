@@ -55,106 +55,6 @@
       "__Prefab": "prefabs/checkpoint zone.prefab"
     },
     {
-      "__guid": "bc664feb-5d9d-469c-9453-9e1431017137",
-      "Flags": 0,
-      "Name": "wood_narrow_384 (4)",
-      "Position": "-128,-5665.813,-512",
-      "Rotation": "-0.0000001192093,0,1,0",
-      "Enabled": true,
-      "NetworkMode": 2,
-      "NetworkInterpolation": true,
-      "Components": [
-        {
-          "__type": "Sandbox.Prop",
-          "__guid": "e7cb8241-fd75-46e1-bbc6-af9786adf189",
-          "BodyGroups": 18446744073709551615,
-          "Health": 0,
-          "IsStatic": true,
-          "Model": "models/track_tileset_pieces/wood/narrow/wood_narrow_384.vmdl"
-        }
-      ]
-    },
-    {
-      "__guid": "d67560d0-b61f-41d1-9eba-7d5d03a0660f",
-      "Flags": 0,
-      "Name": "wood_narrow_384 (2)",
-      "Position": "256,-5665.813,-512",
-      "Rotation": "-0.0000001192093,0,1,0",
-      "Enabled": true,
-      "NetworkMode": 2,
-      "NetworkInterpolation": true,
-      "Components": [
-        {
-          "__type": "Sandbox.Prop",
-          "__guid": "e1eba70f-c35c-4f20-a23d-85c596477ae3",
-          "BodyGroups": 18446744073709551615,
-          "Health": 0,
-          "IsStatic": true,
-          "Model": "models/track_tileset_pieces/wood/narrow/wood_narrow_384.vmdl"
-        }
-      ]
-    },
-    {
-      "__guid": "ca50f021-fda6-4317-8169-c55254768863",
-      "Flags": 0,
-      "Name": "wood_narrow_384 (1)",
-      "Position": "1296,-5665.813,-512",
-      "Rotation": "-0.0000001192093,0,1,0",
-      "Enabled": true,
-      "NetworkMode": 2,
-      "NetworkInterpolation": true,
-      "Components": [
-        {
-          "__type": "Sandbox.Prop",
-          "__guid": "055b6c13-bca9-4f00-ba49-183f2c0b1b28",
-          "BodyGroups": 18446744073709551615,
-          "Health": 0,
-          "IsStatic": true,
-          "Model": "models/track_tileset_pieces/wood/narrow/wood_narrow_384.vmdl"
-        }
-      ]
-    },
-    {
-      "__guid": "9ae604f6-8b8d-45f7-bafa-429cfd34b3e6",
-      "Flags": 0,
-      "Name": "wood_narrow_384 (3)",
-      "Position": "912,-5665.813,-512",
-      "Rotation": "-0.0000001192093,0,1,0",
-      "Enabled": true,
-      "NetworkMode": 2,
-      "NetworkInterpolation": true,
-      "Components": [
-        {
-          "__type": "Sandbox.Prop",
-          "__guid": "1a82c457-c37d-4934-8337-cd44861361e6",
-          "BodyGroups": 18446744073709551615,
-          "Health": 0,
-          "IsStatic": true,
-          "Model": "models/track_tileset_pieces/wood/narrow/wood_narrow_384.vmdl"
-        }
-      ]
-    },
-    {
-      "__guid": "bb7ca51c-5736-476b-a437-679ebc933144",
-      "Flags": 0,
-      "Name": "wood_narrow_384",
-      "Position": "1680,-5665.813,-512",
-      "Rotation": "-0.0000001192093,0,1,0",
-      "Enabled": true,
-      "NetworkMode": 2,
-      "NetworkInterpolation": true,
-      "Components": [
-        {
-          "__type": "Sandbox.Prop",
-          "__guid": "d8b11c3a-72d9-445c-88c6-db0cc552617c",
-          "BodyGroups": 18446744073709551615,
-          "Health": 0,
-          "IsStatic": true,
-          "Model": "models/track_tileset_pieces/wood/narrow/wood_narrow_384.vmdl"
-        }
-      ]
-    },
-    {
       "__guid": "9d02d05a-39cd-4b78-87cf-86919a6f1876",
       "Flags": 0,
       "Name": "end zone",
@@ -939,6 +839,303 @@
       "__Prefab": "prefabs/map/track_pieces/skinny/skn_metalwalk_straight_96.prefab"
     },
     {
+      "__guid": "d457268c-2861-4ec5-820f-a882150129fd",
+      "Flags": 0,
+      "Name": "skn_metalwalk_straight_96 (28)",
+      "Position": "1616,-5696,-512",
+      "Rotation": "-0.0000001192093,0,1,0",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "__Prefab": "prefabs/map/track_pieces/skinny/skn_metalwalk_straight_96.prefab"
+    },
+    {
+      "__guid": "949446d3-d7b1-4275-944d-bbe59eb38d52",
+      "Flags": 0,
+      "Name": "skn_metalwalk_straight_96 (38)",
+      "Position": "1424,-5696,-512",
+      "Rotation": "-0.0000001192093,0,1,0",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "__Prefab": "prefabs/map/track_pieces/skinny/skn_metalwalk_straight_96.prefab"
+    },
+    {
+      "__guid": "74b013ca-b2cd-4f5d-b74f-03cb80a84a61",
+      "Flags": 0,
+      "Name": "skn_metalwalk_straight_96 (44)",
+      "Position": "1232,-5696,-512",
+      "Rotation": "-0.0000001192093,0,1,0",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "__Prefab": "prefabs/map/track_pieces/skinny/skn_metalwalk_straight_96.prefab"
+    },
+    {
+      "__guid": "1bdab675-62cb-42f0-9246-6921de08bd4a",
+      "Flags": 0,
+      "Name": "skn_metalwalk_straight_96 (50)",
+      "Position": "1040,-5696,-512",
+      "Rotation": "-0.0000001192093,0,1,0",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "__Prefab": "prefabs/map/track_pieces/skinny/skn_metalwalk_straight_96.prefab"
+    },
+    {
+      "__guid": "40cebbbf-f9c1-4638-a0d0-8bed3c6fb6f4",
+      "Flags": 0,
+      "Name": "skn_metalwalk_straight_96 (56)",
+      "Position": "848,-5696,-512",
+      "Rotation": "-0.0000001192093,0,1,0",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "__Prefab": "prefabs/map/track_pieces/skinny/skn_metalwalk_straight_96.prefab"
+    },
+    {
+      "__guid": "c27d5298-434a-4532-ba69-9f94c1e780f1",
+      "Flags": 0,
+      "Name": "skn_metalwalk_straight_96 (68)",
+      "Position": "464,-5696,-512",
+      "Rotation": "-0.0000001192093,0,1,0",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "__Prefab": "prefabs/map/track_pieces/skinny/skn_metalwalk_straight_96.prefab"
+    },
+    {
+      "__guid": "7c0a5cd3-ee1d-4eba-a024-38434f4fc35b",
+      "Flags": 0,
+      "Name": "skn_metalwalk_straight_96 (74)",
+      "Position": "272,-5696,-512",
+      "Rotation": "-0.0000001192093,0,1,0",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "__Prefab": "prefabs/map/track_pieces/skinny/skn_metalwalk_straight_96.prefab"
+    },
+    {
+      "__guid": "c9b3324a-3401-4521-8e56-0693ec393c51",
+      "Flags": 0,
+      "Name": "skn_metalwalk_straight_96 (80)",
+      "Position": "80,-5696,-512",
+      "Rotation": "-0.0000001192093,0,1,0",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "__Prefab": "prefabs/map/track_pieces/skinny/skn_metalwalk_straight_96.prefab"
+    },
+    {
+      "__guid": "6fc2c5bc-536d-4da1-8afa-4903979788de",
+      "Flags": 0,
+      "Name": "skn_metalwalk_straight_96 (86)",
+      "Position": "-112,-5696,-512",
+      "Rotation": "-0.0000001192093,0,1,0",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "__Prefab": "prefabs/map/track_pieces/skinny/skn_metalwalk_straight_96.prefab"
+    },
+    {
+      "__guid": "2a4f9adf-356e-4eb8-a83a-5c7400ae923c",
+      "Flags": 0,
+      "Name": "skn_metalwalk_straight_96 (30)",
+      "Position": "1616,-5664,-512",
+      "Rotation": "-0.0000001192093,0,1,0",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "__Prefab": "prefabs/map/track_pieces/skinny/skn_metalwalk_straight_96.prefab"
+    },
+    {
+      "__guid": "729c4b77-d75f-432c-9851-e1cb9c2ab301",
+      "Flags": 0,
+      "Name": "skn_metalwalk_straight_96 (37)",
+      "Position": "1424,-5664,-512",
+      "Rotation": "-0.0000001192093,0,1,0",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "__Prefab": "prefabs/map/track_pieces/skinny/skn_metalwalk_straight_96.prefab"
+    },
+    {
+      "__guid": "b0ffa95b-4d1a-4f83-be55-be87b725f59b",
+      "Flags": 0,
+      "Name": "skn_metalwalk_straight_96 (43)",
+      "Position": "1232,-5664,-512",
+      "Rotation": "-0.0000001192093,0,1,0",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "__Prefab": "prefabs/map/track_pieces/skinny/skn_metalwalk_straight_96.prefab"
+    },
+    {
+      "__guid": "d59dfe76-b46c-4bf3-b45d-70d1d634d427",
+      "Flags": 0,
+      "Name": "skn_metalwalk_straight_96 (49)",
+      "Position": "1040,-5664,-512",
+      "Rotation": "-0.0000001192093,0,1,0",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "__Prefab": "prefabs/map/track_pieces/skinny/skn_metalwalk_straight_96.prefab"
+    },
+    {
+      "__guid": "0dbbc98b-fea1-4960-bfa5-05bc84464652",
+      "Flags": 0,
+      "Name": "skn_metalwalk_straight_96 (55)",
+      "Position": "848,-5664,-512",
+      "Rotation": "-0.0000001192093,0,1,0",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "__Prefab": "prefabs/map/track_pieces/skinny/skn_metalwalk_straight_96.prefab"
+    },
+    {
+      "__guid": "4026b3a0-7be9-4f52-81c4-edab92812822",
+      "Flags": 0,
+      "Name": "skn_metalwalk_straight_96 (67)",
+      "Position": "464,-5664,-512",
+      "Rotation": "-0.0000001192093,0,1,0",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "__Prefab": "prefabs/map/track_pieces/skinny/skn_metalwalk_straight_96.prefab"
+    },
+    {
+      "__guid": "32e484d7-ab7c-46ae-b2ee-734a2a1428cf",
+      "Flags": 0,
+      "Name": "skn_metalwalk_straight_96 (73)",
+      "Position": "272,-5664,-512",
+      "Rotation": "-0.0000001192093,0,1,0",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "__Prefab": "prefabs/map/track_pieces/skinny/skn_metalwalk_straight_96.prefab"
+    },
+    {
+      "__guid": "05c174bc-0127-4f31-9b31-ae335e34640c",
+      "Flags": 0,
+      "Name": "skn_metalwalk_straight_96 (79)",
+      "Position": "80,-5664,-512",
+      "Rotation": "-0.0000001192093,0,1,0",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "__Prefab": "prefabs/map/track_pieces/skinny/skn_metalwalk_straight_96.prefab"
+    },
+    {
+      "__guid": "88729c6b-2f67-4bde-a22d-31121414943e",
+      "Flags": 0,
+      "Name": "skn_metalwalk_straight_96 (85)",
+      "Position": "-112,-5664,-512",
+      "Rotation": "-0.0000001192093,0,1,0",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "__Prefab": "prefabs/map/track_pieces/skinny/skn_metalwalk_straight_96.prefab"
+    },
+    {
+      "__guid": "ee658673-7e41-4b71-999b-15a17dca49e5",
+      "Flags": 0,
+      "Name": "skn_metalwalk_straight_96 (32)",
+      "Position": "1616,-5632,-512",
+      "Rotation": "-0.0000001192093,0,1,0",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "__Prefab": "prefabs/map/track_pieces/skinny/skn_metalwalk_straight_96.prefab"
+    },
+    {
+      "__guid": "322acc62-982c-44c7-9d6a-7e20671497b4",
+      "Flags": 0,
+      "Name": "skn_metalwalk_straight_96 (35)",
+      "Position": "1424,-5632,-512",
+      "Rotation": "-0.0000001192093,0,1,0",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "__Prefab": "prefabs/map/track_pieces/skinny/skn_metalwalk_straight_96.prefab"
+    },
+    {
+      "__guid": "ecde0a9e-de42-42e5-a4df-f8863f9dbf6a",
+      "Flags": 0,
+      "Name": "skn_metalwalk_straight_96 (41)",
+      "Position": "1232,-5632,-512",
+      "Rotation": "-0.0000001192093,0,1,0",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "__Prefab": "prefabs/map/track_pieces/skinny/skn_metalwalk_straight_96.prefab"
+    },
+    {
+      "__guid": "061229b8-7a21-4507-8c78-9de664c9b859",
+      "Flags": 0,
+      "Name": "skn_metalwalk_straight_96 (47)",
+      "Position": "1040,-5632,-512",
+      "Rotation": "-0.0000001192093,0,1,0",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "__Prefab": "prefabs/map/track_pieces/skinny/skn_metalwalk_straight_96.prefab"
+    },
+    {
+      "__guid": "39580414-2aac-4104-b1dd-69d623ffcfd2",
+      "Flags": 0,
+      "Name": "skn_metalwalk_straight_96 (53)",
+      "Position": "848,-5632,-512",
+      "Rotation": "-0.0000001192093,0,1,0",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "__Prefab": "prefabs/map/track_pieces/skinny/skn_metalwalk_straight_96.prefab"
+    },
+    {
+      "__guid": "79986c60-8c9c-4525-948f-6c66943d61c7",
+      "Flags": 0,
+      "Name": "skn_metalwalk_straight_96 (65)",
+      "Position": "464,-5632,-512",
+      "Rotation": "-0.0000001192093,0,1,0",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "__Prefab": "prefabs/map/track_pieces/skinny/skn_metalwalk_straight_96.prefab"
+    },
+    {
+      "__guid": "97a613f5-098b-406b-bd13-49a9f2c6cb5a",
+      "Flags": 0,
+      "Name": "skn_metalwalk_straight_96 (71)",
+      "Position": "272,-5632,-512",
+      "Rotation": "-0.0000001192093,0,1,0",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "__Prefab": "prefabs/map/track_pieces/skinny/skn_metalwalk_straight_96.prefab"
+    },
+    {
+      "__guid": "6c21ee7b-7eaf-420d-b8e1-09737c9d86ce",
+      "Flags": 0,
+      "Name": "skn_metalwalk_straight_96 (77)",
+      "Position": "80,-5632,-512",
+      "Rotation": "-0.0000001192093,0,1,0",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "__Prefab": "prefabs/map/track_pieces/skinny/skn_metalwalk_straight_96.prefab"
+    },
+    {
+      "__guid": "e0e4e64a-c013-48db-98d0-3d5371bb9b1b",
+      "Flags": 0,
+      "Name": "skn_metalwalk_straight_96 (83)",
+      "Position": "-112,-5632,-512",
+      "Rotation": "-0.0000001192093,0,1,0",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "__Prefab": "prefabs/map/track_pieces/skinny/skn_metalwalk_straight_96.prefab"
+    },
+    {
       "__guid": "9d6f0264-c56d-4b78-a071-b4b477d921f6",
       "Flags": 0,
       "Name": "skn_metalwalk_straight_96 (16)",
@@ -1075,6 +1272,303 @@
       "Flags": 0,
       "Name": "skn_metalwalk_straight_96 (7)",
       "Position": "1776,-5832,-512",
+      "Rotation": "-0.0000001192093,0,1,0",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "__Prefab": "prefabs/map/track_pieces/skinny/skn_metalwalk_straight_96.prefab"
+    },
+    {
+      "__guid": "b39e9c0a-87f4-40ff-9239-f52c457bb6b3",
+      "Flags": 0,
+      "Name": "skn_metalwalk_straight_96 (29)",
+      "Position": "1712,-5696,-512",
+      "Rotation": "-0.0000001192093,0,1,0",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "__Prefab": "prefabs/map/track_pieces/skinny/skn_metalwalk_straight_96.prefab"
+    },
+    {
+      "__guid": "9cc812c0-2394-4a9e-ab4a-96dad7ad04a6",
+      "Flags": 0,
+      "Name": "skn_metalwalk_straight_96 (39)",
+      "Position": "1520,-5696,-512",
+      "Rotation": "-0.0000001192093,0,1,0",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "__Prefab": "prefabs/map/track_pieces/skinny/skn_metalwalk_straight_96.prefab"
+    },
+    {
+      "__guid": "dc5ab670-a6c9-4a12-a936-6010c19047ee",
+      "Flags": 0,
+      "Name": "skn_metalwalk_straight_96 (45)",
+      "Position": "1328,-5696,-512",
+      "Rotation": "-0.0000001192093,0,1,0",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "__Prefab": "prefabs/map/track_pieces/skinny/skn_metalwalk_straight_96.prefab"
+    },
+    {
+      "__guid": "6d6931de-e78a-464f-905c-38a78d6effe5",
+      "Flags": 0,
+      "Name": "skn_metalwalk_straight_96 (51)",
+      "Position": "1136,-5696,-512",
+      "Rotation": "-0.0000001192093,0,1,0",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "__Prefab": "prefabs/map/track_pieces/skinny/skn_metalwalk_straight_96.prefab"
+    },
+    {
+      "__guid": "61112fa6-c50b-4347-ad6c-1a96e836de81",
+      "Flags": 0,
+      "Name": "skn_metalwalk_straight_96 (57)",
+      "Position": "944,-5696,-512",
+      "Rotation": "-0.0000001192093,0,1,0",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "__Prefab": "prefabs/map/track_pieces/skinny/skn_metalwalk_straight_96.prefab"
+    },
+    {
+      "__guid": "4d41221f-c9c3-4dd4-b968-386e61024e22",
+      "Flags": 0,
+      "Name": "skn_metalwalk_straight_96 (63)",
+      "Position": "752,-5696,-512",
+      "Rotation": "-0.0000001192093,0,1,0",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "__Prefab": "prefabs/map/track_pieces/skinny/skn_metalwalk_straight_96.prefab"
+    },
+    {
+      "__guid": "b6e604a2-fb90-49d9-951a-6d9a5aead157",
+      "Flags": 0,
+      "Name": "skn_metalwalk_straight_96 (75)",
+      "Position": "368,-5696,-512",
+      "Rotation": "-0.0000001192093,0,1,0",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "__Prefab": "prefabs/map/track_pieces/skinny/skn_metalwalk_straight_96.prefab"
+    },
+    {
+      "__guid": "a1570ebe-6ee4-45c5-9dec-f2fa18f7ad5e",
+      "Flags": 0,
+      "Name": "skn_metalwalk_straight_96 (81)",
+      "Position": "176,-5696,-512",
+      "Rotation": "-0.0000001192093,0,1,0",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "__Prefab": "prefabs/map/track_pieces/skinny/skn_metalwalk_straight_96.prefab"
+    },
+    {
+      "__guid": "3e549861-794d-4c09-b01d-afc383baea97",
+      "Flags": 0,
+      "Name": "skn_metalwalk_straight_96 (87)",
+      "Position": "-16,-5696,-512",
+      "Rotation": "-0.0000001192093,0,1,0",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "__Prefab": "prefabs/map/track_pieces/skinny/skn_metalwalk_straight_96.prefab"
+    },
+    {
+      "__guid": "f7e0cfc1-1f10-482c-aa6f-5ad4e48e06aa",
+      "Flags": 0,
+      "Name": "skn_metalwalk_straight_96 (31)",
+      "Position": "1712,-5664,-512",
+      "Rotation": "-0.0000001192093,0,1,0",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "__Prefab": "prefabs/map/track_pieces/skinny/skn_metalwalk_straight_96.prefab"
+    },
+    {
+      "__guid": "8a4e2074-170b-40e1-bfb7-59152d24b8b6",
+      "Flags": 0,
+      "Name": "skn_metalwalk_straight_96 (34)",
+      "Position": "1520,-5664,-512",
+      "Rotation": "-0.0000001192093,0,1,0",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "__Prefab": "prefabs/map/track_pieces/skinny/skn_metalwalk_straight_96.prefab"
+    },
+    {
+      "__guid": "737d61b0-04e5-46ab-8178-48b02374ebfb",
+      "Flags": 0,
+      "Name": "skn_metalwalk_straight_96 (40)",
+      "Position": "1328,-5664,-512",
+      "Rotation": "-0.0000001192093,0,1,0",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "__Prefab": "prefabs/map/track_pieces/skinny/skn_metalwalk_straight_96.prefab"
+    },
+    {
+      "__guid": "568be576-5501-492a-ae8c-1fcfd1c425ae",
+      "Flags": 0,
+      "Name": "skn_metalwalk_straight_96 (46)",
+      "Position": "1136,-5664,-512",
+      "Rotation": "-0.0000001192093,0,1,0",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "__Prefab": "prefabs/map/track_pieces/skinny/skn_metalwalk_straight_96.prefab"
+    },
+    {
+      "__guid": "e9643fec-0c68-498f-b9dc-878b71d8fc50",
+      "Flags": 0,
+      "Name": "skn_metalwalk_straight_96 (52)",
+      "Position": "944,-5664,-512",
+      "Rotation": "-0.0000001192093,0,1,0",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "__Prefab": "prefabs/map/track_pieces/skinny/skn_metalwalk_straight_96.prefab"
+    },
+    {
+      "__guid": "b874e62f-55f0-49f2-b714-5542e2d14642",
+      "Flags": 0,
+      "Name": "skn_metalwalk_straight_96 (58)",
+      "Position": "752,-5664,-512",
+      "Rotation": "-0.0000001192093,0,1,0",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "__Prefab": "prefabs/map/track_pieces/skinny/skn_metalwalk_straight_96.prefab"
+    },
+    {
+      "__guid": "af8e2282-934c-4fee-8f60-7cae95930615",
+      "Flags": 0,
+      "Name": "skn_metalwalk_straight_96 (70)",
+      "Position": "368,-5664,-512",
+      "Rotation": "-0.0000001192093,0,1,0",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "__Prefab": "prefabs/map/track_pieces/skinny/skn_metalwalk_straight_96.prefab"
+    },
+    {
+      "__guid": "a8ed1131-7ee7-4b6c-afe4-38689ece2c2c",
+      "Flags": 0,
+      "Name": "skn_metalwalk_straight_96 (76)",
+      "Position": "176,-5664,-512",
+      "Rotation": "-0.0000001192093,0,1,0",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "__Prefab": "prefabs/map/track_pieces/skinny/skn_metalwalk_straight_96.prefab"
+    },
+    {
+      "__guid": "e89632dc-d43b-4795-b831-6b2f8faf5953",
+      "Flags": 0,
+      "Name": "skn_metalwalk_straight_96 (82)",
+      "Position": "-16,-5664,-512",
+      "Rotation": "-0.0000001192093,0,1,0",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "__Prefab": "prefabs/map/track_pieces/skinny/skn_metalwalk_straight_96.prefab"
+    },
+    {
+      "__guid": "ff2f9066-16ca-469f-8718-70360c7aaf1d",
+      "Flags": 0,
+      "Name": "skn_metalwalk_straight_96 (33)",
+      "Position": "1712,-5632,-512",
+      "Rotation": "-0.0000001192093,0,1,0",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "__Prefab": "prefabs/map/track_pieces/skinny/skn_metalwalk_straight_96.prefab"
+    },
+    {
+      "__guid": "5e7310de-5351-4b52-86f1-5f2e1e15cae3",
+      "Flags": 0,
+      "Name": "skn_metalwalk_straight_96 (36)",
+      "Position": "1520,-5632,-512",
+      "Rotation": "-0.0000001192093,0,1,0",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "__Prefab": "prefabs/map/track_pieces/skinny/skn_metalwalk_straight_96.prefab"
+    },
+    {
+      "__guid": "e82ba6fe-e5e4-44e4-ae53-06d68d0b6b07",
+      "Flags": 0,
+      "Name": "skn_metalwalk_straight_96 (42)",
+      "Position": "1328,-5632,-512",
+      "Rotation": "-0.0000001192093,0,1,0",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "__Prefab": "prefabs/map/track_pieces/skinny/skn_metalwalk_straight_96.prefab"
+    },
+    {
+      "__guid": "3012dc76-95d9-4611-b541-1c8ab694c945",
+      "Flags": 0,
+      "Name": "skn_metalwalk_straight_96 (48)",
+      "Position": "1136,-5632,-512",
+      "Rotation": "-0.0000001192093,0,1,0",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "__Prefab": "prefabs/map/track_pieces/skinny/skn_metalwalk_straight_96.prefab"
+    },
+    {
+      "__guid": "2f39e8d1-b031-44cf-bbf7-8242f7f01185",
+      "Flags": 0,
+      "Name": "skn_metalwalk_straight_96 (54)",
+      "Position": "944,-5632,-512",
+      "Rotation": "-0.0000001192093,0,1,0",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "__Prefab": "prefabs/map/track_pieces/skinny/skn_metalwalk_straight_96.prefab"
+    },
+    {
+      "__guid": "4c50acc6-cb75-4e4c-a991-e5ac89a10256",
+      "Flags": 0,
+      "Name": "skn_metalwalk_straight_96 (60)",
+      "Position": "752,-5632,-512",
+      "Rotation": "-0.0000001192093,0,1,0",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "__Prefab": "prefabs/map/track_pieces/skinny/skn_metalwalk_straight_96.prefab"
+    },
+    {
+      "__guid": "ac6db3fa-51a3-49a6-bbee-a7f30e918fc8",
+      "Flags": 0,
+      "Name": "skn_metalwalk_straight_96 (72)",
+      "Position": "368,-5632,-512",
+      "Rotation": "-0.0000001192093,0,1,0",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "__Prefab": "prefabs/map/track_pieces/skinny/skn_metalwalk_straight_96.prefab"
+    },
+    {
+      "__guid": "45354f7f-dc36-4977-8677-503515290d99",
+      "Flags": 0,
+      "Name": "skn_metalwalk_straight_96 (78)",
+      "Position": "176,-5632,-512",
+      "Rotation": "-0.0000001192093,0,1,0",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "__Prefab": "prefabs/map/track_pieces/skinny/skn_metalwalk_straight_96.prefab"
+    },
+    {
+      "__guid": "d4bf34c4-b473-49d8-a940-4d11b671c07b",
+      "Flags": 0,
+      "Name": "skn_metalwalk_straight_96 (84)",
+      "Position": "-16,-5632,-512",
       "Rotation": "-0.0000001192093,0,1,0",
       "Enabled": true,
       "NetworkMode": 2,
@@ -1252,103 +1746,224 @@
       ]
     },
     {
-      "__guid": "31e3c109-c2c4-46e1-b8b5-3fff6fe9fcc3",
+      "__guid": "c3e810b4-e9ee-42fc-b6f2-d2cdfe71a7d6",
       "Flags": 0,
       "Name": "scaffold01_empty_block_mid_384",
-      "Position": "3072,384,-832",
-      "Rotation": "0,-0.00000000000001776357,0.9999999,-0.00000000000005329071",
+      "Position": "1536,384,192",
       "Enabled": true,
       "NetworkMode": 2,
       "NetworkInterpolation": true,
       "__Prefab": "prefabs/map/scaffold/scaffold01_empty_block_mid_384.prefab"
     },
     {
-      "__guid": "1a9081dd-9c38-455b-a438-5c6316c8c603",
+      "__guid": "73f203b1-51ea-4549-9418-7caccc687879",
       "Flags": 0,
-      "Name": "scaffold01_empty_block_mid_384 (1)",
-      "Position": "2688,384,-832",
+      "Name": "scaffold01_tarp_block_mid_384",
+      "Position": "1536,384,-384",
       "Rotation": "0,-0.00000000000001776357,0.9999999,-0.00000000000005329071",
       "Enabled": true,
       "NetworkMode": 2,
       "NetworkInterpolation": true,
-      "__Prefab": "prefabs/map/scaffold/scaffold01_empty_block_mid_384.prefab"
+      "__Prefab": "prefabs/map/scaffold/scaffold01_tarp_block_mid_384.prefab"
     },
     {
-      "__guid": "f5f8b715-9edf-4fb4-b782-273716fd64a5",
+      "__guid": "3e6610dd-b5b5-4914-9194-b7688a8b68b5",
       "Flags": 0,
-      "Name": "scaffold01_empty_block_mid_384 (2)",
-      "Position": "2304,384,-832",
+      "Name": "scaffold01_empty_block_mid_384x384x192",
+      "Position": "1920,384,-288",
       "Rotation": "0,-0.00000000000001776357,0.9999999,-0.00000000000005329071",
       "Enabled": true,
       "NetworkMode": 2,
       "NetworkInterpolation": true,
-      "__Prefab": "prefabs/map/scaffold/scaffold01_empty_block_mid_384.prefab"
+      "__Prefab": "prefabs/map/scaffold/scaffold01_empty_block_mid_384x384x192.prefab"
     },
     {
-      "__guid": "8c4c8f08-5dc8-4723-9e50-7b8c76f062d5",
+      "__guid": "97417afc-17a4-4a9b-9ced-ac991d8e8daf",
       "Flags": 0,
-      "Name": "scaffold01_empty_block_mid_384 (7)",
-      "Position": "2304,384,-448",
+      "Name": "scaffold01_empty_block_mid_384x384x192 (1)",
+      "Position": "1920,384,-480",
       "Rotation": "0,-0.00000000000001776357,0.9999999,-0.00000000000005329071",
       "Enabled": true,
       "NetworkMode": 2,
       "NetworkInterpolation": true,
-      "__Prefab": "prefabs/map/scaffold/scaffold01_empty_block_mid_384.prefab"
+      "__Prefab": "prefabs/map/scaffold/scaffold01_empty_block_mid_384x384x192.prefab"
     },
     {
-      "__guid": "353a4ced-b1a4-4869-8f31-dbb9d5d19238",
+      "__guid": "1a7fc311-d48d-432e-aa8e-d36beb8d0c0c",
       "Flags": 0,
-      "Name": "scaffold01_empty_block_mid_384 (3)",
-      "Position": "1920,384,-832",
+      "Name": "scaffold01_tarp_block_mid_384 (1)",
+      "Position": "2304,384,-576",
       "Rotation": "0,-0.00000000000001776357,0.9999999,-0.00000000000005329071",
       "Enabled": true,
       "NetworkMode": 2,
       "NetworkInterpolation": true,
-      "__Prefab": "prefabs/map/scaffold/scaffold01_empty_block_mid_384.prefab"
+      "__Prefab": "prefabs/map/scaffold/scaffold01_tarp_block_mid_384.prefab"
     },
     {
-      "__guid": "456def05-5d88-4f0c-9c33-7aac4d0d88d0",
+      "__guid": "fc1fad8a-59fc-4e71-a1ad-b3ce21d3d5d1",
       "Flags": 0,
-      "Name": "scaffold01_empty_block_mid_384 (6)",
-      "Position": "1920,384,-448",
+      "Name": "scaffold01_tarp_block_mid_384 (2)",
+      "Position": "2688,384,-576",
       "Rotation": "0,-0.00000000000001776357,0.9999999,-0.00000000000005329071",
       "Enabled": true,
       "NetworkMode": 2,
       "NetworkInterpolation": true,
-      "__Prefab": "prefabs/map/scaffold/scaffold01_empty_block_mid_384.prefab"
+      "__Prefab": "prefabs/map/scaffold/scaffold01_tarp_block_mid_384.prefab"
     },
     {
-      "__guid": "ee99d0e1-76ae-4f5e-97a8-4af5f6787714",
+      "__guid": "fce97090-7b0b-4816-ab32-5d72f0ad8af4",
       "Flags": 0,
-      "Name": "scaffold01_empty_block_mid_384 (5)",
-      "Position": "1536,384,-448",
+      "Name": "scaffold01_tarp_block_mid_384 (3)",
+      "Position": "3072,384,-576",
       "Rotation": "0,-0.00000000000001776357,0.9999999,-0.00000000000005329071",
       "Enabled": true,
       "NetworkMode": 2,
       "NetworkInterpolation": true,
-      "__Prefab": "prefabs/map/scaffold/scaffold01_empty_block_mid_384.prefab"
+      "__Prefab": "prefabs/map/scaffold/scaffold01_tarp_block_mid_384.prefab"
     },
     {
-      "__guid": "ce68c6d4-bbb9-483a-9cce-c3d28ffa8a93",
+      "__guid": "5df7c251-328e-4b77-b108-ddd182b8a50b",
       "Flags": 0,
-      "Name": "scaffold01_empty_block_mid_384 (8)",
-      "Position": "1536,768,-448",
-      "Rotation": "0,-0.00000000000001776357,0.9999999,-0.00000000000005329071",
+      "Name": "scaffold01_tarp_block_mid_384x384x192",
+      "Position": "1920,384,-96",
       "Enabled": true,
       "NetworkMode": 2,
       "NetworkInterpolation": true,
-      "__Prefab": "prefabs/map/scaffold/scaffold01_empty_block_mid_384.prefab"
+      "__Prefab": "prefabs/map/scaffold/scaffold01_tarp_block_mid_384x384x192.prefab"
     },
     {
-      "__guid": "bd48ddc1-b956-40bb-822e-80a71aa9a7e4",
+      "__guid": "c8784037-b061-46e4-afac-39c372c2a735",
       "Flags": 0,
-      "Name": "scaffold01_empty_block_mid_384 (4)",
-      "Position": "1152,768,-448",
+      "Name": "scaffold01_tarp_block_mid_384x384x192 (2)",
+      "Position": "1536,384,-96",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "__Prefab": "prefabs/map/scaffold/scaffold01_tarp_block_mid_384x384x192.prefab"
+    },
+    {
+      "__guid": "f02b441e-acc7-4a0b-a231-ceea3b5cb363",
+      "Flags": 0,
+      "Name": "scaffold01_tarp_block_mid_384x384x192 (1)",
+      "Position": "2304,384,-288",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "__Prefab": "prefabs/map/scaffold/scaffold01_tarp_block_mid_384x384x192.prefab"
+    },
+    {
+      "__guid": "7446ded2-070b-4bf9-9e6a-f82dcc8ba7bc",
+      "Flags": 0,
+      "Name": "scaffold01_empty_block_mid_192",
+      "Position": "1824,288,96",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "__Prefab": "prefabs/map/scaffold/scaffold01_empty_block_mid_192.prefab"
+    },
+    {
+      "__guid": "4a5e3cab-e00e-41d2-bc75-175b26b3651a",
+      "Flags": 0,
+      "Name": "scaffold01_empty_block_mid_192 (2)",
+      "Position": "2016,288,96",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "__Prefab": "prefabs/map/scaffold/scaffold01_empty_block_mid_192.prefab"
+    },
+    {
+      "__guid": "0f34ada5-4ddc-4ca6-b36e-f467445b5685",
+      "Flags": 0,
+      "Name": "scaffold01_empty_block_mid_192 (1)",
+      "Position": "2208,288,-96",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "__Prefab": "prefabs/map/scaffold/scaffold01_empty_block_mid_192.prefab"
+    },
+    {
+      "__guid": "7f3c14a4-d089-42d1-9799-39abfd7b0e3b",
+      "Flags": 0,
+      "Name": "scaffold01_tarp_block_mid_192",
+      "Position": "2400,288,-96",
+      "Rotation": "-0.00000005960464,0.000000001241763,0.9999999,0.00000000372529",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "__Prefab": "prefabs/map/scaffold/scaffold01_tarp_block_mid_192.prefab"
+    },
+    {
+      "__guid": "dde332df-bade-47d4-841d-dddc52439a8c",
+      "Flags": 0,
+      "Name": "scaffold01_tarp_block_mid_192 (1)",
+      "Position": "2784,288,-288",
+      "Rotation": "-0.00000005960464,0.000000001241763,0.9999999,0.00000000372529",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "__Prefab": "prefabs/map/scaffold/scaffold01_tarp_block_mid_192.prefab"
+    },
+    {
+      "__guid": "16b287c6-f259-4f4b-9fd1-7517cd96f3bb",
+      "Flags": 0,
+      "Name": "traffic_cone_tank_trap",
+      "Position": "1533.731,-452.6953,-383.7991",
       "Rotation": "0,-0.00000000000001776357,0.9999999,-0.00000000000005329071",
       "Enabled": true,
       "NetworkMode": 2,
       "NetworkInterpolation": true,
-      "__Prefab": "prefabs/map/scaffold/scaffold01_empty_block_mid_384.prefab"
+      "Components": [
+        {
+          "__type": "Sandbox.Prop",
+          "__guid": "f17d513e-e217-47a3-aaef-750220675e4b",
+          "BodyGroups": 18446744073709551615,
+          "Health": 0,
+          "IsStatic": false,
+          "Model": "models/props/traffic_cone_tank_trap/traffic_cone_tank_trap.vmdl"
+        }
+      ]
+    },
+    {
+      "__guid": "f879741d-d904-4125-a0ef-5d2d2f326609",
+      "Flags": 0,
+      "Name": "traffic_cone_tank_trap",
+      "Position": "1620.439,-306.072,-383.7991",
+      "Rotation": "0,-0.00000000000001776357,0.9999999,-0.00000000000005329071",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "Components": [
+        {
+          "__type": "Sandbox.Prop",
+          "__guid": "6cbeb32f-a1a5-4d2f-8f01-9683ea71d40d",
+          "BodyGroups": 18446744073709551615,
+          "Health": 0,
+          "IsStatic": false,
+          "Model": "models/props/traffic_cone_tank_trap/traffic_cone_tank_trap.vmdl"
+        }
+      ]
+    },
+    {
+      "__guid": "13faaea2-fd19-49ea-8593-5a836b0b4468",
+      "Flags": 0,
+      "Name": "scaffold01_tarp_block_mid_384x192x192",
+      "Position": "2976,384,-288",
+      "Rotation": "0.000000252003,0.0000003380528,-0.7071065,0.7071069",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "__Prefab": "prefabs/map/scaffold/scaffold01_tarp_block_mid_384x192x192.prefab"
+    },
+    {
+      "__guid": "5a56e907-462f-44e5-95e8-1c067cf512cc",
+      "Flags": 0,
+      "Name": "scaffold01_empty_block_mid_384x192x192",
+      "Position": "3168,384,-288",
+      "Rotation": "0.000000252003,0.0000003380528,-0.7071065,0.7071069",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "__Prefab": "prefabs/map/scaffold/scaffold01_empty_block_mid_384x192x192.prefab"
     }
   ],
   "SceneProperties": {
@@ -1374,8 +1989,8 @@
   },
   "Title": "alleyslope",
   "Description": "",
-  "LastSaved": "2024-05-17T17:42:46.8757955-04:00",
+  "LastSaved": "2024-05-20T14:07:51.2185132-04:00",
   "ResourceVersion": 1,
-  "__version": 1,
-  "__references": []
+  "__references": [],
+  "__version": 1
 }
