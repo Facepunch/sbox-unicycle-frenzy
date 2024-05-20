@@ -297,7 +297,7 @@ internal class UnicycleController : Component
 
 		await Task.Delay( 3000 );
 
-		Respawn();
+		if(Dead) Respawn();
 	}
 
 	public void DoRespawn()
