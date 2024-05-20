@@ -1,0 +1,27 @@
+{
+  "RootObject": {
+    "__guid": "78da9c82-eeff-4fa6-9b98-eb8a0c89823d",
+    "Flags": 0,
+    "Name": "hlf_plywood_wave96_384",
+    "Position": "-512,1536,0",
+    "Enabled": true,
+    "NetworkMode": 2,
+    "NetworkInterpolation": true,
+    "Components": [
+      {
+        "__type": "Sandbox.Prop",
+        "__guid": "65771a67-e9f2-4767-ba18-010ffe6dd525",
+        "BodyGroups": 18446744073709551615,
+        "Health": 0,
+        "IsStatic": true,
+        "Model": "models/track_pieces/half/hlf_plywood_wave96_384.vmdl"
+      }
+    ]
+  },
+  "ShowInMenu": false,
+  "MenuPath": null,
+  "MenuIcon": null,
+  "ResourceVersion": 1,
+  "__version": 1,
+  "__references": []
+}

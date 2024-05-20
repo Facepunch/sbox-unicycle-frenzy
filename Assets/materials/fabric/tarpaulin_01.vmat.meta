@@ -1,0 +1,27 @@
+{
+  "publish": {
+    "Enabled": true,
+    "ProjectConfig": {
+      "Title": "Tarpaulin",
+      "Type": "material",
+      "Org": "facepunch",
+      "Ident": "tarpaulin_01",
+      "Tags": "tarpaulin tarp",
+      "Schema": 0,
+      "HasAssets": false,
+      "AssetsPath": null,
+      "ResourcePaths": null,
+      "HasCode": false,
+      "CodePath": null,
+      "PackageReferences": null,
+      "EditorReferences": null,
+      "Metadata": {
+        "SingleAssetSource": "materials/fabric/tarpaulin_01.vmat",
+        "Summary": "",
+        "Description": "",
+        "Public": true,
+        "ReplaceTags": "tarpaulin tarp"
+      }
+    }
+  }
+}

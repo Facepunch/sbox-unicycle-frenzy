@@ -1,0 +1,27 @@
+{
+  "RootObject": {
+    "__guid": "28141020-24ad-46e4-9c8e-ae7eff62abe2",
+    "Flags": 0,
+    "Name": "hlf_plywood_turn192",
+    "Position": "128,2176,0",
+    "Enabled": true,
+    "NetworkMode": 2,
+    "NetworkInterpolation": true,
+    "Components": [
+      {
+        "__type": "Sandbox.Prop",
+        "__guid": "1917defa-cb0b-4418-bfeb-579909eff374",
+        "BodyGroups": 18446744073709551615,
+        "Health": 0,
+        "IsStatic": true,
+        "Model": "models/track_pieces/half/hlf_plywood_turn192.vmdl"
+      }
+    ]
+  },
+  "ShowInMenu": false,
+  "MenuPath": null,
+  "MenuIcon": null,
+  "ResourceVersion": 1,
+  "__version": 1,
+  "__references": []
+}

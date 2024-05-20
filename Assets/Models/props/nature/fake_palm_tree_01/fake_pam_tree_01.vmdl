@@ -15,11 +15,11 @@
 						[
 							{
 								from = "reflectivity_30.vmat"
-								to = "models/nature/fake_palm_tree_01/materials/palm1.vmat"
+								to = "models/props/nature/fake_palm_tree_01/materials/palm1.vmat"
 							},
 							{
 								from = "metal.vmat"
-								to = "models/nature/fake_palm_tree_01/materials/palm1_metal.vmat"
+								to = "models/props/nature/fake_palm_tree_01/materials/palm1_metal.vmat"
 							},
 						]
 						use_global_default = false
@@ -33,7 +33,7 @@
 				[
 					{
 						_class = "RenderMeshFile"
-						filename = "models/nature/fake_palm_tree_01/palm1.fbx"
+						filename = "models/props/nature/fake_palm_tree_01/palm1.fbx"
 						import_translation = [ 0.0, 0.0, 0.0 ]
 						import_rotation = [ 0.0, 0.0, 0.0 ]
 						import_scale = 0.1
@@ -68,7 +68,7 @@
 						align_origin_x_type = "None"
 						align_origin_y_type = "None"
 						align_origin_z_type = "None"
-						filename = "models/nature/fake_palm_tree_01/col.fbx"
+						filename = "models/props/nature/fake_palm_tree_01/col.fbx"
 						import_scale = 0.1
 						maxMeshVertices = 0
 						qemError = 0.0
@@ -93,7 +93,7 @@
 						align_origin_x_type = "None"
 						align_origin_y_type = "None"
 						align_origin_z_type = "None"
-						filename = "models/nature/fake_palm_tree_01/col.fbx"
+						filename = "models/props/nature/fake_palm_tree_01/col.fbx"
 						import_scale = 0.1
 						maxMeshVertices = 0
 						qemError = 0.0

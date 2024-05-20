@@ -18,8 +18,8 @@
 								to = "models/props/tyre/tyre.vmat"
 							},
 							{
-								from = "wood_a.vmat"
-								to = "materials/wood_a.vmat"
+								from = "new_planks.vmat"
+								to = "materials/newplanks/new_planks.vmat"
 							},
 						]
 						use_global_default = false
@@ -46,7 +46,7 @@
 							exclude_by_default = true
 							exception_list = 
 							[
-								"384Mesh_017",
+								"384Mesh_002",
 							]
 						}
 					},
@@ -68,7 +68,7 @@
 						align_origin_x_type = "None"
 						align_origin_y_type = "None"
 						align_origin_z_type = "None"
-						filename = "models/props/tyre_obstacle_01/tyre_obstacle_01_col.fbx"
+						filename = "Models/props/tyre_obstacle_01/tyre_obstacle_01.fbx"
 						import_scale = 1.0
 						maxMeshVertices = 0
 						qemError = 0.0

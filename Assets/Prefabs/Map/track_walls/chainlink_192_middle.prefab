@@ -1,0 +1,55 @@
+{
+  "RootObject": {
+    "__guid": "9d89e68c-3e88-43cf-be74-f09746f6badb",
+    "Flags": 0,
+    "Name": "chainlink_192_middle",
+    "Enabled": true,
+    "NetworkMode": 2,
+    "NetworkInterpolation": true,
+    "Children": [
+      {
+        "__guid": "5dc673c7-c092-40ba-be25-ee7ca5cf7645",
+        "Flags": 0,
+        "Name": "chainlink_fence_192",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "NetworkInterpolation": true,
+        "Components": [
+          {
+            "__type": "Sandbox.Prop",
+            "__guid": "42e170d4-8b6d-4379-95b6-a8a8b5e459df",
+            "BodyGroups": 18446744073709551615,
+            "Health": 0,
+            "IsStatic": true,
+            "Model": "models/track_walls/chainlink_fence/chainlink_fence_192.vmdl"
+          }
+        ]
+      },
+      {
+        "__guid": "dca07d93-7b52-4d97-ae7d-1415bb426ee3",
+        "Flags": 0,
+        "Name": "chainlink_pole_middle",
+        "Position": "0,96,0",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "NetworkInterpolation": true,
+        "Components": [
+          {
+            "__type": "Sandbox.Prop",
+            "__guid": "8983e317-19c3-46a4-a202-f408473765e4",
+            "BodyGroups": 18446744073709551615,
+            "Health": 0,
+            "IsStatic": true,
+            "Model": "models/track_walls/chainlink_fence/chainlink_pole_middle.vmdl"
+          }
+        ]
+      }
+    ]
+  },
+  "ShowInMenu": false,
+  "MenuPath": null,
+  "MenuIcon": null,
+  "ResourceVersion": 1,
+  "__version": 1,
+  "__references": []
+}

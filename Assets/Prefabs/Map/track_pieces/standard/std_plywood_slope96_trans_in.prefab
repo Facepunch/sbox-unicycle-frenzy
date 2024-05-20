@@ -1,0 +1,27 @@
+{
+  "RootObject": {
+    "__guid": "d50ec920-b48a-4cc5-83cb-f2788ee7b0ca",
+    "Flags": 0,
+    "Name": "std_plywood_slope96_trans_in",
+    "Position": "-768,972.2735,0",
+    "Enabled": true,
+    "NetworkMode": 2,
+    "NetworkInterpolation": true,
+    "Components": [
+      {
+        "__type": "Sandbox.Prop",
+        "__guid": "48fa20d2-17de-4d86-b6b5-df1f31e044f8",
+        "BodyGroups": 18446744073709551615,
+        "Health": 0,
+        "IsStatic": true,
+        "Model": "models/track_pieces/standard/std_plywood_slope96_trans_in.vmdl"
+      }
+    ]
+  },
+  "ShowInMenu": false,
+  "MenuPath": null,
+  "MenuIcon": null,
+  "ResourceVersion": 1,
+  "__version": 1,
+  "__references": []
+}

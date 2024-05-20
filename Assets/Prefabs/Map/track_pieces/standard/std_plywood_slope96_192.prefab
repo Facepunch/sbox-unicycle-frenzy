@@ -1,0 +1,27 @@
+{
+  "RootObject": {
+    "__guid": "fee2c333-f014-40cd-a6b3-c24280e69566",
+    "Flags": 0,
+    "Name": "std_plywood_slope96_192",
+    "Position": "-384,972.2735,0",
+    "Enabled": true,
+    "NetworkMode": 2,
+    "NetworkInterpolation": true,
+    "Components": [
+      {
+        "__type": "Sandbox.Prop",
+        "__guid": "1e4c8865-e5a6-4951-91ac-40ecd39aa835",
+        "BodyGroups": 18446744073709551615,
+        "Health": 0,
+        "IsStatic": true,
+        "Model": "models/track_pieces/standard/std_plywood_slope96_192.vmdl"
+      }
+    ]
+  },
+  "ShowInMenu": false,
+  "MenuPath": null,
+  "MenuIcon": null,
+  "ResourceVersion": 1,
+  "__version": 1,
+  "__references": []
+}

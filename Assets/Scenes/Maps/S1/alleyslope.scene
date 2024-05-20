@@ -1,0 +1,1381 @@
+{
+  "__guid": "b7769d81-dd5d-475a-ad10-bf637397d079",
+  "GameObjects": [
+    {
+      "__guid": "9c580216-8085-432a-ba08-52b21bd7757e",
+      "Flags": 0,
+      "Name": "Directional Light",
+      "Position": "0,0,200",
+      "Rotation": "-0.2459842,0.5938582,0.2931525,0.7077327",
+      "Tags": "light_directional,light",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "Components": [
+        {
+          "__type": "Sandbox.DirectionalLight",
+          "__guid": "96847efd-87ca-4fb6-beef-3418b8e1a413",
+          "FogMode": "Enabled",
+          "FogStrength": 1,
+          "LightColor": "0.91373,0.98039,1,1",
+          "Shadows": true,
+          "SkyColor": "0.05882,0.07451,0.08235,1"
+        }
+      ]
+    },
+    {
+      "__guid": "030ad70d-cab5-4685-b2aa-8316e6a065d6",
+      "Flags": 0,
+      "Name": "uf_playerspawner",
+      "Position": "-384,0,12.17792",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "__Prefab": "prefabs/uf_playerspawner.prefab"
+    },
+    {
+      "__guid": "7e764e6e-b0ed-49cf-a4d5-ef160b268b22",
+      "Flags": 0,
+      "Name": "start zone",
+      "Position": "-384,0,0",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "__Prefab": "prefabs/start zone.prefab"
+    },
+    {
+      "__guid": "7b2b0a7c-6e73-43dd-9ee9-3e64669b4eb8",
+      "Flags": 0,
+      "Name": "CheckPoint Zone",
+      "Position": "3072,-5767.194,-507.0001",
+      "Rotation": "-0.00000000000002066805,0.0000001061494,-0.9999999,0.0000005131553",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "__Prefab": "prefabs/checkpoint zone.prefab"
+    },
+    {
+      "__guid": "bc664feb-5d9d-469c-9453-9e1431017137",
+      "Flags": 0,
+      "Name": "wood_narrow_384 (4)",
+      "Position": "-128,-5665.813,-512",
+      "Rotation": "-0.0000001192093,0,1,0",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "Components": [
+        {
+          "__type": "Sandbox.Prop",
+          "__guid": "e7cb8241-fd75-46e1-bbc6-af9786adf189",
+          "BodyGroups": 18446744073709551615,
+          "Health": 0,
+          "IsStatic": true,
+          "Model": "models/track_tileset_pieces/wood/narrow/wood_narrow_384.vmdl"
+        }
+      ]
+    },
+    {
+      "__guid": "d67560d0-b61f-41d1-9eba-7d5d03a0660f",
+      "Flags": 0,
+      "Name": "wood_narrow_384 (2)",
+      "Position": "256,-5665.813,-512",
+      "Rotation": "-0.0000001192093,0,1,0",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "Components": [
+        {
+          "__type": "Sandbox.Prop",
+          "__guid": "e1eba70f-c35c-4f20-a23d-85c596477ae3",
+          "BodyGroups": 18446744073709551615,
+          "Health": 0,
+          "IsStatic": true,
+          "Model": "models/track_tileset_pieces/wood/narrow/wood_narrow_384.vmdl"
+        }
+      ]
+    },
+    {
+      "__guid": "ca50f021-fda6-4317-8169-c55254768863",
+      "Flags": 0,
+      "Name": "wood_narrow_384 (1)",
+      "Position": "1296,-5665.813,-512",
+      "Rotation": "-0.0000001192093,0,1,0",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "Components": [
+        {
+          "__type": "Sandbox.Prop",
+          "__guid": "055b6c13-bca9-4f00-ba49-183f2c0b1b28",
+          "BodyGroups": 18446744073709551615,
+          "Health": 0,
+          "IsStatic": true,
+          "Model": "models/track_tileset_pieces/wood/narrow/wood_narrow_384.vmdl"
+        }
+      ]
+    },
+    {
+      "__guid": "9ae604f6-8b8d-45f7-bafa-429cfd34b3e6",
+      "Flags": 0,
+      "Name": "wood_narrow_384 (3)",
+      "Position": "912,-5665.813,-512",
+      "Rotation": "-0.0000001192093,0,1,0",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "Components": [
+        {
+          "__type": "Sandbox.Prop",
+          "__guid": "1a82c457-c37d-4934-8337-cd44861361e6",
+          "BodyGroups": 18446744073709551615,
+          "Health": 0,
+          "IsStatic": true,
+          "Model": "models/track_tileset_pieces/wood/narrow/wood_narrow_384.vmdl"
+        }
+      ]
+    },
+    {
+      "__guid": "bb7ca51c-5736-476b-a437-679ebc933144",
+      "Flags": 0,
+      "Name": "wood_narrow_384",
+      "Position": "1680,-5665.813,-512",
+      "Rotation": "-0.0000001192093,0,1,0",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "Components": [
+        {
+          "__type": "Sandbox.Prop",
+          "__guid": "d8b11c3a-72d9-445c-88c6-db0cc552617c",
+          "BodyGroups": 18446744073709551615,
+          "Health": 0,
+          "IsStatic": true,
+          "Model": "models/track_tileset_pieces/wood/narrow/wood_narrow_384.vmdl"
+        }
+      ]
+    },
+    {
+      "__guid": "9d02d05a-39cd-4b78-87cf-86919a6f1876",
+      "Flags": 0,
+      "Name": "end zone",
+      "Position": "-3088,-5376,-125",
+      "Rotation": "-0.00000000000002066805,0.0000001061494,-0.9999999,0.0000005131553",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "__Prefab": "prefabs/end zone.prefab"
+    },
+    {
+      "__guid": "fef31e07-5918-4eb8-8c7e-37aae69be564",
+      "Flags": 0,
+      "Name": "std_plywood_straight_384",
+      "Position": "-384,0,0",
+      "Rotation": "-0.0000001192093,0.0000000310441,1,0.00000009313229",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "__Prefab": "prefabs/map/track_pieces/standard/std_plywood_straight_384.prefab"
+    },
+    {
+      "__guid": "d1e413d0-b046-4b10-bbbf-af908bb36e38",
+      "Flags": 0,
+      "Name": "std_plywood_straight_384 (1)",
+      "Rotation": "-0.0000001192093,0.0000000310441,1,0.00000009313229",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "__Prefab": "prefabs/map/track_pieces/standard/std_plywood_straight_384.prefab"
+    },
+    {
+      "__guid": "7298ff61-fbc1-4a42-84df-cb667e617add",
+      "Flags": 0,
+      "Name": "std_plywood_straight_384 (3)",
+      "Position": "1536,0,-384",
+      "Rotation": "-0.0000001192093,0.0000000310441,1,0.00000009313229",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "__Prefab": "prefabs/map/track_pieces/standard/std_plywood_straight_384.prefab"
+    },
+    {
+      "__guid": "c1bb1b7f-97c4-4215-b109-56cadbd12050",
+      "Flags": 0,
+      "Name": "std_plywood_straight_384 (5)",
+      "Position": "3072,0,-768",
+      "Rotation": "-0.0000001192093,0.0000000310441,1,0.00000009313229",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "__Prefab": "prefabs/map/track_pieces/standard/std_plywood_straight_384.prefab"
+    },
+    {
+      "__guid": "545c364f-c9e2-43ad-8318-2673df7f3d4c",
+      "Flags": 0,
+      "Name": "std_plywood_straight_384 (9)",
+      "Position": "3456,-384,-960",
+      "Rotation": "-0.0000001192093,0.0000000310441,1,0.00000009313229",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "__Prefab": "prefabs/map/track_pieces/standard/std_plywood_straight_384.prefab"
+    },
+    {
+      "__guid": "63dc372b-e0fb-4ff4-98f4-8f1e9cbc2c9b",
+      "Flags": 0,
+      "Name": "std_plywood_straight_384 (10)",
+      "Position": "3840,-384,-960",
+      "Rotation": "-0.0000001192093,0.0000000310441,1,0.00000009313229",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "__Prefab": "prefabs/map/track_pieces/standard/std_plywood_straight_384.prefab"
+    },
+    {
+      "__guid": "cdff7c54-d9c9-4659-b88d-0fd990d864f6",
+      "Flags": 0,
+      "Name": "std_plywood_straight_384 (11)",
+      "Position": "4224,-384,-960",
+      "Rotation": "-0.0000001192093,0.0000000310441,1,0.00000009313229",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "__Prefab": "prefabs/map/track_pieces/standard/std_plywood_straight_384.prefab"
+    },
+    {
+      "__guid": "dc5c7a5c-06a2-4a85-855c-8308b0336d84",
+      "Flags": 0,
+      "Name": "std_plywood_straight_384 (12)",
+      "Position": "4992,-1152,-959.9999",
+      "Rotation": "-0.00000006234222,0.0000001062452,0.7071068,0.7071068",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "__Prefab": "prefabs/map/track_pieces/standard/std_plywood_straight_384.prefab"
+    },
+    {
+      "__guid": "e66d90df-c343-4508-a47e-e38f5fad1a47",
+      "Flags": 0,
+      "Name": "std_plywood_straight_384 (13)",
+      "Position": "4992,-1536,-959.9999",
+      "Rotation": "-0.00000006234222,0.0000001062452,0.7071068,0.7071068",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "__Prefab": "prefabs/map/track_pieces/standard/std_plywood_straight_384.prefab"
+    },
+    {
+      "__guid": "eb3cbe8a-1977-4041-845b-ca71dbfb8ad5",
+      "Flags": 0,
+      "Name": "std_plywood_straight_384 (14)",
+      "Position": "4992,-1920,-928",
+      "Rotation": "-0.00000006234222,0.0000001062452,0.7071068,0.7071068",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "__Prefab": "prefabs/map/track_pieces/standard/std_plywood_straight_384.prefab"
+    },
+    {
+      "__guid": "2eddc2fc-1fe2-45ca-ba51-9947f62155df",
+      "Flags": 0,
+      "Name": "std_plywood_straight_384 (15)",
+      "Position": "4608,-1920,-928",
+      "Rotation": "-0.00000006234222,0.0000001062452,0.7071068,0.7071068",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "__Prefab": "prefabs/map/track_pieces/standard/std_plywood_straight_384.prefab"
+    },
+    {
+      "__guid": "4f9cf546-ed7c-4a9a-a3e3-081578545b0e",
+      "Flags": 0,
+      "Name": "std_plywood_straight_384 (16)",
+      "Position": "4608,-2304,-896",
+      "Rotation": "-0.00000006234222,0.0000001062452,0.7071068,0.7071068",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "__Prefab": "prefabs/map/track_pieces/standard/std_plywood_straight_384.prefab"
+    },
+    {
+      "__guid": "f825bc2f-eaca-4a60-a6e9-d82341c35d7a",
+      "Flags": 0,
+      "Name": "std_plywood_straight_384 (17)",
+      "Position": "4608,-2688,-864",
+      "Rotation": "-0.00000006234222,0.0000001062452,0.7071068,0.7071068",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "__Prefab": "prefabs/map/track_pieces/standard/std_plywood_straight_384.prefab"
+    },
+    {
+      "__guid": "397ca38f-6646-4e68-bd18-454860b64e16",
+      "Flags": 0,
+      "Name": "std_plywood_straight_384 (18)",
+      "Position": "4992,-3072,-896",
+      "Rotation": "-0.00000006234222,0.0000001062452,0.7071068,0.7071068",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "__Prefab": "prefabs/map/track_pieces/standard/std_plywood_straight_384.prefab"
+    },
+    {
+      "__guid": "2b18a80c-6120-4514-b7ba-08a659842dc7",
+      "Flags": 0,
+      "Name": "std_plywood_straight_384 (19)",
+      "Position": "4992,-3456,-864",
+      "Rotation": "-0.00000006234222,0.0000001062452,0.7071068,0.7071068",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "__Prefab": "prefabs/map/track_pieces/standard/std_plywood_straight_384.prefab"
+    },
+    {
+      "__guid": "5f2d8576-19c1-4864-8d35-0b6ff0db7c28",
+      "Flags": 0,
+      "Name": "std_plywood_straight_384 (20)",
+      "Position": "4608,-3840,-896",
+      "Rotation": "-0.00000006234222,0.0000001062452,0.7071068,0.7071068",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "__Prefab": "prefabs/map/track_pieces/standard/std_plywood_straight_384.prefab"
+    },
+    {
+      "__guid": "7227bdde-2237-4b77-95aa-e5edb2b5aef9",
+      "Flags": 0,
+      "Name": "std_plywood_straight_384 (21)",
+      "Position": "4608,-4224,-864",
+      "Rotation": "-0.00000006234222,0.0000001062452,0.7071068,0.7071068",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "__Prefab": "prefabs/map/track_pieces/standard/std_plywood_straight_384.prefab"
+    },
+    {
+      "__guid": "f1dda6d1-5a11-4312-92cf-69027126de1b",
+      "Flags": 0,
+      "Name": "std_plywood_straight_384 (22)",
+      "Position": "4992,-4368,-896",
+      "Rotation": "-0.00000006234222,0.0000001062452,0.7071068,0.7071068",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "__Prefab": "prefabs/map/track_pieces/standard/std_plywood_straight_384.prefab"
+    },
+    {
+      "__guid": "29120c78-9508-4ce6-bdcd-6e089ffc2f69",
+      "Flags": 0,
+      "Name": "std_plywood_straight_384 (23)",
+      "Position": "4992,-4752,-896",
+      "Rotation": "-0.00000006234222,0.0000001062452,0.7071068,0.7071068",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "__Prefab": "prefabs/map/track_pieces/standard/std_plywood_straight_384.prefab"
+    },
+    {
+      "__guid": "29846401-1872-43d4-aaaf-425d1a8d711b",
+      "Flags": 0,
+      "Name": "std_plywood_straight_384 (24)",
+      "Position": "3456,-5760,-512",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "__Prefab": "prefabs/map/track_pieces/standard/std_plywood_straight_384.prefab"
+    },
+    {
+      "__guid": "d7359ad8-59e0-4f38-9508-883828640ce1",
+      "Flags": 0,
+      "Name": "std_plywood_straight_384 (25)",
+      "Position": "3072,-5760,-512",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "__Prefab": "prefabs/map/track_pieces/standard/std_plywood_straight_384.prefab"
+    },
+    {
+      "__guid": "91fa5c89-89fc-47ca-b0e8-d8713a599891",
+      "Flags": 0,
+      "Name": "std_plywood_straight_384 (26)",
+      "Position": "2688,-5760,-512",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "__Prefab": "prefabs/map/track_pieces/standard/std_plywood_straight_384.prefab"
+    },
+    {
+      "__guid": "5cbf8c2e-0eef-4b05-a69b-984b9b5a7b34",
+      "Flags": 0,
+      "Name": "std_plywood_straight_384 (27)",
+      "Position": "-1536,-5760,-512",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "__Prefab": "prefabs/map/track_pieces/standard/std_plywood_straight_384.prefab"
+    },
+    {
+      "__guid": "01b5a994-ba73-4b24-82bf-9f36a6196410",
+      "Flags": 0,
+      "Name": "std_plywood_straight_384 (28)",
+      "Position": "-1920,-5760,-512",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "__Prefab": "prefabs/map/track_pieces/standard/std_plywood_straight_384.prefab"
+    },
+    {
+      "__guid": "588089ce-082b-4db7-8f53-fa4321891ba3",
+      "Flags": 0,
+      "Name": "std_plywood_straight_384 (29)",
+      "Position": "-2304,-5376,-512",
+      "Rotation": "0,0,-0.7071068,0.7071068",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "__Prefab": "prefabs/map/track_pieces/standard/std_plywood_straight_384.prefab"
+    },
+    {
+      "__guid": "e3f96534-de92-4f83-a2bc-17138b66437c",
+      "Flags": 0,
+      "Name": "std_plywood_straight_384 (30)",
+      "Position": "-2304,-5376,-128",
+      "Rotation": "0,0,-1,0.00000008940697",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "__Prefab": "prefabs/map/track_pieces/standard/std_plywood_straight_384.prefab"
+    },
+    {
+      "__guid": "68423f50-4666-4ec5-ae68-f9d513f54dd8",
+      "Flags": 0,
+      "Name": "std_plywood_straight_384 (31)",
+      "Position": "-2688,-5376,-128",
+      "Rotation": "0,0,-1,0.00000008940697",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "__Prefab": "prefabs/map/track_pieces/standard/std_plywood_straight_384.prefab"
+    },
+    {
+      "__guid": "41035464-17e8-4c9b-87f8-01dc3bd82203",
+      "Flags": 0,
+      "Name": "std_plywood_straight_384 (32)",
+      "Position": "-3072,-5376,-128",
+      "Rotation": "0,0,-1,0.00000008940697",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "__Prefab": "prefabs/map/track_pieces/standard/std_plywood_straight_384.prefab"
+    },
+    {
+      "__guid": "0574d3d7-98b2-4725-9b15-94b6414ade93",
+      "Flags": 0,
+      "Name": "std_plywood_straight_384 (7)",
+      "Position": "3072,-383.6221,-768",
+      "Rotation": "-0.0000001192093,0.0000000310441,1,0.00000009313229",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "__Prefab": "prefabs/map/track_pieces/standard/std_plywood_straight_384.prefab"
+    },
+    {
+      "__guid": "e6c21f6f-5456-49c2-9395-648c567dd936",
+      "Flags": 0,
+      "Name": "std_plywood_straight_384 (6)",
+      "Position": "2688,-0.7558755,-768",
+      "Rotation": "-0.0000001192093,0.0000000310441,1,0.00000009313229",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "__Prefab": "prefabs/map/track_pieces/standard/std_plywood_straight_384.prefab"
+    },
+    {
+      "__guid": "da61b3db-1ea9-4756-808e-e5ec8148825d",
+      "Flags": 0,
+      "Name": "std_plywood_straight_384 (8)",
+      "Position": "2688,-384.378,-768",
+      "Rotation": "-0.0000001192093,0.0000000310441,1,0.00000009313229",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "__Prefab": "prefabs/map/track_pieces/standard/std_plywood_straight_384.prefab"
+    },
+    {
+      "__guid": "7e298380-3e5d-437e-8d73-0b4f754e0ed2",
+      "Flags": 0,
+      "Name": "std_plywood_straight_384 (4)",
+      "Position": "1536,-384,-384",
+      "Rotation": "-0.0000001192093,0.0000000310441,1,0.00000009313229",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "__Prefab": "prefabs/map/track_pieces/standard/std_plywood_straight_384.prefab"
+    },
+    {
+      "__guid": "dfc641bd-68c2-4a87-a3dc-cd7f2fb14dea",
+      "Flags": 0,
+      "Name": "std_plywood_straight_384 (2)",
+      "Position": "384,0,0",
+      "Rotation": "-0.0000001192093,0.0000000310441,1,0.00000009313229",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "__Prefab": "prefabs/map/track_pieces/standard/std_plywood_straight_384.prefab"
+    },
+    {
+      "__guid": "35ced662-7fd1-43d2-83ee-433556256b33",
+      "Flags": 0,
+      "Name": "std_plywood_slope192_384",
+      "Position": "768,0,-192",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "__Prefab": "prefabs/map/track_pieces/standard/std_plywood_slope192_384.prefab"
+    },
+    {
+      "__guid": "1417c776-8e7f-4fb0-a572-c737fee66fbc",
+      "Flags": 0,
+      "Name": "std_plywood_slope192_384 (3)",
+      "Position": "1152,0,-384",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "__Prefab": "prefabs/map/track_pieces/standard/std_plywood_slope192_384.prefab"
+    },
+    {
+      "__guid": "9cf74317-5318-4c2b-925d-1771da927e82",
+      "Flags": 0,
+      "Name": "std_plywood_slope192_384 (6)",
+      "Position": "1920,0,-576",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "__Prefab": "prefabs/map/track_pieces/standard/std_plywood_slope192_384.prefab"
+    },
+    {
+      "__guid": "86292ac1-7951-49a1-8418-a46de0ba36c0",
+      "Flags": 0,
+      "Name": "std_plywood_slope192_384 (9)",
+      "Position": "2304,0,-768",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "__Prefab": "prefabs/map/track_pieces/standard/std_plywood_slope192_384.prefab"
+    },
+    {
+      "__guid": "42772b1c-d9a4-41f7-af25-4968e84e3c1f",
+      "Flags": 0,
+      "Name": "std_plywood_slope192_384 (1)",
+      "Position": "768,-384,-192",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "__Prefab": "prefabs/map/track_pieces/standard/std_plywood_slope192_384.prefab"
+    },
+    {
+      "__guid": "5cd3c4cf-fc11-4ba0-afcf-d022960d7261",
+      "Flags": 0,
+      "Name": "std_plywood_slope192_384 (4)",
+      "Position": "1152,-384,-384",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "__Prefab": "prefabs/map/track_pieces/standard/std_plywood_slope192_384.prefab"
+    },
+    {
+      "__guid": "096ed432-2b95-4529-8516-ee2438ead5c2",
+      "Flags": 0,
+      "Name": "std_plywood_slope192_384 (7)",
+      "Position": "1920,-384,-576",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "__Prefab": "prefabs/map/track_pieces/standard/std_plywood_slope192_384.prefab"
+    },
+    {
+      "__guid": "3754b10d-99e6-4487-927d-f20460dd7865",
+      "Flags": 0,
+      "Name": "std_plywood_slope192_384 (10)",
+      "Position": "2304,-384,-768",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "__Prefab": "prefabs/map/track_pieces/standard/std_plywood_slope192_384.prefab"
+    },
+    {
+      "__guid": "43599f05-ff61-4457-abbe-051d062e3f48",
+      "Flags": 0,
+      "Name": "std_plywood_slope192_384 (8)",
+      "Position": "4224,-5760,-896",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "__Prefab": "prefabs/map/track_pieces/standard/std_plywood_slope192_384.prefab"
+    },
+    {
+      "__guid": "c266a620-dca9-44eb-a975-6c0793c9141f",
+      "Flags": 0,
+      "Name": "std_plywood_slope192_384 (11)",
+      "Position": "3840,-5760,-704",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "__Prefab": "prefabs/map/track_pieces/standard/std_plywood_slope192_384.prefab"
+    },
+    {
+      "__guid": "8f5315ed-0598-4dbd-8eb0-6c5081aeeca3",
+      "Flags": 0,
+      "Name": "std_plywood_slope192_384 (2)",
+      "Position": "768,384,-192",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "__Prefab": "prefabs/map/track_pieces/standard/std_plywood_slope192_384.prefab"
+    },
+    {
+      "__guid": "b310af23-0f50-4e64-8bd6-39b0b541a2ff",
+      "Flags": 0,
+      "Name": "std_plywood_slope192_384 (5)",
+      "Position": "1152,384,-384",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "__Prefab": "prefabs/map/track_pieces/standard/std_plywood_slope192_384.prefab"
+    },
+    {
+      "__guid": "9a268e94-72f7-4808-9adb-7b9da707ce18",
+      "Flags": 0,
+      "Name": "std_plywood_turn576",
+      "Position": "4992,-384,-912",
+      "Rotation": "0,-0.00000000000001776357,0.9999999,-0.00000000000005329071",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "__Prefab": "prefabs/map/track_pieces/standard/std_plywood_turn576.prefab"
+    },
+    {
+      "__guid": "1c09053a-939e-4638-9a9f-5151d5019fd2",
+      "Flags": 0,
+      "Name": "std_plywood_turn576 (1)",
+      "Position": "4992,-5760,-896",
+      "Rotation": "-0.00000000000001256074,-0.00000000000001256074,0.7071068,0.7071066",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "__Prefab": "prefabs/map/track_pieces/standard/std_plywood_turn576.prefab"
+    },
+    {
+      "__guid": "a1d1e734-5d3c-415a-9b89-62d271f8ae21",
+      "Flags": 0,
+      "Name": "std_plywood_turn192",
+      "Position": "-2304,-5760,-512",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "__Prefab": "prefabs/map/track_pieces/standard/std_plywood_turn192.prefab"
+    },
+    {
+      "__guid": "7a1f7575-1feb-4da5-bdeb-5528d438a3de",
+      "Flags": 0,
+      "Name": "std_plywood_turn192 (1)",
+      "Position": "-2304,-4608,-416",
+      "Rotation": "0,0,-0.7071067,0.7071068",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "__Prefab": "prefabs/map/track_pieces/standard/std_plywood_turn192.prefab"
+    },
+    {
+      "__guid": "b5e2c06e-841e-4733-89ed-c98934d1007d",
+      "Flags": 0,
+      "Name": "std_plywood_turn192 (2)",
+      "Position": "-1536.592,-4608,-320",
+      "Rotation": "0,0,-0.9999999,0.0000001490116",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "__Prefab": "prefabs/map/track_pieces/standard/std_plywood_turn192.prefab"
+    },
+    {
+      "__guid": "7dac71d4-52c0-43af-a83d-eab46a7a2baf",
+      "Flags": 0,
+      "Name": "std_plywood_turn192 (3)",
+      "Position": "-1536,-5375.408,-224",
+      "Rotation": "0,0,-0.7071069,-0.7071065",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "__Prefab": "prefabs/map/track_pieces/standard/std_plywood_turn192.prefab"
+    },
+    {
+      "__guid": "b45780ed-a0e5-4ad5-a61a-52b15265085b",
+      "Flags": 0,
+      "Name": "std_plywood_slope96_384",
+      "Position": "-2304,-4992,-512",
+      "Rotation": "-0.00000007505895,0.00000007505894,-0.7071064,0.707107",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "__Prefab": "prefabs/map/track_pieces/standard/std_plywood_slope96_384.prefab"
+    },
+    {
+      "__guid": "51dfd520-76fa-4c4f-9757-573357f0ed64",
+      "Flags": 0,
+      "Name": "std_plywood_slope96_384 (1)",
+      "Position": "-1920,-4606.817,-416",
+      "Rotation": "-0.00000000000001421085,0.0000001061494,-0.9999999,0.0000004768372",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "__Prefab": "prefabs/map/track_pieces/standard/std_plywood_slope96_384.prefab"
+    },
+    {
+      "__guid": "058b61ef-dc9c-4369-b386-0c96cddd13ff",
+      "Flags": 0,
+      "Name": "std_plywood_slope96_384 (2)",
+      "Position": "-1535.408,-4992,-320",
+      "Rotation": "0.00000007505895,0.00000007505897,-0.7071071,-0.7071063",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "__Prefab": "prefabs/map/track_pieces/standard/std_plywood_slope96_384.prefab"
+    },
+    {
+      "__guid": "917018b3-c3be-4602-8afa-80529903df0d",
+      "Flags": 0,
+      "Name": "std_plywood_slope96_384 (3)",
+      "Position": "-1920,-5376.592,-224",
+      "Rotation": "0.0000001061494,0.000000000000024869,-0.0000006854534,-0.9999999",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "__Prefab": "prefabs/map/track_pieces/standard/std_plywood_slope96_384.prefab"
+    },
+    {
+      "__guid": "6ef2bd6b-4104-4bec-a452-12e18804a528",
+      "Flags": 0,
+      "Name": "chainlink_192_start",
+      "Position": "-480,160,0.0001249337",
+      "Rotation": "0.00000000000001256074,-0.00000000000001256074,0.7071068,-0.7071066",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "__Prefab": "prefabs/map/track_walls/chainlink_192_start.prefab"
+    },
+    {
+      "__guid": "2c67d12f-d1cc-4c0c-a1bb-eaf90590e34f",
+      "Flags": 0,
+      "Name": "chainlink_192_start (1)",
+      "Position": "480,-191.9998,0.0001249337",
+      "Rotation": "-0.00000000000001256074,-0.00000000000001256074,0.7071067,0.7071067",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "__Prefab": "prefabs/map/track_walls/chainlink_192_start.prefab"
+    },
+    {
+      "__guid": "9d89e68c-3e88-43cf-be74-f09746f6badb",
+      "Flags": 0,
+      "Name": "chainlink_192_middle",
+      "Position": "-288,160,-0.000002621183",
+      "Rotation": "-0.00000000000001256074,0.00000000000001256074,-0.7071065,0.7071069",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "__Prefab": "prefabs/map/track_walls/chainlink_192_middle.prefab"
+    },
+    {
+      "__guid": "9966a171-ec02-4f05-a7fe-5edb5712b443",
+      "Flags": 0,
+      "Name": "chainlink_192_middle (7)",
+      "Position": "288,-191.9999,-0.000002621186",
+      "Rotation": "0.00000000000001256074,0.00000000000001256074,-0.707107,-0.7071064",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "__Prefab": "prefabs/map/track_walls/chainlink_192_middle.prefab"
+    },
+    {
+      "__guid": "b3f07e4c-d9ed-4f9b-b27a-e7e7a48dc0e8",
+      "Flags": 0,
+      "Name": "chainlink_192_middle (1)",
+      "Position": "-96,160,-0.000002621183",
+      "Rotation": "-0.00000000000001256074,0.00000000000001256074,-0.7071065,0.7071069",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "__Prefab": "prefabs/map/track_walls/chainlink_192_middle.prefab"
+    },
+    {
+      "__guid": "218edb39-7da5-41c1-867e-38c9d68fd961",
+      "Flags": 0,
+      "Name": "chainlink_192_middle (6)",
+      "Position": "96,-192,-0.000002621186",
+      "Rotation": "0.00000000000001256074,0.00000000000001256074,-0.707107,-0.7071064",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "__Prefab": "prefabs/map/track_walls/chainlink_192_middle.prefab"
+    },
+    {
+      "__guid": "6b85b9e9-b80d-494e-be0f-56e21eb8e55f",
+      "Flags": 0,
+      "Name": "chainlink_192_middle (2)",
+      "Position": "96,160,-0.000002621183",
+      "Rotation": "-0.00000000000001256074,0.00000000000001256074,-0.7071065,0.7071069",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "__Prefab": "prefabs/map/track_walls/chainlink_192_middle.prefab"
+    },
+    {
+      "__guid": "b074d925-989c-4649-a201-3ee8365dc59a",
+      "Flags": 0,
+      "Name": "chainlink_192_middle (5)",
+      "Position": "-96,-192,-0.000002621186",
+      "Rotation": "0.00000000000001256074,0.00000000000001256074,-0.707107,-0.7071064",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "__Prefab": "prefabs/map/track_walls/chainlink_192_middle.prefab"
+    },
+    {
+      "__guid": "5d513cb4-4871-41a5-8d62-9c1ea045bd3b",
+      "Flags": 0,
+      "Name": "chainlink_192_middle (3)",
+      "Position": "288,160,-0.000002621183",
+      "Rotation": "-0.00000000000001256074,0.00000000000001256074,-0.7071065,0.7071069",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "__Prefab": "prefabs/map/track_walls/chainlink_192_middle.prefab"
+    },
+    {
+      "__guid": "ca0f1cc9-d719-4553-a322-ae5dad8670b7",
+      "Flags": 0,
+      "Name": "chainlink_192_middle (4)",
+      "Position": "-288,-192.0001,-0.000002621186",
+      "Rotation": "0.00000000000001256074,0.00000000000001256074,-0.707107,-0.7071064",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "__Prefab": "prefabs/map/track_walls/chainlink_192_middle.prefab"
+    },
+    {
+      "__guid": "c20a77c7-4b01-4f4f-b480-38d0770a9b98",
+      "Flags": 0,
+      "Name": "chainlink_192_end",
+      "Position": "480,160,0.00003051758",
+      "Rotation": "0.00000000000001256074,-0.00000000000001256074,0.7071068,-0.7071066",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "__Prefab": "prefabs/map/track_walls/chainlink_192_end.prefab"
+    },
+    {
+      "__guid": "143e1d06-e60c-4635-b2d0-2af794e9dd45",
+      "Flags": 0,
+      "Name": "chainlink_192_end (1)",
+      "Position": "-480,-192.0002,0.00003051758",
+      "Rotation": "-0.00000000000001256074,-0.00000000000001256074,0.7071067,0.7071067",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "__Prefab": "prefabs/map/track_walls/chainlink_192_end.prefab"
+    },
+    {
+      "__guid": "741648db-336f-444d-9661-321bb43ce6b2",
+      "Flags": 0,
+      "Name": "skn_metalwalk_straight_96",
+      "Position": "2448,-5832,-512",
+      "Rotation": "-0.0000001192093,0,1,0",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "__Prefab": "prefabs/map/track_pieces/skinny/skn_metalwalk_straight_96.prefab"
+    },
+    {
+      "__guid": "acb19524-171c-479e-8877-2ba654136be2",
+      "Flags": 0,
+      "Name": "skn_metalwalk_straight_96 (2)",
+      "Position": "2256,-5832,-512",
+      "Rotation": "-0.0000001192093,0,1,0",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "__Prefab": "prefabs/map/track_pieces/skinny/skn_metalwalk_straight_96.prefab"
+    },
+    {
+      "__guid": "74bcd920-3ee1-4c14-8b98-f94512c84c5e",
+      "Flags": 0,
+      "Name": "skn_metalwalk_straight_96 (4)",
+      "Position": "2064,-5832,-512",
+      "Rotation": "-0.0000001192093,0,1,0",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "__Prefab": "prefabs/map/track_pieces/skinny/skn_metalwalk_straight_96.prefab"
+    },
+    {
+      "__guid": "b244c496-c2c9-4e2c-8410-01c5ca3565ef",
+      "Flags": 0,
+      "Name": "skn_metalwalk_straight_96 (6)",
+      "Position": "1872,-5832,-512",
+      "Rotation": "-0.0000001192093,0,1,0",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "__Prefab": "prefabs/map/track_pieces/skinny/skn_metalwalk_straight_96.prefab"
+    },
+    {
+      "__guid": "c28dbae7-7a02-4cf1-91dc-8349dd8c967e",
+      "Flags": 0,
+      "Name": "skn_metalwalk_straight_96 (8)",
+      "Position": "1680,-5832,-512",
+      "Rotation": "-0.0000001192093,0,1,0",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "__Prefab": "prefabs/map/track_pieces/skinny/skn_metalwalk_straight_96.prefab"
+    },
+    {
+      "__guid": "9d6f0264-c56d-4b78-a071-b4b477d921f6",
+      "Flags": 0,
+      "Name": "skn_metalwalk_straight_96 (16)",
+      "Position": "1296,-5832,-512",
+      "Rotation": "-0.0000001192093,0,1,0",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "__Prefab": "prefabs/map/track_pieces/skinny/skn_metalwalk_straight_96.prefab"
+    },
+    {
+      "__guid": "5d4e7b4d-ebb8-4166-9c07-e77a4b025b7e",
+      "Flags": 0,
+      "Name": "skn_metalwalk_straight_96 (19)",
+      "Position": "-240,-5832,-512",
+      "Rotation": "-0.0000001192093,0,1,0",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "__Prefab": "prefabs/map/track_pieces/skinny/skn_metalwalk_straight_96.prefab"
+    },
+    {
+      "__guid": "d777dd44-c3b3-4941-a9da-3ef5998f8e18",
+      "Flags": 0,
+      "Name": "skn_metalwalk_straight_96 (23)",
+      "Position": "-624,-5832,-512",
+      "Rotation": "-0.0000001192093,0,1,0",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "__Prefab": "prefabs/map/track_pieces/skinny/skn_metalwalk_straight_96.prefab"
+    },
+    {
+      "__guid": "8f555b27-7a2a-4f9b-94bc-017bdbce2f79",
+      "Flags": 0,
+      "Name": "skn_metalwalk_straight_96 (27)",
+      "Position": "-1008,-5832,-512",
+      "Rotation": "-0.0000001192093,0,1,0",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "__Prefab": "prefabs/map/track_pieces/skinny/skn_metalwalk_straight_96.prefab"
+    },
+    {
+      "__guid": "9bf5822c-d971-4dec-9124-ca4bf0479421",
+      "Flags": 0,
+      "Name": "skn_metalwalk_straight_96 (10)",
+      "Position": "1488,-5832,-512",
+      "Rotation": "-0.0000001192093,0,1,0",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "__Prefab": "prefabs/map/track_pieces/skinny/skn_metalwalk_straight_96.prefab"
+    },
+    {
+      "__guid": "fcb53ac9-7a5b-4a0c-96ee-fa5c65e0f45e",
+      "Flags": 0,
+      "Name": "skn_metalwalk_straight_96 (14)",
+      "Position": "1104,-5832,-512",
+      "Rotation": "-0.0000001192093,0,1,0",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "__Prefab": "prefabs/map/track_pieces/skinny/skn_metalwalk_straight_96.prefab"
+    },
+    {
+      "__guid": "4d84d313-4c4e-406b-a018-9b5591be12a8",
+      "Flags": 0,
+      "Name": "skn_metalwalk_straight_96 (17)",
+      "Position": "-432,-5832,-512",
+      "Rotation": "-0.0000001192093,0,1,0",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "__Prefab": "prefabs/map/track_pieces/skinny/skn_metalwalk_straight_96.prefab"
+    },
+    {
+      "__guid": "6bf466a9-010f-4729-913b-08d35092a916",
+      "Flags": 0,
+      "Name": "skn_metalwalk_straight_96 (21)",
+      "Position": "-816,-5832,-512",
+      "Rotation": "-0.0000001192093,0,1,0",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "__Prefab": "prefabs/map/track_pieces/skinny/skn_metalwalk_straight_96.prefab"
+    },
+    {
+      "__guid": "fd205000-4f6d-49b2-85b3-7f6d993fc3e4",
+      "Flags": 0,
+      "Name": "skn_metalwalk_straight_96 (25)",
+      "Position": "-1200,-5832,-512",
+      "Rotation": "-0.0000001192093,0,1,0",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "__Prefab": "prefabs/map/track_pieces/skinny/skn_metalwalk_straight_96.prefab"
+    },
+    {
+      "__guid": "bf5d552e-6e2b-4736-86ad-b1880fc27f64",
+      "Flags": 0,
+      "Name": "skn_metalwalk_straight_96 (1)",
+      "Position": "2352,-5832,-512",
+      "Rotation": "-0.0000001192093,0,1,0",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "__Prefab": "prefabs/map/track_pieces/skinny/skn_metalwalk_straight_96.prefab"
+    },
+    {
+      "__guid": "f98008e2-afdd-41b9-bce9-9bc976908612",
+      "Flags": 0,
+      "Name": "skn_metalwalk_straight_96 (3)",
+      "Position": "2160,-5832,-512",
+      "Rotation": "-0.0000001192093,0,1,0",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "__Prefab": "prefabs/map/track_pieces/skinny/skn_metalwalk_straight_96.prefab"
+    },
+    {
+      "__guid": "61c8f027-8514-4677-9444-a80092520790",
+      "Flags": 0,
+      "Name": "skn_metalwalk_straight_96 (5)",
+      "Position": "1968,-5832,-512",
+      "Rotation": "-0.0000001192093,0,1,0",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "__Prefab": "prefabs/map/track_pieces/skinny/skn_metalwalk_straight_96.prefab"
+    },
+    {
+      "__guid": "9fbe1628-b919-4de9-94c6-3a1b03ba651f",
+      "Flags": 0,
+      "Name": "skn_metalwalk_straight_96 (7)",
+      "Position": "1776,-5832,-512",
+      "Rotation": "-0.0000001192093,0,1,0",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "__Prefab": "prefabs/map/track_pieces/skinny/skn_metalwalk_straight_96.prefab"
+    },
+    {
+      "__guid": "9d329e77-b508-4f7d-861c-af4f0301c9c5",
+      "Flags": 0,
+      "Name": "skn_metalwalk_straight_96 (9)",
+      "Position": "1584,-5832,-512",
+      "Rotation": "-0.0000001192093,0,1,0",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "__Prefab": "prefabs/map/track_pieces/skinny/skn_metalwalk_straight_96.prefab"
+    },
+    {
+      "__guid": "52ebbae3-2956-4466-8770-5cfd9cb47719",
+      "Flags": 0,
+      "Name": "skn_metalwalk_straight_96 (15)",
+      "Position": "1200,-5832,-512",
+      "Rotation": "-0.0000001192093,0,1,0",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "__Prefab": "prefabs/map/track_pieces/skinny/skn_metalwalk_straight_96.prefab"
+    },
+    {
+      "__guid": "6df4b84a-739a-4141-9b12-bf01ebd86c85",
+      "Flags": 0,
+      "Name": "skn_metalwalk_straight_96 (18)",
+      "Position": "-336,-5832,-512",
+      "Rotation": "-0.0000001192093,0,1,0",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "__Prefab": "prefabs/map/track_pieces/skinny/skn_metalwalk_straight_96.prefab"
+    },
+    {
+      "__guid": "3dfc6c6e-6e6b-4510-aa2c-769accea943c",
+      "Flags": 0,
+      "Name": "skn_metalwalk_straight_96 (22)",
+      "Position": "-720,-5832,-512",
+      "Rotation": "-0.0000001192093,0,1,0",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "__Prefab": "prefabs/map/track_pieces/skinny/skn_metalwalk_straight_96.prefab"
+    },
+    {
+      "__guid": "6fcb900d-64a9-4a9f-b11a-7c23c9727caf",
+      "Flags": 0,
+      "Name": "skn_metalwalk_straight_96 (26)",
+      "Position": "-1104,-5832,-512",
+      "Rotation": "-0.0000001192093,0,1,0",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "__Prefab": "prefabs/map/track_pieces/skinny/skn_metalwalk_straight_96.prefab"
+    },
+    {
+      "__guid": "911d719c-15d4-4341-90fc-eef75eefed0e",
+      "Flags": 0,
+      "Name": "skn_metalwalk_straight_96 (11)",
+      "Position": "1392,-5832,-512",
+      "Rotation": "-0.0000001192093,0,1,0",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "__Prefab": "prefabs/map/track_pieces/skinny/skn_metalwalk_straight_96.prefab"
+    },
+    {
+      "__guid": "11ba57f1-1518-418b-a6b3-fe807f5c0f3a",
+      "Flags": 0,
+      "Name": "skn_metalwalk_straight_96 (13)",
+      "Position": "1008,-5832,-512",
+      "Rotation": "-0.0000001192093,0,1,0",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "__Prefab": "prefabs/map/track_pieces/skinny/skn_metalwalk_straight_96.prefab"
+    },
+    {
+      "__guid": "b63b7c43-f6fe-4e70-90d2-9d72dbf15485",
+      "Flags": 0,
+      "Name": "skn_metalwalk_straight_96 (12)",
+      "Position": "-528,-5832,-512",
+      "Rotation": "-0.0000001192093,0,1,0",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "__Prefab": "prefabs/map/track_pieces/skinny/skn_metalwalk_straight_96.prefab"
+    },
+    {
+      "__guid": "6dd152b0-1995-4c4f-a4d1-9eab8f10f2cd",
+      "Flags": 0,
+      "Name": "skn_metalwalk_straight_96 (20)",
+      "Position": "-912,-5832,-512",
+      "Rotation": "-0.0000001192093,0,1,0",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "__Prefab": "prefabs/map/track_pieces/skinny/skn_metalwalk_straight_96.prefab"
+    },
+    {
+      "__guid": "763d06dc-ebe3-4722-a765-2f3e49f9b1a9",
+      "Flags": 0,
+      "Name": "skn_metalwalk_straight_96 (24)",
+      "Position": "-1296,-5832,-512",
+      "Rotation": "-0.0000001192093,0,1,0",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "__Prefab": "prefabs/map/track_pieces/skinny/skn_metalwalk_straight_96.prefab"
+    },
+    {
+      "__guid": "acd8402c-5ed5-43ba-a017-2537119e4341",
+      "Flags": 0,
+      "Name": "shipping_container_big_no_doors",
+      "Position": "436.4438,0,0.00003682724",
+      "Rotation": "0,-0.00000000000001776357,0.9999999,-0.00000000000005329071",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "Components": [
+        {
+          "__type": "Sandbox.Prop",
+          "__guid": "8f387527-cf59-4bf3-81e0-a93f3d731d73",
+          "BodyGroups": 18446744073709551615,
+          "Health": 0,
+          "IsStatic": true,
+          "Model": "models/props/shipping_containers/shipping_container_big_no_doors.vmdl"
+        }
+      ]
+    },
+    {
+      "__guid": "019e2ac3-ecd5-4514-9d53-11e494603970",
+      "Flags": 0,
+      "Name": "tyre_obstacle_01",
+      "Position": "5088,-1360,-959.2143",
+      "Rotation": "0,0,-0.7071067,0.7071068",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "Components": [
+        {
+          "__type": "Sandbox.Prop",
+          "__guid": "f06b0358-b2c8-4b8f-a037-19fa78ac86c2",
+          "BodyGroups": 18446744073709551615,
+          "Health": 0,
+          "IsStatic": true,
+          "Model": "models/props/tyre_obstacle_01/tyre_obstacle_01.vmdl"
+        }
+      ]
+    },
+    {
+      "__guid": "d5e5f21e-01ca-4d71-81a1-8cde41d6b1db",
+      "Flags": 0,
+      "Name": "tyre_obstacle_01 (1)",
+      "Position": "4896,-1360,-959.2143",
+      "Rotation": "0,0,-0.7071067,0.7071068",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "Components": [
+        {
+          "__type": "Sandbox.Prop",
+          "__guid": "eea38457-da30-409c-84a9-1d12665309aa",
+          "BodyGroups": 18446744073709551615,
+          "Health": 0,
+          "IsStatic": true,
+          "Model": "models/props/tyre_obstacle_01/tyre_obstacle_01.vmdl"
+        }
+      ]
+    },
+    {
+      "__guid": "31e3c109-c2c4-46e1-b8b5-3fff6fe9fcc3",
+      "Flags": 0,
+      "Name": "scaffold01_empty_block_mid_384",
+      "Position": "3072,384,-832",
+      "Rotation": "0,-0.00000000000001776357,0.9999999,-0.00000000000005329071",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "__Prefab": "prefabs/map/scaffold/scaffold01_empty_block_mid_384.prefab"
+    },
+    {
+      "__guid": "1a9081dd-9c38-455b-a438-5c6316c8c603",
+      "Flags": 0,
+      "Name": "scaffold01_empty_block_mid_384 (1)",
+      "Position": "2688,384,-832",
+      "Rotation": "0,-0.00000000000001776357,0.9999999,-0.00000000000005329071",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "__Prefab": "prefabs/map/scaffold/scaffold01_empty_block_mid_384.prefab"
+    },
+    {
+      "__guid": "f5f8b715-9edf-4fb4-b782-273716fd64a5",
+      "Flags": 0,
+      "Name": "scaffold01_empty_block_mid_384 (2)",
+      "Position": "2304,384,-832",
+      "Rotation": "0,-0.00000000000001776357,0.9999999,-0.00000000000005329071",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "__Prefab": "prefabs/map/scaffold/scaffold01_empty_block_mid_384.prefab"
+    },
+    {
+      "__guid": "8c4c8f08-5dc8-4723-9e50-7b8c76f062d5",
+      "Flags": 0,
+      "Name": "scaffold01_empty_block_mid_384 (7)",
+      "Position": "2304,384,-448",
+      "Rotation": "0,-0.00000000000001776357,0.9999999,-0.00000000000005329071",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "__Prefab": "prefabs/map/scaffold/scaffold01_empty_block_mid_384.prefab"
+    },
+    {
+      "__guid": "353a4ced-b1a4-4869-8f31-dbb9d5d19238",
+      "Flags": 0,
+      "Name": "scaffold01_empty_block_mid_384 (3)",
+      "Position": "1920,384,-832",
+      "Rotation": "0,-0.00000000000001776357,0.9999999,-0.00000000000005329071",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "__Prefab": "prefabs/map/scaffold/scaffold01_empty_block_mid_384.prefab"
+    },
+    {
+      "__guid": "456def05-5d88-4f0c-9c33-7aac4d0d88d0",
+      "Flags": 0,
+      "Name": "scaffold01_empty_block_mid_384 (6)",
+      "Position": "1920,384,-448",
+      "Rotation": "0,-0.00000000000001776357,0.9999999,-0.00000000000005329071",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "__Prefab": "prefabs/map/scaffold/scaffold01_empty_block_mid_384.prefab"
+    },
+    {
+      "__guid": "ee99d0e1-76ae-4f5e-97a8-4af5f6787714",
+      "Flags": 0,
+      "Name": "scaffold01_empty_block_mid_384 (5)",
+      "Position": "1536,384,-448",
+      "Rotation": "0,-0.00000000000001776357,0.9999999,-0.00000000000005329071",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "__Prefab": "prefabs/map/scaffold/scaffold01_empty_block_mid_384.prefab"
+    },
+    {
+      "__guid": "ce68c6d4-bbb9-483a-9cce-c3d28ffa8a93",
+      "Flags": 0,
+      "Name": "scaffold01_empty_block_mid_384 (8)",
+      "Position": "1536,768,-448",
+      "Rotation": "0,-0.00000000000001776357,0.9999999,-0.00000000000005329071",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "__Prefab": "prefabs/map/scaffold/scaffold01_empty_block_mid_384.prefab"
+    },
+    {
+      "__guid": "bd48ddc1-b956-40bb-822e-80a71aa9a7e4",
+      "Flags": 0,
+      "Name": "scaffold01_empty_block_mid_384 (4)",
+      "Position": "1152,768,-448",
+      "Rotation": "0,-0.00000000000001776357,0.9999999,-0.00000000000005329071",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "__Prefab": "prefabs/map/scaffold/scaffold01_empty_block_mid_384.prefab"
+    }
+  ],
+  "SceneProperties": {
+    "FixedUpdateFrequency": 50,
+    "MaxFixedUpdates": 5,
+    "NetworkFrequency": 30,
+    "NetworkInterpolation": true,
+    "ThreadedAnimation": true,
+    "TimeScale": 1,
+    "UseFixedUpdate": true,
+    "NavMesh": {
+      "Enabled": false,
+      "IncludeStaticBodies": true,
+      "IncludeKeyframedBodies": true,
+      "EditorAutoUpdate": true,
+      "AgentHeight": 64,
+      "AgentRadius": 16,
+      "AgentStepSize": 18,
+      "AgentMaxSlope": 40,
+      "ExcludedBodies": "",
+      "IncludedBodies": ""
+    }
+  },
+  "Title": "alleyslope",
+  "Description": "",
+  "LastSaved": "2024-05-17T17:42:46.8757955-04:00",
+  "ResourceVersion": 1,
+  "__version": 1,
+  "__references": []
+}

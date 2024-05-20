@@ -1,0 +1,27 @@
+{
+  "RootObject": {
+    "__guid": "cd2dd774-5d1d-4a30-85f4-74406363925a",
+    "Flags": 0,
+    "Name": "std_plywood_straight_96",
+    "Position": "-640,0,0",
+    "Enabled": true,
+    "NetworkMode": 2,
+    "NetworkInterpolation": true,
+    "Components": [
+      {
+        "__type": "Sandbox.Prop",
+        "__guid": "a9ff7152-6923-48ad-bfbc-6d8fc5fc2cac",
+        "BodyGroups": 18446744073709551615,
+        "Health": 0,
+        "IsStatic": true,
+        "Model": "models/track_pieces/standard/std_plywood_straight_96.vmdl"
+      }
+    ]
+  },
+  "ShowInMenu": false,
+  "MenuPath": null,
+  "MenuIcon": null,
+  "ResourceVersion": 1,
+  "__version": 1,
+  "__references": []
+}

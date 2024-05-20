@@ -1,0 +1,74 @@
+{
+  "RootObject": {
+    "__guid": "2901764a-da3f-46ef-91de-2d2aa26a54ca",
+    "Flags": 0,
+    "Name": "chainlink_96_start",
+    "Enabled": true,
+    "NetworkMode": 2,
+    "NetworkInterpolation": true,
+    "Children": [
+      {
+        "__guid": "259ab77a-2e0e-4c6d-962b-ac4b5c5ad9d1",
+        "Flags": 0,
+        "Name": "chainlink_pole_left",
+        "Position": "0,-48,0",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "NetworkInterpolation": true,
+        "Components": [
+          {
+            "__type": "Sandbox.Prop",
+            "__guid": "7a80d667-00cd-4c67-be56-15cbafff2133",
+            "BodyGroups": 18446744073709551615,
+            "Health": 0,
+            "IsStatic": true,
+            "Model": "models/track_walls/chainlink_fence/chainlink_pole_left.vmdl"
+          }
+        ]
+      },
+      {
+        "__guid": "1b3da52b-6b5b-4b63-a291-a758b52fef6d",
+        "Flags": 0,
+        "Name": "chainlink_fence_96",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "NetworkInterpolation": true,
+        "Components": [
+          {
+            "__type": "Sandbox.Prop",
+            "__guid": "7535adff-1386-4cba-8ac2-847c771024ed",
+            "BodyGroups": 18446744073709551615,
+            "Health": 0,
+            "IsStatic": true,
+            "Model": "models/track_walls/chainlink_fence/chainlink_fence_96.vmdl"
+          }
+        ]
+      },
+      {
+        "__guid": "7749e91e-b0ed-4527-9b26-4620172a4598",
+        "Flags": 0,
+        "Name": "chainlink_pole_middle",
+        "Position": "0,48,0",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "NetworkInterpolation": true,
+        "Components": [
+          {
+            "__type": "Sandbox.Prop",
+            "__guid": "61093904-1bac-4f21-aca6-52686bb27fc7",
+            "BodyGroups": 18446744073709551615,
+            "Health": 0,
+            "IsStatic": true,
+            "Model": "models/track_walls/chainlink_fence/chainlink_pole_middle.vmdl"
+          }
+        ]
+      }
+    ]
+  },
+  "ShowInMenu": false,
+  "MenuPath": null,
+  "MenuIcon": null,
+  "ResourceVersion": 1,
+  "__version": 1,
+  "__references": []
+}

@@ -1,0 +1,27 @@
+{
+  "RootObject": {
+    "__guid": "297fd9ee-ec60-448f-a106-277c5ed5d313",
+    "Flags": 0,
+    "Name": "hlf_plywood_slope96_turn576",
+    "Position": "-1536,1792,0",
+    "Enabled": true,
+    "NetworkMode": 2,
+    "NetworkInterpolation": true,
+    "Components": [
+      {
+        "__type": "Sandbox.Prop",
+        "__guid": "59d2b431-5e37-4b91-8721-ca85b0713378",
+        "BodyGroups": 18446744073709551615,
+        "Health": 0,
+        "IsStatic": true,
+        "Model": "models/track_pieces/half/hlf_plywood_slope96_turn576.vmdl"
+      }
+    ]
+  },
+  "ShowInMenu": false,
+  "MenuPath": null,
+  "MenuIcon": null,
+  "ResourceVersion": 1,
+  "__version": 1,
+  "__references": []
+}

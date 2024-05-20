@@ -1,0 +1,27 @@
+{
+  "publish": {
+    "Enabled": true,
+    "ProjectConfig": {
+      "Title": "Tarpaulin Dirty",
+      "Type": "material",
+      "Org": "facepunch",
+      "Ident": "tarp_dirty_01",
+      "Tags": "tarpaulin dirty tarp",
+      "Schema": 0,
+      "HasAssets": false,
+      "AssetsPath": null,
+      "ResourcePaths": null,
+      "HasCode": false,
+      "CodePath": null,
+      "PackageReferences": null,
+      "EditorReferences": null,
+      "Metadata": {
+        "SingleAssetSource": "materials/fabric/tarpaulin_dirty_01.vmat",
+        "Summary": "",
+        "Description": "",
+        "Public": true,
+        "ReplaceTags": "tarpaulin tarp dirty"
+      }
+    }
+  }
+}

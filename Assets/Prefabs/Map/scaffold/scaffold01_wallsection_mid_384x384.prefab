@@ -1,0 +1,320 @@
+{
+  "RootObject": {
+    "__guid": "c585a2fa-774c-4ac3-b1d3-fcc787be4291",
+    "Flags": 0,
+    "Name": "scaffold01_wallsection_mid_384x384",
+    "Enabled": true,
+    "NetworkMode": 2,
+    "NetworkInterpolation": true,
+    "Children": [
+      {
+        "__guid": "1f0c753b-e142-4abd-b33d-378e8a014b40",
+        "Flags": 0,
+        "Name": "scaffolding_connector_a (2)",
+        "Position": "0,-184,0.000004172325",
+        "Rotation": "0.7071069,-0.7071068,0.00000006705523,0.00000006705523",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "NetworkInterpolation": true,
+        "Components": [
+          {
+            "__type": "Sandbox.Prop",
+            "__guid": "ead99e81-ccb5-4764-8bdf-4fa431c4a3cd",
+            "BodyGroups": 18446744073709551615,
+            "Health": 0,
+            "IsStatic": true,
+            "Model": "models/scaffolding/scaffolding_connector_a.vmdl"
+          }
+        ]
+      },
+      {
+        "__guid": "1681bd67-d1a7-49bf-bf30-b080dc1215d0",
+        "Flags": 0,
+        "Name": "scaffolding_tube_a (6)",
+        "Position": "0,-72,0",
+        "Rotation": "0.5,-0.5,-0.4999999,0.5000001",
+        "Scale": "0.875,1,1",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "NetworkInterpolation": true,
+        "Components": [
+          {
+            "__type": "Sandbox.Prop",
+            "__guid": "4d9307b3-4145-40c7-85fb-72f3ced13a89",
+            "BodyGroups": 18446744073709551615,
+            "Health": 0,
+            "IsStatic": true,
+            "Model": "models/scaffolding/scaffolding_tube_a.vmdl"
+          }
+        ]
+      },
+      {
+        "__guid": "1a2308df-e3e6-4668-8671-220566e08d6f",
+        "Flags": 0,
+        "Name": "scaffolding_tube_a (5)",
+        "Position": "0,56,0",
+        "Rotation": "0.5,-0.5,-0.4999999,0.5000001",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "NetworkInterpolation": true,
+        "Components": [
+          {
+            "__type": "Sandbox.Prop",
+            "__guid": "4193f6a1-c61f-40f5-8c7d-a380a2055f7a",
+            "BodyGroups": 18446744073709551615,
+            "Health": 0,
+            "IsStatic": true,
+            "Model": "models/scaffolding/scaffolding_tube_a.vmdl"
+          }
+        ]
+      },
+      {
+        "__guid": "bd2159f7-e575-4e94-83d1-7961aa110a4a",
+        "Flags": 0,
+        "Name": "scaffolding_tube_a (4)",
+        "Position": "0,184,0",
+        "Rotation": "0.5,-0.5,-0.4999999,0.5000001",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "NetworkInterpolation": true,
+        "Components": [
+          {
+            "__type": "Sandbox.Prop",
+            "__guid": "7ff71f68-1d07-49c1-80d3-3d2d67249c21",
+            "BodyGroups": 18446744073709551615,
+            "Health": 0,
+            "IsStatic": true,
+            "Model": "models/scaffolding/scaffolding_tube_a.vmdl"
+          }
+        ]
+      },
+      {
+        "__guid": "4082fe9e-199a-491e-a8f8-6b9f2c0dea08",
+        "Flags": 0,
+        "Name": "scaffolding_connector_a (1)",
+        "Position": "0,184,0",
+        "Rotation": "0,0,0.7071067,0.7071068",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "NetworkInterpolation": true,
+        "Components": [
+          {
+            "__type": "Sandbox.Prop",
+            "__guid": "95219802-d096-4319-afa3-8624ce7c76a8",
+            "BodyGroups": 18446744073709551615,
+            "Health": 0,
+            "IsStatic": true,
+            "Model": "models/scaffolding/scaffolding_connector_a.vmdl"
+          }
+        ]
+      },
+      {
+        "__guid": "7c5324b0-c822-4677-bc86-08a23024d3b4",
+        "Flags": 0,
+        "Name": "scaffolding_ringlock_a (1)",
+        "Position": "0,192,0.000006388163",
+        "Rotation": "0,-0.7071067,0,0.7071068",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "NetworkInterpolation": true,
+        "Components": [
+          {
+            "__type": "Sandbox.Prop",
+            "__guid": "43c7a792-8f5c-42e6-b64f-fdb8f1d127ae",
+            "BodyGroups": 18446744073709551615,
+            "Health": 0,
+            "IsStatic": true,
+            "Model": "models/scaffolding/scaffolding_ringlock_a.vmdl"
+          }
+        ]
+      },
+      {
+        "__guid": "d9187fc1-a4f3-4ce3-8604-6bb5a46f9f41",
+        "Flags": 0,
+        "Name": "scaffolding_tube_a (3)",
+        "Position": "0,192,0",
+        "Rotation": "0,-0.7071067,0,0.7071068",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "NetworkInterpolation": true,
+        "Components": [
+          {
+            "__type": "Sandbox.Prop",
+            "__guid": "bd39df8d-2e4b-4aae-b452-c44b68766975",
+            "BodyGroups": 18446744073709551615,
+            "Health": 0,
+            "IsStatic": true,
+            "Model": "models/scaffolding/scaffolding_tube_a.vmdl"
+          }
+        ]
+      },
+      {
+        "__guid": "9714a805-a0b3-4208-b518-aec31b15c11a",
+        "Flags": 0,
+        "Name": "scaffolding_tube_a (1)",
+        "Position": "0,192,128",
+        "Rotation": "0,-0.7071067,0,0.7071068",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "NetworkInterpolation": true,
+        "Components": [
+          {
+            "__type": "Sandbox.Prop",
+            "__guid": "2eb50c76-b0bc-4a3a-8e16-ffed44c84e0e",
+            "BodyGroups": 18446744073709551615,
+            "Health": 0,
+            "IsStatic": true,
+            "Model": "models/scaffolding/scaffolding_tube_a.vmdl"
+          }
+        ]
+      },
+      {
+        "__guid": "b1cebd17-9958-4cae-9cd8-4c4079dd3cda",
+        "Flags": 0,
+        "Name": "scaffolding_tube_a (2)",
+        "Position": "0,192,256",
+        "Rotation": "0,-0.7071067,0,0.7071068",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "NetworkInterpolation": true,
+        "Components": [
+          {
+            "__type": "Sandbox.Prop",
+            "__guid": "871b96ce-30f5-425f-b0b0-ef5a6b7ffa22",
+            "BodyGroups": 18446744073709551615,
+            "Health": 0,
+            "IsStatic": true,
+            "Model": "models/scaffolding/scaffolding_tube_a.vmdl"
+          }
+        ]
+      },
+      {
+        "__guid": "55a605d1-890e-47ce-80b0-660374b86df3",
+        "Flags": 0,
+        "Name": "scaffolding_ringlock_a (2)",
+        "Position": "0,192,384",
+        "Rotation": "0,-0.7071067,0,0.7071068",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "NetworkInterpolation": true,
+        "Components": [
+          {
+            "__type": "Sandbox.Prop",
+            "__guid": "aecf88b1-151b-4d5e-8b88-eafa8b84082b",
+            "BodyGroups": 18446744073709551615,
+            "Health": 0,
+            "IsStatic": true,
+            "Model": "models/scaffolding/scaffolding_ringlock_a.vmdl"
+          }
+        ]
+      },
+      {
+        "__guid": "965166a7-7c6d-4e52-8bea-a64c5049ff21",
+        "Flags": 0,
+        "Name": "scaffolding_connector_a (4)",
+        "Position": "0,184,384",
+        "Rotation": "0,0,0.7071067,0.7071068",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "NetworkInterpolation": true,
+        "Components": [
+          {
+            "__type": "Sandbox.Prop",
+            "__guid": "131d7d3d-efba-49b7-bdb3-8587ac516351",
+            "BodyGroups": 18446744073709551615,
+            "Health": 0,
+            "IsStatic": true,
+            "Model": "models/scaffolding/scaffolding_connector_a.vmdl"
+          }
+        ]
+      },
+      {
+        "__guid": "178c75a6-8d23-4d4f-bb83-196585d2a52d",
+        "Flags": 0,
+        "Name": "scaffolding_tube_a (9)",
+        "Position": "0,184,384",
+        "Rotation": "0.5,-0.5,-0.4999999,0.5000001",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "NetworkInterpolation": true,
+        "Components": [
+          {
+            "__type": "Sandbox.Prop",
+            "__guid": "a65743fc-41fb-485a-a9ea-3a53f82e395a",
+            "BodyGroups": 18446744073709551615,
+            "Health": 0,
+            "IsStatic": true,
+            "Model": "models/scaffolding/scaffolding_tube_a.vmdl"
+          }
+        ]
+      },
+      {
+        "__guid": "0b223479-062b-41b5-afc1-545e78ef7e0d",
+        "Flags": 0,
+        "Name": "scaffolding_tube_a (8)",
+        "Position": "0,56,384",
+        "Rotation": "0.5,-0.5,-0.4999999,0.5000001",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "NetworkInterpolation": true,
+        "Components": [
+          {
+            "__type": "Sandbox.Prop",
+            "__guid": "7bd47b16-10f7-4a3b-b51e-e754938ec0e7",
+            "BodyGroups": 18446744073709551615,
+            "Health": 0,
+            "IsStatic": true,
+            "Model": "models/scaffolding/scaffolding_tube_a.vmdl"
+          }
+        ]
+      },
+      {
+        "__guid": "89b4a601-e525-4d09-aae4-43b802c43b7c",
+        "Flags": 0,
+        "Name": "scaffolding_tube_a (7)",
+        "Position": "0,-72,384",
+        "Rotation": "0.5,-0.5,-0.4999999,0.5000001",
+        "Scale": "0.875,1,1",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "NetworkInterpolation": true,
+        "Components": [
+          {
+            "__type": "Sandbox.Prop",
+            "__guid": "d3962e4c-2bdb-4875-96a7-539f31cdcb69",
+            "BodyGroups": 18446744073709551615,
+            "Health": 0,
+            "IsStatic": true,
+            "Model": "models/scaffolding/scaffolding_tube_a.vmdl"
+          }
+        ]
+      },
+      {
+        "__guid": "03493fa4-025f-40d2-a2d3-8250e7dadaaa",
+        "Flags": 0,
+        "Name": "scaffolding_connector_a (3)",
+        "Position": "0,-184,384",
+        "Rotation": "0.7071069,-0.7071068,0.00000006705523,0.00000006705523",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "NetworkInterpolation": true,
+        "Components": [
+          {
+            "__type": "Sandbox.Prop",
+            "__guid": "b2be3e80-e9c6-4881-9cb6-ea37106d7cbd",
+            "BodyGroups": 18446744073709551615,
+            "Health": 0,
+            "IsStatic": true,
+            "Model": "models/scaffolding/scaffolding_connector_a.vmdl"
+          }
+        ]
+      }
+    ]
+  },
+  "ShowInMenu": false,
+  "MenuPath": null,
+  "MenuIcon": null,
+  "ResourceVersion": 1,
+  "__version": 1,
+  "__references": []
+}

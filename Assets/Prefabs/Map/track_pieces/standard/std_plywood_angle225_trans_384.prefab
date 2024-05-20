@@ -1,0 +1,27 @@
+{
+  "RootObject": {
+    "__guid": "9bff99f4-d072-4613-90a2-0ab2b101298d",
+    "Flags": 0,
+    "Name": "std_plywood_angle225_trans_384",
+    "Position": "-448,1511.453,0",
+    "Enabled": true,
+    "NetworkMode": 2,
+    "NetworkInterpolation": true,
+    "Components": [
+      {
+        "__type": "Sandbox.Prop",
+        "__guid": "5657bbe9-2031-4c43-a5ec-f796f3ab19b9",
+        "BodyGroups": 18446744073709551615,
+        "Health": 0,
+        "IsStatic": true,
+        "Model": "models/track_pieces/standard/std_plywood_angle225_trans_384.vmdl"
+      }
+    ]
+  },
+  "ShowInMenu": false,
+  "MenuPath": null,
+  "MenuIcon": null,
+  "ResourceVersion": 1,
+  "__version": 1,
+  "__references": []
+}

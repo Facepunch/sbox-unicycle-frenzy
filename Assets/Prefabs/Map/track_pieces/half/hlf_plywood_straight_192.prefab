@@ -1,0 +1,27 @@
+{
+  "RootObject": {
+    "__guid": "4505bd61-726e-41ac-a61f-d044208dc6df",
+    "Flags": 0,
+    "Name": "hlf_plywood_straight_192",
+    "Position": "-384,0,0",
+    "Enabled": true,
+    "NetworkMode": 2,
+    "NetworkInterpolation": true,
+    "Components": [
+      {
+        "__type": "Sandbox.Prop",
+        "__guid": "02474638-71e5-435d-9318-c3a7b3ef6c8f",
+        "BodyGroups": 18446744073709551615,
+        "Health": 0,
+        "IsStatic": true,
+        "Model": "models/track_pieces/half/hlf_plywood_straight_192.vmdl"
+      }
+    ]
+  },
+  "ShowInMenu": false,
+  "MenuPath": null,
+  "MenuIcon": null,
+  "ResourceVersion": 1,
+  "__version": 1,
+  "__references": []
+}

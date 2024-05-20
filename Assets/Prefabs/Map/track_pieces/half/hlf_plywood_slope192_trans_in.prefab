@@ -1,0 +1,27 @@
+{
+  "RootObject": {
+    "__guid": "ab411d05-ffc9-427e-939f-c3eefa63d645",
+    "Flags": 0,
+    "Name": "hlf_plywood_slope192_trans_in",
+    "Position": "-768,384,0",
+    "Enabled": true,
+    "NetworkMode": 2,
+    "NetworkInterpolation": true,
+    "Components": [
+      {
+        "__type": "Sandbox.Prop",
+        "__guid": "c9cea79c-af7b-4094-9fda-533d32510248",
+        "BodyGroups": 18446744073709551615,
+        "Health": 0,
+        "IsStatic": true,
+        "Model": "models/track_pieces/half/hlf_plywood_slope192_trans_in.vmdl"
+      }
+    ]
+  },
+  "ShowInMenu": false,
+  "MenuPath": null,
+  "MenuIcon": null,
+  "ResourceVersion": 1,
+  "__version": 1,
+  "__references": []
+}

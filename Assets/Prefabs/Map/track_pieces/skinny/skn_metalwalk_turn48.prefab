@@ -1,0 +1,27 @@
+{
+  "RootObject": {
+    "__guid": "656a0e4a-3842-42cd-aad1-b4146350f1fb",
+    "Flags": 0,
+    "Name": "skn_metalwalk_turn48",
+    "Enabled": true,
+    "NetworkMode": 2,
+    "NetworkInterpolation": true,
+    "Components": [
+      {
+        "__type": "Sandbox.Prop",
+        "__guid": "ac143668-dc82-4c81-8444-0adae0971a43",
+        "BodyGroups": 18446744073709551615,
+        "Health": 0,
+        "IsStatic": true,
+        "Model": "models/track_pieces/skinny/skn_metalwalk_turn48.vmdl"
+      }
+    ],
+    "Children": []
+  },
+  "ShowInMenu": false,
+  "MenuPath": null,
+  "MenuIcon": null,
+  "ResourceVersion": 1,
+  "__version": 1,
+  "__references": []
+}

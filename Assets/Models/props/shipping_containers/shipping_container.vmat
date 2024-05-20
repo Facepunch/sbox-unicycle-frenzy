@@ -1,31 +1,53 @@
-"Layer0"
+// THIS FILE IS AUTO-GENERATED
+
+Layer0
 {
-	"shader"		"shaders/complex.shader_c"
-	"F_TINT_MASK"		"1"
-	"F_METALNESS_TEXTURE"		"1"
-	"F_SPECULAR"		"1"
-	"g_flAmbientOcclusionDirectDiffuse"		"1.000000"
-	"g_flAmbientOcclusionDirectSpecular"		"1.000000"
-	"TextureAmbientOcclusion"		"textures/shipping_containers/shipping_container_ao.tga"
-	"g_flModelTintAmount"		"1.000000"
-	"g_vColorTint"		"[1.000000 1.000000 1.000000 0.000000]"
-	"TextureColor"		"textures/shipping_containers/shipping_container_diff_color.tga"
-	"TextureTintMask"		"textures/shipping_containers/shipping_container_mask.tga"
-	"g_flFadeExponent"		"1.000000"
-	"g_bFogEnabled"		"1"
-	"g_flDirectionalLightmapMinZ"		"0.050000"
-	"g_flDirectionalLightmapStrength"		"1.000000"
-	"TextureMetalness"		"textures/shipping_containers/shipping_container_spec_metal.tga"
-	"TextureNormal"		"textures/shipping_containers/shipping_container_normal.tga"
-	"TextureRoughness"		"textures/shipping_containers/shipping_container_spec_rough.png"
-	"g_nScaleTexCoordUByModelScaleAxis"		"0"
-	"g_nScaleTexCoordVByModelScaleAxis"		"0"
-	"g_vTexCoordOffset"		"[0.000 0.000]"
-	"g_vTexCoordScale"		"[1.000 1.000]"
-	"g_vTexCoordScrollSpeed"		"[0.000 0.000]"
-	"SystemAttributes"
+	shader "shaders/complex.shader"
+
+	//---- Color ----
+	F_TINT_MASK 1
+
+	//---- PBR ----
+	F_METALNESS_TEXTURE 1
+	F_SPECULAR 1
+
+	//---- Ambient Occlusion ----
+	g_flAmbientOcclusionDirectDiffuse "1.000"
+	g_flAmbientOcclusionDirectSpecular "1.000"
+	TextureAmbientOcclusion "models/props/shipping_containers/textures/shipping_container_ao.tga"
+
+	//---- Color ----
+	g_flModelTintAmount "1.000"
+	g_vColorTint "[1.000000 1.000000 1.000000 0.000000]"
+	TextureColor "models/props/shipping_containers/textures/shipping_container_diff_color.tga"
+	TextureTintMask "models/props/shipping_containers/textures/shipping_container_mask.tga"
+
+	//---- Fade ----
+	g_flFadeExponent "1.000"
+
+	//---- Fog ----
+	g_bFogEnabled "1"
+
+	//---- Metalness ----
+	TextureMetalness "models/props/shipping_containers/textures/shipping_container_spec_metal.tga"
+
+	//---- Normal ----
+	TextureNormal "models/props/shipping_containers/textures/shipping_container_normal.tga"
+
+	//---- Roughness ----
+	g_flRoughnessScaleFactor "1.000"
+	TextureRoughness "models/props/shipping_containers/textures/shipping_container_spec_rough.png"
+
+	//---- Texture Coordinates ----
+	g_nScaleTexCoordUByModelScaleAxis "0"
+	g_nScaleTexCoordVByModelScaleAxis "0"
+	g_vTexCoordOffset "[0.000 0.000]"
+	g_vTexCoordScale "[1.000 1.000]"
+	g_vTexCoordScrollSpeed "[0.000 0.000]"
+
+	SystemAttributes
 	{
-		"WorldMappingWidth"		"128"
-		"WorldMappingHeight"		"256"
+		WorldMappingWidth "128"
+		WorldMappingHeight "256"
 	}
 }

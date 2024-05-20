@@ -1,0 +1,27 @@
+{
+  "RootObject": {
+    "__guid": "741648db-336f-444d-9661-321bb43ce6b2",
+    "Flags": 0,
+    "Name": "skn_metalwalk_straight_96",
+    "Enabled": true,
+    "NetworkMode": 2,
+    "NetworkInterpolation": true,
+    "Components": [
+      {
+        "__type": "Sandbox.Prop",
+        "__guid": "0d4a9f04-0832-472f-a7ab-9e04fbc5c1c9",
+        "BodyGroups": 18446744073709551615,
+        "Health": 0,
+        "IsStatic": true,
+        "Model": "models/track_pieces/skinny/skn_metalwalk_straight_96.vmdl"
+      }
+    ],
+    "Children": []
+  },
+  "ShowInMenu": false,
+  "MenuPath": null,
+  "MenuIcon": null,
+  "ResourceVersion": 1,
+  "__version": 1,
+  "__references": []
+}

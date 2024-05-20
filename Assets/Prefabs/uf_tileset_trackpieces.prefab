@@ -1,6 +1,7 @@
 {
   "RootObject": {
     "__guid": "acb7d239-2420-4391-bf4e-2662ef8476bb",
+    "Flags": 0,
     "Name": "uf_tileset_trackpieces",
     "Enabled": true,
     "NetworkMode": 2,
@@ -8,6 +9,7 @@
     "Children": [
       {
         "__guid": "59f9b87d-04bb-4a6f-84ac-f81e544a8bbb",
+        "Flags": 0,
         "Name": "Sun",
         "Position": "0,0,335.3594",
         "Rotation": "-0.1464466,0.3535534,0.3535534,0.8535535",
@@ -29,6 +31,7 @@
       },
       {
         "__guid": "8a82a88b-ea51-48ac-b0cd-4b4228491fe7",
+        "Flags": 0,
         "Name": "narrow",
         "Position": "0,-1408,0",
         "Tags": "group",
@@ -38,6 +41,7 @@
         "Children": [
           {
             "__guid": "38c708c9-95ef-4a78-ac97-b324b8f93fbd",
+            "Flags": 0,
             "Name": "wood_narrow_384",
             "Position": "0,0,0",
             "Enabled": true,
@@ -56,6 +60,7 @@
           },
           {
             "__guid": "da629e13-5ade-4c39-808f-0296f66d7b35",
+            "Flags": 0,
             "Name": "wood_narrow_slope_384x96",
             "Position": "-448,0,0",
             "Enabled": true,
@@ -74,6 +79,7 @@
           },
           {
             "__guid": "5325f01a-5dfe-439a-83b8-2cb1ff8f4092",
+            "Flags": 0,
             "Name": "wood_narrow_slope_384x192",
             "Position": "-896,0,0",
             "Enabled": true,
@@ -92,6 +98,7 @@
           },
           {
             "__guid": "25a60232-ca32-469a-bc96-62a6d8f81ca8",
+            "Flags": 0,
             "Name": "wood_narrow_turn_192",
             "Position": "0,256,0",
             "Enabled": true,
@@ -110,6 +117,7 @@
           },
           {
             "__guid": "28c5811c-57ba-40fb-abba-94ba861e20b4",
+            "Flags": 0,
             "Name": "wood_narrow_turn_576",
             "Position": "-704,256,0",
             "Enabled": true,
@@ -130,6 +138,7 @@
       },
       {
         "__guid": "02530789-3f75-406d-8443-f629f40d07e1",
+        "Flags": 0,
         "Name": "skinny",
         "Position": "0,-1921.163,0",
         "Tags": "group",
@@ -139,6 +148,7 @@
         "Children": [
           {
             "__guid": "db67a657-0c5d-41de-a9f3-16cf7975629e",
+            "Flags": 0,
             "Name": "wood_skinny_straight_384",
             "Position": "0,0,0",
             "Enabled": true,
@@ -157,6 +167,7 @@
           },
           {
             "__guid": "e10a0de9-55fd-4fd6-affe-d1f047ce0760",
+            "Flags": 0,
             "Name": "wood_skinny_slope_384x96",
             "Position": "-448,0,0",
             "Enabled": true,
@@ -175,6 +186,7 @@
           },
           {
             "__guid": "d76fa574-e304-45c8-9c14-d852ef1f44dc",
+            "Flags": 0,
             "Name": "wood_skinny_slope_384x192",
             "Position": "-896,0,0",
             "Enabled": true,
@@ -193,6 +205,7 @@
           },
           {
             "__guid": "0f6ccbb3-f409-44a6-8d8a-b0db5e298f75",
+            "Flags": 0,
             "Name": "wood_skinny_turn_128",
             "Position": "64,129.1635,0",
             "Enabled": true,
@@ -208,213 +221,622 @@
                 "Model": "models/track_tileset_pieces/wood/skinny/wood_skinny_turn_128.vmdl"
               }
             ]
+          },
+          {
+            "__guid": "e5d5c58c-d090-49d5-8c8d-84c32ed48c84",
+            "Flags": 0,
+            "Name": "skn_metalwalk_slope192_96",
+            "Position": "0,-235.1747,3.499989",
+            "Enabled": true,
+            "NetworkMode": 2,
+            "NetworkInterpolation": true,
+            "__Prefab": "prefabs/map/track_pieces/skinny/skn_metalwalk_slope192_96.prefab"
+          },
+          {
+            "__guid": "e937af97-77ea-48e3-a4a9-0e499ff638af",
+            "Flags": 0,
+            "Name": "skn_metalwalk_slope96_96",
+            "Position": "0,-299.1747,3.500111",
+            "Enabled": true,
+            "NetworkMode": 2,
+            "NetworkInterpolation": true,
+            "__Prefab": "prefabs/map/track_pieces/skinny/skn_metalwalk_slope96_96.prefab"
+          },
+          {
+            "__guid": "ecb5127a-9c0f-4beb-aebc-fc9b54602edb",
+            "Flags": 0,
+            "Name": "skn_metalwalk_turn128",
+            "Position": "-144,-466.4994,3.500004",
+            "Enabled": true,
+            "NetworkMode": 2,
+            "NetworkInterpolation": true,
+            "__Prefab": "prefabs/map/track_pieces/skinny/skn_metalwalk_turn128.prefab"
+          },
+          {
+            "__guid": "c67e25a7-10e5-4ad3-a74e-1ad379d041a2",
+            "Flags": 0,
+            "Name": "skn_metalwalk_straight_96",
+            "Position": "0,-174.837,3.500008",
+            "Enabled": true,
+            "NetworkMode": 2,
+            "NetworkInterpolation": true,
+            "__Prefab": "prefabs/map/track_pieces/skinny/skn_metalwalk_straight_96.prefab"
+          },
+          {
+            "__guid": "656a0e4a-3842-42cd-aad1-b4146350f1fb",
+            "Flags": 0,
+            "Name": "skn_metalwalk_turn48",
+            "Position": "0,-423.7386,2.039874",
+            "Enabled": true,
+            "NetworkMode": 2,
+            "NetworkInterpolation": true,
+            "__Prefab": "prefabs/map/track_pieces/skinny/skn_metalwalk_turn48.prefab"
           }
         ]
       },
       {
         "__guid": "db30c408-e00b-4210-8b88-69fa9bf6f105",
+        "Flags": 0,
         "Name": "standard",
+        "Position": "0,320,0",
         "Tags": "group",
         "Enabled": true,
         "NetworkMode": 2,
         "NetworkInterpolation": true,
         "Children": [
           {
-            "__guid": "0f328087-3405-492f-af8f-1fdb84da2597",
-            "Name": "wood_straight_384",
+            "__guid": "48f04d63-27bc-4662-859a-163a5f2296b0",
+            "Flags": 0,
+            "Name": "std_plywood_angle225_384",
+            "Position": "64,1664,64.99976",
             "Enabled": true,
             "NetworkMode": 2,
             "NetworkInterpolation": true,
-            "Components": [
-              {
-                "__type": "Sandbox.Prop",
-                "__guid": "8aadbf94-79f1-43d5-b562-dca5e533eb5d",
-                "BodyGroups": 18446744073709551615,
-                "Health": 0,
-                "IsStatic": false,
-                "Model": "models/track_tileset_pieces/wood/wood_straight_384.vmdl"
-              }
-            ]
+            "__Prefab": "prefabs/map/track_pieces/standard/std_plywood_angle225_384.prefab"
           },
           {
-            "__guid": "17aae0a8-1c9c-4bde-ab92-c0043d55ae0f",
-            "Name": "wood_angle_384",
-            "Position": "-512,0,-0.00002867461",
+            "__guid": "d70be501-b5fb-48bb-95a8-0076f9473a4d",
+            "Flags": 0,
+            "Name": "std_plywood_angle225_trans_384",
+            "Position": "-448,1408,65",
             "Enabled": true,
             "NetworkMode": 2,
             "NetworkInterpolation": true,
-            "Components": [
-              {
-                "__type": "Sandbox.Prop",
-                "__guid": "024158e2-5a1e-4899-8acb-d559e230e85a",
-                "BodyGroups": 18446744073709551615,
-                "Health": 0,
-                "IsStatic": false,
-                "Model": "models/track_tileset_pieces/wood/wood_angle_384.vmdl"
-              }
-            ]
+            "__Prefab": "prefabs/map/track_pieces/standard/std_plywood_angle225_trans_384.prefab"
           },
           {
-            "__guid": "ad7748b3-0a1f-45e8-9d67-541e1d422f44",
-            "Name": "wood_slope_384x96",
-            "Position": "0,512,0.00003298367",
+            "__guid": "391b4282-6b6e-4dbe-92da-8ac53c74b38a",
+            "Flags": 0,
+            "Name": "std_plywood_angle225_trans_384_mirror",
+            "Position": "-448,1920,65",
             "Enabled": true,
             "NetworkMode": 2,
             "NetworkInterpolation": true,
-            "Components": [
-              {
-                "__type": "Sandbox.Prop",
-                "__guid": "aaa90308-8060-4728-87f8-aa1ad5ed2a97",
-                "BodyGroups": 18446744073709551615,
-                "Health": 0,
-                "IsStatic": false,
-                "Model": "models/track_tileset_pieces/wood/wood_slope_384x96.vmdl"
-              }
-            ]
+            "__Prefab": "prefabs/map/track_pieces/standard/std_plywood_angle225_trans_384_mirror.prefab"
           },
           {
-            "__guid": "d37782fe-4ead-4f46-9f7f-2d4d7a66ff1f",
-            "Name": "wood_slope_384x192",
-            "Position": "-512,512,0",
+            "__guid": "47862aef-dabb-4c20-b517-076cb88395ca",
+            "Flags": 0,
+            "Name": "std_plywood_angle225_trans_768",
+            "Position": "-1216,1408,65",
             "Enabled": true,
             "NetworkMode": 2,
             "NetworkInterpolation": true,
-            "Components": [
-              {
-                "__type": "Sandbox.Prop",
-                "__guid": "11431b32-69e8-49cb-8cd9-7bcc10a9bb11",
-                "BodyGroups": 18446744073709551615,
-                "Health": 0,
-                "IsStatic": false,
-                "Model": "models/track_tileset_pieces/wood/wood_slope_384x192.vmdl"
-              }
-            ]
+            "__Prefab": "prefabs/map/track_pieces/standard/std_plywood_angle225_trans_768.prefab"
           },
           {
-            "__guid": "c3085542-198a-465a-955a-acd6230ffb34",
-            "Name": "wood_trans_angle_384",
+            "__guid": "97315b14-9485-4a7a-b6e8-fe44b3403afe",
+            "Flags": 0,
+            "Name": "std_plywood_angle225_trans_768_mirror",
+            "Position": "-1216,1920,65",
+            "Enabled": true,
+            "NetworkMode": 2,
+            "NetworkInterpolation": true,
+            "__Prefab": "prefabs/map/track_pieces/standard/std_plywood_angle225_trans_768_mirror.prefab"
+          },
+          {
+            "__guid": "b9e033e2-acbd-4057-b819-bb871b08ee47",
+            "Flags": 0,
+            "Name": "std_plywood_angle225_turn576",
+            "Position": "-1216,3200,65",
+            "Enabled": true,
+            "NetworkMode": 2,
+            "NetworkInterpolation": true,
+            "__Prefab": "prefabs/map/track_pieces/standard/std_plywood_angle225_turn576.prefab"
+          },
+          {
+            "__guid": "edadf8a8-a462-4c34-8188-c144831513ab",
+            "Flags": 0,
+            "Name": "std_plywood_slope192_192",
+            "Position": "-320,384,65",
+            "Enabled": true,
+            "NetworkMode": 2,
+            "NetworkInterpolation": true,
+            "__Prefab": "prefabs/map/track_pieces/standard/std_plywood_slope192_192.prefab"
+          },
+          {
+            "__guid": "8822c417-2e97-490b-a553-804f7c6f06ad",
+            "Flags": 0,
+            "Name": "std_plywood_slope192_384",
+            "Position": "64,384,65",
+            "Enabled": true,
+            "NetworkMode": 2,
+            "NetworkInterpolation": true,
+            "__Prefab": "prefabs/map/track_pieces/standard/std_plywood_slope192_384.prefab"
+          },
+          {
+            "__guid": "722f5de2-6784-4be7-b29b-13ebf02785d5",
+            "Flags": 0,
+            "Name": "std_plywood_slope192_trans_in",
+            "Position": "-704,384,65",
+            "Enabled": true,
+            "NetworkMode": 2,
+            "NetworkInterpolation": true,
+            "__Prefab": "prefabs/map/track_pieces/standard/std_plywood_slope192_trans_in.prefab"
+          },
+          {
+            "__guid": "ffb022cc-f0a1-4705-aff1-9c1a57b4a0b5",
+            "Flags": 0,
+            "Name": "std_plywood_slope192_trans_out",
+            "Position": "-1216,384,65",
+            "Enabled": true,
+            "NetworkMode": 2,
+            "NetworkInterpolation": true,
+            "__Prefab": "prefabs/map/track_pieces/standard/std_plywood_slope192_trans_out.prefab"
+          },
+          {
+            "__guid": "fc3f5609-1706-4815-892b-4e034f3c9f81",
+            "Flags": 0,
+            "Name": "std_plywood_slope96_192",
+            "Position": "-320,896,65",
+            "Enabled": true,
+            "NetworkMode": 2,
+            "NetworkInterpolation": true,
+            "__Prefab": "prefabs/map/track_pieces/standard/std_plywood_slope96_192.prefab"
+          },
+          {
+            "__guid": "46cf27dc-7984-4db6-8f95-fa41e48e0d0c",
+            "Flags": 0,
+            "Name": "std_plywood_slope96_384",
+            "Position": "64,896,65",
+            "Enabled": true,
+            "NetworkMode": 2,
+            "NetworkInterpolation": true,
+            "__Prefab": "prefabs/map/track_pieces/standard/std_plywood_slope96_384.prefab"
+          },
+          {
+            "__guid": "8487ae3c-3624-4f0f-a962-3954b452b7c9",
+            "Flags": 0,
+            "Name": "std_plywood_slope96_trans_in",
+            "Position": "-704,896,65",
+            "Enabled": true,
+            "NetworkMode": 2,
+            "NetworkInterpolation": true,
+            "__Prefab": "prefabs/map/track_pieces/standard/std_plywood_slope96_trans_in.prefab"
+          },
+          {
+            "__guid": "54412a9d-e07c-4558-98e5-57b81c5e0b07",
+            "Flags": 0,
+            "Name": "std_plywood_slope96_trans_out",
+            "Position": "-1216,896,65",
+            "Enabled": true,
+            "NetworkMode": 2,
+            "NetworkInterpolation": true,
+            "__Prefab": "prefabs/map/track_pieces/standard/std_plywood_slope96_trans_out.prefab"
+          },
+          {
+            "__guid": "f1326ec3-8159-472d-b757-cb73798b52ac",
+            "Flags": 0,
+            "Name": "std_plywood_slope96_turn576",
+            "Position": "-2112,3200,113",
+            "Enabled": true,
+            "NetworkMode": 2,
+            "NetworkInterpolation": true,
+            "__Prefab": "prefabs/map/track_pieces/standard/std_plywood_slope96_turn576.prefab"
+          },
+          {
+            "__guid": "1182c137-8ce3-4457-a819-7c3420a6338d",
+            "Flags": 0,
+            "Name": "std_plywood_straight_192",
+            "Position": "-320,-128,65",
+            "Enabled": true,
+            "NetworkMode": 2,
+            "NetworkInterpolation": true,
+            "__Prefab": "prefabs/map/track_pieces/standard/std_plywood_straight_192.prefab"
+          },
+          {
+            "__guid": "711120c9-c1d0-46c0-9fce-82f7d750f6e1",
+            "Flags": 0,
+            "Name": "std_plywood_straight_384",
+            "Position": "64,-128,65",
+            "Enabled": true,
+            "NetworkMode": 2,
+            "NetworkInterpolation": true,
+            "__Prefab": "prefabs/map/track_pieces/standard/std_plywood_straight_384.prefab"
+          },
+          {
+            "__guid": "fe7d970e-46e6-410f-8068-95ccc342b26f",
+            "Flags": 0,
+            "Name": "std_plywood_straight_96",
+            "Position": "-576,-128,65",
+            "Enabled": true,
+            "NetworkMode": 2,
+            "NetworkInterpolation": true,
+            "__Prefab": "prefabs/map/track_pieces/standard/std_plywood_straight_96.prefab"
+          },
+          {
+            "__guid": "a575a9f8-6c46-4d16-96dd-1e5bd61773bc",
+            "Flags": 0,
+            "Name": "std_plywood_turn192",
+            "Position": "64,3968,65",
+            "Enabled": true,
+            "NetworkMode": 2,
+            "NetworkInterpolation": true,
+            "__Prefab": "prefabs/map/track_pieces/standard/std_plywood_turn192.prefab"
+          },
+          {
+            "__guid": "8d37af54-db98-4e34-bc59-b82e0c4b8d88",
+            "Flags": 0,
+            "Name": "std_plywood_turn576",
+            "Position": "-320,3072,65",
+            "Enabled": true,
+            "NetworkMode": 2,
+            "NetworkInterpolation": true,
+            "__Prefab": "prefabs/map/track_pieces/standard/std_plywood_turn576.prefab"
+          },
+          {
+            "__guid": "656cc83f-d9f4-4a92-b2df-7ee8078d09aa",
+            "Flags": 0,
+            "Name": "std_plywood_wave192_384",
+            "Position": "64,2432,65",
+            "Enabled": true,
+            "NetworkMode": 2,
+            "NetworkInterpolation": true,
+            "__Prefab": "prefabs/map/track_pieces/standard/std_plywood_wave192_384.prefab"
+          },
+          {
+            "__guid": "99e92c3e-03e7-4486-98e3-586ad912e092",
+            "Flags": 0,
+            "Name": "std_plywood_wave96_384",
+            "Position": "-448,2432,65",
+            "Enabled": true,
+            "NetworkMode": 2,
+            "NetworkInterpolation": true,
+            "__Prefab": "prefabs/map/track_pieces/standard/std_plywood_wave96_384.prefab"
+          }
+        ]
+      },
+      {
+        "__guid": "9a5bea1f-dbb4-4bc4-8496-6960aa437f07",
+        "Flags": 0,
+        "Name": "half",
+        "Position": "0,5424,0",
+        "Tags": "group",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "NetworkInterpolation": true,
+        "Children": [
+          {
+            "__guid": "f4d2a442-0388-41ea-ad5e-c8548bf9d4ff",
+            "Flags": 0,
+            "Name": "hlf_plywood_angle225_384",
             "Position": "0,1024,0",
             "Enabled": true,
             "NetworkMode": 2,
             "NetworkInterpolation": true,
-            "Components": [
-              {
-                "__type": "Sandbox.Prop",
-                "__guid": "398f44bf-e4c5-4803-90d4-4f36f220a8a6",
-                "BodyGroups": 18446744073709551615,
-                "Health": 0,
-                "IsStatic": false,
-                "Model": "models/track_tileset_pieces/wood/wood_trans_angle_384.vmdl"
-              }
-            ]
+            "__Prefab": "prefabs/map/track_pieces/half/hlf_plywood_angle225_384.prefab"
           },
           {
-            "__guid": "cea13737-0fad-45b0-a79f-b9030599b686",
-            "Name": "wood_trans_angle_768",
-            "Position": "-704,1024,0",
+            "__guid": "40e73180-0305-4f18-92b0-df692f42786d",
+            "Flags": 0,
+            "Name": "hlf_plywood_angle225_trans_384",
+            "Position": "-512,896,0",
             "Enabled": true,
             "NetworkMode": 2,
             "NetworkInterpolation": true,
-            "Components": [
-              {
-                "__type": "Sandbox.Prop",
-                "__guid": "df35a296-2aa0-4f9c-87ef-b66db08f708d",
-                "BodyGroups": 18446744073709551615,
-                "Health": 0,
-                "IsStatic": false,
-                "Model": "models/track_tileset_pieces/wood/wood_trans_angle_768.vmdl"
-              }
-            ]
+            "__Prefab": "prefabs/map/track_pieces/half/hlf_plywood_angle225_trans_384.prefab"
           },
           {
-            "__guid": "23ba1eb6-f53c-4238-befb-d4005dcd1921",
-            "Name": "wood_trans_mirror_angle_384",
+            "__guid": "d40be801-5351-4561-a573-d82066d3d01f",
+            "Flags": 0,
+            "Name": "hlf_plywood_angle225_trans_384_mirror",
+            "Position": "-512,1152,0",
+            "Enabled": true,
+            "NetworkMode": 2,
+            "NetworkInterpolation": true,
+            "__Prefab": "prefabs/map/track_pieces/half/hlf_plywood_angle225_trans_384_mirror.prefab"
+          },
+          {
+            "__guid": "cbdb1410-ba05-40ea-b304-7e47a3c9f005",
+            "Flags": 0,
+            "Name": "hlf_plywood_angle225_trans_768",
+            "Position": "-1280,896,0",
+            "Enabled": true,
+            "NetworkMode": 2,
+            "NetworkInterpolation": true,
+            "__Prefab": "prefabs/map/track_pieces/half/hlf_plywood_angle225_trans_768.prefab"
+          },
+          {
+            "__guid": "aaa02712-46fe-4e0f-81b4-22edcabaf45c",
+            "Flags": 0,
+            "Name": "hlf_plywood_angle225_trans_768_mirror",
+            "Position": "-1280,1152,0",
+            "Enabled": true,
+            "NetworkMode": 2,
+            "NetworkInterpolation": true,
+            "__Prefab": "prefabs/map/track_pieces/half/hlf_plywood_angle225_trans_768_mirror.prefab"
+          },
+          {
+            "__guid": "9bf703f3-d365-485a-90ad-0b696eb150da",
+            "Flags": 0,
+            "Name": "hlf_plywood_angle225_turn576",
+            "Position": "-896,1792,0",
+            "Enabled": true,
+            "NetworkMode": 2,
+            "NetworkInterpolation": true,
+            "__Prefab": "prefabs/map/track_pieces/half/hlf_plywood_angle225_turn576.prefab"
+          },
+          {
+            "__guid": "883f86a9-6e7f-4939-916d-e45eeb1d198f",
+            "Flags": 0,
+            "Name": "hlf_plywood_slope192_192",
+            "Position": "-384,384,0",
+            "Enabled": true,
+            "NetworkMode": 2,
+            "NetworkInterpolation": true,
+            "__Prefab": "prefabs/map/track_pieces/half/hlf_plywood_slope192_192.prefab"
+          },
+          {
+            "__guid": "6daf624a-fdec-4abb-b26c-ebf9ce451cfe",
+            "Flags": 0,
+            "Name": "hlf_plywood_slope192_384",
+            "Position": "0,384,0",
+            "Enabled": true,
+            "NetworkMode": 2,
+            "NetworkInterpolation": true,
+            "__Prefab": "prefabs/map/track_pieces/half/hlf_plywood_slope192_384.prefab"
+          },
+          {
+            "__guid": "ab411d05-ffc9-427e-939f-c3eefa63d645",
+            "Flags": 0,
+            "Name": "hlf_plywood_slope192_trans_in",
+            "Position": "-768,384,0",
+            "Enabled": true,
+            "NetworkMode": 2,
+            "NetworkInterpolation": true,
+            "__Prefab": "prefabs/map/track_pieces/half/hlf_plywood_slope192_trans_in.prefab"
+          },
+          {
+            "__guid": "ba79bd2f-4fcf-4615-8398-3776f7cbea13",
+            "Flags": 0,
+            "Name": "hlf_plywood_slope192_trans_out",
+            "Position": "-1280,384,0",
+            "Enabled": true,
+            "NetworkMode": 2,
+            "NetworkInterpolation": true,
+            "__Prefab": "prefabs/map/track_pieces/half/hlf_plywood_slope192_trans_out.prefab"
+          },
+          {
+            "__guid": "f3baef5c-1bf9-4c9d-a5d1-d0a583544b34",
+            "Flags": 0,
+            "Name": "hlf_plywood_slope96_192",
+            "Position": "-384,640,0",
+            "Enabled": true,
+            "NetworkMode": 2,
+            "NetworkInterpolation": true,
+            "__Prefab": "prefabs/map/track_pieces/half/hlf_plywood_slope96_192.prefab"
+          },
+          {
+            "__guid": "d97a6098-e63c-4a32-938c-1d11b841591f",
+            "Flags": 0,
+            "Name": "hlf_plywood_slope96_384",
+            "Position": "0,640,0",
+            "Enabled": true,
+            "NetworkMode": 2,
+            "NetworkInterpolation": true,
+            "__Prefab": "prefabs/map/track_pieces/half/hlf_plywood_slope96_384.prefab"
+          },
+          {
+            "__guid": "fd2308f6-c42f-4c55-b287-2a96f6eb28f3",
+            "Flags": 0,
+            "Name": "hlf_plywood_slope96_trans_in",
+            "Position": "-768,640,0",
+            "Enabled": true,
+            "NetworkMode": 2,
+            "NetworkInterpolation": true,
+            "__Prefab": "prefabs/map/track_pieces/half/hlf_plywood_slope96_trans_in.prefab"
+          },
+          {
+            "__guid": "8d8011c0-6b57-4645-bf24-b2c67cecd36f",
+            "Flags": 0,
+            "Name": "hlf_plywood_slope96_trans_out",
+            "Position": "-1280,640,0",
+            "Enabled": true,
+            "NetworkMode": 2,
+            "NetworkInterpolation": true,
+            "__Prefab": "prefabs/map/track_pieces/half/hlf_plywood_slope96_trans_out.prefab"
+          },
+          {
+            "__guid": "297fd9ee-ec60-448f-a106-277c5ed5d313",
+            "Flags": 0,
+            "Name": "hlf_plywood_slope96_turn576",
+            "Position": "-1536,1792,0",
+            "Enabled": true,
+            "NetworkMode": 2,
+            "NetworkInterpolation": true,
+            "__Prefab": "prefabs/map/track_pieces/half/hlf_plywood_slope96_turn576.prefab"
+          },
+          {
+            "__guid": "4505bd61-726e-41ac-a61f-d044208dc6df",
+            "Flags": 0,
+            "Name": "hlf_plywood_straight_192",
+            "Position": "-384,0,0",
+            "Enabled": true,
+            "NetworkMode": 2,
+            "NetworkInterpolation": true,
+            "__Prefab": "prefabs/map/track_pieces/half/hlf_plywood_straight_192.prefab"
+          },
+          {
+            "__guid": "56cbae11-c062-4270-b94d-b8bf0b78a343",
+            "Flags": 0,
+            "Name": "hlf_plywood_straight_384",
+            "Position": "0,0,0",
+            "Enabled": true,
+            "NetworkMode": 2,
+            "NetworkInterpolation": true,
+            "__Prefab": "prefabs/map/track_pieces/half/hlf_plywood_straight_384.prefab"
+          },
+          {
+            "__guid": "a0e62fbc-5bc0-48f0-b1f1-1f9b1e91033f",
+            "Flags": 0,
+            "Name": "hlf_plywood_straight_96",
+            "Position": "-640,0,0",
+            "Enabled": true,
+            "NetworkMode": 2,
+            "NetworkInterpolation": true,
+            "__Prefab": "prefabs/map/track_pieces/half/hlf_plywood_straight_96.prefab"
+          },
+          {
+            "__guid": "28141020-24ad-46e4-9c8e-ae7eff62abe2",
+            "Flags": 0,
+            "Name": "hlf_plywood_turn192",
+            "Position": "128,2176,0",
+            "Enabled": true,
+            "NetworkMode": 2,
+            "NetworkInterpolation": true,
+            "__Prefab": "prefabs/map/track_pieces/half/hlf_plywood_turn192.prefab"
+          },
+          {
+            "__guid": "33a1707b-ac9c-4010-8bd5-791354ad5f01",
+            "Flags": 0,
+            "Name": "hlf_plywood_turn576",
+            "Position": "-256,1792,0",
+            "Enabled": true,
+            "NetworkMode": 2,
+            "NetworkInterpolation": true,
+            "__Prefab": "prefabs/map/track_pieces/half/hlf_plywood_turn576.prefab"
+          },
+          {
+            "__guid": "c57d6912-3596-407b-a088-e66a0a87b293",
+            "Flags": 0,
+            "Name": "hlf_plywood_wave192_384",
             "Position": "0,1536,0",
             "Enabled": true,
             "NetworkMode": 2,
             "NetworkInterpolation": true,
-            "Components": [
-              {
-                "__type": "Sandbox.Prop",
-                "__guid": "b79a0d24-371a-46e5-b236-52faf0c8776e",
-                "BodyGroups": 18446744073709551615,
-                "Health": 0,
-                "IsStatic": false,
-                "Model": "models/track_tileset_pieces/wood/wood_trans_mirror_angle_384.vmdl"
-              }
-            ]
+            "__Prefab": "prefabs/map/track_pieces/half/hlf_plywood_wave192_384.prefab"
           },
           {
-            "__guid": "b97bb49a-407d-4e97-b91f-e82939f07ac6",
-            "Name": "wood_trans_mirror_angle_768",
-            "Position": "-704,1536,0",
+            "__guid": "78da9c82-eeff-4fa6-9b98-eb8a0c89823d",
+            "Flags": 0,
+            "Name": "hlf_plywood_wave96_384",
+            "Position": "-512,1536,0",
             "Enabled": true,
             "NetworkMode": 2,
             "NetworkInterpolation": true,
-            "Components": [
-              {
-                "__type": "Sandbox.Prop",
-                "__guid": "92ca92c9-5d34-4666-b772-bf962ac93e64",
-                "BodyGroups": 18446744073709551615,
-                "Health": 0,
-                "IsStatic": false,
-                "Model": "models/track_tileset_pieces/wood/wood_trans_mirror_angle_768.vmdl"
-              }
-            ]
-          },
+            "__Prefab": "prefabs/map/track_pieces/half/hlf_plywood_wave96_384.prefab"
+          }
+        ]
+      },
+      {
+        "__guid": "86363a18-31e9-46b6-95ca-26b7ad60e616",
+        "Flags": 0,
+        "Name": "Walls",
+        "Position": "880,0,0",
+        "Tags": "group",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "NetworkInterpolation": true,
+        "Children": [
           {
-            "__guid": "a65bc44e-d5c7-441a-b06a-4dfa91ab24a6",
-            "Name": "wood_turn_192",
-            "Position": "0,2048,-0.000005049504",
+            "__guid": "cfcd22d0-3a74-4ac3-b507-0e618466a140",
+            "Flags": 0,
+            "Name": "chainlink_192_start",
+            "Position": "-80,80,0",
             "Enabled": true,
             "NetworkMode": 2,
             "NetworkInterpolation": true,
-            "Components": [
-              {
-                "__type": "Sandbox.Prop",
-                "__guid": "2aab5bde-ee2d-4b30-abaa-8795317c9d36",
-                "BodyGroups": 18446744073709551615,
-                "Health": 0,
-                "IsStatic": false,
-                "Model": "models/track_tileset_pieces/wood/wood_turn_192.vmdl"
-              }
-            ]
+            "__Prefab": "prefabs/map/track_walls/chainlink_192_start.prefab"
           },
           {
-            "__guid": "f6afbc1b-012a-495c-8aea-81d9ff850df5",
-            "Name": "wood_turn_576",
-            "Position": "-384,2560,-0.000003621654",
+            "__guid": "6987e03f-24b7-4bcc-b209-99260d6314c4",
+            "Flags": 0,
+            "Name": "chainlink_192_middle",
+            "Position": "16,80,0",
             "Enabled": true,
             "NetworkMode": 2,
             "NetworkInterpolation": true,
-            "Components": [
-              {
-                "__type": "Sandbox.Prop",
-                "__guid": "1e6abcf2-6889-432c-993e-54314acf0064",
-                "BodyGroups": 18446744073709551615,
-                "Health": 0,
-                "IsStatic": false,
-                "Model": "models/track_tileset_pieces/wood/wood_turn_576.vmdl"
-              }
-            ]
+            "__Prefab": "prefabs/map/track_walls/chainlink_192_middle.prefab"
           },
           {
-            "__guid": "0af08ce3-ae22-4ac9-8308-f01dbad8f7f0",
-            "Name": "wood_angle_turn_576",
-            "Position": "-1088,2560,-0.00003217104",
+            "__guid": "824b6213-2832-4177-8691-c51308d2b2b9",
+            "Flags": 0,
+            "Name": "chainlink_192_end",
+            "Position": "112,80,0",
             "Enabled": true,
             "NetworkMode": 2,
             "NetworkInterpolation": true,
-            "Components": [
-              {
-                "__type": "Sandbox.Prop",
-                "__guid": "666f7845-2128-47cd-b0d5-5ff6d1198095",
-                "BodyGroups": 18446744073709551615,
-                "Health": 0,
-                "IsStatic": false,
-                "Model": "models/track_tileset_pieces/wood/wood_angle_turn_576.vmdl"
-              }
-            ]
+            "__Prefab": "prefabs/map/track_walls/chainlink_192_end.prefab"
+          },
+          {
+            "__guid": "2901764a-da3f-46ef-91de-2d2aa26a54ca",
+            "Flags": 0,
+            "Name": "chainlink_96_start",
+            "Position": "-80,304,0",
+            "Enabled": true,
+            "NetworkMode": 2,
+            "NetworkInterpolation": true,
+            "__Prefab": "prefabs/map/track_walls/chainlink_96_start.prefab"
+          },
+          {
+            "__guid": "5066a16a-7068-4813-be56-c40c19b85fdf",
+            "Flags": 0,
+            "Name": "chainlink_96_middle",
+            "Position": "16,304,0",
+            "Enabled": true,
+            "NetworkMode": 2,
+            "NetworkInterpolation": true,
+            "__Prefab": "prefabs/map/track_walls/chainlink_96_middle.prefab"
+          },
+          {
+            "__guid": "19426906-adc3-45da-9903-ace9386abb9d",
+            "Flags": 0,
+            "Name": "chainlink_96_end",
+            "Position": "112,304,0",
+            "Enabled": true,
+            "NetworkMode": 2,
+            "NetworkInterpolation": true,
+            "__Prefab": "prefabs/map/track_walls/chainlink_96_end.prefab"
+          },
+          {
+            "__guid": "783843b6-fa67-4cc3-82e6-285d9accdfbb",
+            "Flags": 0,
+            "Name": "chainlink_48_start",
+            "Position": "-80,464,0",
+            "Enabled": true,
+            "NetworkMode": 2,
+            "NetworkInterpolation": true,
+            "__Prefab": "prefabs/map/track_walls/chainlink_48_start.prefab"
+          },
+          {
+            "__guid": "47e8e104-864d-431d-841d-c59f58480a57",
+            "Flags": 0,
+            "Name": "chainlink_48_middle",
+            "Position": "16,464,0",
+            "Enabled": true,
+            "NetworkMode": 2,
+            "NetworkInterpolation": true,
+            "__Prefab": "prefabs/map/track_walls/chainlink_48_middle.prefab"
+          },
+          {
+            "__guid": "8d6cac6c-3ee8-47f6-be31-2aa9c680d66c",
+            "Flags": 0,
+            "Name": "chainlink_48_end",
+            "Position": "112,464,0",
+            "Enabled": true,
+            "NetworkMode": 2,
+            "NetworkInterpolation": true,
+            "__Prefab": "prefabs/map/track_walls/chainlink_48_end.prefab"
           }
         ]
       }
