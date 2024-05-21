@@ -65,7 +65,7 @@
             "__guid": "d5fee568-a47b-4ceb-b028-dbc65e6504c0",
             "BodyGroups": 18446744073709551615,
             "Health": 0,
-            "IsStatic": false,
+            "IsStatic": true,
             "Model": "models/scaffolding/scaffold_filler/scaffiller_tarp_wall_mid_192x192.vmdl"
           }
         ]
@@ -85,7 +85,7 @@
             "__guid": "f3bab3f4-1379-4c68-8d16-153e4c163ce5",
             "BodyGroups": 18446744073709551615,
             "Health": 0,
-            "IsStatic": false,
+            "IsStatic": true,
             "Model": "models/scaffolding/scaffold_filler/scaffiller_tarp_wall_mid_192x192.vmdl"
           }
         ]
@@ -105,7 +105,7 @@
             "__guid": "310784c3-40ac-4df2-9600-5d948af6ded4",
             "BodyGroups": 18446744073709551615,
             "Health": 0,
-            "IsStatic": false,
+            "IsStatic": true,
             "Model": "models/scaffolding/scaffold_filler/scaffiller_tarp_wall_mid_384x192.vmdl"
           }
         ]
@@ -125,7 +125,7 @@
             "__guid": "24cf7049-a677-4626-a8a2-1eaa99ccb88d",
             "BodyGroups": 18446744073709551615,
             "Health": 0,
-            "IsStatic": false,
+            "IsStatic": true,
             "Model": "models/scaffolding/scaffold_filler/scaffiller_tarp_wall_mid_384x192.vmdl"
           }
         ]
@@ -145,7 +145,7 @@
             "__guid": "4c2a5e5b-194d-43e6-aed5-c6d4488eaea4",
             "BodyGroups": 18446744073709551615,
             "Health": 0,
-            "IsStatic": false,
+            "IsStatic": true,
             "Model": "models/scaffolding/scaffold_filler/scaffiller_tarp_wall_mid_384x192.vmdl"
           }
         ]
@@ -165,7 +165,7 @@
             "__guid": "4ee27c2d-684b-44c2-84f3-97f40cd45299",
             "BodyGroups": 18446744073709551615,
             "Health": 0,
-            "IsStatic": false,
+            "IsStatic": true,
             "Model": "models/scaffolding/scaffold_filler/scaffiller_tarp_wall_mid_384x192.vmdl"
           }
         ]
