@@ -2,7 +2,7 @@
   "RootObject": {
     "__guid": "c585a2fa-774c-4ac3-b1d3-fcc787be4291",
     "Flags": 0,
-    "Name": "scaffold01_wallsection_mid_384x192",
+    "Name": "scaffold01_empty_wallsection_mid_384x192",
     "Enabled": true,
     "NetworkMode": 2,
     "NetworkInterpolation": true,
@@ -24,7 +24,8 @@
             "BodyGroups": 18446744073709551615,
             "Health": 0,
             "IsStatic": true,
-            "Model": "models/scaffolding/scaffolding_connector_a.vmdl"
+            "Model": "models/scaffolding/scaffolding_connector_a.vmdl",
+            "Tint": "1,1,1,1"
           }
         ]
       },
@@ -45,7 +46,8 @@
             "BodyGroups": 18446744073709551615,
             "Health": 0,
             "IsStatic": true,
-            "Model": "models/scaffolding/scaffolding_tube_a.vmdl"
+            "Model": "models/scaffolding/scaffolding_tube_a.vmdl",
+            "Tint": "1,1,1,1"
           }
         ]
       },
@@ -66,7 +68,8 @@
             "BodyGroups": 18446744073709551615,
             "Health": 0,
             "IsStatic": true,
-            "Model": "models/scaffolding/scaffolding_tube_a.vmdl"
+            "Model": "models/scaffolding/scaffolding_tube_a.vmdl",
+            "Tint": "1,1,1,1"
           }
         ]
       },
@@ -87,7 +90,8 @@
             "BodyGroups": 18446744073709551615,
             "Health": 0,
             "IsStatic": true,
-            "Model": "models/scaffolding/scaffolding_tube_a.vmdl"
+            "Model": "models/scaffolding/scaffolding_tube_a.vmdl",
+            "Tint": "1,1,1,1"
           }
         ]
       },
@@ -108,7 +112,8 @@
             "BodyGroups": 18446744073709551615,
             "Health": 0,
             "IsStatic": true,
-            "Model": "models/scaffolding/scaffolding_connector_a.vmdl"
+            "Model": "models/scaffolding/scaffolding_connector_a.vmdl",
+            "Tint": "1,1,1,1"
           }
         ]
       },
@@ -129,7 +134,8 @@
             "BodyGroups": 18446744073709551615,
             "Health": 0,
             "IsStatic": true,
-            "Model": "models/scaffolding/scaffolding_ringlock_a.vmdl"
+            "Model": "models/scaffolding/scaffolding_ringlock_a.vmdl",
+            "Tint": "1,1,1,1"
           }
         ]
       },
@@ -150,7 +156,8 @@
             "BodyGroups": 18446744073709551615,
             "Health": 0,
             "IsStatic": true,
-            "Model": "models/scaffolding/scaffolding_tube_a.vmdl"
+            "Model": "models/scaffolding/scaffolding_tube_a.vmdl",
+            "Tint": "1,1,1,1"
           }
         ]
       },
@@ -171,7 +178,8 @@
             "BodyGroups": 18446744073709551615,
             "Health": 0,
             "IsStatic": true,
-            "Model": "models/scaffolding/scaffolding_tube_a.vmdl"
+            "Model": "models/scaffolding/scaffolding_tube_a.vmdl",
+            "Tint": "1,1,1,1"
           }
         ]
       },
@@ -192,7 +200,8 @@
             "BodyGroups": 18446744073709551615,
             "Health": 0,
             "IsStatic": true,
-            "Model": "models/scaffolding/scaffolding_ringlock_a.vmdl"
+            "Model": "models/scaffolding/scaffolding_ringlock_a.vmdl",
+            "Tint": "1,1,1,1"
           }
         ]
       },
@@ -213,7 +222,8 @@
             "BodyGroups": 18446744073709551615,
             "Health": 0,
             "IsStatic": true,
-            "Model": "models/scaffolding/scaffolding_connector_a.vmdl"
+            "Model": "models/scaffolding/scaffolding_connector_a.vmdl",
+            "Tint": "1,1,1,1"
           }
         ]
       },
@@ -234,7 +244,8 @@
             "BodyGroups": 18446744073709551615,
             "Health": 0,
             "IsStatic": true,
-            "Model": "models/scaffolding/scaffolding_tube_a.vmdl"
+            "Model": "models/scaffolding/scaffolding_tube_a.vmdl",
+            "Tint": "1,1,1,1"
           }
         ]
       },
@@ -255,7 +266,8 @@
             "BodyGroups": 18446744073709551615,
             "Health": 0,
             "IsStatic": true,
-            "Model": "models/scaffolding/scaffolding_tube_a.vmdl"
+            "Model": "models/scaffolding/scaffolding_tube_a.vmdl",
+            "Tint": "1,1,1,1"
           }
         ]
       },
@@ -276,7 +288,8 @@
             "BodyGroups": 18446744073709551615,
             "Health": 0,
             "IsStatic": true,
-            "Model": "models/scaffolding/scaffolding_tube_a.vmdl"
+            "Model": "models/scaffolding/scaffolding_tube_a.vmdl",
+            "Tint": "1,1,1,1"
           }
         ]
       },
@@ -297,7 +310,8 @@
             "BodyGroups": 18446744073709551615,
             "Health": 0,
             "IsStatic": true,
-            "Model": "models/scaffolding/scaffolding_connector_a.vmdl"
+            "Model": "models/scaffolding/scaffolding_connector_a.vmdl",
+            "Tint": "1,1,1,1"
           }
         ]
       }

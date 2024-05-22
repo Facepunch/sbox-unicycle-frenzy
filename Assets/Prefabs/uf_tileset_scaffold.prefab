@@ -33,6 +33,7 @@
         "__guid": "4c39fbab-26be-4dca-99ed-d8827f813c9d",
         "Flags": 0,
         "Name": "empty",
+        "Tags": "group",
         "Enabled": true,
         "NetworkMode": 2,
         "NetworkInterpolation": true,
@@ -80,69 +81,80 @@
             "__guid": "f92d7e9d-41c0-4811-ae36-4ede649a13df",
             "Flags": 0,
             "Name": "scaffold01_empty_wallsection_mid_192x192",
-            "Position": "512,384,0",
+            "Position": "0,1664,0",
             "Enabled": true,
             "NetworkMode": 2,
             "NetworkInterpolation": true,
             "__Prefab": "prefabs/map/scaffold/scaffold01_empty_wallsection_mid_192x192.prefab"
           },
           {
-            "__guid": "39e73213-6925-4869-b865-3a2c854e1640",
+            "__guid": "f3ac104f-3285-4b5d-b064-244c884b5f1a",
             "Flags": 0,
-            "Name": "scaffold01_tarp_wallsection_mid_192x192",
-            "Position": "-512,1792,0",
+            "Name": "scaffold_pole_horizontal_192",
+            "Position": "104,2384,0",
             "Enabled": true,
             "NetworkMode": 2,
             "NetworkInterpolation": true,
-            "__Prefab": "prefabs/map/scaffold/scaffold01_tarp_wallsection_mid_192x192.prefab"
+            "__Prefab": "prefabs/map/scaffold/scaffold_pole_horizontal_192.prefab"
+          },
+          {
+            "__guid": "2b1addbf-bff6-426d-99e0-0cafad43a81d",
+            "Flags": 0,
+            "Name": "scaffold01_pole_mid_192",
+            "Position": "0,2032,0",
+            "Enabled": true,
+            "NetworkMode": 2,
+            "NetworkInterpolation": true,
+            "__Prefab": "prefabs/map/scaffold/scaffold01_pole_mid_192.prefab"
           },
           {
             "__guid": "87501aac-75bc-4a85-b7b8-1ec55741c6f2",
             "Flags": 0,
             "Name": "scaffold01_empty_wallsection_mid_384x192",
-            "Position": "512,-512,0",
+            "Position": "0,768,0",
             "Enabled": true,
             "NetworkMode": 2,
             "NetworkInterpolation": true,
             "__Prefab": "prefabs/map/scaffold/scaffold01_empty_wallsection_mid_384x192.prefab"
           },
           {
-            "__guid": "b1c80073-d9ab-4583-98d5-4169b17f11a9",
-            "Flags": 0,
-            "Name": "scaffold01_tarp_wallsection_mid_384x192",
-            "Position": "-512,896,0",
-            "Enabled": true,
-            "NetworkMode": 2,
-            "NetworkInterpolation": true,
-            "__Prefab": "prefabs/map/scaffold/scaffold01_tarp_wallsection_mid_384x192.prefab"
-          },
-          {
             "__guid": "9de76713-60a5-421a-827f-453af66f4625",
             "Flags": 0,
             "Name": "scaffold01_empty_wallsection_mid_384x384",
-            "Position": "512,0,0",
+            "Position": "0,1280,0",
             "Enabled": true,
             "NetworkMode": 2,
             "NetworkInterpolation": true,
             "__Prefab": "prefabs/map/scaffold/scaffold01_empty_wallsection_mid_384x384.prefab"
           },
           {
-            "__guid": "d50bcccf-08c8-4417-be63-9e46e1a0fa34",
+            "__guid": "c438a803-5cfa-41c5-96de-134c57f55226",
             "Flags": 0,
-            "Name": "scaffold01_tarp_wallsection_mid_384x384",
-            "Position": "-512,1408,0",
+            "Name": "scaffold_pole_horizontal_384",
+            "Position": "104,2000,0",
             "Enabled": true,
             "NetworkMode": 2,
             "NetworkInterpolation": true,
-            "__Prefab": "prefabs/map/scaffold/scaffold01_tarp_wallsection_mid_384x384.prefab"
+            "__Prefab": "prefabs/map/scaffold/scaffold_pole_horizontal_384.prefab"
+          },
+          {
+            "__guid": "830a0b70-5a98-458a-bea6-fda106a59b09",
+            "Flags": 0,
+            "Name": "scaffold01_pole_mid_384",
+            "Position": "0,1928,0",
+            "Enabled": true,
+            "NetworkMode": 2,
+            "NetworkInterpolation": true,
+            "__Prefab": "prefabs/map/scaffold/scaffold01_pole_mid_384.prefab"
           }
         ]
       },
       {
         "__guid": "30ba72dc-41f9-4788-bf56-4243ba8fdce0",
         "Flags": 0,
-        "Name": "tarp",
+        "Name": "Tarp",
         "Position": "-896,0,0",
+        "Tags": "group",
         "Enabled": true,
         "NetworkMode": 2,
         "NetworkInterpolation": true,
@@ -186,6 +198,46 @@
             "NetworkMode": 2,
             "NetworkInterpolation": true,
             "__Prefab": "prefabs/map/scaffold/scaffold01_tarp_block_mid_384x384x192.prefab"
+          },
+          {
+            "__guid": "d50bcccf-08c8-4417-be63-9e46e1a0fa34",
+            "Flags": 0,
+            "Name": "scaffold01_tarp_wallsection_mid_384x384",
+            "Position": "0,768,0",
+            "Enabled": true,
+            "NetworkMode": 2,
+            "NetworkInterpolation": true,
+            "__Prefab": "prefabs/map/scaffold/scaffold01_tarp_wallsection_mid_384x384.prefab"
+          },
+          {
+            "__guid": "2cf49a4a-089b-424b-a710-80aee8da099e",
+            "Flags": 0,
+            "Name": "scaffold01_tarp_wallsection_mid_192x384",
+            "Position": "0,1792,0",
+            "Enabled": true,
+            "NetworkMode": 2,
+            "NetworkInterpolation": true,
+            "__Prefab": "prefabs/map/scaffold/scaffold01_tarp_wallsection_mid_192x384.prefab"
+          },
+          {
+            "__guid": "b1c80073-d9ab-4583-98d5-4169b17f11a9",
+            "Flags": 0,
+            "Name": "scaffold01_tarp_wallsection_mid_384x192",
+            "Position": "0,1184,0",
+            "Enabled": true,
+            "NetworkMode": 2,
+            "NetworkInterpolation": true,
+            "__Prefab": "prefabs/map/scaffold/scaffold01_tarp_wallsection_mid_384x192.prefab"
+          },
+          {
+            "__guid": "39e73213-6925-4869-b865-3a2c854e1640",
+            "Flags": 0,
+            "Name": "scaffold01_tarp_wallsection_mid_192x192",
+            "Position": "0,1536,0",
+            "Enabled": true,
+            "NetworkMode": 2,
+            "NetworkInterpolation": true,
+            "__Prefab": "prefabs/map/scaffold/scaffold01_tarp_wallsection_mid_192x192.prefab"
           }
         ]
       }

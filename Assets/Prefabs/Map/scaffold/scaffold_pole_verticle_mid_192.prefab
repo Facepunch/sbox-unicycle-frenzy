@@ -1,0 +1,84 @@
+{
+  "RootObject": {
+    "__guid": "2b1addbf-bff6-426d-99e0-0cafad43a81d",
+    "Flags": 0,
+    "Name": "scaffold01_pole_mid_192",
+    "Enabled": true,
+    "NetworkMode": 2,
+    "NetworkInterpolation": true,
+    "Children": [
+      {
+        "__guid": "91b2c7be-b2b7-439e-b044-98d13f624fba",
+        "Flags": 0,
+        "Name": "scaffolding_tube_a (3)",
+        "Position": "0,0,-96",
+        "Rotation": "0,-0.7071067,0,0.7071068",
+        "Scale": "1,1.5,1.5",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "NetworkInterpolation": true,
+        "Components": [
+          {
+            "__type": "Sandbox.Prop",
+            "__guid": "7f78df0d-b471-4413-bac3-46f45b957e6b",
+            "BodyGroups": 18446744073709551615,
+            "Health": 0,
+            "IsStatic": true,
+            "Model": "models/scaffolding/scaffolding_tube_a.vmdl",
+            "Tint": "1,1,1,1"
+          }
+        ]
+      },
+      {
+        "__guid": "81119f42-bacb-4bc6-9da9-6ba88e734827",
+        "Flags": 0,
+        "Name": "scaffolding_tube_a (1)",
+        "Position": "0,0,32",
+        "Rotation": "0,-0.7071067,0,0.7071068",
+        "Scale": "0.5,1.5,1.5",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "NetworkInterpolation": true,
+        "Components": [
+          {
+            "__type": "Sandbox.Prop",
+            "__guid": "5f5eb133-8d05-4b75-a628-e92c0fe4c488",
+            "BodyGroups": 18446744073709551615,
+            "Health": 0,
+            "IsStatic": true,
+            "Model": "models/scaffolding/scaffolding_tube_a.vmdl",
+            "Tint": "1,1,1,1"
+          }
+        ]
+      },
+      {
+        "__guid": "0856b7d5-11bc-438e-aebc-06a6694d24c6",
+        "Flags": 0,
+        "Name": "scaffolding_ringlock_a (2)",
+        "Position": "0,0,96",
+        "Rotation": "0,-0.7071067,0,0.7071068",
+        "Scale": "1.5,1.5,1.5",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "NetworkInterpolation": true,
+        "Components": [
+          {
+            "__type": "Sandbox.Prop",
+            "__guid": "8eca66f7-ca7c-4bf4-8612-a406b740b63c",
+            "BodyGroups": 18446744073709551615,
+            "Health": 0,
+            "IsStatic": true,
+            "Model": "models/scaffolding/scaffolding_ringlock_a.vmdl",
+            "Tint": "1,1,1,1"
+          }
+        ]
+      }
+    ]
+  },
+  "ShowInMenu": false,
+  "MenuPath": null,
+  "MenuIcon": null,
+  "ResourceVersion": 1,
+  "__references": [],
+  "__version": 1
+}

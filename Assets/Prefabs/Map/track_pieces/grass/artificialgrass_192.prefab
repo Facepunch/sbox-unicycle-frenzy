@@ -1,0 +1,28 @@
+{
+  "RootObject": {
+    "__guid": "4d6efced-00bc-4c45-b0a5-2caafc510acc",
+    "Flags": 0,
+    "Name": "artificialgrass_192",
+    "Position": "0,768,0",
+    "Enabled": true,
+    "NetworkMode": 2,
+    "NetworkInterpolation": true,
+    "Components": [
+      {
+        "__type": "Sandbox.Prop",
+        "__guid": "bfbea646-6f51-4fb4-918a-b1a0c5ce3411",
+        "BodyGroups": 18446744073709551615,
+        "Health": 0,
+        "IsStatic": true,
+        "Model": "models/track_pieces/grass/artificialgrass_192.vmdl",
+        "Tint": "1,1,1,1"
+      }
+    ]
+  },
+  "ShowInMenu": false,
+  "MenuPath": null,
+  "MenuIcon": null,
+  "ResourceVersion": 1,
+  "__references": [],
+  "__version": 1
+}

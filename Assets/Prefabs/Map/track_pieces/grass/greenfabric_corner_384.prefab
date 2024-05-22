@@ -1,0 +1,28 @@
+{
+  "RootObject": {
+    "__guid": "a3a1b564-fc42-4af8-a74e-ff4e156c4531",
+    "Flags": 0,
+    "Name": "greenfabric_corner_384",
+    "Enabled": true,
+    "NetworkMode": 2,
+    "NetworkInterpolation": true,
+    "Components": [
+      {
+        "__type": "Sandbox.Prop",
+        "__guid": "2df0adf3-9b67-4a86-b2ef-406ba6142a63",
+        "BodyGroups": 18446744073709551615,
+        "Health": 0,
+        "IsStatic": true,
+        "Model": "models/track_pieces/grass/greenfabric_corner_384.vmdl",
+        "Tint": "1,1,1,1"
+      }
+    ],
+    "Children": []
+  },
+  "ShowInMenu": false,
+  "MenuPath": null,
+  "MenuIcon": null,
+  "ResourceVersion": 1,
+  "__references": [],
+  "__version": 1
+}

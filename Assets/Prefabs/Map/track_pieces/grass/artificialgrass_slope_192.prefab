@@ -1,0 +1,28 @@
+{
+  "RootObject": {
+    "__guid": "f9eb0773-0039-4f9e-a511-cf1cbc6152fe",
+    "Flags": 0,
+    "Name": "artificialgrass_slope_192",
+    "Position": "-320,768,0",
+    "Enabled": true,
+    "NetworkMode": 2,
+    "NetworkInterpolation": true,
+    "Components": [
+      {
+        "__type": "Sandbox.Prop",
+        "__guid": "cf160f66-2a23-418a-ae84-5cf6a4f2d120",
+        "BodyGroups": 18446744073709551615,
+        "Health": 0,
+        "IsStatic": true,
+        "Model": "models/track_pieces/grass/artificialgrass_slope_192.vmdl",
+        "Tint": "1,1,1,1"
+      }
+    ]
+  },
+  "ShowInMenu": false,
+  "MenuPath": null,
+  "MenuIcon": null,
+  "ResourceVersion": 1,
+  "__references": [],
+  "__version": 1
+}

@@ -1,0 +1,107 @@
+{
+  "RootObject": {
+    "__guid": "f3ac104f-3285-4b5d-b064-244c884b5f1a",
+    "Flags": 0,
+    "Name": "scaffold_pole_horizontal_192",
+    "Position": "296,1664,0",
+    "Enabled": true,
+    "NetworkMode": 2,
+    "NetworkInterpolation": true,
+    "Children": [
+      {
+        "__guid": "1963eeda-9898-452a-b6eb-fc1d3b16658e",
+        "Flags": 0,
+        "Name": "scaffolding_connector_a (4)",
+        "Position": "0,84,0",
+        "Rotation": "0,0,0.7071067,0.7071068",
+        "Scale": "1.5,1.5,1.5",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "NetworkInterpolation": true,
+        "Components": [
+          {
+            "__type": "Sandbox.Prop",
+            "__guid": "c47e68f2-eea5-4f4f-a8b1-4a92fdc5a69e",
+            "BodyGroups": 18446744073709551615,
+            "Health": 0,
+            "IsStatic": true,
+            "Model": "models/scaffolding/scaffolding_connector_a.vmdl",
+            "Tint": "1,1,1,1"
+          }
+        ]
+      },
+      {
+        "__guid": "70c6d169-f625-46e9-9597-72db57161ea5",
+        "Flags": 0,
+        "Name": "scaffolding_tube_a (9)",
+        "Position": "0,88,0",
+        "Rotation": "0.5,-0.5,-0.4999999,0.5000001",
+        "Scale": "1,1.5,1.5",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "NetworkInterpolation": true,
+        "Components": [
+          {
+            "__type": "Sandbox.Prop",
+            "__guid": "1dd0b2d9-2f5c-43d6-9a4c-0ffa7cc38106",
+            "BodyGroups": 18446744073709551615,
+            "Health": 0,
+            "IsStatic": true,
+            "Model": "models/scaffolding/scaffolding_tube_a.vmdl",
+            "Tint": "1,1,1,1"
+          }
+        ]
+      },
+      {
+        "__guid": "ffbb4b3b-571c-472a-be70-2cc835d5899f",
+        "Flags": 0,
+        "Name": "scaffolding_tube_a (8)",
+        "Position": "0,-40,0",
+        "Rotation": "0.5,-0.5,-0.4999999,0.5000001",
+        "Scale": "0.35,1.5,1.5",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "NetworkInterpolation": true,
+        "Components": [
+          {
+            "__type": "Sandbox.Prop",
+            "__guid": "db4d0c8c-26c5-4ec0-a598-433b733fa98b",
+            "BodyGroups": 18446744073709551615,
+            "Health": 0,
+            "IsStatic": true,
+            "Model": "models/scaffolding/scaffolding_tube_a.vmdl",
+            "Tint": "1,1,1,1"
+          }
+        ]
+      },
+      {
+        "__guid": "8e02dd11-1af5-4fdd-a443-91f59800d492",
+        "Flags": 0,
+        "Name": "scaffolding_connector_a (3)",
+        "Position": "0,-84,0",
+        "Rotation": "0.7071069,-0.7071068,0.00000006705523,0.00000006705523",
+        "Scale": "1.5,1.5,1.5",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "NetworkInterpolation": true,
+        "Components": [
+          {
+            "__type": "Sandbox.Prop",
+            "__guid": "d6dfda6e-0bba-4d37-a5ef-4012280013c5",
+            "BodyGroups": 18446744073709551615,
+            "Health": 0,
+            "IsStatic": true,
+            "Model": "models/scaffolding/scaffolding_connector_a.vmdl",
+            "Tint": "1,1,1,1"
+          }
+        ]
+      }
+    ]
+  },
+  "ShowInMenu": false,
+  "MenuPath": null,
+  "MenuIcon": null,
+  "ResourceVersion": 1,
+  "__references": [],
+  "__version": 1
+}
