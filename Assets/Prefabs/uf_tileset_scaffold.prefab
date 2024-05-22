@@ -87,6 +87,16 @@
             "__Prefab": "prefabs/map/scaffold/scaffold01_empty_wallsection_mid_192x192.prefab"
           },
           {
+            "__guid": "39e73213-6925-4869-b865-3a2c854e1640",
+            "Flags": 0,
+            "Name": "scaffold01_tarp_wallsection_mid_192x192",
+            "Position": "-512,1792,0",
+            "Enabled": true,
+            "NetworkMode": 2,
+            "NetworkInterpolation": true,
+            "__Prefab": "prefabs/map/scaffold/scaffold01_tarp_wallsection_mid_192x192.prefab"
+          },
+          {
             "__guid": "87501aac-75bc-4a85-b7b8-1ec55741c6f2",
             "Flags": 0,
             "Name": "scaffold01_empty_wallsection_mid_384x192",
@@ -97,6 +107,16 @@
             "__Prefab": "prefabs/map/scaffold/scaffold01_empty_wallsection_mid_384x192.prefab"
           },
           {
+            "__guid": "b1c80073-d9ab-4583-98d5-4169b17f11a9",
+            "Flags": 0,
+            "Name": "scaffold01_tarp_wallsection_mid_384x192",
+            "Position": "-512,896,0",
+            "Enabled": true,
+            "NetworkMode": 2,
+            "NetworkInterpolation": true,
+            "__Prefab": "prefabs/map/scaffold/scaffold01_tarp_wallsection_mid_384x192.prefab"
+          },
+          {
             "__guid": "9de76713-60a5-421a-827f-453af66f4625",
             "Flags": 0,
             "Name": "scaffold01_empty_wallsection_mid_384x384",
@@ -105,6 +125,16 @@
             "NetworkMode": 2,
             "NetworkInterpolation": true,
             "__Prefab": "prefabs/map/scaffold/scaffold01_empty_wallsection_mid_384x384.prefab"
+          },
+          {
+            "__guid": "d50bcccf-08c8-4417-be63-9e46e1a0fa34",
+            "Flags": 0,
+            "Name": "scaffold01_tarp_wallsection_mid_384x384",
+            "Position": "-512,1408,0",
+            "Enabled": true,
+            "NetworkMode": 2,
+            "NetworkInterpolation": true,
+            "__Prefab": "prefabs/map/scaffold/scaffold01_tarp_wallsection_mid_384x384.prefab"
           }
         ]
       },
