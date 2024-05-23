@@ -21,6 +21,10 @@
 								from = "wood_a.vmat"
 								to = "materials/wood_hotspots/wood_a.vmat"
 							},
+							{
+								from = "traffic_cone.vmat"
+								to = "models/props/traffic_cone/traffic_cone.vmat"
+							},
 						]
 						use_global_default = false
 						global_default_material = "materials/default.vmat"
