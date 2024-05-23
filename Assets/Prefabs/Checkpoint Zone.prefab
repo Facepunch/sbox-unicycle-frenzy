@@ -1,10 +1,11 @@
 {
   "RootObject": {
     "__guid": "01c16b13-bfbd-4bab-b856-eaacff5bb6dd",
-    "Name": "CheckPoint Zone",
-    "Position": "128,-384,-14.12348",
+    "Flags": 0,
+    "Name": "checkpoint zone",
     "Enabled": true,
     "NetworkMode": 2,
+    "NetworkInterpolation": true,
     "Components": [
       {
         "__type": "CheckPointZone",
@@ -19,12 +20,13 @@
     "Children": [
       {
         "__guid": "ca26f151-c77b-42f7-8352-5d3f2384002b",
+        "Flags": 0,
         "Name": "Cube",
-        "Position": "0,0,0",
         "Rotation": "0,0,0,0.9999872",
         "Scale": "3,3,0.2",
         "Enabled": true,
         "NetworkMode": 2,
+        "NetworkInterpolation": true,
         "Components": [
           {
             "__type": "Sandbox.ModelRenderer",
@@ -38,6 +40,7 @@
           {
             "__type": "Sandbox.BoxCollider",
             "__guid": "f6596035-92c9-414e-864e-d825cc33a7e5",
+            "__enabled": false,
             "Center": "0,0,0",
             "IsTrigger": false,
             "Scale": "50,50,50",
@@ -51,8 +54,8 @@
   "MenuPath": null,
   "MenuIcon": null,
   "ResourceVersion": 1,
-  "__version": 1,
   "__references": [
     "magikarp.green8"
-  ]
+  ],
+  "__version": 1
 }
