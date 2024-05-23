@@ -15,11 +15,11 @@
 						[
 							{
 								from = "scaffolding_a.vmat"
-								to = "models/sbox_props/scaffolding/scaffolding_a.vmat"
+								to = "models/scaffolding/scaffolding_a.vmat"
 							},
 							{
 								from = "scaffolding_tiling_a.vmat"
-								to = "models/sbox_props/scaffolding/scaffolding_tiling_a.vmat"
+								to = "models/scaffolding/scaffolding_tiling_a.vmat"
 							},
 						]
 						use_global_default = false
