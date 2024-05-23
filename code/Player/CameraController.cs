@@ -43,8 +43,8 @@ internal class CameraController : Component
 		}
 
 		var dir = (Position - Target.Position).Normal;
-		var pos = Target.Position + dir * 15f;
-		Sound.Listener = new Transform( pos, Rotation );
+		var pos = Target.Position + dir * 15f + Vector3.Up * 32f;
+		//Sound.Listener = new Transform( pos, Rotation );
 
 		//ClearViewBlockers();
 		//UpdateViewBlockers( pawn );
