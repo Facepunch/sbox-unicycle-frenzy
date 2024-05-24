@@ -168,7 +168,7 @@
             ],
             "Mode": "Screen",
             "Strength": 0.5,
-            "Threshold": 0.55,
+            "Threshold": 0.3,
             "ThresholdWidth": 0.3
           },
           {
@@ -314,20 +314,20 @@
                 "__guid": "84d5d5dc-7744-428c-b08b-4b3b33b420de",
                 "Frame": {
                   "_type": "component",
-                  "component_id": "c8448741-8c44-44a2-b78d-93e48ec2c754",
+                  "component_id": "d2f4b1ae-8b6d-49ed-8bb6-1596169aa6a1",
                   "go": "8869caf4-fe2a-4229-853e-28ef66385431",
                   "component_type": "ModelRenderer"
                 },
                 "IsMenu": false,
                 "LeftPedal": {
                   "_type": "component",
-                  "component_id": "809fc569-a43f-4216-a9cc-676c823012ad",
+                  "component_id": "d30ec290-34bb-47c4-88dc-6e878f9a560f",
                   "go": "c30208b1-7cd7-4d78-8c66-e633251c3924",
                   "component_type": "SkinnedModelRenderer"
                 },
                 "RightPedal": {
                   "_type": "component",
-                  "component_id": "c5db18ae-f251-4d48-a02a-fea6731cb722",
+                  "component_id": "4b1aec92-8f6a-4d42-969c-fd7e0b5115db",
                   "go": "f6a16b0d-b63b-46e3-9099-b25baac8d315",
                   "component_type": "SkinnedModelRenderer"
                 },
@@ -339,7 +339,7 @@
                 },
                 "Wheel": {
                   "_type": "component",
-                  "component_id": "27580649-8e4d-4e95-a239-fb1072bfc036",
+                  "component_id": "8f50c8a2-018d-4471-8e03-57a2a652a2d8",
                   "go": "546128ac-1f44-4287-a9b5-b0d60d9b67aa",
                   "component_type": "ModelRenderer"
                 }

@@ -19,7 +19,7 @@
           "Difficulty": "Tier1",
           "GoldTime": 17,
           "MapName": "g1l1",
-          "PlatinumTime": 15,
+          "PlatinumTime": 11,
           "SilverTime": 20
         }
       ]
@@ -79,7 +79,7 @@
       "__guid": "d88f3f37-7250-4393-8d28-4412f5962ec7",
       "Flags": 0,
       "Name": "CheckPoint Zone (2)",
-      "Position": "-128,-1408,-0.00000000003637979",
+      "Position": "-256,-1408,-0.00000000003637979",
       "Rotation": "0,0,0.9999999,0.00000008940697",
       "Enabled": true,
       "NetworkMode": 2,
@@ -6328,6 +6328,50 @@
       ]
     },
     {
+      "__guid": "1881edf7-54db-4894-8302-f2b3f67d4ecb",
+      "Flags": 0,
+      "Name": "Point Light (2)",
+      "Position": "-239.9999,64,112",
+      "Tags": "light_point,light",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "Components": [
+        {
+          "__type": "Sandbox.PointLight",
+          "__guid": "883dd358-7d78-493f-b21d-12e0cec8fddb",
+          "Attenuation": 1,
+          "FogMode": "Disabled",
+          "FogStrength": 1,
+          "LightColor": "0.95814,0.84613,0.69966,1",
+          "Radius": 400,
+          "Shadows": false
+        }
+      ]
+    },
+    {
+      "__guid": "5ab0f1e2-7f07-4c07-946c-9f2669eebc8f",
+      "Flags": 0,
+      "Name": "Point Light (3)",
+      "Position": "-1104,-1792,111.9999",
+      "Tags": "light_point,light",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "Components": [
+        {
+          "__type": "Sandbox.PointLight",
+          "__guid": "0f219ee2-c000-4594-bdff-ca489729dd10",
+          "Attenuation": 1,
+          "FogMode": "Disabled",
+          "FogStrength": 1,
+          "LightColor": "0.95814,0.84613,0.69966,1",
+          "Radius": 400,
+          "Shadows": false
+        }
+      ]
+    },
+    {
       "__guid": "16cbc46e-10c4-412c-8790-86c46af3ab68",
       "Flags": 0,
       "Name": "shipping_container_med",
@@ -6431,6 +6475,17 @@
           "Type": "Point"
         }
       ]
+    },
+    {
+      "__guid": "bc213a0c-59d2-49fa-9185-00eb08ab1580",
+      "Flags": 0,
+      "Name": "std_plywood_straight_96 (3)",
+      "Position": "0,-304,-0.000003427459",
+      "Rotation": "-0.5,0.5,-0.4999999,0.5000001",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "__Prefab": "prefabs/map/track_pieces/standard/std_plywood_straight_96.prefab"
     }
   ],
   "SceneProperties": {
@@ -6456,7 +6511,7 @@
   },
   "Title": "g1l1",
   "Description": "",
-  "LastSaved": "2024-05-23T17:23:02.211365\u002B01:00",
+  "LastSaved": "2024-05-24T10:23:08.8819735\u002B01:00",
   "ResourceVersion": 1,
   "__references": [
     "rust.field_day_breeze_01a"

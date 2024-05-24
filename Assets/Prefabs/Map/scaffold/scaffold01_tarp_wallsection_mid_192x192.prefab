@@ -1,15 +1,14 @@
 {
   "RootObject": {
-    "__guid": "39e73213-6925-4869-b865-3a2c854e1640",
+    "__guid": "59ca997d-42fe-4e2c-a8d7-03dbf080b294",
     "Flags": 0,
     "Name": "scaffold01_tarp_wallsection_mid_192x192",
-    "Position": "-512,1792,0",
     "Enabled": true,
     "NetworkMode": 2,
     "NetworkInterpolation": true,
     "Children": [
       {
-        "__guid": "0bcad44c-2202-4f38-8009-2e6b67a63cc7",
+        "__guid": "316e6c7a-f1be-4bbe-8379-d2b0c3120b60",
         "Flags": 0,
         "Name": "scaffolding_connector_a (2)",
         "Position": "0,-84,-95.99999",
@@ -21,7 +20,7 @@
         "Components": [
           {
             "__type": "Sandbox.Prop",
-            "__guid": "b6d2e1af-b6be-4fe9-9002-d8ff667baad2",
+            "__guid": "0ff917ce-b6c2-46d6-81bd-3e63c0980cf5",
             "BodyGroups": 18446744073709551615,
             "Health": 0,
             "IsStatic": true,
@@ -31,7 +30,7 @@
         ]
       },
       {
-        "__guid": "0f0d831a-1c80-4721-b298-247f000a7013",
+        "__guid": "5a85f9cd-ba79-488a-aca2-85c5298b7726",
         "Flags": 0,
         "Name": "scaffolding_tube_a (5)",
         "Position": "0,-40,-96",
@@ -43,7 +42,7 @@
         "Components": [
           {
             "__type": "Sandbox.Prop",
-            "__guid": "db6f0825-0741-4dbb-aa25-41e5324b8fea",
+            "__guid": "a68ffd55-57e7-4523-a833-c0c0461e6cac",
             "BodyGroups": 18446744073709551615,
             "Health": 0,
             "IsStatic": true,
@@ -53,7 +52,7 @@
         ]
       },
       {
-        "__guid": "15400fb3-139c-471e-b481-974ae5234812",
+        "__guid": "d39a0310-1ed5-4fd1-aebd-51ce6cd568f8",
         "Flags": 0,
         "Name": "scaffolding_tube_a (4)",
         "Position": "0,88,-96",
@@ -65,7 +64,7 @@
         "Components": [
           {
             "__type": "Sandbox.Prop",
-            "__guid": "2ca09cb5-9fc2-4bac-ac43-caf67dcc2bb7",
+            "__guid": "0433252e-b8c8-4528-8578-3066c2c7a728",
             "BodyGroups": 18446744073709551615,
             "Health": 0,
             "IsStatic": true,
@@ -75,7 +74,7 @@
         ]
       },
       {
-        "__guid": "61e972cd-a64b-490c-8b86-aa93e4db736b",
+        "__guid": "31bcf2b5-3be1-4cf2-bdbf-7662fc1d43bb",
         "Flags": 0,
         "Name": "scaffolding_connector_a (1)",
         "Position": "0,84,-96",
@@ -87,7 +86,7 @@
         "Components": [
           {
             "__type": "Sandbox.Prop",
-            "__guid": "c8184d37-ab92-4be4-adae-9dae5ec43d42",
+            "__guid": "b8470cb3-0ec4-49f2-b165-c8af791d561c",
             "BodyGroups": 18446744073709551615,
             "Health": 0,
             "IsStatic": true,
@@ -97,7 +96,7 @@
         ]
       },
       {
-        "__guid": "fc08597b-f897-4095-97ce-5248e9c652e1",
+        "__guid": "8b8a0a98-70ae-4a85-bf74-12d77d1f9f00",
         "Flags": 0,
         "Name": "scaffolding_ringlock_a (1)",
         "Position": "0,96,-95.99999",
@@ -109,7 +108,7 @@
         "Components": [
           {
             "__type": "Sandbox.Prop",
-            "__guid": "fdb0ebba-65ef-41e6-8926-e6e1ddf3f4f1",
+            "__guid": "19be7d7e-8323-41b5-9de7-58f31e67e614",
             "BodyGroups": 18446744073709551615,
             "Health": 0,
             "IsStatic": true,
@@ -119,7 +118,7 @@
         ]
       },
       {
-        "__guid": "68a8c647-cd57-4809-816d-b9c0f0344d91",
+        "__guid": "23048f57-ceab-4cbc-9202-feba9e72808f",
         "Flags": 0,
         "Name": "scaffolding_tube_a (3)",
         "Position": "0,96,-96",
@@ -131,7 +130,7 @@
         "Components": [
           {
             "__type": "Sandbox.Prop",
-            "__guid": "d53cada8-b243-418b-aa18-41a91f5d6758",
+            "__guid": "ea59cdca-f59e-4e5d-aa4f-9f538ee79d8c",
             "BodyGroups": 18446744073709551615,
             "Health": 0,
             "IsStatic": true,
@@ -141,7 +140,7 @@
         ]
       },
       {
-        "__guid": "cc057792-17d1-4162-9a3b-ffa6a7a5e887",
+        "__guid": "3e903f3c-68ff-49ef-8e84-6a8b063b4e46",
         "Flags": 0,
         "Name": "scaffolding_tube_a (1)",
         "Position": "0,96,32",
@@ -153,7 +152,7 @@
         "Components": [
           {
             "__type": "Sandbox.Prop",
-            "__guid": "f22e22f5-da8a-4f25-b5be-7f3a1b636581",
+            "__guid": "f65c1b1d-9fa4-4a52-b064-8dfea97f2fe8",
             "BodyGroups": 18446744073709551615,
             "Health": 0,
             "IsStatic": true,
@@ -163,7 +162,7 @@
         ]
       },
       {
-        "__guid": "38bd2f12-8667-4d54-9290-c0f6fff2cf77",
+        "__guid": "156b0348-04ab-460b-b8cd-204fb208a673",
         "Flags": 0,
         "Name": "scaffolding_ringlock_a (2)",
         "Position": "0,96,96",
@@ -175,7 +174,7 @@
         "Components": [
           {
             "__type": "Sandbox.Prop",
-            "__guid": "ac7d6948-5c46-4105-972b-2660713eb443",
+            "__guid": "a0eb4ac0-d334-4322-bb89-c2b199b1573c",
             "BodyGroups": 18446744073709551615,
             "Health": 0,
             "IsStatic": true,
@@ -185,7 +184,7 @@
         ]
       },
       {
-        "__guid": "6d523e11-8bed-4e34-a7f3-650a8264ba1a",
+        "__guid": "ad45af15-e0f7-4476-b9b6-63c14f773198",
         "Flags": 0,
         "Name": "scaffolding_connector_a (4)",
         "Position": "0,84,96",
@@ -197,7 +196,7 @@
         "Components": [
           {
             "__type": "Sandbox.Prop",
-            "__guid": "dcaca149-0910-487c-93d2-39090a9b47e7",
+            "__guid": "c3cb3050-5df9-4908-901d-d38e814d70db",
             "BodyGroups": 18446744073709551615,
             "Health": 0,
             "IsStatic": true,
@@ -207,7 +206,7 @@
         ]
       },
       {
-        "__guid": "6b3a1b44-f972-4c11-a68f-de3164cdf10e",
+        "__guid": "2e2b70b2-31d8-4b78-9b71-dbc94ef79dc3",
         "Flags": 0,
         "Name": "scaffolding_tube_a (9)",
         "Position": "0,88,96",
@@ -219,7 +218,7 @@
         "Components": [
           {
             "__type": "Sandbox.Prop",
-            "__guid": "f8320aa1-671b-4dbd-bfa0-5a39276733ed",
+            "__guid": "be25b21a-c680-45fb-8d07-83614985407a",
             "BodyGroups": 18446744073709551615,
             "Health": 0,
             "IsStatic": true,
@@ -229,7 +228,7 @@
         ]
       },
       {
-        "__guid": "26685cdc-a419-407a-8807-c0b898ae6643",
+        "__guid": "c1bab2fe-fbbf-441e-9949-bd871dddabbc",
         "Flags": 0,
         "Name": "scaffolding_tube_a (8)",
         "Position": "0,-40,96",
@@ -241,7 +240,7 @@
         "Components": [
           {
             "__type": "Sandbox.Prop",
-            "__guid": "ea264f34-4092-4e1c-a223-8c12ffe77b23",
+            "__guid": "bc409011-0edc-497b-896f-12e257711927",
             "BodyGroups": 18446744073709551615,
             "Health": 0,
             "IsStatic": true,
@@ -251,7 +250,7 @@
         ]
       },
       {
-        "__guid": "f0b55c2d-7ebc-48e1-8cd3-96ff15c35098",
+        "__guid": "149fa16a-a3e3-40f8-bbbf-a29745d3b2b8",
         "Flags": 0,
         "Name": "scaffolding_connector_a (3)",
         "Position": "0,-84,96",
@@ -263,7 +262,7 @@
         "Components": [
           {
             "__type": "Sandbox.Prop",
-            "__guid": "47897d52-f2d0-43f6-aeff-bcf1afc028ec",
+            "__guid": "414cfc49-34d8-427d-a49a-0e984634f18f",
             "BodyGroups": 18446744073709551615,
             "Health": 0,
             "IsStatic": true,
@@ -273,10 +272,9 @@
         ]
       },
       {
-        "__guid": "f52e1c6d-1727-4b14-8ac6-585fa98d6a34",
+        "__guid": "5d384926-c030-40fb-865b-f341b70a5e17",
         "Flags": 0,
         "Name": "scaffiller_tarp_wall_mid_192x192",
-        "Position": "0,0,0",
         "Rotation": "0,0,-1,0.0000001947072",
         "Enabled": true,
         "NetworkMode": 2,
@@ -284,10 +282,10 @@
         "Components": [
           {
             "__type": "Sandbox.Prop",
-            "__guid": "072c7473-0369-4e09-98ee-5a1a3284e1b4",
+            "__guid": "d159f921-213a-4c16-951c-22cde25a5bda",
             "BodyGroups": 18446744073709551615,
             "Health": 0,
-            "IsStatic": false,
+            "IsStatic": true,
             "Model": "models/scaffolding/scaffold_filler/scaffiller_tarp_wall_mid_192x192.vmdl",
             "Tint": "1,1,1,1"
           }
