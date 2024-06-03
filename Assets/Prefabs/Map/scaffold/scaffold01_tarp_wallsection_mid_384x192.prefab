@@ -1,6 +1,6 @@
 {
   "RootObject": {
-    "__guid": "1b92d1d5-9fa1-4ab4-b438-7ee7736b13a5",
+    "__guid": "fe26d046-132f-4db9-9bbf-f20800de5a7f",
     "Flags": 0,
     "Name": "scaffold01_tarp_wallsection_mid_384x192",
     "Enabled": true,
@@ -8,139 +8,7 @@
     "NetworkInterpolation": true,
     "Children": [
       {
-        "__guid": "864e7ea1-0d26-4ed2-bd05-c101396864a7",
-        "Flags": 0,
-        "Name": "scaffolding_connector_a (2)",
-        "Position": "0,-180,-95.99999",
-        "Rotation": "0.7071069,-0.7071068,0.00000006705523,0.00000006705523",
-        "Scale": "1.5,1.5,1.5",
-        "Enabled": true,
-        "NetworkMode": 2,
-        "NetworkInterpolation": true,
-        "Components": [
-          {
-            "__type": "Sandbox.Prop",
-            "__guid": "059a7a4c-04a0-4940-a9b5-0a5abf624889",
-            "BodyGroups": 18446744073709551615,
-            "Health": 0,
-            "IsStatic": true,
-            "Model": "models/scaffolding/scaffolding_connector_a.vmdl",
-            "Tint": "1,1,1,1"
-          }
-        ]
-      },
-      {
-        "__guid": "a5bc341e-3396-4968-8428-86c0753c9add",
-        "Flags": 0,
-        "Name": "scaffolding_tube_a (6)",
-        "Position": "0,-72,-96",
-        "Rotation": "0.5,-0.5,-0.4999999,0.5000001",
-        "Scale": "0.875,1.5,1.5",
-        "Enabled": true,
-        "NetworkMode": 2,
-        "NetworkInterpolation": true,
-        "Components": [
-          {
-            "__type": "Sandbox.Prop",
-            "__guid": "e03ca1e7-6747-42ec-8f9b-187a6fea0cbc",
-            "BodyGroups": 18446744073709551615,
-            "Health": 0,
-            "IsStatic": true,
-            "Model": "models/scaffolding/scaffolding_tube_a.vmdl",
-            "Tint": "1,1,1,1"
-          }
-        ]
-      },
-      {
-        "__guid": "062519ad-bb11-44cf-b49a-b574853a269e",
-        "Flags": 0,
-        "Name": "scaffolding_tube_a (5)",
-        "Position": "0,56,-96",
-        "Rotation": "0.5,-0.5,-0.4999999,0.5000001",
-        "Scale": "1,1.5,1.5",
-        "Enabled": true,
-        "NetworkMode": 2,
-        "NetworkInterpolation": true,
-        "Components": [
-          {
-            "__type": "Sandbox.Prop",
-            "__guid": "3956478f-8875-4e4e-a535-34a45c2f9368",
-            "BodyGroups": 18446744073709551615,
-            "Health": 0,
-            "IsStatic": true,
-            "Model": "models/scaffolding/scaffolding_tube_a.vmdl",
-            "Tint": "1,1,1,1"
-          }
-        ]
-      },
-      {
-        "__guid": "f5f2ac54-bade-4ee9-a852-fccff8a095e4",
-        "Flags": 0,
-        "Name": "scaffolding_tube_a (4)",
-        "Position": "0,184,-96",
-        "Rotation": "0.5,-0.5,-0.4999999,0.5000001",
-        "Scale": "1,1.5,1.5",
-        "Enabled": true,
-        "NetworkMode": 2,
-        "NetworkInterpolation": true,
-        "Components": [
-          {
-            "__type": "Sandbox.Prop",
-            "__guid": "40b6007a-de41-4b43-85d9-2749fa9718ce",
-            "BodyGroups": 18446744073709551615,
-            "Health": 0,
-            "IsStatic": true,
-            "Model": "models/scaffolding/scaffolding_tube_a.vmdl",
-            "Tint": "1,1,1,1"
-          }
-        ]
-      },
-      {
-        "__guid": "20000749-c9d5-4be3-9e10-22a1e1479fd5",
-        "Flags": 0,
-        "Name": "scaffolding_connector_a (1)",
-        "Position": "0,180,-96",
-        "Rotation": "0,0,0.7071067,0.7071068",
-        "Scale": "1.5,1.5,1.5",
-        "Enabled": true,
-        "NetworkMode": 2,
-        "NetworkInterpolation": true,
-        "Components": [
-          {
-            "__type": "Sandbox.Prop",
-            "__guid": "5170b958-74bc-4cd4-82e2-01f9e7e8e19c",
-            "BodyGroups": 18446744073709551615,
-            "Health": 0,
-            "IsStatic": true,
-            "Model": "models/scaffolding/scaffolding_connector_a.vmdl",
-            "Tint": "1,1,1,1"
-          }
-        ]
-      },
-      {
-        "__guid": "34b9917a-2299-41d3-81eb-63e5bdc23fc3",
-        "Flags": 0,
-        "Name": "scaffolding_ringlock_a (1)",
-        "Position": "0,192,-95.99999",
-        "Rotation": "0,-0.7071067,0,0.7071068",
-        "Scale": "1.5,1.5,1.5",
-        "Enabled": true,
-        "NetworkMode": 2,
-        "NetworkInterpolation": true,
-        "Components": [
-          {
-            "__type": "Sandbox.Prop",
-            "__guid": "fc72caad-3636-479d-b80d-a455ea2953f2",
-            "BodyGroups": 18446744073709551615,
-            "Health": 0,
-            "IsStatic": true,
-            "Model": "models/scaffolding/scaffolding_ringlock_a.vmdl",
-            "Tint": "1,1,1,1"
-          }
-        ]
-      },
-      {
-        "__guid": "dafeaae5-c40e-4548-a79e-802809634780",
+        "__guid": "80c02294-42d1-40d1-b734-ea72d0c464eb",
         "Flags": 0,
         "Name": "scaffolding_tube_a (3)",
         "Position": "0,192,-96",
@@ -152,7 +20,7 @@
         "Components": [
           {
             "__type": "Sandbox.Prop",
-            "__guid": "d3581c87-e32d-43ac-9a02-69298bf61f84",
+            "__guid": "7f10e261-e8b3-4d81-9344-1a386ce45b06",
             "BodyGroups": 18446744073709551615,
             "Health": 0,
             "IsStatic": true,
@@ -162,7 +30,7 @@
         ]
       },
       {
-        "__guid": "f5b62b68-9de1-4611-a9f3-ba72bfd0ef4b",
+        "__guid": "156ce092-70fd-4f4c-a297-e230bd5720dc",
         "Flags": 0,
         "Name": "scaffolding_tube_a (1)",
         "Position": "0,192,32",
@@ -174,7 +42,7 @@
         "Components": [
           {
             "__type": "Sandbox.Prop",
-            "__guid": "b09315d0-2651-485d-b89e-8109eaf6c6f8",
+            "__guid": "d4d43860-e62b-4779-afd2-315b88ad9379",
             "BodyGroups": 18446744073709551615,
             "Health": 0,
             "IsStatic": true,
@@ -184,7 +52,7 @@
         ]
       },
       {
-        "__guid": "5703796b-2349-4317-a01e-56a4e8243fa7",
+        "__guid": "bc2d27b9-b748-4ad1-ac0e-dd795c5cf1da",
         "Flags": 0,
         "Name": "scaffolding_ringlock_a (2)",
         "Position": "0,192,96",
@@ -196,7 +64,7 @@
         "Components": [
           {
             "__type": "Sandbox.Prop",
-            "__guid": "c2291ca5-a260-4032-bb71-ae131ab0e91b",
+            "__guid": "728c7183-a713-4533-a647-a2440dd6f4c9",
             "BodyGroups": 18446744073709551615,
             "Health": 0,
             "IsStatic": true,
@@ -206,7 +74,7 @@
         ]
       },
       {
-        "__guid": "9e043241-67be-4262-914d-19b5a027437b",
+        "__guid": "c011dc09-a464-41e9-9f3b-b71a95978f68",
         "Flags": 0,
         "Name": "scaffolding_connector_a (4)",
         "Position": "0,180,96",
@@ -218,7 +86,7 @@
         "Components": [
           {
             "__type": "Sandbox.Prop",
-            "__guid": "fcb5eaa1-d9fe-426e-928f-09fdd47c4f8b",
+            "__guid": "b1b51bce-d2f6-460a-a2f0-7b6f565a959d",
             "BodyGroups": 18446744073709551615,
             "Health": 0,
             "IsStatic": true,
@@ -228,7 +96,7 @@
         ]
       },
       {
-        "__guid": "cc378b0e-0200-46d9-83dd-8125da73c634",
+        "__guid": "b3200994-070e-4956-bc88-b733481694b3",
         "Flags": 0,
         "Name": "scaffolding_tube_a (9)",
         "Position": "0,184,96",
@@ -240,7 +108,7 @@
         "Components": [
           {
             "__type": "Sandbox.Prop",
-            "__guid": "7d8d1c01-bf05-482b-91bf-ec7706db7c78",
+            "__guid": "ba4fb68e-38e3-4e1e-bd34-417dbd8c0c35",
             "BodyGroups": 18446744073709551615,
             "Health": 0,
             "IsStatic": true,
@@ -250,7 +118,7 @@
         ]
       },
       {
-        "__guid": "1703c5a9-9010-4991-a808-0116d834bc1e",
+        "__guid": "242a978e-7f57-49db-be9f-6a9d034c4860",
         "Flags": 0,
         "Name": "scaffolding_tube_a (8)",
         "Position": "0,56,96",
@@ -262,7 +130,7 @@
         "Components": [
           {
             "__type": "Sandbox.Prop",
-            "__guid": "14036652-ceea-49d7-a58d-dc79d41615ad",
+            "__guid": "f0c8caab-c41a-4f1b-bf29-689566a82c1a",
             "BodyGroups": 18446744073709551615,
             "Health": 0,
             "IsStatic": true,
@@ -272,7 +140,7 @@
         ]
       },
       {
-        "__guid": "a6f38710-d038-4b76-be8d-cd87a4aae0b5",
+        "__guid": "a0686a2d-8520-4289-abc0-d2922b807e62",
         "Flags": 0,
         "Name": "scaffolding_tube_a (7)",
         "Position": "0,-72,96",
@@ -284,7 +152,7 @@
         "Components": [
           {
             "__type": "Sandbox.Prop",
-            "__guid": "7ba94d0f-7ba5-4271-a1d7-4551445ab44a",
+            "__guid": "86e4ad75-1448-4242-b24c-9d368496a2e9",
             "BodyGroups": 18446744073709551615,
             "Health": 0,
             "IsStatic": true,
@@ -294,7 +162,7 @@
         ]
       },
       {
-        "__guid": "d1107206-dd2f-4569-ae16-996d6ac22ae0",
+        "__guid": "28462c6e-edb9-41b0-bbc7-82f175155765",
         "Flags": 0,
         "Name": "scaffolding_connector_a (3)",
         "Position": "0,-180,96",
@@ -306,7 +174,7 @@
         "Components": [
           {
             "__type": "Sandbox.Prop",
-            "__guid": "2d3c8eca-54ef-4305-a3e5-d78902e608cd",
+            "__guid": "1c761511-500c-41d0-b679-2cd5aed371ef",
             "BodyGroups": 18446744073709551615,
             "Health": 0,
             "IsStatic": true,
@@ -316,7 +184,7 @@
         ]
       },
       {
-        "__guid": "642c888c-154e-4f5e-8cd8-681d41398fdf",
+        "__guid": "8ae1e28d-e029-424d-a1db-decb1daa648f",
         "Flags": 0,
         "Name": "scaffiller_tarp_wall_mid_384x192",
         "Rotation": "0,0,-1,0.00000008940697",
@@ -326,7 +194,7 @@
         "Components": [
           {
             "__type": "Sandbox.Prop",
-            "__guid": "eea79d95-c1ff-4597-8176-f1911ba0d001",
+            "__guid": "76398f90-5c0d-48f5-921d-ef04d4f37c99",
             "BodyGroups": 18446744073709551615,
             "Health": 0,
             "IsStatic": true,
