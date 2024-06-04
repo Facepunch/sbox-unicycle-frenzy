@@ -1,15 +1,17 @@
 {
-	"UI": false,
-	"Volume": 1,
-	"VolumeRandom": 0.030000,
-	"Pitch": 1,
-	"PitchRandom": 0.150000,
-	"Decibels": 85,
-	"Sounds":
-	[
-		"sounds/unicycle/unicycle.pedal.3.vsnd"
-	],
-	"SelectionMode": "Random",
-	"MaximumDistance": 1671.534500,
-	"MinimumDistance": 83.576730
+  "UI": false,
+  "Volume": "4.00,1.00,0",
+  "Pitch": "1.00,1.00,0",
+  "Decibels": 85,
+  "SelectionMode": "Random",
+  "Sounds": [
+    "sounds/unicycle/unicycle.pedal.3.vsnd"
+  ],
+  "Occlusion": true,
+  "AirAbsorption": true,
+  "Transmission": true,
+  "OcclusionRadius": 64,
+  "DistanceAttenuation": true,
+  "__references": [],
+  "__version": 0
 }

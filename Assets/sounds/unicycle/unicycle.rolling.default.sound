@@ -1,13 +1,17 @@
 {
-	"ui": false,
-	"volume": 1.000000,
-	"volumerandom": 0.000000,
-	"pitch": 1.000000,
-	"pitchrandom": 0.150000,
-	"distancemax": 900.000000,
-	"sounds":
-	[
-		"sounds/unicycle/unicycle.rolling.default.1.vsnd"
-	],
-	"selectionmode": "3"
+  "UI": false,
+  "Volume": "10.00,1.00,0",
+  "Pitch": "1.00,1.00,0",
+  "Decibels": 70,
+  "SelectionMode": "Random",
+  "Sounds": [
+    "sounds/unicycle/unicycle.rolling.default.1.vsnd"
+  ],
+  "Occlusion": true,
+  "AirAbsorption": true,
+  "Transmission": true,
+  "OcclusionRadius": 64,
+  "DistanceAttenuation": true,
+  "__references": [],
+  "__version": 0
 }
