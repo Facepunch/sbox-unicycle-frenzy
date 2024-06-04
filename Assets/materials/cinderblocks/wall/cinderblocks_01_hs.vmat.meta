@@ -1,0 +1,27 @@
+{
+  "publish": {
+    "Enabled": true,
+    "ProjectConfig": {
+      "Title": "Cinderblocks 01 hs",
+      "Type": "material",
+      "Org": "facepunch",
+      "Ident": "cinderblocks_01_hs",
+      "Tags": "cinderblock wall cinder block bricks",
+      "Schema": 0,
+      "HasAssets": false,
+      "AssetsPath": null,
+      "ResourcePaths": null,
+      "HasCode": false,
+      "CodePath": null,
+      "PackageReferences": null,
+      "EditorReferences": null,
+      "Metadata": {
+        "SingleAssetSource": "materials/cinderblocks/wall/cinderblocks_01_hs.vmat",
+        "Summary": "",
+        "Description": "",
+        "Public": true,
+        "ReplaceTags": "cinderblocks bricks 01 hs hotspot"
+      }
+    }
+  }
+}

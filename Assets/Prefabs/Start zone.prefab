@@ -1,9 +1,11 @@
 {
   "RootObject": {
     "__guid": "a06633a7-a845-497a-a122-e4b6c93f3e07",
+    "Flags": 0,
     "Name": "start zone",
     "Enabled": true,
     "NetworkMode": 2,
+    "NetworkInterpolation": true,
     "Components": [
       {
         "__type": "StartZone",
@@ -18,10 +20,12 @@
     "Children": [
       {
         "__guid": "fa6d5c91-a1eb-4e96-9117-2d9ccaba61ae",
+        "Flags": 0,
         "Name": "Cube",
         "Scale": "3,3,0.1",
         "Enabled": true,
         "NetworkMode": 2,
+        "NetworkInterpolation": true,
         "Components": [
           {
             "__type": "Sandbox.ModelRenderer",
@@ -31,14 +35,6 @@
             "Model": "models/dev/box.vmdl",
             "RenderType": "On",
             "Tint": "1,1,1,1"
-          },
-          {
-            "__type": "Sandbox.BoxCollider",
-            "__guid": "87fbffb1-8ab3-4bba-9198-e7b7c4812dd0",
-            "Center": "0,0,0",
-            "IsTrigger": false,
-            "Scale": "50,50,50",
-            "Static": false
           }
         ]
       }
@@ -48,8 +44,8 @@
   "MenuPath": null,
   "MenuIcon": null,
   "ResourceVersion": 1,
-  "__version": 1,
   "__references": [
     "magikarp.green8"
-  ]
+  ],
+  "__version": 1
 }

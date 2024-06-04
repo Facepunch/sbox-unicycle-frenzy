@@ -72,15 +72,20 @@
           {
             "__type": "Sandbox.Tonemapping",
             "__guid": "4bbd6ad6-f6f5-4cb9-bbbe-eaa9a5de107e",
+            "__version": 1,
+            "ExposureBias": 2,
             "ExposureCompensation": 0,
+            "ExposureMethod": "RGB",
             "MaximumExposure": 1.73,
             "MinimumExposure": 1.38,
+            "Mode": "Legacy",
             "Rate": 1
           },
           {
             "__type": "Sandbox.ColorGrading",
             "__guid": "56b0e02c-ef91-4d5b-b819-aca0ada9147a",
-            "Bcurve": [
+            "BlendFactor": 0.42,
+            "BlueCurve": [
               {
                 "y": 0.5
               },
@@ -89,10 +94,10 @@
                 "y": 1
               }
             ],
-            "BlendFactor": 0.42,
             "ColorSpace": "None",
             "ColorTempK": 19314.19,
-            "Gcurve": [
+            "GradingMethod": "TemperatureControl",
+            "GreenCurve": [
               {
                 "y": 0.5
               },
@@ -101,8 +106,7 @@
                 "y": 1
               }
             ],
-            "GradingMethod": "TemperatureControl",
-            "Hcurve": [
+            "HueCurve": [
               {
                 "y": 0.5
               },
@@ -112,7 +116,7 @@
               }
             ],
             "LookupTexture": null,
-            "Rcurve": [
+            "RedCurve": [
               {
                 "y": 0.5
               },
@@ -121,7 +125,7 @@
                 "y": 1
               }
             ],
-            "Scurve": [
+            "SaturationCurve": [
               {
                 "y": 0.5
               },
@@ -130,8 +134,7 @@
                 "y": 1
               }
             ],
-            "TonemappingMethod": "None",
-            "Vcurve": [
+            "ValueCurve": [
               {
                 "y": 0.5
               },
@@ -139,8 +142,7 @@
                 "x": 1,
                 "y": 1
               }
-            ],
-            "WhitePoint": 0.15
+            ]
           },
           {
             "__type": "Sandbox.Bloom",
@@ -167,7 +169,7 @@
               }
             ],
             "Mode": "Screen",
-            "Strength": 0.5,
+            "Strength": 0.1,
             "Threshold": 0.3,
             "ThresholdWidth": 0.3
           },
@@ -286,7 +288,8 @@
                 "CreateBoneObjects": false,
                 "Model": "models/citizen/citizen.vmdl",
                 "RenderType": "On",
-                "Tint": "1,1,1,1"
+                "Tint": "1,1,1,1",
+                "UseAnimGraph": true
               },
               {
                 "__type": "ClothingDresser",
@@ -314,20 +317,20 @@
                 "__guid": "84d5d5dc-7744-428c-b08b-4b3b33b420de",
                 "Frame": {
                   "_type": "component",
-                  "component_id": "d2f4b1ae-8b6d-49ed-8bb6-1596169aa6a1",
+                  "component_id": "4dc5b62a-c5f5-440b-ac03-9aeea5baacc1",
                   "go": "8869caf4-fe2a-4229-853e-28ef66385431",
                   "component_type": "ModelRenderer"
                 },
                 "IsMenu": false,
                 "LeftPedal": {
                   "_type": "component",
-                  "component_id": "d30ec290-34bb-47c4-88dc-6e878f9a560f",
+                  "component_id": "2616d4e1-046d-4874-a84f-9e0b6384a88f",
                   "go": "c30208b1-7cd7-4d78-8c66-e633251c3924",
                   "component_type": "SkinnedModelRenderer"
                 },
                 "RightPedal": {
                   "_type": "component",
-                  "component_id": "4b1aec92-8f6a-4d42-969c-fd7e0b5115db",
+                  "component_id": "3cbf3a4b-26e1-41e6-8118-ed4ae45fa04a",
                   "go": "f6a16b0d-b63b-46e3-9099-b25baac8d315",
                   "component_type": "SkinnedModelRenderer"
                 },
@@ -339,7 +342,7 @@
                 },
                 "Wheel": {
                   "_type": "component",
-                  "component_id": "8f50c8a2-018d-4471-8e03-57a2a652a2d8",
+                  "component_id": "b41eaa3f-2ae0-40c1-b319-ca8dbaebd101",
                   "go": "546128ac-1f44-4287-a9b5-b0d60d9b67aa",
                   "component_type": "ModelRenderer"
                 }
