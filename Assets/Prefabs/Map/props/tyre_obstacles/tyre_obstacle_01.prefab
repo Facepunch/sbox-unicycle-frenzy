@@ -3,7 +3,6 @@
     "__guid": "c7d939f6-1eae-41f5-b67d-dc3843b91c42",
     "Flags": 0,
     "Name": "tyre_obstacle_01",
-    "Position": "0,0,0",
     "Enabled": true,
     "NetworkMode": 2,
     "NetworkInterpolation": true,
@@ -13,11 +12,12 @@
         "__guid": "81ec9f3a-60d4-4560-9d88-b60af321c12e",
         "BodyGroups": 18446744073709551615,
         "Health": 0,
-        "IsStatic": false,
+        "IsStatic": true,
         "Model": "models/props/tyre_obstacle_01/tyre_obstacle_01.vmdl",
         "Tint": "1,1,1,1"
       }
-    ]
+    ],
+    "Children": []
   },
   "ShowInMenu": false,
   "MenuPath": null,

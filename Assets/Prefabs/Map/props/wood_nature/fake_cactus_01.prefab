@@ -3,7 +3,6 @@
     "__guid": "0f85088c-9808-40bb-8c06-ebbdf9bf71d5",
     "Flags": 0,
     "Name": "fake_cactus_01",
-    "Position": "0,0,0",
     "Enabled": true,
     "NetworkMode": 2,
     "NetworkInterpolation": true,
@@ -13,11 +12,12 @@
         "__guid": "9ff6cdea-7b49-44c1-929d-3c84ba6a3449",
         "BodyGroups": 18446744073709551615,
         "Health": 0,
-        "IsStatic": false,
+        "IsStatic": true,
         "Model": "models/props/nature/fake_cactus_01/fake_cactus_01.vmdl",
         "Tint": "1,1,1,1"
       }
-    ]
+    ],
+    "Children": []
   },
   "ShowInMenu": false,
   "MenuPath": null,

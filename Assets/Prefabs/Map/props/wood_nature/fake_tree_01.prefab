@@ -3,7 +3,6 @@
     "__guid": "81b00f8b-ffec-4bfa-a64c-e19da12efc97",
     "Flags": 0,
     "Name": "fake_tree_01",
-    "Position": "0,512,0",
     "Enabled": true,
     "NetworkMode": 2,
     "NetworkInterpolation": true,
@@ -13,11 +12,12 @@
         "__guid": "8d8af7ed-b29c-4454-897a-ac4ab8e4327c",
         "BodyGroups": 18446744073709551615,
         "Health": 0,
-        "IsStatic": false,
+        "IsStatic": true,
         "Model": "models/props/nature/fake_tree_01/fake_tree_01.vmdl",
         "Tint": "1,1,1,1"
       }
-    ]
+    ],
+    "Children": []
   },
   "ShowInMenu": false,
   "MenuPath": null,

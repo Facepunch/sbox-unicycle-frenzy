@@ -3,7 +3,6 @@
     "__guid": "8c763381-a78a-4309-baa7-dbe4b31d8977",
     "Flags": 0,
     "Name": "shipping_container_big",
-    "Position": "0,0,0.00008861184",
     "Enabled": true,
     "NetworkMode": 2,
     "NetworkInterpolation": true,
@@ -13,11 +12,12 @@
         "__guid": "de3c9264-9bed-44e8-a1fd-a7b76ea974bc",
         "BodyGroups": 18446744073709551615,
         "Health": 0,
-        "IsStatic": false,
+        "IsStatic": true,
         "Model": "models/props/shipping_containers/shipping_container_big.vmdl",
         "Tint": "1,1,1,1"
       }
-    ]
+    ],
+    "Children": []
   },
   "ShowInMenu": false,
   "MenuPath": null,

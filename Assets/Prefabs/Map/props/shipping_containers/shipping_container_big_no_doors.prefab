@@ -3,7 +3,6 @@
     "__guid": "bb2794c0-79ac-49df-8565-0833571ecddb",
     "Flags": 0,
     "Name": "shipping_container_big_no_doors",
-    "Position": "0,256,0.00003682724",
     "Enabled": true,
     "NetworkMode": 2,
     "NetworkInterpolation": true,
@@ -13,11 +12,12 @@
         "__guid": "8f4cdc99-7043-446e-a860-6d69e9fb0562",
         "BodyGroups": 18446744073709551615,
         "Health": 0,
-        "IsStatic": false,
+        "IsStatic": true,
         "Model": "models/props/shipping_containers/shipping_container_big_no_doors.vmdl",
         "Tint": "1,1,1,1"
       }
-    ]
+    ],
+    "Children": []
   },
   "ShowInMenu": false,
   "MenuPath": null,

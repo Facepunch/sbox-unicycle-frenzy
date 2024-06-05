@@ -3,7 +3,6 @@
     "__guid": "4dc5fba8-e674-4462-9196-ac613e4dda3b",
     "Flags": 0,
     "Name": "small_tree_01",
-    "Position": "192,512,0",
     "Enabled": true,
     "NetworkMode": 2,
     "NetworkInterpolation": true,
@@ -13,11 +12,12 @@
         "__guid": "309f6e70-7a9b-4209-b768-f5e6e270b5fe",
         "BodyGroups": 18446744073709551615,
         "Health": 0,
-        "IsStatic": false,
+        "IsStatic": true,
         "Model": "models/props/nature/small_tree_01/small_tree_01.vmdl",
         "Tint": "1,1,1,1"
       }
-    ]
+    ],
+    "Children": []
   },
   "ShowInMenu": false,
   "MenuPath": null,

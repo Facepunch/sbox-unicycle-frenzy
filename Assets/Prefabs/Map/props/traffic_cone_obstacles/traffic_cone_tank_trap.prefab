@@ -3,7 +3,6 @@
     "__guid": "b8ae327a-6c22-4c58-871f-d50f43608241",
     "Flags": 0,
     "Name": "traffic_cone_tank_trap",
-    "Position": "0,256,0",
     "Enabled": true,
     "NetworkMode": 2,
     "NetworkInterpolation": true,
@@ -13,11 +12,12 @@
         "__guid": "3c8a9f11-1cbf-470f-8d45-ba9719d4ea9e",
         "BodyGroups": 18446744073709551615,
         "Health": 0,
-        "IsStatic": false,
+        "IsStatic": true,
         "Model": "models/props/traffic_cone_tank_trap/traffic_cone_tank_trap.vmdl",
         "Tint": "1,1,1,1"
       }
-    ]
+    ],
+    "Children": []
   },
   "ShowInMenu": false,
   "MenuPath": null,
