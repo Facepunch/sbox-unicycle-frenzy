@@ -3,7 +3,6 @@
     "__guid": "d8950414-61f7-49a5-b87f-84a9449b5f4c",
     "Flags": 0,
     "Name": "nrw_planks_straight_192_02",
-    "Position": "384,192,0",
     "Enabled": true,
     "NetworkMode": 2,
     "NetworkInterpolation": true,
@@ -13,11 +12,12 @@
         "__guid": "85cbd2d9-9a10-41f6-b8dc-eb68ff4ea345",
         "BodyGroups": 18446744073709551615,
         "Health": 0,
-        "IsStatic": false,
+        "IsStatic": true,
         "Model": "models/track_pieces/narrow/nrw_planks_straight_192_02.vmdl",
         "Tint": "1,1,1,1"
       }
-    ]
+    ],
+    "Children": []
   },
   "ShowInMenu": false,
   "MenuPath": null,
