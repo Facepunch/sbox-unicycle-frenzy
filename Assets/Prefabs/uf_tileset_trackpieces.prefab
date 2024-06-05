@@ -378,6 +378,46 @@
             "NetworkMode": 2,
             "NetworkInterpolation": true,
             "__Prefab": "prefabs/map/track_pieces/narrow/nrw_planks_turn576.prefab"
+          },
+          {
+            "__guid": "d8950414-61f7-49a5-b87f-84a9449b5f4c",
+            "Flags": 0,
+            "Name": "nrw_planks_straight_192_02",
+            "Position": "384,192,0",
+            "Enabled": true,
+            "NetworkMode": 2,
+            "NetworkInterpolation": true,
+            "__Prefab": "prefabs/map/track_pieces/narrow/nrw_planks_straight_192_02.prefab"
+          },
+          {
+            "__guid": "9727b6fe-62fe-4898-aa82-c4cb6b9c6a51",
+            "Flags": 0,
+            "Name": "nrw_planks_straight_192_01",
+            "Position": "382.3359,-64,0",
+            "Enabled": true,
+            "NetworkMode": 2,
+            "NetworkInterpolation": true,
+            "__Prefab": "prefabs/map/track_pieces/narrow/nrw_planks_straight_192_01.prefab"
+          },
+          {
+            "__guid": "51c36df1-d9ae-484e-987d-1f373d0e5571",
+            "Flags": 0,
+            "Name": "nrw_planks_straight_96_01",
+            "Position": "592,193.2314,0",
+            "Enabled": true,
+            "NetworkMode": 2,
+            "NetworkInterpolation": true,
+            "__Prefab": "prefabs/map/track_pieces/narrow/nrw_planks_straight_96_01.prefab"
+          },
+          {
+            "__guid": "3d01c056-db27-4acb-9b80-5649a03122a2",
+            "Flags": 0,
+            "Name": "nrw_planks_straight_96_02",
+            "Position": "592,-64,-0.000003077814",
+            "Enabled": true,
+            "NetworkMode": 2,
+            "NetworkInterpolation": true,
+            "__Prefab": "prefabs/map/track_pieces/narrow/nrw_planks_straight_96_02.prefab"
           }
         ]
       },

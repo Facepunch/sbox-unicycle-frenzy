@@ -1,0 +1,28 @@
+{
+  "RootObject": {
+    "__guid": "3d01c056-db27-4acb-9b80-5649a03122a2",
+    "Flags": 0,
+    "Name": "nrw_planks_straight_96_02",
+    "Position": "592,-64,-0.000003077814",
+    "Enabled": true,
+    "NetworkMode": 2,
+    "NetworkInterpolation": true,
+    "Components": [
+      {
+        "__type": "Sandbox.Prop",
+        "__guid": "8560e8f2-d07b-4d69-a657-163a65fcdd9e",
+        "BodyGroups": 18446744073709551615,
+        "Health": 0,
+        "IsStatic": false,
+        "Model": "models/track_pieces/narrow/nrw_planks_straight_96_02.vmdl",
+        "Tint": "1,1,1,1"
+      }
+    ]
+  },
+  "ShowInMenu": false,
+  "MenuPath": null,
+  "MenuIcon": null,
+  "ResourceVersion": 1,
+  "__references": [],
+  "__version": 1
+}
