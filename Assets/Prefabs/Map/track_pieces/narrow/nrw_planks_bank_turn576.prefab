@@ -1,0 +1,28 @@
+{
+  "RootObject": {
+    "__guid": "649d21af-5d1c-4340-a968-e56b0cecf86c",
+    "Flags": 0,
+    "Name": "nrw_planks_bank_turn576",
+    "Position": "-1024,1792,0",
+    "Enabled": true,
+    "NetworkMode": 2,
+    "NetworkInterpolation": true,
+    "Components": [
+      {
+        "__type": "Sandbox.Prop",
+        "__guid": "d7fc4179-e0f7-470d-8a8e-3ecc1fafa028",
+        "BodyGroups": 18446744073709551615,
+        "Health": 0,
+        "IsStatic": true,
+        "Model": "models/track_pieces/narrow/nrw_planks_bank_turn576.vmdl",
+        "Tint": "1,1,1,1"
+      }
+    ]
+  },
+  "ShowInMenu": false,
+  "MenuPath": null,
+  "MenuIcon": null,
+  "ResourceVersion": 1,
+  "__references": [],
+  "__version": 1
+}

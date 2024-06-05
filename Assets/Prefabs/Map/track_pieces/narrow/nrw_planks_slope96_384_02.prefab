@@ -1,0 +1,28 @@
+{
+  "RootObject": {
+    "__guid": "47ca7fdf-6c24-4d44-bcd5-ba1c3573084e",
+    "Flags": 0,
+    "Name": "nrw_planks_slope96_384_02",
+    "Position": "-512,192,0",
+    "Enabled": true,
+    "NetworkMode": 2,
+    "NetworkInterpolation": true,
+    "Components": [
+      {
+        "__type": "Sandbox.Prop",
+        "__guid": "9d2048c4-fe6b-4ba3-87f9-c829937ab9f6",
+        "BodyGroups": 18446744073709551615,
+        "Health": 0,
+        "IsStatic": true,
+        "Model": "models/track_pieces/narrow/nrw_planks_slope96_384_02.vmdl",
+        "Tint": "1,1,1,1"
+      }
+    ]
+  },
+  "ShowInMenu": false,
+  "MenuPath": null,
+  "MenuIcon": null,
+  "ResourceVersion": 1,
+  "__references": [],
+  "__version": 1
+}

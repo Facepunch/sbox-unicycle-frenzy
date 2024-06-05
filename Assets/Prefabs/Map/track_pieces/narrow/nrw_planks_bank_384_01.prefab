@@ -1,0 +1,28 @@
+{
+  "RootObject": {
+    "__guid": "cad91339-0847-45f5-a62d-8233e3e7bf61",
+    "Flags": 0,
+    "Name": "nrw_planks_bank_384_01",
+    "Position": "0,448,0",
+    "Enabled": true,
+    "NetworkMode": 2,
+    "NetworkInterpolation": true,
+    "Components": [
+      {
+        "__type": "Sandbox.Prop",
+        "__guid": "c805b136-3f99-484a-b725-1a8fa72b3950",
+        "BodyGroups": 18446744073709551615,
+        "Health": 0,
+        "IsStatic": true,
+        "Model": "models/track_pieces/narrow/nrw_planks_bank_384_01.vmdl",
+        "Tint": "1,1,1,1"
+      }
+    ]
+  },
+  "ShowInMenu": false,
+  "MenuPath": null,
+  "MenuIcon": null,
+  "ResourceVersion": 1,
+  "__references": [],
+  "__version": 1
+}

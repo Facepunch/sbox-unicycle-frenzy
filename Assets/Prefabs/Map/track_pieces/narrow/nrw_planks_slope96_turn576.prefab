@@ -1,0 +1,28 @@
+{
+  "RootObject": {
+    "__guid": "4bc4c934-62e2-4005-a48e-df4f416ef387",
+    "Flags": 0,
+    "Name": "nrw_planks_slope96_turn576",
+    "Position": "-1984,1792,0",
+    "Enabled": true,
+    "NetworkMode": 2,
+    "NetworkInterpolation": true,
+    "Components": [
+      {
+        "__type": "Sandbox.Prop",
+        "__guid": "a39c23ce-4174-41ea-86dd-df743da10be6",
+        "BodyGroups": 18446744073709551615,
+        "Health": 0,
+        "IsStatic": true,
+        "Model": "models/track_pieces/narrow/nrw_planks_slope96_turn576.vmdl",
+        "Tint": "1,1,1,1"
+      }
+    ]
+  },
+  "ShowInMenu": false,
+  "MenuPath": null,
+  "MenuIcon": null,
+  "ResourceVersion": 1,
+  "__references": [],
+  "__version": 1
+}

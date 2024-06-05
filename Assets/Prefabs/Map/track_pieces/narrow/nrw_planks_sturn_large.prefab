@@ -1,0 +1,28 @@
+{
+  "RootObject": {
+    "__guid": "99e98d35-be73-4c08-8aa0-362ef4ab9b18",
+    "Flags": 0,
+    "Name": "nrw_planks_sturn_large",
+    "Position": "-384,2752,0",
+    "Enabled": true,
+    "NetworkMode": 2,
+    "NetworkInterpolation": true,
+    "Components": [
+      {
+        "__type": "Sandbox.Prop",
+        "__guid": "4a9ae10d-93c7-4c31-949b-fe4f1acefe59",
+        "BodyGroups": 18446744073709551615,
+        "Health": 0,
+        "IsStatic": true,
+        "Model": "models/track_pieces/narrow/nrw_planks_sturn_large.vmdl",
+        "Tint": "1,1,1,1"
+      }
+    ]
+  },
+  "ShowInMenu": false,
+  "MenuPath": null,
+  "MenuIcon": null,
+  "ResourceVersion": 1,
+  "__references": [],
+  "__version": 1
+}

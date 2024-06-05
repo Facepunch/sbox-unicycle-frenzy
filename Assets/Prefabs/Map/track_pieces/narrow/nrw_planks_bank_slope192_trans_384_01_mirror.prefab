@@ -1,0 +1,28 @@
+{
+  "RootObject": {
+    "__guid": "6f7bb69e-2cf8-4431-b351-76a2ddc47201",
+    "Flags": 0,
+    "Name": "nrw_planks_bank_slope192_trans_384_01_mirror",
+    "Position": "-1024,1152,0",
+    "Enabled": true,
+    "NetworkMode": 2,
+    "NetworkInterpolation": true,
+    "Components": [
+      {
+        "__type": "Sandbox.Prop",
+        "__guid": "25d6986e-5fc2-42c3-ab3b-bff02cbaf26b",
+        "BodyGroups": 18446744073709551615,
+        "Health": 0,
+        "IsStatic": true,
+        "Model": "models/track_pieces/narrow/nrw_planks_bank_slope192_trans_384_01_mirror.vmdl",
+        "Tint": "1,1,1,1"
+      }
+    ]
+  },
+  "ShowInMenu": false,
+  "MenuPath": null,
+  "MenuIcon": null,
+  "ResourceVersion": 1,
+  "__references": [],
+  "__version": 1
+}

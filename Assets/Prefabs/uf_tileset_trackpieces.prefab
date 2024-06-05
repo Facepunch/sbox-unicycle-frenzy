@@ -33,11 +33,353 @@
         "__guid": "4fcb8707-4a66-406a-b625-27b9281f5034",
         "Flags": 0,
         "Name": "narrow",
-        "Position": "0,-1408,0",
+        "Position": "0,-6464,0",
         "Tags": "group",
         "Enabled": true,
         "NetworkMode": 2,
-        "NetworkInterpolation": true
+        "NetworkInterpolation": true,
+        "Children": [
+          {
+            "__guid": "cad91339-0847-45f5-a62d-8233e3e7bf61",
+            "Flags": 0,
+            "Name": "nrw_planks_bank_384_01",
+            "Position": "0,448,0",
+            "Enabled": true,
+            "NetworkMode": 2,
+            "NetworkInterpolation": true,
+            "__Prefab": "prefabs/map/track_pieces/narrow/nrw_planks_bank_384_01.prefab"
+          },
+          {
+            "__guid": "27eea982-7f38-4221-b199-5d23468ef896",
+            "Flags": 0,
+            "Name": "nrw_planks_bank_384_02",
+            "Position": "0,704,0",
+            "Enabled": true,
+            "NetworkMode": 2,
+            "NetworkInterpolation": true,
+            "__Prefab": "prefabs/map/track_pieces/narrow/nrw_planks_bank_384_02.prefab"
+          },
+          {
+            "__guid": "a9c2e33c-efd2-4fd4-90ed-1cbd1fb967d3",
+            "Flags": 0,
+            "Name": "nrw_planks_bank_slope192_384_01",
+            "Position": "-1024,448,0",
+            "Enabled": true,
+            "NetworkMode": 2,
+            "NetworkInterpolation": true,
+            "__Prefab": "prefabs/map/track_pieces/narrow/nrw_planks_bank_slope192_384_01.prefab"
+          },
+          {
+            "__guid": "553f3bd4-78a3-421c-bace-948ef6051380",
+            "Flags": 0,
+            "Name": "nrw_planks_bank_slope192_384_02",
+            "Position": "-1024,704,0",
+            "Enabled": true,
+            "NetworkMode": 2,
+            "NetworkInterpolation": true,
+            "__Prefab": "prefabs/map/track_pieces/narrow/nrw_planks_bank_slope192_384_02.prefab"
+          },
+          {
+            "__guid": "ace54332-1e06-4a62-b41f-8f1a67b50bb9",
+            "Flags": 0,
+            "Name": "nrw_planks_bank_slope192_trans_384_01",
+            "Position": "-1024,960,0",
+            "Enabled": true,
+            "NetworkMode": 2,
+            "NetworkInterpolation": true,
+            "__Prefab": "prefabs/map/track_pieces/narrow/nrw_planks_bank_slope192_trans_384_01.prefab"
+          },
+          {
+            "__guid": "6f7bb69e-2cf8-4431-b351-76a2ddc47201",
+            "Flags": 0,
+            "Name": "nrw_planks_bank_slope192_trans_384_01_mirror",
+            "Position": "-1024,1152,0",
+            "Enabled": true,
+            "NetworkMode": 2,
+            "NetworkInterpolation": true,
+            "__Prefab": "prefabs/map/track_pieces/narrow/nrw_planks_bank_slope192_trans_384_01_mirror.prefab"
+          },
+          {
+            "__guid": "7bb484f3-0567-484e-a846-e16e74e438b8",
+            "Flags": 0,
+            "Name": "nrw_planks_bank_slope192_trans_384_02",
+            "Position": "-1024,1344,0",
+            "Enabled": true,
+            "NetworkMode": 2,
+            "NetworkInterpolation": true,
+            "__Prefab": "prefabs/map/track_pieces/narrow/nrw_planks_bank_slope192_trans_384_02.prefab"
+          },
+          {
+            "__guid": "976b6d05-d6fa-4c69-8245-83ccded2e2cd",
+            "Flags": 0,
+            "Name": "nrw_planks_bank_slope192_trans_384_02_mirror",
+            "Position": "-1024,1536,-0.00006293286",
+            "Enabled": true,
+            "NetworkMode": 2,
+            "NetworkInterpolation": true,
+            "__Prefab": "prefabs/map/track_pieces/narrow/nrw_planks_bank_slope192_trans_384_02_mirror.prefab"
+          },
+          {
+            "__guid": "1f5cc5e6-4bb9-43f3-a50c-36f83ce18038",
+            "Flags": 0,
+            "Name": "nrw_planks_bank_slope96_384_01",
+            "Position": "-512,448,0",
+            "Enabled": true,
+            "NetworkMode": 2,
+            "NetworkInterpolation": true,
+            "__Prefab": "prefabs/map/track_pieces/narrow/nrw_planks_bank_slope96_384_01.prefab"
+          },
+          {
+            "__guid": "f88491e0-96b5-4490-abd2-b96ec50a05e3",
+            "Flags": 0,
+            "Name": "nrw_planks_bank_slope96_384_02",
+            "Position": "-512,704,0",
+            "Enabled": true,
+            "NetworkMode": 2,
+            "NetworkInterpolation": true,
+            "__Prefab": "prefabs/map/track_pieces/narrow/nrw_planks_bank_slope96_384_02.prefab"
+          },
+          {
+            "__guid": "bef71219-67a3-4d02-addf-fc11203c90df",
+            "Flags": 0,
+            "Name": "nrw_planks_bank_slope96_trans_384_01",
+            "Position": "-512,960,0",
+            "Enabled": true,
+            "NetworkMode": 2,
+            "NetworkInterpolation": true,
+            "__Prefab": "prefabs/map/track_pieces/narrow/nrw_planks_bank_slope96_trans_384_01.prefab"
+          },
+          {
+            "__guid": "ae730926-054d-4228-8490-73b656e38dee",
+            "Flags": 0,
+            "Name": "nrw_planks_bank_slope96_trans_384_01_mirror",
+            "Position": "-512,1152,-0.0000356011",
+            "Enabled": true,
+            "NetworkMode": 2,
+            "NetworkInterpolation": true,
+            "__Prefab": "prefabs/map/track_pieces/narrow/nrw_planks_bank_slope96_trans_384_01_mirror.prefab"
+          },
+          {
+            "__guid": "946a9b26-a648-46ee-b0e0-064d737bda94",
+            "Flags": 0,
+            "Name": "nrw_planks_bank_slope96_trans_384_02",
+            "Position": "-512,1344,-0.000031061",
+            "Enabled": true,
+            "NetworkMode": 2,
+            "NetworkInterpolation": true,
+            "__Prefab": "prefabs/map/track_pieces/narrow/nrw_planks_bank_slope96_trans_384_02.prefab"
+          },
+          {
+            "__guid": "9e4f816d-9319-4e87-9379-cda8f0a10467",
+            "Flags": 0,
+            "Name": "nrw_planks_bank_slope96_trans_384_02_mirror",
+            "Position": "-512,1536,-0.00003134884",
+            "Enabled": true,
+            "NetworkMode": 2,
+            "NetworkInterpolation": true,
+            "__Prefab": "prefabs/map/track_pieces/narrow/nrw_planks_bank_slope96_trans_384_02_mirror.prefab"
+          },
+          {
+            "__guid": "fde58296-c8de-4290-a562-7e60837ac59e",
+            "Flags": 0,
+            "Name": "nrw_planks_bank_trans_384_01",
+            "Position": "0,960,0",
+            "Enabled": true,
+            "NetworkMode": 2,
+            "NetworkInterpolation": true,
+            "__Prefab": "prefabs/map/track_pieces/narrow/nrw_planks_bank_trans_384_01.prefab"
+          },
+          {
+            "__guid": "25649780-59c2-4ca2-9f2e-b20cc458bf53",
+            "Flags": 0,
+            "Name": "nrw_planks_bank_trans_384_01_mirror",
+            "Position": "0,1152,0",
+            "Enabled": true,
+            "NetworkMode": 2,
+            "NetworkInterpolation": true,
+            "__Prefab": "prefabs/map/track_pieces/narrow/nrw_planks_bank_trans_384_01_mirror.prefab"
+          },
+          {
+            "__guid": "3fde403a-3188-498b-b95d-3421240e153d",
+            "Flags": 0,
+            "Name": "nrw_planks_bank_trans_384_02",
+            "Position": "0,1344,0",
+            "Enabled": true,
+            "NetworkMode": 2,
+            "NetworkInterpolation": true,
+            "__Prefab": "prefabs/map/track_pieces/narrow/nrw_planks_bank_trans_384_02.prefab"
+          },
+          {
+            "__guid": "31182249-4a13-4fa8-b84a-ac92853215dd",
+            "Flags": 0,
+            "Name": "nrw_planks_bank_trans_384_02_mirror",
+            "Position": "0,1536,0",
+            "Enabled": true,
+            "NetworkMode": 2,
+            "NetworkInterpolation": true,
+            "__Prefab": "prefabs/map/track_pieces/narrow/nrw_planks_bank_trans_384_02_mirror.prefab"
+          },
+          {
+            "__guid": "852b48df-cb7e-40c6-b2e4-21fe473312ff",
+            "Flags": 0,
+            "Name": "nrw_planks_bank_turn192",
+            "Position": "-640,2048,0",
+            "Enabled": true,
+            "NetworkMode": 2,
+            "NetworkInterpolation": true,
+            "__Prefab": "prefabs/map/track_pieces/narrow/nrw_planks_bank_turn192.prefab"
+          },
+          {
+            "__guid": "649d21af-5d1c-4340-a968-e56b0cecf86c",
+            "Flags": 0,
+            "Name": "nrw_planks_bank_turn576",
+            "Position": "-1024,1792,0",
+            "Enabled": true,
+            "NetworkMode": 2,
+            "NetworkInterpolation": true,
+            "__Prefab": "prefabs/map/track_pieces/narrow/nrw_planks_bank_turn576.prefab"
+          },
+          {
+            "__guid": "2bb909a5-0c32-4a08-b7e4-39494b74679e",
+            "Flags": 0,
+            "Name": "nrw_planks_slope192_384_01",
+            "Position": "-1024,-64,0",
+            "Enabled": true,
+            "NetworkMode": 2,
+            "NetworkInterpolation": true,
+            "__Prefab": "prefabs/map/track_pieces/narrow/nrw_planks_slope192_384_01.prefab"
+          },
+          {
+            "__guid": "ebb5948f-249e-4996-a62d-66d4d960ab51",
+            "Flags": 0,
+            "Name": "nrw_planks_slope192_384_02",
+            "Position": "-1024,192,0",
+            "Enabled": true,
+            "NetworkMode": 2,
+            "NetworkInterpolation": true,
+            "__Prefab": "prefabs/map/track_pieces/narrow/nrw_planks_slope192_384_02.prefab"
+          },
+          {
+            "__guid": "2239f108-a63b-4999-91ae-a555e1063b6a",
+            "Flags": 0,
+            "Name": "nrw_planks_slope96_384_01",
+            "Position": "-512,-64,0",
+            "Enabled": true,
+            "NetworkMode": 2,
+            "NetworkInterpolation": true,
+            "__Prefab": "prefabs/map/track_pieces/narrow/nrw_planks_slope96_384_01.prefab"
+          },
+          {
+            "__guid": "47ca7fdf-6c24-4d44-bcd5-ba1c3573084e",
+            "Flags": 0,
+            "Name": "nrw_planks_slope96_384_02",
+            "Position": "-512,192,0",
+            "Enabled": true,
+            "NetworkMode": 2,
+            "NetworkInterpolation": true,
+            "__Prefab": "prefabs/map/track_pieces/narrow/nrw_planks_slope96_384_02.prefab"
+          },
+          {
+            "__guid": "4bc4c934-62e2-4005-a48e-df4f416ef387",
+            "Flags": 0,
+            "Name": "nrw_planks_slope96_turn576",
+            "Position": "-1984,1792,0",
+            "Enabled": true,
+            "NetworkMode": 2,
+            "NetworkInterpolation": true,
+            "__Prefab": "prefabs/map/track_pieces/narrow/nrw_planks_slope96_turn576.prefab"
+          },
+          {
+            "__guid": "29d76bf8-ece8-48c6-86ff-95cc1e54d738",
+            "Flags": 0,
+            "Name": "nrw_planks_slope96_turn576_mirror",
+            "Position": "-1984,3136,-0.0001185588",
+            "Enabled": true,
+            "NetworkMode": 2,
+            "NetworkInterpolation": true,
+            "__Prefab": "prefabs/map/track_pieces/narrow/nrw_planks_slope96_turn576_mirror.prefab"
+          },
+          {
+            "__guid": "4438f0e4-828a-425e-9ba5-a22c7adb627b",
+            "Flags": 0,
+            "Name": "nrw_planks_straight_384_01",
+            "Position": "0,-64,0",
+            "Enabled": true,
+            "NetworkMode": 2,
+            "NetworkInterpolation": true,
+            "__Prefab": "prefabs/map/track_pieces/narrow/nrw_planks_straight_384_01.prefab"
+          },
+          {
+            "__guid": "19b8cd15-3f3d-4d52-b561-002c30e8cb7d",
+            "Flags": 0,
+            "Name": "nrw_planks_straight_384_02",
+            "Position": "0,192,0",
+            "Enabled": true,
+            "NetworkMode": 2,
+            "NetworkInterpolation": true,
+            "__Prefab": "prefabs/map/track_pieces/narrow/nrw_planks_straight_384_02.prefab"
+          },
+          {
+            "__guid": "99e98d35-be73-4c08-8aa0-362ef4ab9b18",
+            "Flags": 0,
+            "Name": "nrw_planks_sturn_large",
+            "Position": "-384,2752,0",
+            "Enabled": true,
+            "NetworkMode": 2,
+            "NetworkInterpolation": true,
+            "__Prefab": "prefabs/map/track_pieces/narrow/nrw_planks_sturn_large.prefab"
+          },
+          {
+            "__guid": "d38d127f-2cfb-434f-8bf7-9a81cdf99c04",
+            "Flags": 0,
+            "Name": "nrw_planks_sturn_large_mirror",
+            "Position": "-384,3456,0",
+            "Enabled": true,
+            "NetworkMode": 2,
+            "NetworkInterpolation": true,
+            "__Prefab": "prefabs/map/track_pieces/narrow/nrw_planks_sturn_large_mirror.prefab"
+          },
+          {
+            "__guid": "03f90ca1-440e-4bcf-9502-8a8928c58ed1",
+            "Flags": 0,
+            "Name": "nrw_planks_sturn_small",
+            "Position": "0,2880,0",
+            "Enabled": true,
+            "NetworkMode": 2,
+            "NetworkInterpolation": true,
+            "__Prefab": "prefabs/map/track_pieces/narrow/nrw_planks_sturn_small.prefab"
+          },
+          {
+            "__guid": "e2cd40e7-f2a3-4d3b-81c4-4541d50b4625",
+            "Flags": 0,
+            "Name": "nrw_planks_sturn_small_mirror",
+            "Position": "0,3264,0",
+            "Enabled": true,
+            "NetworkMode": 2,
+            "NetworkInterpolation": true,
+            "__Prefab": "prefabs/map/track_pieces/narrow/nrw_planks_sturn_small_mirror.prefab"
+          },
+          {
+            "__guid": "bb724c2d-5d75-4d46-8d49-9ff0a97fa055",
+            "Flags": 0,
+            "Name": "nrw_planks_turn192",
+            "Position": "0,2048,0",
+            "Enabled": true,
+            "NetworkMode": 2,
+            "NetworkInterpolation": true,
+            "__Prefab": "prefabs/map/track_pieces/narrow/nrw_planks_turn192.prefab"
+          },
+          {
+            "__guid": "19838844-a22d-4e5c-9f80-5cd239b142dd",
+            "Flags": 0,
+            "Name": "nrw_planks_turn576",
+            "Position": "-384,1792,0",
+            "Enabled": true,
+            "NetworkMode": 2,
+            "NetworkInterpolation": true,
+            "__Prefab": "prefabs/map/track_pieces/narrow/nrw_planks_turn576.prefab"
+          }
+        ]
       },
       {
         "__guid": "08f26ca0-7e62-439c-a6cd-a2dacb4b0938",

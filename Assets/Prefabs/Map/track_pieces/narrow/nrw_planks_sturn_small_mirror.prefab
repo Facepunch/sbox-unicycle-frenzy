@@ -1,0 +1,28 @@
+{
+  "RootObject": {
+    "__guid": "e2cd40e7-f2a3-4d3b-81c4-4541d50b4625",
+    "Flags": 0,
+    "Name": "nrw_planks_sturn_small_mirror",
+    "Position": "0,3264,0",
+    "Enabled": true,
+    "NetworkMode": 2,
+    "NetworkInterpolation": true,
+    "Components": [
+      {
+        "__type": "Sandbox.Prop",
+        "__guid": "bd8d2511-8a34-47bc-8ea7-82e745fdccbf",
+        "BodyGroups": 18446744073709551615,
+        "Health": 0,
+        "IsStatic": true,
+        "Model": "models/track_pieces/narrow/nrw_planks_sturn_small_mirror.vmdl",
+        "Tint": "1,1,1,1"
+      }
+    ]
+  },
+  "ShowInMenu": false,
+  "MenuPath": null,
+  "MenuIcon": null,
+  "ResourceVersion": 1,
+  "__references": [],
+  "__version": 1
+}
