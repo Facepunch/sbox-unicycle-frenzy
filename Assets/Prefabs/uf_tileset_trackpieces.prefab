@@ -1012,7 +1012,7 @@
       {
         "__guid": "dddf9fe7-9653-47ec-b73d-fecd04fcdba6",
         "Flags": 0,
-        "Name": "grass",
+        "Name": "artificial grass",
         "Position": "64,-1216,0",
         "Enabled": true,
         "NetworkMode": 2,
@@ -1077,6 +1077,192 @@
             "NetworkMode": 2,
             "NetworkInterpolation": true,
             "__Prefab": "prefabs/map/track_pieces/grass/artificialgrass_slope_192.prefab"
+          }
+        ]
+      },
+      {
+        "__guid": "51a9f558-22f1-4d90-aea4-fe65011c8bd9",
+        "Flags": 0,
+        "Name": "Wood Nature",
+        "Position": "768,832,0.0000442329",
+        "Tags": "group",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "NetworkInterpolation": true,
+        "Children": [
+          {
+            "__guid": "0f85088c-9808-40bb-8c06-ebbdf9bf71d5",
+            "Flags": 0,
+            "Name": "fake_cactus_01",
+            "Position": "0,0,0",
+            "Enabled": true,
+            "NetworkMode": 2,
+            "NetworkInterpolation": true,
+            "__Prefab": "prefabs/map/props/wood_nature/fake_cactus_01.prefab"
+          },
+          {
+            "__guid": "5e462684-80c9-4d6b-8966-8c412627e1cd",
+            "Flags": 0,
+            "Name": "fake_pam_tree_01",
+            "Position": "0,128,0",
+            "Enabled": true,
+            "NetworkMode": 2,
+            "NetworkInterpolation": true,
+            "__Prefab": "prefabs/map/props/wood_nature/fake_pam_tree_01.prefab"
+          },
+          {
+            "__guid": "c5646a83-be66-49bd-8982-198379cc48b3",
+            "Flags": 0,
+            "Name": "fake_rocks_01",
+            "Position": "0,320,0",
+            "Enabled": true,
+            "NetworkMode": 2,
+            "NetworkInterpolation": true,
+            "__Prefab": "prefabs/map/props/wood_nature/fake_rocks_01.prefab"
+          },
+          {
+            "__guid": "2fa6f6b9-077b-475d-94e9-d8fa61a2c5f7",
+            "Flags": 0,
+            "Name": "fake_rocks_02",
+            "Position": "192,320,0",
+            "Enabled": true,
+            "NetworkMode": 2,
+            "NetworkInterpolation": true,
+            "__Prefab": "prefabs/map/props/wood_nature/fake_rocks_02.prefab"
+          },
+          {
+            "__guid": "81b00f8b-ffec-4bfa-a64c-e19da12efc97",
+            "Flags": 0,
+            "Name": "fake_tree_01",
+            "Position": "0,512,0",
+            "Enabled": true,
+            "NetworkMode": 2,
+            "NetworkInterpolation": true,
+            "__Prefab": "prefabs/map/props/wood_nature/fake_tree_01.prefab"
+          },
+          {
+            "__guid": "cde4f897-0008-47a0-8b1a-994873591efc",
+            "Flags": 0,
+            "Name": "no_leaf_fake_tree_01",
+            "Position": "0,704,0",
+            "Enabled": true,
+            "NetworkMode": 2,
+            "NetworkInterpolation": true,
+            "__Prefab": "prefabs/map/props/wood_nature/no_leaf_fake_tree_01.prefab"
+          },
+          {
+            "__guid": "4dc5fba8-e674-4462-9196-ac613e4dda3b",
+            "Flags": 0,
+            "Name": "small_tree_01",
+            "Position": "192,512,0",
+            "Enabled": true,
+            "NetworkMode": 2,
+            "NetworkInterpolation": true,
+            "__Prefab": "prefabs/map/props/wood_nature/small_tree_01.prefab"
+          }
+        ]
+      },
+      {
+        "__guid": "89a93e7a-696c-4b73-9659-ce8ba134e285",
+        "Flags": 0,
+        "Name": "shipping containers",
+        "Position": "1088,1856,0.0000647109",
+        "Tags": "group",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "NetworkInterpolation": true,
+        "Children": [
+          {
+            "__guid": "8c763381-a78a-4309-baa7-dbe4b31d8977",
+            "Flags": 0,
+            "Name": "shipping_container_big",
+            "Position": "0,0,0.00008861184",
+            "Enabled": true,
+            "NetworkMode": 2,
+            "NetworkInterpolation": true,
+            "__Prefab": "prefabs/map/props/shipping_containers/shipping_container_big.prefab"
+          },
+          {
+            "__guid": "bb2794c0-79ac-49df-8565-0833571ecddb",
+            "Flags": 0,
+            "Name": "shipping_container_big_no_doors",
+            "Position": "0,256,0.00003682724",
+            "Enabled": true,
+            "NetworkMode": 2,
+            "NetworkInterpolation": true,
+            "__Prefab": "prefabs/map/props/shipping_containers/shipping_container_big_no_doors.prefab"
+          },
+          {
+            "__guid": "8d8c87e0-2bb7-4550-a89c-a97257d82e54",
+            "Flags": 0,
+            "Name": "shipping_container_med",
+            "Position": "0,512,-0.0000741449",
+            "Enabled": true,
+            "NetworkMode": 2,
+            "NetworkInterpolation": true,
+            "__Prefab": "prefabs/map/props/shipping_containers/shipping_container_med.prefab"
+          },
+          {
+            "__guid": "1324766e-f77e-4153-98b3-9bd23041b4ca",
+            "Flags": 0,
+            "Name": "shipping_container_sm",
+            "Position": "0,768,0.0000274089",
+            "Enabled": true,
+            "NetworkMode": 2,
+            "NetworkInterpolation": true,
+            "__Prefab": "prefabs/map/props/shipping_containers/shipping_container_sm.prefab"
+          }
+        ]
+      },
+      {
+        "__guid": "3f54fc6c-25c5-423a-b9e0-62b91b3cdcf3",
+        "Flags": 0,
+        "Name": "traffic cone obstacles",
+        "Position": "1024,3008,0.00006057956",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "NetworkInterpolation": true,
+        "Children": [
+          {
+            "__guid": "a7a6a614-7ae7-4127-8bc2-a4bb03f0056f",
+            "Flags": 0,
+            "Name": "traffic_cone",
+            "Position": "0,384,0",
+            "Enabled": true,
+            "NetworkMode": 2,
+            "NetworkInterpolation": true,
+            "__Prefab": "prefabs/map/props/traffic_cone_obstacles/traffic_cone.prefab"
+          },
+          {
+            "__guid": "b8ae327a-6c22-4c58-871f-d50f43608241",
+            "Flags": 0,
+            "Name": "traffic_cone_tank_trap",
+            "Position": "0,256,0",
+            "Enabled": true,
+            "NetworkMode": 2,
+            "NetworkInterpolation": true,
+            "__Prefab": "prefabs/map/props/traffic_cone_obstacles/traffic_cone_tank_trap.prefab"
+          }
+        ]
+      },
+      {
+        "__guid": "d9c97559-96e6-4568-b555-f10211827e3b",
+        "Flags": 0,
+        "Name": "tyre obstacles",
+        "Position": "1024,3008,0.00006057956",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "NetworkInterpolation": true,
+        "Children": [
+          {
+            "__guid": "c7d939f6-1eae-41f5-b67d-dc3843b91c42",
+            "Flags": 0,
+            "Name": "tyre_obstacle_01",
+            "Position": "0,0,0",
+            "Enabled": true,
+            "NetworkMode": 2,
+            "NetworkInterpolation": true,
+            "__Prefab": "prefabs/map/props/tyre_obstacles/tyre_obstacle_01.prefab"
           }
         ]
       }

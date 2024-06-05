@@ -1,0 +1,28 @@
+{
+  "RootObject": {
+    "__guid": "8d8c87e0-2bb7-4550-a89c-a97257d82e54",
+    "Flags": 0,
+    "Name": "shipping_container_med",
+    "Position": "0,512,-0.0000741449",
+    "Enabled": true,
+    "NetworkMode": 2,
+    "NetworkInterpolation": true,
+    "Components": [
+      {
+        "__type": "Sandbox.Prop",
+        "__guid": "fe8797af-8ef9-44ef-a7d9-fd38163411a9",
+        "BodyGroups": 18446744073709551615,
+        "Health": 0,
+        "IsStatic": false,
+        "Model": "models/props/shipping_containers/shipping_container_med.vmdl",
+        "Tint": "1,1,1,1"
+      }
+    ]
+  },
+  "ShowInMenu": false,
+  "MenuPath": null,
+  "MenuIcon": null,
+  "ResourceVersion": 1,
+  "__references": [],
+  "__version": 1
+}

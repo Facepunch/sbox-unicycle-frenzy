@@ -1,0 +1,28 @@
+{
+  "RootObject": {
+    "__guid": "a7a6a614-7ae7-4127-8bc2-a4bb03f0056f",
+    "Flags": 0,
+    "Name": "traffic_cone",
+    "Position": "0,384,0",
+    "Enabled": true,
+    "NetworkMode": 2,
+    "NetworkInterpolation": true,
+    "Components": [
+      {
+        "__type": "Sandbox.Prop",
+        "__guid": "5391cec7-c5d3-4e54-a0c5-92425f6370d1",
+        "BodyGroups": 18446744073709551615,
+        "Health": 75,
+        "IsStatic": false,
+        "Model": "models/props/traffic_cone/traffic_cone.vmdl",
+        "Tint": "1,1,1,1"
+      }
+    ]
+  },
+  "ShowInMenu": false,
+  "MenuPath": null,
+  "MenuIcon": null,
+  "ResourceVersion": 1,
+  "__references": [],
+  "__version": 1
+}

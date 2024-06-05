@@ -1,0 +1,28 @@
+{
+  "RootObject": {
+    "__guid": "cde4f897-0008-47a0-8b1a-994873591efc",
+    "Flags": 0,
+    "Name": "no_leaf_fake_tree_01",
+    "Position": "0,704,0",
+    "Enabled": true,
+    "NetworkMode": 2,
+    "NetworkInterpolation": true,
+    "Components": [
+      {
+        "__type": "Sandbox.Prop",
+        "__guid": "d8c7c0bf-00bb-43b0-b881-8d9a53d67b57",
+        "BodyGroups": 18446744073709551615,
+        "Health": 0,
+        "IsStatic": false,
+        "Model": "models/props/nature/no_leaf_fake_tree_01/no_leaf_fake_tree_01.vmdl",
+        "Tint": "1,1,1,1"
+      }
+    ]
+  },
+  "ShowInMenu": false,
+  "MenuPath": null,
+  "MenuIcon": null,
+  "ResourceVersion": 1,
+  "__references": [],
+  "__version": 1
+}

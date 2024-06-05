@@ -1,0 +1,28 @@
+{
+  "RootObject": {
+    "__guid": "2fa6f6b9-077b-475d-94e9-d8fa61a2c5f7",
+    "Flags": 0,
+    "Name": "fake_rocks_02",
+    "Position": "192,320,0",
+    "Enabled": true,
+    "NetworkMode": 2,
+    "NetworkInterpolation": true,
+    "Components": [
+      {
+        "__type": "Sandbox.Prop",
+        "__guid": "101ff96a-f1de-455d-aa00-60b6b1f4e0e6",
+        "BodyGroups": 18446744073709551615,
+        "Health": 0,
+        "IsStatic": false,
+        "Model": "models/props/nature/fake_rock_01/fake_rocks_02.vmdl",
+        "Tint": "1,1,1,1"
+      }
+    ]
+  },
+  "ShowInMenu": false,
+  "MenuPath": null,
+  "MenuIcon": null,
+  "ResourceVersion": 1,
+  "__references": [],
+  "__version": 1
+}
