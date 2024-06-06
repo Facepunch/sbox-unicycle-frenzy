@@ -317,20 +317,20 @@
                 "__guid": "84d5d5dc-7744-428c-b08b-4b3b33b420de",
                 "Frame": {
                   "_type": "component",
-                  "component_id": "4dc5b62a-c5f5-440b-ac03-9aeea5baacc1",
+                  "component_id": "c9e630e0-cb3a-49e9-901c-6206ccfd8b3a",
                   "go": "8869caf4-fe2a-4229-853e-28ef66385431",
                   "component_type": "ModelRenderer"
                 },
                 "IsMenu": false,
                 "LeftPedal": {
                   "_type": "component",
-                  "component_id": "2616d4e1-046d-4874-a84f-9e0b6384a88f",
+                  "component_id": "75aca10d-8e83-4ebe-9e6c-64dca7ace202",
                   "go": "c30208b1-7cd7-4d78-8c66-e633251c3924",
                   "component_type": "SkinnedModelRenderer"
                 },
                 "RightPedal": {
                   "_type": "component",
-                  "component_id": "3cbf3a4b-26e1-41e6-8118-ed4ae45fa04a",
+                  "component_id": "15ee2c5d-be6c-4ac6-a393-2c48c0c8405b",
                   "go": "f6a16b0d-b63b-46e3-9099-b25baac8d315",
                   "component_type": "SkinnedModelRenderer"
                 },
@@ -342,7 +342,7 @@
                 },
                 "Wheel": {
                   "_type": "component",
-                  "component_id": "b41eaa3f-2ae0-40c1-b319-ca8dbaebd101",
+                  "component_id": "6b89544c-7f42-417a-a0b3-edc7984b7ac1",
                   "go": "546128ac-1f44-4287-a9b5-b0d60d9b67aa",
                   "component_type": "ModelRenderer"
                 }

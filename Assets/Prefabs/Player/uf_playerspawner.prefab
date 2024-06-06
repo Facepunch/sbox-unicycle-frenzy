@@ -1,6 +1,7 @@
 {
   "RootObject": {
     "__guid": "8d712849-11ff-4056-8634-f04d463c372e",
+    "Flags": 0,
     "Name": "uf_playerspawner",
     "Enabled": true,
     "NetworkMode": 2,
@@ -11,7 +12,7 @@
         "__guid": "2ce555e0-4ed1-463e-8243-397f7f480829",
         "PlayerPrefab": {
           "_type": "gameobject",
-          "prefab": "prefabs/uf_player.prefab"
+          "prefab": "prefabs/player/uf_player.prefab"
         },
         "SpawnPoints": [],
         "StartServer": true
@@ -27,6 +28,6 @@
   "MenuPath": null,
   "MenuIcon": null,
   "ResourceVersion": 1,
-  "__version": 1,
-  "__references": []
+  "__references": [],
+  "__version": 1
 }

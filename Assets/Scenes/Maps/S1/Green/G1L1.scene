@@ -52,7 +52,7 @@
       "Enabled": true,
       "NetworkMode": 2,
       "NetworkInterpolation": true,
-      "__Prefab": "prefabs/end zone.prefab"
+      "__Prefab": "prefabs/map/end zone.prefab"
     },
     {
       "__guid": "d6215e2a-5481-4089-9d22-a8e61a066619",
@@ -62,7 +62,7 @@
       "Enabled": true,
       "NetworkMode": 2,
       "NetworkInterpolation": true,
-      "__Prefab": "prefabs/start zone.prefab"
+      "__Prefab": "prefabs/map/start zone.prefab"
     },
     {
       "__guid": "ec668df0-60d4-4103-897d-c7a31436064f",
@@ -73,7 +73,7 @@
       "Enabled": true,
       "NetworkMode": 2,
       "NetworkInterpolation": true,
-      "__Prefab": "prefabs/checkpoint zone.prefab"
+      "__Prefab": "prefabs/map/checkpoint zone.prefab"
     },
     {
       "__guid": "d88f3f37-7250-4393-8d28-4412f5962ec7",
@@ -84,7 +84,7 @@
       "Enabled": true,
       "NetworkMode": 2,
       "NetworkInterpolation": true,
-      "__Prefab": "prefabs/checkpoint zone.prefab"
+      "__Prefab": "prefabs/map/checkpoint zone.prefab"
     },
     {
       "__guid": "35086feb-1893-4a9d-af4c-aa9429c998a6",
@@ -95,7 +95,7 @@
       "Enabled": true,
       "NetworkMode": 2,
       "NetworkInterpolation": true,
-      "__Prefab": "prefabs/checkpoint zone.prefab"
+      "__Prefab": "prefabs/map/checkpoint zone.prefab"
     },
     {
       "__guid": "0f877def-3e64-4ed0-a01b-e2717695cdb6",
@@ -243,7 +243,7 @@
       "Enabled": true,
       "NetworkMode": 2,
       "NetworkInterpolation": true,
-      "__Prefab": "prefabs/uf_playerspawner.prefab"
+      "__Prefab": "prefabs/player/uf_playerspawner.prefab"
     },
     {
       "__guid": "c2442aaf-28c7-4861-91df-a4a8dc2aa06c",
@@ -6511,7 +6511,7 @@
   },
   "Title": "g1l1",
   "Description": "",
-  "LastSaved": "2024-06-06T13:26:44.7820567\u002B01:00",
+  "LastSaved": "2024-06-06T16:39:11.0358784\u002B01:00",
   "ResourceVersion": 1,
   "__references": [
     "rust.field_day_breeze_01a"
