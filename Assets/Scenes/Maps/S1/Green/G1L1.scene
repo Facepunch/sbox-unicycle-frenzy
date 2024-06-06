@@ -18,7 +18,7 @@
           "Description": "A Cool map!",
           "Difficulty": "Tier1",
           "GoldTime": 17,
-          "MapName": "g1l1",
+          "MapName": "G1L1",
           "PlatinumTime": 11,
           "SilverTime": 20
         }
@@ -6511,7 +6511,7 @@
   },
   "Title": "g1l1",
   "Description": "",
-  "LastSaved": "2024-05-24T10:23:08.8819735\u002B01:00",
+  "LastSaved": "2024-06-06T13:26:44.7820567\u002B01:00",
   "ResourceVersion": 1,
   "__references": [
     "rust.field_day_breeze_01a"

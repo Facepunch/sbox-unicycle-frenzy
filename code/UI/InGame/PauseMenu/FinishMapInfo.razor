@@ -1,0 +1,196 @@
+@using Sandbox.UI
+@using Sandbox
+
+<root>
+	<div class="info-container">
+		<div class="info-map-name">TRACK COMPLETE!</div>
+		<div class="info-map-name">@settings.MapName</div>
+			<div class="medal-container">
+				<div class="medal-gold alignment">
+					<div class="medal-title">Gold</div>
+					<div class="medal-time">@BestTimeFormat(settings.GoldTime)</div>
+				</div>
+				<div class="medal-silver alignment">
+					<div class="medal-title">Silver</div>
+					<div class="medal-time">@BestTimeFormat(settings.SilverTime)</div>
+				</div>
+				<div class="medal-bronze alignment">
+					<div class="medal-title">Bronze</div>
+					<div class="medal-time">@BestTimeFormat(settings.BronzeTime)</div>
+				</div>
+			</div>
+		<div class="info-frenzy-container">
+			<div class="info-frenzy-letter @HasLetter(0)">F</div>
+			<div class="info-frenzy-letter @HasLetter(1)">R</div>
+			<div class="info-frenzy-letter @HasLetter(2)">E</div>
+			<div class="info-frenzy-letter @HasLetter(3)">N</div>
+			<div class="info-frenzy-letter @HasLetter(4)">Z</div>
+			<div class="info-frenzy-letter @HasLetter(5)">Y</div>
+		</div>
+		<div class="info-map-best-time">Best Time: @BestTimeFormat(settings.GetBestTime())</div>
+		<div class="button-container">
+			<div class="button" onclick="@(()=>Retry())">RETRY</div>
+			@if (IsNextTrackAvailable)
+			{
+				<div class="button" onclick="@(() => LoadNextTrack())">NEXT TRACK</div>
+			}
+			<div class="button">TRACK SELECT</div>
+		</div>
+	</div>
+</root>
+
+@code
+{
+	MapSettings settings;
+
+	IEnumerable<UnicycleFrenzySeason> seasons;
+	UnicycleFrenzyMap currentMap;
+	UnicycleFrenzyMap nextMapToLoad;
+
+	bool MapFound { get; set; }
+
+	bool IsNextTrackAvailable => nextMapToLoad != null;
+
+	public FinishMapInfo()
+	{
+		//find the current season from the map
+		seasons = ResourceLibrary.GetAll<UnicycleFrenzySeason>();
+	}
+
+	private void FindCurrentMap()
+	{
+		foreach (var season in seasons)
+		{
+			if (season.GreenMaps.Contains(currentMap) ||
+				season.YellowMaps.Contains(currentMap) ||
+				season.OrangeMaps.Contains(currentMap) ||
+				season.RedMaps.Contains(currentMap))
+			{
+				// Map found in one of the lists
+				HandleMapFound(season, currentMap);
+				return;
+			}
+		}
+
+		// If the map was not found in any season's lists
+		HandleMapNotFound();
+	}
+
+	private void HandleMapFound(UnicycleFrenzySeason season, UnicycleFrenzyMap map)
+	{
+		Log.Info($"Map found in season: {season.SeasonName}");
+
+		List<UnicycleFrenzyMap> currentMapList = null;
+		int currentIndex = -1;
+
+		if (season.GreenMaps.Contains(map))
+		{
+			currentMapList = season.GreenMaps;
+			currentIndex = season.GreenMaps.IndexOf(map);
+		}
+		else if (season.YellowMaps.Contains(map))
+		{
+			currentMapList = season.YellowMaps;
+			currentIndex = season.YellowMaps.IndexOf(map);
+		}
+		else if (season.OrangeMaps.Contains(map))
+		{
+			currentMapList = season.OrangeMaps;
+			currentIndex = season.OrangeMaps.IndexOf(map);
+		}
+		else if (season.RedMaps.Contains(map))
+		{
+			currentMapList = season.RedMaps;
+			currentIndex = season.RedMaps.IndexOf(map);
+		}
+
+		if (currentMapList != null && currentIndex >= 0)
+		{
+			if (currentIndex < currentMapList.Count - 1)
+			{
+				nextMapToLoad = currentMapList[currentIndex + 1];
+			}
+			else
+			{
+				Log.Info("This is the last map in the current season.");
+			}
+		}
+
+		MapFound = true;
+	}
+
+	private void HandleMapNotFound()
+	{
+		// Handle the case when the map is not found
+		// You can add your custom logic here
+		Log.Warning("Map not found in any season's lists.");
+
+		MapFound = false;
+	}
+
+	public override void Tick()
+	{
+		base.Tick();
+
+		if (settings == null)
+		{
+			settings = Scene.GetAllComponents<MapSettings>().FirstOrDefault();
+		}
+
+		if(seasons == null)
+		{
+			seasons = ResourceLibrary.GetAll<UnicycleFrenzySeason>();
+		}
+
+		if(currentMap == null)
+		{
+			var mapList = ResourceLibrary.GetAll<UnicycleFrenzyMap>();
+			//search for the current map in the map list
+			currentMap = mapList.FirstOrDefault(map => map.MapName == settings.MapName);
+		}
+
+		if (MapFound == false)
+		{
+			FindCurrentMap();
+		}
+	}
+
+	private void LoadNextTrack()
+	{
+		Log.Info("Loading next map");
+		if (nextMapToLoad != null)
+		{
+			Log.Info($"Loading next map: {nextMapToLoad.MapName}");
+			Game.ActiveScene.Load(nextMapToLoad.MapScene);
+		}
+	}
+
+	void Retry()
+	{
+		var courseTimer = CourseTimer.Local;
+		if (courseTimer != null)
+		{
+			courseTimer.ResetTimer();
+			courseTimer.ResetCheckpoints();
+			UnicycleController.Local.DoRespawn();
+		}
+		PauseMenuComponent.Current.Close();
+	}
+
+	string HasLetter(int letter)
+	{
+		var frenzy = settings.frenzyLetterList.Contains((FrenzyPickUp.FrenzyLetter)letter);
+		return frenzy ? "has-letter" : "no-letter";
+	}
+
+	string BestTimeFormat(float time)
+	{
+		if (time == null)
+			return "N/A";
+
+		var timeSpan = TimeSpan.FromSeconds(time);
+		return timeSpan.ToString(@"mm\:ss\.fff");
+	}
+
+	protected override int BuildHash() => System.HashCode.Combine(Time.Delta);
+}

@@ -91,7 +91,7 @@
       "__guid": "9058bc8d-6112-4f54-b110-305068386a81",
       "Flags": 0,
       "Name": "CheckPoint Zone",
-      "Position": "1536,0,3.251236",
+      "Position": "768,0,3.251236",
       "Enabled": true,
       "NetworkMode": 2,
       "NetworkInterpolation": true,
@@ -155,6 +155,17 @@
       "NetworkMode": 2,
       "NetworkInterpolation": true,
       "__Prefab": "prefabs/map/track_pieces/standard/std_plywood_straight_384.prefab"
+    },
+    {
+      "__guid": "0e5aaed1-aa71-4e95-b7e8-3d74dab5f0a5",
+      "Flags": 0,
+      "Name": "end zone",
+      "Position": "1536,-0.0002859161,3.000109",
+      "Rotation": "-0.0000001192093,0.0000000310441,1,0.00000009313229",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "__Prefab": "prefabs/end zone.prefab"
     }
   ],
   "SceneProperties": {
@@ -180,7 +191,7 @@
   },
   "Title": "test",
   "Description": "",
-  "LastSaved": "2024-05-20T13:21:38.9886693-04:00",
+  "LastSaved": "2024-06-06T13:40:19.6083686\u002B01:00",
   "ResourceVersion": 1,
   "__references": [
     "quack.skybox_white"

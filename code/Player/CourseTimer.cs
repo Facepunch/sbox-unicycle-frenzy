@@ -101,6 +101,8 @@ internal class CourseTimer : Component
 		mapsetting.SetBestTime( (float)FinishTime );
 		mapsetting.MedalCheck( (float)FinishTime );
 		mapsetting.OnFinish();
+
+		PauseMenuComponent.Current?.FinishedLevel();
 	}
 
 	public bool TryFindCheckpoint( out Vector3 position, out Angles forward )

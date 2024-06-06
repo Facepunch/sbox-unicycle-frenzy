@@ -18,6 +18,12 @@
 		Current = this;
 	}
 
+	public void FinishedLevel()
+	{
+		SetOpen(true);
+		Menu.Navigate("/Finished");
+	}
+
 	void SetOpen(bool isOpen)
 	{
 		open = isOpen;
@@ -36,6 +42,7 @@
 		if (Input.EscapePressed)
 		{
 			SetOpen(!open);
+			Menu.Navigate("/");
 		}
 
 		if (open)
