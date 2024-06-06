@@ -8,6 +8,7 @@
 		<div class="logo"></div>
 		<div class="navbar">
 			<a class="button" href="/solo">Solo</a>
+			<div class="button" onclick="@(() => LoadScene())">Tutorial</div>
 			<a class="button" href="/AchievementsStats">Achievements</a>
 			<a class="button" href="/customize">Customize</a>
 			<a class="button" href="/settings">Settings</a>
@@ -16,3 +17,11 @@
 
 @* 	<PartyPanel class="party-panel" /> *@
 </root>
+@code
+{
+	void LoadScene()
+	{
+		Game.ActiveScene.LoadFromFile("scenes/maps/tutorial_01.scene");
+	}
+
+}
