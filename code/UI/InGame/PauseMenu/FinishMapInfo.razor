@@ -34,7 +34,7 @@
 			{
 				<div class="button" onclick="@(() => LoadNextTrack())">NEXT TRACK</div>
 			}
-			<div class="button">TRACK SELECT</div>
+			<div class="button" onclick="@(() => Menu())">TRACK SELECT</div>
 		</div>
 	</div>
 </root>
@@ -175,6 +175,11 @@
 			UnicycleController.Local.DoRespawn();
 		}
 		PauseMenuComponent.Current.Close();
+	}
+
+	void Menu()
+	{
+		Game.ActiveScene.Load(ResourceLibrary.Get<SceneFile>("scenes/menu.scene"));
 	}
 
 	string HasLetter(int letter)
