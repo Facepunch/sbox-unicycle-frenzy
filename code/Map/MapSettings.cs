@@ -71,7 +71,7 @@ internal class MapSettings : Component
 
 	void Fetch()
 	{
-		Local = FileSystem.Data.ReadJson<MapProgress>( "unicycle.stats." + MapName + ".json" );
+		Local = DataHelper.ReadJson<MapProgress>( "unicycle.stats." + MapName + ".json" );
 		if(Local == null)
 		{
 			Local = new MapProgress();
@@ -85,7 +85,7 @@ internal class MapSettings : Component
 		{
 			Fetch();
 		}
-		FileSystem.Data.WriteJson( "unicycle.stats." + MapName + ".json", Local );
+		DataHelper.WriteJson( "unicycle.stats." + MapName + ".json", Local );
 	}
 
 	public void OnFinish()

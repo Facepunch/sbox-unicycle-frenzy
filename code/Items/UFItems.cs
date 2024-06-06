@@ -81,7 +81,7 @@ internal class UnicycleDresser : Component
 	{
 		base.OnAwake();
 
-		Local = FileSystem.Data.ReadJson<UnicycleDressed>( "unicycle.dress.json" );
+		Local = DataHelper.ReadJson<UnicycleDressed>( "unicycle.dress.json" );
 	}
 
 	protected override void OnStart()
@@ -111,7 +111,7 @@ internal class UnicycleDresser : Component
 				PedalSkin = 99,
 			};
 
-			FileSystem.Data.WriteJson( "unicycle.dress.json", Local );
+			DataHelper.WriteJson( "unicycle.dress.json", Local );
 		}
 	}
 

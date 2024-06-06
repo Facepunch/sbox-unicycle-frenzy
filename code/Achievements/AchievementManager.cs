@@ -6,7 +6,7 @@ public class AchievementManager
 
 	public void Fetch()
 	{
-		Instance = FileSystem.Data.ReadJson<AchievementManager>( "unicycle.achievements.json" );
+		Instance = DataHelper.ReadJson<AchievementManager>( "unicycle.achievements.json" );
 		if ( Instance == null )
 		{
 			Instance = new AchievementManager();
@@ -36,7 +36,7 @@ public class AchievementManager
 	{
 		if ( Instance != null )
 		{
-			FileSystem.Data.WriteJson( "unicycle.achievements.json", Instance );
+			DataHelper.WriteJson( "unicycle.achievements.json", Instance );
 		}
 	}
 

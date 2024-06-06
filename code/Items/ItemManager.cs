@@ -37,11 +37,8 @@ public sealed class ItemManager : Component
 
 	void Fetch()
 	{
-		Progression = FileSystem.Data.ReadJson<UnicycleProgression>( "unicycle.progression.json" );
-		if ( Progression == null )
-		{
-			Progression = new UnicycleProgression();
-		}
+		Progression = DataHelper.ReadJson<UnicycleProgression>( "unicycle.progression.json" )
+			?? new UnicycleProgression();
 	}
 
 	void Save()
@@ -50,6 +47,7 @@ public sealed class ItemManager : Component
 		{
 			Fetch();
 		}
-		FileSystem.Data.WriteJson( "unicycle.progression.json", Progression );
+
+		DataHelper.WriteJson( "unicycle.progression.json", Progression );
 	}
 }

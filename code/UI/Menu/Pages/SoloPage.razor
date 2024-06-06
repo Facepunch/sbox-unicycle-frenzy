@@ -172,7 +172,7 @@
 
 	public void GetProgress()
 	{
-		Progression = FileSystem.Data.ReadJson<UnicycleProgression>("unicycle.progression.json");
+		Progression = DataHelper.ReadJson<UnicycleProgression>("unicycle.progression.json");
 		if (Progression == null)
 		{
 			Progression = new UnicycleProgression
@@ -188,7 +188,7 @@
 		{
 			GetProgress();
 		}
-		FileSystem.Data.WriteJson("unicycle.progression.json", Progression);
+		DataHelper.WriteJson("unicycle.progression.json", Progression);
 	}
 
 	public string IconToBar(float value)
@@ -207,21 +207,21 @@
 
 	public string Falls(string mapName)
 	{
-		var map = FileSystem.Data.ReadJson<MapProgress>("unicycle.stats." + mapName + ".json");
+		var map = DataHelper.ReadJson<MapProgress>("unicycle.stats." + mapName + ".json");
 		if (map == null) return "0";
 		return map.Falls.ToString();
 	}
 
 	public string Completions(string mapName)
 	{
-		var map = FileSystem.Data.ReadJson<MapProgress>("unicycle.stats." + mapName + ".json");
+		var map = DataHelper.ReadJson<MapProgress>("unicycle.stats." + mapName + ".json");
 		if (map == null) return "0";
 		return map.Completions.ToString();
 	}
 
 	public string BestTime(string mapName)
 	{
-		var map = FileSystem.Data.ReadJson<MapProgress>("unicycle.stats." + mapName + ".json");
+		var map = DataHelper.ReadJson<MapProgress>("unicycle.stats." + mapName + ".json");
 		if (map == null) return "--:--";
 		var time = TimeSpan.FromSeconds(map.BestTime);
 		return time.ToString(@"mm\:ss\:ff");
@@ -229,7 +229,7 @@
 
 	public string PlayTime(string mapName)
 	{
-		var map = FileSystem.Data.ReadJson<MapProgress>("unicycle.stats." + mapName + ".json");
+		var map = DataHelper.ReadJson<MapProgress>("unicycle.stats." + mapName + ".json");
 		if (map == null) return "--:--";
 		var time = TimeSpan.FromSeconds(map.TimePlayed);
 		return time.ToString(@"mm\:ss");
@@ -237,7 +237,7 @@
 
 	public string CollectedFrenzy(string mapName)
 	{
-		var map = FileSystem.Data.ReadJson<MapProgress>("unicycle.stats." + mapName + ".json");
+		var map = DataHelper.ReadJson<MapProgress>("unicycle.stats." + mapName + ".json");
 		if (map == null) return "";
 		if (map.CollectedFrenzy)
 		{
@@ -249,7 +249,7 @@
 
 	public string HasBronze(string mapName)
 	{
-		var map = FileSystem.Data.ReadJson<MapProgress>("unicycle.stats." + mapName + ".json");
+		var map = DataHelper.ReadJson<MapProgress>("unicycle.stats." + mapName + ".json");
 		if (map == null) return "";
 		if(map.HasBronzeMedal)
 		{
@@ -261,7 +261,7 @@
 
 	public string HasSilver(string mapName)
 	{
-		var map = FileSystem.Data.ReadJson<MapProgress>("unicycle.stats." + mapName + ".json");
+		var map = DataHelper.ReadJson<MapProgress>("unicycle.stats." + mapName + ".json");
 		if (map == null) return "";
 		if(map.HasSilverMedal)
 		{
@@ -273,7 +273,7 @@
 
 	public string HasGold(string mapName)
 	{
-		var map = FileSystem.Data.ReadJson<MapProgress>("unicycle.stats." + mapName + ".json");
+		var map = DataHelper.ReadJson<MapProgress>("unicycle.stats." + mapName + ".json");
 		if (map == null) return "";
 		if(map.HasGoldMedal)
 		{
@@ -285,7 +285,7 @@
 
 	public string HasPlatinum(string mapName)
 	{
-		var map = FileSystem.Data.ReadJson<MapProgress>("unicycle.stats." + mapName + ".json");
+		var map = DataHelper.ReadJson<MapProgress>("unicycle.stats." + mapName + ".json");
 		if (map == null) return "";
 		if(map.HasPlatinumMedal)
 		{

@@ -122,7 +122,7 @@
 
 	void Fetch()
 	{
-		Local = FileSystem.Data.ReadJson<UnicycleDressed>("unicycle.dress.json");
+		Local = DataHelper.ReadJson<UnicycleDressed>("unicycle.dress.json");
 		if (Local == null)
 		{
 			Save();
@@ -220,7 +220,7 @@
 		{
 			Fetch();
 		}
-		FileSystem.Data.WriteJson("unicycle.dress.json", Local);
+		DataHelper.WriteJson("unicycle.dress.json", Local);
 	}
 
 	void FilterItemsByCategory(ItemCategories category)

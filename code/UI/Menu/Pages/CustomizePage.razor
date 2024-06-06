@@ -89,7 +89,7 @@
 
 	void Fetch()
 	{
-		Progression = FileSystem.Data.ReadJson<UnicycleProgression>("unicycle.progression.json");
+		Progression = DataHelper.ReadJson<UnicycleProgression>("unicycle.progression.json");
 		if (Progression == null)
 		{
 			Progression = new UnicycleProgression();
@@ -102,6 +102,6 @@
 		{
 			Fetch();
 		}
-		FileSystem.Data.WriteJson("unicycle.progression.json", Progression);
+		DataHelper.WriteJson("unicycle.progression.json", Progression);
 	}
 }
