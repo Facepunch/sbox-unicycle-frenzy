@@ -3,10 +3,12 @@
   "GameObjects": [
     {
       "__guid": "678f5729-705d-4f90-8d8b-7850c0290ba8",
+      "Flags": 0,
       "Name": "Quarry",
       "Position": "159.4176,642.9399,310.1045",
       "Enabled": true,
       "NetworkMode": 2,
+      "NetworkInterpolation": true,
       "Components": [
         {
           "__type": "Sandbox.MapInstance",
@@ -18,260 +20,33 @@
       "Children": []
     },
     {
-      "__guid": "c22665c8-7c9a-4274-bf5a-e88dd9c06aac",
-      "Name": "player and camera",
-      "Position": "-97.62693,115.6198,77.55941",
-      "Enabled": true,
-      "NetworkMode": 2,
-      "Children": [
-        {
-          "__guid": "27d61a02-58f2-497f-9ce9-80c912edfb46",
-          "Name": "Camera",
-          "Position": "0,0,0",
-          "Enabled": true,
-          "NetworkMode": 2,
-          "Components": [
-            {
-              "__type": "Sandbox.CameraComponent",
-              "__guid": "f4548ddd-67e7-43e9-921b-fbb08439c317",
-              "BackgroundColor": "0.33333,0.46275,0.52157,1",
-              "ClearFlags": "All",
-              "FieldOfView": 60,
-              "IsMainCamera": true,
-              "Orthographic": false,
-              "OrthographicHeight": 1204,
-              "Priority": 1,
-              "RenderExcludeTags": "",
-              "RenderTags": "",
-              "TargetEye": "None",
-              "Viewport": "0,0,1,1",
-              "ZFar": 10000,
-              "ZNear": 10
-            },
-            {
-              "__type": "CameraController",
-              "__guid": "92234df2-20b1-499c-9fd8-83dfb0d65988",
-              "Target": {
-                "_type": "component",
-                "component_id": "8bcc2fdb-0c17-4f5a-b8a8-3ec3b6a6ac42",
-                "go": "0bec1982-305d-4d6c-a1e2-621d4bf48e48",
-                "component_type": "UnicycleController"
-              }
-            }
-          ]
-        },
-        {
-          "__guid": "0bec1982-305d-4d6c-a1e2-621d4bf48e48",
-          "Name": "Player",
-          "Position": "0,0,0",
-          "Tags": "player",
-          "Enabled": true,
-          "NetworkMode": 2,
-          "Components": [
-            {
-              "__type": "UnicycleController",
-              "__guid": "8bcc2fdb-0c17-4f5a-b8a8-3ec3b6a6ac42",
-              "FallSound": "sounds/unicycle/unicycle.crash.default.sound",
-              "JumpSound": "sounds/unicycle/unicycle.jump.sound",
-              "PedalSound": "sounds/unicycle/unicycle.pedal.sound",
-              "PerfectPedalSound": "sounds/unicycle/unicycle.pedal.perfect.sound"
-            },
-            {
-              "__type": "PlayerAnimator",
-              "__guid": "1182e971-98e6-465a-a280-a9b6c3925867",
-              "LeftPedal": {
-                "_type": "gameobject",
-                "go": "11432ef0-ff87-442b-ba4b-e78cd9f240cf"
-              },
-              "PedalPivot": {
-                "_type": "gameobject",
-                "go": "3ecd2f7a-a953-40bc-8529-26ab654f7aa1"
-              },
-              "RightPedal": {
-                "_type": "gameobject",
-                "go": "c2e1a34f-7bcd-43d1-a545-8baf49813b33"
-              },
-              "Wheel": {
-                "_type": "gameobject",
-                "go": "64748279-dbe7-49f8-b689-dee921400a32"
-              },
-              "WheelPivot": {
-                "_type": "gameobject",
-                "go": "4c77fb4e-386e-4685-8bc9-6bf1764524d9"
-              }
-            },
-            {
-              "__type": "Sandbox.BoxCollider",
-              "__guid": "29499bb6-9eff-4031-9ec0-a23ffb7b1141",
-              "Center": "0,0,36",
-              "IsTrigger": false,
-              "Scale": "20,20,72",
-              "Static": false
-            },
-            {
-              "__type": "CourseTimer",
-              "__guid": "1c1b57bb-b7b6-4441-a32c-b01da7db5e01"
-            }
-          ],
-          "Children": [
-            {
-              "__guid": "a44e1476-b55e-4dff-88b9-85d712fd2c45",
-              "Name": "Player",
-              "Position": "0,0,35",
-              "Enabled": true,
-              "NetworkMode": 2,
-              "Components": [
-                {
-                  "__type": "Sandbox.SkinnedModelRenderer",
-                  "__guid": "8f017c08-ca63-4212-86f4-206ebed70ca8",
-                  "BodyGroups": 341,
-                  "CreateBoneObjects": false,
-                  "Model": "models/citizen/citizen.vmdl",
-                  "RenderType": "On",
-                  "Tint": "1,1,1,1"
-                }
-              ]
-            },
-            {
-              "__guid": "ac75d2a8-0201-4076-bdaa-9afc014807dd",
-              "Name": "Unicycle",
-              "Position": "0,0,0",
-              "Scale": "0.8,0.8,0.8",
-              "Enabled": true,
-              "NetworkMode": 2,
-              "Children": [
-                {
-                  "__guid": "7298673a-1952-4fcd-89cd-4702bbf74558",
-                  "Name": "Seat",
-                  "Position": "0,0,32.68898",
-                  "Enabled": true,
-                  "NetworkMode": 2,
-                  "Components": [
-                    {
-                      "__type": "Sandbox.ModelRenderer",
-                      "__guid": "9558c8cf-695d-47bd-85a2-bb67e6aeeae2",
-                      "BodyGroups": 18446744073709551615,
-                      "Model": "models/unicycles/default/parts/seats/default_seat.vmdl",
-                      "RenderType": "On",
-                      "Tint": "1,1,1,1"
-                    }
-                  ]
-                },
-                {
-                  "__guid": "ae0fcdf4-23b4-4261-87f8-87ca57093503",
-                  "Name": "Frame",
-                  "Position": "0,0,10.50214",
-                  "Enabled": true,
-                  "NetworkMode": 2,
-                  "Components": [
-                    {
-                      "__type": "Sandbox.Prop",
-                      "__guid": "27c4add8-5125-475b-aa7e-a370b177524d",
-                      "BodyGroups": 18446744073709551615,
-                      "Health": 0,
-                      "IsStatic": true,
-                      "Model": "models/unicycles/default/parts/frames/default_frame.vmdl"
-                    }
-                  ]
-                },
-                {
-                  "__guid": "4c77fb4e-386e-4685-8bc9-6bf1764524d9",
-                  "Name": "WheelPivot",
-                  "Position": "0,0,12",
-                  "Enabled": true,
-                  "NetworkMode": 2,
-                  "Children": [
-                    {
-                      "__guid": "64748279-dbe7-49f8-b689-dee921400a32",
-                      "Name": "Wheel",
-                      "Position": "0,0,-12",
-                      "Enabled": true,
-                      "NetworkMode": 2,
-                      "Components": [
-                        {
-                          "__type": "Sandbox.Prop",
-                          "__guid": "089cc841-b271-41ea-95e0-ee18a56140a3",
-                          "BodyGroups": 18446744073709551615,
-                          "Health": 0,
-                          "IsStatic": true,
-                          "Model": "models/unicycles/default/parts/wheels/default_wheel.vmdl"
-                        }
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "__guid": "3ecd2f7a-a953-40bc-8529-26ab654f7aa1",
-                  "Name": "Pedals",
-                  "Position": "0,0,12",
-                  "Enabled": true,
-                  "NetworkMode": 2,
-                  "Children": [
-                    {
-                      "__guid": "11432ef0-ff87-442b-ba4b-e78cd9f240cf",
-                      "Name": "Left Pedal",
-                      "Position": "0,5.200825,-5.631828",
-                      "Enabled": true,
-                      "NetworkMode": 2,
-                      "Components": [
-                        {
-                          "__type": "Sandbox.Prop",
-                          "__guid": "db169a89-f14e-4781-b16a-0c8bf7cb5179",
-                          "BodyGroups": 18446744073709551615,
-                          "Health": 0,
-                          "IsStatic": true,
-                          "Model": "models/unicycles/default/parts/pedals/default_pedal.vmdl"
-                        }
-                      ]
-                    },
-                    {
-                      "__guid": "c2e1a34f-7bcd-43d1-a545-8baf49813b33",
-                      "Name": "Right Pedal",
-                      "Position": "0,-5.227394,7.001972",
-                      "Rotation": "1,0,0,-0.00000004371139",
-                      "Enabled": true,
-                      "NetworkMode": 2,
-                      "Components": [
-                        {
-                          "__type": "Sandbox.Prop",
-                          "__guid": "df51c963-a3f2-4f69-80c2-97541de41039",
-                          "BodyGroups": 18446744073709551615,
-                          "Health": 0,
-                          "IsStatic": true,
-                          "Model": "models/unicycles/default/parts/pedals/default_pedal.vmdl"
-                        }
-                      ]
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
       "__guid": "a06633a7-a845-497a-a122-e4b6c93f3e07",
+      "Flags": 0,
       "Name": "Start Zone",
       "Position": "-160.1697,-1.287358,0.7746925",
       "Enabled": true,
       "NetworkMode": 2,
+      "NetworkInterpolation": true,
       "__Prefab": "prefabs/start zone.prefab"
     },
     {
       "__guid": "f07963c3-b14d-424a-965e-2f0c52196d02",
+      "Flags": 0,
       "Name": "End Zone",
       "Position": "128,-507.417,-10.82928",
       "Enabled": true,
       "NetworkMode": 2,
+      "NetworkInterpolation": true,
       "__Prefab": "prefabs/end zone.prefab"
     },
     {
       "__guid": "ea3d9e86-c921-4aff-bd84-617c501ec1e6",
+      "Flags": 0,
       "Name": "Screen",
       "Position": "-16.93652,-221.3996,254.2462",
       "Enabled": true,
       "NetworkMode": 2,
+      "NetworkInterpolation": true,
       "Components": [
         {
           "__type": "Sandbox.ScreenPanel",
@@ -289,19 +64,23 @@
     },
     {
       "__guid": "01c16b13-bfbd-4bab-b856-eaacff5bb6dd",
+      "Flags": 0,
       "Name": "CheckPoint Zone",
       "Position": "96,-160,-5.865921",
       "Rotation": "0,0,0.7071068,0.7071069",
       "Enabled": true,
       "NetworkMode": 2,
+      "NetworkInterpolation": true,
       "__Prefab": "prefabs/checkpoint zone.prefab"
     },
     {
       "__guid": "e69fcea1-04b9-44b4-a461-bbd5684d73f6",
+      "Flags": 0,
       "Name": "Map Settings",
       "Position": "0,0,304",
       "Enabled": true,
       "NetworkMode": 0,
+      "NetworkInterpolation": true,
       "Components": [
         {
           "__type": "MapSettings",
@@ -316,13 +95,23 @@
           "SilverTime": 60
         }
       ]
+    },
+    {
+      "__guid": "667b30d1-ebb3-41f5-ae9f-3bfd3b8916b5",
+      "Flags": 0,
+      "Name": "uf_playerspawner",
+      "Position": "-160.17,-1.287,16",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "__Prefab": "prefabs/uf_playerspawner.prefab"
     }
   ],
   "SceneProperties": {
     "FixedUpdateFrequency": 50,
-    "Lerping": true,
     "MaxFixedUpdates": 5,
     "NetworkFrequency": 60,
+    "NetworkInterpolation": true,
     "ThreadedAnimation": true,
     "TimeScale": 1,
     "UseFixedUpdate": true,
@@ -341,8 +130,8 @@
   },
   "Title": "Quarry",
   "Description": "",
-  "LastSaved": "2024-04-19T12:11:35.8797305\u002B01:00",
+  "LastSaved": "2024-06-06T10:56:43.7572369-04:00",
   "ResourceVersion": 1,
-  "__version": 1,
-  "__references": []
+  "__references": [],
+  "__version": 1
 }
