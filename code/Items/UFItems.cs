@@ -101,13 +101,9 @@ internal class UnicycleDresser : Component
 		{
 			Local = new UnicycleDressed
 			{
-				Frame = ResourceLibrary.Get<UnicycleFrenzyItems>( "resources/items/defaultframe.ufitem" ),
 				FrameSkin = 1,
-				Seat = ResourceLibrary.Get<UnicycleFrenzyItems>( "resources/items/defaultseat.ufitem" ),
 				SeatSkin = 99,
-				Wheel = ResourceLibrary.Get<UnicycleFrenzyItems>( "resources/items/defaultwheel.ufitem" ),
 				WheelSkin = 1,
-				Pedal = ResourceLibrary.Get<UnicycleFrenzyItems>( "resources/items/defaultpedal.ufitem" ),
 				PedalSkin = 99,
 			};
 
@@ -130,7 +126,10 @@ internal class UnicycleDresser : Component
 
 	void SetUpUnicycle()
 	{
-		Local = FileSystem.Data.ReadJson<UnicycleDressed>( "unicycle.dress.json" );
+		Local.Frame ??= ResourceLibrary.Get<UnicycleFrenzyItems>( "resources/items/default/defaultframe.ufitem" );
+		Local.Seat ??= ResourceLibrary.Get<UnicycleFrenzyItems>( "resources/items/default/defaultseat.ufitem" );
+		Local.Wheel ??= ResourceLibrary.Get<UnicycleFrenzyItems>( "resources/items/default/defaultwheel.ufitem" );
+		Local.Pedal ??= ResourceLibrary.Get<UnicycleFrenzyItems>( "resources/items/default/defaultpedal.ufitem" );
 
 		Frame.Model = Local.Frame.ItemModel;
 		if ( Local.FrameSkin != 99 )
