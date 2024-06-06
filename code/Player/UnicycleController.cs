@@ -270,8 +270,6 @@ internal class UnicycleController : Component
 			go.Transform.Rotation = mr.Transform.Rotation;
 			go.Transform.Scale = mr.Transform.Scale;
 
-
-
 			var smr = go.Components.Create<SkinnedModelRenderer>();
 			smr.Model = mr.Model;
 			if ( mr.Tags.Has( "clothing" ))
@@ -280,7 +278,8 @@ internal class UnicycleController : Component
 				smr.Tags.Add( "clothing" );
 
 				var citizen = Ragdoll.Components.GetAll<SkinnedModelRenderer>().Where( x => x.Tags.Has( "citizen" ) ).FirstOrDefault();
-				Log.Info( $"Found citizen: {citizen}" );
+				citizen.UseAnimGraph = false;
+				//Log.Info( $"Found citizen: {citizen}" );
 				smr.BoneMergeTarget = citizen;
 			}
 			else
@@ -289,12 +288,12 @@ internal class UnicycleController : Component
 				mphys.Model = mr.Model;
 				mphys.Renderer = smr;
 
-				mphys.Enabled = true;
+				mphys.Enabled = false;
 				mphys.Enabled = true;
 			}
 			if ( mr.Tags.Has( "citizen" ) && !mr.Tags.Has( "clothing" ) )
 			{
-				Log.Info( "Adding citizen tag" );
+				//Log.Info( "Adding citizen tag" );
 				smr.Tags.Add( "citizen" );
 			}
 			smr.MaterialOverride = mr.MaterialOverride;
