@@ -1,0 +1,3074 @@
+{
+  "RootObject": {
+    "__guid": "73004371-8643-4e5f-a058-8dd83ad24d3a",
+    "Flags": 0,
+    "Name": "scaffold02_empty_block_mid_384",
+    "Enabled": true,
+    "NetworkMode": 2,
+    "NetworkInterpolation": true,
+    "Children": [
+      {
+        "__guid": "eda040d3-896d-4143-86ca-a625522599ae",
+        "Flags": 0,
+        "Name": "scaffolding_ringlock_a",
+        "Position": "191.9999,191.9999,-0.0001831055",
+        "Rotation": "0.5,0.4999997,0.5000001,-0.4999998",
+        "Scale": "1.5,1.5,1.5",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "NetworkInterpolation": true,
+        "Components": [
+          {
+            "__type": "Sandbox.Prop",
+            "__guid": "79964dc6-0b5c-4431-b271-0488a00a5cff",
+            "BodyGroups": 18446744073709551615,
+            "Health": 0,
+            "IsStatic": false,
+            "Model": "models/scaffolding/scaffolding_ringlock_a.vmdl",
+            "Tint": "1,1,1,1"
+          }
+        ]
+      },
+      {
+        "__guid": "a2898d3a-e358-42d6-acb5-51c510ec53be",
+        "Flags": 0,
+        "Name": "scaffolding_ringlock_a (3)",
+        "Position": "-0.00003051758,192,-0.0001831055",
+        "Rotation": "0.5,0.4999997,0.5000001,-0.4999998",
+        "Scale": "1.5,1.5,1.5",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "NetworkInterpolation": true,
+        "Components": [
+          {
+            "__type": "Sandbox.Prop",
+            "__guid": "decd7d2e-0fd7-4e94-b23f-9e1d9118ff9f",
+            "BodyGroups": 18446744073709551615,
+            "Health": 0,
+            "IsStatic": false,
+            "Model": "models/scaffolding/scaffolding_ringlock_a.vmdl",
+            "Tint": "1,1,1,1"
+          }
+        ]
+      },
+      {
+        "__guid": "98e1b881-ee04-4cf6-a009-a3d8c56bd8fc",
+        "Flags": 0,
+        "Name": "scaffolding_ringlock_a (1)",
+        "Position": "-0.00003051758,192,191.9998",
+        "Rotation": "0.0000002086163,0.7071067,0.7071067,0.00000005960464",
+        "Scale": "1.5,1.5,1.5",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "NetworkInterpolation": true,
+        "Components": [
+          {
+            "__type": "Sandbox.Prop",
+            "__guid": "158505eb-77a1-4547-a312-40f97a58110b",
+            "BodyGroups": 18446744073709551615,
+            "Health": 0,
+            "IsStatic": false,
+            "Model": "models/scaffolding/scaffolding_ringlock_a.vmdl",
+            "Tint": "1,1,1,1"
+          }
+        ]
+      },
+      {
+        "__guid": "d4581def-2226-438a-9b7f-e4a33848a728",
+        "Flags": 0,
+        "Name": "scaffolding_tube_a (7)",
+        "Position": "-0.00009155273,192,-72.00018",
+        "Rotation": "-0.4999997,0.5000002,0.4999999,0.4999999",
+        "Scale": "0.875,1.5,1.5",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "NetworkInterpolation": true,
+        "Components": [
+          {
+            "__type": "Sandbox.Prop",
+            "__guid": "7ebbc922-f072-4b3f-80a3-893e5323092d",
+            "BodyGroups": 18446744073709551615,
+            "Health": 0,
+            "IsStatic": true,
+            "Model": "models/scaffolding/scaffolding_tube_a.vmdl",
+            "Tint": "1,1,1,1"
+          }
+        ]
+      },
+      {
+        "__guid": "71fd3f45-31dd-4efa-ae94-df4e78e53b53",
+        "Flags": 0,
+        "Name": "scaffolding_tube_a (8)",
+        "Position": "-0.00003051758,192,55.99982",
+        "Rotation": "-0.4999997,0.5000002,0.4999999,0.4999999",
+        "Scale": "1,1.5,1.5",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "NetworkInterpolation": true,
+        "Components": [
+          {
+            "__type": "Sandbox.Prop",
+            "__guid": "cd14d81d-6016-4673-ab77-d174bce35a47",
+            "BodyGroups": 18446744073709551615,
+            "Health": 0,
+            "IsStatic": true,
+            "Model": "models/scaffolding/scaffolding_tube_a.vmdl",
+            "Tint": "1,1,1,1"
+          }
+        ]
+      },
+      {
+        "__guid": "e319627f-e5de-43b3-ac74-8130e513d573",
+        "Flags": 0,
+        "Name": "scaffolding_tube_a (9)",
+        "Position": "-0.00003051758,192,183.9998",
+        "Rotation": "-0.4999997,0.5000002,0.4999999,0.4999999",
+        "Scale": "1,1.5,1.5",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "NetworkInterpolation": true,
+        "Components": [
+          {
+            "__type": "Sandbox.Prop",
+            "__guid": "562377c5-ea46-4f28-9e41-d012bc02283e",
+            "BodyGroups": 18446744073709551615,
+            "Health": 0,
+            "IsStatic": true,
+            "Model": "models/scaffolding/scaffolding_tube_a.vmdl",
+            "Tint": "1,1,1,1"
+          }
+        ]
+      },
+      {
+        "__guid": "c980c97b-02de-4f1f-be3a-48196f80ff4c",
+        "Flags": 0,
+        "Name": "scaffolding_connector_a (4)",
+        "Position": "-0.00003051758,192,179.9998",
+        "Rotation": "0.0000001490116,0.7071066,0.0000002980232,-0.7071068",
+        "Scale": "1.5,1.5,1.5",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "NetworkInterpolation": true,
+        "Components": [
+          {
+            "__type": "Sandbox.Prop",
+            "__guid": "2bf29b77-1e38-451f-88ce-9aae8679360e",
+            "BodyGroups": 18446744073709551615,
+            "Health": 0,
+            "IsStatic": true,
+            "Model": "models/scaffolding/scaffolding_connector_a.vmdl",
+            "Tint": "1,1,1,1"
+          }
+        ]
+      },
+      {
+        "__guid": "69eb2729-efba-4d22-b1a2-ba1da2d79e97",
+        "Flags": 0,
+        "Name": "scaffolding_connector_a (3)",
+        "Position": "-0.00009155273,192,-180.0002",
+        "Rotation": "0.0000001788139,0.7071069,-0.0000002086163,0.7071066",
+        "Scale": "1.5,1.5,1.5",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "NetworkInterpolation": true,
+        "Components": [
+          {
+            "__type": "Sandbox.Prop",
+            "__guid": "74cfeaf1-e049-42f8-817e-9fc32d287140",
+            "BodyGroups": 18446744073709551615,
+            "Health": 0,
+            "IsStatic": true,
+            "Model": "models/scaffolding/scaffolding_connector_a.vmdl",
+            "Tint": "1,1,1,1"
+          }
+        ]
+      },
+      {
+        "__guid": "eba01f2a-8554-44dd-8eaf-600996b260d5",
+        "Flags": 0,
+        "Name": "scaffolding_connector_a (4)",
+        "Position": "-12.00003,192,-0.0001831055",
+        "Rotation": "0,0,0.0000003874302,-0.9999998",
+        "Scale": "1.5,1.5,1.5",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "NetworkInterpolation": true,
+        "Components": [
+          {
+            "__type": "Sandbox.Prop",
+            "__guid": "6e4e71d7-9157-45fc-b8f8-03873b5cc77f",
+            "BodyGroups": 18446744073709551615,
+            "Health": 0,
+            "IsStatic": true,
+            "Model": "models/scaffolding/scaffolding_connector_a.vmdl",
+            "Tint": "1,1,1,1"
+          }
+        ]
+      },
+      {
+        "__guid": "13de9d15-6694-4dfb-94f7-10e2882a8389",
+        "Flags": 0,
+        "Name": "scaffolding_tube_a (9)",
+        "Position": "-8.000031,192,-0.0001831055",
+        "Rotation": "0.0000002086163,0.7071067,0.7071067,0.00000005960464",
+        "Scale": "1,1.5,1.5",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "NetworkInterpolation": true,
+        "Components": [
+          {
+            "__type": "Sandbox.Prop",
+            "__guid": "66eee229-4f7a-455e-a11f-322b7e8b2668",
+            "BodyGroups": 18446744073709551615,
+            "Health": 0,
+            "IsStatic": true,
+            "Model": "models/scaffolding/scaffolding_tube_a.vmdl",
+            "Tint": "1,1,1,1"
+          }
+        ]
+      },
+      {
+        "__guid": "d11d1781-b98e-4732-8720-3152df3fb970",
+        "Flags": 0,
+        "Name": "scaffolding_tube_a (8)",
+        "Position": "-136,192,-0.0001831055",
+        "Rotation": "0.0000002086163,0.7071067,0.7071067,0.00000005960464",
+        "Scale": "0.35,1.5,1.5",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "NetworkInterpolation": true,
+        "Components": [
+          {
+            "__type": "Sandbox.Prop",
+            "__guid": "c217ac9e-015a-4b51-80f7-893b6f896932",
+            "BodyGroups": 18446744073709551615,
+            "Health": 0,
+            "IsStatic": true,
+            "Model": "models/scaffolding/scaffolding_tube_a.vmdl",
+            "Tint": "1,1,1,1"
+          }
+        ]
+      },
+      {
+        "__guid": "e59c41d9-df7f-4fef-83f6-ddf26e4e5ed8",
+        "Flags": 0,
+        "Name": "scaffolding_connector_a (3)",
+        "Position": "-180,192,-0.0001831055",
+        "Rotation": "0.0000002682209,1,0.00000000000002842171,-0.0000000948304",
+        "Scale": "1.5,1.5,1.5",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "NetworkInterpolation": true,
+        "Components": [
+          {
+            "__type": "Sandbox.Prop",
+            "__guid": "3eb65737-4749-4f48-886e-eea495936368",
+            "BodyGroups": 18446744073709551615,
+            "Health": 0,
+            "IsStatic": true,
+            "Model": "models/scaffolding/scaffolding_connector_a.vmdl",
+            "Tint": "1,1,1,1"
+          }
+        ]
+      },
+      {
+        "__guid": "e5484313-e029-42f2-9648-d201611bbee0",
+        "Flags": 0,
+        "Name": "scaffolding_connector_a (4)",
+        "Position": "179.9999,191.9999,-0.0001831055",
+        "Rotation": "0,0,0.0000003874302,-0.9999998",
+        "Scale": "1.5,1.5,1.5",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "NetworkInterpolation": true,
+        "Components": [
+          {
+            "__type": "Sandbox.Prop",
+            "__guid": "5822ea71-6560-4af1-a783-91f9fc7119a5",
+            "BodyGroups": 18446744073709551615,
+            "Health": 0,
+            "IsStatic": true,
+            "Model": "models/scaffolding/scaffolding_connector_a.vmdl",
+            "Tint": "1,1,1,1"
+          }
+        ]
+      },
+      {
+        "__guid": "d30fdb21-bf69-4cfe-88fc-324b851ae99f",
+        "Flags": 0,
+        "Name": "scaffolding_tube_a (9)",
+        "Position": "183.9999,191.9999,-0.0001831055",
+        "Rotation": "0.0000002086163,0.7071067,0.7071067,0.00000005960464",
+        "Scale": "1,1.5,1.5",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "NetworkInterpolation": true,
+        "Components": [
+          {
+            "__type": "Sandbox.Prop",
+            "__guid": "f5b142df-d9e9-4e57-8c93-f877dc0c01ea",
+            "BodyGroups": 18446744073709551615,
+            "Health": 0,
+            "IsStatic": true,
+            "Model": "models/scaffolding/scaffolding_tube_a.vmdl",
+            "Tint": "1,1,1,1"
+          }
+        ]
+      },
+      {
+        "__guid": "7fcfbd30-b10d-43d7-9b99-a8dd9bb7da5c",
+        "Flags": 0,
+        "Name": "scaffolding_tube_a (8)",
+        "Position": "55.99997,192,-0.0001831055",
+        "Rotation": "0.0000002086163,0.7071067,0.7071067,0.00000005960464",
+        "Scale": "0.35,1.5,1.5",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "NetworkInterpolation": true,
+        "Components": [
+          {
+            "__type": "Sandbox.Prop",
+            "__guid": "3760542e-e904-49e3-bbbd-4dee476874ee",
+            "BodyGroups": 18446744073709551615,
+            "Health": 0,
+            "IsStatic": true,
+            "Model": "models/scaffolding/scaffolding_tube_a.vmdl",
+            "Tint": "1,1,1,1"
+          }
+        ]
+      },
+      {
+        "__guid": "f6af1958-2c50-44c7-81cc-7465cd66b7ca",
+        "Flags": 0,
+        "Name": "scaffolding_connector_a (3)",
+        "Position": "11.99997,192,-0.0001831055",
+        "Rotation": "0.0000002682209,1,0.00000000000002842171,-0.0000000948304",
+        "Scale": "1.5,1.5,1.5",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "NetworkInterpolation": true,
+        "Components": [
+          {
+            "__type": "Sandbox.Prop",
+            "__guid": "c8067f21-3a01-46df-92f2-789fe4684822",
+            "BodyGroups": 18446744073709551615,
+            "Health": 0,
+            "IsStatic": true,
+            "Model": "models/scaffolding/scaffolding_connector_a.vmdl",
+            "Tint": "1,1,1,1"
+          }
+        ]
+      },
+      {
+        "__guid": "e1aff4d0-d54a-40b7-a5a7-dcd3da4e31cc",
+        "Flags": 0,
+        "Name": "scaffolding_tube_a (3)",
+        "Position": "191.9999,191.9999,-192",
+        "Rotation": "0.5,0.4999997,0.5000001,-0.4999998",
+        "Scale": "1,1.5,1.5",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "NetworkInterpolation": true,
+        "Components": [
+          {
+            "__type": "Sandbox.Prop",
+            "__guid": "d6e098a5-415f-437a-842c-49852dcefd92",
+            "BodyGroups": 18446744073709551615,
+            "Health": 0,
+            "IsStatic": true,
+            "Model": "models/scaffolding/scaffolding_tube_a.vmdl",
+            "Tint": "1,1,1,1"
+          }
+        ]
+      },
+      {
+        "__guid": "37db1eb7-c311-4b60-8055-38ef483597fa",
+        "Flags": 0,
+        "Name": "scaffolding_tube_a (1)",
+        "Position": "191.9999,191.9999,-64",
+        "Rotation": "0.5,0.4999997,0.5000001,-0.4999998",
+        "Scale": "1,1.5,1.5",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "NetworkInterpolation": true,
+        "Components": [
+          {
+            "__type": "Sandbox.Prop",
+            "__guid": "b2e2a76f-a183-4a91-a3ba-fc1f1f285157",
+            "BodyGroups": 18446744073709551615,
+            "Health": 0,
+            "IsStatic": true,
+            "Model": "models/scaffolding/scaffolding_tube_a.vmdl",
+            "Tint": "1,1,1,1"
+          }
+        ]
+      },
+      {
+        "__guid": "5fd23ede-2127-42e4-b3e8-9cc3f27089ab",
+        "Flags": 0,
+        "Name": "scaffolding_tube_a (2)",
+        "Position": "191.9999,191.9999,64",
+        "Rotation": "0.5,0.4999997,0.5000001,-0.4999998",
+        "Scale": "1,1.5,1.5",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "NetworkInterpolation": true,
+        "Components": [
+          {
+            "__type": "Sandbox.Prop",
+            "__guid": "0a7f8bb6-a1c4-4ab4-97bb-515f3c7f3232",
+            "BodyGroups": 18446744073709551615,
+            "Health": 0,
+            "IsStatic": true,
+            "Model": "models/scaffolding/scaffolding_tube_a.vmdl",
+            "Tint": "1,1,1,1"
+          }
+        ]
+      },
+      {
+        "__guid": "aee418e6-7cc2-4b72-a5cd-13dbe286c0ba",
+        "Flags": 0,
+        "Name": "scaffolding_ringlock_a (2)",
+        "Position": "191.9999,191.9999,192",
+        "Rotation": "0.5,0.4999997,0.5000001,-0.4999998",
+        "Scale": "1.5,1.5,1.5",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "NetworkInterpolation": true,
+        "Components": [
+          {
+            "__type": "Sandbox.Prop",
+            "__guid": "929fe04f-e52e-4ba7-b40e-18663c2ac4f7",
+            "BodyGroups": 18446744073709551615,
+            "Health": 0,
+            "IsStatic": true,
+            "Model": "models/scaffolding/scaffolding_ringlock_a.vmdl",
+            "Tint": "1,1,1,1"
+          }
+        ]
+      },
+      {
+        "__guid": "3a7226e1-f1c6-4cfc-b872-4875184691c6",
+        "Flags": 0,
+        "Name": "scaffolding_connector_a (4)",
+        "Position": "179.9999,191.9999,192",
+        "Rotation": "0,0,0.0000003874302,-0.9999998",
+        "Scale": "1.5,1.5,1.5",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "NetworkInterpolation": true,
+        "Components": [
+          {
+            "__type": "Sandbox.Prop",
+            "__guid": "1fe87ec8-1eac-496e-bf10-037ee3159116",
+            "BodyGroups": 18446744073709551615,
+            "Health": 0,
+            "IsStatic": true,
+            "Model": "models/scaffolding/scaffolding_connector_a.vmdl",
+            "Tint": "1,1,1,1"
+          }
+        ]
+      },
+      {
+        "__guid": "12c53923-9598-44a7-821c-0a62464bc41c",
+        "Flags": 0,
+        "Name": "scaffolding_tube_a (9)",
+        "Position": "183.9999,191.9999,192",
+        "Rotation": "0.0000002086163,0.7071067,0.7071067,0.00000005960464",
+        "Scale": "1,1.5,1.5",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "NetworkInterpolation": true,
+        "Components": [
+          {
+            "__type": "Sandbox.Prop",
+            "__guid": "8c8e60fb-de67-4cdf-8aaf-d886e5d5baff",
+            "BodyGroups": 18446744073709551615,
+            "Health": 0,
+            "IsStatic": true,
+            "Model": "models/scaffolding/scaffolding_tube_a.vmdl",
+            "Tint": "1,1,1,1"
+          }
+        ]
+      },
+      {
+        "__guid": "782c926f-1eb6-4ffd-8f1b-f172991b51b8",
+        "Flags": 0,
+        "Name": "scaffolding_tube_a (8)",
+        "Position": "55.99991,192,192",
+        "Rotation": "0.0000002086163,0.7071067,0.7071067,0.00000005960464",
+        "Scale": "1,1.5,1.5",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "NetworkInterpolation": true,
+        "Components": [
+          {
+            "__type": "Sandbox.Prop",
+            "__guid": "8d584397-78b7-4824-a22a-231cb11fb3a6",
+            "BodyGroups": 18446744073709551615,
+            "Health": 0,
+            "IsStatic": true,
+            "Model": "models/scaffolding/scaffolding_tube_a.vmdl",
+            "Tint": "1,1,1,1"
+          }
+        ]
+      },
+      {
+        "__guid": "8292120e-5853-499f-b7ea-0438aac6b70f",
+        "Flags": 0,
+        "Name": "scaffolding_tube_a (7)",
+        "Position": "-72.00003,192,192",
+        "Rotation": "0.0000002086163,0.7071067,0.7071067,0.00000005960464",
+        "Scale": "0.875,1.5,1.5",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "NetworkInterpolation": true,
+        "Components": [
+          {
+            "__type": "Sandbox.Prop",
+            "__guid": "53aff7e5-9e5d-4536-ac75-e01caa8879ad",
+            "BodyGroups": 18446744073709551615,
+            "Health": 0,
+            "IsStatic": true,
+            "Model": "models/scaffolding/scaffolding_tube_a.vmdl",
+            "Tint": "1,1,1,1"
+          }
+        ]
+      },
+      {
+        "__guid": "1533b416-e4bc-43d5-9ae9-823c6c3af390",
+        "Flags": 0,
+        "Name": "scaffolding_connector_a (3)",
+        "Position": "-180,192,192",
+        "Rotation": "0.0000002682209,1,0.00000000000002842171,-0.0000000948304",
+        "Scale": "1.5,1.5,1.5",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "NetworkInterpolation": true,
+        "Components": [
+          {
+            "__type": "Sandbox.Prop",
+            "__guid": "3b9c4416-5d31-4e18-ad1d-928a20575586",
+            "BodyGroups": 18446744073709551615,
+            "Health": 0,
+            "IsStatic": true,
+            "Model": "models/scaffolding/scaffolding_connector_a.vmdl",
+            "Tint": "1,1,1,1"
+          }
+        ]
+      },
+      {
+        "__guid": "d28ab3be-b660-4eef-a476-8d4c42cf9e28",
+        "Flags": 0,
+        "Name": "scaffolding_ringlock_a",
+        "Position": "191.9999,-191.9999,-0.0001831055",
+        "Rotation": "0.7071066,-0.0000001053671,0.7071068,0.0000001053671",
+        "Scale": "1.5,1.5,1.5",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "NetworkInterpolation": true,
+        "Components": [
+          {
+            "__type": "Sandbox.Prop",
+            "__guid": "6629ff6d-d3f8-4e35-8541-87ea1a6f1c46",
+            "BodyGroups": 18446744073709551615,
+            "Health": 0,
+            "IsStatic": false,
+            "Model": "models/scaffolding/scaffolding_ringlock_a.vmdl",
+            "Tint": "1,1,1,1"
+          }
+        ]
+      },
+      {
+        "__guid": "f11dbd76-8279-40c9-9584-b94fb84f7955",
+        "Flags": 0,
+        "Name": "scaffolding_ringlock_a (3)",
+        "Position": "192,-0.00001525879,-0.0001831055",
+        "Rotation": "0.7071066,-0.0000001053671,0.7071068,0.0000001053671",
+        "Scale": "1.5,1.5,1.5",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "NetworkInterpolation": true,
+        "Components": [
+          {
+            "__type": "Sandbox.Prop",
+            "__guid": "f8793fb7-d31f-4db7-81b3-0372e633ff07",
+            "BodyGroups": 18446744073709551615,
+            "Health": 0,
+            "IsStatic": false,
+            "Model": "models/scaffolding/scaffolding_ringlock_a.vmdl",
+            "Tint": "1,1,1,1"
+          }
+        ]
+      },
+      {
+        "__guid": "6eaa30ee-5a75-487a-a187-b664cd2a1430",
+        "Flags": 0,
+        "Name": "scaffolding_ringlock_a (1)",
+        "Position": "192,0.00001525879,191.9998",
+        "Rotation": "0.5,0.4999999,0.5,0.4999999",
+        "Scale": "1.5,1.5,1.5",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "NetworkInterpolation": true,
+        "Components": [
+          {
+            "__type": "Sandbox.Prop",
+            "__guid": "fd96b9cd-0cf0-41ed-9901-e860b29c193f",
+            "BodyGroups": 18446744073709551615,
+            "Health": 0,
+            "IsStatic": false,
+            "Model": "models/scaffolding/scaffolding_ringlock_a.vmdl",
+            "Tint": "1,1,1,1"
+          }
+        ]
+      },
+      {
+        "__guid": "731a5090-eec5-4d53-8306-d334a9eb22a2",
+        "Flags": 0,
+        "Name": "scaffolding_tube_a (7)",
+        "Position": "192,0.00001525879,-72.00018",
+        "Rotation": "0.0000002245764,0.7071068,0.00000004364448,0.7071066",
+        "Scale": "0.875,1.5,1.5",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "NetworkInterpolation": true,
+        "Components": [
+          {
+            "__type": "Sandbox.Prop",
+            "__guid": "9c9536e2-7386-40ab-8342-9f834ec79859",
+            "BodyGroups": 18446744073709551615,
+            "Health": 0,
+            "IsStatic": true,
+            "Model": "models/scaffolding/scaffolding_tube_a.vmdl",
+            "Tint": "1,1,1,1"
+          }
+        ]
+      },
+      {
+        "__guid": "77d56abd-d564-4689-b660-b49b8ad65f62",
+        "Flags": 0,
+        "Name": "scaffolding_tube_a (8)",
+        "Position": "192,0.00001525879,55.99982",
+        "Rotation": "0.0000002245764,0.7071068,0.00000004364448,0.7071066",
+        "Scale": "1,1.5,1.5",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "NetworkInterpolation": true,
+        "Components": [
+          {
+            "__type": "Sandbox.Prop",
+            "__guid": "9b2451c3-923b-4d3f-91c3-dc2edc292196",
+            "BodyGroups": 18446744073709551615,
+            "Health": 0,
+            "IsStatic": true,
+            "Model": "models/scaffolding/scaffolding_tube_a.vmdl",
+            "Tint": "1,1,1,1"
+          }
+        ]
+      },
+      {
+        "__guid": "c5d7208f-0690-4825-91d6-296e799bfcb6",
+        "Flags": 0,
+        "Name": "scaffolding_tube_a (9)",
+        "Position": "192,-0.00001525879,183.9998",
+        "Rotation": "0.0000002245764,0.7071068,0.00000004364448,0.7071066",
+        "Scale": "1,1.5,1.5",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "NetworkInterpolation": true,
+        "Components": [
+          {
+            "__type": "Sandbox.Prop",
+            "__guid": "3879ef4f-e509-4653-926c-59e18a17764f",
+            "BodyGroups": 18446744073709551615,
+            "Health": 0,
+            "IsStatic": true,
+            "Model": "models/scaffolding/scaffolding_tube_a.vmdl",
+            "Tint": "1,1,1,1"
+          }
+        ]
+      },
+      {
+        "__guid": "e7e3e9bb-04b6-40d9-abf6-7c90c49af969",
+        "Flags": 0,
+        "Name": "scaffolding_connector_a (4)",
+        "Position": "192,-0.00001525879,179.9998",
+        "Rotation": "0.4999999,0.4999999,0.5000001,-0.4999999",
+        "Scale": "1.5,1.5,1.5",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "NetworkInterpolation": true,
+        "Components": [
+          {
+            "__type": "Sandbox.Prop",
+            "__guid": "894921a1-3ee7-4929-8520-6191d38b629a",
+            "BodyGroups": 18446744073709551615,
+            "Health": 0,
+            "IsStatic": true,
+            "Model": "models/scaffolding/scaffolding_connector_a.vmdl",
+            "Tint": "1,1,1,1"
+          }
+        ]
+      },
+      {
+        "__guid": "81594279-40eb-43c6-a6b1-22dab52c0434",
+        "Flags": 0,
+        "Name": "scaffolding_connector_a (3)",
+        "Position": "192,0.00004577637,-180.0002",
+        "Rotation": "0.5000001,0.5000001,-0.4999999,0.4999998",
+        "Scale": "1.5,1.5,1.5",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "NetworkInterpolation": true,
+        "Components": [
+          {
+            "__type": "Sandbox.Prop",
+            "__guid": "aba1d8ff-6b03-49cd-bc2e-3bc4508da5b0",
+            "BodyGroups": 18446744073709551615,
+            "Health": 0,
+            "IsStatic": true,
+            "Model": "models/scaffolding/scaffolding_connector_a.vmdl",
+            "Tint": "1,1,1,1"
+          }
+        ]
+      },
+      {
+        "__guid": "0fd4ba82-6179-49e3-9412-072d8098fe6d",
+        "Flags": 0,
+        "Name": "scaffolding_connector_a (4)",
+        "Position": "192,12.00002,-0.0001831055",
+        "Rotation": "0,0,0.7071069,-0.7071065",
+        "Scale": "1.5,1.5,1.5",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "NetworkInterpolation": true,
+        "Components": [
+          {
+            "__type": "Sandbox.Prop",
+            "__guid": "ad371585-c1f4-4440-835b-d0ca7190d6df",
+            "BodyGroups": 18446744073709551615,
+            "Health": 0,
+            "IsStatic": true,
+            "Model": "models/scaffolding/scaffolding_connector_a.vmdl",
+            "Tint": "1,1,1,1"
+          }
+        ]
+      },
+      {
+        "__guid": "2c2739b9-5c92-4ddf-89ed-c2f854b9cf7b",
+        "Flags": 0,
+        "Name": "scaffolding_tube_a (9)",
+        "Position": "192,8.000015,-0.0001831055",
+        "Rotation": "0.5,0.4999999,0.5,0.4999999",
+        "Scale": "1,1.5,1.5",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "NetworkInterpolation": true,
+        "Components": [
+          {
+            "__type": "Sandbox.Prop",
+            "__guid": "d1824f81-d544-4fcc-b396-01669ffe45d0",
+            "BodyGroups": 18446744073709551615,
+            "Health": 0,
+            "IsStatic": true,
+            "Model": "models/scaffolding/scaffolding_tube_a.vmdl",
+            "Tint": "1,1,1,1"
+          }
+        ]
+      },
+      {
+        "__guid": "625a8d30-1fc9-4aa8-8dc6-37290fbc97dc",
+        "Flags": 0,
+        "Name": "scaffolding_tube_a (8)",
+        "Position": "192,135.9999,-0.0001831055",
+        "Rotation": "0.5,0.4999999,0.5,0.4999999",
+        "Scale": "0.35,1.5,1.5",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "NetworkInterpolation": true,
+        "Components": [
+          {
+            "__type": "Sandbox.Prop",
+            "__guid": "f42348f8-3d7e-4b9a-8591-437ba4a4c608",
+            "BodyGroups": 18446744073709551615,
+            "Health": 0,
+            "IsStatic": true,
+            "Model": "models/scaffolding/scaffolding_tube_a.vmdl",
+            "Tint": "1,1,1,1"
+          }
+        ]
+      },
+      {
+        "__guid": "abb2242b-ce44-4add-a9f0-3b23335bb22c",
+        "Flags": 0,
+        "Name": "scaffolding_connector_a (3)",
+        "Position": "192,179.9999,-0.0001831055",
+        "Rotation": "0.7071069,0.7071067,0.00000006705523,-0.00000006705522",
+        "Scale": "1.5,1.5,1.5",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "NetworkInterpolation": true,
+        "Components": [
+          {
+            "__type": "Sandbox.Prop",
+            "__guid": "aa7b3329-7b9a-4f74-8fa1-967f04ec1308",
+            "BodyGroups": 18446744073709551615,
+            "Health": 0,
+            "IsStatic": true,
+            "Model": "models/scaffolding/scaffolding_connector_a.vmdl",
+            "Tint": "1,1,1,1"
+          }
+        ]
+      },
+      {
+        "__guid": "3a3bddb6-29aa-47df-8acb-b9f17c150cfa",
+        "Flags": 0,
+        "Name": "scaffolding_connector_a (4)",
+        "Position": "191.9999,-179.9999,-0.0001831055",
+        "Rotation": "0,0,0.7071069,-0.7071065",
+        "Scale": "1.5,1.5,1.5",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "NetworkInterpolation": true,
+        "Components": [
+          {
+            "__type": "Sandbox.Prop",
+            "__guid": "78b2b156-7e0d-4f30-9661-7da91cee49cd",
+            "BodyGroups": 18446744073709551615,
+            "Health": 0,
+            "IsStatic": true,
+            "Model": "models/scaffolding/scaffolding_connector_a.vmdl",
+            "Tint": "1,1,1,1"
+          }
+        ]
+      },
+      {
+        "__guid": "79076f5d-2116-40e8-a823-94061e679954",
+        "Flags": 0,
+        "Name": "scaffolding_tube_a (9)",
+        "Position": "191.9999,-183.9999,-0.0001831055",
+        "Rotation": "0.5,0.4999999,0.5,0.4999999",
+        "Scale": "1,1.5,1.5",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "NetworkInterpolation": true,
+        "Components": [
+          {
+            "__type": "Sandbox.Prop",
+            "__guid": "d8a3c9c3-a1d8-4469-8390-abc92588713b",
+            "BodyGroups": 18446744073709551615,
+            "Health": 0,
+            "IsStatic": true,
+            "Model": "models/scaffolding/scaffolding_tube_a.vmdl",
+            "Tint": "1,1,1,1"
+          }
+        ]
+      },
+      {
+        "__guid": "d02e36cc-d7f8-4661-8801-76f3310f8e62",
+        "Flags": 0,
+        "Name": "scaffolding_tube_a (8)",
+        "Position": "192,-55.99998,-0.0001831055",
+        "Rotation": "0.5,0.4999999,0.5,0.4999999",
+        "Scale": "0.35,1.5,1.5",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "NetworkInterpolation": true,
+        "Components": [
+          {
+            "__type": "Sandbox.Prop",
+            "__guid": "fcffc6a1-8a3e-48dc-9600-decfc457366f",
+            "BodyGroups": 18446744073709551615,
+            "Health": 0,
+            "IsStatic": true,
+            "Model": "models/scaffolding/scaffolding_tube_a.vmdl",
+            "Tint": "1,1,1,1"
+          }
+        ]
+      },
+      {
+        "__guid": "55690293-17e3-456d-90bc-52e850dce613",
+        "Flags": 0,
+        "Name": "scaffolding_connector_a (3)",
+        "Position": "192,-12.00002,-0.0001831055",
+        "Rotation": "0.7071069,0.7071067,0.00000006705523,-0.00000006705522",
+        "Scale": "1.5,1.5,1.5",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "NetworkInterpolation": true,
+        "Components": [
+          {
+            "__type": "Sandbox.Prop",
+            "__guid": "ffb45d58-b0ae-4f0e-9d01-f2920f8e86db",
+            "BodyGroups": 18446744073709551615,
+            "Health": 0,
+            "IsStatic": true,
+            "Model": "models/scaffolding/scaffolding_connector_a.vmdl",
+            "Tint": "1,1,1,1"
+          }
+        ]
+      },
+      {
+        "__guid": "b9663472-4a4d-467c-bd8f-c5b40a91a5ee",
+        "Flags": 0,
+        "Name": "scaffolding_tube_a (3)",
+        "Position": "191.9999,-191.9999,-192",
+        "Rotation": "0.7071066,-0.0000001053671,0.7071068,0.0000001053671",
+        "Scale": "1,1.5,1.5",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "NetworkInterpolation": true,
+        "Components": [
+          {
+            "__type": "Sandbox.Prop",
+            "__guid": "2b5bc0f5-b8dc-4316-828d-d3a61da2eb30",
+            "BodyGroups": 18446744073709551615,
+            "Health": 0,
+            "IsStatic": true,
+            "Model": "models/scaffolding/scaffolding_tube_a.vmdl",
+            "Tint": "1,1,1,1"
+          }
+        ]
+      },
+      {
+        "__guid": "8ac2507c-c02f-4ed3-a845-bd9b6910e5a9",
+        "Flags": 0,
+        "Name": "scaffolding_tube_a (1)",
+        "Position": "191.9999,-191.9999,-64",
+        "Rotation": "0.7071066,-0.0000001053671,0.7071068,0.0000001053671",
+        "Scale": "1,1.5,1.5",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "NetworkInterpolation": true,
+        "Components": [
+          {
+            "__type": "Sandbox.Prop",
+            "__guid": "87ce5511-ef77-428f-be48-2d204c97524b",
+            "BodyGroups": 18446744073709551615,
+            "Health": 0,
+            "IsStatic": true,
+            "Model": "models/scaffolding/scaffolding_tube_a.vmdl",
+            "Tint": "1,1,1,1"
+          }
+        ]
+      },
+      {
+        "__guid": "8403a575-ea59-47b3-8354-cb31508b47c1",
+        "Flags": 0,
+        "Name": "scaffolding_tube_a (2)",
+        "Position": "191.9999,-191.9999,64",
+        "Rotation": "0.7071066,-0.0000001053671,0.7071068,0.0000001053671",
+        "Scale": "1,1.5,1.5",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "NetworkInterpolation": true,
+        "Components": [
+          {
+            "__type": "Sandbox.Prop",
+            "__guid": "c3fc9296-ff9b-46e0-9f44-5d7051422c24",
+            "BodyGroups": 18446744073709551615,
+            "Health": 0,
+            "IsStatic": true,
+            "Model": "models/scaffolding/scaffolding_tube_a.vmdl",
+            "Tint": "1,1,1,1"
+          }
+        ]
+      },
+      {
+        "__guid": "b6399474-071a-4cd0-8161-465625dd9d12",
+        "Flags": 0,
+        "Name": "scaffolding_ringlock_a (2)",
+        "Position": "191.9999,-191.9999,192",
+        "Rotation": "0.7071066,-0.0000001053671,0.7071068,0.0000001053671",
+        "Scale": "1.5,1.5,1.5",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "NetworkInterpolation": true,
+        "Components": [
+          {
+            "__type": "Sandbox.Prop",
+            "__guid": "ddd017dc-bb46-4ca6-a0b7-d8e2084534a4",
+            "BodyGroups": 18446744073709551615,
+            "Health": 0,
+            "IsStatic": true,
+            "Model": "models/scaffolding/scaffolding_ringlock_a.vmdl",
+            "Tint": "1,1,1,1"
+          }
+        ]
+      },
+      {
+        "__guid": "57f53454-e9e8-405f-a927-56ce2439c7a9",
+        "Flags": 0,
+        "Name": "scaffolding_connector_a (4)",
+        "Position": "191.9999,-179.9999,192",
+        "Rotation": "0,0,0.7071069,-0.7071065",
+        "Scale": "1.5,1.5,1.5",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "NetworkInterpolation": true,
+        "Components": [
+          {
+            "__type": "Sandbox.Prop",
+            "__guid": "0084012a-37bb-4ce1-ac3d-b127536b6b7a",
+            "BodyGroups": 18446744073709551615,
+            "Health": 0,
+            "IsStatic": true,
+            "Model": "models/scaffolding/scaffolding_connector_a.vmdl",
+            "Tint": "1,1,1,1"
+          }
+        ]
+      },
+      {
+        "__guid": "bcfb16f5-4825-4605-bb0a-add5628cbcfd",
+        "Flags": 0,
+        "Name": "scaffolding_tube_a (9)",
+        "Position": "191.9999,-183.9999,192",
+        "Rotation": "0.5,0.4999999,0.5,0.4999999",
+        "Scale": "1,1.5,1.5",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "NetworkInterpolation": true,
+        "Components": [
+          {
+            "__type": "Sandbox.Prop",
+            "__guid": "88b0c3ab-1df9-47fe-a918-223ce2906fe0",
+            "BodyGroups": 18446744073709551615,
+            "Health": 0,
+            "IsStatic": true,
+            "Model": "models/scaffolding/scaffolding_tube_a.vmdl",
+            "Tint": "1,1,1,1"
+          }
+        ]
+      },
+      {
+        "__guid": "0a65cb5c-b525-485b-af41-548b67095778",
+        "Flags": 0,
+        "Name": "scaffolding_tube_a (8)",
+        "Position": "192,-55.99995,192",
+        "Rotation": "0.5,0.4999999,0.5,0.4999999",
+        "Scale": "1,1.5,1.5",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "NetworkInterpolation": true,
+        "Components": [
+          {
+            "__type": "Sandbox.Prop",
+            "__guid": "b852a7d3-c561-4fdd-a943-f0bf8afad040",
+            "BodyGroups": 18446744073709551615,
+            "Health": 0,
+            "IsStatic": true,
+            "Model": "models/scaffolding/scaffolding_tube_a.vmdl",
+            "Tint": "1,1,1,1"
+          }
+        ]
+      },
+      {
+        "__guid": "6029e16a-f9d1-4e69-941d-750f46d0e1b1",
+        "Flags": 0,
+        "Name": "scaffolding_tube_a (7)",
+        "Position": "192,71.99998,192",
+        "Rotation": "0.5,0.4999999,0.5,0.4999999",
+        "Scale": "0.875,1.5,1.5",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "NetworkInterpolation": true,
+        "Components": [
+          {
+            "__type": "Sandbox.Prop",
+            "__guid": "dfeb525a-0617-4bd9-a6b2-1ce0f881cffa",
+            "BodyGroups": 18446744073709551615,
+            "Health": 0,
+            "IsStatic": true,
+            "Model": "models/scaffolding/scaffolding_tube_a.vmdl",
+            "Tint": "1,1,1,1"
+          }
+        ]
+      },
+      {
+        "__guid": "1557d711-0fa6-4c1a-814c-ea340fc3af2a",
+        "Flags": 0,
+        "Name": "scaffolding_connector_a (3)",
+        "Position": "192,179.9999,192",
+        "Rotation": "0.7071069,0.7071067,0.00000006705523,-0.00000006705522",
+        "Scale": "1.5,1.5,1.5",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "NetworkInterpolation": true,
+        "Components": [
+          {
+            "__type": "Sandbox.Prop",
+            "__guid": "c757c7ed-ccca-4061-b9b7-739937b8b959",
+            "BodyGroups": 18446744073709551615,
+            "Health": 0,
+            "IsStatic": true,
+            "Model": "models/scaffolding/scaffolding_connector_a.vmdl",
+            "Tint": "1,1,1,1"
+          }
+        ]
+      },
+      {
+        "__guid": "774b6daa-f7b9-497c-9eee-eeeb01a861fc",
+        "Flags": 0,
+        "Name": "scaffolding_ringlock_a",
+        "Position": "-192,-191.9999,-0.0001831055",
+        "Rotation": "0.4999999,-0.5,0.5,0.5000001",
+        "Scale": "1.5,1.5,1.5",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "NetworkInterpolation": true,
+        "Components": [
+          {
+            "__type": "Sandbox.Prop",
+            "__guid": "843bc72c-f674-4777-91ee-f68ae57239dc",
+            "BodyGroups": 18446744073709551615,
+            "Health": 0,
+            "IsStatic": false,
+            "Model": "models/scaffolding/scaffolding_ringlock_a.vmdl",
+            "Tint": "1,1,1,1"
+          }
+        ]
+      },
+      {
+        "__guid": "1f017351-52c2-4a41-a985-bc22633841de",
+        "Flags": 0,
+        "Name": "scaffolding_ringlock_a (3)",
+        "Position": "-0.00003051758,-192,-0.0001831055",
+        "Rotation": "0.4999999,-0.5,0.5,0.5000001",
+        "Scale": "1.5,1.5,1.5",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "NetworkInterpolation": true,
+        "Components": [
+          {
+            "__type": "Sandbox.Prop",
+            "__guid": "959cd26f-3253-42cf-bfa9-2850c87898bb",
+            "BodyGroups": 18446744073709551615,
+            "Health": 0,
+            "IsStatic": false,
+            "Model": "models/scaffolding/scaffolding_ringlock_a.vmdl",
+            "Tint": "1,1,1,1"
+          }
+        ]
+      },
+      {
+        "__guid": "f04722c7-f926-43e9-a6b9-a4f795e60043",
+        "Flags": 0,
+        "Name": "scaffolding_ringlock_a (1)",
+        "Position": "0.00003051758,-192,191.9998",
+        "Rotation": "0.7071068,-0.00000005960464,0.00000008940697,0.7071068",
+        "Scale": "1.5,1.5,1.5",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "NetworkInterpolation": true,
+        "Components": [
+          {
+            "__type": "Sandbox.Prop",
+            "__guid": "80eda8e4-cdba-486f-810e-5491c33ece6f",
+            "BodyGroups": 18446744073709551615,
+            "Health": 0,
+            "IsStatic": false,
+            "Model": "models/scaffolding/scaffolding_ringlock_a.vmdl",
+            "Tint": "1,1,1,1"
+          }
+        ]
+      },
+      {
+        "__guid": "f559a334-348b-4f94-8356-def876a34b34",
+        "Flags": 0,
+        "Name": "scaffolding_tube_a (7)",
+        "Position": "0.00003051758,-192,-72.00018",
+        "Rotation": "0.5000001,0.4999999,-0.4999999,0.5",
+        "Scale": "0.875,1.5,1.5",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "NetworkInterpolation": true,
+        "Components": [
+          {
+            "__type": "Sandbox.Prop",
+            "__guid": "dd823db0-b8c6-4535-b161-58e5c2f67169",
+            "BodyGroups": 18446744073709551615,
+            "Health": 0,
+            "IsStatic": true,
+            "Model": "models/scaffolding/scaffolding_tube_a.vmdl",
+            "Tint": "1,1,1,1"
+          }
+        ]
+      },
+      {
+        "__guid": "688d32c2-1aa8-46c4-adcf-541eb174b242",
+        "Flags": 0,
+        "Name": "scaffolding_tube_a (8)",
+        "Position": "-0.00003051758,-192,55.99982",
+        "Rotation": "0.5000001,0.4999999,-0.4999999,0.5",
+        "Scale": "1,1.5,1.5",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "NetworkInterpolation": true,
+        "Components": [
+          {
+            "__type": "Sandbox.Prop",
+            "__guid": "a2257cb4-5595-4c12-ae5b-d5832b6d7c25",
+            "BodyGroups": 18446744073709551615,
+            "Health": 0,
+            "IsStatic": true,
+            "Model": "models/scaffolding/scaffolding_tube_a.vmdl",
+            "Tint": "1,1,1,1"
+          }
+        ]
+      },
+      {
+        "__guid": "c39b3413-0491-4383-9395-b0d0a76c3ea0",
+        "Flags": 0,
+        "Name": "scaffolding_tube_a (9)",
+        "Position": "-0.00003051758,-192,183.9998",
+        "Rotation": "0.5000001,0.4999999,-0.4999999,0.5",
+        "Scale": "1,1.5,1.5",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "NetworkInterpolation": true,
+        "Components": [
+          {
+            "__type": "Sandbox.Prop",
+            "__guid": "eb19df6a-1a19-4e89-b480-6ee176e4028a",
+            "BodyGroups": 18446744073709551615,
+            "Health": 0,
+            "IsStatic": true,
+            "Model": "models/scaffolding/scaffolding_tube_a.vmdl",
+            "Tint": "1,1,1,1"
+          }
+        ]
+      },
+      {
+        "__guid": "97607f73-7c5e-48ee-ab8c-c9a715a72e7a",
+        "Flags": 0,
+        "Name": "scaffolding_connector_a (4)",
+        "Position": "-0.00003051758,-192,179.9998",
+        "Rotation": "0.7071067,0,0.7071068,0.0000001490116",
+        "Scale": "1.5,1.5,1.5",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "NetworkInterpolation": true,
+        "Components": [
+          {
+            "__type": "Sandbox.Prop",
+            "__guid": "90fb69f9-a7d8-4310-aba2-0ed77e643451",
+            "BodyGroups": 18446744073709551615,
+            "Health": 0,
+            "IsStatic": true,
+            "Model": "models/scaffolding/scaffolding_connector_a.vmdl",
+            "Tint": "1,1,1,1"
+          }
+        ]
+      },
+      {
+        "__guid": "a78c71e5-4813-4a4c-9394-a3c4b72766d9",
+        "Flags": 0,
+        "Name": "scaffolding_connector_a (3)",
+        "Position": "0.00003051758,-192,-180.0002",
+        "Rotation": "0.7071069,-0.00000002980232,-0.7071066,-0.00000005960464",
+        "Scale": "1.5,1.5,1.5",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "NetworkInterpolation": true,
+        "Components": [
+          {
+            "__type": "Sandbox.Prop",
+            "__guid": "c8bd92e5-cf62-46d6-926a-58d6a3fdd45e",
+            "BodyGroups": 18446744073709551615,
+            "Health": 0,
+            "IsStatic": true,
+            "Model": "models/scaffolding/scaffolding_connector_a.vmdl",
+            "Tint": "1,1,1,1"
+          }
+        ]
+      },
+      {
+        "__guid": "14f90965-5eb2-4c0e-83d0-400707398d7f",
+        "Flags": 0,
+        "Name": "scaffolding_connector_a (4)",
+        "Position": "11.99997,-192,-0.0001831055",
+        "Rotation": "0,0,0.9999999,0.0000001490116",
+        "Scale": "1.5,1.5,1.5",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "NetworkInterpolation": true,
+        "Components": [
+          {
+            "__type": "Sandbox.Prop",
+            "__guid": "7ce9fd11-8ceb-4d03-81b8-8a0f481990cb",
+            "BodyGroups": 18446744073709551615,
+            "Health": 0,
+            "IsStatic": true,
+            "Model": "models/scaffolding/scaffolding_connector_a.vmdl",
+            "Tint": "1,1,1,1"
+          }
+        ]
+      },
+      {
+        "__guid": "5048bd01-aa2e-4d4e-9bf8-a593764169a2",
+        "Flags": 0,
+        "Name": "scaffolding_tube_a (9)",
+        "Position": "8.000031,-192,-0.0001831055",
+        "Rotation": "0.7071068,-0.00000005960464,0.00000008940697,0.7071068",
+        "Scale": "1,1.5,1.5",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "NetworkInterpolation": true,
+        "Components": [
+          {
+            "__type": "Sandbox.Prop",
+            "__guid": "363cab3b-fa5f-4133-9609-c6a8fc93bbc3",
+            "BodyGroups": 18446744073709551615,
+            "Health": 0,
+            "IsStatic": true,
+            "Model": "models/scaffolding/scaffolding_tube_a.vmdl",
+            "Tint": "1,1,1,1"
+          }
+        ]
+      },
+      {
+        "__guid": "eaa518f3-564a-4366-9ba9-232c2a888c78",
+        "Flags": 0,
+        "Name": "scaffolding_tube_a (8)",
+        "Position": "136,-192,-0.0001831055",
+        "Rotation": "0.7071068,-0.00000005960464,0.00000008940697,0.7071068",
+        "Scale": "0.35,1.5,1.5",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "NetworkInterpolation": true,
+        "Components": [
+          {
+            "__type": "Sandbox.Prop",
+            "__guid": "d2e30780-85d1-4126-b5a5-3d42247ecabe",
+            "BodyGroups": 18446744073709551615,
+            "Health": 0,
+            "IsStatic": true,
+            "Model": "models/scaffolding/scaffolding_tube_a.vmdl",
+            "Tint": "1,1,1,1"
+          }
+        ]
+      },
+      {
+        "__guid": "a0fb2930-8b36-460f-90af-ddcb332b85aa",
+        "Flags": 0,
+        "Name": "scaffolding_connector_a (3)",
+        "Position": "180,-192.0001,-0.0001831055",
+        "Rotation": "1,-0.00000005960464,0.00000009483042,0.000000000000007105427",
+        "Scale": "1.5,1.5,1.5",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "NetworkInterpolation": true,
+        "Components": [
+          {
+            "__type": "Sandbox.Prop",
+            "__guid": "3670292c-c502-4561-a148-0fbcdf2f6335",
+            "BodyGroups": 18446744073709551615,
+            "Health": 0,
+            "IsStatic": true,
+            "Model": "models/scaffolding/scaffolding_connector_a.vmdl",
+            "Tint": "1,1,1,1"
+          }
+        ]
+      },
+      {
+        "__guid": "820e1e46-af0f-4de8-95a3-55a86c8e2f6a",
+        "Flags": 0,
+        "Name": "scaffolding_connector_a (4)",
+        "Position": "-180,-191.9999,-0.0001831055",
+        "Rotation": "0,0,0.9999999,0.0000001490116",
+        "Scale": "1.5,1.5,1.5",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "NetworkInterpolation": true,
+        "Components": [
+          {
+            "__type": "Sandbox.Prop",
+            "__guid": "fc75cece-531c-4b0e-92d0-79112f7d540e",
+            "BodyGroups": 18446744073709551615,
+            "Health": 0,
+            "IsStatic": true,
+            "Model": "models/scaffolding/scaffolding_connector_a.vmdl",
+            "Tint": "1,1,1,1"
+          }
+        ]
+      },
+      {
+        "__guid": "30ee59e2-055b-42aa-9e20-4a7887dbb793",
+        "Flags": 0,
+        "Name": "scaffolding_tube_a (9)",
+        "Position": "-184,-191.9999,-0.0001831055",
+        "Rotation": "0.7071068,-0.00000005960464,0.00000008940697,0.7071068",
+        "Scale": "1,1.5,1.5",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "NetworkInterpolation": true,
+        "Components": [
+          {
+            "__type": "Sandbox.Prop",
+            "__guid": "ac7baa8d-fb58-4de0-a076-70ca33533fd8",
+            "BodyGroups": 18446744073709551615,
+            "Health": 0,
+            "IsStatic": true,
+            "Model": "models/scaffolding/scaffolding_tube_a.vmdl",
+            "Tint": "1,1,1,1"
+          }
+        ]
+      },
+      {
+        "__guid": "a4893f05-8d5e-4356-ae83-b2079f34c591",
+        "Flags": 0,
+        "Name": "scaffolding_tube_a (8)",
+        "Position": "-56.00003,-192,-0.0001831055",
+        "Rotation": "0.7071068,-0.00000005960464,0.00000008940697,0.7071068",
+        "Scale": "0.35,1.5,1.5",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "NetworkInterpolation": true,
+        "Components": [
+          {
+            "__type": "Sandbox.Prop",
+            "__guid": "6b86b7af-4ef9-4821-b937-a8db143b3923",
+            "BodyGroups": 18446744073709551615,
+            "Health": 0,
+            "IsStatic": true,
+            "Model": "models/scaffolding/scaffolding_tube_a.vmdl",
+            "Tint": "1,1,1,1"
+          }
+        ]
+      },
+      {
+        "__guid": "22aec03a-09d3-4cde-a073-6ef70fbb06c3",
+        "Flags": 0,
+        "Name": "scaffolding_connector_a (3)",
+        "Position": "-12.00003,-192,-0.0001831055",
+        "Rotation": "1,-0.00000005960464,0.00000009483042,0.000000000000007105427",
+        "Scale": "1.5,1.5,1.5",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "NetworkInterpolation": true,
+        "Components": [
+          {
+            "__type": "Sandbox.Prop",
+            "__guid": "7af0fcd5-6d08-4b5d-b9a8-8b8e2176a2af",
+            "BodyGroups": 18446744073709551615,
+            "Health": 0,
+            "IsStatic": true,
+            "Model": "models/scaffolding/scaffolding_connector_a.vmdl",
+            "Tint": "1,1,1,1"
+          }
+        ]
+      },
+      {
+        "__guid": "85a8b0ac-f3ff-4bae-9911-8b8aff335726",
+        "Flags": 0,
+        "Name": "scaffolding_tube_a (3)",
+        "Position": "-192,-191.9999,-192",
+        "Rotation": "0.4999999,-0.5,0.5,0.5000001",
+        "Scale": "1,1.5,1.5",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "NetworkInterpolation": true,
+        "Components": [
+          {
+            "__type": "Sandbox.Prop",
+            "__guid": "6506852e-97df-401c-b0ec-962539ab4619",
+            "BodyGroups": 18446744073709551615,
+            "Health": 0,
+            "IsStatic": true,
+            "Model": "models/scaffolding/scaffolding_tube_a.vmdl",
+            "Tint": "1,1,1,1"
+          }
+        ]
+      },
+      {
+        "__guid": "dbb1ce94-847b-4a6a-aca2-b2b43d37613f",
+        "Flags": 0,
+        "Name": "scaffolding_tube_a (1)",
+        "Position": "-192,-191.9999,-64",
+        "Rotation": "0.4999999,-0.5,0.5,0.5000001",
+        "Scale": "1,1.5,1.5",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "NetworkInterpolation": true,
+        "Components": [
+          {
+            "__type": "Sandbox.Prop",
+            "__guid": "3429dcf1-3797-445a-a3e6-3bfc19b2c1ad",
+            "BodyGroups": 18446744073709551615,
+            "Health": 0,
+            "IsStatic": true,
+            "Model": "models/scaffolding/scaffolding_tube_a.vmdl",
+            "Tint": "1,1,1,1"
+          }
+        ]
+      },
+      {
+        "__guid": "f25e625a-f965-400e-b58c-77209704e7f4",
+        "Flags": 0,
+        "Name": "scaffolding_tube_a (2)",
+        "Position": "-192,-191.9999,64",
+        "Rotation": "0.4999999,-0.5,0.5,0.5000001",
+        "Scale": "1,1.5,1.5",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "NetworkInterpolation": true,
+        "Components": [
+          {
+            "__type": "Sandbox.Prop",
+            "__guid": "d6176618-55cb-4819-a1b0-85a927d9364e",
+            "BodyGroups": 18446744073709551615,
+            "Health": 0,
+            "IsStatic": true,
+            "Model": "models/scaffolding/scaffolding_tube_a.vmdl",
+            "Tint": "1,1,1,1"
+          }
+        ]
+      },
+      {
+        "__guid": "2a6a673c-ce5c-45f9-ae0b-ac190790bc1e",
+        "Flags": 0,
+        "Name": "scaffolding_ringlock_a (2)",
+        "Position": "-192,-191.9999,192",
+        "Rotation": "0.4999999,-0.5,0.5,0.5000001",
+        "Scale": "1.5,1.5,1.5",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "NetworkInterpolation": true,
+        "Components": [
+          {
+            "__type": "Sandbox.Prop",
+            "__guid": "e65f1149-34c2-4aa3-8455-606d8745540e",
+            "BodyGroups": 18446744073709551615,
+            "Health": 0,
+            "IsStatic": true,
+            "Model": "models/scaffolding/scaffolding_ringlock_a.vmdl",
+            "Tint": "1,1,1,1"
+          }
+        ]
+      },
+      {
+        "__guid": "26aa41a7-0d55-4048-b60e-fe93234309bc",
+        "Flags": 0,
+        "Name": "scaffolding_connector_a (4)",
+        "Position": "-180,-191.9999,192",
+        "Rotation": "0,0,0.9999999,0.0000001490116",
+        "Scale": "1.5,1.5,1.5",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "NetworkInterpolation": true,
+        "Components": [
+          {
+            "__type": "Sandbox.Prop",
+            "__guid": "d3502239-aa15-4e58-bd66-52fdb65ac269",
+            "BodyGroups": 18446744073709551615,
+            "Health": 0,
+            "IsStatic": true,
+            "Model": "models/scaffolding/scaffolding_connector_a.vmdl",
+            "Tint": "1,1,1,1"
+          }
+        ]
+      },
+      {
+        "__guid": "23166a00-ac0a-4fc0-bba2-ee98a89239e5",
+        "Flags": 0,
+        "Name": "scaffolding_tube_a (9)",
+        "Position": "-184,-191.9999,192",
+        "Rotation": "0.7071068,-0.00000005960464,0.00000008940697,0.7071068",
+        "Scale": "1,1.5,1.5",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "NetworkInterpolation": true,
+        "Components": [
+          {
+            "__type": "Sandbox.Prop",
+            "__guid": "ef5abd75-1f69-4309-a237-a2d06557abcd",
+            "BodyGroups": 18446744073709551615,
+            "Health": 0,
+            "IsStatic": true,
+            "Model": "models/scaffolding/scaffolding_tube_a.vmdl",
+            "Tint": "1,1,1,1"
+          }
+        ]
+      },
+      {
+        "__guid": "bf79f714-119a-47d0-9a8d-b983df08004f",
+        "Flags": 0,
+        "Name": "scaffolding_tube_a (8)",
+        "Position": "-55.99997,-192,192",
+        "Rotation": "0.7071068,-0.00000005960464,0.00000008940697,0.7071068",
+        "Scale": "1,1.5,1.5",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "NetworkInterpolation": true,
+        "Components": [
+          {
+            "__type": "Sandbox.Prop",
+            "__guid": "78ccffb8-7e8d-443d-a1a0-053098ab275e",
+            "BodyGroups": 18446744073709551615,
+            "Health": 0,
+            "IsStatic": true,
+            "Model": "models/scaffolding/scaffolding_tube_a.vmdl",
+            "Tint": "1,1,1,1"
+          }
+        ]
+      },
+      {
+        "__guid": "4abee766-f068-4464-8569-d40735cfe609",
+        "Flags": 0,
+        "Name": "scaffolding_tube_a (7)",
+        "Position": "71.99997,-192,192",
+        "Rotation": "0.7071068,-0.00000005960464,0.00000008940697,0.7071068",
+        "Scale": "0.875,1.5,1.5",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "NetworkInterpolation": true,
+        "Components": [
+          {
+            "__type": "Sandbox.Prop",
+            "__guid": "107a8928-23b9-444a-9d09-949cfa1ce84d",
+            "BodyGroups": 18446744073709551615,
+            "Health": 0,
+            "IsStatic": true,
+            "Model": "models/scaffolding/scaffolding_tube_a.vmdl",
+            "Tint": "1,1,1,1"
+          }
+        ]
+      },
+      {
+        "__guid": "90fd1e3c-b8b2-4277-b70a-4ae2849c6730",
+        "Flags": 0,
+        "Name": "scaffolding_connector_a (3)",
+        "Position": "180,-192.0001,192",
+        "Rotation": "1,-0.00000005960464,0.00000009483042,0.000000000000007105427",
+        "Scale": "1.5,1.5,1.5",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "NetworkInterpolation": true,
+        "Components": [
+          {
+            "__type": "Sandbox.Prop",
+            "__guid": "a6eca19e-1bcc-49e2-9634-d4de30a18a7a",
+            "BodyGroups": 18446744073709551615,
+            "Health": 0,
+            "IsStatic": true,
+            "Model": "models/scaffolding/scaffolding_connector_a.vmdl",
+            "Tint": "1,1,1,1"
+          }
+        ]
+      },
+      {
+        "__guid": "028fb17a-ceb5-44f8-901f-f8b8d8ea3b65",
+        "Flags": 0,
+        "Name": "scaffolding_ringlock_a",
+        "Position": "-192,192,-0.0001831055",
+        "Rotation": "0,-0.7071067,0,0.7071068",
+        "Scale": "1.5,1.5,1.5",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "NetworkInterpolation": true,
+        "Components": [
+          {
+            "__type": "Sandbox.Prop",
+            "__guid": "8459c7b5-9ecd-4ec6-95d3-186dc41d372e",
+            "BodyGroups": 18446744073709551615,
+            "Health": 0,
+            "IsStatic": false,
+            "Model": "models/scaffolding/scaffolding_ringlock_a.vmdl",
+            "Tint": "1,1,1,1"
+          }
+        ]
+      },
+      {
+        "__guid": "a91211d9-2346-4f59-8ef5-0b1ad5ca5593",
+        "Flags": 0,
+        "Name": "scaffolding_ringlock_a (3)",
+        "Position": "-192,-0.00001525879,-0.0001831055",
+        "Rotation": "0,-0.7071067,0,0.7071068",
+        "Scale": "1.5,1.5,1.5",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "NetworkInterpolation": true,
+        "Components": [
+          {
+            "__type": "Sandbox.Prop",
+            "__guid": "82d4af7e-9fed-41bb-913c-b22faf22d422",
+            "BodyGroups": 18446744073709551615,
+            "Health": 0,
+            "IsStatic": false,
+            "Model": "models/scaffolding/scaffolding_ringlock_a.vmdl",
+            "Tint": "1,1,1,1"
+          }
+        ]
+      },
+      {
+        "__guid": "c04c3b39-0d0e-47bd-b81a-ac81a870f4bd",
+        "Flags": 0,
+        "Name": "scaffolding_ringlock_a (1)",
+        "Position": "-192,-0.00004577637,191.9998",
+        "Rotation": "0.5,-0.5,-0.4999999,0.5000001",
+        "Scale": "1.5,1.5,1.5",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "NetworkInterpolation": true,
+        "Components": [
+          {
+            "__type": "Sandbox.Prop",
+            "__guid": "8c46b0c6-d71a-4b2d-bf1d-dbf679043312",
+            "BodyGroups": 18446744073709551615,
+            "Health": 0,
+            "IsStatic": false,
+            "Model": "models/scaffolding/scaffolding_ringlock_a.vmdl",
+            "Tint": "1,1,1,1"
+          }
+        ]
+      },
+      {
+        "__guid": "9ecf6d00-99d9-4ec3-9d25-df7e1a9d3b91",
+        "Flags": 0,
+        "Name": "scaffolding_tube_a (7)",
+        "Position": "-192,-0.00004577637,-72.00018",
+        "Rotation": "0.7071068,-0.0000001192093,-0.7071067,0.0000001490116",
+        "Scale": "0.875,1.5,1.5",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "NetworkInterpolation": true,
+        "Components": [
+          {
+            "__type": "Sandbox.Prop",
+            "__guid": "5ef29d82-8791-4800-8802-819cedf141ac",
+            "BodyGroups": 18446744073709551615,
+            "Health": 0,
+            "IsStatic": true,
+            "Model": "models/scaffolding/scaffolding_tube_a.vmdl",
+            "Tint": "1,1,1,1"
+          }
+        ]
+      },
+      {
+        "__guid": "d7ac1851-06ab-433f-b6fe-4bf9554621f0",
+        "Flags": 0,
+        "Name": "scaffolding_tube_a (8)",
+        "Position": "-192,-0.00004577637,55.99982",
+        "Rotation": "0.7071068,-0.0000001192093,-0.7071067,0.0000001490116",
+        "Scale": "1,1.5,1.5",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "NetworkInterpolation": true,
+        "Components": [
+          {
+            "__type": "Sandbox.Prop",
+            "__guid": "5a11fe3a-a326-4cd4-b18f-8454ea0f27cb",
+            "BodyGroups": 18446744073709551615,
+            "Health": 0,
+            "IsStatic": true,
+            "Model": "models/scaffolding/scaffolding_tube_a.vmdl",
+            "Tint": "1,1,1,1"
+          }
+        ]
+      },
+      {
+        "__guid": "b92b1045-c4b8-4d81-a320-0d0c95bd0726",
+        "Flags": 0,
+        "Name": "scaffolding_tube_a (9)",
+        "Position": "-192,-0.00001525879,183.9998",
+        "Rotation": "0.7071068,-0.0000001192093,-0.7071067,0.0000001490116",
+        "Scale": "1,1.5,1.5",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "NetworkInterpolation": true,
+        "Components": [
+          {
+            "__type": "Sandbox.Prop",
+            "__guid": "2a4440e3-ff05-474f-bfd2-129b7697f0e2",
+            "BodyGroups": 18446744073709551615,
+            "Health": 0,
+            "IsStatic": true,
+            "Model": "models/scaffolding/scaffolding_tube_a.vmdl",
+            "Tint": "1,1,1,1"
+          }
+        ]
+      },
+      {
+        "__guid": "659ee121-53fc-48f4-ac1f-40424e9cdf2a",
+        "Flags": 0,
+        "Name": "scaffolding_connector_a (4)",
+        "Position": "-192,-0.00001525879,179.9998",
+        "Rotation": "0.5,-0.4999999,0.5,0.5000001",
+        "Scale": "1.5,1.5,1.5",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "NetworkInterpolation": true,
+        "Components": [
+          {
+            "__type": "Sandbox.Prop",
+            "__guid": "83f9e91e-3851-4ae7-9995-276cf9118271",
+            "BodyGroups": 18446744073709551615,
+            "Health": 0,
+            "IsStatic": true,
+            "Model": "models/scaffolding/scaffolding_connector_a.vmdl",
+            "Tint": "1,1,1,1"
+          }
+        ]
+      },
+      {
+        "__guid": "5d899952-259f-4279-8ad9-5d9e6c3fc31a",
+        "Flags": 0,
+        "Name": "scaffolding_connector_a (3)",
+        "Position": "-192,-0.00007629395,-180.0002",
+        "Rotation": "0.5000002,-0.5000001,-0.4999999,-0.4999999",
+        "Scale": "1.5,1.5,1.5",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "NetworkInterpolation": true,
+        "Components": [
+          {
+            "__type": "Sandbox.Prop",
+            "__guid": "bdee7ef9-1c6b-46dd-9bf0-e6c8a47337f4",
+            "BodyGroups": 18446744073709551615,
+            "Health": 0,
+            "IsStatic": true,
+            "Model": "models/scaffolding/scaffolding_connector_a.vmdl",
+            "Tint": "1,1,1,1"
+          }
+        ]
+      },
+      {
+        "__guid": "996ff4ed-987d-4e7e-9cb3-ba4a038e8d3a",
+        "Flags": 0,
+        "Name": "scaffolding_connector_a (4)",
+        "Position": "-192,-12.00005,-0.0001831055",
+        "Rotation": "0,0,0.7071067,0.7071068",
+        "Scale": "1.5,1.5,1.5",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "NetworkInterpolation": true,
+        "Components": [
+          {
+            "__type": "Sandbox.Prop",
+            "__guid": "dc667f17-b2ca-4c3b-a131-beb5fef0b82a",
+            "BodyGroups": 18446744073709551615,
+            "Health": 0,
+            "IsStatic": true,
+            "Model": "models/scaffolding/scaffolding_connector_a.vmdl",
+            "Tint": "1,1,1,1"
+          }
+        ]
+      },
+      {
+        "__guid": "08cf2336-74c6-416d-97fa-ed1eec13e4c0",
+        "Flags": 0,
+        "Name": "scaffolding_tube_a (9)",
+        "Position": "-192,-8.000046,-0.0001831055",
+        "Rotation": "0.5,-0.5,-0.4999999,0.5000001",
+        "Scale": "1,1.5,1.5",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "NetworkInterpolation": true,
+        "Components": [
+          {
+            "__type": "Sandbox.Prop",
+            "__guid": "b81514d3-0870-4fb3-b28a-27c651c5c64b",
+            "BodyGroups": 18446744073709551615,
+            "Health": 0,
+            "IsStatic": true,
+            "Model": "models/scaffolding/scaffolding_tube_a.vmdl",
+            "Tint": "1,1,1,1"
+          }
+        ]
+      },
+      {
+        "__guid": "b19d0386-8a49-475c-b546-a12f356c8d63",
+        "Flags": 0,
+        "Name": "scaffolding_tube_a (8)",
+        "Position": "-192,-136.0001,-0.0001831055",
+        "Rotation": "0.5,-0.5,-0.4999999,0.5000001",
+        "Scale": "0.35,1.5,1.5",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "NetworkInterpolation": true,
+        "Components": [
+          {
+            "__type": "Sandbox.Prop",
+            "__guid": "1f74cfd8-359c-4ab5-9f52-14f6809c01c8",
+            "BodyGroups": 18446744073709551615,
+            "Health": 0,
+            "IsStatic": true,
+            "Model": "models/scaffolding/scaffolding_tube_a.vmdl",
+            "Tint": "1,1,1,1"
+          }
+        ]
+      },
+      {
+        "__guid": "4109fdd7-c608-4193-b096-607c5c8255b5",
+        "Flags": 0,
+        "Name": "scaffolding_connector_a (3)",
+        "Position": "-192,-180.0001,-0.0001831055",
+        "Rotation": "0.7071069,-0.7071068,0.00000006705523,0.00000006705523",
+        "Scale": "1.5,1.5,1.5",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "NetworkInterpolation": true,
+        "Components": [
+          {
+            "__type": "Sandbox.Prop",
+            "__guid": "051c7fd5-0605-4e47-890b-4953b1753fe7",
+            "BodyGroups": 18446744073709551615,
+            "Health": 0,
+            "IsStatic": true,
+            "Model": "models/scaffolding/scaffolding_connector_a.vmdl",
+            "Tint": "1,1,1,1"
+          }
+        ]
+      },
+      {
+        "__guid": "f226b5d7-7dbe-4fe2-8893-663ae3c23c37",
+        "Flags": 0,
+        "Name": "scaffolding_connector_a (4)",
+        "Position": "-192,180,-0.0001831055",
+        "Rotation": "0,0,0.7071067,0.7071068",
+        "Scale": "1.5,1.5,1.5",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "NetworkInterpolation": true,
+        "Components": [
+          {
+            "__type": "Sandbox.Prop",
+            "__guid": "85ccd874-5c62-411f-8eb9-0d706a265f53",
+            "BodyGroups": 18446744073709551615,
+            "Health": 0,
+            "IsStatic": true,
+            "Model": "models/scaffolding/scaffolding_connector_a.vmdl",
+            "Tint": "1,1,1,1"
+          }
+        ]
+      },
+      {
+        "__guid": "2502c425-e3d2-4bf7-be6a-3226a5b9752d",
+        "Flags": 0,
+        "Name": "scaffolding_tube_a (9)",
+        "Position": "-192,184,-0.0001831055",
+        "Rotation": "0.5,-0.5,-0.4999999,0.5000001",
+        "Scale": "1,1.5,1.5",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "NetworkInterpolation": true,
+        "Components": [
+          {
+            "__type": "Sandbox.Prop",
+            "__guid": "d07deee2-84ad-409a-8287-cad65162fdc9",
+            "BodyGroups": 18446744073709551615,
+            "Health": 0,
+            "IsStatic": true,
+            "Model": "models/scaffolding/scaffolding_tube_a.vmdl",
+            "Tint": "1,1,1,1"
+          }
+        ]
+      },
+      {
+        "__guid": "a084a6cc-3e4a-4259-952b-4f9131d4ea06",
+        "Flags": 0,
+        "Name": "scaffolding_tube_a (8)",
+        "Position": "-192,55.99998,-0.0001831055",
+        "Rotation": "0.5,-0.5,-0.4999999,0.5000001",
+        "Scale": "0.35,1.5,1.5",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "NetworkInterpolation": true,
+        "Components": [
+          {
+            "__type": "Sandbox.Prop",
+            "__guid": "1ce744db-2887-46f2-8635-3efbfb409f69",
+            "BodyGroups": 18446744073709551615,
+            "Health": 0,
+            "IsStatic": true,
+            "Model": "models/scaffolding/scaffolding_tube_a.vmdl",
+            "Tint": "1,1,1,1"
+          }
+        ]
+      },
+      {
+        "__guid": "b94bb571-f640-4c80-a144-2913bcc44035",
+        "Flags": 0,
+        "Name": "scaffolding_connector_a (3)",
+        "Position": "-192,11.99998,-0.0001831055",
+        "Rotation": "0.7071069,-0.7071068,0.00000006705523,0.00000006705523",
+        "Scale": "1.5,1.5,1.5",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "NetworkInterpolation": true,
+        "Components": [
+          {
+            "__type": "Sandbox.Prop",
+            "__guid": "b6497deb-ca90-4932-91db-7d8497ffb369",
+            "BodyGroups": 18446744073709551615,
+            "Health": 0,
+            "IsStatic": true,
+            "Model": "models/scaffolding/scaffolding_connector_a.vmdl",
+            "Tint": "1,1,1,1"
+          }
+        ]
+      },
+      {
+        "__guid": "1154f6b0-f36f-4475-bcda-e2f60909f11c",
+        "Flags": 0,
+        "Name": "scaffolding_tube_a (3)",
+        "Position": "-192,192,-192",
+        "Rotation": "0,-0.7071067,0,0.7071068",
+        "Scale": "1,1.5,1.5",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "NetworkInterpolation": true,
+        "Components": [
+          {
+            "__type": "Sandbox.Prop",
+            "__guid": "9e9fb240-8ad9-46b3-9f2b-41a94651e0a3",
+            "BodyGroups": 18446744073709551615,
+            "Health": 0,
+            "IsStatic": true,
+            "Model": "models/scaffolding/scaffolding_tube_a.vmdl",
+            "Tint": "1,1,1,1"
+          }
+        ]
+      },
+      {
+        "__guid": "6ac8c262-9710-4425-a699-fdcfe5df319c",
+        "Flags": 0,
+        "Name": "scaffolding_tube_a (1)",
+        "Position": "-192,192,-64",
+        "Rotation": "0,-0.7071067,0,0.7071068",
+        "Scale": "1,1.5,1.5",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "NetworkInterpolation": true,
+        "Components": [
+          {
+            "__type": "Sandbox.Prop",
+            "__guid": "2be6bb1f-43fc-4e38-9fd0-b970275226c2",
+            "BodyGroups": 18446744073709551615,
+            "Health": 0,
+            "IsStatic": true,
+            "Model": "models/scaffolding/scaffolding_tube_a.vmdl",
+            "Tint": "1,1,1,1"
+          }
+        ]
+      },
+      {
+        "__guid": "fb12039e-c37f-46ae-ad35-f104a3c85d44",
+        "Flags": 0,
+        "Name": "scaffolding_tube_a (2)",
+        "Position": "-192,192,64",
+        "Rotation": "0,-0.7071067,0,0.7071068",
+        "Scale": "1,1.5,1.5",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "NetworkInterpolation": true,
+        "Components": [
+          {
+            "__type": "Sandbox.Prop",
+            "__guid": "a35c12fb-df5c-43cc-911e-0f4aefe98619",
+            "BodyGroups": 18446744073709551615,
+            "Health": 0,
+            "IsStatic": true,
+            "Model": "models/scaffolding/scaffolding_tube_a.vmdl",
+            "Tint": "1,1,1,1"
+          }
+        ]
+      },
+      {
+        "__guid": "40f1b98a-d69c-4dbf-956d-108666fc72ee",
+        "Flags": 0,
+        "Name": "scaffolding_ringlock_a (2)",
+        "Position": "-192,192,192",
+        "Rotation": "0,-0.7071067,0,0.7071068",
+        "Scale": "1.5,1.5,1.5",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "NetworkInterpolation": true,
+        "Components": [
+          {
+            "__type": "Sandbox.Prop",
+            "__guid": "ca2e1d93-7522-4e6e-967d-c6dd54a44a82",
+            "BodyGroups": 18446744073709551615,
+            "Health": 0,
+            "IsStatic": true,
+            "Model": "models/scaffolding/scaffolding_ringlock_a.vmdl",
+            "Tint": "1,1,1,1"
+          }
+        ]
+      },
+      {
+        "__guid": "53afdfc5-37fa-43da-85ba-c958cb9b3cab",
+        "Flags": 0,
+        "Name": "scaffolding_connector_a (4)",
+        "Position": "-192,180,192",
+        "Rotation": "0,0,0.7071067,0.7071068",
+        "Scale": "1.5,1.5,1.5",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "NetworkInterpolation": true,
+        "Components": [
+          {
+            "__type": "Sandbox.Prop",
+            "__guid": "708316b2-259f-4ba6-8d94-40c5733335ed",
+            "BodyGroups": 18446744073709551615,
+            "Health": 0,
+            "IsStatic": true,
+            "Model": "models/scaffolding/scaffolding_connector_a.vmdl",
+            "Tint": "1,1,1,1"
+          }
+        ]
+      },
+      {
+        "__guid": "20212a21-04c7-4206-9fa4-d9b358f99bf0",
+        "Flags": 0,
+        "Name": "scaffolding_tube_a (9)",
+        "Position": "-192,184,192",
+        "Rotation": "0.5,-0.5,-0.4999999,0.5000001",
+        "Scale": "1,1.5,1.5",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "NetworkInterpolation": true,
+        "Components": [
+          {
+            "__type": "Sandbox.Prop",
+            "__guid": "8735b76b-0c4b-4c3e-9b82-956b0560f7ff",
+            "BodyGroups": 18446744073709551615,
+            "Health": 0,
+            "IsStatic": true,
+            "Model": "models/scaffolding/scaffolding_tube_a.vmdl",
+            "Tint": "1,1,1,1"
+          }
+        ]
+      },
+      {
+        "__guid": "e5aea00d-a0be-441d-8e9a-cc6f61577121",
+        "Flags": 0,
+        "Name": "scaffolding_tube_a (8)",
+        "Position": "-192,55.99995,192",
+        "Rotation": "0.5,-0.5,-0.4999999,0.5000001",
+        "Scale": "1,1.5,1.5",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "NetworkInterpolation": true,
+        "Components": [
+          {
+            "__type": "Sandbox.Prop",
+            "__guid": "b7b7af36-c8fb-467b-ab1d-ca86fb536a9b",
+            "BodyGroups": 18446744073709551615,
+            "Health": 0,
+            "IsStatic": true,
+            "Model": "models/scaffolding/scaffolding_tube_a.vmdl",
+            "Tint": "1,1,1,1"
+          }
+        ]
+      },
+      {
+        "__guid": "7118444b-6aaa-443e-a8cb-013dca8837a4",
+        "Flags": 0,
+        "Name": "scaffolding_tube_a (7)",
+        "Position": "-192,-72.00006,192",
+        "Rotation": "0.5,-0.5,-0.4999999,0.5000001",
+        "Scale": "0.875,1.5,1.5",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "NetworkInterpolation": true,
+        "Components": [
+          {
+            "__type": "Sandbox.Prop",
+            "__guid": "187290f4-b36c-4b3c-9b14-5d102d609cfd",
+            "BodyGroups": 18446744073709551615,
+            "Health": 0,
+            "IsStatic": true,
+            "Model": "models/scaffolding/scaffolding_tube_a.vmdl",
+            "Tint": "1,1,1,1"
+          }
+        ]
+      },
+      {
+        "__guid": "24bba055-dce6-421a-b940-7dbe7e1027fa",
+        "Flags": 0,
+        "Name": "scaffolding_connector_a (3)",
+        "Position": "-192,-180.0001,192",
+        "Rotation": "0.7071069,-0.7071068,0.00000006705523,0.00000006705523",
+        "Scale": "1.5,1.5,1.5",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "NetworkInterpolation": true,
+        "Components": [
+          {
+            "__type": "Sandbox.Prop",
+            "__guid": "8d6fb4f3-ca08-404b-b600-dba425f066b5",
+            "BodyGroups": 18446744073709551615,
+            "Health": 0,
+            "IsStatic": true,
+            "Model": "models/scaffolding/scaffolding_connector_a.vmdl",
+            "Tint": "1,1,1,1"
+          }
+        ]
+      },
+      {
+        "__guid": "e9f40a43-9899-4197-8e0e-78a5d166b6ee",
+        "Flags": 0,
+        "Name": "scaffolding_ringlock_a (3)",
+        "Position": "-0.00003051758,-0.00001525879,-0.0001831055",
+        "Rotation": "-0.4999999,-0.5,-0.5,0.5000001",
+        "Scale": "1.5,1.5,1.5",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "NetworkInterpolation": true,
+        "Components": [
+          {
+            "__type": "Sandbox.Prop",
+            "__guid": "9145adde-75f9-4eba-9a6f-9978c50485f4",
+            "BodyGroups": 18446744073709551615,
+            "Health": 0,
+            "IsStatic": false,
+            "Model": "models/scaffolding/scaffolding_ringlock_a.vmdl",
+            "Tint": "1,1,1,1"
+          }
+        ]
+      },
+      {
+        "__guid": "4ade8d2d-64ec-416e-8a6c-bbd20a5c6c9c",
+        "Flags": 0,
+        "Name": "scaffolding_ringlock_a (1)",
+        "Position": "-0.00009155273,-0.00001525879,191.9998",
+        "Rotation": "0.00000005960464,-0.7071068,-0.7071068,0.0000002086163",
+        "Scale": "1.5,1.5,1.5",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "NetworkInterpolation": true,
+        "Components": [
+          {
+            "__type": "Sandbox.Prop",
+            "__guid": "5c8b8ec3-323d-4daa-8cdf-ef78fda16238",
+            "BodyGroups": 18446744073709551615,
+            "Health": 0,
+            "IsStatic": false,
+            "Model": "models/scaffolding/scaffolding_ringlock_a.vmdl",
+            "Tint": "1,1,1,1"
+          }
+        ]
+      },
+      {
+        "__guid": "5cbf1a32-a0db-4a9a-adf2-25741ac3f49c",
+        "Flags": 0,
+        "Name": "scaffolding_tube_a (7)",
+        "Position": "-0.00009155273,-0.00001525879,-72.00018",
+        "Rotation": "0.5,-0.5000001,-0.5000001,-0.4999998",
+        "Scale": "0.875,1.5,1.5",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "NetworkInterpolation": true,
+        "Components": [
+          {
+            "__type": "Sandbox.Prop",
+            "__guid": "c9c259d3-87e2-4aac-b859-584010b6e5c5",
+            "BodyGroups": 18446744073709551615,
+            "Health": 0,
+            "IsStatic": true,
+            "Model": "models/scaffolding/scaffolding_tube_a.vmdl",
+            "Tint": "1,1,1,1"
+          }
+        ]
+      },
+      {
+        "__guid": "d9b9bdb9-18d4-4e28-816d-486df18115c9",
+        "Flags": 0,
+        "Name": "scaffolding_tube_a (8)",
+        "Position": "-0.00003051758,-0.00001525879,55.99982",
+        "Rotation": "0.5,-0.5000001,-0.5000001,-0.4999998",
+        "Scale": "1,1.5,1.5",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "NetworkInterpolation": true,
+        "Components": [
+          {
+            "__type": "Sandbox.Prop",
+            "__guid": "bbc7e9f7-82e9-4884-84cc-ee61129519ff",
+            "BodyGroups": 18446744073709551615,
+            "Health": 0,
+            "IsStatic": true,
+            "Model": "models/scaffolding/scaffolding_tube_a.vmdl",
+            "Tint": "1,1,1,1"
+          }
+        ]
+      },
+      {
+        "__guid": "24adaf13-c99f-4169-9927-d9a482f3155e",
+        "Flags": 0,
+        "Name": "scaffolding_tube_a (9)",
+        "Position": "-0.00003051758,-0.00001525879,183.9998",
+        "Rotation": "0.5,-0.5000001,-0.5000001,-0.4999998",
+        "Scale": "1,1.5,1.5",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "NetworkInterpolation": true,
+        "Components": [
+          {
+            "__type": "Sandbox.Prop",
+            "__guid": "47eb97cd-20fc-4bb2-a61f-37a7472c1dc3",
+            "BodyGroups": 18446744073709551615,
+            "Health": 0,
+            "IsStatic": true,
+            "Model": "models/scaffolding/scaffolding_tube_a.vmdl",
+            "Tint": "1,1,1,1"
+          }
+        ]
+      },
+      {
+        "__guid": "eb573bf3-9547-424a-8c1b-981d935948ab",
+        "Flags": 0,
+        "Name": "scaffolding_connector_a (4)",
+        "Position": "-0.00003051758,-0.00001525879,179.9998",
+        "Rotation": "0.0000001192093,-0.7071067,-0.00000002980232,0.7071068",
+        "Scale": "1.5,1.5,1.5",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "NetworkInterpolation": true,
+        "Components": [
+          {
+            "__type": "Sandbox.Prop",
+            "__guid": "c4ee78d4-753d-4450-959d-a059050a90c3",
+            "BodyGroups": 18446744073709551615,
+            "Health": 0,
+            "IsStatic": true,
+            "Model": "models/scaffolding/scaffolding_connector_a.vmdl",
+            "Tint": "1,1,1,1"
+          }
+        ]
+      },
+      {
+        "__guid": "42a38140-3f60-4984-bf51-25113447a044",
+        "Flags": 0,
+        "Name": "scaffolding_connector_a (3)",
+        "Position": "-0.00009155273,-0.00001525879,-180.0002",
+        "Rotation": "0.00000008940697,-0.7071069,-0.00000005960464,-0.7071066",
+        "Scale": "1.5,1.5,1.5",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "NetworkInterpolation": true,
+        "Components": [
+          {
+            "__type": "Sandbox.Prop",
+            "__guid": "b852381e-662f-41c2-bc8f-57cf9e4ce797",
+            "BodyGroups": 18446744073709551615,
+            "Health": 0,
+            "IsStatic": true,
+            "Model": "models/scaffolding/scaffolding_connector_a.vmdl",
+            "Tint": "1,1,1,1"
+          }
+        ]
+      },
+      {
+        "__guid": "6fb1c4c6-83ae-464e-83cf-e22ea4cc73e3",
+        "Flags": 0,
+        "Name": "scaffolding_connector_a (4)",
+        "Position": "-12.00003,-0.00001525879,-0.0001831055",
+        "Scale": "1.5,1.5,1.5",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "NetworkInterpolation": true,
+        "Components": [
+          {
+            "__type": "Sandbox.Prop",
+            "__guid": "c50cb06e-bae9-4686-b106-37d535a6980e",
+            "BodyGroups": 18446744073709551615,
+            "Health": 0,
+            "IsStatic": true,
+            "Model": "models/scaffolding/scaffolding_connector_a.vmdl",
+            "Tint": "1,1,1,1"
+          }
+        ]
+      },
+      {
+        "__guid": "6e62c8d4-e93f-4ef4-9530-815ff434406c",
+        "Flags": 0,
+        "Name": "scaffolding_connector_a (4)",
+        "Position": "-0.00003051758,11.99986,-0.0001831055",
+        "Rotation": "0,0,-0.7071067,0.7071068",
+        "Scale": "1.5,1.5,1.5",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "NetworkInterpolation": true,
+        "Components": [
+          {
+            "__type": "Sandbox.Prop",
+            "__guid": "76825fa0-e612-462e-9df1-60309cf218fa",
+            "BodyGroups": 18446744073709551615,
+            "Health": 0,
+            "IsStatic": true,
+            "Model": "models/scaffolding/scaffolding_connector_a.vmdl",
+            "Tint": "1,1,1,1"
+          }
+        ]
+      },
+      {
+        "__guid": "60b0d48c-2776-4df1-8b20-7e3e6c9f4e0c",
+        "Flags": 0,
+        "Name": "scaffolding_connector_a (5)",
+        "Position": "0,11.99989,192",
+        "Rotation": "0.4999999,-0.5,-0.5,0.5000001",
+        "Scale": "1.5,1.5,1.5",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "NetworkInterpolation": true,
+        "Components": [
+          {
+            "__type": "Sandbox.Prop",
+            "__guid": "344e2a8e-369d-4742-b7bc-828309dea51e",
+            "BodyGroups": 18446744073709551615,
+            "Health": 0,
+            "IsStatic": true,
+            "Model": "models/scaffolding/scaffolding_connector_a.vmdl",
+            "Tint": "1,1,1,1"
+          }
+        ]
+      },
+      {
+        "__guid": "77e6debf-31ae-4879-b478-7b2881b8863a",
+        "Flags": 0,
+        "Name": "scaffolding_tube_a (9)",
+        "Position": "-8.000031,-0.00001525879,-0.0001831055",
+        "Rotation": "0.00000005960464,-0.7071068,-0.7071068,0.0000002086163",
+        "Scale": "1,1.5,1.5",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "NetworkInterpolation": true,
+        "Components": [
+          {
+            "__type": "Sandbox.Prop",
+            "__guid": "c17c6689-b440-45d2-bd38-b082178756f7",
+            "BodyGroups": 18446744073709551615,
+            "Health": 0,
+            "IsStatic": true,
+            "Model": "models/scaffolding/scaffolding_tube_a.vmdl",
+            "Tint": "1,1,1,1"
+          }
+        ]
+      },
+      {
+        "__guid": "a0eb4afe-31f1-4e7a-a6bd-91935dd0b545",
+        "Flags": 0,
+        "Name": "scaffolding_tube_a (9)",
+        "Position": "-0.00003051758,7.999863,-0.0001831055",
+        "Rotation": "-0.4999999,-0.5,-0.5000002,-0.4999999",
+        "Scale": "1,1.5,1.5",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "NetworkInterpolation": true,
+        "Components": [
+          {
+            "__type": "Sandbox.Prop",
+            "__guid": "dbbaa629-b6c1-4cd7-85c8-444d277a3344",
+            "BodyGroups": 18446744073709551615,
+            "Health": 0,
+            "IsStatic": true,
+            "Model": "models/scaffolding/scaffolding_tube_a.vmdl",
+            "Tint": "1,1,1,1"
+          }
+        ]
+      },
+      {
+        "__guid": "99373db6-a396-4def-89c2-0c41a73da70b",
+        "Flags": 0,
+        "Name": "scaffolding_tube_a (6)",
+        "Position": "0,7.999893,192",
+        "Rotation": "-0.4999999,-0.5,-0.5000002,-0.4999999",
+        "Scale": "1,1.5,1.5",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "NetworkInterpolation": true,
+        "Components": [
+          {
+            "__type": "Sandbox.Prop",
+            "__guid": "80bb0dd0-ab4a-46ad-9da3-8612df15679e",
+            "BodyGroups": 18446744073709551615,
+            "Health": 0,
+            "IsStatic": true,
+            "Model": "models/scaffolding/scaffolding_tube_a.vmdl",
+            "Tint": "1,1,1,1"
+          }
+        ]
+      },
+      {
+        "__guid": "bd2d86f2-7bcc-4aaf-a7c8-54524fc73cbf",
+        "Flags": 0,
+        "Name": "scaffolding_tube_a (8)",
+        "Position": "-136,-0.00004577637,-0.0001831055",
+        "Rotation": "0.00000005960464,-0.7071068,-0.7071068,0.0000002086163",
+        "Scale": "0.35,1.5,1.5",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "NetworkInterpolation": true,
+        "Components": [
+          {
+            "__type": "Sandbox.Prop",
+            "__guid": "388e7f34-8ac6-438c-976c-356fb2348802",
+            "BodyGroups": 18446744073709551615,
+            "Health": 0,
+            "IsStatic": true,
+            "Model": "models/scaffolding/scaffolding_tube_a.vmdl",
+            "Tint": "1,1,1,1"
+          }
+        ]
+      },
+      {
+        "__guid": "fa86b48c-720a-4197-9d40-4dd155b26536",
+        "Flags": 0,
+        "Name": "scaffolding_tube_a (8)",
+        "Position": "-0.00003051758,135.9999,-0.0001831055",
+        "Rotation": "-0.4999999,-0.5,-0.5000002,-0.4999999",
+        "Scale": "0.35,1.5,1.5",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "NetworkInterpolation": true,
+        "Components": [
+          {
+            "__type": "Sandbox.Prop",
+            "__guid": "33668f80-0425-40ae-852b-8c6959bb777d",
+            "BodyGroups": 18446744073709551615,
+            "Health": 0,
+            "IsStatic": true,
+            "Model": "models/scaffolding/scaffolding_tube_a.vmdl",
+            "Tint": "1,1,1,1"
+          }
+        ]
+      },
+      {
+        "__guid": "7a64ce19-6f41-48f5-9487-88bc4994a1c4",
+        "Flags": 0,
+        "Name": "scaffolding_tube_a (10)",
+        "Position": "0,135.9999,192",
+        "Rotation": "-0.4999999,-0.5,-0.5000002,-0.4999999",
+        "Scale": "0.35,1.5,1.5",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "NetworkInterpolation": true,
+        "Components": [
+          {
+            "__type": "Sandbox.Prop",
+            "__guid": "dcd18335-9cfb-422a-9e66-bcefe205277a",
+            "BodyGroups": 18446744073709551615,
+            "Health": 0,
+            "IsStatic": true,
+            "Model": "models/scaffolding/scaffolding_tube_a.vmdl",
+            "Tint": "1,1,1,1"
+          }
+        ]
+      },
+      {
+        "__guid": "573981b5-e441-46a2-bd81-a849bbc23586",
+        "Flags": 0,
+        "Name": "scaffolding_connector_a (3)",
+        "Position": "-180,-0.00004577637,-0.0001831055",
+        "Rotation": "0.0000001490116,-1,0.000000000000007105427,0.00000009483042",
+        "Scale": "1.5,1.5,1.5",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "NetworkInterpolation": true,
+        "Components": [
+          {
+            "__type": "Sandbox.Prop",
+            "__guid": "21f49665-4104-41d9-a8f6-6ca3682ebe4d",
+            "BodyGroups": 18446744073709551615,
+            "Health": 0,
+            "IsStatic": true,
+            "Model": "models/scaffolding/scaffolding_connector_a.vmdl",
+            "Tint": "1,1,1,1"
+          }
+        ]
+      },
+      {
+        "__guid": "ddfdffa9-2661-4b59-8e41-cfac27ff9883",
+        "Flags": 0,
+        "Name": "scaffolding_connector_a (3)",
+        "Position": "-0.0001525879,179.9999,-0.0001831055",
+        "Rotation": "-0.7071065,-0.7071069,-0.00000006705522,0.00000006705525",
+        "Scale": "1.5,1.5,1.5",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "NetworkInterpolation": true,
+        "Components": [
+          {
+            "__type": "Sandbox.Prop",
+            "__guid": "4789df6c-c564-4c9d-8587-84cbe48a3217",
+            "BodyGroups": 18446744073709551615,
+            "Health": 0,
+            "IsStatic": true,
+            "Model": "models/scaffolding/scaffolding_connector_a.vmdl",
+            "Tint": "1,1,1,1"
+          }
+        ]
+      },
+      {
+        "__guid": "bef6394f-4181-4b4b-92c7-fa5615759acf",
+        "Flags": 0,
+        "Name": "scaffolding_connector_a (6)",
+        "Position": "-0.00004577637,179.9999,191.9998",
+        "Rotation": "-0.4999998,-0.5000002,-0.4999998,-0.4999999",
+        "Scale": "1.5,1.5,1.5",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "NetworkInterpolation": true,
+        "Components": [
+          {
+            "__type": "Sandbox.Prop",
+            "__guid": "8b6a29cf-d94d-4da5-a85f-e48b67702bd2",
+            "BodyGroups": 18446744073709551615,
+            "Health": 0,
+            "IsStatic": true,
+            "Model": "models/scaffolding/scaffolding_connector_a.vmdl",
+            "Tint": "1,1,1,1"
+          }
+        ]
+      },
+      {
+        "__guid": "b3057223-b78f-4625-981b-951d98f44179",
+        "Flags": 0,
+        "Name": "scaffolding_connector_a (4)",
+        "Position": "180,0.00001525879,-0.0001831055",
+        "Scale": "1.5,1.5,1.5",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "NetworkInterpolation": true,
+        "Components": [
+          {
+            "__type": "Sandbox.Prop",
+            "__guid": "bce1405a-4bed-4401-a07c-2718c7077088",
+            "BodyGroups": 18446744073709551615,
+            "Health": 0,
+            "IsStatic": true,
+            "Model": "models/scaffolding/scaffolding_connector_a.vmdl",
+            "Tint": "1,1,1,1"
+          }
+        ]
+      },
+      {
+        "__guid": "d21862cb-4c90-4106-9bb8-0980c5a8e814",
+        "Flags": 0,
+        "Name": "scaffolding_connector_a (4)",
+        "Position": "0.00009155273,-180.0001,-0.0001831055",
+        "Rotation": "0,0,-0.7071067,0.7071068",
+        "Scale": "1.5,1.5,1.5",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "NetworkInterpolation": true,
+        "Components": [
+          {
+            "__type": "Sandbox.Prop",
+            "__guid": "a505ac53-f0ae-434a-ad39-7e066e7974a3",
+            "BodyGroups": 18446744073709551615,
+            "Health": 0,
+            "IsStatic": true,
+            "Model": "models/scaffolding/scaffolding_connector_a.vmdl",
+            "Tint": "1,1,1,1"
+          }
+        ]
+      },
+      {
+        "__guid": "c2932749-8a06-4ff7-b8c0-bc8ac5617d71",
+        "Flags": 0,
+        "Name": "scaffolding_connector_a (1)",
+        "Position": "-0.00004577637,-180.0001,192.0002",
+        "Rotation": "0.4999999,-0.5,-0.5,0.5000001",
+        "Scale": "1.5,1.5,1.5",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "NetworkInterpolation": true,
+        "Components": [
+          {
+            "__type": "Sandbox.Prop",
+            "__guid": "5c2f34ff-5ecd-41df-b773-f4fa930aa0a6",
+            "BodyGroups": 18446744073709551615,
+            "Health": 0,
+            "IsStatic": true,
+            "Model": "models/scaffolding/scaffolding_connector_a.vmdl",
+            "Tint": "1,1,1,1"
+          }
+        ]
+      },
+      {
+        "__guid": "869947bd-8dad-47ba-b0b0-3b483168fde0",
+        "Flags": 0,
+        "Name": "scaffolding_tube_a (9)",
+        "Position": "184,0.00001525879,-0.0001831055",
+        "Rotation": "0.00000005960464,-0.7071068,-0.7071068,0.0000002086163",
+        "Scale": "1,1.5,1.5",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "NetworkInterpolation": true,
+        "Components": [
+          {
+            "__type": "Sandbox.Prop",
+            "__guid": "938f026a-6aaa-48be-a180-839327841984",
+            "BodyGroups": 18446744073709551615,
+            "Health": 0,
+            "IsStatic": true,
+            "Model": "models/scaffolding/scaffolding_tube_a.vmdl",
+            "Tint": "1,1,1,1"
+          }
+        ]
+      },
+      {
+        "__guid": "0479516f-6928-4b19-9cc7-e42bf6e39180",
+        "Flags": 0,
+        "Name": "scaffolding_tube_a (9)",
+        "Position": "0.00009155273,-184.0001,-0.0001831055",
+        "Rotation": "-0.4999999,-0.5,-0.5000002,-0.4999999",
+        "Scale": "1,1.5,1.5",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "NetworkInterpolation": true,
+        "Components": [
+          {
+            "__type": "Sandbox.Prop",
+            "__guid": "941cbb47-8a4f-43ff-9ad3-bbbf413b6a73",
+            "BodyGroups": 18446744073709551615,
+            "Health": 0,
+            "IsStatic": true,
+            "Model": "models/scaffolding/scaffolding_tube_a.vmdl",
+            "Tint": "1,1,1,1"
+          }
+        ]
+      },
+      {
+        "__guid": "07c5ee92-2ac3-47c0-bd2d-ca4dc8e39e82",
+        "Flags": 0,
+        "Name": "scaffolding_tube_a (4)",
+        "Position": "0.0001068115,-184.0001,192",
+        "Rotation": "-0.4999999,-0.5,-0.5000002,-0.4999999",
+        "Scale": "1,1.5,1.5",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "NetworkInterpolation": true,
+        "Components": [
+          {
+            "__type": "Sandbox.Prop",
+            "__guid": "6cb21344-1a82-4634-91f9-e5c2384568c4",
+            "BodyGroups": 18446744073709551615,
+            "Health": 0,
+            "IsStatic": true,
+            "Model": "models/scaffolding/scaffolding_tube_a.vmdl",
+            "Tint": "1,1,1,1"
+          }
+        ]
+      },
+      {
+        "__guid": "c1d98f35-3fe0-4c4d-adc8-ff4fa99393eb",
+        "Flags": 0,
+        "Name": "scaffolding_tube_a (8)",
+        "Position": "55.99997,-0.00001525879,-0.0001831055",
+        "Rotation": "0.00000005960464,-0.7071068,-0.7071068,0.0000002086163",
+        "Scale": "0.35,1.5,1.5",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "NetworkInterpolation": true,
+        "Components": [
+          {
+            "__type": "Sandbox.Prop",
+            "__guid": "c7db1af5-6048-4680-b27c-06185c959664",
+            "BodyGroups": 18446744073709551615,
+            "Health": 0,
+            "IsStatic": true,
+            "Model": "models/scaffolding/scaffolding_tube_a.vmdl",
+            "Tint": "1,1,1,1"
+          }
+        ]
+      },
+      {
+        "__guid": "16f68234-75df-488c-953a-24ce97d8e5ba",
+        "Flags": 0,
+        "Name": "scaffolding_tube_a (8)",
+        "Position": "-0.00003051758,-56.00014,-0.0001831055",
+        "Rotation": "-0.4999999,-0.5,-0.5000002,-0.4999999",
+        "Scale": "0.35,1.5,1.5",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "NetworkInterpolation": true,
+        "Components": [
+          {
+            "__type": "Sandbox.Prop",
+            "__guid": "0787cf72-c472-4982-b431-249625012c27",
+            "BodyGroups": 18446744073709551615,
+            "Health": 0,
+            "IsStatic": true,
+            "Model": "models/scaffolding/scaffolding_tube_a.vmdl",
+            "Tint": "1,1,1,1"
+          }
+        ]
+      },
+      {
+        "__guid": "a6e9b265-2c93-4eb7-8581-cd3decadb777",
+        "Flags": 0,
+        "Name": "scaffolding_tube_a (5)",
+        "Position": "0,-56.00011,192",
+        "Rotation": "-0.4999999,-0.5,-0.5000002,-0.4999999",
+        "Scale": "0.35,1.5,1.5",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "NetworkInterpolation": true,
+        "Components": [
+          {
+            "__type": "Sandbox.Prop",
+            "__guid": "21ede2dd-eec9-41c1-bd42-e9463606989f",
+            "BodyGroups": 18446744073709551615,
+            "Health": 0,
+            "IsStatic": true,
+            "Model": "models/scaffolding/scaffolding_tube_a.vmdl",
+            "Tint": "1,1,1,1"
+          }
+        ]
+      },
+      {
+        "__guid": "dba4f5b7-65c6-49f3-8752-e3c252d2636a",
+        "Flags": 0,
+        "Name": "scaffolding_connector_a (3)",
+        "Position": "11.99997,-0.00001525879,-0.0001831055",
+        "Rotation": "0.0000001490116,-1,0.000000000000007105427,0.00000009483042",
+        "Scale": "1.5,1.5,1.5",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "NetworkInterpolation": true,
+        "Components": [
+          {
+            "__type": "Sandbox.Prop",
+            "__guid": "52bd8934-348e-44aa-8428-3246f45d80a2",
+            "BodyGroups": 18446744073709551615,
+            "Health": 0,
+            "IsStatic": true,
+            "Model": "models/scaffolding/scaffolding_connector_a.vmdl",
+            "Tint": "1,1,1,1"
+          }
+        ]
+      },
+      {
+        "__guid": "eb84f38a-6afb-4b2c-8b20-48b0bf04299d",
+        "Flags": 0,
+        "Name": "scaffolding_connector_a (3)",
+        "Position": "-0.00003051758,-12.00014,-0.0001831055",
+        "Rotation": "-0.7071065,-0.7071069,-0.00000006705522,0.00000006705525",
+        "Scale": "1.5,1.5,1.5",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "NetworkInterpolation": true,
+        "Components": [
+          {
+            "__type": "Sandbox.Prop",
+            "__guid": "13f82ca8-2168-49aa-b09a-5143079e45e8",
+            "BodyGroups": 18446744073709551615,
+            "Health": 0,
+            "IsStatic": true,
+            "Model": "models/scaffolding/scaffolding_connector_a.vmdl",
+            "Tint": "1,1,1,1"
+          }
+        ]
+      },
+      {
+        "__guid": "b5580013-4e86-42f7-8881-dab38d7ff84f",
+        "Flags": 0,
+        "Name": "scaffolding_connector_a (2)",
+        "Position": "0,-12.00011,192",
+        "Rotation": "-0.4999999,-0.5000001,0.4999997,0.5000001",
+        "Scale": "1.5,1.5,1.5",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "NetworkInterpolation": true,
+        "Components": [
+          {
+            "__type": "Sandbox.Prop",
+            "__guid": "0a8a5c70-18e7-47e6-8746-1cd6d6b47220",
+            "BodyGroups": 18446744073709551615,
+            "Health": 0,
+            "IsStatic": true,
+            "Model": "models/scaffolding/scaffolding_connector_a.vmdl",
+            "Tint": "1,1,1,1"
+          }
+        ]
+      },
+      {
+        "__guid": "92a63374-fc3d-4ec6-bed4-aee70542af04",
+        "Flags": 0,
+        "Name": "scaffolding_tube_a (3)",
+        "Position": "192,0.00001525879,-192",
+        "Rotation": "-0.4999999,-0.5,-0.5,0.5000001",
+        "Scale": "1,1.5,1.5",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "NetworkInterpolation": true,
+        "Components": [
+          {
+            "__type": "Sandbox.Prop",
+            "__guid": "38bb296c-9423-412c-9f94-288a3de4c0a6",
+            "BodyGroups": 18446744073709551615,
+            "Health": 0,
+            "IsStatic": true,
+            "Model": "models/scaffolding/scaffolding_tube_a.vmdl",
+            "Tint": "1,1,1,1"
+          }
+        ]
+      },
+      {
+        "__guid": "582abbcb-a879-4a63-a184-78908b7f86e1",
+        "Flags": 0,
+        "Name": "scaffolding_tube_a (1)",
+        "Position": "192,0.00001525879,-64",
+        "Rotation": "-0.4999999,-0.5,-0.5,0.5000001",
+        "Scale": "1,1.5,1.5",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "NetworkInterpolation": true,
+        "Components": [
+          {
+            "__type": "Sandbox.Prop",
+            "__guid": "e794c696-ee3a-4477-a778-535cbfdcdcfb",
+            "BodyGroups": 18446744073709551615,
+            "Health": 0,
+            "IsStatic": true,
+            "Model": "models/scaffolding/scaffolding_tube_a.vmdl",
+            "Tint": "1,1,1,1"
+          }
+        ]
+      },
+      {
+        "__guid": "47bd9576-f168-483f-bc9c-3d6bf720626d",
+        "Flags": 0,
+        "Name": "scaffolding_tube_a (2)",
+        "Position": "192,0.00001525879,64",
+        "Rotation": "-0.4999999,-0.5,-0.5,0.5000001",
+        "Scale": "1,1.5,1.5",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "NetworkInterpolation": true,
+        "Components": [
+          {
+            "__type": "Sandbox.Prop",
+            "__guid": "6301943c-781b-4127-8335-f6de9d8b6b9f",
+            "BodyGroups": 18446744073709551615,
+            "Health": 0,
+            "IsStatic": true,
+            "Model": "models/scaffolding/scaffolding_tube_a.vmdl",
+            "Tint": "1,1,1,1"
+          }
+        ]
+      },
+      {
+        "__guid": "b33e5341-a4dd-491d-9ac5-580f1a5cecbc",
+        "Flags": 0,
+        "Name": "scaffolding_connector_a (4)",
+        "Position": "180,0.00001525879,192",
+        "Rotation": "-0.7071067,0,-0.00000002980232,0.7071068",
+        "Scale": "1.5,1.5,1.5",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "NetworkInterpolation": true,
+        "Components": [
+          {
+            "__type": "Sandbox.Prop",
+            "__guid": "80ec2745-2673-4816-830c-f7122e09f248",
+            "BodyGroups": 18446744073709551615,
+            "Health": 0,
+            "IsStatic": true,
+            "Model": "models/scaffolding/scaffolding_connector_a.vmdl",
+            "Tint": "1,1,1,1"
+          }
+        ]
+      },
+      {
+        "__guid": "ae4396f9-fca9-4d9b-b7b9-050d03d66d06",
+        "Flags": 0,
+        "Name": "scaffolding_tube_a (9)",
+        "Position": "184,0.00001525879,192",
+        "Rotation": "0.00000005960464,-0.7071068,-0.7071068,0.0000002086163",
+        "Scale": "1,1.5,1.5",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "NetworkInterpolation": true,
+        "Components": [
+          {
+            "__type": "Sandbox.Prop",
+            "__guid": "24bb00d2-c239-4997-bc3c-c49c47cb5561",
+            "BodyGroups": 18446744073709551615,
+            "Health": 0,
+            "IsStatic": true,
+            "Model": "models/scaffolding/scaffolding_tube_a.vmdl",
+            "Tint": "1,1,1,1"
+          }
+        ]
+      },
+      {
+        "__guid": "4a4c0f1f-b66e-4570-8aef-4835634425a1",
+        "Flags": 0,
+        "Name": "scaffolding_tube_a (8)",
+        "Position": "55.99991,-0.00001525879,192",
+        "Rotation": "0.00000005960464,-0.7071068,-0.7071068,0.0000002086163",
+        "Scale": "1,1.5,1.5",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "NetworkInterpolation": true,
+        "Components": [
+          {
+            "__type": "Sandbox.Prop",
+            "__guid": "a3c7c2c6-91b4-4679-841e-7ddf86c8ae16",
+            "BodyGroups": 18446744073709551615,
+            "Health": 0,
+            "IsStatic": true,
+            "Model": "models/scaffolding/scaffolding_tube_a.vmdl",
+            "Tint": "1,1,1,1"
+          }
+        ]
+      },
+      {
+        "__guid": "b5f94f01-6c7b-4c06-837b-866120f19b2a",
+        "Flags": 0,
+        "Name": "scaffolding_tube_a (7)",
+        "Position": "-72.00003,-0.00001525879,192",
+        "Rotation": "0.00000005960464,-0.7071068,-0.7071068,0.0000002086163",
+        "Scale": "0.875,1.5,1.5",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "NetworkInterpolation": true,
+        "Components": [
+          {
+            "__type": "Sandbox.Prop",
+            "__guid": "7737d7e0-74fc-4a2c-901f-f7aeaa5f6ab6",
+            "BodyGroups": 18446744073709551615,
+            "Health": 0,
+            "IsStatic": true,
+            "Model": "models/scaffolding/scaffolding_tube_a.vmdl",
+            "Tint": "1,1,1,1"
+          }
+        ]
+      },
+      {
+        "__guid": "f93217fb-21f0-4b9b-9168-2c4b1035f323",
+        "Flags": 0,
+        "Name": "scaffolding_connector_a (3)",
+        "Position": "-180,-0.00004577637,192",
+        "Rotation": "0,-0.7071067,0.7071067,0.0000001788139",
+        "Scale": "1.5,1.5,1.5",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "NetworkInterpolation": true,
+        "Components": [
+          {
+            "__type": "Sandbox.Prop",
+            "__guid": "2aa79084-2d63-4aa8-b2aa-6d6c63316381",
+            "BodyGroups": 18446744073709551615,
+            "Health": 0,
+            "IsStatic": true,
+            "Model": "models/scaffolding/scaffolding_connector_a.vmdl",
+            "Tint": "1,1,1,1"
+          }
+        ]
+      }
+    ]
+  },
+  "ShowInMenu": false,
+  "MenuPath": null,
+  "MenuIcon": null,
+  "ResourceVersion": 1,
+  "__references": [],
+  "__version": 1
+}

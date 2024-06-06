@@ -146,6 +146,26 @@
             "NetworkMode": 2,
             "NetworkInterpolation": true,
             "__Prefab": "prefabs/map/scaffold/scaffold01_pole_mid_384.prefab"
+          },
+          {
+            "__guid": "b2382e75-c330-4986-af30-58a09d2c9d26",
+            "Flags": 0,
+            "Name": "scaffold02_empty_wallsection_mid_384x384",
+            "Position": "544,1280,0",
+            "Enabled": true,
+            "NetworkMode": 2,
+            "NetworkInterpolation": true,
+            "__Prefab": "prefabs/map/scaffold/scaffold02_empty_wallsection_mid_384x384.prefab"
+          },
+          {
+            "__guid": "73004371-8643-4e5f-a058-8dd83ad24d3a",
+            "Flags": 0,
+            "Name": "scaffold02_empty_block_mid_384",
+            "Position": "640,0,-0.00127557",
+            "Enabled": true,
+            "NetworkMode": 2,
+            "NetworkInterpolation": true,
+            "__Prefab": "prefabs/map/scaffold/scaffold02_empty_block_mid_384.prefab"
           }
         ]
       },
@@ -245,7 +265,7 @@
         "__guid": "34c820b4-a35b-456b-8197-f816f0c66321",
         "Flags": 0,
         "Name": "Plank Walls",
-        "Position": "-1472,1760,0.0005288015",
+        "Position": "-320,4272,0.000446603",
         "Tags": "group",
         "Enabled": true,
         "NetworkMode": 2,
