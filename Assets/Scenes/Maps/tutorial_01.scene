@@ -19435,41 +19435,64 @@
               "Static": true
             }
           ]
+        },
+        {
+          "__guid": "60be9554-f079-4bec-a00c-8ec8b07438bb",
+          "Flags": 0,
+          "Name": "tyre_obstacle_01",
+          "Position": "-992,1791.999,513",
+          "Rotation": "-0.00000006322027,0.00000006322028,0.7071068,0.7071066",
+          "Enabled": true,
+          "NetworkMode": 2,
+          "NetworkInterpolation": true,
+          "__Prefab": "prefabs/map/props/tyre_obstacles/tyre_obstacle_01.prefab"
+        },
+        {
+          "__guid": "c53f0eb2-6ba4-4ddc-a4e0-61a76bc69b1b",
+          "Flags": 0,
+          "Name": "tyre_obstacle_01 (1)",
+          "Position": "-992,1024,513",
+          "Rotation": "-0.00000006322027,0.00000006322028,0.7071068,0.7071066",
+          "Enabled": true,
+          "NetworkMode": 2,
+          "NetworkInterpolation": true,
+          "__Prefab": "prefabs/map/props/tyre_obstacles/tyre_obstacle_01.prefab"
+        },
+        {
+          "__guid": "9501e632-0bb7-4810-a368-575c883b368b",
+          "Flags": 0,
+          "Name": "tyre_obstacle_01 (2)",
+          "Position": "-992,2560,513",
+          "Rotation": "-0.00000006322027,0.00000006322028,0.7071068,0.7071066",
+          "Enabled": true,
+          "NetworkMode": 2,
+          "NetworkInterpolation": true,
+          "__Prefab": "prefabs/map/props/tyre_obstacles/tyre_obstacle_01.prefab"
         }
       ]
     },
     {
-      "__guid": "60be9554-f079-4bec-a00c-8ec8b07438bb",
+      "__guid": "4dcd5fa7-e702-4dee-b735-ee8ae663e041",
       "Flags": 0,
-      "Name": "tyre_obstacle_01",
-      "Position": "-992,1791.999,513",
-      "Rotation": "-0.00000006322027,0.00000006322028,0.7071068,0.7071066",
+      "Name": "stop_zone_decal",
+      "Position": "2496,2560,384.7883",
+      "Rotation": "-0.7071068,0.0000001192093,0.7071068,0",
       "Enabled": true,
       "NetworkMode": 2,
       "NetworkInterpolation": true,
-      "__Prefab": "prefabs/map/props/tyre_obstacles/tyre_obstacle_01.prefab"
-    },
-    {
-      "__guid": "c53f0eb2-6ba4-4ddc-a4e0-61a76bc69b1b",
-      "Flags": 0,
-      "Name": "tyre_obstacle_01 (1)",
-      "Position": "-992,1024,513",
-      "Rotation": "-0.00000006322027,0.00000006322028,0.7071068,0.7071066",
-      "Enabled": true,
-      "NetworkMode": 2,
-      "NetworkInterpolation": true,
-      "__Prefab": "prefabs/map/props/tyre_obstacles/tyre_obstacle_01.prefab"
-    },
-    {
-      "__guid": "9501e632-0bb7-4810-a368-575c883b368b",
-      "Flags": 0,
-      "Name": "tyre_obstacle_01 (2)",
-      "Position": "-992,2560,513",
-      "Rotation": "-0.00000006322027,0.00000006322028,0.7071068,0.7071066",
-      "Enabled": true,
-      "NetworkMode": 2,
-      "NetworkInterpolation": true,
-      "__Prefab": "prefabs/map/props/tyre_obstacles/tyre_obstacle_01.prefab"
+      "Components": [
+        {
+          "__type": "Sandbox.DecalRenderer",
+          "__guid": "106dcf49-6ffb-40ae-9e80-5232a3d305a7",
+          "CutoffAngle": 60,
+          "CutoffAngleSoftness": 5,
+          "Material": "materials/decals/stop_zone.vmat",
+          "Mod2XBlending": false,
+          "Size": "240,240,256",
+          "TintColor": "0.26047,0,0,1",
+          "TriPlanar": false
+        }
+      ]
     }
   ],
   "SceneProperties": {
@@ -19495,7 +19518,7 @@
   },
   "Title": "tutorial_01",
   "Description": "",
-  "LastSaved": "2024-06-05T16:00:14.8134217-04:00",
+  "LastSaved": "2024-06-06T10:51:09.3430246-04:00",
   "ResourceVersion": 1,
   "__references": [
     "facepunch.metal_fences_gate_left",
