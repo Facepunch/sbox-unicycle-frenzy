@@ -239,7 +239,7 @@
       "__guid": "8d712849-11ff-4056-8634-f04d463c372e",
       "Flags": 0,
       "Name": "PlayerSpawner",
-      "Position": "684.2797,150.73,818.4615",
+      "Position": "684.2797,-32,416",
       "Enabled": true,
       "NetworkMode": 2,
       "NetworkInterpolation": true,
@@ -6511,7 +6511,7 @@
   },
   "Title": "g1l1",
   "Description": "",
-  "LastSaved": "2024-06-06T16:39:11.0358784\u002B01:00",
+  "LastSaved": "2024-06-06T16:48:45.6383192\u002B01:00",
   "ResourceVersion": 1,
   "__references": [
     "rust.field_day_breeze_01a"

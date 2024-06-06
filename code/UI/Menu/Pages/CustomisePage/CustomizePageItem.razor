@@ -123,7 +123,7 @@
 	void Fetch()
 	{
 		Local = DataHelper.ReadJson<UnicycleDressed>("unicycle.dress.json");
-		if (Local == null)
+		if (Local != null)
 		{
 			Save();
 		}
@@ -219,6 +219,11 @@
 		if (Local == null)
 		{
 			Fetch();
+		}
+		var unicycleDressed = Game.ActiveScene.Components.GetAll<UnicycleDresser>().FirstOrDefault();
+		if (unicycleDressed != null)
+		{
+			unicycleDressed.LoadUnicycle();
 		}
 		DataHelper.WriteJson("unicycle.dress.json", Local);
 	}

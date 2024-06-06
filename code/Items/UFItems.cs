@@ -111,6 +111,11 @@ internal class UnicycleDresser : Component
 		}
 	}
 
+	public void LoadUnicycle()
+	{
+		Local = DataHelper.ReadJson<UnicycleDressed>( "unicycle.dress.json" );
+	}
+
 	protected override void OnUpdate()
 	{
 		base.OnUpdate();
