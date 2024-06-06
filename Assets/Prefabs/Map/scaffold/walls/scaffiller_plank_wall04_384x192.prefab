@@ -3,7 +3,6 @@
     "__guid": "bc5b511c-11e9-4b2c-8e21-21e5576308da",
     "Flags": 0,
     "Name": "scaffiller_plank_wall04_384x192",
-    "Position": "-320,-1504,0",
     "Enabled": true,
     "NetworkMode": 2,
     "NetworkInterpolation": true,
@@ -13,11 +12,12 @@
         "__guid": "4701ec01-9d26-4d17-b33d-acbd08ce1e7c",
         "BodyGroups": 18446744073709551615,
         "Health": 0,
-        "IsStatic": false,
+        "IsStatic": true,
         "Model": "models/scaffolding/scaffold_filler/plank_walls/scaffiller_plank_wall04_384x192.vmdl",
         "Tint": "1,1,1,1"
       }
-    ]
+    ],
+    "Children": []
   },
   "ShowInMenu": false,
   "MenuPath": null,
