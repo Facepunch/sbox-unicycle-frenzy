@@ -8,6 +8,7 @@
 		</div>
 	</div>
 
+
 	<div class="achievements-container">
 		<div class="title">Achievements</div>
 		@if (AchievementManager.Achievements != null)
@@ -22,6 +23,7 @@
 						<div class="achievement-progress">
 							@achievement.CurrentValue / @achievement.NeededValue
 						</div>
+						<div class="xp-given">XP: @achievement.XPGiven</div>
 					</div>
 				</div>
 			}

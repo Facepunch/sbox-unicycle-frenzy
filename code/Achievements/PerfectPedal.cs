@@ -6,7 +6,7 @@
 	public override int AchievementPoints => 10;
 	public override bool AchievementUnlocked { get; set; } = false;
 	public override int NeededValue { get; set; } = 1000;
-
+	public override float XPGiven { get; set; } = 10f;
 }
 
 public class PerfectPedalSilver : BaseAchievement
@@ -17,6 +17,7 @@ public class PerfectPedalSilver : BaseAchievement
 	public override int AchievementPoints => 20;
 	public override bool AchievementUnlocked { get; set; } = false;
 	public override int NeededValue { get; set; } = 5000;
+	public override float XPGiven { get; set; } = 20f;
 
 }
 
@@ -28,6 +29,7 @@ public class PerfectPedalGold : BaseAchievement
 	public override int AchievementPoints => 30;
 	public override bool AchievementUnlocked { get; set; } = false;
 	public override int NeededValue { get; set; } = 10000;
+	public override float XPGiven { get; set; } = 30f;
 
 }
 
@@ -39,5 +41,6 @@ public class PerfectPedalPlatinum : BaseAchievement
 	public override int AchievementPoints => 40;
 	public override bool AchievementUnlocked { get; set; } = false;
 	public override int NeededValue { get; set; } = 50000;
+	public override float XPGiven { get; set; } = 50f;
 
 }

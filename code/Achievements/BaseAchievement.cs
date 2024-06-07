@@ -7,15 +7,17 @@
 	public virtual bool AchievementUnlocked { get; set; } = false;
 	public virtual int NeededValue { get; set; } = 100;
 	public virtual int CurrentValue { get; set; } = 0;
+	public virtual float XPGiven { get; set; } = 1f;
 
 	public virtual void OnAchievementUnlocked()
 	{
 		AchievementUnlocked = true;
+		AddXp();
 	}
 
 	public virtual void OnAchievementProgress()
 	{
-		if( AchievementUnlocked )
+		if ( AchievementUnlocked )
 		{
 			return;
 		}
@@ -26,5 +28,13 @@
 		{
 			OnAchievementUnlocked();
 		}
+	}
+
+	public void AddXp()
+	{
+		var progression = DataHelper.ReadJson<UnicycleProgression>( "unicycle.progression.json" );
+		progression.CurrentXP += XPGiven;
+
+		DataHelper.WriteJson( "unicycle.progression.json", progression );
 	}
 }
