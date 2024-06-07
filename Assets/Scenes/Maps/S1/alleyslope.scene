@@ -3362,10 +3362,32 @@
       "__Prefab": "prefabs/map/scaffold/scaffold01_tarp_wallsection_mid_384x384.prefab"
     },
     {
+      "__guid": "42fbced9-8ce9-4a32-938a-f2a8d28ca696",
+      "Flags": 0,
+      "Name": "scaffold01_tarp_wallsection_mid_384x384 (116)",
+      "Position": "-1344,-5760,-80",
+      "Rotation": "0,0,-0.9999999,0.0000001490116",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "__Prefab": "prefabs/map/scaffold/scaffold01_tarp_wallsection_mid_384x384.prefab"
+    },
+    {
+      "__guid": "42d0b6ab-0620-4edc-a9c8-a7943d4769a3",
+      "Flags": 0,
+      "Name": "scaffold01_tarp_wallsection_mid_384x384 (117)",
+      "Position": "-1344,-6144,-80",
+      "Rotation": "0,0,-0.9999999,0.0000001490116",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "__Prefab": "prefabs/map/scaffold/scaffold01_tarp_wallsection_mid_384x384.prefab"
+    },
+    {
       "__guid": "7bf80fb0-2528-4f56-91c1-ffd88899ddf9",
       "Flags": 0,
       "Name": "scaffold01_tarp_wallsection_mid_384x384 (96)",
-      "Position": "-1536,-5568,-464",
+      "Position": "-1536,-6336,-464",
       "Rotation": "0,0,-0.7071069,-0.7071065",
       "Enabled": true,
       "NetworkMode": 2,
@@ -3376,7 +3398,7 @@
       "__guid": "d57bc81c-cbd8-4662-b2ea-8baf2288fed5",
       "Flags": 0,
       "Name": "scaffold01_tarp_wallsection_mid_384x384 (124)",
-      "Position": "-1536,-5568,-80",
+      "Position": "-1536,-6336,-80",
       "Rotation": "0,0,-0.7071069,-0.7071065",
       "Enabled": true,
       "NetworkMode": 2,
@@ -3387,7 +3409,18 @@
       "__guid": "82a02031-9202-4061-ac05-59092232eb50",
       "Flags": 0,
       "Name": "scaffold01_tarp_wallsection_mid_384x384 (97)",
-      "Position": "-1920,-5568,-464",
+      "Position": "-1920,-6336,-464",
+      "Rotation": "0,0,-0.7071069,-0.7071065",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "__Prefab": "prefabs/map/scaffold/scaffold01_tarp_wallsection_mid_384x384.prefab"
+    },
+    {
+      "__guid": "eb80260c-c97f-49a9-9933-9f49df087570",
+      "Flags": 0,
+      "Name": "scaffold01_tarp_wallsection_mid_384x384 (6)",
+      "Position": "-2304,-6336,-464",
       "Rotation": "0,0,-0.7071069,-0.7071065",
       "Enabled": true,
       "NetworkMode": 2,
@@ -3398,7 +3431,7 @@
       "__guid": "e6d7d6c5-8ca8-4cd2-bbcf-2f1887ba5bec",
       "Flags": 0,
       "Name": "scaffold01_tarp_wallsection_mid_384x384 (123)",
-      "Position": "-1920,-5568,-80",
+      "Position": "-1920,-6336,-80",
       "Rotation": "0,0,-0.7071069,-0.7071065",
       "Enabled": true,
       "NetworkMode": 2,
@@ -3519,8 +3552,52 @@
       "__guid": "a7153161-b94d-4e02-a79c-8c7defddd73e",
       "Flags": 0,
       "Name": "scaffold01_tarp_wallsection_mid_384x384 (98)",
+      "Position": "-2496,-6144,-464",
+      "Rotation": "0,0,-0.0000003874302,-0.9999998",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "__Prefab": "prefabs/map/scaffold/scaffold01_tarp_wallsection_mid_384x384.prefab"
+    },
+    {
+      "__guid": "c4d616ed-bbd7-48b7-b803-620525920bc0",
+      "Flags": 0,
+      "Name": "scaffold01_tarp_wallsection_mid_384x384 (99)",
+      "Position": "-2496,-5760,-464",
+      "Rotation": "0,0,-0.0000003874302,-0.9999998",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "__Prefab": "prefabs/map/scaffold/scaffold01_tarp_wallsection_mid_384x384.prefab"
+    },
+    {
+      "__guid": "2f0010f5-d029-4b8d-90ff-18d0ee77450b",
+      "Flags": 0,
+      "Name": "scaffold01_tarp_wallsection_mid_384x384 (105)",
       "Position": "-2688,-5568,-464",
-      "Rotation": "0,0,-0.7071069,-0.7071065",
+      "Rotation": "0,0,-0.7071069,-0.7071064",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "__Prefab": "prefabs/map/scaffold/scaffold01_tarp_wallsection_mid_384x384.prefab"
+    },
+    {
+      "__guid": "234816c8-57dd-4caf-8a22-07e372015d93",
+      "Flags": 0,
+      "Name": "scaffold01_tarp_wallsection_mid_384x384 (113)",
+      "Position": "-3072,-5568,-464",
+      "Rotation": "0,0,-0.7071069,-0.7071064",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "__Prefab": "prefabs/map/scaffold/scaffold01_tarp_wallsection_mid_384x384.prefab"
+    },
+    {
+      "__guid": "703a78d9-a34a-4b27-867a-dd5e33e21fb8",
+      "Flags": 0,
+      "Name": "scaffold01_tarp_wallsection_mid_384x384 (115)",
+      "Position": "-3456,-5568,-464",
+      "Rotation": "0,0,-0.7071069,-0.7071064",
       "Enabled": true,
       "NetworkMode": 2,
       "NetworkInterpolation": true,
@@ -3530,8 +3607,52 @@
       "__guid": "fef5c1b1-e84d-4833-b079-038f3b76950a",
       "Flags": 0,
       "Name": "scaffold01_tarp_wallsection_mid_384x384 (122)",
+      "Position": "-2496,-6144,-80",
+      "Rotation": "0,0,-0.0000003874302,-0.9999998",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "__Prefab": "prefabs/map/scaffold/scaffold01_tarp_wallsection_mid_384x384.prefab"
+    },
+    {
+      "__guid": "ca5dfa4e-a995-40d5-beb2-0b22df31d1d2",
+      "Flags": 0,
+      "Name": "scaffold01_tarp_wallsection_mid_384x384 (19)",
+      "Position": "-2496,-5760,-80",
+      "Rotation": "0,0,-0.0000003874302,-0.9999998",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "__Prefab": "prefabs/map/scaffold/scaffold01_tarp_wallsection_mid_384x384.prefab"
+    },
+    {
+      "__guid": "8504d65c-ae5c-4ea7-bbb6-a73ec95e7ada",
+      "Flags": 0,
+      "Name": "scaffold01_tarp_wallsection_mid_384x384 (100)",
       "Position": "-2688,-5568,-80",
-      "Rotation": "0,0,-0.7071069,-0.7071065",
+      "Rotation": "0,0,-0.7071069,-0.7071064",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "__Prefab": "prefabs/map/scaffold/scaffold01_tarp_wallsection_mid_384x384.prefab"
+    },
+    {
+      "__guid": "710e704b-6d9f-47c5-a3ee-d0f31366d015",
+      "Flags": 0,
+      "Name": "scaffold01_tarp_wallsection_mid_384x384 (112)",
+      "Position": "-3072,-5568,-80",
+      "Rotation": "0,0,-0.7071069,-0.7071064",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "__Prefab": "prefabs/map/scaffold/scaffold01_tarp_wallsection_mid_384x384.prefab"
+    },
+    {
+      "__guid": "064d2459-3e59-4711-ab2f-1608bce6da98",
+      "Flags": 0,
+      "Name": "scaffold01_tarp_wallsection_mid_384x384 (114)",
+      "Position": "-3456,-5568,-80",
+      "Rotation": "0,0,-0.7071069,-0.7071064",
       "Enabled": true,
       "NetworkMode": 2,
       "NetworkInterpolation": true,
@@ -3541,7 +3662,7 @@
       "__guid": "9b5a11fe-0c50-4ce5-ae8a-614c7f118b9c",
       "Flags": 0,
       "Name": "scaffold01_tarp_wallsection_mid_384x384 (136)",
-      "Position": "-2304,-5568,-80",
+      "Position": "-2304,-6336,-80",
       "Rotation": "0,0,-0.7071069,-0.7071065",
       "Enabled": true,
       "NetworkMode": 2,
@@ -3593,28 +3714,6 @@
       "__Prefab": "prefabs/map/scaffold/scaffold01_tarp_wallsection_mid_384x384.prefab"
     },
     {
-      "__guid": "49a71ab4-d31c-4f88-a48d-4dd5e8671e13",
-      "Flags": 0,
-      "Name": "scaffold01_tarp_wallsection_mid_384x384 (99)",
-      "Position": "-3072,-5568,-464",
-      "Rotation": "0,0,-0.7071069,-0.7071065",
-      "Enabled": true,
-      "NetworkMode": 2,
-      "NetworkInterpolation": true,
-      "__Prefab": "prefabs/map/scaffold/scaffold01_tarp_wallsection_mid_384x384.prefab"
-    },
-    {
-      "__guid": "3ee0642e-7785-4176-ba51-5b35bec6203c",
-      "Flags": 0,
-      "Name": "scaffold01_tarp_wallsection_mid_384x384 (121)",
-      "Position": "-3072,-5568,-80",
-      "Rotation": "0,0,-0.7071069,-0.7071065",
-      "Enabled": true,
-      "NetworkMode": 2,
-      "NetworkInterpolation": true,
-      "__Prefab": "prefabs/map/scaffold/scaffold01_tarp_wallsection_mid_384x384.prefab"
-    },
-    {
       "__guid": "ec08aba6-2c4a-46ba-b724-a56e0263f605",
       "Flags": 0,
       "Name": "scaffold01_tarp_wallsection_mid_384x384 (102)",
@@ -3631,28 +3730,6 @@
       "Name": "scaffold01_tarp_wallsection_mid_384x384 (131)",
       "Position": "-1920,-3648,-80",
       "Rotation": "0,0,0.7071064,-0.707107",
-      "Enabled": true,
-      "NetworkMode": 2,
-      "NetworkInterpolation": true,
-      "__Prefab": "prefabs/map/scaffold/scaffold01_tarp_wallsection_mid_384x384.prefab"
-    },
-    {
-      "__guid": "04ba4516-9224-4c05-adc5-f0ed09cd6ff6",
-      "Flags": 0,
-      "Name": "scaffold01_tarp_wallsection_mid_384x384 (100)",
-      "Position": "-3456,-5568,-464",
-      "Rotation": "0,0,-0.7071069,-0.7071065",
-      "Enabled": true,
-      "NetworkMode": 2,
-      "NetworkInterpolation": true,
-      "__Prefab": "prefabs/map/scaffold/scaffold01_tarp_wallsection_mid_384x384.prefab"
-    },
-    {
-      "__guid": "187ca50d-7af5-4efb-add3-a9f8ec2ef042",
-      "Flags": 0,
-      "Name": "scaffold01_tarp_wallsection_mid_384x384 (120)",
-      "Position": "-3456,-5568,-80",
-      "Rotation": "0,0,-0.7071069,-0.7071065",
       "Enabled": true,
       "NetworkMode": 2,
       "NetworkInterpolation": true,
@@ -4492,7 +4569,7 @@
       "Enabled": true,
       "NetworkMode": 2,
       "NetworkInterpolation": true,
-      "__Prefab": "prefabs/map/scaffold/towers/scaffold_tower_01.prefab"
+      "__Prefab": "prefabs/map/scaffold/collections/scaffold_tower_01.prefab"
     },
     {
       "__guid": "c556d7cc-2ff0-4b36-9d3c-8f53b47ec453",
@@ -4513,7 +4590,7 @@
       "Enabled": true,
       "NetworkMode": 2,
       "NetworkInterpolation": true,
-      "__Prefab": "prefabs/map/scaffold/towers/scaffold_tower_01.prefab"
+      "__Prefab": "prefabs/map/scaffold/collections/scaffold_tower_01.prefab"
     },
     {
       "__guid": "e322877b-fbfe-4dba-8e0b-42f0664a661b",
@@ -4524,7 +4601,7 @@
       "Enabled": true,
       "NetworkMode": 2,
       "NetworkInterpolation": true,
-      "__Prefab": "prefabs/map/scaffold/towers/scaffold_tower_01.prefab"
+      "__Prefab": "prefabs/map/scaffold/collections/scaffold_tower_01.prefab"
     },
     {
       "__guid": "4bbe13dc-2901-42ad-93af-ca7d17275987",
@@ -4535,7 +4612,7 @@
       "Enabled": true,
       "NetworkMode": 2,
       "NetworkInterpolation": true,
-      "__Prefab": "prefabs/map/scaffold/towers/scaffold_tower_01.prefab"
+      "__Prefab": "prefabs/map/scaffold/collections/scaffold_tower_01.prefab"
     },
     {
       "__guid": "4272b05d-f78e-48e5-9906-2a906999ac1e",
@@ -4545,7 +4622,7 @@
       "Enabled": true,
       "NetworkMode": 2,
       "NetworkInterpolation": true,
-      "__Prefab": "prefabs/map/scaffold/towers/scaffold_tower_01.prefab"
+      "__Prefab": "prefabs/map/scaffold/collections/scaffold_tower_01.prefab"
     },
     {
       "__guid": "f36a9dfb-ef05-4d2b-ba4c-98c68642be56",
@@ -4556,7 +4633,7 @@
       "Enabled": true,
       "NetworkMode": 2,
       "NetworkInterpolation": true,
-      "__Prefab": "prefabs/map/scaffold/towers/scaffold_tower_01.prefab"
+      "__Prefab": "prefabs/map/scaffold/collections/scaffold_tower_01.prefab"
     },
     {
       "__guid": "23b1d5c1-ff39-4af9-836f-ecefa6dc5f1d",
@@ -4567,7 +4644,7 @@
       "Enabled": true,
       "NetworkMode": 2,
       "NetworkInterpolation": true,
-      "__Prefab": "prefabs/map/scaffold/towers/scaffold_tower_01.prefab"
+      "__Prefab": "prefabs/map/scaffold/collections/scaffold_tower_01.prefab"
     },
     {
       "__guid": "192f0543-cac8-4bd8-a5c1-d288908ecfd5",
@@ -4578,7 +4655,239 @@
       "Enabled": true,
       "NetworkMode": 2,
       "NetworkInterpolation": true,
-      "__Prefab": "prefabs/map/scaffold/towers/scaffold_tower_01.prefab"
+      "__Prefab": "prefabs/map/scaffold/collections/scaffold_tower_01.prefab"
+    },
+    {
+      "__guid": "d00440f2-59c8-49e8-ab99-699e00e07a90",
+      "Flags": 0,
+      "Name": "cautiontape_diagonal_384",
+      "Position": "3256,0.1528625,-863.9398",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "Components": [
+        {
+          "__type": "Sandbox.ModelRenderer",
+          "__guid": "6a58c94b-04f2-4bf7-ab7f-67c1da223d82",
+          "BodyGroups": 18446744073709551615,
+          "Model": "models/track_decals/caution_tape/cautiontape_diagonal_384.vmdl",
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        }
+      ]
+    },
+    {
+      "__guid": "c4e2afb6-a24d-480b-a9ff-b66ba21e7ed4",
+      "Flags": 0,
+      "Name": "cautiontape_diagonal_384 (1)",
+      "Position": "4040,0.1528625,-960",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "Components": [
+        {
+          "__type": "Sandbox.ModelRenderer",
+          "__guid": "1e9638b9-1a27-4c39-98c9-104985ae4bc9",
+          "BodyGroups": 18446744073709551615,
+          "Model": "models/track_decals/caution_tape/cautiontape_diagonal_384.vmdl",
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        }
+      ]
+    },
+    {
+      "__guid": "f103fcfc-d023-497b-a193-1245600287e3",
+      "Flags": 0,
+      "Name": "cautiontape_diagonal_384 (2)",
+      "Position": "4984,0.1528625,-960",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "Components": [
+        {
+          "__type": "Sandbox.ModelRenderer",
+          "__guid": "dce47cdb-1a22-4773-a2bd-108fa2b84f6f",
+          "BodyGroups": 18446744073709551615,
+          "Model": "models/track_decals/caution_tape/cautiontape_diagonal_384.vmdl",
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        }
+      ]
+    },
+    {
+      "__guid": "d795ed4a-cc4d-432c-a976-e975ca2d9a38",
+      "Flags": 0,
+      "Name": "cautiontape_diagonal_384 (3)",
+      "Position": "5192,0.1528625,-911.7136",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "Components": [
+        {
+          "__type": "Sandbox.ModelRenderer",
+          "__guid": "14d29300-4932-45cc-bac5-5b984576fa59",
+          "BodyGroups": 18446744073709551615,
+          "Model": "models/track_decals/caution_tape/cautiontape_diagonal_384.vmdl",
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        }
+      ]
+    },
+    {
+      "__guid": "331576be-80be-4822-914d-879e7ae96b85",
+      "Flags": 0,
+      "Name": "cautiontape_diagonal_384 (4)",
+      "Position": "5368,-1728,-880",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "Components": [
+        {
+          "__type": "Sandbox.ModelRenderer",
+          "__guid": "6b561eba-7646-4d0b-a54a-037aaa1b9bbf",
+          "BodyGroups": 18446744073709551615,
+          "Model": "models/track_decals/caution_tape/cautiontape_diagonal_384.vmdl",
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        }
+      ]
+    },
+    {
+      "__guid": "a6800853-0e54-4034-8bb8-a88b0579b12f",
+      "Flags": 0,
+      "Name": "cautiontape_diagonal_384 (6)",
+      "Position": "4408,-3072,-879.6363",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "Components": [
+        {
+          "__type": "Sandbox.ModelRenderer",
+          "__guid": "51a89804-672b-4d88-9555-f83ad13063d9",
+          "BodyGroups": 18446744073709551615,
+          "Model": "models/track_decals/caution_tape/cautiontape_diagonal_384.vmdl",
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        }
+      ]
+    },
+    {
+      "__guid": "96a9c573-7f3c-463f-aa22-e503c31445a5",
+      "Flags": 0,
+      "Name": "cautiontape_diagonal_384 (7)",
+      "Position": "5184,-3272,-864",
+      "Rotation": "0,0,-0.7071067,0.7071068",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "Components": [
+        {
+          "__type": "Sandbox.ModelRenderer",
+          "__guid": "0b39210d-b0f8-49cc-87b7-4fb19f6750e1",
+          "BodyGroups": 18446744073709551615,
+          "Model": "models/track_decals/caution_tape/cautiontape_diagonal_384.vmdl",
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        }
+      ]
+    },
+    {
+      "__guid": "a192b03d-770f-4942-9752-2807ec850c80",
+      "Flags": 0,
+      "Name": "cautiontape_diagonal_384 (8)",
+      "Position": "5376,-4792,-864",
+      "Rotation": "0,0,-0.7071067,0.7071068",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "Components": [
+        {
+          "__type": "Sandbox.ModelRenderer",
+          "__guid": "2d3ccb66-f795-43df-a9b2-94dfabaeb27e",
+          "BodyGroups": 18446744073709551615,
+          "Model": "models/track_decals/caution_tape/cautiontape_diagonal_384.vmdl",
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        }
+      ]
+    },
+    {
+      "__guid": "f9723f05-37fe-4c09-ba7a-98768385ed6d",
+      "Flags": 0,
+      "Name": "cautiontape_diagonal_384 (9)",
+      "Position": "5376,-5192,-992",
+      "Rotation": "0,0,-0.7071067,0.7071068",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "Components": [
+        {
+          "__type": "Sandbox.ModelRenderer",
+          "__guid": "a9d7f4dc-ef8d-4626-a33b-a0bd9d197cd6",
+          "BodyGroups": 18446744073709551615,
+          "Model": "models/track_decals/caution_tape/cautiontape_diagonal_384.vmdl",
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        }
+      ]
+    },
+    {
+      "__guid": "ad3d49b7-082c-450b-85bc-fe7be2c6c1d2",
+      "Flags": 0,
+      "Name": "cautiontape_diagonal_384 (10)",
+      "Position": "2504,-5760,-608",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "Components": [
+        {
+          "__type": "Sandbox.ModelRenderer",
+          "__guid": "f1972b43-166c-462a-9f10-676d0c5e2a6a",
+          "BodyGroups": 18446744073709551615,
+          "Model": "models/track_decals/caution_tape/cautiontape_diagonal_384.vmdl",
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        }
+      ]
+    },
+    {
+      "__guid": "64fdb560-daf8-45b9-becd-5cdcf4582079",
+      "Flags": 0,
+      "Name": "cautiontape_diagonal_384 (5)",
+      "Position": "5576,-1536,-911.1345",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "Components": [
+        {
+          "__type": "Sandbox.ModelRenderer",
+          "__guid": "a8c28850-9958-4e82-8c87-be61a921ff37",
+          "BodyGroups": 18446744073709551615,
+          "Model": "models/track_decals/caution_tape/cautiontape_diagonal_384.vmdl",
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        }
+      ]
+    },
+    {
+      "__guid": "4a308195-1e05-4c63-b287-8788134921c4",
+      "Flags": 0,
+      "Name": "cautiontape_diagonal_192",
+      "Position": "-1352,-5832,-608",
+      "Rotation": "0,0.00000003104408,0.9999999,0.00000009313223",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "Components": [
+        {
+          "__type": "Sandbox.ModelRenderer",
+          "__guid": "90515aa7-6717-482d-b598-f95d1b587193",
+          "BodyGroups": 18446744073709551615,
+          "Model": "models/track_decals/caution_tape/cautiontape_diagonal_192.vmdl",
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        }
+      ]
     }
   ],
   "SceneProperties": {
@@ -4604,7 +4913,7 @@
   },
   "Title": "alleyslope",
   "Description": "",
-  "LastSaved": "2024-06-06T17:11:19.2959782-04:00",
+  "LastSaved": "2024-06-07T11:02:13.2056923-04:00",
   "ResourceVersion": 1,
   "__references": [],
   "__version": 1
