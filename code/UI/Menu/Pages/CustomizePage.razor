@@ -52,7 +52,7 @@
 			unicycle = Scene.GetAllComponents<UnicycleDresser>().FirstOrDefault().GameObject;
 		}
 
-		if (unicycle != null)
+		if (unicycle != null && Menu.Current.MainMenu.CurrentUrl == "/customize")
 		{
 
 			if (Input.Down("left_pedal"))
