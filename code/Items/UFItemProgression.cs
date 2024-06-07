@@ -23,6 +23,6 @@ public class UFItemProgression : GameResource
 
 public class UnicycleProgression
 {
-	public float CurrentXP { get; set; } = 1000;
+	public float CurrentXP { get; set; } = 10;
 	public List<UnicycleFrenzyItems> UnlockedItems { get; set; } = new List<UnicycleFrenzyItems>();
 }

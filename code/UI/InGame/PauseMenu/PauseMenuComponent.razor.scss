@@ -24,6 +24,11 @@ FinishMapInfo {
     .info-container {
     }
 
+    .info-map-finish-time {
+        color: white;
+        font-size: 46px;
+    }
+
     .button-container {
         width: 100%;
         height: 20%;
@@ -32,8 +37,8 @@ FinishMapInfo {
         flex-direction: row;
 
         .button {
-            justify-content:center;
-            align-items:center;
+            justify-content: center;
+            align-items: center;
             width: 150px;
             height: 50px;
             background-color: #4CAF50; /* Green */
@@ -44,9 +49,9 @@ FinishMapInfo {
             text-align: center;
             font-size: 24px;
             cursor: pointer;
-            pointer-events:all;
-            flex-shrink:0;
-            flex-grow:1;
+            pointer-events: all;
+            flex-shrink: 0;
+            flex-grow: 1;
 
             &:hover {
                 background-color: rgba( lighten(lightgray, 10%), .8 );
@@ -63,6 +68,7 @@ PauseMenuMapInfo, FinishMapInfo {
     justify-content: center;
     align-content: center;
     align-items: center;
+
 
 
     .info-container {
@@ -158,5 +164,19 @@ PauseMenuMapInfo, FinishMapInfo {
         background-size: contain;
         background-repeat: no-repeat;
         background-image: url("textures/achievements/bronze_medal.png");
+    }
+
+    .unlocked {
+
+        .medal-title {
+            color: #4CAF50;
+        }
+        .medal-time {
+            color: #4CAF50;
+        }
+    }
+
+    .locked {
+    
     }
 }

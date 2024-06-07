@@ -499,14 +499,15 @@ AchievementsStats {
 
     .achievements-container {
         position: absolute;
-        display: flex;
-        flex-wrap: wrap;
         right: 0;
-        width: 50%;
-        height: 100%;
+        width: 800px;
+        height: 600px;
         flex-direction: row;
         background-color: rgba( $dark-purple, .5 );
         overflow: scroll;
+        gap:50px;
+        margin: 40px;
+        padding: 100px;
     }
 
     .title {
@@ -520,13 +521,9 @@ AchievementsStats {
     }
 
     .achievement {
-        display: flex;
         align-items: center;
-        margin: 60px;
         width: 100px;
         flex-direction: column;
-        flex-grow: 0;
-        flex-shrink: 1;
     }
 
     .achievement-icon {
@@ -564,5 +561,10 @@ AchievementsStats {
     .achievement-progress {
         font-size: 12px;
         margin-top: 5px;
+    }
+
+    .xp-given
+    {
+        font-size: 16px;
     }
 }
