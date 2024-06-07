@@ -103,9 +103,10 @@ internal class MapSettings : Component
 	public void OnFinish()
 	{
 		Local.Completions++;
-		if ( frenzyLetterList.Count == 6 )
+		if ( frenzyLetterList.Count == 6 && !Local.CollectedFrenzy )
 		{
 			Local.CollectedFrenzy = true;
+			AddXP( 10 );
 		}
 		Save();
 	}
