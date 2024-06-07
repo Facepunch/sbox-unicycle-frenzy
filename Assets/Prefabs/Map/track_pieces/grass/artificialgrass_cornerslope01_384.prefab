@@ -1,0 +1,28 @@
+{
+  "RootObject": {
+    "__guid": "82a13ec7-1b2e-4b5d-a19f-a14276a107a7",
+    "Flags": 0,
+    "Name": "artificialgrass_cornerslope01_384",
+    "Enabled": true,
+    "NetworkMode": 2,
+    "NetworkInterpolation": true,
+    "Components": [
+      {
+        "__type": "Sandbox.Prop",
+        "__guid": "592b4627-5ba2-494e-bd7b-f5711ec5444e",
+        "BodyGroups": 18446744073709551615,
+        "Health": 0,
+        "IsStatic": true,
+        "Model": "models/track_pieces/grass/artificialgrass_cornerslope01_384.vmdl",
+        "Tint": "1,1,1,1"
+      }
+    ],
+    "Children": []
+  },
+  "ShowInMenu": false,
+  "MenuPath": null,
+  "MenuIcon": null,
+  "ResourceVersion": 1,
+  "__references": [],
+  "__version": 1
+}

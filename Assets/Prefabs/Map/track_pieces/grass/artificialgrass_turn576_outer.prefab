@@ -1,0 +1,28 @@
+{
+  "RootObject": {
+    "__guid": "7fd1c409-4aa0-4d87-b1b8-c5a408bb4dfe",
+    "Flags": 0,
+    "Name": "artificialgrass_turn576_outer",
+    "Enabled": true,
+    "NetworkMode": 2,
+    "NetworkInterpolation": true,
+    "Components": [
+      {
+        "__type": "Sandbox.Prop",
+        "__guid": "077d3985-f8c7-44bb-8e4b-632a588c8587",
+        "BodyGroups": 18446744073709551615,
+        "Health": 0,
+        "IsStatic": true,
+        "Model": "models/track_pieces/grass/artificialgrass_turn576_outer.vmdl",
+        "Tint": "1,1,1,1"
+      }
+    ],
+    "Children": []
+  },
+  "ShowInMenu": false,
+  "MenuPath": null,
+  "MenuIcon": null,
+  "ResourceVersion": 1,
+  "__references": [],
+  "__version": 1
+}

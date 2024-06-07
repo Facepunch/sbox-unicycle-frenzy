@@ -1053,7 +1053,7 @@
         "__guid": "dddf9fe7-9653-47ec-b73d-fecd04fcdba6",
         "Flags": 0,
         "Name": "artificial grass",
-        "Position": "64,-1216,0",
+        "Position": "1600,-2976,0.00009075027",
         "Enabled": true,
         "NetworkMode": 2,
         "NetworkInterpolation": true,
@@ -1079,30 +1079,10 @@
             "__Prefab": "prefabs/map/track_pieces/grass/artificialgrass_slope_384.prefab"
           },
           {
-            "__guid": "a3a1b564-fc42-4af8-a74e-ff4e156c4531",
-            "Flags": 0,
-            "Name": "greenfabric_corner_384",
-            "Position": "0,416,0",
-            "Enabled": true,
-            "NetworkMode": 2,
-            "NetworkInterpolation": true,
-            "__Prefab": "prefabs/map/track_pieces/grass/greenfabric_corner_384.prefab"
-          },
-          {
-            "__guid": "e126a988-8e6b-458c-8d60-0d00855d2319",
-            "Flags": 0,
-            "Name": "greenfabric_cornerslope_384",
-            "Position": "-448,416,0",
-            "Enabled": true,
-            "NetworkMode": 2,
-            "NetworkInterpolation": true,
-            "__Prefab": "prefabs/map/track_pieces/grass/greenfabric_cornerslope_384.prefab"
-          },
-          {
             "__guid": "4d6efced-00bc-4c45-b0a5-2caafc510acc",
             "Flags": 0,
             "Name": "artificialgrass_192",
-            "Position": "0,768,0",
+            "Position": "96,768,0",
             "Enabled": true,
             "NetworkMode": 2,
             "NetworkInterpolation": true,
@@ -1117,6 +1097,56 @@
             "NetworkMode": 2,
             "NetworkInterpolation": true,
             "__Prefab": "prefabs/map/track_pieces/grass/artificialgrass_slope_192.prefab"
+          },
+          {
+            "__guid": "ab64ba8d-8fda-41f0-8609-829797f4051f",
+            "Flags": 0,
+            "Name": "artificialgrass_corner_384",
+            "Position": "0,416,-0.0002735043",
+            "Enabled": true,
+            "NetworkMode": 2,
+            "NetworkInterpolation": true,
+            "__Prefab": "prefabs/map/track_pieces/grass/artificialgrass_corner_384.prefab"
+          },
+          {
+            "__guid": "82a13ec7-1b2e-4b5d-a19f-a14276a107a7",
+            "Flags": 0,
+            "Name": "artificialgrass_cornerslope01_384",
+            "Position": "-448,416,0",
+            "Enabled": true,
+            "NetworkMode": 2,
+            "NetworkInterpolation": true,
+            "__Prefab": "prefabs/map/track_pieces/grass/artificialgrass_cornerslope01_384.prefab"
+          },
+          {
+            "__guid": "adc1011f-659d-4f74-ab4b-c513ad9dda15",
+            "Flags": 0,
+            "Name": "artificialgrass_turn192_outer",
+            "Position": "0,-1376,0",
+            "Enabled": true,
+            "NetworkMode": 2,
+            "NetworkInterpolation": true,
+            "__Prefab": "prefabs/map/track_pieces/grass/artificialgrass_turn192_outer.prefab"
+          },
+          {
+            "__guid": "8885c2bb-d6f2-4287-8867-474815a57ed5",
+            "Flags": 0,
+            "Name": "artificialgrass_turn576_inner",
+            "Position": "-0.6284294,-480,0",
+            "Enabled": true,
+            "NetworkMode": 2,
+            "NetworkInterpolation": true,
+            "__Prefab": "prefabs/map/track_pieces/grass/artificialgrass_turn576_inner.prefab"
+          },
+          {
+            "__guid": "2ccccf0d-19a1-4be3-b6fb-88e20586da4b",
+            "Flags": 0,
+            "Name": "artificialgrass_turn576_outer",
+            "Position": "-384,-864,0",
+            "Enabled": true,
+            "NetworkMode": 2,
+            "NetworkInterpolation": true,
+            "__Prefab": "prefabs/map/track_pieces/grass/artificialgrass_turn576_outer.prefab"
           }
         ]
       },
