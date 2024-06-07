@@ -5,20 +5,20 @@
 	<div class="info-container">
 		<div class="info-map-name">TRACK COMPLETE!</div>
 		<div class="info-map-name">@settings.MapName</div>
-			<div class="medal-container">
-				<div class="medal-gold alignment">
-					<div class="medal-title">Gold</div>
-					<div class="medal-time">@BestTimeFormat(settings.GoldTime)</div>
-				</div>
-				<div class="medal-silver alignment">
-					<div class="medal-title">Silver</div>
-					<div class="medal-time">@BestTimeFormat(settings.SilverTime)</div>
-				</div>
-				<div class="medal-bronze alignment">
-					<div class="medal-title">Bronze</div>
-					<div class="medal-time">@BestTimeFormat(settings.BronzeTime)</div>
-				</div>
+		<div class="medal-container">
+			<div class="medal-gold alignment @(IsMedalUnlocked("gold") ? "unlocked" : "locked")">
+				<div class="medal-title">Gold</div>
+				<div class="medal-time">@BestTimeFormat(settings.GoldTime)</div>
 			</div>
+			<div class="medal-silver alignment @(IsMedalUnlocked("silver") ? "unlocked" : "locked")">
+				<div class="medal-title">Silver</div>
+				<div class="medal-time">@BestTimeFormat(settings.SilverTime)</div>
+			</div>
+			<div class="medal-bronze alignment @(IsMedalUnlocked("bronze") ? "unlocked" : "locked")">
+				<div class="medal-title">Bronze</div>
+				<div class="medal-time">@BestTimeFormat(settings.BronzeTime)</div>
+			</div>
+		</div>
 		<div class="info-frenzy-container">
 			<div class="info-frenzy-letter @HasLetter(0)">F</div>
 			<div class="info-frenzy-letter @HasLetter(1)">R</div>
@@ -27,6 +27,7 @@
 			<div class="info-frenzy-letter @HasLetter(4)">Z</div>
 			<div class="info-frenzy-letter @HasLetter(5)">Y</div>
 		</div>
+		<div class="info-map-finish-time">Finish Time: @GetFinishTime()</div>
 		<div class="info-map-best-time">Best Time: @BestTimeFormat(settings.GetBestTime())</div>
 		<div class="button-container">
 			<div class="button" onclick="@(()=>Retry())">RETRY</div>
@@ -53,7 +54,6 @@
 
 	public FinishMapInfo()
 	{
-		//find the current season from the map
 		seasons = ResourceLibrary.GetAll<UnicycleFrenzySeason>();
 	}
 
@@ -66,13 +66,10 @@
 				season.OrangeMaps.Contains(currentMap) ||
 				season.RedMaps.Contains(currentMap))
 			{
-				// Map found in one of the lists
 				HandleMapFound(season, currentMap);
 				return;
 			}
 		}
-
-		// If the map was not found in any season's lists
 		HandleMapNotFound();
 	}
 
@@ -121,8 +118,6 @@
 
 	private void HandleMapNotFound()
 	{
-		// Handle the case when the map is not found
-		// You can add your custom logic here
 		Log.Warning("Map not found in any season's lists.");
 
 		MapFound = false;
@@ -137,12 +132,12 @@
 			settings = Scene.GetAllComponents<MapSettings>().FirstOrDefault();
 		}
 
-		if(seasons == null)
+		if (seasons == null)
 		{
 			seasons = ResourceLibrary.GetAll<UnicycleFrenzySeason>();
 		}
 
-		if(currentMap == null)
+		if (currentMap == null)
 		{
 			var mapList = ResourceLibrary.GetAll<UnicycleFrenzyMap>();
 			//search for the current map in the map list
@@ -188,6 +183,18 @@
 		return frenzy ? "has-letter" : "no-letter";
 	}
 
+	string GetFinishTime()
+	{
+		var timer = CourseTimer.Local;
+
+		if (timer == null)
+			return "N/A";
+
+		var timeSpan = TimeSpan.FromSeconds(timer.FinishTime);
+		return timeSpan.ToString(@"mm\:ss\.fff");
+
+	}
+
 	string BestTimeFormat(float time)
 	{
 		if (time == null)
@@ -195,6 +202,38 @@
 
 		var timeSpan = TimeSpan.FromSeconds(time);
 		return timeSpan.ToString(@"mm\:ss\.fff");
+	}
+
+	bool IsMedalUnlocked(string medal)
+	{
+		if (medal == "platinum")
+		{
+			var map = DataHelper.ReadJson<MapProgress>("unicycle.stats." + settings.MapName + ".json");
+			if (map == null) return false;
+			return map.HasPlatinumMedal;
+		}
+		else if (medal == "gold")
+		{
+			var map = DataHelper.ReadJson<MapProgress>("unicycle.stats." + settings.MapName + ".json");
+			if (map == null) return false;
+			return map.HasGoldMedal;
+		}
+		else if (medal == "silver")
+		{
+			var map = DataHelper.ReadJson<MapProgress>("unicycle.stats." + settings.MapName + ".json");
+			if (map == null) return false;
+			return map.HasSilverMedal;
+		}
+		else if (medal == "bronze")
+		{
+			var map = DataHelper.ReadJson<MapProgress>("unicycle.stats." + settings.MapName + ".json");
+			if (map == null) return false;
+			return map.HasBronzeMedal;
+		}
+		else
+		{
+			return false;
+		}
 	}
 
 	protected override int BuildHash() => System.HashCode.Combine(Time.Delta);

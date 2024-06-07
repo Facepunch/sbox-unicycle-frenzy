@@ -44,23 +44,35 @@ internal class MapSettings : Component
 
 	public void MedalCheck( float time )
 	{
-		if ( time <= BronzeTime )
+		if ( time <= BronzeTime && !Local.HasBronzeMedal )
 		{
 			Local.HasBronzeMedal = true;
+			AddXP( 2 );
 		}
-		if ( time <= SilverTime )
+		if ( time <= SilverTime && !Local.HasSilverMedal )
 		{
 			Local.HasSilverMedal = true;
+			AddXP( 4 );
 		}
-		if ( time <= GoldTime )
+		if ( time <= GoldTime && !Local.HasGoldMedal )
 		{
 			Local.HasGoldMedal = true;
+			AddXP( 6 );
 		}
-		if ( time <= PlatinumTime )
+		if ( time <= PlatinumTime && !Local.HasPlatinumMedal )
 		{
 			Local.HasPlatinumMedal = true;
+			AddXP( 8 );
 		}
 		Save();
+	}
+
+	public void AddXP( float xp )
+	{
+		var progression = DataHelper.ReadJson<UnicycleProgression>( "unicycle.progression.json" );
+		progression.CurrentXP += xp;
+
+		DataHelper.WriteJson( "unicycle.progression.json", progression );
 	}
 
 	public float GetBestTime()
