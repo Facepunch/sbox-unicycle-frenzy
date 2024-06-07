@@ -1,5 +1,5 @@
 {
-  "__guid": "fbed6ac7-e2eb-483d-830f-0d671b99c5c1",
+  "__guid": "8de1ec35-b4f7-43d0-8873-ee80c36142f2",
   "GameObjects": [
     {
       "__guid": "9c580216-8085-432a-ba08-52b21bd7757e",
@@ -4564,98 +4564,98 @@
     {
       "__guid": "e836771d-dc30-4748-8fb5-966480402e69",
       "Flags": 0,
-      "Name": "scaffold_tower_01",
+      "Name": "scaffold_tower_collection01",
       "Position": "5776,-864,-1120",
       "Enabled": true,
       "NetworkMode": 2,
       "NetworkInterpolation": true,
-      "__Prefab": "prefabs/map/scaffold/collections/scaffold_tower_01.prefab"
+      "__Prefab": "prefabs/map/scaffold/collections/scaffold_tower_collection01.prefab"
     },
     {
       "__guid": "c556d7cc-2ff0-4b36-9d3c-8f53b47ec453",
-      "Flags": 0,
-      "Name": "scaffold_tower_01 (7)",
+      "Flags": 64,
+      "Name": "scaffold_tower_collection01 (7)",
       "Position": "4048,-2608,-1312",
       "Enabled": true,
       "NetworkMode": 2,
       "NetworkInterpolation": true,
-      "__Prefab": "prefabs/map/scaffold/towers/scaffold_tower_01.prefab"
+      "__Prefab": "prefabs/map/scaffold/towers/scaffold_tower_collection01.prefab"
     },
     {
       "__guid": "ffa20eea-667e-4f9b-9d70-69b55521b541",
       "Flags": 0,
-      "Name": "scaffold_tower_01 (8)",
+      "Name": "scaffold_tower_collection01 (8)",
       "Position": "4048,-2608,-160",
       "Rotation": "0,0,-0.7071067,0.7071068",
       "Enabled": true,
       "NetworkMode": 2,
       "NetworkInterpolation": true,
-      "__Prefab": "prefabs/map/scaffold/collections/scaffold_tower_01.prefab"
+      "__Prefab": "prefabs/map/scaffold/collections/scaffold_tower_collection01.prefab"
     },
     {
       "__guid": "e322877b-fbfe-4dba-8e0b-42f0664a661b",
       "Flags": 0,
-      "Name": "scaffold_tower_01 (3)",
+      "Name": "scaffold_tower_collection01 (3)",
       "Position": "2272,-4448,-1056",
       "Rotation": "0,0,0.7071067,0.7071068",
       "Enabled": true,
       "NetworkMode": 2,
       "NetworkInterpolation": true,
-      "__Prefab": "prefabs/map/scaffold/collections/scaffold_tower_01.prefab"
+      "__Prefab": "prefabs/map/scaffold/collections/scaffold_tower_collection01.prefab"
     },
     {
       "__guid": "4bbe13dc-2901-42ad-93af-ca7d17275987",
       "Flags": 0,
-      "Name": "scaffold_tower_01 (5)",
+      "Name": "scaffold_tower_collection01 (5)",
       "Position": "256,-4384,-704",
       "Rotation": "0,0,0.258819,0.9659258",
       "Enabled": true,
       "NetworkMode": 2,
       "NetworkInterpolation": true,
-      "__Prefab": "prefabs/map/scaffold/collections/scaffold_tower_01.prefab"
+      "__Prefab": "prefabs/map/scaffold/collections/scaffold_tower_collection01.prefab"
     },
     {
       "__guid": "4272b05d-f78e-48e5-9906-2a906999ac1e",
       "Flags": 0,
-      "Name": "scaffold_tower_01 (4)",
+      "Name": "scaffold_tower_collection01 (4)",
       "Position": "2272,-7104,-944",
       "Enabled": true,
       "NetworkMode": 2,
       "NetworkInterpolation": true,
-      "__Prefab": "prefabs/map/scaffold/collections/scaffold_tower_01.prefab"
+      "__Prefab": "prefabs/map/scaffold/collections/scaffold_tower_collection01.prefab"
     },
     {
       "__guid": "f36a9dfb-ef05-4d2b-ba4c-98c68642be56",
       "Flags": 0,
-      "Name": "scaffold_tower_01 (6)",
+      "Name": "scaffold_tower_collection01 (6)",
       "Position": "-96,-7184,-944",
       "Rotation": "0,0,0.3826834,0.9238796",
       "Enabled": true,
       "NetworkMode": 2,
       "NetworkInterpolation": true,
-      "__Prefab": "prefabs/map/scaffold/collections/scaffold_tower_01.prefab"
+      "__Prefab": "prefabs/map/scaffold/collections/scaffold_tower_collection01.prefab"
     },
     {
       "__guid": "23b1d5c1-ff39-4af9-836f-ecefa6dc5f1d",
       "Flags": 0,
-      "Name": "scaffold_tower_01 (1)",
+      "Name": "scaffold_tower_collection01 (1)",
       "Position": "7088,-1328,-1119.999",
       "Rotation": "0,0,-0.6087614,0.7933534",
       "Enabled": true,
       "NetworkMode": 2,
       "NetworkInterpolation": true,
-      "__Prefab": "prefabs/map/scaffold/collections/scaffold_tower_01.prefab"
+      "__Prefab": "prefabs/map/scaffold/collections/scaffold_tower_collection01.prefab"
     },
     {
       "__guid": "192f0543-cac8-4bd8-a5c1-d288908ecfd5",
       "Flags": 0,
-      "Name": "scaffold_tower_01 (2)",
+      "Name": "scaffold_tower_collection01 (2)",
       "Position": "6688,432,-1120.002",
       "Rotation": "0,0,-0.9659258,0.2588193",
       "Enabled": true,
       "NetworkMode": 2,
       "NetworkInterpolation": true,
-      "__Prefab": "prefabs/map/scaffold/collections/scaffold_tower_01.prefab"
+      "__Prefab": "prefabs/map/scaffold/collections/scaffold_tower_collection01.prefab"
     },
     {
       "__guid": "d00440f2-59c8-49e8-ab99-699e00e07a90",
@@ -4913,7 +4913,7 @@
   },
   "Title": "alleyslope",
   "Description": "",
-  "LastSaved": "2024-06-07T11:02:13.2056923-04:00",
+  "LastSaved": "2024-06-07T11:39:07.8459996-04:00",
   "ResourceVersion": 1,
   "__references": [],
   "__version": 1
