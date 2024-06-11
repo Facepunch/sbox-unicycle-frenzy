@@ -61,6 +61,14 @@ internal class CourseTimer : Component
 
 			frenzy.OnRestart();
 		}
+
+		foreach ( var checkpoint in Scene.Children )
+		{
+			var tutorial = checkpoint.Components.Get<TutorialLockZone>();
+			if ( tutorial == null ) continue;
+
+			tutorial.StartTutorial();
+		}
 	}
 
 	public void ResetCheckpoints()
@@ -80,6 +88,15 @@ internal class CourseTimer : Component
 			if ( check == null ) continue;
 
 			check.CurrentCheckpoint = false;
+
+			if(Scene.GetAllComponents<TutorialMap>().FirstOrDefault().ShowTutorial)
+			{
+				var tutorial = checkpoint.Components.Get<TutorialLockZone>();
+				if ( tutorial == null ) continue;
+				tutorial.StartTutorial();
+
+				Log.Info( "Tutorial Started" );
+			}
 		}
 	}
 
@@ -120,7 +137,7 @@ internal class CourseTimer : Component
 		{
 			if ( CurrentCheckpoint == null )
 			{
-				position = startZone.Transform.Local.PointToWorld( startZone.Bounds.Center );
+				position = startZone.RespawnLocation.Transform.Position;
 				forward = startZone.Transform.Rotation.Forward.EulerAngles;
 				Log.Info( "No current checkpoint" );
 				return true;
@@ -129,7 +146,7 @@ internal class CourseTimer : Component
 			var check = CurrentCheckpoint.Components.Get<CheckPointZone>();
 			if ( check.CurrentCheckpoint )
 			{
-				position = check.Transform.Local.PointToWorld( check.Bounds.Center );
+				position = check.RespawnLocation.Transform.Position;
 				forward = check.Transform.Rotation.Forward.EulerAngles;
 				return true;
 			}
@@ -137,7 +154,7 @@ internal class CourseTimer : Component
 		}
 		else
 		{
-			position = startZone.Transform.Local.PointToWorld( startZone.Bounds.Center );
+			position = startZone.RespawnLocation.Transform.Position;
 			forward = startZone.Transform.Rotation.Forward.EulerAngles;
 		}
 
