@@ -14,7 +14,11 @@
           "Mins": "75,75,106.3286",
           "Maxs": "-75,-75,2.633492"
         },
-        "EnterSound": "sounds/course/course.checkpoint.sound"
+        "EnterSound": "sounds/course/course.checkpoint.sound",
+        "RespawnLocation": {
+          "_type": "gameobject",
+          "go": "ca26f151-c77b-42f7-8352-5d3f2384002b"
+        }
       }
     ],
     "Children": [

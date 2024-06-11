@@ -13,6 +13,9 @@ internal class BaseZone : Component
 	[Property]
 	public BBox Bounds { get; set; } = BBox.FromPositionAndSize( 0, 64 );
 
+	[Property]
+	public GameObject RespawnLocation { get; set; }
+
 	public virtual bool IsCheckPoint { get; set; } = true;
 
 	BoxCollider Box;

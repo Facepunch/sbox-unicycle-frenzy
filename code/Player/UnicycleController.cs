@@ -350,6 +350,7 @@ internal class UnicycleController : Component
 			CameraController.ViewAngles = fwd;
 		}
 
+		Transform.ClearInterpolation();
 		_moveHistory.Clear();
 	}
 

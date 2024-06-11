@@ -14,7 +14,11 @@
           "Mins": "75,75,60",
           "Maxs": "-75,-75,0"
         },
-        "EnterSound": "sounds/course/course.complete.sound"
+        "EnterSound": "sounds/course/course.complete.sound",
+        "RespawnLocation": {
+          "_type": "gameobject",
+          "go": "35abd72b-340b-4a6d-99a7-fdba5f765a1b"
+        }
       }
     ],
     "Children": [
