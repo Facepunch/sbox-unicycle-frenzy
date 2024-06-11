@@ -1,0 +1,48 @@
+@using Sandbox;
+@using Sandbox.UI;
+@inherits PanelComponent
+
+<root>
+	<div class="tut">
+		<div class="tut-container">
+			<div class="tut-title">RESTART?</div>
+			<div class="tut-text">Do you want to start the tutorial from the start?</div>
+			<div class="tut-button">
+				<div class="button" onclick="@(() => OnRestart())">Yes</div>
+				<div class="button" onclick="@(() => OnResume())">No</div>
+			</div>
+		</div>
+	</div>
+</root>
+
+@code
+{
+
+	[Property, TextArea] public string MyStringValue { get; set; } = "Hello World!";
+
+	protected override void OnStart()
+	{
+		base.OnStart();
+
+		GameManager.IsPaused = true;
+	}
+
+
+	void OnRestart()
+	{
+		UnicycleController.Local.DoRespawn(true);
+		GameManager.IsPaused = false;
+		Destroy();
+	}
+
+	void OnResume()
+	{
+		GameManager.IsPaused = false;
+		Destroy();
+	}
+
+	/// <summary>
+	/// the hash determines if the system should be rebuilt. If it changes, it will be rebuilt
+	/// </summary>
+	protected override int BuildHash() => System.HashCode.Combine( MyStringValue );
+}

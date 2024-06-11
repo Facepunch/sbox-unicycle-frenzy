@@ -1,0 +1,66 @@
+RestartUihint {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	display: flex;
+	font-weight: bold;
+	font-family: "Luckiest Guy";
+	pointer-events: all;
+	justify-content: center;
+	align-items: center;
+
+	.tut {
+		position: absolute;
+		height: 200px;
+		padding: 50px;
+		width: 30%;
+		background-color: #130e26;
+
+		.tut-container {
+			flex-direction: column;
+			position: absolute;
+			align-content:center;
+			justify-content:center;
+			align-items:center;
+			height:100%;
+			width: 100%;
+			padding:30px;
+		}
+
+		.tut-title {
+			font-size: 35px;
+			color: #fff;
+		}
+
+		.tut-text {
+			font-size: 20px;
+			color: #fff;
+			padding-bottom:20px;
+		}
+
+		.tut-button {
+			width: 100%;
+			flex-grow: 0;
+			flex-shrink: 1;
+			z-index: 100;
+			justify-content: space-between;
+
+			.button {
+				background-color: #4CAF50; /* Green */
+				border: none;
+				color: white;
+				padding: 15px 32px;
+				text-align: center;
+				font-size: 16px;
+				cursor: pointer;
+
+				&:hover {
+					background-color: rgba( lighten(lightgray, 10%), .8 );
+					sound-in: ui.button.over;
+				}
+			}
+		}
+	}
+}

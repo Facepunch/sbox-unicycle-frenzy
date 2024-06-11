@@ -1,7 +1,4 @@
-﻿
-using Sandbox;
-using Sandbox.Utility;
-using System;
+﻿using Sandbox.Utility;
 using System.Numerics;
 
 internal class UnicycleController : Component
@@ -140,12 +137,24 @@ internal class UnicycleController : Component
 
 		if ( Scene.GetAllComponents<TutorialHints>().Count() > 0 ) return;
 
-		if ( Input.Pressed( "Reset" ))
+		if ( Input.Pressed( "Reset" ) )
 		{
 			Respawn();
 		}
+
 		if ( Input.Pressed( "Restart" ) )
 		{
+			var tutorial = Scene.GetAllComponents<TutorialMap>().FirstOrDefault();
+
+			if ( tutorial != null )
+			{
+				var screen = Scene.GetAllComponents<ScreenPanel>().FirstOrDefault();
+				if ( screen == null ) return;
+				var hint = screen.Components.Create<RestartUihint>();
+
+				return;
+			}
+
 			var courseTimer = CourseTimer.Local;
 			if ( courseTimer != null )
 			{
@@ -309,8 +318,17 @@ internal class UnicycleController : Component
 		if(Dead) Respawn();
 	}
 
-	public void DoRespawn()
+	public void DoRespawn(bool reset)
 	{
+		if( reset )
+		{
+			var courseTimer = CourseTimer.Local;
+			if ( courseTimer != null )
+			{
+				courseTimer.ResetTimer();
+				courseTimer.ResetCheckpoints();
+			}
+		}
 		Respawn();
 	}
 
