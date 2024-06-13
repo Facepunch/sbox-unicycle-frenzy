@@ -8752,6 +8752,97 @@
       "NetworkInterpolation": true,
       "__Prefab": "prefabs/map/props/wood_nature/fake_rocks_02.prefab",
       "__PrefabVariables": {}
+    },
+    {
+      "__guid": "021588ed-e3a6-43c7-ae30-9d297f1bbb87",
+      "Flags": 0,
+      "Name": "Frenzy - F",
+      "Position": "384,0.00005440067,64",
+      "Rotation": "-0.00000008940697,0.00000000000001122644,0.9999999,0.00000000000003367931",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "__Prefab": "prefabs/frenzy/frenzy-f.prefab",
+      "__PrefabVariables": {}
+    },
+    {
+      "__guid": "a8efefdb-cd91-4249-9744-58ed2450df8e",
+      "Flags": 0,
+      "Name": "Frenzy - R",
+      "Position": "-2688,-576,256",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "__Prefab": "prefabs/frenzy/frenzy-r.prefab",
+      "__PrefabVariables": {}
+    },
+    {
+      "__guid": "c97c5da5-9261-4108-8b9f-2706f5d81526",
+      "Flags": 0,
+      "Name": "Frenzy - E",
+      "Position": "-864,-1248,416",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "__Prefab": "prefabs/frenzy/frenzy-e.prefab",
+      "__PrefabVariables": {}
+    },
+    {
+      "__guid": "e56f022f-9d9e-4385-a369-9b87635878f9",
+      "Flags": 0,
+      "Name": "Frenzy - N",
+      "Position": "-1568,-3744,256",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "__Prefab": "prefabs/frenzy/frenzy-n.prefab",
+      "__PrefabVariables": {}
+    },
+    {
+      "__guid": "9103814e-dcac-42af-9d47-f54c4a38ff46",
+      "Flags": 0,
+      "Name": "Frenzy - Z",
+      "Position": "-2688,-2592,544",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "__Prefab": "prefabs/frenzy/frenzy-z.prefab",
+      "__PrefabVariables": {}
+    },
+    {
+      "__guid": "ce9831a9-be88-4b5f-8494-7ec16488fd8d",
+      "Flags": 0,
+      "Name": "Frenzy - Y",
+      "Position": "-4224,-2912,736",
+      "Rotation": "-0.0000001192093,0.000000000000004217997,1,0.00000000000001265399",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "__Prefab": "prefabs/frenzy/frenzy-y.prefab",
+      "__PrefabVariables": {}
+    },
+    {
+      "__guid": "2e9ab366-3124-4142-9b42-dd9fbc453bd5",
+      "Flags": 0,
+      "Name": "MapSettings",
+      "Position": "0,0,224",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "Components": [
+        {
+          "__type": "MapSettings",
+          "__guid": "64e9b8aa-839b-48bd-b298-306d55f70eaf",
+          "Author": "Author",
+          "BronzeTime": 60,
+          "Description": "Description",
+          "Difficulty": "Tier1",
+          "GoldTime": 30,
+          "MapName": "G1L2",
+          "PlatinumTime": 15,
+          "SilverTime": 45
+        }
+      ]
     }
   ],
   "SceneProperties": {
@@ -8777,7 +8868,7 @@
   },
   "Title": "g1l2",
   "Description": "",
-  "LastSaved": "2024-06-13T12:30:37.3611409\u002B01:00",
+  "LastSaved": "2024-06-13T13:22:46.7201845\u002B01:00",
   "ResourceVersion": 1,
   "__references": [],
   "__version": 1
