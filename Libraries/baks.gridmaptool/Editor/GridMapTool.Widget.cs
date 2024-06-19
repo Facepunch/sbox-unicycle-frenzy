@@ -745,27 +745,27 @@ public class SceneGizmoControl : Widget
 	{
 		if ( axis == "X" )
 		{
-			SceneEditorSession.Active.CameraRotation = Rotation.FromYaw( 180 );
+			SceneViewportWidget.LastSelected.State.CameraRotation = Rotation.FromYaw( 180 );
 		}
 		else if ( axis == "Y" )
 		{
-			SceneEditorSession.Active.CameraRotation = Rotation.FromYaw( 90 );
+			SceneViewportWidget.LastSelected.State.CameraRotation = Rotation.FromYaw( 90 );
 		}
 		else if ( axis == "Z" )
 		{
-			SceneEditorSession.Active.CameraRotation = Rotation.FromPitch( 90 );
+			SceneViewportWidget.LastSelected.State.CameraRotation = Rotation.FromPitch( 90 );
 		}
 		else if ( axis == "-X" )
 		{
-			SceneEditorSession.Active.CameraRotation = Rotation.FromYaw( -180 );
+			SceneViewportWidget.LastSelected.State.CameraRotation = Rotation.FromYaw( -180 );
 		}
 		else if ( axis == "-Y" )
 		{
-			SceneEditorSession.Active.CameraRotation = Rotation.FromYaw( -90 );
+			SceneViewportWidget.LastSelected.State.CameraRotation = Rotation.FromYaw( -90 );
 		}
 		else if ( axis == "-Z" )
 		{
-			SceneEditorSession.Active.CameraRotation = Rotation.FromPitch( -90 );
+			SceneViewportWidget.LastSelected.State.CameraRotation = Rotation.FromPitch( -90 );
 		}
 	}
 
@@ -828,9 +828,9 @@ public class SceneGizmoControl : Widget
 			freeRotation.Cursor = CursorShape.Blank;
 
 			var delta = Application.CursorDelta * 0.1f;
-			var angles = SceneEditorSession.Active.CameraRotation.Angles();
+			var angles = SceneViewportWidget.LastSelected.State.CameraRotation.Angles();
 
-			var orbitPosition = SceneEditorSession.Active.CameraPosition + SceneEditorSession.Active.CameraRotation.Forward * 100;
+			var orbitPosition = SceneViewportWidget.LastSelected.State.CameraPosition + SceneViewportWidget.LastSelected.State.CameraRotation.Forward * 100;
 
 			angles.roll = 0;
 			angles.yaw -= delta.x;
@@ -839,10 +839,10 @@ public class SceneGizmoControl : Widget
 			angles.pitch = angles.pitch.Clamp( -89, 89 );
 
 			// Apply the rotations to the camera
-			SceneEditorSession.Active.CameraRotation = angles.ToRotation();
+			SceneViewportWidget.LastSelected.State.CameraRotation = angles.ToRotation();
 			
 			// Calculate the new camera position based on orbit distance and rotation
-			var cameraDirection = SceneEditorSession.Active.CameraRotation.Forward;
+			var cameraDirection = SceneViewportWidget.LastSelected.State.CameraRotation.Forward;
 
 			Application.CursorPosition = freeRotation.ScreenPosition + freeRotation.LocalRect.Center;
 		}

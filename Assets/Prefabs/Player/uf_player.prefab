@@ -177,6 +177,13 @@
             "__type": "Sandbox.AudioListener",
             "__guid": "42da2fe8-abd6-4fba-a041-b1b46c3fac6f",
             "UseCameraDirection": true
+          },
+          {
+            "__type": "Sandbox.AmbientOcclusion",
+            "__guid": "6210509b-55bc-499f-bf39-01e4414ce5e5",
+            "Intensity": 16,
+            "Quality": "High",
+            "Radius": 32
           }
         ]
       },
@@ -317,20 +324,20 @@
                 "__guid": "84d5d5dc-7744-428c-b08b-4b3b33b420de",
                 "Frame": {
                   "_type": "component",
-                  "component_id": "c9e630e0-cb3a-49e9-901c-6206ccfd8b3a",
+                  "component_id": "88b3e100-9a2e-493e-afde-ae8fba2d7791",
                   "go": "8869caf4-fe2a-4229-853e-28ef66385431",
                   "component_type": "ModelRenderer"
                 },
                 "IsMenu": false,
                 "LeftPedal": {
                   "_type": "component",
-                  "component_id": "75aca10d-8e83-4ebe-9e6c-64dca7ace202",
+                  "component_id": "d2ac96aa-e55a-42aa-8d6c-2ef4c56054ca",
                   "go": "c30208b1-7cd7-4d78-8c66-e633251c3924",
                   "component_type": "SkinnedModelRenderer"
                 },
                 "RightPedal": {
                   "_type": "component",
-                  "component_id": "15ee2c5d-be6c-4ac6-a393-2c48c0c8405b",
+                  "component_id": "7ccc59e9-4b1f-493a-a0f8-3919bcf6fc74",
                   "go": "f6a16b0d-b63b-46e3-9099-b25baac8d315",
                   "component_type": "SkinnedModelRenderer"
                 },
@@ -342,7 +349,7 @@
                 },
                 "Wheel": {
                   "_type": "component",
-                  "component_id": "6b89544c-7f42-417a-a0b3-edc7984b7ac1",
+                  "component_id": "16694dc4-e092-4733-827f-586cb6fb6177",
                   "go": "546128ac-1f44-4287-a9b5-b0d60d9b67aa",
                   "component_type": "ModelRenderer"
                 }
@@ -475,7 +482,8 @@
           }
         ]
       }
-    ]
+    ],
+    "__variables": []
   },
   "ShowInMenu": false,
   "MenuPath": null,
